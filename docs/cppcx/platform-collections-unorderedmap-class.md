@@ -1,22 +1,23 @@
 ---
+description: ': Platform:: Collections:: UnorderedMap sınıfı hakkında daha fazla bilgi edinin'
 title: Platform::Collections::UnorderedMap Sınıfı
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMap
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
-ms.openlocfilehash: ec458f5d4a47b6eced939c4fe346d5d0414ea7c2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 51acfa7e411f96addd8a33024224779c32ebcda0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839133"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242541"
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Platform::Collections::UnorderedMap Sınıfı
 
-Anahtar-değer çiftleri koleksiyonu olan sıralanmamış bir *eşlemeyi*temsil eder.
+Anahtar-değer çiftleri koleksiyonu olan sıralanmamış bir *eşlemeyi* temsil eder.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <
@@ -32,7 +33,7 @@ ref class Map sealed;
 *K*<br/>
 Anahtar-değer çiftindeki anahtar türü.
 
-*Yönetim*<br/>
+*V*<br/>
 Anahtar-değer çiftindeki değerin türü.
 
 *,*<br/>
@@ -141,7 +142,7 @@ Bir `UnorderedMapView` nesnesi.
 
 Geçerli UnorderedMap 'in belirtilen anahtarı içerip içermediğini belirler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool HasKey(
@@ -162,7 +163,7 @@ UnorderedMap öğesini bulmak için kullanılan anahtar. *Anahtar* türü TypeNa
 
 Belirtilen anahtar-değer çiftini geçerli UnorderedMap nesnesine ekler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 virtual bool Insert(
@@ -176,18 +177,18 @@ virtual bool Insert(
 *anahtar*<br/>
 Anahtar-değer çiftinin anahtar bölümü. *Anahtar* türü TypeName *K*.
 
-*deeri*<br/>
+*değer*<br/>
 Anahtar-değer çiftinin değer kısmı. *Değer* türü, TypeName *V*' dir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**`true`** geçerli haritadaki var olan bir *öğenin anahtarı ile eşleşiyorsa ve* bu öğenin değer kısmı *değer*olarak ayarlanmışsa. **`false`** geçerli Haritadaki mevcut bir öğe *anahtarla* eşleşmez ve anahtar ve *değer* *parametreleri anahtar-* değer çiftinde yapılır ve sonra geçerli unorderedmap 'e eklenir.
+**`true`** geçerli haritadaki var olan bir *öğenin anahtarı ile eşleşiyorsa ve* bu öğenin değer kısmı *değer* olarak ayarlanmışsa. **`false`** geçerli Haritadaki mevcut bir öğe *anahtarla* eşleşmez ve anahtar ve *değer* *parametreleri anahtar-* değer çiftinde yapılır ve sonra geçerli unorderedmap 'e eklenir.
 
 ## <a name="unorderedmaplookup-method"></a><a name="lookup"></a> UnorderedMap:: Lookup yöntemi
 
 K türünde belirtilen anahtarla ilişkilendirilen V türü değerini alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 V Lookup(
@@ -202,7 +203,7 @@ UnorderedMap içindeki bir öğeyi bulmak için kullanılan anahtar. *Anahtar* t
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Anahtarla*eşleştirilmiş değer. Dönüş değerinin türü, TypeName *V*.
+*Anahtarla* eşleştirilmiş değer. Dönüş değerinin türü, TypeName *V*.
 
 ## <a name="unorderedmapmapchanged"></a><a name="mapchanged"></a> UnorderedMap:: MapChanged
 
@@ -226,7 +227,7 @@ C# ABD veya proje IMAP 'yi \<K,V> IDictionary olarak Visual Basic Windows çalı
 
 Belirtilen anahtar-değer çiftini UnorderedMap nesnesinden siler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 virtual void Remove(
@@ -256,7 +257,7 @@ Sıralanmamış haritadaki öğelerin sayısı.
 
 UnorderedMap sınıfının yeni bir örneğini başlatır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 UnorderedMap();
@@ -345,7 +346,7 @@ Geçerli UnorderedMap TypeName öğesi.
 *P*<br/>
 Eşit olup olmadıklarını belirleyebilmek için iki anahtarı karşılaştırabilen bir işlev nesnesi. Bu parametre varsayılan olarak [std:: equal_to \<K> ](../standard-library/equal-to-struct.md)olur.
 
-*H*<br/>
+*Olsun*<br/>
 Anahtarlar için karma değer üreten bir işlev nesnesi. Bu parametre, sınıfının desteklediği anahtar türleri için [karma Sınıf 1 ' i](../standard-library/hash-class.md) varsayılan olarak belirler.
 
 *m*<br/>

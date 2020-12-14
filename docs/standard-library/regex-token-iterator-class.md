@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: regex_token_iterator sınıfı'
 title: regex_token_iterator Sınıfı
 ms.date: 09/10/2018
 f1_keywords:
@@ -23,16 +24,16 @@ helpviewer_keywords:
 - std::regex_token_iterator [C++], pointer
 - std::regex_token_iterator [C++], reference
 ms.assetid: a213ba48-8e4e-4b6b-871a-2637acf05f15
-ms.openlocfilehash: 5ada2ad69cbcac15e09968045e54095dfb2623d1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 752ff44864b435100bacb83250a5c6a792cab502
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366408"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243893"
 ---
 # <a name="regex_token_iterator-class"></a>regex_token_iterator Sınıfı
 
-Alt eşleşmeler için iterator sınıfı.
+Alt eşleşmeler için Yineleyici sınıfı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,23 +47,23 @@ class regex_token_iterator
 ## <a name="parameters"></a>Parametreler
 
 *BidIt*\
-Alt eşleşmeler için yineleyici türü.
+Alt eşleşmeler için Yineleyici türü.
 
 *Elem*\
 Eşleşecek öğelerin türü.
 
-*RXözellikleri*\
+*Rxnitelikler*\
 Öğeler için nitelikler sınıfı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu sabit bir ileri yineleme nesnesi açıklar. Kavramsal olarak, bir `regex_iterator` karakter dizisinde normal ifade eşleşmeleri aramak için kullandığı bir nesneyi tutar. Her normal ifade eşleşmesi için depolanan vektördeki `sub_match<BidIt>` `subs` dizin değerleri tarafından tanımlanan alt eşleşmeleri temsil eden tür nesneleri ayıklar.
+Sınıf şablonu, sabit bir ileri yineleyici nesnesi tanımlar. Kavramsal olarak, `regex_iterator` bir karakter dizisindeki normal ifade eşleşmelerini aramak için kullandığı bir nesneyi barındırır. `sub_match<BidIt>` `subs` Her normal ifade eşleşmesi için depolanan vektörde dizin değerleriyle tanımlanan alt eşleşmeleri temsil eden türündeki nesneleri ayıklar.
 
--1'in dizin değeri, önceki normal ifade eşleşmesinin bitiminden hemen sonra başlayan veya önceki normal ifade eşleşmesi yoksa karakter dizisinin başında başlayan ve geçerli normal ifade eşleşmesinin ilk karakterini veya geçerli eşleşme yoksa karakter dizisinin sonuna kadar uzanan ancak dahil olmayan karakter dizisini belirtir. Başka bir `idx` dizin değeri, 'de `it.match[idx]`tutulan yakalama grubunun içeriğini belirler.
+-1 ' in bir dizin değeri, önceki normal ifade eşleşmesinden hemen sonra başlayan veya bir önceki normal ifade eşleşmesi yoksa karakter dizisinin başlangıcında başlayan veya geçerli bir eşleşme yoksa karakter sırasının sonuna kadar olan karakter sırasını belirler. Bu değer, geçerli normal ifade eşleşmesinden sonra ya da herhangi bir geçerli eşleşme yoksa karakter dizisinin sonuna kadar bir kez başlar. Diğer herhangi bir dizin değeri, `idx` içinde tutulan yakalama grubunun içeriğini belirler `it.match[idx]` .
 
 ### <a name="members"></a>Üyeler
 
-|Üye|Varsayılan Değer|
+|Üye|Varsayılan değer|
 |-|-|
 |`private regex_iterator<BidIt, Elem, RXtraits> it`||
 |`private vector<int> subs`||
@@ -72,7 +73,7 @@ Sınıf şablonu sabit bir ileri yineleme nesnesi açıklar. Kavramsal olarak, b
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[regex_token_iterator](#regex_token_iterator)|Yineleyiciyi inşa eder.|
+|[regex_token_iterator](#regex_token_iterator)|Yineleyici oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
@@ -80,24 +81,24 @@ Sınıf şablonu sabit bir ileri yineleme nesnesi açıklar. Kavramsal olarak, b
 |-|-|
 |[difference_type](#difference_type)|Yineleyici farkının türü.|
 |[iterator_category](#iterator_category)|Yineleyici kategorisinin türü.|
-|[pointer](#pointer)|Eşleşme için işaretçi türü.|
-|[Başvuru](#reference)|Bir alt eşleşmeiçin başvuru türü.|
-|[regex_type](#regex_type)|Eşleşecek normal ifadenin türü.|
+|[pointer](#pointer)|Bir eşleşme işaretçisinin türü.|
+|[başvurunun](#reference)|Bir alt eşleşme başvurusunun türü.|
+|[regex_type](#regex_type)|Eşleştirilecek normal ifadenin türü.|
 |[value_type](#value_type)|Alt eşleşme türü.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[işleç!=](#op_neq)|Eşitsizlik için yineleyicileri karşılaştırır.|
-|[işleç*](#op_star)|Belirlenen alt eşleşmeye erişir.|
-|[işleç++](#op_add_add)|Yinelemeyi demler.|
-|[işleç==](#op_eq_eq)|Eşitlik için yineleyicileri karşılaştırır.|
-|[operatör->](#op_arrow)|Belirlenen alt eşleşmeye erişir.|
+|[işleç! =](#op_neq)|Eşitsizlik için yineleyiciler karşılaştırır.|
+|[işlecinde](#op_star)|Belirlenen alt eşleştirmeye erişir.|
+|[işleç + +](#op_add_add)|Yineleyiciyi artırır.|
+|[işleç = =](#op_eq_eq)|Yineleyiciler eşitlik için karşılaştırılmaktadır.|
+|[operator->](#op_arrow)|Belirlenen alt eşleştirmeye erişir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<regex>
+**Üst bilgi:**\<regex>
 
 **Ad alanı:** std
 
@@ -197,7 +198,7 @@ match == aa
 match == z
 ```
 
-## <a name="regex_token_iteratordifference_type"></a><a name="difference_type"></a>regex_token_iterator::difference_type
+## <a name="regex_token_iteratordifference_type"></a><a name="difference_type"></a> regex_token_iterator::d ifference_type
 
 Yineleyici farkının türü.
 
@@ -207,9 +208,9 @@ typedef std::ptrdiff_t difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü için `std::ptrdiff_t`eşanlamlıdır.
+Tür için bir eş anlamlı `std::ptrdiff_t` .
 
-## <a name="regex_token_iteratoriterator_category"></a><a name="iterator_category"></a>regex_token_iterator:iterator_category
+## <a name="regex_token_iteratoriterator_category"></a><a name="iterator_category"></a> regex_token_iterator:: iterator_category
 
 Yineleyici kategorisinin türü.
 
@@ -219,11 +220,11 @@ typedef std::forward_iterator_tag iterator_category;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü için `std::forward_iterator_tag`eşanlamlıdır.
+Tür için bir eş anlamlı `std::forward_iterator_tag` .
 
-## <a name="regex_token_iteratoroperator"></a><a name="op_neq"></a>regex_token_iterator::operator!=
+## <a name="regex_token_iteratoroperator"></a><a name="op_neq"></a> regex_token_iterator:: operator! =
 
-Eşitsizlik için yineleyicileri karşılaştırır.
+Eşitsizlik için yineleyiciler karşılaştırır.
 
 ```cpp
 bool operator!=(const regex_token_iterator& right);
@@ -231,16 +232,16 @@ bool operator!=(const regex_token_iterator& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Doğru*\
-Karşılaştırılacak yineleyici.
+*Right*\
+Karşılaştırılacak Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev `!(*this == right)`döndürür.
+Üye işlevi döndürür `!(*this == right)` .
 
-## <a name="regex_token_iteratoroperator"></a><a name="op_star"></a>regex_token_iterator::operatör*
+## <a name="regex_token_iteratoroperator"></a><a name="op_star"></a> regex_token_iterator:: operator *
 
-Belirlenen alt eşleşmeye erişir.
+Belirlenen alt eşleştirmeye erişir.
 
 ```cpp
 const sub_match<BidIt>& operator*();
@@ -248,11 +249,11 @@ const sub_match<BidIt>& operator*();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, `sub_match<BidIt>` dizin değeri `subs[pos]`tarafından tanımlanan yakalama grubunu temsil eden bir nesne döndürür.
+Üye işlevi, `sub_match<BidIt>` Dizin değeri tarafından tanımlanan yakalama grubunu temsil eden bir nesne döndürür `subs[pos]` .
 
-## <a name="regex_token_iteratoroperator"></a><a name="op_add_add"></a>regex_token_iterator::operator++
+## <a name="regex_token_iteratoroperator"></a><a name="op_add_add"></a> regex_token_iterator:: operator + +
 
-Yinelemeyi demler.
+Yineleyiciyi artırır.
 
 ```cpp
 regex_token_iterator& operator++();
@@ -262,13 +263,13 @@ regex_token_iterator& operator++(int);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Depolanan yineleyici bir `it` dizi sonu yineleyici ise, ilk işleç depolanan değeri `pos` değeri ayarlar `subs.size()` (böylece sıra sonu yineleyicisi yapma). Aksi takdirde operatör depolanan değeri `pos`arta meraya; sonuç, depolanan değeri `subs.size()` `pos` sıfıra ayarlar ve depolanan yineleyiciyi artımlı değere `it`eşitse. Depolanan yineleyiciyi artırarak, dizi sonu yineleyicisine eşit değilse, işleç başka bir şey yapmaz. Aksi takdirde, önceki eşleşmenin sonunda karakter dizisinin sonunda olsaydı işleç depolanan `pos` `subs.size()`değeri . Aksi takdirde, işleç depolanan değeri `pos` `pos == subs.size()` sürekli olarak `subs[pos] == -1` veya (böylece indeks değerlerinden biri -1 ise, yineleyicinin bir sonraki dereference'ının karakter dizisinin kuyruğunu döndürmesini sağlamak için) art arda artış gösterir. Her durumda işleç nesneyi döndürür.
+Saklı Yineleyici `it` bir dizi dizilim ise, ilk operatör depolanan değeri `pos` değerine ayarlar (Bu nedenle, `subs.size()` bir dizi yineleyiciyi yapar). Aksi takdirde işleç depolanan değeri artırır `pos` ; sonuç değere eşitse, `subs.size()` depolanan değeri `pos` sıfıra ayarlar ve depolanan yineleyiciyi arttırır `it` . Saklı yineleyicinin arttırılmaları, bir dizi son yineleyiciye eşit olarak bırakırsa, işleç başka bir şey yapmaz. Aksi takdirde, önceki eşleşmenin sonu karakter dizisinin sonunda ise işleç, saklı değerini `pos` olarak ayarlar `subs.size()` . Aksi takdirde, işleç saklı değeri bir kez veya olarak arttırır `pos` `pos == subs.size()` `subs[pos] == -1` (Bu nedenle, Dizin değerlerinden biri-1 ise, yineleyicinin bir sonraki başvurmasının karakter dizisinin kuyruğunu döndürmesini sağlar). Her durumda, işleç nesneyi döndürür.
 
-İkinci işleç nesnenin bir kopyasını yapar, nesneyi artımlar, sonra kopyayı döndürür.
+İkinci işleç nesnenin bir kopyasını yapar, nesneyi artırır ve sonra kopyayı döndürür.
 
-## <a name="regex_token_iteratoroperator"></a><a name="op_eq_eq"></a>regex_token_iterator::operator==
+## <a name="regex_token_iteratoroperator"></a><a name="op_eq_eq"></a> regex_token_iterator:: operator = =
 
-Eşitlik için yineleyicileri karşılaştırır.
+Yineleyiciler eşitlik için karşılaştırılmaktadır.
 
 ```cpp
 bool operator==(const regex_token_iterator& right);
@@ -276,16 +277,16 @@ bool operator==(const regex_token_iterator& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Doğru*\
-Karşılaştırılacak yineleyici.
+*Right*\
+Karşılaştırılacak Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev `it == right.it && subs == right.subs && pos == right.pos`döndürür.
+Üye işlevi döndürür `it == right.it && subs == right.subs && pos == right.pos` .
 
-## <a name="regex_token_iteratoroperator-gt"></a><a name="op_arrow"></a>regex_token_iterator::operatör-&gt;
+## <a name="regex_token_iteratoroperator-gt"></a><a name="op_arrow"></a> regex_token_iterator:: operator-&gt;
 
-Belirlenen alt eşleşmeye erişir.
+Belirlenen alt eşleştirmeye erişir.
 
 ```cpp
 const sub_match<BidIt> * operator->();
@@ -293,11 +294,11 @@ const sub_match<BidIt> * operator->();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, dizin `sub_match<BidIt>` değeri `subs[pos]`tarafından tanımlanan yakalama grubunu temsil eden bir nesneye bir işaretçi döndürür.
+Üye işlevi, `sub_match<BidIt>` Dizin değeri tarafından tanımlanan yakalama grubunu temsil eden nesnesine bir işaretçi döndürür `subs[pos]` .
 
-## <a name="regex_token_iteratorpointer"></a><a name="pointer"></a>regex_token_iterator::pointer
+## <a name="regex_token_iteratorpointer"></a><a name="pointer"></a> regex_token_iterator::p oınter
 
-Eşleşme için işaretçi türü.
+Bir eşleşme işaretçisinin türü.
 
 ```cpp
 typedef sub_match<BidIt> *pointer;
@@ -305,11 +306,11 @@ typedef sub_match<BidIt> *pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi `sub_match<BidIt>*`ile `BidIt` eş anlamlıdır.
+Türü, için bir eş anlam, `sub_match<BidIt>*` burada `BidIt` şablon parametresidir.
 
-## <a name="regex_token_iteratorreference"></a><a name="reference"></a>regex_token_iterator::referans
+## <a name="regex_token_iteratorreference"></a><a name="reference"></a> regex_token_iterator:: Reference
 
-Bir alt eşleşmeiçin başvuru türü.
+Bir alt eşleşme başvurusunun türü.
 
 ```cpp
 typedef sub_match<BidIt>& reference;
@@ -317,11 +318,11 @@ typedef sub_match<BidIt>& reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi `sub_match<BidIt>&`ile `BidIt` eş anlamlıdır.
+Türü, için bir eş anlam, `sub_match<BidIt>&` burada `BidIt` şablon parametresidir.
 
-## <a name="regex_token_iteratorregex_token_iterator"></a><a name="regex_token_iterator"></a>regex_token_iterator::regex_token_iterator
+## <a name="regex_token_iteratorregex_token_iterator"></a><a name="regex_token_iterator"></a> regex_token_iterator:: regex_token_iterator
 
-Yineleyiciyi inşa eder.
+Yineleyici oluşturur.
 
 ```cpp
 regex_token_iterator();
@@ -342,31 +343,31 @@ regex_token_iterator(BidIt first, BidIt last,
 
 ### <a name="parameters"></a>Parametreler
 
-*Ilk*\
-Eşleşecek sıranın başlangıcı.
+*adı*\
+Eşleştirilecek sıra başlangıcı.
 
-*Son*\
-Eşleşme sırasının sonu.
+*soyadına*\
+Eşleştirilecek sıra sonu.
 
-*Re*\
+*değerlendirmeyi*\
 Eşleşmeler için normal ifade.
 
-*F*\
-Kibrit bayrakları.
+*vadeli*\
+Eşleşmeler için bayraklar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk oluşturucu bir dizi sonu yinelemesi inşa eder.
+İlk Oluşturucu bir dizi son yineleyicisi oluşturur.
 
-İkinci oluşturucu, `it` depolanan yineleyicisi başharfe çevrilmiş `regex_iterator<BidIt, Elem, RXtraits>(first, last, re, f)`, depolanan vektörü `subs` tam olarak `submatch`bir tamsayı tutan, değeri olan ve depolanan değeri `pos` sıfır olan bir nesne yi inşa eder. Not: Ortaya çıkan nesne, her başarılı normal `submatch` ifade eşleşmesi için dizin değeriyle tanımlanan alt eşleşmeyi ayıklar.
+İkinci Oluşturucu, saklı Yineleyici tarafından başlatılan bir nesne oluşturur `it` `regex_iterator<BidIt, Elem, RXtraits>(first, last, re, f)` , saklı vektör, `subs` değeri olan `submatch` ve depolanan değeri sıfır olan bir tam sayı tutar `pos` . Note: elde edilen nesne, `submatch` başarılı olan her normal ifade eşleşmesi için dizin değeri tarafından tanımlanan alt eşleşmeyi ayıklar.
 
-`it` Üçüncü oluşturucu, depolanan yineleyicisi ,depolanan `regex_iterator<BidIt, Elem, RXtraits>(first, last, re, f)`vektörü `subs` oluşturucu bağımsız değişkeninin `submatches`bir kopyasını tutan ve `pos` depolanan değeri sıfır olan bir nesne yi inşa eder.
+Üçüncü Oluşturucu, saklı Yineleyici `it` `regex_iterator<BidIt, Elem, RXtraits>(first, last, re, f)` `subs` bir Oluşturucu bağımsız değişkeninin kopyasını tutan `submatches` ve depolanmış değeri `pos` sıfır olan bir nesne oluşturur.
 
-Dördüncü oluşturucu, `it` depolanan yineleyicisi başharfe çevrilen `regex_iterator<BidIt, Elem, RXtraits>(first, last, re, f)`, depolanan vektörü `subs` oluşturucu bağımsız değişkeninişaret `N` `submatches`ettiği `pos` değerleri tutan ve depolanan değeri sıfır olan bir nesne inşa eder.
+Dördüncü Oluşturucu, saklı Yineleyici, `it` `regex_iterator<BidIt, Elem, RXtraits>(first, last, re, f)` `subs` `N` Oluşturucu bağımsız değişkeni tarafından işaret edilen değerleri tutan `submatches` ve depolanmış değeri `pos` sıfır olan depolanan bir nesne oluşturur.
 
-## <a name="regex_token_iteratorregex_type"></a><a name="regex_type"></a>regex_token_iterator:regex_type
+## <a name="regex_token_iteratorregex_type"></a><a name="regex_type"></a> regex_token_iterator:: regex_type
 
-Eşleşecek normal ifadenin türü.
+Eşleştirilecek normal ifadenin türü.
 
 ```cpp
 typedef basic_regex<Elem, RXtraits> regex_type;
@@ -374,9 +375,9 @@ typedef basic_regex<Elem, RXtraits> regex_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Typedef için `basic_regex<Elem, RXtraits>`eşanlamlıdır.
+TypeDef, için bir eş anlamlı `basic_regex<Elem, RXtraits>` .
 
-## <a name="regex_token_iteratorvalue_type"></a><a name="value_type"></a>regex_token_iterator:value_type
+## <a name="regex_token_iteratorvalue_type"></a><a name="value_type"></a> regex_token_iterator:: value_type
 
 Alt eşleşme türü.
 
@@ -386,15 +387,15 @@ typedef sub_match<BidIt> value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi `sub_match<BidIt>`ile `BidIt` eş anlamlıdır.
+Türü, için bir eş anlam, `sub_match<BidIt>` burada `BidIt` şablon parametresidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [\<regex>](../standard-library/regex.md)\
-[regex_constants Sınıfı](../standard-library/regex-constants-class.md)\
-[regex_error Sınıfı](../standard-library/regex-error-class.md)\
-[\<regex> fonksiyonları](../standard-library/regex-functions.md)\
+[regex_constants sınıfı](../standard-library/regex-constants-class.md)\
+[regex_error sınıfı](../standard-library/regex-error-class.md)\
+[\<regex> lerdir](../standard-library/regex-functions.md)\
 [regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)\
-[\<regex> operatörleri](../standard-library/regex-operators.md)\
+[\<regex> işletmenlerinin](../standard-library/regex-operators.md)\
 [regex_traits Sınıfı](../standard-library/regex-traits-class.md)\
-[\<regex> typedefs](../standard-library/regex-typedefs.md)
+[\<regex> tür tanımları](../standard-library/regex-typedefs.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: OLE sunucu sınıfları'
 title: OLE Sunucu Sınıfları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - COM components, classes [MFC]
 - component classes [MFC]
 ms.assetid: 8e9b67a2-c0ff-479c-a8d6-19b36c5e6fc6
-ms.openlocfilehash: 06f5cf0985756506e42c7ad9fde24641b5a0ce93
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a2f60f148d6a24323ca6546e633c30103b315ee2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619862"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243997"
 ---
 # <a name="ole-server-classes"></a>OLE Sunucu Sınıfları
 
@@ -20,10 +21,10 @@ Bu sınıflar sunucu uygulamaları tarafından kullanılır. Sunucu belgeleri ka
 
 Sınıfı, bir belgenin `COleServerItem` veya başka bir belgeye katıştırılabilen veya ile bağlantılı olabilecek bir belge veya kısmını temsil eder.
 
-`COleIPFrameWnd`ve `COleResizeBar` nesne bir kapsayıcıda iken yerinde düzenleme desteği ve `COleTemplateServer` diğer UYGULAMALARDAN gelen OLE nesnelerinin düzenlenebilmesi için belge/görünüm çiftleri oluşturulmasını destekler.
+`COleIPFrameWnd` ve `COleResizeBar` nesne bir kapsayıcıda iken yerinde düzenleme desteği ve `COleTemplateServer` diğer UYGULAMALARDAN gelen OLE nesnelerinin düzenlenebilmesi için belge/görünüm çiftleri oluşturulmasını destekler.
 
 [Cotaserverdoc](reference/coleserverdoc-class.md)<br/>
-Sunucu-uygulama belge sınıfları için temel sınıf olarak kullanılır. `COleServerDoc`nesneler, nesneleri olan etkileşimler aracılığıyla sunucu desteği toplu sağlar `COleServerItem` . Görsel düzen özelliği, sınıf kitaplığının belge/görünüm mimarisi kullanılarak sağlanır.
+Sunucu-uygulama belge sınıfları için temel sınıf olarak kullanılır. `COleServerDoc` nesneler, nesneleri olan etkileşimler aracılığıyla sunucu desteği toplu sağlar `COleServerItem` . Görsel düzen özelliği, sınıf kitaplığının belge/görünüm mimarisi kullanılarak sağlanır.
 
 [CDocItem](reference/cdocitem-class.md)<br/>
 Ve soyut taban sınıfı `COleClientItem` `COleServerItem` . Sınıfından türetilmiş sınıfların nesneleri `CDocItem` , belgelerin parçalarını temsil eder.

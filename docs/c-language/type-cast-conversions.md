@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Type-Cast dönüşümler'
 title: Tür Atama Dönüştürmeleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - type casts [C++], about type-cast conversion
 - type-cast conversions [C++]
 ms.assetid: 57ab5902-f12f-4326-a2f6-6282f1d4025a
-ms.openlocfilehash: cc2b6d87d6fedf8d36373c901cdb6a6ba8b5f0e7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dfa3e54320c416e4bd69cca06d2677def6244247
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231461"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242918"
 ---
 # <a name="type-cast-conversions"></a>Tür Atama Dönüştürmeleri
 
@@ -29,7 +30,7 @@ Türleri açıkça dönüştürmek için tür atamaları kullanabilirsiniz.
 *tür adı*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*belirtici niteleyicisi-List* *abstract-declarator*<sub>opt</sub>
 
-*Tür-adı* bir tür ve *atama ifadesi* bu türe dönüştürülecek bir değerdir. Tür dönüştürme içeren bir ifade, l değeri değildir. *Cast ifadesi* *tür-adı*türünde bir değişkene atanmış olmasına rağmen dönüştürülür. Atamalar için dönüştürme kuralları ( [atama dönüştürmelerinde](../c-language/assignment-conversions.md)özetlenmiştir) tür yayınlarına de uygulanır. Aşağıdaki tabloda, verilen herhangi bir türe tür atama yapılabilir türler gösterilmektedir.
+*Tür-adı* bir tür ve *atama ifadesi* bu türe dönüştürülecek bir değerdir. Tür dönüştürme içeren bir ifade, l değeri değildir. *Cast ifadesi* *tür-adı* türünde bir değişkene atanmış olmasına rağmen dönüştürülür. Atamalar için dönüştürme kuralları ( [atama dönüştürmelerinde](../c-language/assignment-conversions.md)özetlenmiştir) tür yayınlarına de uygulanır. Aşağıdaki tabloda, verilen herhangi bir türe tür atama yapılabilir türler gösterilmektedir.
 
 ### <a name="legal-type-casts"></a>Yasal tür yayınları
 
@@ -56,4 +57,4 @@ Bir ifadeyi **`void`** Cast ile türüne dönüştürebilirsiniz, ancak sonuç i
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Tür dönüştürmeleri](../c-language/type-conversions-c.md)
+[Tür Dönüştürmeleri](../c-language/type-conversions-c.md)

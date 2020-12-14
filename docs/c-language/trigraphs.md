@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Trigraf'
 title: Trigraflar
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 - ??! trigraph
 - ??' trigraph
 ms.assetid: 617f76ec-b8e8-4cfe-916c-4bc32cbd9aeb
-ms.openlocfilehash: 3ed8849656ac57f4774825294aba7bb41a050eee
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 70844472de698b581f33adea5dd6b6fa5cdfc8fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227757"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243074"
 ---
 # <a name="trigraphs"></a>Trigraflar
 
 C kaynak programlarının kaynak karakter kümesi 7 bit ASCII karakter kümesi içinde yer alır, ancak ISO 646-1983 Sabit Kod Kümesi'nin bir üst kümesidir. Trigraf dizileri, C programlarının yalnızca ISO (Uluslararası Standartlar Enstitüsü) Sabit Kod Kümesi kullanarak yazılmasına izin verir. Trigraflar, derleyicinin karşılık gelen noktalama karakterleriyle değiştirdiği üç karakterli dizilerdir (birbirini izleyen iki soru işareti ile yazılır). Trigrafları, C kaynak dosyalarında bazı noktalama karakterleri için uygun grafik sunumlar içermeyen bir karakter kümesiyle kullanabilirsiniz.
 
-C++ 17, dilin üç aylık grafiğini kaldırır. Uygulamalar, fiziksel kaynak dosyasından *temel kaynak karakter kümesine*uygulama tanımlı eşlemenin bir parçası olarak üç aylık grafikleri desteklemeye devam edebilir, ancak standart uygulamaları bunu yapamıyor gibi teşvik eder. C++ 14 aracılığıyla trigraf C 'de olduğu gibi desteklenir.
+C++ 17, dilin üç aylık grafiğini kaldırır. Uygulamalar, fiziksel kaynak dosyasından *temel kaynak karakter kümesine* uygulama tanımlı eşlemenin bir parçası olarak üç aylık grafikleri desteklemeye devam edebilir, ancak standart uygulamaları bunu yapamıyor gibi teşvik eder. C++ 14 aracılığıyla trigraf C 'de olduğu gibi desteklenir.
 
 Visual C++ Üçlü grafik değişimini desteklemeye devam eder, ancak varsayılan olarak devre dışıdır. Üçlü grafik değişimini etkinleştirme hakkında daha fazla bilgi için bkz. [ `/Zc:trigraphs` (trigraf değiştirme)](../build/reference/zc-trigraphs-trigraphs-substitution.md).
 
@@ -64,5 +65,5 @@ Bu `printf` deyiminde, ikinci soru işaretinin önündeki bir ters eğik çizgi 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[`/Zc:trigraphs`(Trigraf değiştirme)](../build/reference/zc-trigraphs-trigraphs-substitution.md)<br/>
+[`/Zc:trigraphs` (Trigraf değiştirme)](../build/reference/zc-trigraphs-trigraphs-substitution.md)<br/>
 [C tanımlayıcıları](../c-language/c-identifiers.md)

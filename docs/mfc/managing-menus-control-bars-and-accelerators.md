@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: menüleri, denetim çubuklarını ve hızlandırıcıları yönetme'
 title: Menüleri, Denetim Çubuklarını ve Hızlandırıcıları Yönetme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - frame windows [MFC], updating
 - status bars [MFC], updating
 ms.assetid: 97ca1997-06df-4373-b023-4f7ecd81047b
-ms.openlocfilehash: 9945dc68ffd46bbf5e114a79467299e4b67e3659
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 21c3791bff00c33db50efbe391863169606fde80
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621322"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244179"
 ---
 # <a name="managing-menus-control-bars-and-accelerators"></a>Menüleri, Denetim Çubuklarını ve Hızlandırıcıları Yönetme
 
@@ -25,7 +26,7 @@ ms.locfileid: "84621322"
 
 ## <a name="managing-menus"></a>Menüleri yönetme
 
-Çerçeve penceresi, Kullanıcı arabirimi [nesnelerini güncelleştirme](how-to-update-user-interface-objects.md)bölümünde açıklanan ON_UPDATE_COMMAND_UI mekanizmasını kullanarak Kullanıcı arabirimi öğelerini güncelleştirmede yer alır. Araç çubuklarındaki ve diğer denetim çubuklarındaki düğmeler, boşta döngüsü sırasında güncellenir. Menü çubuğundaki açılan menülerde menü öğeleri, menü kapatılmadan hemen önce güncelleştirilir.
+Çerçeve penceresi, [User-Interface nesneleri güncelleştirme](how-to-update-user-interface-objects.md)bölümünde açıklanan ON_UPDATE_COMMAND_UI mekanizmasını kullanarak Kullanıcı arabirimi öğelerini güncelleştirmede yer alır. Araç çubuklarındaki ve diğer denetim çubuklarındaki düğmeler, boşta döngüsü sırasında güncellenir. Menü çubuğundaki açılan menülerde menü öğeleri, menü kapatılmadan hemen önce güncelleştirilir.
 
 MDI uygulamaları için, MDI çerçevesi penceresi menü çubuğunu ve resim yazısını yönetir. Bir MDI çerçevesi penceresi, etkin bir MDI alt pencereleri olmadığında menü çubuğu olarak kullanılan bir varsayılan menünün sahibidir. Etkin alt öğeler olduğunda, MDI çerçeve penceresinin menü çubuğu, etkin MDI alt penceresi için olan menü tarafından alınır. Bir MDI uygulaması, grafik ve çalışma sayfası belgeleri gibi birden çok belge türünü destekliyorsa, her tür menü çubuğuna kendi menülerini koyar ve ana çerçeve penceresinin başlığını değiştirir.
 

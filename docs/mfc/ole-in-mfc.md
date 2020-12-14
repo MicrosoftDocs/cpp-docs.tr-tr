@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. MFC 'de OLE
 title: MFC'de OLE
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - applications [OLE], about OLE
 - OLE component object model (COM)
 ms.assetid: 5193479d-1239-4697-aea4-e82f92c707ab
-ms.openlocfilehash: 529b6d0eaedaee200da547ef9ed980aab51ea233
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 125a2ad8e900747d859c03b57df33f2e7e5f1c28
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622167"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244101"
 ---
 # <a name="ole-in-mfc"></a>MFC'de OLE
 
@@ -56,13 +57,13 @@ OLE ile kopyalama ve yapıştırmayı kullanmayı açıklar.
 [OLE menüleri ve kaynakları](menus-and-resources-ole.md)<br/>
 MFC OLE belge uygulamalarında menülerin ve kaynakların kullanımını açıklar.
 
-[Kayıt](registration.md)<br/>
+[Kaydını](registration.md)<br/>
 Sunucu yüklemeyi ve başlatmayı açıklar.
 
 [Sunucular](servers.md)<br/>
 Kapsayıcı uygulamalar tarafından kullanılmak üzere OLE öğeleri (veya bileşenleri) oluşturmayı açıklar.
 
-[İzleyicileri](trackers.md)<br/>
+[İzleyiciler](trackers.md)<br/>
 `CRectTracker`KULLANıCıLARıN OLE istemci öğeleriyle etkileşime geçmesini sağlamak için grafiksel bir arabirim sağlayan sınıfı hakkında bilgi sağlar.
 
 ## <a name="related-sections"></a>İlgili Bölümler

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Case (C++)'
 title: Case (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - case attribute
 ms.assetid: 6fb883c3-0526-4932-a901-b4564dcaeb7d
-ms.openlocfilehash: e1d3c113c42be99a8475c5a667b7ea6ed9583d92
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d851e662387425ca94cc6a03877babf011c7028b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838912"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247442"
 ---
 # <a name="case-c"></a>durum (C++)
 
 İçinde [switch_type](switch-type.md) özniteliğiyle kullanılır **`union`** .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ case(value) ]
@@ -25,7 +26,7 @@ ms.locfileid: "88838912"
 
 #### <a name="parameters"></a>Parametreler
 
-*deeri*<br/>
+*değer*<br/>
 İşleme sağlamak istediğiniz olası bir giriş değeri. **Değer** türü aşağıdaki türlerden biri olabilir:
 
 - **`int`**
@@ -67,8 +68,8 @@ struct SizedValue2 {
 
 | Öznitelik bağlamı | Değer |
 |-|-|
-|**Şunlara uygulanır**|**`class`** Veya üyesi**`struct`**|
-|**Tekrarlanabilir**|Hayır|
+|**Şunlara uygulanır**|**`class`** Veya üyesi **`struct`**|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

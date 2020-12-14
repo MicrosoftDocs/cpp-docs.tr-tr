@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: görüntü düzenleme'
 title: 'Nasıl yapılır: görüntü düzenleme'
 ms.date: 02/15/2019
 f1_keywords:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - Image editor [C++], Properties window
 - Properties window, image editor
 ms.assetid: 8b6ce4ad-eba1-4ece-86ba-cea92c3edff2
-ms.openlocfilehash: ecfd69594c05c210743e0c22c804a4713a8229ef
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 8d03e53ccdcb7978b1708765483cabac281ae08b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509632"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247156"
 ---
 # <a name="how-to-edit-an-image"></a>Nasıl yapılır: görüntü düzenleme
 
@@ -75,13 +76,13 @@ Geçerli seçimin dışında bir görüntü seçin. Seçim kenarlığı odağı 
 
 ### <a name="to-edit-parts-of-an-image"></a>Bir görüntünün parçalarını düzenlemek için
 
-Seçimin tamamı görüntünün tamamının mı yoksa yalnızca bir parçası mi olduğunu seçerek, bir [seçimde](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)standart Düzenle işlemleri yapabilirsiniz — kesme, kopyalama, temizleme ve taşıma —. **Resim Düzenleyicisi** **Windows panosunu**kullandığından, **Görüntü Düzenleyicisi** ve Windows için diğer uygulamalar arasında görüntü aktarabilirsiniz.
+Seçimin tamamı görüntünün tamamının mı yoksa yalnızca bir parçası mi olduğunu seçerek, bir [seçimde](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)standart Düzenle işlemleri yapabilirsiniz — kesme, kopyalama, temizleme ve taşıma —. **Resim Düzenleyicisi** **Windows panosunu** kullandığından, **Görüntü Düzenleyicisi** ve Windows için diğer uygulamalar arasında görüntü aktarabilirsiniz.
 
 Ayrıca, resmin tamamını veya yalnızca bir kısmını içerip içermediğini seçerek seçimi yeniden boyutlandırabilirsiniz.
 
 #### <a name="to-cut-the-current-selection-and-move-it-to-the-clipboard"></a>Geçerli seçimi kesmek ve panoya taşımak için
 
-Menü **Düzenle**  >  **Kes**sayfasına gidin.
+Menü **Düzenle**  >  **Kes** sayfasına gidin.
 
 #### <a name="to-copy-the-selection"></a>Seçimi kopyalamak için
 
@@ -108,7 +109,7 @@ Menü **Düzenle**  >  **Sil**' e gidin.
    Seçimin özgün alanı geçerli arka plan rengiyle doldurulmuştur.
 
 > [!NOTE]
-> **Kesme**, **kopyalama**, **Yapıştırma**ve **silme** komutlarına **kaynak görünümü** penceresine sağ tıklayarak erişebilirsiniz.
+> **Kesme**, **kopyalama**, **Yapıştırma** ve **silme** komutlarına **kaynak görünümü** penceresine sağ tıklayarak erişebilirsiniz.
 
 #### <a name="to-move-the-selection"></a>Seçimi taşımak için
 
@@ -124,14 +125,14 @@ Seçim ile çizim hakkında daha fazla bilgi için bkz. [özel fırça oluşturm
 
 Özgün görüntünün ayna görüntüsünü oluşturmak için bir görüntüyü çevirebilir veya döndürebilirsiniz, görüntüyü ters döndürerek veya görüntüyü bir seferde doğru 90 derece döndürebilir.
 
-- Görüntüyü yatayda (ayna görüntüsünü) çevirmek için menü **görüntüsünü**  >  **Yatay Çevir**sayfasına gidin.
+- Görüntüyü yatayda (ayna görüntüsünü) çevirmek için menü **görüntüsünü**  >  **Yatay Çevir** sayfasına gidin.
 
 - Görüntüyü dikey olarak çevirmek için (ters çevir ' i açın) menü **resmi**  >  **Dikey Çevir**' e gidin.
 
-- Görüntü 90 derece döndürmek için menü **görüntüsü**  >  **90 derece döndür**bölümüne gidin.
+- Görüntü 90 derece döndürmek için menü **görüntüsü**  >  **90 derece döndür** bölümüne gidin.
 
    > [!NOTE]
-   > Bu komutlar için [Hızlandırıcı (kısayol) tuşlarını](../windows/accelerator-keys-image-editor-for-icons.md) da kullanabilir veya kısayol menüsünden komutlara erişebilirsiniz ( **görüntü Düzenleyicinizde**görüntü dışında seçim yapabilirsiniz).
+   > Bu komutlar için [Hızlandırıcı (kısayol) tuşlarını](../windows/accelerator-keys-image-editor-for-icons.md) da kullanabilir veya kısayol menüsünden komutlara erişebilirsiniz ( **görüntü Düzenleyicinizde** görüntü dışında seçim yapabilirsiniz).
 
 ### <a name="to-resize-an-image"></a>Bir görüntüyü yeniden boyutlandırmak için
 
@@ -200,23 +201,23 @@ Geliştirme ortamındaki görüntüleri, tıpkı herhangi bir grafik uygulaması
 
 [Özellikler penceresi](/visualstudio/ide/reference/properties-window)kullanarak bir görüntünün özelliklerini ayarlayabilir veya değiştirebilirsiniz.
 
-1. Görüntüyü **görüntü düzenleyicisinde**açın.
+1. Görüntüyü **görüntü düzenleyicisinde** açın.
 
 1. **Özellikler** penceresinde, resminizin tüm özelliklerini veya tüm özelliklerini değiştirin.
 
    |Özellik|Açıklama|
    |--------------|-----------------|
-   |**Renkler**|Görüntünün renk düzenini belirtir. **Tek renkli**, **16**veya **256**veya **gerçek renk**' i seçin.<br/><br/>Görüntüyü 16 renkli bir paletle zaten çizdiyseniz, **tek renkli** seçildiğinde görüntüdeki renkler için siyah ve beyaz değişimler de vardır. Karşıtlık her zaman korunmaz: Örneğin, kırmızı ve yeşil bitişik alanların her ikisi de siyaha dönüştürülür.|
-   |**Kısaltın**|Görüntü dosyasının adını belirtir.<br/><br/>Varsayılan olarak, Visual Studio varsayılan kaynak tanımlayıcısından (IDB_BITMAP1) ilk dört karakteri ("IDB_") kaldırarak ve uygun uzantıyı ekleyerek oluşturulan bir temel dosya adı atar. Bu örnekteki görüntünün dosya adı *BITMAP1.bmp*olacaktır. *MYBITMAP1.bmp*yeniden adlandırabilirsiniz.|
-   |**Yükseklik**|Resmin yüksekliğini (piksel cinsinden) ayarlar. Varsayılan değer 48 ' dir.<br/><br/>Görüntü kırpılmış veya var olan görüntünün altına boş bir boşluk eklenir.|
+   |**Renkler**|Görüntünün renk düzenini belirtir. **Tek renkli**, **16** veya **256** veya **gerçek renk**' i seçin.<br/><br/>Görüntüyü 16 renkli bir paletle zaten çizdiyseniz, **tek renkli** seçildiğinde görüntüdeki renkler için siyah ve beyaz değişimler de vardır. Karşıtlık her zaman korunmaz: Örneğin, kırmızı ve yeşil bitişik alanların her ikisi de siyaha dönüştürülür.|
+   |**Kısaltın**|Görüntü dosyasının adını belirtir.<br/><br/>Varsayılan olarak, Visual Studio varsayılan kaynak tanımlayıcısından (IDB_BITMAP1) ilk dört karakteri ("IDB_") kaldırarak ve uygun uzantıyı ekleyerek oluşturulan bir temel dosya adı atar. Bu örnekteki görüntünün dosya adı *BITMAP1.bmp* olacaktır. *MYBITMAP1.bmp* yeniden adlandırabilirsiniz.|
+   |**Height**|Resmin yüksekliğini (piksel cinsinden) ayarlar. Varsayılan değer 48 ' dir.<br/><br/>Görüntü kırpılmış veya var olan görüntünün altına boş bir boşluk eklenir.|
    |**ID**|Kaynağın tanımlayıcısını ayarlar.<br/><br/>Bir görüntü için, varsayılan olarak Microsoft Visual Studio bir serideki bir sonraki kullanılabilir tanımlayıcıyı atar: IDB_BITMAP1, IDB_BITMAP2, vb. Simgeler ve imleçler için benzer adlar kullanılır.|
    |**İnizdeki**|Renk özelliklerini değiştirir.<br/><br/>Bir renk seçmek ve [Özel Renk Seçici iletişim kutusunu](./image-editor-for-icons.md)göstermek için çift tıklayın. Uygun metin kutularına RGB veya HSL değerlerini yazarak rengi tanımlayın.|
-   |**SaveCompressed**|Resmin sıkıştırılmış bir biçimde olup olmadığını gösterir. Bu özellik salt okunur durumdadır.<br/><br/>Visual Studio, resimleri sıkıştırılmış bir biçimde kaydetmenize izin vermez. bu nedenle, Visual Studio 'da oluşturulan tüm görüntüler için bu özellik **false**olur. Visual Studio 'da sıkıştırılmış bir görüntü açarsanız (başka bir programda oluşturulan), bu özellik **true**olur. Visual Studio 'Yu kullanarak sıkıştırılmış bir görüntü kaydederseniz, sıkıştırması kaldırılır ve bu özellik **false**değerine geri döndürülür.|
-   |**Genişlik**|Resmin genişliğini (piksel cinsinden) ayarlar. Bit eşlemler için varsayılan değer 48 ' dir.<br/><br/>Görüntü kırpılmış veya mevcut görüntünün sağına boş bir boşluk eklenir.|
+   |**SaveCompressed**|Resmin sıkıştırılmış bir biçimde olup olmadığını gösterir. Bu özellik salt okunur durumdadır.<br/><br/>Visual Studio, resimleri sıkıştırılmış bir biçimde kaydetmenize izin vermez. bu nedenle, Visual Studio 'da oluşturulan tüm görüntüler için bu özellik **false** olur. Visual Studio 'da sıkıştırılmış bir görüntü açarsanız (başka bir programda oluşturulan), bu özellik **true** olur. Visual Studio 'Yu kullanarak sıkıştırılmış bir görüntü kaydederseniz, sıkıştırması kaldırılır ve bu özellik **false** değerine geri döndürülür.|
+   |**Width**|Resmin genişliğini (piksel cinsinden) ayarlar. Bit eşlemler için varsayılan değer 48 ' dir.<br/><br/>Görüntü kırpılmış veya mevcut görüntünün sağına boş bir boşluk eklenir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-Hiçbiri
+Yok
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

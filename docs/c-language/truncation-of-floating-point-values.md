@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Floating-Point değerlerinin kesilmesi'
 title: Kayan Nokta Değerlerinin Kesilmesi
 ms.date: 11/04/2016
 helpviewer_keywords:
 - floating-point numbers, truncation
 ms.assetid: 051a6e22-c636-4af8-9ac4-40160f4affca
-ms.openlocfilehash: 3aeb6ab1063d0782a6c5d297e387f3810c2e136a
-ms.sourcegitcommit: 9266fc76ac2e872e35a208b4249660dfdfc87cba
+ms.openlocfilehash: f2f0a8202239df14c10bc64a78c1a587f0200119
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81480876"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243035"
 ---
 # <a name="truncation-of-floating-point-values"></a>Kayan Nokta Değerlerinin Kesilmesi
 
@@ -19,4 +20,4 @@ Bir yetersiz nokta oluştuğunda, kayan nokta değişkeninin değeri sıfıra yu
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Matematiği](../c-language/floating-point-math.md)
+[Kayan nokta matematik](../c-language/floating-point-math.md)

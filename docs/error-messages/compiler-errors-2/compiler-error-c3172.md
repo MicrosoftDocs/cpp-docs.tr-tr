@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3172'
 title: Derleyici hatası C3172
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3172
 ms.assetid: 1834e2fd-6036-4c33-aff2-b51bc7c99441
-ms.openlocfilehash: ca0eab35f6e60d81a324156905619ceb7ace8830
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: d8ce88960e725266723c3c37cd9bfbbbd342027b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508284"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242177"
 ---
 # <a name="compiler-error-c3172"></a>Derleyici hatası C3172
 
 ' module_name ': bir projede farklı idl_module öznitelikleri belirtilemez
 
-[idl_module](../../windows/attributes/idl-module.md) `dllname` derleme içindeki dosyaların ikisi de aynı ada sahip ancak farklı veya parametrelere sahip idl_module öznitelikleri `version` bulundu. `idl_module`Her derleme için yalnızca bir benzersiz öznitelik belirtilebilir.
+[](../../windows/attributes/idl-module.md) `dllname` derleme içindeki dosyaların ikisi de aynı ada sahip ancak farklı veya parametrelere sahip idl_module öznitelikleri `version` bulundu. `idl_module`Her derleme için yalnızca bir benzersiz öznitelik belirtilebilir.
 
 Aynı `idl_module` öznitelikler birden fazla kaynak kodu dosyasında belirtilebilir.
 

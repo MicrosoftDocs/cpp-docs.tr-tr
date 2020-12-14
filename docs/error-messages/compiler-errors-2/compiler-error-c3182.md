@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3182'
 title: Derleyici hatası C3182
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3182
 ms.assetid: f3681266-308e-4990-a979-8eef8920e186
-ms.openlocfilehash: c6b183eb30dd0e617e69ab9aac58bea5cb721591
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d4cf5d86a553a597636c09f72ff3a068e2a6b9b2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761666"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242034"
 ---
 # <a name="compiler-error-c3182"></a>Derleyici hatası C3182
 

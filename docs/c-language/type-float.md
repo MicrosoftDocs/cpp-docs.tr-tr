@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi: float yazın'
 title: Tür float
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - IEEE floating-point representation
 - lengths, exponent
 ms.assetid: 706e332b-17a0-4a30-b7d8-5d6cd372524b
-ms.openlocfilehash: 61bfd094801165e0c3e41e5de6fcbfb0c5e59504
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4d2245db663885d084ee231d10b7dc944016ea4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62346333"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242840"
 ---
 # <a name="type-float"></a>Tür float
 
@@ -27,7 +28,7 @@ Kayan nokta numaraları IEEE (elektrik ve Elektronik Mühendisleri Enstitüsü) 
 
 Uygulamanızın ihtiyaçlarına bağlı olarak, değişkenleri float veya Double olarak bildirebilirsiniz. İki tür arasındaki asıl farklılıklar, temsil ettikleri öneme, gereken depolama alanını ve bunların aralığını temsil eder. Aşağıdaki tabloda, anlam ve depolama gereksinimleri arasındaki ilişki gösterilmektedir.
 
-### <a name="floating-point-types"></a>Kayan nokta türleri
+### <a name="floating-point-types"></a>Floating-Point türleri
 
 |Tür|Önemli basamaklar|Bayt sayısı|
 |----------|------------------------|---------------------|
@@ -51,9 +52,9 @@ Mantis, 1 ' den büyük veya buna eşit ve 2 ' den küçük bir ikili kesir olar
 
 Yalnızca açıklanan depolama yöntemi yerine, kayan nokta paketi, ikili kayan nokta numaralarını, Normalleştirilmemiş sayı olarak saklayabilir. "Normalleştirilmemiş sayılar", Mantis 'in en önemli bitinin 0 olduğu ayrılmış üs değerleri olan sıfır olmayan kayan noktalı sayılardır. Denormallanmış biçimi kullanarak, kayan noktalı bir sayının aralığı duyarlık maliyetinde genişletilebilir. Kayan noktalı bir sayının normalleştirilmiş veya Normalleştirilmemiş biçimde temsil edilip edilmeyeceğini kontrol etmezsiniz; kayan nokta paketi temsili belirler. Değer, Normalleştirilmemiş bir biçimde gösterilebilen en düşük değerden daha küçük hale gelinceye kadar, kayan nokta paketi hiçbir şekilde hiç bir şekilde kullanılamaz.
 
-Aşağıdaki tabloda her kayan nokta türünün değişkenlerinde depolayabileceği minimum ve maksimum değerler gösterilmektedir. Bu tabloda listelenen değerler yalnızca normalleştirilmiş kayan nokta numaraları için geçerlidir; yoğun kayan noktalı sayıların en küçük değeri daha küçüktür. 80*x*87 yazmaçlarında tutulan sayıların her zaman 80-bit normalleştirilmiş biçimde temsil edileceğini unutmayın; sayılar yalnızca 32 bit veya 64 bit kayan nokta değişkenlerinde (float ve Type Long türündeki değişkenler) depolanırken, Normalleştirilmemiş biçimde gösterilebilir.
+Aşağıdaki tabloda her kayan nokta türünün değişkenlerinde depolayabileceği minimum ve maksimum değerler gösterilmektedir. Bu tabloda listelenen değerler yalnızca normalleştirilmiş kayan nokta numaraları için geçerlidir; yoğun kayan noktalı sayıların en küçük değeri daha küçüktür. 80 *x* 87 yazmaçlarında tutulan sayıların her zaman 80-bit normalleştirilmiş biçimde temsil edileceğini unutmayın; sayılar yalnızca 32 bit veya 64 bit kayan nokta değişkenlerinde (float ve Type Long türündeki değişkenler) depolanırken, Normalleştirilmemiş biçimde gösterilebilir.
 
-### <a name="range-of-floating-point-types"></a>Kayan nokta türleri aralığı
+### <a name="range-of-floating-point-types"></a>Floating-Point türleri aralığı
 
 |Tür|En küçük değer|En büyük değer|
 |----------|-------------------|-------------------|
@@ -72,7 +73,7 @@ long double f_longer;
 f_short = f_short * f_long;
 ```
 
-Yukarıdaki örnekte, değişkeni `f_short` , Double ve çarpılarak `f_long`türüne yükseltilir; Sonuç olarak `f_short`, kendisine atanmadan önce float türüne yuvarlanır.
+Yukarıdaki örnekte, değişkeni `f_short` ile Double ve çarpılacak şekilde yükseltilir `f_long` ; sonuç, atanmadan önce float türüne yuvarlanır `f_short` .
 
 Aşağıdaki örnekte (önceki örnekteki bildirimleri kullanan) aritmetik (32-bit), değişkenler üzerinde float (bit) duyarlıkta yapılır; sonuç daha sonra Double türüne yükseltilir:
 

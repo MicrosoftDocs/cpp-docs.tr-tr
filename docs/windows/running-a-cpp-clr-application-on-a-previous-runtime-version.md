@@ -1,5 +1,6 @@
 ---
-title: Önceki çalışma zamanı sürümünde C++ / clr uygulaması çalıştırma
+description: 'Daha fazla bilgi edinin: önceki çalışma zamanı sürümünde C++/CLR uygulaması çalıştırma'
+title: Önceki Çalışma Zamanı Sürümünde C++ /clr Uygulaması Çalıştırma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - applications [C++], runtime version specified
@@ -11,23 +12,23 @@ helpviewer_keywords:
 - common language runtime [C++], version specified
 - deploying applications [C++], runtime version specified
 ms.assetid: 940171b7-6937-4b14-8e87-c199e23f4f2e
-ms.openlocfilehash: 9b26439d389cb4035541cedde8a5b5cf50682098
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3b1bbc2906e4b347bb954c799cb9e412202a17ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388377"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247221"
 ---
 # <a name="running-a-c-clr-application-on-a-previous-runtime-version"></a>Önceki Çalışma Zamanı Sürümünde C++ /clr Uygulaması Çalıştırma
 
-Aksi belirtilmediği sürece, C++, .NET Framework uygulamasını uygulamayı oluşturmak için derleyicinin kullandığı ortak dil çalışma zamanı (CLR) sürüm üzerinde çalıştırmak için oluşturulmuştur. Ancak, bir sürüm gerekli işlevselliği sağlayan başka bir sürüm üzerinde çalıştırmak için çalışma zamanı için oluşturulmuş bir .exe uygulama mümkündür.
+Aksi belirtilmediği takdirde, bir C++ .NET Framework uygulaması derleyicinin uygulamayı derlemek için kullandığı ortak dil çalışma zamanı (CLR) sürümünde çalışacak şekilde oluşturulmuştur. Ancak, bir çalışma zamanının bir sürümü için oluşturulan bir. exe uygulaması, gerekli işlevselliği sağlayan başka herhangi bir sürümde çalıştırmak mümkündür.
 
-Bunu yapmak için çalışma zamanı sürüm bilgileri içeren bir app.config dosyası sağlayın. `supportedRuntime` etiketi.
+Bunu gerçekleştirmek için, etiketinde çalışma zamanı sürüm bilgilerini içeren bir app.config dosyası sağlayın `supportedRuntime` .
 
-Çalışma zamanında, app.config dosyası biçiminde bir ada sahip olmalıdır *dosyaadı.uzn*.config, burada *dosyaadı.uzn* uygulamanın yürütülebilir dosya adıdır ve aynı dizinde olmalıdır yürütülebilir. Örneğin, uygulamanızın TestApp.exe adlandırılmışsa, app.config dosyasına TestApp.exe.config olarak adlandırılır.
+Çalışma zamanında, app.config dosyası *filename. ext*. config biçiminde bir ada sahip olmalıdır; burada *filename. ext* , uygulamayı başlatan yürütülebilir dosyanın adıdır ve yürütülebilir dosya ile aynı dizinde olmalıdır. Örneğin, uygulamanız TestApp.exe olarak adlandırılmışsa app.config dosya TestApp.exe.config olarak adlandırılır.
 
-Birden fazla çalışma zamanı sürümü belirtin ve birden fazla yüklü çalışma zamanı sürümü olan bir bilgisayarda uygulama çalışır, uygulama yapılandırma dosyasında belirtilen ve yüklü ilk sürümü kullanır.
+Birden fazla çalışma zamanı sürümü belirtirseniz ve uygulama birden fazla yüklü çalışma zamanı sürümü olan bir bilgisayarda çalışıyorsa, uygulama yapılandırma dosyasında belirtilen ilk sürümü kullanır ve yüklenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Masaüstü uygulamalarını dağıtma](deploying-native-desktop-applications-visual-cpp.md)
+[Masaüstü uygulamaları dağıtma](deploying-native-desktop-applications-visual-cpp.md)

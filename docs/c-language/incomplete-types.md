@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: tamamlanmamış türler'
 title: Eksik Türler
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - void keyword [C]
 - structures, incomplete
 ms.assetid: 01bc0cf6-9fa7-458c-9371-ecbe54ea6aee
-ms.openlocfilehash: 192a6556fd8a5d3039598b883ed7c870fc01ad12
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b85d7a703d6687ad7ec1b0476b8b8a43930330dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229655"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243581"
 ---
 # <a name="incomplete-types"></a>Eksik Türler
 
@@ -44,7 +45,7 @@ ms.locfileid: "87229655"
     }                   /* student structure now completed */
     ```
 
-- Eksik bir dizi türü oluşturmak için yinelenme sayısını belirtmeden bir dizi türü bildirin. Örnek:
+- Eksik bir dizi türü oluşturmak için yinelenme sayısını belirtmeden bir dizi türü bildirin. Örneğin:
 
     ```C
     char a[];  /* a has incomplete type */

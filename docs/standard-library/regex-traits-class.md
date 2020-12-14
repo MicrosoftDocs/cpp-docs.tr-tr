@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: regex_traits Sınıfı'
 title: regex_traits Sınıfı
 ms.date: 09/10/2018
 f1_keywords:
@@ -38,16 +39,16 @@ helpviewer_keywords:
 - std::regex_traits [C++], imbue
 - std::regex_traits [C++], getloc
 ms.assetid: bc5a5eed-32fc-4eb7-913d-71c42e729e81
-ms.openlocfilehash: 8879336c48d0fec8a20411abf1c07d570a1575e7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 419e0d242c43c644b6c67c48b0c28b09e96e59b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366389"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243815"
 ---
 # <a name="regex_traits-class"></a>regex_traits Sınıfı
 
-Eşleştirme için öğelerin özelliklerini açıklar.
+Eşleme için öğelerin özelliklerini açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,49 +60,49 @@ class regex_traits
 ## <a name="parameters"></a>Parametreler
 
 *Elem*\
-Tanımlamak için karakter öğesi türü.
+Tanımlayacak karakter öğesi türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf *şablonu, Elem*türü için çeşitli düzenli ifade özelliklerini açıklar. [Sınıf şablonu basic_regex Sınıf,](../standard-library/basic-regex-class.md) *Elem*türündeki öğeleri işlemek için bu bilgileri kullanır.
+Sınıf şablonu, *Eled* türü için çeşitli normal ifade nitelikleri tanımlar. Sınıf şablonu [Basic_regex sınıfı](../standard-library/basic-regex-class.md) , *eled* türündeki öğeleri işlemek için bu bilgileri kullanır.
 
-Her `regex_traits` nesne, bazı `regex_traits::locale` üye işlevleri tarafından kullanılan bir tür nesnesi tutar. Varsayılan yerel `regex_traits::locale()`alan, ''nin bir kopyasıdır. Üye işlev `imbue` yerel nesnenin yerini alır ve `getloc` üye işlev yerel nesnenin bir kopyasını döndürür.
+Her `regex_traits` nesne, `regex_traits::locale` bazı üye işlevleri tarafından kullanılan türünde bir nesne barındırır. Varsayılan yerel ayar bir kopyasıdır `regex_traits::locale()` . Üye işlevi `imbue` yerel ayar nesnesinin yerini alır ve üye işlevi `getloc` yerel ayar nesnesinin bir kopyasını döndürür.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[regex_traits](#regex_traits)|Nesneyi inşa eder.|
+|[regex_traits](#regex_traits)|Nesnesini oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[char_class_type](#char_class_type)|Karakter sınıfı ataakatörlerinin türü.|
-|[Char_type](#char_type)|Öğenin türü.|
-|[locale_type](#locale_type)|Depolanan yerel nesnenin türü.|
-|[size_type](#size_type)|Sıra uzunluğunun türü.|
-|[string_type](#string_type)|Bir öğe dizisinin türü.|
+|[char_class_type](#char_class_type)|Karakter sınıfı gösterimlerinin türü.|
+|[char_type](#char_type)|Öğenin türü.|
+|[locale_type](#locale_type)|Depolanan yerel ayar nesnesinin türü.|
+|[size_type](#size_type)|Dizi uzunluğunun türü.|
+|[string_type](#string_type)|Öğelerin dize türü.|
 
-### <a name="member-functions"></a>Üye işlevler
+### <a name="member-functions"></a>Üye işlevleri
 
-|Üye fonksiyonu|Açıklama|
+|Üye işlevi|Açıklama|
 |-|-|
-|[getloc](#getloc)|Depolanan yerel nesneyi döndürür.|
-|[imbue](#imbue)|Depolanan yerel nesneyi değiştirir.|
-|[isctype](#isctype)|Sınıf üyeliği için testler.|
-|[Uzun -luğu](#length)|Null-sonlandırılan dizinin uzunluğunu verir.|
-|[lookup_classname](#lookup_classname)|Bir diziyi karakter sınıfıyla eşler.|
-|[lookup_collatename](#lookup_collatename)|Bir diziyi bir harmanlama öğesiyle eşler.|
-|[Dönüştürmek](#transform)|Eşdeğer sıralı sıraya dönüştürür.|
-|[transform_primary](#transform_primary)|Eşdeğer örneksiz sıralı sıraya dönüştürür.|
+|[getloc](#getloc)|Depolanan yerel ayar nesnesini döndürür.|
+|[imbue](#imbue)|Depolanan yerel ayar nesnesini değiştirir.|
+|[isctype](#isctype)|Sınıf üyeliğini sınar.|
+|[length](#length)|Null ile sonlandırılmış sıranın uzunluğunu döndürür.|
+|[lookup_classname](#lookup_classname)|Bir diziyi bir karakter sınıfıyla eşleştirir.|
+|[lookup_collatename](#lookup_collatename)|Bir diziyi harmanlama öğesiyle eşleştirir.|
+|[Dönüşümler](#transform)|Eşit sıralı diziye dönüştürür.|
+|[transform_primary](#transform_primary)|Eşit caseless sıralı dizisine dönüştürür.|
 |[Çevir](#translate)|Eşdeğer eşleştirme öğesine dönüştürür.|
-|[translate_nocase](#translate_nocase)|Eşdeğer örneksiz eşleştirme öğesine dönüştürür.|
-|[Değer](#value)|Bir öğeyi basamak değerine dönüştürür.|
+|[translate_nocase](#translate_nocase)|Eşdeğer caseless eşleştirme öğesine dönüştürür.|
+|[değer](#value)|Bir öğeyi basamak değerine dönüştürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<regex>
+**Üst bilgi:**\<regex>
 
 **Ad alanı:** std
 
@@ -175,9 +176,9 @@ class digit == d == true
 hex C == 12
 ```
 
-## <a name="regex_traitschar_class_type"></a><a name="char_class_type"></a>regex_traits:char_class_type
+## <a name="regex_traitschar_class_type"></a><a name="char_class_type"></a> regex_traits:: char_class_type
 
-Karakter sınıfı ataakatörlerinin türü.
+Karakter sınıfı gösterimlerinin türü.
 
 ```cpp
 typedef T8 char_class_type;
@@ -185,9 +186,9 @@ typedef T8 char_class_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, karakter sınıflarını belirleyen belirtilmemiş bir türle eş anlamlıdır. Bu tür değerler, operandlar tarafından belirlenen sınıfların birleşimi olan karakter sınıflarını belirlemek için `|` işleç kullanılarak birleştirilebilir.
+Tür, karakter sınıfları atayan belirtilmemiş bir türün eşanlamlısıdır. Bu türün değerleri, `|` işlenenler tarafından atanan sınıfların birleşimi olan karakter sınıflarını belirlemek için işleci kullanılarak birleştirilebilir.
 
-## <a name="regex_traitschar_type"></a><a name="char_type"></a>regex_traits:char_type
+## <a name="regex_traitschar_type"></a><a name="char_type"></a> regex_traits:: char_type
 
 Öğenin türü.
 
@@ -197,11 +198,11 @@ typedef Elem char_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Typedef şablon bağımsız değişkeni `Elem`için eşanlamlıdır.
+TypeDef, şablon bağımsız değişkeninin eşanlamlısıdır `Elem` .
 
-## <a name="regex_traitsgetloc"></a><a name="getloc"></a>regex_traits::getloc
+## <a name="regex_traitsgetloc"></a><a name="getloc"></a> regex_traits:: getloc
 
-Depolanan yerel nesneyi döndürür.
+Depolanan yerel ayar nesnesini döndürür.
 
 ```cpp
 locale_type getloc() const;
@@ -209,11 +210,11 @@ locale_type getloc() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev depolanan `locale` nesneyi döndürür.
+Üye işlevi, saklı nesneyi döndürür `locale` .
 
-## <a name="regex_traitsimbue"></a><a name="imbue"></a>regex_traits::imbue
+## <a name="regex_traitsimbue"></a><a name="imbue"></a> regex_traits:: imbue
 
-Depolanan yerel nesneyi değiştirir.
+Depolanan yerel ayar nesnesini değiştirir.
 
 ```cpp
 locale_type imbue(locale_type loc);
@@ -221,16 +222,16 @@ locale_type imbue(locale_type loc);
 
 ### <a name="parameters"></a>Parametreler
 
-*Loc*\
-Depolamak için yerel nesne.
+*çerçeve*\
+Depolanacak yerel ayar nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, depolanan `locale` nesneye *loca* sıyrık ve depolanan `locale` nesnenin önceki değerinin bir kopyasını döndürür.
+Üye işlevi, *loc* öğesini saklı nesnesine kopyalar `locale` ve saklanan nesnenin önceki değerinin bir kopyasını döndürür `locale` .
 
-## <a name="regex_traitsisctype"></a><a name="isctype"></a>regex_traits::isctype
+## <a name="regex_traitsisctype"></a><a name="isctype"></a> regex_traits:: SCC türü
 
-Sınıf üyeliği için testler.
+Sınıf üyeliğini sınar.
 
 ```cpp
 bool isctype(char_type ch, char_class_type cls) const;
@@ -238,19 +239,19 @@ bool isctype(char_type ch, char_class_type cls) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Caner*\
-Test etmek için öğe.
+*denetleyebilirsiniz*\
+Sınanacak öğe.
 
-*Cls*\
-Test etmek için sınıflar.
+*CLS*\
+Sınanacak sınıflar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev yalnızca *karakter ch* *cls*tarafından belirlenen karakter sınıfında ise doğru döndürür.
+Üye işlevi, yalnızca karakter *ch* , *CLS* tarafından belirlenen karakter sınıfında ise true değerini döndürür.
 
-## <a name="regex_traitslength"></a><a name="length"></a>regex_traits::uzunluk
+## <a name="regex_traitslength"></a><a name="length"></a> regex_traits:: length
 
-Null-sonlandırılan dizinin uzunluğunu verir.
+Null ile sonlandırılmış sıranın uzunluğunu döndürür.
 
 ```cpp
 static size_type length(const char_type *str);
@@ -258,16 +259,16 @@ static size_type length(const char_type *str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-Null-terminated sırası.
+*üstbilgisine*\
+Null ile sonlandırılmış dizi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Statik üye işlev `std::char_traits<char_type>::length(str)`döndürür.
+Statik üye işlevi döndürür `std::char_traits<char_type>::length(str)` .
 
-## <a name="regex_traitslocale_type"></a><a name="locale_type"></a>regex_traits:locale_type
+## <a name="regex_traitslocale_type"></a><a name="locale_type"></a> regex_traits:: locale_type
 
-Depolanan yerel nesnenin türü.
+Depolanan yerel ayar nesnesinin türü.
 
 ```cpp
 typedef T7 locale_type;
@@ -275,11 +276,11 @@ typedef T7 locale_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Typedef, yerel leri kapsayan bir türle eş anlamlıdır. Uzmanlık ve `regex_traits<char>` `regex_traits<wchar_t>` için `std::locale`eşanlamlıdır.
+TypeDef, yerel ayarları kapsülleyen bir türün eşanlamlısıdır. Uzmanlıklar `regex_traits<char>` ve `regex_traits<wchar_t>` için bir eş anlamlı `std::locale` .
 
-## <a name="regex_traitslookup_classname"></a><a name="lookup_classname"></a>regex_traits:lookup_classname
+## <a name="regex_traitslookup_classname"></a><a name="lookup_classname"></a> regex_traits:: lookup_classname
 
-Bir diziyi karakter sınıfıyla eşler.
+Bir diziyi bir karakter sınıfıyla eşleştirir.
 
 ```cpp
 template <class FwdIt>
@@ -288,23 +289,23 @@ char_class_type lookup_classname(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ilk*\
-Yukarı bakmak için sıranın başlangıcı.
+*adı*\
+Aranacak sıra başlangıcı.
 
-*Son*\
-Bakmak için sıranın sonu.
+*soyadına*\
+Aranacak sıra sonu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, bağımsız değişkenleri tarafından işaret edilen karakter dizisi tarafından adlandırılmış karakter sınıfını belirleyen bir değer döndürür. Değer, dizideki karakterlerin durumuna bağlı değildir.
+Üye işlevi, bağımsız değişkenlerine işaret eden karakter dizisi tarafından adlandırılan karakter sınıfını atayan bir değer döndürür. Değer dizideki karakterlerin durumuna bağlı değildir.
 
-Uzmanlık adları `regex_traits<char>` `"d"`tanır , `"s"`, `"w"` `"alnum"` `"alpha"` `"blank"` `"cntrl"` `"digit"` `"space"` `"upper"` `"xdigit"`, , , , , , , , , , , , , , , , ve , tüm durumda bakılmaksızın. `"graph"` `"lower"` `"print"` `"punct"`
+Özelleşme,,,,,,,, `regex_traits<char>` `"d"` `"s"` `"w"` `"alnum"` `"alpha"` `"blank"` `"cntrl"` `"digit"` `"graph"` , `"lower"` , `"print"` , `"punct"` , `"space"` , `"upper"` , ve adlarını ( `"xdigit"` büyük/küçük harf olmadan) tanır.
 
-Uzmanlık adları `regex_traits<wchar_t>` `L"d"`tanır , `L"s"`, `L"w"` `L"alnum"` `L"alpha"` `L"blank"` `L"cntrl"` `L"digit"` `L"space"` `L"upper"` `L"xdigit"`, , , , , , , , , , , , , , , , ve , tüm durumda bakılmaksızın. `L"graph"` `L"lower"` `L"print"` `L"punct"`
+Özelleşme,,,,,,,, `regex_traits<wchar_t>` `L"d"` `L"s"` `L"w"` `L"alnum"` `L"alpha"` `L"blank"` `L"cntrl"` `L"digit"` `L"graph"` , `L"lower"` , `L"print"` , `L"punct"` , `L"space"` , `L"upper"` , ve adlarını ( `L"xdigit"` büyük/küçük harf olmadan) tanır.
 
-## <a name="regex_traitslookup_collatename"></a><a name="lookup_collatename"></a>regex_traits:lookup_collatename
+## <a name="regex_traitslookup_collatename"></a><a name="lookup_collatename"></a> regex_traits:: lookup_collatename
 
-Bir diziyi bir harmanlama öğesiyle eşler.
+Bir diziyi harmanlama öğesiyle eşleştirir.
 
 ```cpp
 template <class FwdIt>
@@ -313,19 +314,19 @@ string_type lookup_collatename(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ilk*\
-Yukarı bakmak için sıranın başlangıcı.
+*adı*\
+Aranacak sıra başlangıcı.
 
-*Son*\
-Bakmak için sıranın sonu.
+*soyadına*\
+Aranacak sıra sonu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, diziye `[first, last)`karşılık gelen harmanlama öğesini içeren bir dize nesnesi veya dizi geçerli bir harmanlama öğesi değilse boş bir dize döndürür.
+Üye işlevi, diziye karşılık gelen harmanlama öğesini içeren bir dize nesnesi `[first, last)` veya dizi geçerli bir harmanlama öğesi değilse boş bir dize döndürür.
 
-## <a name="regex_traitsregex_traits"></a><a name="regex_traits"></a>regex_traits:regex_traits
+## <a name="regex_traitsregex_traits"></a><a name="regex_traits"></a> regex_traits:: regex_traits
 
-Nesneyi inşa eder.
+Nesnesini oluşturur.
 
 ```cpp
 regex_traits();
@@ -333,11 +334,11 @@ regex_traits();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kurucu, depolanan `locale` nesnevarsayılan yerel ekime başharfle çevrilmiş bir nesne oluşturuyor.
+Oluşturucu, saklı `locale` nesnesi varsayılan yerel ayara başlatılmış bir nesne oluşturur.
 
-## <a name="regex_traitssize_type"></a><a name="size_type"></a>regex_traits::size_type
+## <a name="regex_traitssize_type"></a><a name="size_type"></a> regex_traits:: size_type
 
-Sıra uzunluğunun türü.
+Dizi uzunluğunun türü.
 
 ```cpp
 typedef T6 size_type;
@@ -345,13 +346,13 @@ typedef T6 size_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Typedef imzasız integral türü için eşanlamlıdır. Uzmanlık ve `regex_traits<char>` `regex_traits<wchar_t>` için `std::size_t`eşanlamlıdır.
+TypeDef, işaretsiz integral türü için bir eş anlamlı. Uzmanlıklar `regex_traits<char>` ve `regex_traits<wchar_t>` için bir eş anlamlı `std::size_t` .
 
-Typedef için `std::size_t`eşanlamlıdır.
+TypeDef, için bir eş anlamlı `std::size_t` .
 
-## <a name="regex_traitsstring_type"></a><a name="string_type"></a>regex_traits:string_type
+## <a name="regex_traitsstring_type"></a><a name="string_type"></a> regex_traits:: string_type
 
-Bir öğe dizisinin türü.
+Öğelerin dize türü.
 
 ```cpp
 typedef basic_string<Elem> string_type;
@@ -359,11 +360,11 @@ typedef basic_string<Elem> string_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Typedef için `basic_string<Elem>`eşanlamlıdır.
+TypeDef, için bir eş anlamlı `basic_string<Elem>` .
 
-## <a name="regex_traitstransform"></a><a name="transform"></a>regex_traits::dönüşüm
+## <a name="regex_traitstransform"></a><a name="transform"></a> regex_traits:: Transform
 
-Eşdeğer sıralı sıraya dönüştürür.
+Eşit sıralı diziye dönüştürür.
 
 ```cpp
 template <class FwdIt>
@@ -372,19 +373,19 @@ string_type transform(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ilk*\
-Dönüştürmek için sıranın başlangıcı.
+*adı*\
+Dönüştürülecek sıranın başlangıcı.
 
-*Son*\
-Dönüşmek için dizinin sonu.
+*soyadına*\
+Dönüştürülecek sıra sonu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, depolanan nesneye bağlı bir dönüştürme kuralı kullanarak oluşturduğu `locale` bir dize döndürür. `[first1, last1)` Yineleyici aralıkları tarafından belirlenen iki karakter dizisi `[first2, last2)` `transform(first1, last1) < transform(first2, last2)` için ve , eğer yineleyici aralığı `[first1, last1)` tarafından belirlenen karakter dizisi, yineleyici `[first2, last2)`aralığı tarafından belirlenen karakter dizisi önce sıralanır.
+Üye işlevi, saklı nesneye bağlı bir dönüştürme kuralı kullanarak oluşturduğu bir dize döndürür `locale` . Yineleyici aralıkları tarafından belirlenen iki karakter dizisi için `[first1, last1)` ve yineleyici `[first2, last2)` `transform(first1, last1) < transform(first2, last2)` aralığı tarafından belirlenen karakter sırası, `[first1, last1)` yineleyici aralığı tarafından belirlenen karakter sırasından önce sıralarıyorsa `[first2, last2)` .
 
-## <a name="regex_traitstransform_primary"></a><a name="transform_primary"></a>regex_traits:transform_primary
+## <a name="regex_traitstransform_primary"></a><a name="transform_primary"></a> regex_traits:: transform_primary
 
-Eşdeğer örneksiz sıralı sıraya dönüştürür.
+Eşit caseless sıralı dizisine dönüştürür.
 
 ```cpp
 template <class FwdIt>
@@ -393,17 +394,17 @@ string_type transform_primary(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ilk*\
-Dönüştürmek için sıranın başlangıcı.
+*adı*\
+Dönüştürülecek sıranın başlangıcı.
 
-*Son*\
-Dönüşmek için dizinin sonu.
+*soyadına*\
+Dönüştürülecek sıra sonu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, depolanan nesneye bağlı bir dönüştürme kuralı kullanarak oluşturduğu `locale` bir dize döndürür. Yineleyici `[first1, last1)` aralıkları tarafından belirlenen iki karakter dizileri için ve `[first2, last2)`eğer `transform_primary(first1, last1) < transform_primary(first2, last2)` karakter dizisi yineleme `[first1, last1)` aralığı tarafından belirlenen karakter dizisi büyük/küçük harf veya aksan dikkate almadan yineleyici aralığı `[first2, last2)` tarafından belirlenen karakter dizisi önce sıralanır.
+Üye işlevi, saklı nesneye bağlı bir dönüştürme kuralı kullanarak oluşturduğu bir dize döndürür `locale` . Yineleyici aralıkları tarafından belirlenen iki karakter dizisi için `[first1, last1)` ve `[first2, last2)` `transform_primary(first1, last1) < transform_primary(first2, last2)` yineleyici aralığı tarafından belirtilen karakter sırası, `[first1, last1)` büyük/ `[first2, last2)` küçük harf veya aksan olmadan yineleyici aralığı tarafından belirlenen karakter sırasından önce sıralarıyorsa.
 
-## <a name="regex_traitstranslate"></a><a name="translate"></a>regex_traits::çevir
+## <a name="regex_traitstranslate"></a><a name="translate"></a> regex_traits:: translate
 
 Eşdeğer eşleştirme öğesine dönüştürür.
 
@@ -413,16 +414,16 @@ char_type translate(char_type ch) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Caner*\
+*denetleyebilirsiniz*\
 Dönüştürülecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, depolanan nesneye bağlı bir dönüştürme kuralı kullanarak oluşturduğu `locale` bir karakteri döndürür. İki `char_type` nesne `ch1` için `ch2` `translate(ch1) == translate(ch2)` ve, `ch1` `ch2` yalnızca biri normal ifade tanımında oluşursa ve diğeri yerel duruma duyarlı bir eşleşme için hedef sırada karşılık gelen bir konumda oluşursa eşleşirse.
+Üye işlevi, saklı nesneye bağlı bir dönüştürme kuralı kullanarak oluşturduğu bir karakter döndürür `locale` . İki `char_type` nesne için `ch1` ve `ch2` , `translate(ch1) == translate(ch2)` yalnızca `ch1` `ch2` bir normal ifade tanımında meydana gelirse ve diğeri yerel ayara duyarlı eşleşme için hedef dizide karşılık gelen bir konumda gerçekleşiyorsa eşleşir.
 
-## <a name="regex_traitstranslate_nocase"></a><a name="translate_nocase"></a>regex_traits:translate_nocase
+## <a name="regex_traitstranslate_nocase"></a><a name="translate_nocase"></a> regex_traits:: translate_nocase
 
-Eşdeğer örneksiz eşleştirme öğesine dönüştürür.
+Eşdeğer caseless eşleştirme öğesine dönüştürür.
 
 ```cpp
 char_type translate_nocase(char_type ch) const;
@@ -430,14 +431,14 @@ char_type translate_nocase(char_type ch) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Caner*\
+*denetleyebilirsiniz*\
 Dönüştürülecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, depolanan nesneye bağlı bir dönüştürme kuralı kullanarak oluşturduğu `locale` bir karakteri döndürür. İki `char_type` nesne `ch1` için `ch2` `translate_nocase(ch1) == translate_nocase(ch2)` ve, `ch1` `ch2` yalnızca biri normal ifade tanımında oluşursa ve diğeri de büyük/küçük harf duyarsız eşleşmesi için hedef sırada karşılık gelen bir konumda oluşursa eşleşirse.
+Üye işlevi, saklı nesneye bağlı bir dönüştürme kuralı kullanarak oluşturduğu bir karakter döndürür `locale` . İki `char_type` nesne için `ch1` ve `ch2` , `translate_nocase(ch1) == translate_nocase(ch2)` yalnızca `ch1` `ch2` bir normal ifade tanımında oluştuğunda ve diğeri büyük/küçük harf duyarsız eşleşme için hedef dizide karşılık gelen bir konumda gerçekleşiyorsa eşleşir.
 
-## <a name="regex_traitsvalue"></a><a name="value"></a>regex_traits::değer
+## <a name="regex_traitsvalue"></a><a name="value"></a> regex_traits:: değer
 
 Bir öğeyi basamak değerine dönüştürür.
 
@@ -447,25 +448,25 @@ int value(Elem ch, int radix) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Caner*\
+*denetleyebilirsiniz*\
 Dönüştürülecek öğe.
 
-*Radix*\
-Kullanılacak aritmetik taban.
+*taban*\
+Kullanılacak aritmetik temel.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, temel radix'teki *ch* karakteri tarafından temsil edilen *ch* değeri veya -1'i temel *radix'te*geçerli bir basamak değilse döndürür. *radix* İşlev yalnızca 8, 10 veya *16'lık bir radiks* bağımsız değişkeniyle çağrılacaktır.
+Üye işlevi, taban *yarıçapına* *karakter olarak* temsil edilen değeri döndürür veya *ch* , taban *taban* içinde geçerli bir basamak değilse-1. İşlev yalnızca, 8, 10 veya 16 bir *taban* bağımsız değişkeniyle çağırılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [\<regex>](../standard-library/regex.md)\
-[regex_constants Sınıfı](../standard-library/regex-constants-class.md)\
-[regex_error Sınıfı](../standard-library/regex-error-class.md)\
-[\<regex> fonksiyonları](../standard-library/regex-functions.md)\
+[regex_constants sınıfı](../standard-library/regex-constants-class.md)\
+[regex_error sınıfı](../standard-library/regex-error-class.md)\
+[\<regex> lerdir](../standard-library/regex-functions.md)\
 [regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)\
-[\<regex> operatörleri](../standard-library/regex-operators.md)\
-[regex_token_iterator Sınıfı](../standard-library/regex-token-iterator-class.md)\
-[\<regex> typedefs](../standard-library/regex-typedefs.md)\
-[regex_traits\<char> Sınıfı](../standard-library/regex-traits-char-class.md)\
-[regex_traits\<wchar_t> Sınıfı](../standard-library/regex-traits-wchar-t-class.md)
+[\<regex> işletmenlerinin](../standard-library/regex-operators.md)\
+[regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)\
+[\<regex> tür tanımları](../standard-library/regex-typedefs.md)\
+[regex_traits \<char> sınıfı](../standard-library/regex-traits-char-class.md)\
+[regex_traits \<wchar_t> sınıfı](../standard-library/regex-traits-wchar-t-class.md)

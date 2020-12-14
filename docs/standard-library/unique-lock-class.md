@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: unique_lock sınıfı'
 title: unique_lock Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - mutex/std::unique_lock
 ms.assetid: f4ed8ba9-c8af-446f-8ef0-0b356bad14bd
-ms.openlocfilehash: be53f66296612f1b44790393907028bfc4d062ff
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6e7f5ddadce00814196e630b27570e21176c0e62
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834225"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243724"
 ---
 # <a name="unique_lock-class"></a>unique_lock Sınıfı
 
@@ -24,7 +25,7 @@ class unique_lock;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon bağımsız değişkeni `Mutex` bir *mutex türü*adı vermelidir.
+Şablon bağımsız değişkeni `Mutex` bir *mutex türü* adı vermelidir.
 
 Dahili olarak, `unique_lock` ilişkili bir nesneye bir işaretçi depolar `mutex` ve **`bool`** geçerli iş parçacığının öğesine sahip olup olmadığını gösterir `mutex` .
 
@@ -289,7 +290,7 @@ Bir `unique_lock` nesnesi.
 
 İlk Oluşturucu, ilişkili bir mutex işaretçi değeri 0 olan bir nesnesi oluşturur.
 
-İkinci Oluşturucu ilişkili mutex durumunu *diğer*öğesinden taşımaktır. Taşıma işleminden sonra *diğeri* artık bir mutex ile ilişkilendirilmez.
+İkinci Oluşturucu ilişkili mutex durumunu *diğer* öğesinden taşımaktır. Taşıma işleminden sonra *diğeri* artık bir mutex ile ilişkilendirilmez.
 
 Kalan oluşturucular & *MTX* saklı işaretçi olarak depolar `mutex` . Öğesinin sahipliği, varsa `mutex` ikinci bağımsız değişkenle belirlenir.
 
