@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Floating-Point sabitleri için sınırlar'
 title: Kayan Nokta Sabitleri Sınırlamaları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - limits, floating-point constants
 - floating-point numbers, floating limits
 ms.assetid: 2d975868-2af6-45d7-a8af-db79f2c6b67b
-ms.openlocfilehash: df39ee719a4474f6dfd55d31a2848169a1168390
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 345e57348843a62b99b1565b8966df682d5fed8c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62325591"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257166"
 ---
 # <a name="limits-on-floating-point-constants"></a>Kayan Nokta Sabitleri Sınırlamaları
 
@@ -46,4 +47,4 @@ Yukarıdaki tabloda yer alan bilgilerin gelecekteki uygulamalarda değişebilece
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Kayan Nokta Sabitleri](../c-language/c-floating-point-constants.md)
+[C Floating-Point sabitleri](../c-language/c-floating-point-constants.md)

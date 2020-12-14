@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3831'
 title: Derleyici hatası C3831
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3831
 ms.assetid: a125d8dc-b75a-4ea0-b6c7-fe7b119dba25
-ms.openlocfilehash: 61ff2c7f7e99698ffbd521153663b1ab27bd6fde
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ba3d1e7f6dfc2670307e510ee6eb13fa6277bc1c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74741605"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97311818"
 ---
 # <a name="compiler-error-c3831"></a>Derleyici hatası C3831
 

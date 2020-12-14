@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _com_ptr_t:: operator ='
 title: _com_ptr_t::operator =
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - _com_ptr_t [C++]
 ms.assetid: 46849455-371c-4d0f-bae4-c1f737d2ca4a
-ms.openlocfilehash: 489d2a3f098d5d1bf1df56cca7eaf6ac8ae776b1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: fae995ea20aa579c380ec5c10766e830708dcc0f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170702"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295399"
 ---
 # <a name="_com_ptr_toperator-"></a>_com_ptr_t::operator =
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Varolan bir `_com_ptr_t` nesnesine yeni bir değer atar.
+Varolan bir nesneye yeni bir değer atar `_com_ptr_t` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 template<typename _OtherIID>
@@ -67,4 +68,4 @@ Bu `_com_ptr_t` nesnesine bir arabirim işaretçisi atar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)
+[_com_ptr_t sınıfı](../cpp/com-ptr-t-class.md)

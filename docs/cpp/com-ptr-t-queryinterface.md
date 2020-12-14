@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _com_ptr_t:: QueryInterface'
 title: _com_ptr_t::QueryInterface
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - QueryInterface method [C++]
 ms.assetid: d03292f1-6b02-40db-9756-8b0837a97319
-ms.openlocfilehash: 26dda2dff83ff0adbb7ef05c5e75f64b44138bd8
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6c6ff19227c920aade762af295942d8058a17ad3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170677"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295347"
 ---
 # <a name="_com_ptr_tqueryinterface"></a>_com_ptr_t::QueryInterface
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Kapsüllenmiş arabirim İşaretçisinde `IUnknown` **QueryInterface** üye işlevini çağırır.
+Kapsüllenmiş arabirim  İşaretçisinde ' ın QueryInterface üye işlevini çağırır `IUnknown` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,17 +37,17 @@ template<typename _InterfaceType> HRESULT QueryInterface (
 #### <a name="parameters"></a>Parametreler
 
 *'si*<br/>
-bir arabirim işaretçisinin `IID`.
+`IID` bir arabirim işaretçisi.
 
 *Lama*<br/>
 Ham arabirim işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kapsüllenmiş arabirim İşaretçisinde belirtilen `IID` sahip `IUnknown::QueryInterface` çağırır ve sonuç olarak *p*'deki ham arabirim işaretçisini döndürür. Bu yordam, başarılı veya başarısız olduğunu göstermek için HRESULT döndürür.
+`IUnknown::QueryInterface`Kapsüllenmiş arabirim İşaretçisinde belirtilen `IID` ' i çağırır ve sonuç olarak *p* içindeki ham arabirim işaretçisini döndürür. Bu yordam, başarılı veya başarısız olduğunu göstermek için HRESULT döndürür.
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)
+[_com_ptr_t sınıfı](../cpp/com-ptr-t-class.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: GetModuleBase İşlevi'
 title: GetModuleBase İşlevi
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::GetModuleBase
 ms.assetid: 123d3b14-2eaf-4e02-8dcd-b6567917c6a6
-ms.openlocfilehash: 0d130fffa9fad9ae327d03eaa01d84742094cc67
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: cdedaf905da194400209840b6bd84fa8e626eb0a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213973"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295204"
 ---
 # <a name="getmodulebase-function"></a>GetModuleBase işlevi
 
@@ -22,9 +23,9 @@ Bir [RuntimeClass](runtimeclass-class.md) nesnesinin başvuru sayısını artır
 inline Details::ModuleBase* GetModuleBase() throw()
 ```
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-`ModuleBase` nesnesine yönelik bir işaretçi.
+Bir `ModuleBase` nesne işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -40,4 +41,4 @@ Bu işlevi, [ModuleBase:: IncrementObjectCount](modulebase-class.md#incrementobj
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)
+[Microsoft:: WRL ad alanı](microsoft-wrl-namespace.md)

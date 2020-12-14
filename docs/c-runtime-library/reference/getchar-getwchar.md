@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: GetChar, getwchar'
 title: getchar, getwchar
 ms.date: 06/23/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - _gettchar function
 - standard input, reading from
 ms.assetid: 19fda588-3e33-415c-bb60-dd73c028086a
-ms.openlocfilehash: c6a02f16c3ee3d3e3bc4f86026719a1bd2885416
-ms.sourcegitcommit: 8645408c7929558b8162f781776d0908d790a41c
+ms.openlocfilehash: d8480d179cc31d30d68c07fbe92bf389226ccd53
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85334977"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256763"
 ---
 # <a name="getchar-getwchar"></a>getchar, getwchar
 
@@ -55,7 +56,7 @@ wint_t getwchar();
 
 Okunan karakteri döndürür. Bu işlevler giriş için bekler ve giriş kullanılabilir olana kadar geri dönmemelidir.
 
-Bir okuma hatası veya dosya sonu koşulu belirtmek için **GetChar** , **EOF**döndürür ve **getwchar** , **weof**döndürür. **GetChar**için, bir hatayı denetlemek veya dosya sonu için **ferror** veya **feof** kullanın.
+Bir okuma hatası veya dosya sonu koşulu belirtmek için **GetChar** , **EOF** döndürür ve **getwchar** , **weof** döndürür. **GetChar** için, bir hatayı denetlemek veya dosya sonu için **ferror** veya **feof** kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -78,7 +79,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |**GetChar**|\<stdio.h>|
 |**getwchar**|\<stdio.h> veya \<wchar.h>|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout** ve **stderr** Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

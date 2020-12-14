@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: gmtime_s, _gmtime32_s, _gmtime64_s'
 title: gmtime_s, _gmtime32_s, _gmtime64_s
 ms.date: 4/2/2020
 api_name:
@@ -41,18 +42,18 @@ helpviewer_keywords:
 - _gmtime_s function
 - _gmtime32_s function
 ms.assetid: 261c7df0-2b0c-44ba-ba61-cb83efaec60f
-ms.openlocfilehash: 8cebd2eab1c0a5b650f33ccca1e87a0a8cad1e08
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bffe11bd655ed8cfead6b862abf0237270c3af20
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213560"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296465"
 ---
 # <a name="gmtime_s-_gmtime32_s-_gmtime64_s"></a>gmtime_s, _gmtime32_s, _gmtime64_s
 
 Bir zaman değerini bir **TM** yapısına dönüştürür. Bunlar, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_gmtime64 _gmtime32](gmtime-gmtime32-gmtime64.md) sürümleridir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 errno_t gmtime_s(
@@ -89,11 +90,11 @@ Başarılıysa sıfır. Hata varsa dönüş değeri bir hata kodudur. Hata kodla
 |**Null** değil (geçerli belleğe işaret eder)|**DEĞER**|**EıNVAL**|Tüm alanlar-1 olarak ayarlanmıştır.|
 |**Null** değil|< 0|**EıNVAL**|Tüm alanlar-1 olarak ayarlanmıştır.|
 
-İlk iki hata koşulu durumunda, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL**döndürür.
+İlk iki hata koşulu durumunda, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Gmtime32_s** Işlevi *sourcetime* değerini ayırır ve, Time. h içinde tanımlanan **TM**türünde bir yapıda depolar. Yapının adresi, *Tmdest*' de geçirilir. *Sourcetime* değeri genellikle [Time](time-time32-time64.md) işlevine yapılan çağrıdan alınır.
+**_Gmtime32_s** Işlevi *sourcetime* değerini ayırır ve, Time. h içinde tanımlanan **TM** türünde bir yapıda depolar. Yapının adresi, *Tmdest*' de geçirilir. *Sourcetime* değeri genellikle [Time](time-time32-time64.md) işlevine yapılan çağrıdan alınır.
 
 > [!NOTE]
 > Hedef ortam, gün ışığından yararlanma saatinin etkin olup olmadığını belirlemeyi denemelidir. C çalışma zamanı kitaplığı, gün ışığından yararlanma saatinin hesaplanmasını uygulamak için Birleşik Devletler kuralları varsayar.
@@ -110,11 +111,11 @@ Yapı alanlarının her biri **`int`** , aşağıdaki tabloda gösterildiği gib
 |**tm_year**|Yıl (geçerli yıl eksi 1900).|
 |**tm_wday**|Haftanın günü (0-6; Pazar = 0).|
 |**tm_yday**|Yılın günü (0-365; 1 Ocak = 0).|
-|**tm_isdst**|**Gmtime_s**için her zaman 0.|
+|**tm_isdst**|**Gmtime_s** için her zaman 0.|
 
 **__time64_t** yapısını kullanan **_gmtime64_s**, tarihlerin 23:59:59, 31 Aralık 3000, UTC; tarihine kadar ifade etmesine izin verir. **gmtime32_s** yalnızca tarihi 18 Ocak 2038, UTC 23:59:59 ile temsil eder. 1 Ocak 1970 gece yarısı, bu işlevlerin her ikisi için de tarih aralığının alt sınırıdır.
 
-**gmtime_s** , **_gmtime64_s** değerlendirilen ve **time_t** **__time64_t**eşdeğer bir satır içi işlevdir. Derleyicinin **time_t** eski 32 bit **time_t**olarak yorumlamasını zorlamak istiyorsanız **_USE_32BIT_TIME_T**tanımlayabilirsiniz. Bunun yapılması, **gmtime_s** **_gmtime32_s**olarak sıralanmasına neden olur. Uygulamanız 18 Ocak 2038 ' den sonra başarısız olabileceğinden ve 64-bit platformlarda izin verilmediği için bu önerilmez.
+**gmtime_s** , **_gmtime64_s** değerlendirilen ve **time_t** **__time64_t** eşdeğer bir satır içi işlevdir. Derleyicinin **time_t** eski 32 bit **time_t** olarak yorumlamasını zorlamak istiyorsanız **_USE_32BIT_TIME_T** tanımlayabilirsiniz. Bunun yapılması, **gmtime_s** **_gmtime32_s** olarak sıralanmasına neden olur. Uygulamanız 18 Ocak 2038 ' den sonra başarısız olabileceğinden ve 64-bit platformlarda izin verilmediği için bu önerilmez.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 

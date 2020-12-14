@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: parametreler'
 title: Parametreler
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - ellipsis (...), parameters
 - '... ellipsis'
 ms.assetid: 8f2b8026-78b5-4e21-86a3-bf0f91f05689
-ms.openlocfilehash: 57648747bbb50ffe46b199a03563757c331f088a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b68cd5934e597e486b00f2772e913f627e584ecb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229577"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256828"
 ---
 # <a name="parameters"></a>Parametreler
 
@@ -33,11 +34,11 @@ Bağımsız değişkenler bir işleve işlev çağrısı tarafından geçirilen 
 *`declarator`*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*`pointer`*<sub>opt</sub>*`direct-declarator`*
 
-*`direct-declarator`*:/ \* Bir işlev bildirimci\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`direct-declarator`*  **`(`**  *`parameter-type-list`*  **`)`** /\*Yeni stil bildirimci\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`direct-declarator`*  **`(`**  *`identifier-list`*<sub>opt</sub> **`)`**  / opt \* Eski stil bildirimci\*/
+*`direct-declarator`*:/ \* Bir işlev bildirimci \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`direct-declarator`*  **`(`**  *`parameter-type-list`*  **`)`** /\* Yeni stil bildirimci \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`direct-declarator`*  **`(`**  *`identifier-list`*<sub></sub> **`)`**  / opt \* Eski stil bildirimci\*/
 
-*`parameter-type-list`*:/ \* Parametre listesi\*/<br/>
+*`parameter-type-list`*:/ \* Parametre listesi \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`* <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`* **`, ...`**
 

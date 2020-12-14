@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4297'
 title: Derleyici Uyarısı (düzey 1) C4297
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4297
 ms.assetid: ba92fcdc-9f70-4f60-abe6-281f9582ca59
-ms.openlocfilehash: 53c9a3c311f0136136c1c57438860edcc0766e0f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ef330302702ee9e7a8fa55128a6f1f61732552f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220073"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97311740"
 ---
 # <a name="compiler-warning-level-1-c4297"></a>Derleyici Uyarısı (düzey 1) C4297
 

@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: bildirimlere genel bakış'
 title: Bildirimlere Genel Bakış
 ms.date: 11/04/2016
 helpviewer_keywords:
 - declarations, about declarations
 - type qualifiers
 ms.assetid: fcd2364c-c2a5-4fbf-9027-19dac4144cb5
-ms.openlocfilehash: 066c0fd307c7562d70c57c31dff23960a6305f2c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 53b8c808771aa3bb455655e6e0c5b06ff1fa9acd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217083"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256854"
 ---
 # <a name="overview-of-declarations"></a>Bildirimlere Genel Bakış
 
@@ -57,7 +58,7 @@ Tüm tanımlar örtük bildirimlerdir, ancak tüm bildirimler tanımlardır. Ör
 
 Değişken bildirimlerinde bir depolama sınıfı veya bir tür (veya her ikisi de) gereklidir. Dışında **`__declspec`** , bildiriminde yalnızca bir depolama sınıfı belirticisine izin verilir ve her bağlamda tüm depolama sınıfı belirticilerine izin verilmez. **`__declspec`** Depolama sınıfına diğer depolama sınıfı belirticileriyle izin verilir ve birden çok kez kullanılabilir. Bir bildirimin depolama sınıfı Belirleyicisi, belirtilen öğenin nasıl depolandığını ve başlatıldığını ve bir programın hangi bölümlerinin öğeye başvurabileceğini etkiler.
 
-*`storage-class-specifier`* C 'de tanımlanan Terminaller,, **`auto`** , **`extern`** ve **`register`** içerir **`static`** **`typedef`** . Microsoft C, Terminal de *`storage-class-specifier`* içerir **`__declspec`** . *`storage-class-specifier`* Ve dışındaki tüm terminallerde **`typedef`** **`__declspec`** [depolama sınıflarında](../c-language/c-storage-classes.md)tartışılmıştır. Hakkında bilgi için **`typedef`** bkz. [ `typedef` Bildirimler](../c-language/typedef-declarations.md). Hakkında daha fazla bilgi için **`__declspec`** bkz. [genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md).
+*`storage-class-specifier`* C 'de tanımlanan Terminaller,, **`auto`** , **`extern`** ve **`register`** içerir **`static`** **`typedef`** . Microsoft C, Terminal de *`storage-class-specifier`* içerir **`__declspec`** . *`storage-class-specifier`* Ve dışındaki tüm terminallerde **`typedef`** **`__declspec`** [depolama sınıflarında](../c-language/c-storage-classes.md)tartışılmıştır. Hakkında bilgi için **`typedef`** bkz. [ `typedef` Bildirimler](../c-language/typedef-declarations.md). Hakkında daha fazla bilgi için **`__declspec`** bkz. [genişletilmiş Storage-Class öznitelikleri](../c-language/c-extended-storage-class-attributes.md).
 
 Kaynak programdaki bildirimin konumu ve değişkenin diğer bildirimlerinin varlığı veya yokluğu, değişkenlerin ömrünü belirlemede önemli faktörlerdir. Birden çok yeniden bildirim olabilir ancak yalnızca bir tanım olabilir. Ancak, bir tanım birden fazla çeviri biriminde görünebilir. İç bağlantıya sahip nesneler için, dahili bağlantılı nesneler bir çeviri birimine benzersiz olduğundan, bu kural her bir çeviri birimine ayrı olarak uygulanır. Dış bağlantısına sahip nesneler için bu kural tüm programa uygulanır. Görünürlük hakkında daha fazla bilgi için bkz. [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md).
 

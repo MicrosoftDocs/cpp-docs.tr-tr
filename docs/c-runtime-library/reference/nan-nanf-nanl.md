@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Nan, nanf, Nanl'
 title: nan, nanf, nanl
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - nanf function
 - nanl function
 ms.assetid: 790e9158-80ab-43e0-8f5a-096198553fd9
-ms.openlocfilehash: 77e933b971312097ec9eddd342b3b4dc2df34204
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3fd5fcb004058baf8d216385cde023033f29f08f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914580"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256334"
 ---
 # <a name="nan-nanf-nanl"></a>nan, nanf, nanl
 
@@ -72,11 +73,11 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**Nan**, **nanf**, **Nanl**|\<Math. h>|\<cmath> veya \<Math. h>|
+|**Nan**, **nanf**, **Nanl**|\<math.h>|\<cmath> veya \<math.h>|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [fpclassify](fpclassify.md)<br/>
 [_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>
 [isfinite, _finite, _finitef](finite-finitef.md)<br/>

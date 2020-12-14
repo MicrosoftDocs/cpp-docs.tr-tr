@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _heapmin'
 title: _heapmin
 ms.date: 4/2/2020
 api_name:
@@ -32,18 +33,18 @@ helpviewer_keywords:
 - _heapmin function
 - heapmin function
 ms.assetid: c0bccdf6-2d14-4d7b-a7ff-d6a17bdb410f
-ms.openlocfilehash: 9a98dfffc784d05a93f65a51a5250c31fe1dd596
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 06ec2d7b0269927d8d67c9fe7431f2f550728aae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920107"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296452"
 ---
 # <a name="_heapmin"></a>_heapmin
 
 Kullanılmayan yığın belleğini işletim sistemine yayınlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 int _heapmin( void );
@@ -51,13 +52,13 @@ int _heapmin( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **_heapmin** 0 döndürür; Aksi takdirde, işlev-1 döndürür ve **errno** değerini **ENOSYS**olarak ayarlar.
+Başarılı olursa, **_heapmin** 0 döndürür; Aksi takdirde, işlev-1 döndürür ve **errno** değerini **ENOSYS** olarak ayarlar.
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Heapmin** işlevi, kullanılmayan yığın belleğini işletim sistemine serbest bırakarak yığını en aza indirir. İşletim sistemi **_heapmin**desteklemiyorsa (örneğin, Windows 98), işlev-1 döndürür ve **errno** değerini **ENOSYS**olarak ayarlar.
+**_Heapmin** işlevi, kullanılmayan yığın belleğini işletim sistemine serbest bırakarak yığını en aza indirir. İşletim sistemi **_heapmin** desteklemiyorsa (örneğin, Windows 98), işlev-1 döndürür ve **errno** değerini **ENOSYS** olarak ayarlar.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -65,13 +66,13 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_heapmin**|\<malloc. h>|\<errno. h>|
+|**_heapmin**|\<malloc.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[Bellek ayırma](../../c-runtime-library/memory-allocation.md)<br/>
 [Süz](free.md)<br/>
 [_heapadd](../../c-runtime-library/heapadd.md)<br/>
 [_heapchk](heapchk.md)<br/>

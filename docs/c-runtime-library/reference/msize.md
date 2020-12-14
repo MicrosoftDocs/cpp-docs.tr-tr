@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _msize'
 title: _msize
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - msize function
 - _msize function
 ms.assetid: 02b1f89e-d0d7-4f12-938a-9eeba48a0f88
-ms.openlocfilehash: cc8eef0d28f649340715edbf4b1ebdfea85c2ff2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e1a913f008037673bf8c10e73095a898610039d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914618"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256360"
 ---
 # <a name="_msize"></a>_msize
 
@@ -59,7 +60,7 @@ Bellek bloğunun işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Msize** işlevi, **calloc**, **malloc**veya **realloc**çağrısıyla ayrılan bellek bloğunun boyutunu bayt cinsinden döndürür.
+**_Msize** işlevi, **calloc**, **malloc** veya **realloc** çağrısıyla ayrılan bellek bloğunun boyutunu bayt cinsinden döndürür.
 
 Uygulama, C çalışma zamanı kitaplıklarının bir hata ayıklama sürümü ile bağlantılı olduğunda **_msize** [_msize_dbg](msize-dbg.md)çözümlenir. Hata ayıklama işlemi sırasında yığının nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).
 
@@ -71,7 +72,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_msize**|\<malloc. h>|
+|**_msize**|\<malloc.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -85,7 +86,7 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[Bellek ayırma](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](calloc.md)<br/>
 [_expand](expand.md)<br/>
 [malloc](malloc.md)<br/>

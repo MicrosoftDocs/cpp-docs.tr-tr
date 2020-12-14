@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _msize_dbg'
 title: _msize_dbg
 ms.date: 11/04/2016
 api_name:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - _msize_dbg function
 - msize_dbg function
 ms.assetid: a333f4b6-f8a2-4e61-bb69-cb34063b8cef
-ms.openlocfilehash: 7fa12689a35beaad0727c14327d1b948a62c29d0
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8ead0257e990322e88e20ce6111ff590dbc71686
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951485"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256399"
 ---
 # <a name="_msize_dbg"></a>_msize_dbg
 
@@ -51,26 +52,26 @@ size_t _msize_dbg(
 *userData*<br/>
 Boyutun belirleneceği bellek bloğunun işaretçisi.
 
-*blockType*<br/>
-Belirtilen bellek bloğunun türü: **_Client_block** veya **_NORMAL_BLOCK**.
+*Blok türü*<br/>
+Belirtilen bellek bloğunun türü: **_CLIENT_BLOCK** veya **_NORMAL_BLOCK**.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı tamamlandığında, **_msize_dbg** belirtilen bellek bloğunun boyutunu (bayt cinsinden) döndürür; Aksi takdirde, **null**döndürür.
+**_Msize_dbg** başarıyla tamamlandığında, belirtilen bellek bloğunun boyutunu (bayt cinsinden) döndürür; Aksi takdirde, **null** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_msize_dbg** , _[msize](msize.md) işlevinin bir hata ayıklama sürümüdür. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, her **_msize_dbg** çağrısı **_msize**çağrısına düşürülür. Hem **_msize** hem de **_msize_dbg** temel yığında bir bellek bloğunun boyutunu hesaplar, ancak **_msize_dbg** iki hata ayıklama özelliği ekler: Bu, döndürülen boyuttaki bellek bloğunun Kullanıcı bölümünün her iki tarafındaki arabellekleri içerir ve belirli blok türleri için boyut hesaplamalarına izin verir.
+**_msize_dbg** , _ [msize](msize.md) işlevinin bir hata ayıklama sürümüdür. [_DEBUG](../../c-runtime-library/debug.md) tanımlı olmadığında, her **_msize_dbg** çağrısı **_msize** çağrısına düşürülür. Hem **_msize** hem de **_msize_dbg** , temel yığında bir bellek bloğunun boyutunu hesaplar, ancak **_msize_dbg** Iki hata ayıklama özelliği ekler: Bu, döndürülen boyuttaki bellek bloğunun Kullanıcı bölümünün her iki tarafındaki arabellekleri içerir ve belirli blok türleri için boyut hesaplamalarına izin verir.
 
 Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma bloğu türleri ve bunların nasıl kullanıldığı hakkında bilgi için bkz. [hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details). Bir uygulamanın hata ayıklama sürümünde standart yığın işlevi çağırma ve hata ayıklama sürümü arasındaki farklar hakkında daha fazla bilgi için bkz. [yığın ayırma Işlevlerinin hata ayıklama sürümleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
-Bu işlev, parametresini doğrular. *Memblock* null bir işaretçisiyse, **_Msıze** [parametresi doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Hata işlenirse, işlev **errno** ' ı **EINVAL** olarak ayarlar ve-1 döndürür.
+Bu işlev, parametresini doğrular. *Memblock* null bir işaretçisiyse, **_msize** [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklanan şekilde geçersiz bir parametre işleyicisini çağırır. Hata işlenirse, işlev **errno** ' ı **EINVAL** olarak ayarlar ve-1 döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_msize_dbg**|\<Crtdbg. h >|
+|**_msize_dbg**|\<crtdbg.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -130,7 +131,7 @@ int main( void )
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 Size of block after _malloc_dbg of 40 longs: 160
@@ -139,5 +140,5 @@ Size of block after _realloc_dbg of 40 more longs: 320
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)<br/>
+[Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)<br/>
 [_malloc_dbg](malloc-dbg.md)<br/>

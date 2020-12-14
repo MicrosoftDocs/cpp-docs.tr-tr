@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: Işlev bildirimlerinin ve tanımlarının kullanılmayan formları'
 title: İşlev Bildirimlerinin ve Tanımlarının Kullanılmayan Formları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - old style function declarations
 ms.assetid: 67c5038f-0529-4f29-9d0f-c27580977b50
-ms.openlocfilehash: 3311fc846ad0f4f80c2e3b61508edd626a13fbb2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7cd66ba1600d4a5fd381819f4b1d3f0beeb30f0a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218799"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256919"
 ---
 # <a name="obsolete-forms-of-function-declarations-and-definitions"></a>İşlev Bildirimlerinin ve Tanımlarının Kullanılmayan Formları
 
@@ -28,7 +29,7 @@ double alt_style( a , real )  /* Obsolete function definition */
 
 Bildirim önerilse de, bir tam sayı veya aynı boyuta sahip bir işaretçi döndüren işlevlerin **`int`** bildirime sahip olması gerekmez.
 
-ANSI C standardı ile uyum açısından, üç nokta kullanan eski stil işlev bildirimleri, /Za seçeneğiyle derlerken şimdi bir hata, /Ze ile derlerken ise düzey 4 uyarısı oluşturur. Örnek:
+ANSI C standardı ile uyum açısından, üç nokta kullanan eski stil işlev bildirimleri, /Za seçeneğiyle derlerken şimdi bir hata, /Ze ile derlerken ise düzey 4 uyarısı oluşturur. Örneğin:
 
 ```cpp
 void funct1( a, ... )  /* Generates a warning under /Ze or */

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: One-Dimensional dizileri'
 title: Bir Boyutlu Diziler
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - square brackets [ ], arrays
 - subscript expressions
 ms.assetid: e28536e5-3b77-46b5-97fd-9b938c771816
-ms.openlocfilehash: c310d610b4e4cfc5ae5620d38337a5b8fd5243ef
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6c75d4b8d9a64f95f3698e6953949a71df60cad6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226359"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256906"
 ---
 # <a name="one-dimensional-arrays"></a>Bir Boyutlu Diziler
 
@@ -25,7 +26,7 @@ Köşeli ayraçlar (**[]**) içindeki bir sonek ifadesi, bir dizi nesnesinin bir
 postfix-expression [ expression ]
 ```
 
-Genellikle, *sonek ifadesi* tarafından temsil edilen değer, dizi tanımlayıcısı gibi bir işaretçi değeridir ve *ifade* ise tamsayı değeridir. Ancak, tüm sözdizimi, ifadelerden birinin işaretçi türü ve diğeri de İntegral türünde olması olabilir. Bu nedenle, tamsayı değeri *sonek ifadesi* konumunda olabilir ve işaretçi değeri, *ifadedeki*parantez veya "alt simge" konumunda olabilir. Örneğin, bu kod geçerlidir:
+Genellikle, *sonek ifadesi* tarafından temsil edilen değer, dizi tanımlayıcısı gibi bir işaretçi değeridir ve *ifade* ise tamsayı değeridir. Ancak, tüm sözdizimi, ifadelerden birinin işaretçi türü ve diğeri de İntegral türünde olması olabilir. Bu nedenle, tamsayı değeri *sonek ifadesi* konumunda olabilir ve işaretçi değeri, *ifadedeki* parantez veya "alt simge" konumunda olabilir. Örneğin, bu kod geçerlidir:
 
 ```c
 // one_dimensional_arrays.c

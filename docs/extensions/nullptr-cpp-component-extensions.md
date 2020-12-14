@@ -1,4 +1,5 @@
 ---
+description: ': Nullptr hakkında daha fazla bilgi edinin (C++/CLı ve C++/CX)'
 title: nullptr (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - __nullptr keyword (C++)
 - nullptr keyword [C++]
 ms.assetid: 594cfbf7-06cb-4366-9ede-c0b703e1d095
-ms.openlocfilehash: 7e9cf88fdc0444f736f1cfac0d06dfc675a162cc
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: cf531e81e31af2e3f3790b9f57b54278ad574733
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008360"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257647"
 ---
 # <a name="nullptr--ccli-and-ccx"></a>nullptr (C++/CLI ve C++/CX)
 
-**`nullptr`** Anahtar sözcüğü bir *null işaretçi değeri*temsil eder. Bir nesne tanıtıcısı, iç işaretçi veya yerel işaretçi türünün bir nesneyi işaret etmez olduğunu göstermek için null işaretçi değeri kullanın.
+**`nullptr`** Anahtar sözcüğü bir *null işaretçi değeri* temsil eder. Bir nesne tanıtıcısı, iç işaretçi veya yerel işaretçi türünün bir nesneyi işaret etmez olduğunu göstermek için null işaretçi değeri kullanın.
 
 **`nullptr`** Yönetilen ya da yerel kodla kullanın. Derleyici, yönetilen ve yerel null işaretçi değerleri için uygun ancak farklı yönergeler yayar. Bu anahtar sözcüğünün ISO standardı C++ sürümünü kullanma hakkında daha fazla bilgi için bkz. [nullptr](../cpp/nullptr.md).
 

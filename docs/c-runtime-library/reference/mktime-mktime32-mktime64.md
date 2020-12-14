@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: mktime, _mktime32, _mktime64'
 title: mktime, _mktime32, _mktime64
 ms.date: 4/2/2020
 api_name:
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - _mktime64 function
 - time, converting
 ms.assetid: 284ed5d4-7064-48a2-bd50-15effdae32cf
-ms.openlocfilehash: 48d1104d9680fe8ab88f0f73bfc179f3e4cf45a6
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: aebb12324de5a18dfac6ab84b3b7b2c3da15a2ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919068"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256425"
 ---
 # <a name="mktime-_mktime32-_mktime64"></a>mktime, _mktime32, _mktime64
 
@@ -69,7 +70,7 @@ Zaman yapısına işaretçi; bkz. [asctime](asctime-wasctime.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mktime32** , [time_t](../../c-runtime-library/standard-types.md)türünde bir değer olarak kodlanmış belirtilen takvim saatini döndürür. *Timeptr* gece yarısından önce bir tarihe, 1 Ocak 1970 ' e veya takvim saatinin temsil edilemeyeceği takdirde, **_mktime32** **time_t**türüne-1 tür dönüştürme döndürür. **_Mktime32** kullanırken ve *timeptr* , 23:59:59 Ocak 2038, Eşgüdümlü Evrensel Saat (UTC) sonrasında bir tarihe başvuruyorsa, **time_t**türüne-1 tür dönüştürme döndürür.
+**_mktime32** , [time_t](../../c-runtime-library/standard-types.md)türünde bir değer olarak kodlanmış belirtilen takvim saatini döndürür. *Timeptr* gece yarısından önce bir tarihe, 1 Ocak 1970 ' e veya takvim saatinin temsil edilemeyeceği takdirde, **_mktime32** **time_t** türüne-1 tür dönüştürme döndürür. **_Mktime32** kullanırken ve *timeptr* , 23:59:59 Ocak 2038, Eşgüdümlü Evrensel Saat (UTC) sonrasında bir tarihe başvuruyorsa, **time_t** türüne-1 tür dönüştürme döndürür.
 
 **_mktime64** , *timeptr* 23:59:59, 31 Aralık 3000 ' den sonra bir tarihe başvuruyorsa, **__time64_t** tür olarak 1 ' e cast.
 
@@ -77,7 +78,7 @@ Zaman yapısına işaretçi; bkz. [asctime](asctime-wasctime.md).
 
 **Mktime**, **_mktime32** ve **_mktime64** işlevleri, *timeptr* tarafından işaret edilen zaman yapısını (muhtemelen tamamlanmamış), normalleştirilmiş değerlerle tam olarak tanımlanmış bir yapıya dönüştürür ve sonra bunu bir **time_t** takvim süresi değerine dönüştürür. Dönüştürülen süre, [Time](time-time32-time64.md) işlevi tarafından döndürülen değerlerle aynı kodlamaya sahiptir. *Timeptr* yapısının **tm_wday** ve **tm_yday** bileşenlerinin özgün değerleri yok sayılır ve diğer bileşenlerin özgün değerleri normal aralıklarıyla sınırlandırılır.
 
-**mktime** , **_USE_32BIT_TIME_T** tanımlanmadığı müddetçe **_mktime64**eşdeğer bir satır içi işlevdir, bu durumda **_mktime32**eşdeğerdir.
+**mktime** , **_USE_32BIT_TIME_T** tanımlanmadığı müddetçe **_mktime64** eşdeğer bir satır içi işlevdir, bu durumda **_mktime32** eşdeğerdir.
 
 UTC ayarından sonra, **_mktime32** gece yarısından Itibaren 1 ocak 1970 23:59:59, 18 Ocak 2038, UTC tarihine kadar olan tarihleri işler. **_mktime64** tarihleri gece yarısı, 1 Ocak 1970, 31 aralık 3000 23:59:59 için işler. Bu ayarlama, belirttiğiniz tarih aralık dahilinde olmasına rağmen bu işlevlerin-1 ( **time_t**, **__time32_t** veya **__time64_t**) döndürmesini sağlayabilir. Örneğin, bu, UTC 'den iki saat önce olan, Cairo kullanıyorsanız, ilk olarak *timeptr*'de belirttiğiniz tarihten iki saat çıkarılır; Bu, artık tarihi Aralık dışında yerleştirebilir.
 
@@ -91,9 +92,9 @@ Bu işlevler, bir tm yapısını doğrulamak ve doldurmanız için kullanılabil
 
 C çalışma zamanı kitaplığı, [TZ](tzset.md) ortam değişkeninden gündüz tasarrufu süresi davranışını belirleyecek. **TZ** ayarlanmamışsa, işletim sisteminden gün ışığından yararlanma saati bilgilerini almak Için [gettimezoneınformation](/windows/win32/api/timezoneapi/nf-timezoneapi-gettimezoneinformation) Win32 API çağrısı kullanılır. Bu başarısız olursa, kitaplık gün ışığından yararlanma saatinin hesaplanmasını uygulamak için Birleşik Devletler ' kurallarının kullanıldığını varsayar. **tm_isdst** gerekli bir alandır. Ayarlanmamışsa, değeri tanımsızdır ve bu işlevlerden dönüş değeri tahmin edilemez. *Timeptr* , önceki bir [asctime](asctime-wasctime.md), [gmtime](gmtime-gmtime32-gmtime64.md)veya [localtime](localtime-localtime32-localtime64.md) (veya bu işlevlerin çeşitleri) çağrısı tarafından döndürülen bir **TM** yapısına işaret ediyorsa, **tm_isdst** alanı doğru değeri içerir.
 
-**Gmtime** ve **localtime** (ve **_gmtime32**, **_gmtime64**, **_localtime32**ve **_localtime64**) dönüştürme için her iş parçacığı için tek bir arabellek kullanılacağını unutmayın. Bu arabelleği **mktime**, **_mktime32** veya **_mktime64**olarak sağlarsanız, önceki içerikler yok edilir.
+**Gmtime** ve **localtime** (ve **_gmtime32**, **_gmtime64**, **_localtime32** ve **_localtime64**) dönüştürme için her iş parçacığı için tek bir arabellek kullanılacağını unutmayın. Bu arabelleği **mktime**, **_mktime32** veya **_mktime64** olarak sağlarsanız, önceki içerikler yok edilir.
 
-Bu işlevler, parametresini doğrular. *Timeptr* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Bu işlevler, parametresini doğrular. *Timeptr* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -101,9 +102,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**mktime**|\<Time. h>|
-|**_mktime32**|\<Time. h>|
-|**_mktime64**|\<Time. h>|
+|**mktime**|\<time.h>|
+|**_mktime32**|\<time.h>|
+|**_mktime64**|\<time.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

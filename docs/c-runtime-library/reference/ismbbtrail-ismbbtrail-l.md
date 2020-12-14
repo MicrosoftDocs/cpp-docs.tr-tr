@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _ismbbtrail _ismbbtrail_l'
 title: _ismbbtrail, _ismbbtrail_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _ismbbtrail_l function
 - ismbbtrail function
 ms.assetid: dfdd0292-960b-4c1d-bf11-146e0fc80247
-ms.openlocfilehash: 08229b4a35634193810f7c24a3f8749fba034872
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 4c9737cb0d4c3e4d1acf35e0c0cbea18ccba3f69
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918685"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256438"
 ---
 # <a name="_ismbbtrail-_ismbbtrail_l"></a>_ismbbtrail, _ismbbtrail_l
 
@@ -79,14 +80,14 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_ismbbtrail**|\<Mbctype. h> veya \<mbstring. h>|\<CType. h>, * \<limit. h>, \<stdlib. h>|
-|**_ismbbtrail_l**|\<Mbctype. h> veya \<mbstring. h>|\<CType. h>, * \<limit. h>, \<stdlib. h>|
+|**_ismbbtrail**|\<mbctype.h> veya \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
+|**_ismbbtrail_l**|\<mbctype.h> veya \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
 
-\*Test koşullarına yönelik bildirim sabitleri için.
+\* Test koşullarına yönelik bildirim sabitleri için.
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
+[Bayt sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
 [_ismbb yordamlar](../../c-runtime-library/ismbb-routines.md)<br/>
