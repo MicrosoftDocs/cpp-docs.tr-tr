@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: karmaşık &lt; Long Double&gt;'
 title: karmaşık &lt; uzun çift&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - complex<long double> function
 ms.assetid: 37591991-b385-46e9-b727-d534dbc10432
-ms.openlocfilehash: 73027ba76d608424b1a6da346e861b10c66989fe
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5dd3b50c28b889a2e1fafba37cc24fda832f5975
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228394"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233831"
 ---
 # <a name="complexltlong-doublegt"></a>karmaşık &lt; uzun çift&gt;
 
 Bu açıkça özelleştirilmiş sınıf şablonu, her ikisi de, **`long double`** karmaşık bir sayının gerçek bölümünü ve sanal parçayı temsil eden ikincisini temsil eden, her ikisi de türündeki sıralı bir nesne çiftini depolayan bir nesneyi tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <>
@@ -117,7 +118,7 @@ arg( c3 ) = 0.927295 radians, which is 53.1301 degrees.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**:\<complex>
+**Üst bilgi**: \<complex>
 
 **Ad alanı:** std
 

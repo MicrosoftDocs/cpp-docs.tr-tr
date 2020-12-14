@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _expand'
 title: _expand
 ms.date: 4/2/2020
 api_name:
@@ -35,18 +36,18 @@ helpviewer_keywords:
 - _expand function
 - expand function
 ms.assetid: 4ac55410-39c8-45c7-bccd-3f1042ae2ed3
-ms.openlocfilehash: 5abd90f6106cbca54a9c869841ff70383edb5edc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 31558bb67266430cc028e37a1e23dff2fa411356
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234152"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235975"
 ---
 # <a name="_expand"></a>_expand
 
 Bellek bloğunun boyutunu değiştirir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 void *_expand(
@@ -67,22 +68,22 @@ Bayt cinsinden yeni boyut.
 
 **_expand** yeniden ayrılan bellek bloğuna void bir işaretçi döndürür. **_expand**, **realloc**'ın aksine bir bloğu boyutunu değiştirecek şekilde taşıyamaz. Bu nedenle, bloğu taşımadan genişletmek için yeterli kullanılabilir bellek varsa, **_expand** *memblock* parametresi dönüş değeri ile aynıdır.
 
-**_expand** işlemi sırasında bir hata algılandığında **null değeri** döndürür. Örneğin, bir bellek bloğunu daraltmak için **_expand** kullanılırsa, küçük blok yığınında veya geçersiz bir blok İşaretçisinde bozulma algılayabilir ve **null**döndürebilir.
+**_expand** işlemi sırasında bir hata algılandığında **null değeri** döndürür. Örneğin, bir bellek bloğunu daraltmak için **_expand** kullanılırsa, küçük blok yığınında veya geçersiz bir blok İşaretçisinde bozulma algılayabilir ve **null** döndürebilir.
 
-Bloğu taşımadan verilen boyuta genişletmek için yeterli kullanılabilir bellek yoksa, işlev **null**değerini döndürür. **_expand** , istenen boyuttan daha küçük bir biçimde genişletilmiş bir blok döndürmez. Bir hata oluşursa, **errno** hatanın yapısını gösterir. **Errno**hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bloğu taşımadan verilen boyuta genişletmek için yeterli kullanılabilir bellek yoksa, işlev **null** değerini döndürür. **_expand** , istenen boyuttan daha küçük bir biçimde genişletilmiş bir blok döndürmez. Bir hata oluşursa, **errno** hatanın yapısını gösterir. **Errno** hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Dönüş değeri, herhangi bir nesne türünün depolanması için uygun şekilde hizalı olarak garantili bir depolama alanına işaret eder. Öğenin yeni boyutunu denetlemek için **_msize**kullanın. Dışında bir türe işaretçi almak için **`void`** , dönüş değerinde bir tür dönüştürme kullanın.
+Dönüş değeri, herhangi bir nesne türünün depolanması için uygun şekilde hizalı olarak garantili bir depolama alanına işaret eder. Öğenin yeni boyutunu denetlemek için **_msize** kullanın. Dışında bir türe işaretçi almak için **`void`** , dönüş değerinde bir tür dönüştürme kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
 
 **_Expand** işlevi, bloğu yığın içinde taşımadan genişletmeyi veya anlaşmayı deneyerek, önceden ayrılmış bir bellek bloğunun boyutunu değiştirir. *Memblock* parametresi bloğunun başlangıcına işaret eder. *Boyut* parametresi, blok için bayt cinsinden yeni boyut verir. Bloğun içeriği, yeni ve eski boyutların daha kısa bir şekilde değiştirilmeden kalır. *memblock* , serbest bırakılmış bir blok olmamalıdır.
 
 > [!NOTE]
-> 64-bit platformlarda, yeni boyut geçerli boyuttan daha küçükse **_expand** bloğu sözleşmeyebilir; Özellikle, blok boyutu 16K 'den küçükse ve bu nedenle düşük parçalanma yığınında ayrılırsa, **_expand** engellemeyi değiştirmez ve *memblock*döndürür.
+> 64-bit platformlarda, yeni boyut geçerli boyuttan daha küçükse **_expand** bloğu sözleşmeyebilir; Özellikle, blok boyutu 16K 'den küçükse ve bu nedenle düşük parçalanma yığınında ayrılırsa, **_expand** engellemeyi değiştirmez ve *memblock* döndürür.
 
 Uygulama, C çalışma zamanı kitaplıklarının bir hata ayıklama sürümü ile bağlantılı olduğunda **_expand** [_expand_dbg](expand-dbg.md)çözümlenir. Hata ayıklama işlemi sırasında yığının nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).
 
-Bu işlev, parametrelerini doğrular. *Memblock* null işaretçisiyse, bu Işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür. *Boyut* **_HEAP_MAXREQ**büyükse, **errno** **ENOMEM** olarak ayarlanır ve işlev **null**değerini döndürür.
+Bu işlev, parametrelerini doğrular. *Memblock* null işaretçisiyse, bu Işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null** değerini döndürür. *Boyut* **_HEAP_MAXREQ** büyükse, **errno** **ENOMEM** olarak ayarlanır ve işlev **null** değerini döndürür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 

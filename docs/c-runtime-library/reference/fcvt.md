@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _fcvt'
 title: _fcvt
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - fcvt function
 - floating-point functions
 ms.assetid: 74584c88-f0dd-4907-8fca-52da5df583f5
-ms.openlocfilehash: 2ca8a7fcd58e91ffa8982f30117b09af587d96cf
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 4d2439c586ec28526849e956b1302c444cafa3a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920194"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235768"
 ---
 # <a name="_fcvt"></a>_fcvt
 
@@ -54,7 +55,7 @@ char *_fcvt(
 
 ### <a name="parameters"></a>Parametreler
 
-*deeri*<br/>
+*değer*<br/>
 Dönüştürülecek sayı.
 
 *biriktirme*<br/>
@@ -63,7 +64,7 @@ Ondalık ayırıcıdan sonraki basamak sayısı.
 *dec*<br/>
 Depolanan ondalık noktası konumu işaretçisi.
 
-*imzalayabilirsiniz*<br/>
+*sign*<br/>
 Saklı işaret göstergesinin işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -74,15 +75,15 @@ Saklı işaret göstergesinin işaretçisi.
 
 **_Fcvt** işlevi, kayan noktalı bir sayıyı null ile sonlandırılmış bir karakter dizesine dönüştürür. *Değer* parametresi dönüştürülecek kayan noktalı sayıdır. **_fcvt** *değer* rakamlarını bir dize olarak depolar ve null karakteri (' \ 0 ') ekler. *Count* parametresi, ondalık ayırıcıdan sonra depolanacak basamak sayısını belirtir. Fazla basamak *sayısı basamak sayısına* yuvarlanır. *Daha az duyarlık basamağı basamak* varsa, dize sıfırlar ile doldurulur.
 
-**_Fcvt** tarafından döndürülen toplam basamak sayısı **_CVTBUFSIZE**aşamaz.
+**_Fcvt** tarafından döndürülen toplam basamak sayısı **_CVTBUFSIZE** aşamaz.
 
-Yalnızca rakamlar dizede depolanır. Ondalık noktanın konumu ve *değer* işareti, çağrıdan sonra *Ara* ve imzala öğesinden elde edilebilir. *Dec* parametresi bir tamsayı değerine işaret eder; Bu tamsayı değeri, dizenin başlangıcına göre ondalık noktanın konumunu verir. Sıfır veya negatif tamsayı değeri, ondalık noktanın ilk basamağın solunda olduğunu gösterir. Parametre *işareti* , *değer*işaretini gösteren bir tamsayıya işaret eder. *Değer* pozitifse, tamsayı 0 olarak ayarlanır ve *değer* negatifse sıfır dışında bir sayı olarak ayarlanır.
+Yalnızca rakamlar dizede depolanır. Ondalık noktanın konumu ve *değer* işareti, çağrıdan sonra *Ara* ve imzala öğesinden elde edilebilir. *Dec* parametresi bir tamsayı değerine işaret eder; Bu tamsayı değeri, dizenin başlangıcına göre ondalık noktanın konumunu verir. Sıfır veya negatif tamsayı değeri, ondalık noktanın ilk basamağın solunda olduğunu gösterir. Parametre *işareti* , *değer* işaretini gösteren bir tamsayıya işaret eder. *Değer* pozitifse, tamsayı 0 olarak ayarlanır ve *değer* negatifse sıfır dışında bir sayı olarak ayarlanır.
 
 **_Ecvt** ve **_fcvt** arasındaki fark *Count* parametresinin yorumlamasıdır. **_ecvt** sayıyı, çıkış dizesindeki toplam basamak sayısı *olarak yorumlarken* , **_fcvt** *sayıyı* ondalık ayırıcıdan sonraki basamak sayısı olarak yorumlar.
 
 **_ecvt** ve **_fcvt** dönüştürme için tek bir statik olarak ayrılmış arabellek kullanır. Bu yordamların birine yapılan her bir çağrı, önceki çağrının sonuçlarını yok eder.
 
-Bu işlev, parametrelerini doğrular. *Ara* veya *işaret* **null**veya *sayı* 0 ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve **null** döndürülür.
+Bu işlev, parametrelerini doğrular. *Ara* veya *işaret* **null** veya *sayı* 0 ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve **null** döndürülür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -90,7 +91,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fcvt**|\<Stdlib. h>|
+|**_fcvt**|\<stdlib.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -126,7 +127,7 @@ source: 3.1415926535   buffer: '31415927'   decimal: 1   sign: 0
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
 [_ecvt](ecvt.md)<br/>
 [_gcvt](gcvt.md)<br/>

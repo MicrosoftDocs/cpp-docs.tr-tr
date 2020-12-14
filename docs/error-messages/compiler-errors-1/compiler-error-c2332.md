@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2332'
 title: Derleyici hatası C2332
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2332
 ms.assetid: fb05cd68-e271-4bea-9fb7-ef4edb0a26ac
-ms.openlocfilehash: 74b0045b70a68e182025976f84f8a709c3a30064
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 9733e588c3f24d61da154d7cb14a5eeecc30e2c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74747767"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234923"
 ---
 # <a name="compiler-error-c2332"></a>Derleyici hatası C2332
 

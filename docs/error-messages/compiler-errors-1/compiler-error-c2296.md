@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2296'
 title: Derleyici hatası C2296
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2296
 ms.assetid: 47d270f4-13ce-4c16-81e2-7d67c6c4a540
-ms.openlocfilehash: 020f046648488ca67923b7035acaa6c79ce495e4
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 4c36eb5f01b970b9435b45c75232d875de5818a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759080"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235235"
 ---
 # <a name="compiler-error-c2296"></a>Derleyici hatası C2296
 
 ' operator ': bozuk sol işlenen
 
-`operator` ile kullanılan sol işlenen geçersiz.
+İle kullanılan sol işlenen `operator` geçersiz.
 
 Örneğin, derleyici bir işlev çağrısını amaçladığınız bir bildirim görebilir.
 

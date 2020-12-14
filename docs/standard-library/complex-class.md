@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: karmaşık sınıf'
 title: complex Sınıfı
 ms.date: 03/27/2019
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - std::complex [C++], imag
 - std::complex [C++], real
 ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868
-ms.openlocfilehash: c7e2ca2c14ed0ac5f561fab446f6cd2dcc19649d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 224b59e79119496ea7484378a010c4861f32e404
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836550"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233909"
 ---
 # <a name="complex-class"></a>complex Sınıfı
 
@@ -100,7 +101,7 @@ Oluşturulan karmaşık sayıyı başlatmak için gerçek ve sanal parçaların�
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, depolanan gerçek parçayı, * \_ realval* ve depolanan sanal parçayı * \_ ımagval*'ye başlatır. İkinci Oluşturucu saklı gerçek parçayı öğesine `complexNum.real()` ve depolanan sanal bölümü öğesine başlatır `complexNum.imag()` .
+İlk Oluşturucu, depolanan gerçek parçayı, *\_ realval* ve depolanan sanal parçayı *\_ ımagval*'ye başlatır. İkinci Oluşturucu saklı gerçek parçayı öğesine `complexNum.real()` ve depolanan sanal bölümü öğesine başlatır `complexNum.imag()` .
 
 Bu uygulamada, bir çevirmen üye şablon işlevlerini desteklemiyorsa, şablon:
 
@@ -178,7 +179,7 @@ Karmaşık sayının sanal bölümü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Bir + bı*karmaşık numarası için, sanal parça veya bileşen *IM (a + bi) = b*' dir.
+*Bir + bı* karmaşık numarası için, sanal parça veya bileşen *IM (a + bi) = b*' dir.
 
 ### <a name="example"></a>Örnek
 
@@ -710,7 +711,7 @@ Karmaşık sayının gerçek bölümü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Bir + bi*karmaşık numarası için, gerçek parça veya bileşen bir *Re (a + bi) = a*olur.
+*Bir + bi* karmaşık numarası için, gerçek parça veya bileşen bir *Re (a + bi) = a* olur.
 
 ### <a name="example"></a>Örnek
 

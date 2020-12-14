@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CAsyncSocket sınıfı'
 title: CAsyncSocket sınıfı
 ms.date: 06/25/2020
 f1_keywords:
@@ -74,12 +75,12 @@ helpviewer_keywords:
 - CAsyncSocket [MFC], OnSend
 - CAsyncSocket [MFC], m_hSocket
 ms.assetid: cca4d5a1-aa0f-48bd-843e-ef0e2d7fc00b
-ms.openlocfilehash: cac3a95734a60252f241ab3080c05c65a9e04723
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a9b020a93d4d0f279b5b79fa76a9f6b94e4f9f03
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841655"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234338"
 ---
 # <a name="casyncsocket-class"></a>CAsyncSocket sınıfı
 
@@ -198,7 +199,7 @@ Bağlantı için kullanılabilen yeni bir yuvayı tanımlayan bir başvuru.
 Ağ üzerinde bilinen, bağlantı yuvasının adresini alan bir [sockaddr](/windows/win32/winsock/sockaddr-2) yapısına yönelik bir işaretçi. *LpSockAddr* bağımsız değişkeninin tam biçimi, yuva oluşturulduğunda oluşturulan adres ailesine göre belirlenir. *LpSockAddr* ve/veya *lpSockAddrLen* , null değerine eşitse, kabul edilen yuvanın uzak adresiyle ilgili hiçbir bilgi döndürülmez.
 
 *lpSockAddrLen*<br/>
-Bayt cinsinden *lpSockAddr* içindeki adresin uzunluğuna yönelik bir işaretçi. *LpSockAddrLen* bir değer-sonuç parametresidir: başlangıçta *lpSockAddr*tarafından işaret edilen boşluk miktarını içermelidir; Sonuç olarak, döndürülen adresin gerçek uzunluğunu (bayt olarak) içerir.
+Bayt cinsinden *lpSockAddr* içindeki adresin uzunluğuna yönelik bir işaretçi. *LpSockAddrLen* bir değer-sonuç parametresidir: başlangıçta *lpSockAddr* tarafından işaret edilen boşluk miktarını içermelidir; Sonuç olarak, döndürülen adresin gerçek uzunluğunu (bayt olarak) içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -819,7 +820,7 @@ BOOL GetSockOpt(
 Değerin alınacağı yuva seçeneği.
 
 *lpOptionValue*<br/>
-İstenen seçeneğin değerinin döndürüleceği arabelleğin bir işaretçisi. Seçili seçenekle ilişkili değer buffer *lpOptionValue*içinde döndürülür. *LpOptionLen* tarafından işaret edilen tamsayı, başlangıçta bu arabelleğin boyutunu bayt cinsinden içermelidir; dönüş sırasında döndürülen değerin boyutuna ayarlanır. SO_LINGER için bu, bir yapının boyutu olacaktır `LINGER` ; diğer tüm seçenekler için, **`int`** seçeneğe bağlı olarak, bool veya a boyutunda olacaktır. Açıklamalar bölümünde Seçenekler listesini ve boyutlarını görün.
+İstenen seçeneğin değerinin döndürüleceği arabelleğin bir işaretçisi. Seçili seçenekle ilişkili değer buffer *lpOptionValue* içinde döndürülür. *LpOptionLen* tarafından işaret edilen tamsayı, başlangıçta bu arabelleğin boyutunu bayt cinsinden içermelidir; dönüş sırasında döndürülen değerin boyutuna ayarlanır. SO_LINGER için bu, bir yapının boyutu olacaktır `LINGER` ; diğer tüm seçenekler için, **`int`** seçeneğe bağlı olarak, bool veya a boyutunda olacaktır. Açıklamalar bölümünde Seçenekler listesini ve boyutlarını görün.
 
 *lpOptionLen*<br/>
 *LpOptionValue* arabelleğinin bayt cinsinden boyutu için bir işaretçi.
@@ -845,9 +846,9 @@ Seçeneğin tanımlandığı düzey; desteklenen tek düzeyler SOL_SOCKET ve IPP
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetSockOpt` herhangi bir durumda, herhangi bir türde bir yuva ile ilişkili bir yuva seçeneğinin geçerli değerini alır ve sonucu *lpOptionValue*olarak depolar. Seçenekler, paketlerin yönlendirilmesi, bant dışı veri aktarımı vb. gibi yuva işlemlerini etkiler.
+`GetSockOpt` herhangi bir durumda, herhangi bir türde bir yuva ile ilişkili bir yuva seçeneğinin geçerli değerini alır ve sonucu *lpOptionValue* olarak depolar. Seçenekler, paketlerin yönlendirilmesi, bant dışı veri aktarımı vb. gibi yuva işlemlerini etkiler.
 
-Aşağıdaki seçenekler için desteklenir `GetSockOpt` . Türü, *lpOptionValue*tarafından belirtilen veri türünü tanımlar. TCP_NODELAY seçeneği düzey IPPROTO_TCP kullanır; diğer tüm seçenekler düzey SOL_SOCKET kullanır.
+Aşağıdaki seçenekler için desteklenir `GetSockOpt` . Türü, *lpOptionValue* tarafından belirtilen veri türünü tanımlar. TCP_NODELAY seçeneği düzey IPPROTO_TCP kullanır; diğer tüm seçenekler düzey SOL_SOCKET kullanır.
 
 |Değer|Tür|Anlamı|
 |-----------|----------|-------------|
@@ -895,7 +896,7 @@ BOOL IOCtl(
 Yuvada gerçekleştirilecek komut.
 
 *lpArgument*<br/>
-*LCommand*parametresi için bir işaretçi.
+*LCommand* parametresi için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -905,7 +906,7 @@ Yuvada gerçekleştirilecek komut.
 
 - Windows Yuvaları uygulamasının wsa, ağ alt sisteminin başarısız olduğunu algıladı.
 
-- WSAEINVAL *lCommand* geçerli bir komut değil veya *lpArgument* , *lCommand*için kabul edilebilir bir parametre değil veya komut sağlanan yuva türü için geçerli değil.
+- WSAEINVAL *lCommand* geçerli bir komut değil veya *lpArgument* , *lCommand* için kabul edilebilir bir parametre değil veya komut sağlanan yuva türü için geçerli değil.
 
 - WSAEINPROGRESS bir Windows Yuvaları engelleme işlemi devam ediyor.
 
@@ -1254,7 +1255,7 @@ Yuva SOCK_STREAM türündedir ve uzak taraf bağlantıyı düzgün şekilde kapa
 
 ## <a name="casyncsocketreceivefrom"></a><a name="receivefrom"></a> CAsyncSocket:: ReceiveFrom
 
-Bir veri birimi almak için bu üye işlevi çağırın ve kaynak adresini [sockaddr](/windows/win32/winsock/sockaddr-2) yapısında veya *rSocketAddress*içinde depolayın.
+Bir veri birimi almak için bu üye işlevi çağırın ve kaynak adresini [sockaddr](/windows/win32/winsock/sockaddr-2) yapısında veya *rSocketAddress* içinde depolayın.
 
 ```
 int ReceiveFrom(
@@ -1449,7 +1450,7 @@ Bayt cinsinden verilerin *lpbytes* cinsinden uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Herhangi bir hata oluşursa, `Send` gönderilen toplam karakter sayısını döndürür. (Bu, *nBufLen*tarafından belirtilen sayıdan daha az olabileceğini unutmayın.) Aksi takdirde, SOCKET_ERROR değeri döndürülür ve [GetLastError](#getlasterror)çağırarak belirli bir hata kodu elde edilebilir. Bu üye işlevi için aşağıdaki hatalar geçerlidir:
+Herhangi bir hata oluşursa, `Send` gönderilen toplam karakter sayısını döndürür. (Bu, *nBufLen* tarafından belirtilen sayıdan daha az olabileceğini unutmayın.) Aksi takdirde, SOCKET_ERROR değeri döndürülür ve [GetLastError](#getlasterror)çağırarak belirli bir hata kodu elde edilebilir. Bu üye işlevi için aşağıdaki hatalar geçerlidir:
 
 - WSANOTıNITIAL, bu API kullanılmadan önce başarılı bir [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit) gerçekleşmelidir.
 
@@ -1544,7 +1545,7 @@ Bayt cinsinden *lpSockAddr* içindeki adresin uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Herhangi bir hata oluşursa, `SendTo` gönderilen toplam karakter sayısını döndürür. (Bu, *nBufLen*tarafından belirtilen sayıdan daha az olabileceğini unutmayın.) Aksi takdirde, SOCKET_ERROR değeri döndürülür ve [GetLastError](#getlasterror)çağırarak belirli bir hata kodu elde edilebilir. Bu üye işlevi için aşağıdaki hatalar geçerlidir:
+Herhangi bir hata oluşursa, `SendTo` gönderilen toplam karakter sayısını döndürür. (Bu, *nBufLen* tarafından belirtilen sayıdan daha az olabileceğini unutmayın.) Aksi takdirde, SOCKET_ERROR değeri döndürülür ve [GetLastError](#getlasterror)çağırarak belirli bir hata kodu elde edilebilir. Bu üye işlevi için aşağıdaki hatalar geçerlidir:
 
 - WSANOTıNITIAL, bu API kullanılmadan önce başarılı bir [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit) gerçekleşmelidir.
 
@@ -1634,7 +1635,7 @@ Bu nesnenin bağlandığı yuvanın ağ adresi: "ftp.microsoft.com" gibi bir mak
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Herhangi bir hata oluşursa, `SendToEx` gönderilen toplam karakter sayısını döndürür. (Bu, *nBufLen*tarafından belirtilen sayıdan daha az olabileceğini unutmayın.) Aksi takdirde, SOCKET_ERROR değeri döndürülür ve [GetLastError](#getlasterror)çağırarak belirli bir hata kodu elde edilebilir. Bu üye işlevi için aşağıdaki hatalar geçerlidir:
+Herhangi bir hata oluşursa, `SendToEx` gönderilen toplam karakter sayısını döndürür. (Bu, *nBufLen* tarafından belirtilen sayıdan daha az olabileceğini unutmayın.) Aksi takdirde, SOCKET_ERROR değeri döndürülür ve [GetLastError](#getlasterror)çağırarak belirli bir hata kodu elde edilebilir. Bu üye işlevi için aşağıdaki hatalar geçerlidir:
 
 - WSANOTıNITIAL, bu API kullanılmadan önce başarılı bir [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit) gerçekleşmelidir.
 
@@ -1754,7 +1755,7 @@ TCP_NODELAY seçeneği, Nagle algoritmasını devre dışı bırakır. Nagle alg
 
 Bazı Windows Yuvaları uygulamaları, SO_DEBUG seçeneği bir uygulama tarafından ayarlandıysa çıkış hata ayıklama bilgilerini sağlar.
 
-Aşağıdaki seçenekler için desteklenir `SetSockOpt` . Türü, *lpOptionValue*tarafından belirtilen veri türünü tanımlar.
+Aşağıdaki seçenekler için desteklenir `SetSockOpt` . Türü, *lpOptionValue* tarafından belirtilen veri türünü tanımlar.
 
 |Değer|Tür|Anlamı|
 |-----------|----------|-------------|

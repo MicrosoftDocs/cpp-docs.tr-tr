@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: condition_variable sınıfı'
 title: condition_variable Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - std::condition_variable::wait
 - std::condition_variable::wait_for
 - std::condition_variable::wait_until
-ms.openlocfilehash: eef0e7ef013b4faeb6393cade67258a09eda5551
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f5987c050dece8536aef0f91731a0848b56d3a4b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842435"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233818"
 ---
 # <a name="condition_variable-class"></a>condition_variable Sınıfı
 
@@ -158,7 +159,7 @@ Veya döndüren herhangi bir **`true`** ifade **`false`** .
 
 İlk yöntem, `cv_status::timeout` *Rel_time* geçtiğinde bekleme sonlandırılırsa döndürür. Aksi takdirde, yöntemi döndürür `cv_status::no_timeout` .
 
-İkinci yöntem *Pred*değerini döndürür.
+İkinci yöntem *Pred* değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -216,7 +217,7 @@ Veya döndüren herhangi bir **`true`** ifade **`false`** .
 
 Bir tür döndüren yöntemler `cv_status` `cv_status::timeout` , *Abs_time* geçtiğinde bekleme sona erdiğinde döndürülür. Aksi halde Yöntemler döndürülür `cv_status::no_timeout` .
 
-Döndüren yöntemler **`bool`** *Pred*değerini döndürür.
+Döndüren yöntemler **`bool`** *Pred* değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 

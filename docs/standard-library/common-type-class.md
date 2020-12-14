@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: common_type sınıfı'
 title: common_type Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - common_type class
 - common_type
 ms.assetid: 02bc4e7b-c63d-49de-9f8a-511d3a5c1e7f
-ms.openlocfilehash: 3605b34a2bfc50831c889976ac5ea884053bb642
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 7dc41b443f6ec93c9d07ba8e3871346fae09d94f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449490"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233922"
 ---
-# <a name="commontype-class"></a>common_type Sınıfı
+# <a name="common_type-class"></a>common_type Sınıfı
 
 Bir veya daha fazla türün ortak türünü belirler.
 
@@ -47,7 +48,7 @@ struct common_type<T, U, V...> {
 
 ## <a name="remarks"></a>Açıklamalar
 
-`type` Üye, parametre listesindeki tüm türlerin dönüştürülebileceği ortak türdür.
+`type`Üye, parametre listesindeki tüm türlerin dönüştürülebileceği ortak türdür.
 
 ## <a name="example"></a>Örnek
 
@@ -92,7 +93,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output"></a>Çıktı
 
 ```Output
 Test for typedefs of common_type int
@@ -116,7 +117,7 @@ ClassType: true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

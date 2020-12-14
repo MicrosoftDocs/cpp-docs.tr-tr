@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C çalışma zamanı hatası R6018'
 title: C Çalışma Zamanı Hatası R6018
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - R6018
 ms.assetid: f6dd40d1-a119-4d8b-b39e-97350ea23349
-ms.openlocfilehash: 83ad191fe1518e5e6bab0798840415ef392db71e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 778b57c7071ab6ce042c9e1c434541c1dbcfad13
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197294"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97237666"
 ---
 # <a name="c-runtime-error-r6018"></a>C Çalışma Zamanı Hatası R6018
 
@@ -32,4 +33,4 @@ Program, bellek yönetimi işlemini gerçekleştirirken beklenmeyen bir hatayla 
 
 Bu hata genellikle, program yanlışlıkla çalışma zamanı yığın verilerini değiştirirse oluşur. Bununla birlikte, çalışma zamanı veya işletim sistemi kodundaki bir iç hata da oluşabilir.
 
-Bu sorunu onarmak için kodunuzda yığın bozulması hatalarını kontrol edin. Daha fazla bilgi ve örnek için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Sonra, uygulama dağıtımınız için en son yeniden dağıtılabilir kullandığınızı kontrol edin. Bilgi için bkz. [Visual C++'te dağıtım ](../../windows/deployment-in-visual-cpp.md).
+Bu sorunu onarmak için kodunuzda yığın bozulması hatalarını kontrol edin. Daha fazla bilgi ve örnek için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Sonra, uygulama dağıtımınız için en son yeniden dağıtılabilir kullandığınızı kontrol edin. Bilgi için bkz. [Visual C++ dağıtım](../../windows/deployment-in-visual-cpp.md).

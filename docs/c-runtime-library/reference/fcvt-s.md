@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _fcvt_s'
 title: _fcvt_s
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - floating-point functions, converting number to string
 - _fcvt_s function
 ms.assetid: 48671197-1d29-4c2b-a5d8-d2368f5f68a1
-ms.openlocfilehash: 557a1d359c389f0eb7477aab4bf9cbb51558703a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: dd4d58b39d4c18f2fff7da54c5fbd0f2346dfdd4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920198"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235885"
 ---
 # <a name="_fcvt_s"></a>_fcvt_s
 
@@ -70,7 +71,7 @@ Dönüştürme sonucunu tutacak olan sağlanan arabellek.
 *sizeInBytes*<br/>
 Arabelleğin bayt cinsinden boyutu.
 
-*deeri*<br/>
+*değer*<br/>
 Dönüştürülecek sayı.
 
 *biriktirme*<br/>
@@ -79,33 +80,33 @@ Ondalık ayırıcıdan sonraki basamak sayısı.
 *dec*<br/>
 Depolanan ondalık noktası konumu işaretçisi.
 
-*imzalayabilirsiniz*<br/>
+*sign*<br/>
 Saklı işaret göstergesinin işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Başarılıysa sıfır. Hata varsa dönüş değeri bir hata kodudur. Hata kodları errno. h içinde tanımlanır. Bu hataların listesi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Aşağıdaki tabloda listelendiği gibi geçersiz bir parametre söz konusu olduğunda, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
+Aşağıdaki tabloda listelendiği gibi geçersiz bir parametre söz konusu olduğunda, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL** döndürür.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*arabelleğin*|*sizeInBytes*|value|count|dec|sign|Döndürülmesini|*Arabellekteki* değer|
+|*arabelleğin*|*sizeInBytes*|değer|count|dec|sign|Döndürülmesini|*Arabellekteki* değer|
 |--------------|-------------------|-----------|-----------|---------|----------|------------|-----------------------|
-|**DEĞER**|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|Değiştirilmedi.|
-|**Null** değil (geçerli belleğe işaret eder)|<= 0|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|Değiştirilmedi.|
-|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**DEĞER**|kaydedilmemiş|**EıNVAL**|Değiştirilmedi.|
-|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**DEĞER**|**EıNVAL**|Değiştirilmedi.|
+|**DEĞER**|herhangi biri|herhangi biri|herhangi biri|herhangi biri|herhangi biri|**EıNVAL**|Değiştirilmedi.|
+|**Null** değil (geçerli belleğe işaret eder)|<= 0|herhangi biri|herhangi biri|herhangi biri|herhangi biri|**EıNVAL**|Değiştirilmedi.|
+|herhangi biri|herhangi biri|herhangi biri|herhangi biri|**DEĞER**|herhangi biri|**EıNVAL**|Değiştirilmedi.|
+|herhangi biri|herhangi biri|herhangi biri|herhangi biri|herhangi biri|**DEĞER**|**EıNVAL**|Değiştirilmedi.|
 
 ## <a name="security-issues"></a>Güvenlik Sorunları
 
-*arabellek* geçerli belleğe işaret etmezse ve **null**değilse **_fcvt_s** bir erişim ihlali oluşturabilir.
+*arabellek* geçerli belleğe işaret etmezse ve **null** değilse **_fcvt_s** bir erişim ihlali oluşturabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
 **_Fcvt_s** işlevi, kayan noktalı bir sayıyı null ile sonlandırılmış bir karakter dizesine dönüştürür. *Değer* parametresi dönüştürülecek kayan noktalı sayıdır. **_fcvt_s** *değer* rakamlarını bir dize olarak depolar ve null karakteri (' \ 0 ') ekler. *Count* parametresi, ondalık ayırıcıdan sonra depolanacak basamak sayısını belirtir. Fazla basamak *sayısı basamak sayısına* yuvarlanır. *Daha az duyarlık basamağı basamak* varsa, dize sıfırlar ile doldurulur.
 
-Yalnızca rakamlar dizede depolanır. Ondalık noktanın konumu ve *değer* işareti, çağrıdan sonra *Ara* ve *imzala* öğesinden elde edilebilir. *Dec* parametresi bir tamsayı değerine işaret eder; Bu tamsayı değeri, dizenin başlangıcına göre ondalık noktanın konumunu verir. Sıfır veya negatif tamsayı değeri, ondalık noktanın ilk basamağın solunda olduğunu gösterir. Parametre *işareti* , *değer*işaretini gösteren bir tamsayıya işaret eder. *Değer* pozitifse, tamsayı 0 olarak ayarlanır ve *değer* negatifse sıfır dışında bir sayı olarak ayarlanır.
+Yalnızca rakamlar dizede depolanır. Ondalık noktanın konumu ve *değer* işareti, çağrıdan sonra *Ara* ve *imzala* öğesinden elde edilebilir. *Dec* parametresi bir tamsayı değerine işaret eder; Bu tamsayı değeri, dizenin başlangıcına göre ondalık noktanın konumunu verir. Sıfır veya negatif tamsayı değeri, ondalık noktanın ilk basamağın solunda olduğunu gösterir. Parametre *işareti* , *değer* işaretini gösteren bir tamsayıya işaret eder. *Değer* pozitifse, tamsayı 0 olarak ayarlanır ve *değer* negatifse sıfır dışında bir sayı olarak ayarlanır.
 
 Bir arabellek uzunluğu **_CVTBUFSIZE** herhangi bir kayan nokta değeri için yeterlidir.
 
@@ -121,7 +122,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|İsteğe bağlı başlık|
 |--------------|---------------------|---------------------|
-|**_fcvt_s**|\<Stdlib. h>|\<errno. h>|
+|**_fcvt_s**|\<stdlib.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -162,7 +163,7 @@ Converted value: 120000
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
 [_ecvt_s](ecvt-s.md)<br/>
 [_gcvt_s](gcvt-s.md)<br/>

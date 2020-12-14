@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; karmaşık&gt;'
 title: '&lt;ş&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - complex header
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
-ms.openlocfilehash: f63fe99238450b8dffbf459ab078a8ecf6623b77
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b16798cf1725ba6fa681b04f735d44f02a2b1b82
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831508"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233844"
 ---
 # <a name="ltcomplexgt"></a>&lt;ş&gt;
 
@@ -28,7 +29,7 @@ Kapsayıcı sınıfı şablonunu `complex` ve destekleyici şablonlarını tanı
 
 Karmaşık bir sayı, gerçek sayıların sıralı bir çiftidir. Yalnızca geometrik olarak, karmaşık düzlem gerçek ve iki boyutlu düzledir. Gerçek düzleden ayırt eden karmaşık düzlemin özel nitelikleri, ek bir cebirsel yapısına sahip olmasından kaynaklanır. Bu cebirsel yapısında iki temel işlem vardır:
 
-- Toplama (*a*, *b*) + (*c*, *d*) = (*a*  +  *c*, *b*  +  *d*) olarak tanımlanır
+- Toplama (*a*, *b*) + (*c*, *d*) = (  +  *c*, *b*  +  *d*) olarak tanımlanır
 
 - (*A*, *b*) \* (*c*, *d*) olarak tanımlanan çarpma = (*AC*  -  *BD*, *ad*  +  *BC*)
 
@@ -38,13 +39,13 @@ Karmaşık ek ve karmaşık çarpma işlemlerine sahip karmaşık sayıların k�
 
 - Karmaşık sayı (0, 0), eklenebilir kimliktir ve (1, 0), çarpma kimliğidir.
 
-- Karmaşık bir sayı (*a*, *b*) için ek ters çevirme, (0*a*,*0) hariç*olmak üzere bu tür karmaşık sayılar için çarpma tersidir
+- Karmaşık bir sayı (*a*, *b*) için ek ters çevirme, (0,*0) hariç* olmak üzere bu tür karmaşık sayılar için çarpma tersidir
 
-   (*a**/(*<sup>2</sup>  +  *b*<sup>2</sup>2),-*b*/(2*a*<sup>2</sup>  +  *b*<sup>2</sup>2))
+   (*a**/(*<sup>2</sup>  +  *b*<sup></sup>2),-*b*/(2 <sup></sup>  +  *b*<sup></sup>2))
 
-*Z*a bı biçiminde *z* = (*a*, *b*) karmaşık numarasını temsil ederek  =  *a*  +  , *ı*<sup>2</sup> =-1 olduğunda, gerçek sayı kümesinin algebi kuralları, karmaşık sayılar ve bileşenleri kümesine uygulanabilir.*bi* Örnek:
+*Z* a bı biçiminde *z* = (*a*, *b*) karmaşık numarasını temsil ederek  =    +  , *ı*<sup>2</sup> =-1 olduğunda, gerçek sayı kümesinin algebi kuralları, karmaşık sayılar ve bileşenleri kümesine uygulanabilir. Örneğin:
 
-   (1 + 2*ı*) \* (2 + 3*ı*) = 1 \* (2 + 3*ı)*+ 2*ı* \* (2 + 3*ı*) = (2 + 3*ı*) + (4*i* + 6*ı*<sup>2</sup>) = (2-6) + (3 + 4)*i* =-4 + 7*ı*
+   (1 + 2 *ı*) \* (2 + 3 *ı*) = 1 \* (2 + 3 *ı)*+ 2 *ı* \* (2 + 3 *ı*) = (2 + 3 *ı*) + (4 *i* + 6 *ı*<sup>2</sup>) = (2-6) + (3 + 4)*i* =-4 + 7 *ı*
 
 Karmaşık sayıların sistemi bir alandır, ancak sıralı bir alan değildir. Gerçek sayıların ve alt kümelerinin alanı için olduğu gibi karmaşık sayıların sıralaması yoktur; bu nedenle, gerçek sayılara göre karmaşık sayılara uygulanamaz.
 

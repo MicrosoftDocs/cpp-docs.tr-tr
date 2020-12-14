@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/SUBSYSTEM (alt sistemi belirt)
 title: /SUBSYSTEM (Alt Sistemi Belirt)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - -SUBSYSTEM linker option
 - subsystem specifications
 ms.assetid: d7b133cf-cf22-4da8-ab46-6552702c0b9b
-ms.openlocfilehash: ecda3443d0422af4d5ceec9282d86590c53af2f5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 18a8ad549cc4aa1e143e43619d549c9eb7ae7324
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318251"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236249"
 ---
 # <a name="subsystem-specify-subsystem"></a>/SUBSYSTEM (Alt Sistemi Belirt)
 
@@ -30,56 +31,56 @@ ms.locfileid: "62318251"
 ## <a name="arguments"></a>Arguments
 
 **BOOT_APPLICATION**<br/>
-Windows önyükleme ortamında çalışan bir uygulama. Önyükleme uygulamaları hakkında daha fazla bilgi için bkz. [hakkında BCD](/previous-versions/windows/desktop/bcd/about-bcd).
+Windows önyükleme ortamında çalışan bir uygulama. Önyükleme uygulamaları hakkında daha fazla bilgi için bkz. [BCD hakkında](/previous-versions/windows/desktop/bcd/about-bcd).
 
-**KONSOLU**<br/>
-Win32 karakter modu uygulaması. İşletim sistemi konsol uygulamaları için bir konsol sağlar. Varsa `main` veya `wmain` yerel kod için tanımlanır `int main(array<String ^> ^)` yönetilen kod için tanımlanır veya uygulamanın tamamen yapı `/clr:safe`, KONSOL varsayılandır.
+**KONSOLA**<br/>
+Win32 karakter modu uygulaması. İşletim sistemi konsol uygulamaları için bir konsol sağlar. `main`Veya `wmain` yerel kod için tanımlanmışsa, `int main(array<String ^> ^)` yönetilen kod için tanımlanır veya uygulamayı kullanarak tamamen oluşturursanız `/clr:safe` , konsol varsayılandır.
 
 **EFI_APPLICATION**<br/>
 **EFI_BOOT_SERVICE_DRIVER**<br/>
 **EFI_ROM**<br/>
 **EFI_RUNTIME_DRIVER**<br/>
-Genişletilebilir Bellenim Arabirimi alt sistemler. EFI belirtimi daha fazla bilgi için bkz. Örnekler için Intel Web sitesine bakın. En düşük sürümü ve varsayılan sürüm 1.0 ' dir.
+Genişletilebilir Bellenim Arabirimi alt sistemleri. Daha fazla bilgi için EFı belirtimine bakın. Örnekler için bkz. Intel Web sitesi. En düşük sürüm ve varsayılan sürüm 1,0 ' dir.
 
-**YEREL**<br/>
-Windows NT Çekirdek modu sürücüleri. Bu seçenek genelde Windows sistem bileşenleri için ayrılmıştır. Varsa [/DRIVER: WDM](driver-windows-nt-kernel-mode-driver.md) belirtilirse, yerel varsayılandır.
+**Yerel**<br/>
+Windows NT için çekirdek modu sürücüleri. Bu seçenek, genellikle Windows sistem bileşenleri için ayrılmıştır. [/DRIVER: WDM](driver-windows-nt-kernel-mode-driver.md) BELIRTILMIŞSE, yerel varsayılandır.
 
-**POSIX**<br/>
-Windows NT'de POSIX alt sistemi ile çalışan uygulama.
+**OF**<br/>
+Windows NT 'de POSIX alt sistemi ile çalışan uygulama.
 
-**WINDOWS**<br/>
-Uygulama kullanıcı etkileşimi için kendi pencerelerini oluşturduğundan konsol, büyük olasılıkla gerektirmez. Varsa `WinMain` veya `wWinMain` yerel kod için tanımlanır veya `WinMain(HISTANCE *, HINSTANCE *, char *, int)` veya `wWinMain(HINSTANCE *, HINSTANCE *, wchar_t *, int)` tanımlanan yönetilen kod için WINDOWS varsayılandır.
+**PENCERELERIN**<br/>
+Uygulama, büyük olasılıkla Kullanıcı etkileşimi için kendi pencerelerini oluşturduğundan, bir konsol gerektirmez. `WinMain`Veya `wWinMain` yerel kod için tanımlandıysa ya da `WinMain(HISTANCE *, HINSTANCE *, char *, int)` `wWinMain(HINSTANCE *, HINSTANCE *, wchar_t *, int)` yönetilen kod için tanımlandıysa, WINDOWS varsayılandır.
 
-*Ana* ve *küçük*<br/>
-(İsteğe bağlı) Alt sistemin gerekli en düşük sürümü belirtin. Bağımsız değişkenler, 0 ile 65.535 aralığındaki ondalık sayılardır. Daha fazla bilgi için açıklamalara bakın. Sürüm numaraları için hiçbir üst sınırları vardır.
+*büyük* ve *küçük*<br/>
+Seçim Alt sistemin gerekli en düşük sürümünü belirtin. Bağımsız değişkenler 0 ile 65.535 aralığındaki ondalık sayılardır. Daha fazla bilgi için bkz. açıklamalar. Sürüm numaraları için üst sınır yoktur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Subsystem** seçeneği, yürütülebilir dosya için ortamı belirtir.
+**/Subsystem** seçeneği yürütülebilir dosyanın ortamını belirtir.
 
-Alt sistem seçimi giriş noktası sembolünü (veya giriş noktası işlevini) etkiler, bağlayıcı seçer.
+Alt sistem seçimi, bağlayıcının seçim kullanacağı giriş noktası sembolünü (veya giriş noktası işlevini) etkiler.
 
-Varsayılan ve isteğe bağlı en az *ana* ve *küçük* alt sistemler için sürüm numaraları aşağıdaki gibidir.
+Alt sistemler için isteğe bağlı minimum ve varsayılan *büyük* ve *küçük* sürüm numaraları aşağıdaki gibidir.
 
-|Alt sistem|Minimum|Varsayılan|
+|Sistemin|Minimum|Varsayılan|
 |---------------|-------------|-------------|
-|BOOT_APPLICATION|1.0|1.0|
-|KONSOLU|(x 86) 5.01 (x 64) 5.02 6.02 (ARM)|6.00 (x86, x64) 6.02 (ARM)|
-|WINDOWS|(x 86) 5.01 (x 64) 5.02 6.02 (ARM)|6.00 (x86, x64) 6.02 (ARM)|
-|Yerel (ile sürücü: WDM)|(x 86) 1,00 1.10 (x64, ARM)|(x 86) 1,00 1.10 (x64, ARM)|
-|Yerel (olmadan/DRIVER: WDM)|(x 86) 4.00 (x 64) 5.02 6.02 (ARM)|(x 86) 4.00 (x 64) 5.02 6.02 (ARM)|
-|POSIX|1.0|19.90|
-|EFI_APPLICATION, EFI_BOOT_SERVICE_DRIVER, EFI_ROM, EFI_RUNTIME_DRIVER|1.0|1.0|
+|BOOT_APPLICATION|1,0|1,0|
+|KONSOLA|5,01 (x86) 5,02 (x64) 6,02 (ARM)|6,00 (x86, x64) 6,02 (ARM)|
+|PENCERELERIN|5,01 (x86) 5,02 (x64) 6,02 (ARM)|6,00 (x86, x64) 6,02 (ARM)|
+|Yerel (sürücü: WDM)|1,00 (x86) 1,10 (x64, ARM)|1,00 (x86) 1,10 (x64, ARM)|
+|Yerel (/DRıVER: WDM olmadan)|4,00 (x86) 5,02 (x64) 6,02 (ARM)|4,00 (x86) 5,02 (x64) 6,02 (ARM)|
+|OF|1,0|19,90|
+|EFI_APPLICATION, EFI_BOOT_SERVICE_DRIVER, EFI_ROM, EFI_RUNTIME_DRIVER|1,0|1,0|
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Bağlayıcı klasörü seçin.
+1. Bağlayıcı klasörünü seçin.
 
-1. Seçin **sistem** özellik sayfası.
+1. **Sistem** özellik sayfasını seçin.
 
-1. Değiştirme `SubSystem` özelliği.
+1. Özelliği değiştirin `SubSystem` .
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -88,4 +89,4 @@ Varsayılan ve isteğe bağlı en az *ana* ve *küçük* alt sistemler için sü
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

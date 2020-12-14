@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: collate_byname sınıfı'
 title: collate_byname Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - collate_byname class
 ms.assetid: 3dc380df-867c-4763-b60e-ba62a8e63ca7
-ms.openlocfilehash: 3e9a256ac7bdb5f6d077746fe2a08990ed41e931
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 8e5ee60a2415fe6fede6db387c774151b97396dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688265"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233961"
 ---
 # <a name="collate_byname-class"></a>collate_byname Sınıfı
 
@@ -39,22 +40,22 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-*_Locname* \
+*_Locname*\
 Adlandırılmış bir yerel ayar.
 
-*_Refs* \
+*_Refs*\
 İlk başvuru sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, > \<CharType [harmanlama](../standard-library/collate-class.md#collate) türünde bir [yerel ayar modeli](../standard-library/locale-class.md#facet_class) olarak kullanılabilecek bir nesneyi tanımlar. Davranışı [adlandırılmış](../standard-library/locale-class.md#name) yerel ayar *_Locname*tarafından belirlenir. Her Oluşturucu temel nesnesini [collate](../standard-library/collate-class.md#collate) \<CharType > (`_Refs`) ile başlatır.
+Sınıf şablonu, [harmanlama](../standard-library/collate-class.md#collate)türünde bir [yerel ayar modeli](../standard-library/locale-class.md#facet_class) olarak kullanılabilecek bir nesneyi tanımlar \<CharType> . Davranışı, [adlandırılmış](../standard-library/locale-class.md#name) yerel ayar *_Locname* tarafından belirlenir. Her Oluşturucu kendi temel nesnesini [COLLATE](../standard-library/collate-class.md#collate) \<CharType> () ile başlatır `_Refs` .
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<locale >
+**Üst bilgi:**\<locale>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

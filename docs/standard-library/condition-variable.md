@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: &lt; condition_variable&gt;'
 title: '&lt;condition_variable&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <condition_variable>
 ms.assetid: 8567f7cc-20bd-42a7-9137-87c46f878009
-ms.openlocfilehash: d13b58fc05055ceecb6472003d7682c41c76e23d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d3179677c1440777e0f9c1d5c6ff21ba13681aaa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222543"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233805"
 ---
 # <a name="ltcondition_variablegt"></a>&lt;condition_variable&gt;
 
@@ -24,7 +25,7 @@ Bu üst bilgi, diğer ConcRT mekanizmalarıyla birlikte kullanabilmeniz için E�
 **Ad alanı:** std
 
 > [!NOTE]
-> **/Clr**kullanılarak derlenen kodda, bu üst bilgi engellenir.
+> **/Clr** kullanılarak derlenen kodda, bu üst bilgi engellenir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -34,7 +35,7 @@ Türündeki nesneler `condition_variable_any` , her türlü bir mutex ile kullan
 
 Bir olayı beklemek için, önce mutex 'i kilitleyin ve sonra `wait` koşul değişkeninde yöntemlerden birini çağırın. `wait`Çağrı, başka bir iş parçacığı koşul değişkenine işaret edene kadar engeller.
 
-Durum değişkenlerini bekleyen iş parçacıkları uygun bildirimler olmadan engellenmemiş hale geldiğinde *Spuremwakeups* oluşur. Bu tür spuremwakeups 'ı tanımak için, bir koşulun true hale gelmesini bekleyen kod, kod bir bekleme işlevinden döndürüldüğünde bu koşulu açıkça denetlemelidir. Bu genellikle bir döngü kullanılarak yapılır; `wait(unique_lock<mutex>& lock, Predicate pred)`Bu döngüyü sizin için yapmak üzere kullanabilirsiniz.
+Durum değişkenlerini bekleyen iş parçacıkları uygun bildirimler olmadan engellenmemiş hale geldiğinde *Spuremwakeups* oluşur. Bu tür spuremwakeups 'ı tanımak için, bir koşulun true hale gelmesini bekleyen kod, kod bir bekleme işlevinden döndürüldüğünde bu koşulu açıkça denetlemelidir. Bu genellikle bir döngü kullanılarak yapılır; `wait(unique_lock<mutex>& lock, Predicate pred)` Bu döngüyü sizin için yapmak üzere kullanabilirsiniz.
 
 ```cpp
 while (condition is false)
@@ -43,19 +44,19 @@ while (condition is false)
 
 `condition_variable_any`Ve `condition_variable` sınıflarının her biri, bir koşulu bekleyen üç yönteme sahiptir.
 
-- `wait`Sınırlandırılmamış bir zaman aralığı bekler.
+- `wait` Sınırlandırılmamış bir zaman aralığı bekler.
 
-- `wait_until`Belirtilen bir olana kadar bekler `time` .
+- `wait_until` Belirtilen bir olana kadar bekler `time` .
 
-- `wait_for`Belirtilen bir için bekler `time interval` .
+- `wait_for` Belirtilen bir için bekler `time interval` .
 
 Bu yöntemlerin her birinin iki aşırı yüklü sürümü vardır. Yalnızca bir bekler ve uyanabilir uyandırabilirler. Diğeri, bir koşulu tanımlayan ek bir şablon bağımsız değişkeni alır. Yöntemi, koşul olana kadar döndürmez **`true`** .
 
 Her sınıfta, koşulunun olduğu bir koşul değişkenine bildirimde bulunan iki yöntem de vardır **`true`** .
 
-- `notify_one`koşul değişkeni için bekleyen iş parçacıklarından birini uyandırır.
+- `notify_one` koşul değişkeni için bekleyen iş parçacıklarından birini uyandırır.
 
-- `notify_all`koşul değişkeni için bekleyen tüm iş parçacıklarını uyandırır.
+- `notify_all` koşul değişkeni için bekleyen tüm iş parçacıklarını uyandırır.
 
 ## <a name="functions-and-enums"></a>İşlevler ve numaralandırmalar
 

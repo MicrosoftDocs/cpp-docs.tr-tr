@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C çalışma zamanı hatası R6002'
 title: C Çalışma Zamanı Hatası R6002
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - R6002
 ms.assetid: 8fbbe65a-9c43-459e-8342-e1f6d1cef7d0
-ms.openlocfilehash: b2e617b6f7841f1aa7e6fd2f6962c0e117fab6c8
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9f72b249b491ada4f143848a95ed6161695aa023
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197424"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97237789"
 ---
 # <a name="c-runtime-error-r6002"></a>C Çalışma Zamanı Hatası R6002
 
@@ -32,7 +33,7 @@ Gerekli kayan nokta kitaplığı bağlanmadı.
 
 Bu hata, kayan nokta kitaplığı bağlı olmadığında uygulamanızda ortaya çıkabilir. Bu nedenlerin birini kontrol edin:
 
-- Bir `printf_s` veya `scanf_s` işlevi için biçim dizesi bir kayan noktalı biçim belirtimi içeriyordu ve program herhangi bir kayan nokta değeri veya değişken içermiyordu. Bu sorunu giderecek şekilde, kayan nokta biçim belirtimine karşılık gelen bir kayan nokta bağımsız değişkeni kullanın veya programın başka bir yerinde kayan nokta ataması gerçekleştirin. Bu, kayan nokta desteğinin yüklenmesine neden olur.
+- OR işlevi için bir biçim `printf_s` dizesi `scanf_s` , kayan noktalı bir biçim belirtimi içeriyordu ve program herhangi bir kayan nokta değeri ya da değişken içermiyordu. Bu sorunu giderecek şekilde, kayan nokta biçim belirtimine karşılık gelen bir kayan nokta bağımsız değişkeni kullanın veya programın başka bir yerinde kayan nokta ataması gerçekleştirin. Bu, kayan nokta desteğinin yüklenmesine neden olur.
 
 - Derleyici, kayan nokta desteğini yalnızca gerekli olduğunda yükleyerek programın boyutunu en aza indirir. Derleyici, Biçim dizelerinde kayan nokta işlemlerini veya kayan nokta biçimi belirtimlerini algılayamaz, bu nedenle gerekli kayan nokta yordamlarını yüklemez. Bu sorunu onarmak için, bir kayan nokta biçim belirtimi kullanın ve bir kayan nokta bağımsız değişkeni sağlayın ya da programın başka bir yerinde kayan nokta ataması gerçekleştirin. Bu, kayan nokta desteğinin yüklenmesine neden olur.
 
