@@ -1,4 +1,5 @@
 ---
+description: "Daha fazla bilgi edinin: MFC 'de MAPI desteği"
 title: MFC'de MAPI Desteği
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - MAPI, MFC
 - OnFileSendMail method [MFC]
 ms.assetid: cafbecb1-0427-4077-b4b8-159bae5b49b8
-ms.openlocfilehash: 7eff22b2a7b4c838f2967fb5217b9dec96903d0e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 289ad61894efd5c08d3a50d8c50e3ac6ee518a25
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625562"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280761"
 ---
 # <a name="mapi-support-in-mfc"></a>MFC'de MAPI Desteği
 
@@ -34,7 +35,7 @@ MAPI 'nin eki göndermek için dosyayı okuması gerekir. Uygulama, bir işlev �
 
 1. Komut KIMLIĞI ID_FILE_SEND_MAIL olan bir menü öğesi eklemek için Visual C++ menü düzenleyicisini kullanın.
 
-   Bu komut KIMLIĞI, AFXRES içindeki Framework tarafından sağlanır. Olsun. Komut herhangi bir menüye eklenebilir, ancak genellikle **Dosya** menüsüne eklenir.
+   Bu komut KIMLIĞI, AFXRES. H içindeki Framework tarafından sağlanır. Komut herhangi bir menüye eklenebilir, ancak genellikle **Dosya** menüsüne eklenir.
 
 1. Aşağıdakileri belgenizin ileti eşlemesine el ile ekleyin:
 

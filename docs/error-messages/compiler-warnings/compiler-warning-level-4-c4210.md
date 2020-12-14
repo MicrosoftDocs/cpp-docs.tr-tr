@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 4) C4210'
 title: Derleyici Uyarısı (düzey 4) C4210
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4210
 ms.assetid: f8600adf-dfe2-4022-a37a-3d4997641dfd
-ms.openlocfilehash: e37ff1fbcfd2ad4088a94204374b33c2c103797c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: aeb64e1f07f82ce1779c58bbacf3b0576642f343
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161327"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314769"
 ---
 # <a name="compiler-warning-level-4-c4210"></a>Derleyici Uyarısı (düzey 4) C4210
 

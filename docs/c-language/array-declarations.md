@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: dizi bildirimleri'
 title: Dizi Bildirimleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - declaring arrays
 - arrays [C++], declaring
 ms.assetid: 5f958b97-cef0-4058-bbc6-37c460aaed9b
-ms.openlocfilehash: 917d79a7c4f4d030efaaa769ca8f205cf37f55fe
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2ab44c1121fde7371591967a9f5860442674abda
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218929"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280007"
 ---
 # <a name="array-declarations"></a>Dizi Bildirimleri
 
 "Dizi bildirimi" diziyi adlandırır ve öğelerinin türünü belirtir. Ayrıca dizideki öğe sayısını da tanımlayabilir. Dizi türündeki bir değişken, dizi öğelerinin türüne yönelik bir işaretçi olarak değerlendirilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *bildirim*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*bildirim-belirteçleri* *init-declarator-list*<sub>opt</sub> **;**
@@ -33,12 +34,12 @@ ms.locfileid: "87218929"
 *bildirimci*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*işaretçi*<sub>opt</sub> *doğrudan bildirimci*
 
-*Direct-bildirimci*:/ \* bir işlev bildirimci\*/<br/>
+*Direct-bildirimci*:/ \* bir işlev bildirimci \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Direct-declarator*  **[**  *sabit ifade*<sub>katılımı</sub> **]**
 
 *Sabit ifade* isteğe bağlı olduğundan, sözdiziminin iki biçimi vardır:
 
-- İlk form bir dizi değişkenini tanımlar. Köşeli ayraçlar içindeki *sabit ifade* bağımsız değişkeni dizideki öğelerin sayısını belirtir. Varsa, *sabit ifadesi*integral türüne ve sıfırdan büyük bir değere sahip olmalıdır. Her öğe tür *belirleyicisi*tarafından verilen türe sahiptir; bu, dışında herhangi bir tür olabilir **`void`** . Dizi öğesi bir işlev türü olamaz.
+- İlk form bir dizi değişkenini tanımlar. Köşeli ayraçlar içindeki *sabit ifade* bağımsız değişkeni dizideki öğelerin sayısını belirtir. Varsa, *sabit ifadesi* integral türüne ve sıfırdan büyük bir değere sahip olmalıdır. Her öğe tür *belirleyicisi* tarafından verilen türe sahiptir; bu, dışında herhangi bir tür olabilir **`void`** . Dizi öğesi bir işlev türü olamaz.
 
 - İkinci form, başka bir yerde tanımlanmış bir değişken bildirir. Köşeli ayraçlar değil parantez içinde *sabit ifade* bağımsız değişkenini atlar. Bu formu yalnızca, diziyi önceden oluşturduysanız veya bir parametre olarak bildirildiği ya da programın başka bir yerde açıkça tanımlanmış bir diziye başvuru olarak bildirildiği durumlarda kullanabilirsiniz.
 
@@ -90,7 +91,7 @@ Bu ifade, işaretçilerin bir dizisinin türünü ve adını bildirir **`char`**
 
 **Microsoft'a Özgü**
 
-Bir dizinin en büyük boyutunu tutmak için gereken tamsayı türü **size_t**boyutudur. STDDEF başlık dosyasında tanımlanmıştır. H, **size_t** **`unsigned int`** 0x00000000 Ile 0x7CFFFFFF arasındadır.
+Bir dizinin en büyük boyutunu tutmak için gereken tamsayı türü **size_t** boyutudur. STDDEF başlık dosyasında tanımlanmıştır. H, **size_t** **`unsigned int`** 0x00000000 Ile 0x7CFFFFFF arasındadır.
 
 **SON Microsoft 'a özgü**
 

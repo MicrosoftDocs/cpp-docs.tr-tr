@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; ostream &gt; işlevleri'
 title: '&lt;ostream &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - std::endl [C++]
 - std::ends [C++]
 - std::flush [C++]
-ms.openlocfilehash: 4db966797202b16911aa67b6fda7c81785d98166
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fb99b713db4c29fe42b45858588181536aec4f5e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842643"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280527"
 ---
 # <a name="ltostreamgt-functions"></a>&lt;ostream &gt; işlevleri
 
@@ -44,18 +45,18 @@ basic_ostream<Elem, Tr>& endl(
 Öğe türü.
 
 *OSTR*\
-**Basic_ostream**türünde bir nesne.
+**Basic_ostream** türünde bir nesne.
 
 *Tr*\
 Karakter nitelikleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**Basic_ostream**türünde bir nesne.
+**Basic_ostream** türünde bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleici *OSTR*'yi çağırıyor. [PUT](../standard-library/basic-ostream-class.md#put)(*OSTR*.[ ('](../standard-library/basic-ios-class.md#widen)\n ')) ve ardından *OSTR*çağırır. [temizler](../standard-library/basic-ostream-class.md#flush). *OSTR*döndürür.
+İşleici *OSTR*'yi çağırıyor. [PUT](../standard-library/basic-ostream-class.md#put)(*OSTR*.[ ('](../standard-library/basic-ios-class.md#widen)\n ')) ve ardından *OSTR* çağırır. [temizler](../standard-library/basic-ostream-class.md#flush). *OSTR* döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -102,7 +103,7 @@ Karakter nitelikleri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleici *OSTR*'yi çağırıyor. [PUT](../standard-library/basic-ostream-class.md#put)(*eled*(' \ 0 ')). *OSTR*döndürür.
+İşleici *OSTR*'yi çağırıyor. [PUT](../standard-library/basic-ostream-class.md#put)(*eled*(' \ 0 ')). *OSTR* döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -151,7 +152,7 @@ Karakter nitelikleri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleici *OSTR*'yi çağırıyor. [temizler](../standard-library/basic-ostream-class.md#flush). *OSTR*döndürür.
+İşleici *OSTR*'yi çağırıyor. [temizler](../standard-library/basic-ostream-class.md#flush). *OSTR* döndürür.
 
 ### <a name="example"></a>Örnek
 

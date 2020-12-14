@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __svm_invlpga'
 title: __svm_invlpga
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - __svm_invlpga intrinsic
 - INVLPGA instruction
 ms.assetid: aa6578ce-8278-464b-8815-a0fc45330915
-ms.openlocfilehash: e0f8ef02efdb64f70bb65f6f017449fcc03beca1
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: dc976f535381fcfdfec0da5c1a280c4df281c114
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219893"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314756"
 ---
 # <a name="__svm_invlpga"></a>__svm_invlpga
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Bilgisayarın çeviri ara belleğine ait adres eşleme girişini geçersiz kılar. Parametreler geçersiz kılacak sayfanın sanal adresini ve adres alanı tanımlayıcısını belirtir.
 
@@ -36,7 +37,7 @@ void __svm_invlpga(void *Vaddr, int as_id);
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev, `INVLPGA` makine yönergesine eşdeğerdir. `__svm_invlpga` Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için "AMD64 mimari programcı 'nin El Ile birim 2 ' yi arayın. Sistem programlama, "belge numarası 24593, düzeltme 3,11, [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) sitesinde.
+`__svm_invlpga`İşlev, `INVLPGA` makine yönergesine eşdeğerdir. Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için, "AMD64 mimari programcı 'nin El Ile Volume 2: sistem programlama," belge numarası 24593, düzeltme 3,11, sonra [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) sitesinde "belgeyi arayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -44,7 +45,7 @@ void __svm_invlpga(void *Vaddr, int as_id);
 |---------------|------------------|
 |`__svm_invlpga`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 **SON Microsoft 'a özgü**
 

@@ -1,20 +1,21 @@
 ---
+description: 'Daha fazla bilgi edinin: MDI sekmeli grupları'
 title: MDI Sekmeli Grupları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - mdi [MFC], tabbed groups
 - tabbed grous [MFC]
 ms.assetid: 0a464f36-39b7-4e68-8b67-ec175de28377
-ms.openlocfilehash: 0c1bf925003d5081b2cdc837012a57585b1ace60
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b859445c5cc1e14f19ec91c31b4d618237cfb9a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624359"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280774"
 ---
 # <a name="mdi-tabbed-groups"></a>MDI Sekmeli Grupları
 
-Birden çok belge arabirimi (MDI) sekmeli gruplar özelliği, birden çok belge arabirimi (MDI) uygulamalarının MDI istemci alanında bir veya daha fazla sekmeli pencere (ya da sekmeli *Grup*olarak bilinen sekmeli pencere gruplarını) görüntülemesine olanak sağlar. Sekmeli pencereler dikey veya yatay olarak hizalanabilir. Bir uygulama birden fazla MDI sekmeli grubu barındırıyorsa, gruplar bölümlendiricileri ile ayrılır.
+Birden çok belge arabirimi (MDI) sekmeli gruplar özelliği, birden çok belge arabirimi (MDI) uygulamalarının MDI istemci alanında bir veya daha fazla sekmeli pencere (ya da sekmeli *Grup* olarak bilinen sekmeli pencere gruplarını) görüntülemesine olanak sağlar. Sekmeli pencereler dikey veya yatay olarak hizalanabilir. Bir uygulama birden fazla MDI sekmeli grubu barındırıyorsa, gruplar bölümlendiricileri ile ayrılır.
 
 ## <a name="features"></a>Özellikler
 

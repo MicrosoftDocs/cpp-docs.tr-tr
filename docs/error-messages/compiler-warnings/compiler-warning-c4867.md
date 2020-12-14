@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: derleyici uyarısı C4867'
 title: Derleyici Uyarısı C4867
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4867
 ms.assetid: 8a257d70-c3a7-462d-b285-e57c952a8bf7
-ms.openlocfilehash: a2298f5369ff941a9d5ac38838f531d6db478739
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d9d263c041e12ff985ec5e46eb56a0af99bcf69d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80165099"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315029"
 ---
 # <a name="compiler-warning-c4867"></a>Derleyici Uyarısı C4867
 

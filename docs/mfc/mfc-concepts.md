@@ -1,14 +1,15 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC kavramları'
 title: MFC Kavramları
 ms.date: 01/09/2018
 f1_keywords:
 - Concepts
-ms.openlocfilehash: b6f5e6bf84900a17b10104dbe9baf4b580ae5396
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 13d5b0b1943eb68e7b73fc5e935b98b0d104ab07
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615506"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280605"
 ---
 # <a name="mfc-concepts"></a>MFC Kavramları
 
@@ -16,7 +17,7 @@ Bu bölümde, Microsoft Foundation Class (MFC) kitaplığı 'nı kullanarak prog
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Genel MFC Konuları](general-mfc-topics.md)<br/>
+[Genel MFC konuları](general-mfc-topics.md)<br/>
 MFC kitaplığının teknik ayrıntılarını açıklar.
 
 [CObject Kullanma](using-cobject.md)<br/>
@@ -34,7 +35,7 @@ MFC ile tarih ve saat kullanarak tartışan konuların bağlantılarını sağla
 [Bellek yönetimi (MFC)](memory-management.md)<br/>
 Bellek yönetimiyle ilgili genel amaçlı hizmetlerden nasıl yararlanılacağını açıklar.
 
-[İleti İşleme ve Eşleme](message-handling-and-mapping.md)<br/>
+[İleti Işleme ve eşleme](message-handling-and-mapping.md)<br/>
 İleti ve komutların MFC çerçevesi tarafından nasıl işlendiğini ve bunların işleyici işlevlerine nasıl bağlanacağını açıklar.
 
 [Serileştirme](serialization-in-mfc.md)<br/>
@@ -48,7 +49,7 @@ MFC 'de kullanılabilen özel durum işleme mekanizmalarını açıklar.
 [MFC Internet Programlama Temelleri](mfc-internet-programming-basics.md)<br/>
 Internet programlamayı destekleyen MFC sınıflarını açıklar.
 
-[MFC Internet Programlama Görevleri](mfc-internet-programming-tasks.md)<br/>
+[MFC Internet programlama görevleri](mfc-internet-programming-tasks.md)<br/>
 Uygulamalarınıza Internet desteğinin nasıl ekleneceğini açıklar.
 
 [Unicode ve çok baytlı karakter kümesi (MBCS) desteği](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: derleyici uyarısı C4746'
 title: Derleyici Uyarısı C4746
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - C4746
 ms.assetid: 5e79ab46-6031-499a-a986-716c866b6c0e
-ms.openlocfilehash: 7179e2e6d4ec44355e7338ffc4e9ba36f5de47e4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 09c6b6968e7180e19955d84fdb69c9113509c39c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80165112"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315042"
 ---
 # <a name="compiler-warning-c4746"></a>Derleyici Uyarısı C4746
 
-'\<Expression > ' geçici erişimi/volatile: [ISO&#124;MS] ayarına tabidir; __iso_volatile_load/Store iç işlevlerini kullanmayı düşünün.
+geçici ' ' erişimi \<expression> /volatile: [ıso&#124;MS] ayarına tabidir; __İso_volatile_load/Store iç işlevlerini kullanmayı düşünün.
 
 Geçici bir değişkene doğrudan erişildiğinde C4746 yayınlanır. Geliştiricilerin Şu anda belirtilen belirli geçici modelden etkilenen kod konumlarını belirlemesine yardımcı olmak için tasarlanmıştır ( [/volatile](../../build/reference/volatile-volatile-keyword-interpretation.md) derleyici seçeneğiyle denetlenebilirler). Özellikle,/volatile: MS kullanıldığında derleyicinin ürettiği donanım belleği engellerinin yerini belirlemek yararlı olabilir.
 

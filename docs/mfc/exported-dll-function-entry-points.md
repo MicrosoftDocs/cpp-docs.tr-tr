@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: aktarılmış DLL Işlevi giriş noktaları'
 title: Dışa Aktarılan DLL İşlev Giriş Noktaları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - MFC, managing state data
 - state management [MFC], exported DLLs
 ms.assetid: 3268666e-d24b-44f2-80e8-7c80f73b93ca
-ms.openlocfilehash: c521cad666864c728fd871b460cf0c92b815e414
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ea30a36507e22beed1f36727b8e7b582d51929b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622637"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314600"
 ---
 # <a name="exported-dll-function-entry-points"></a>Dışa Aktarılan DLL İşlev Giriş Noktaları
 
@@ -29,7 +30,7 @@ Bu, geçerli modülün durumunu geçerli kapsamın sonuna kadar [AfxGetStaticMod
 
 Makrolar kullanılmıyorsa, dll 'Lerdeki kaynaklarla ilgili sorunlar oluşur `AFX_MANAGE_STATE` . Varsayılan olarak, MFC kaynak şablonunu yüklemek için ana uygulamanın kaynak tanıtıcısını kullanır. Bu şablon aslında DLL 'de depolanır. Kök nedeni, MFC 'nin modül durumu bilgisinin makro tarafından geçmemelidir `AFX_MANAGE_STATE` . Kaynak tanıtıcısı, MFC 'nin modül durumundan kurtarıldı. Modül durumunun değiştirilmemesi yanlış kaynak tanıtıcısının kullanılmasına neden olur.
 
-`AFX_MANAGE_STATE`DLL içindeki her işleve yerleştirilmeye gerek yoktur. Örneğin, `InitInstance` `AFX_MANAGE_STATE` MFC, modül durumunu önce otomatik olarak kaydığı `InitInstance` ve ardından döndürmeden sonra geri anahtarlamadığından, uygulamada MFC kodu tarafından çağrılabilir `InitInstance` . Tüm ileti eşleme işleyicileri için de aynı değer geçerlidir. Normal MFC DLL 'Lerinin aslında herhangi bir iletiyi yönlendirmeden önce modül durumunu otomatik olarak yönlendiren özel bir ana pencere prosedürü vardır.
+`AFX_MANAGE_STATE` DLL içindeki her işleve yerleştirilmeye gerek yoktur. Örneğin, `InitInstance` `AFX_MANAGE_STATE` MFC, modül durumunu önce otomatik olarak kaydığı `InitInstance` ve ardından döndürmeden sonra geri anahtarlamadığından, uygulamada MFC kodu tarafından çağrılabilir `InitInstance` . Tüm ileti eşleme işleyicileri için de aynı değer geçerlidir. Normal MFC DLL 'Lerinin aslında herhangi bir iletiyi yönlendirmeden önce modül durumunu otomatik olarak yönlendiren özel bir ana pencere prosedürü vardır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

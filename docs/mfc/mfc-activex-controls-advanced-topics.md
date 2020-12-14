@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC ActiveX denetimleri: gelişmiş konular'
 title: 'MFC ActiveX Denetimleri: Gelişmiş Konular'
 ms.date: 09/12/2018
 helpviewer_keywords:
@@ -12,16 +13,16 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], parameterized property
 - ThrowError method [MFC]
 ms.assetid: e9e34abb-8e2d-461e-bb9c-a1aec5dcecbd
-ms.openlocfilehash: 5ae29ed40d9cc5b78945fb9846a36d6b5a0b27d7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1b37c3621c515153f068633b8272420a68a06c4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225039"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280748"
 ---
 # <a name="mfc-activex-controls-advanced-topics"></a>MFC ActiveX Denetimleri: Gelişmiş Konular
 
-Bu makalede, ActiveX denetimleri geliştirmeyle ilgili gelişmiş konular ele alınmaktadır. Bunlara
+Bu makalede, ActiveX denetimleri geliştirmeyle ilgili gelişmiş konular ele alınmaktadır. Bunlar:
 
 - [ActiveX denetimlerinde veritabanı sınıflarını kullanma](#_core_using_database_classes_in_activex_controls)
 
@@ -36,7 +37,7 @@ Bu makalede, ActiveX denetimleri geliştirmeyle ilgili gelişmiş konular ele al
 >[!IMPORTANT]
 > ActiveX, yeni geliştirme için kullanılması gereken eski bir teknolojidir. ActiveX 'in yerini alan modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimleri](activex-controls.md).
 
-## <a name="using-database-classes-in-activex-controls"></a><a name="_core_using_database_classes_in_activex_controls"></a>ActiveX denetimlerinde veritabanı sınıflarını kullanma
+## <a name="using-database-classes-in-activex-controls"></a><a name="_core_using_database_classes_in_activex_controls"></a> ActiveX denetimlerinde veritabanı sınıflarını kullanma
 
 ActiveX denetim sınıfları sınıf kitaplığının bir parçası olduğundan, MFC veritabanı sınıflarını kullanan ActiveX denetimleri geliştirmek için, veritabanı sınıflarını standart bir MFC uygulamasında kullanmaya yönelik aynı yordamları ve kuralları uygulayabilirsiniz.
 
@@ -45,7 +46,7 @@ MFC veritabanı sınıflarına genel bir bakış için bkz. [MFC veritabanı sı
 > [!NOTE]
 > DAO, Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir. Visual C++ ortamı ve sihirbazları DAO 'YU desteklemez (DAO sınıfları dahil edilip kullanmaya devam edebilirsiniz). Microsoft, yeni projeler için [OLE DB şablonlarını](../data/oledb/ole-db-programming.md) veya [ODBC 'yi ve MFC 'yi](../data/odbc/odbc-and-mfc.md) kullanmanızı önerir. Yalnızca var olan uygulamaları korumak için DAO kullanmanız gerekir.
 
-## <a name="implementing-a-parameterized-property"></a><a name="_core_implementing_a_parameterized_property"></a>Parametreli özellik uygulama
+## <a name="implementing-a-parameterized-property"></a><a name="_core_implementing_a_parameterized_property"></a> Parametreli özellik uygulama
 
 Parametreli bir Özellik (bazen Özellik dizisi olarak adlandırılır), denetimin tek bir özelliği olarak bir homojen değer koleksiyonunu kullanıma sunma yöntemidir. Örneğin, bir dizi veya sözlüğü bir özellik olarak göstermek için parametreli bir özellik kullanabilirsiniz. Visual Basic, bu tür bir özelliğe dizi gösterimi kullanılarak erişilir:
 
@@ -77,9 +78,9 @@ Aşağıdaki yordam, iki boyutlu tamsayılar dizisi olarak erişilebilen Array a
 
 1. **Parametre adı** ve **parametre türü** denetimlerini kullanarak *satır* (tür *Short*) adlı bir parametre ekleyin.
 
-1. *Column* adlı ikinci bir parametre ekleyin ( *Short*yazın).
+1. *Column* adlı ikinci bir parametre ekleyin ( *Short* yazın).
 
-1. **Son**'a tıklayın.
+1. **Finish (Son)** düğmesine tıklayın.
 
 ### <a name="changes-made-by-the-add-property-wizard"></a>Özellik Ekleme Sihirbazı tarafından yapılan değişiklikler
 
@@ -99,7 +100,7 @@ Son olarak, `GetArray` ve `SetArray` işlevlerinin uygulamaları öğesinin sonu
 
 Bu özelliğin yararlı olması için, **`short`** parametreli özellik değerlerini depolamak için türündeki Control sınıfında iki boyutlu bir dizi üye değişkeni bildirebilirsiniz. Daha sonra, parametreler tarafından gösterildiği gibi, uygun satırda ve sütunda depolanan değeri döndürmek için Get işlevini değiştirebilirsiniz ve satır ve sütun parametreleri tarafından başvurulan değeri güncelleştirmek için set işlevini değiştirebilirsiniz.
 
-## <a name="handling-errors-in-your-activex-control"></a><a name="_core_handling_errors_in_your_activex_control"></a>ActiveX Denetiinizdeki hataları işleme
+## <a name="handling-errors-in-your-activex-control"></a><a name="_core_handling_errors_in_your_activex_control"></a> ActiveX Denetiinizdeki hataları işleme
 
 Denetimde hata koşulları oluşursa, hatayı denetim kapsayıcısına rapor etmeniz gerekebilir. Hatanın gerçekleştiği duruma bağlı olarak, hataları raporlamak için iki yöntem vardır. Hata bir özelliğin get veya set işlevi içinde ya da bir OLE Automation yönteminin uygulanması içinde oluşursa, denetim kullanıcıya bir hata oluştuğunu işaret eden [Cotacontrol:: ThrowError](reference/colecontrol-class.md#throwerror)öğesini çağırmalıdır. Hata başka bir zamanda oluşursa, denetim, bir stok hata olayını harekete geçen [Colicontrol:: FireError](reference/colecontrol-class.md#fireerror)öğesini çağırmalıdır.
 
@@ -150,13 +151,13 @@ Oluşan hata türünü belirtmek için, denetim veya ' a bir hata kodu iletmelid
 |CTL_E_SEARCHTEXTNOTFOUND|Arama metni bulunamadı|
 |CTL_E_REPLACEMENTSTOOLONG|Değişiklikler çok uzun|
 
-Gerekirse, standart kodlardan biri kapsamında olmayan bir koşul için özel bir hata kodu tanımlamak üzere CUSTOM_CTL_SCODE makrosunu kullanın. Bu makronun parametresi, dahil 1000 ile 32767 arasında bir tamsayı olmalıdır. Örnek:
+Gerekirse, standart kodlardan biri kapsamında olmayan bir koşul için özel bir hata kodu tanımlamak üzere CUSTOM_CTL_SCODE makrosunu kullanın. Bu makronun parametresi, dahil 1000 ile 32767 arasında bir tamsayı olmalıdır. Örneğin:
 
 [!code-cpp[NVC_MFC_AxUI#37](codesnippet/cpp/mfc-activex-controls-advanced-topics_4.cpp)]
 
 Var olan bir VBX denetimini değiştirmek için ActiveX denetimi oluşturuyorsanız, hata kodlarının uyumlu olduğundan emin olmak için, VBX denetiminin kullandığı sayısal değerlerle birlikte ActiveX denetim hata kodlarınızı tanımlayın.
 
-## <a name="handling-special-keys-in-the-control"></a><a name="_core_handling_special_keys_in_your_control"></a>Denetimdeki özel anahtarları işleme
+## <a name="handling-special-keys-in-the-control"></a><a name="_core_handling_special_keys_in_your_control"></a> Denetimdeki özel anahtarları işleme
 
 Bazı durumlarda belirli tuş bileşimlerini özel bir şekilde işlemek isteyebilirsiniz; Örneğin, ENTER tuşuna bir çok satırlı metin kutusu denetiminde basıldığında yeni bir satır ekleyin veya yönlü anahtar KIMLIĞI basıldığında bir düzenleme denetimleri grubu arasında geçiş yapın.
 
@@ -168,11 +169,11 @@ Aşağıdaki kod örneği, yönlü anahtarlarla ilgili herhangi bir iletiyi işl
 
 ActiveX denetimine yönelik klavye arabirimlerini işleme hakkında daha fazla bilgi için bkz. ActiveX SDK belgeleri.
 
-## <a name="accessing-dialog-controls-that-are-invisible-at-run-time"></a><a name="_core_accessing_dialog_controls_that_are_invisible_at_run_time"></a>Çalışma zamanında görünmeyen Iletişim kutusu denetimlerine erişme
+## <a name="accessing-dialog-controls-that-are-invisible-at-run-time"></a><a name="_core_accessing_dialog_controls_that_are_invisible_at_run_time"></a> Çalışma zamanında görünmeyen Iletişim kutusu denetimlerine erişme
 
 Kullanıcı arabirimine sahip olmayan ve çalışma zamanında görünmeyen iletişim kutusu denetimleri oluşturabilirsiniz. Bir iletişim kutusuna görünmeyen bir çalışma zamanı ActiveX denetimi ekler ve denetime erişmek için [CWnd:: Getdlyıtem öğesini](reference/cwnd-class.md#getdlgitem) kullanırsanız denetim düzgün çalışmaz. Bunun yerine, denetimi temsil eden bir nesne elde etmek için aşağıdaki tekniklerden birini kullanmanız gerekir:
 
-- Üye değişkeni Ekleme Sihirbazı ' nı kullanarak **denetim değişkeni** ' ni seçin ve ardından denetimin kimliğini seçin. Bir üye değişkeni adı girin ve denetim **türü**olarak denetimin sarmalayıcı sınıfını seçin.
+- Üye değişkeni Ekleme Sihirbazı ' nı kullanarak **denetim değişkeni** ' ni seçin ve ardından denetimin kimliğini seçin. Bir üye değişkeni adı girin ve denetim **türü** olarak denetimin sarmalayıcı sınıfını seçin.
 
      -veya-
 
