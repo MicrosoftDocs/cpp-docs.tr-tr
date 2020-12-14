@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CWinThread sınıfı'
 title: CWinThread sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -50,18 +51,18 @@ helpviewer_keywords:
 - CWinThread [MFC], m_pActiveWnd
 - CWinThread [MFC], m_pMainWnd
 ms.assetid: 10cdc294-4057-4e76-ac7c-a8967a89af0b
-ms.openlocfilehash: 6dbe4c4d3ed5edaf0563abf589cd844cca6803f0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f9f89aa6397f44c95e8958d077fe18258e3c17f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87182778"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342614"
 ---
 # <a name="cwinthread-class"></a>CWinThread sınıfı
 
 Bir uygulama içindeki yürütmenin iş parçacığını temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CWinThread : public CCmdTarget
@@ -122,11 +123,11 @@ Sınıf nesneleri `CWinThread` genellikle iş parçacığı süresince mevcuttur
 
 `CWinThread`Sınıfı, kodunuzu ve MFC 'yi tamamen iş parçacığı açısından güvenli hale getirmek için gereklidir. İş parçacığına özgü bilgileri korumak için çerçeve tarafından kullanılan iş parçacığı yerel verileri, nesneleri tarafından yönetilir `CWinThread` . `CWinThread`İş parçacığı yerel verilerini işlemek için bu bağımlıdan dolayı, MFC kullanan herhangi bir iş PARÇACıĞıNıN MFC tarafından oluşturulması gerekir. Örneğin, çalışma zamanı işlevi tarafından oluşturulan bir iş parçacığı [_beginthread _beginthreadex](../../c-runtime-library/reference/beginthread-beginthreadex.md) HERHANGI bir MFC API 'sini kullanamaz.
 
-Bir iş parçacığı oluşturmak için [AfxBeginThread](application-information-and-management.md#afxbeginthread)çağırın. Çalışan veya Kullanıcı arabirimi iş parçacığı istediğinize bağlı olarak iki form vardır. Bir kullanıcı arabirimi iş parçacığı istiyorsanız, `AfxBeginThread` türetilmiş sınıfınızın bir işaretçisine geçin `CRuntimeClass` `CWinThread` . Bir çalışan iş parçacığı oluşturmak istiyorsanız `AfxBeginThread` Denetim işlevine bir işaretçiye geçirin ve denetim işlevine parametresi koyun. Hem çalışan iş parçacıkları hem de Kullanıcı arabirimi iş parçacıkları için öncelik, yığın boyutu, oluşturma bayraklarını ve güvenlik özniteliklerini değiştiren isteğe bağlı parametreler belirtebilirsiniz. `AfxBeginThread`, yeni nesneniz için bir işaretçi döndürür `CWinThread` .
+Bir iş parçacığı oluşturmak için [AfxBeginThread](application-information-and-management.md#afxbeginthread)çağırın. Çalışan veya Kullanıcı arabirimi iş parçacığı istediğinize bağlı olarak iki form vardır. Bir kullanıcı arabirimi iş parçacığı istiyorsanız, `AfxBeginThread` türetilmiş sınıfınızın bir işaretçisine geçin `CRuntimeClass` `CWinThread` . Bir çalışan iş parçacığı oluşturmak istiyorsanız `AfxBeginThread` Denetim işlevine bir işaretçiye geçirin ve denetim işlevine parametresi koyun. Hem çalışan iş parçacıkları hem de Kullanıcı arabirimi iş parçacıkları için öncelik, yığın boyutu, oluşturma bayraklarını ve güvenlik özniteliklerini değiştiren isteğe bağlı parametreler belirtebilirsiniz. `AfxBeginThread` , yeni nesneniz için bir işaretçi döndürür `CWinThread` .
 
 Çağırmak yerine `AfxBeginThread` , bir `CWinThread` türetilmiş nesne oluşturabilir ve sonra öğesini çağırabilirsiniz `CreateThread` . Bu iki aşamalı oluşturma yöntemi, `CWinThread` nesneyi, iş parçacığı yürütmelerinin art arda oluşturulması ve sonlandırmaları arasında yeniden kullanmak istiyorsanız yararlıdır.
 
-Hakkında daha fazla bilgi için `CWinThread` bkz. [C++ ve MFC ile çoklu](../../parallel/multithreading-with-cpp-and-mfc.md)iş parçacığı [oluşturma](../../parallel/multithreading-creating-user-interface-threads.md), çoklu Iş parçacığı oluşturma: [çalışan iş parçacıkları oluşturma](../../parallel/multithreading-creating-worker-threads.md)ve çoklu iş parçacığı oluşturma [: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
+Hakkında daha fazla bilgi için `CWinThread` bkz. [C++ ve MFC ile çoklu](../../parallel/multithreading-with-cpp-and-mfc.md)iş parçacıklı makaleler, çoklu Iş parçacığı [User-Interface oluşturma](../../parallel/multithreading-creating-user-interface-threads.md), Iş parçacığı oluşturma: [çalışan iş parçacıkları oluşturma](../../parallel/multithreading-creating-worker-threads.md)ve [Çoklu iş parçacığı oluşturma: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -140,7 +141,7 @@ Hakkında daha fazla bilgi için `CWinThread` bkz. [C++ ve MFC ile çoklu](../..
 
 **Üstbilgi:** Afxwin. h
 
-## <a name="cwinthreadcreatethread"></a><a name="createthread"></a>CWinThread:: CreateThread
+## <a name="cwinthreadcreatethread"></a><a name="createthread"></a> CWinThread:: CreateThread
 
 Çağıran işlemin adres alanı içinde yürütülecek bir iş parçacığı oluşturur.
 
@@ -161,7 +162,7 @@ BOOL CreateThread(
 - **0** oluşturulduktan hemen sonra iş parçacığını başlatın.
 
 *nStackSize*<br/>
-Yeni iş parçacığı için yığının bayt cinsinden boyutunu belirtir. **0**ise, yığın boyutu işlemin birincil iş parçacığıyla aynı boyutta olur.
+Yeni iş parçacığı için yığının bayt cinsinden boyutunu belirtir. **0** ise, yığın boyutu işlemin birincil iş parçacığıyla aynı boyutta olur.
 
 *lpSecurityAttrs*<br/>
 İş parçacığının güvenlik özniteliklerini belirten [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) yapısına işaret eder.
@@ -174,7 +175,7 @@ Yeni iş parçacığı için yığının bayt cinsinden boyutunu belirtir. **0**
 
 `AfxBeginThread`Bir iş parçacığı nesnesi oluşturmak ve tek bir adımda yürütmek için kullanın. İş parçacığı `CreateThread` yürütmelerinin art arda oluşturulması ve sonlandırılması arasında iş parçacığı nesnesini yeniden kullanmak istiyorsanız kullanın.
 
-## <a name="cwinthreadcwinthread"></a><a name="cwinthread"></a>CWinThread:: CWinThread
+## <a name="cwinthreadcwinthread"></a><a name="cwinthread"></a> CWinThread:: CWinThread
 
 Bir `CWinThread` nesnesi oluşturur.
 
@@ -186,7 +187,7 @@ CWinThread();
 
 İş parçacığının yürütmeye başlamak için [CreateThread](#createthread) üye işlevini çağırın. Genellikle bu oluşturucuyu ve bu oluşturucuyu çağıran [AfxBeginThread](application-information-and-management.md#afxbeginthread)öğesini çağırarak iş parçacıkları oluşturacaksınız `CreateThread` .
 
-## <a name="cwinthreadexitinstance"></a><a name="exitinstance"></a>CWinThread:: ExitInstance
+## <a name="cwinthreadexitinstance"></a><a name="exitinstance"></a> CWinThread:: ExitInstance
 
 Bu iş parçacığının örneğinden çıkmak için nadiren geçersiz kılınan bir [Run](#run) member işlevinin içinden çerçeve tarafından çağırılır veya [InitInstance](#initinstance) çağrısı başarısız olursa.
 
@@ -204,7 +205,7 @@ Bu üye işlevi herhangi bir yerde, ancak member işlevinin içinde çağırmay�
 
 Bu işlevin varsayılan uygulanması, `CWinThread` [m_bAutoDelete](#m_bautodelete) true ise nesneyi siler. İş parçacığlarınız sonlandırıldığında ek temizleme işlemleri gerçekleştirmek istiyorsanız bu işlevi geçersiz kılın. Uygulamanız, `ExitInstance` kodunuz yürütüldükten sonra temel sınıfın sürümünü çağırmalıdır.
 
-## <a name="cwinthreadgetmainwnd"></a><a name="getmainwnd"></a>CWinThread:: GetMainWnd
+## <a name="cwinthreadgetmainwnd"></a><a name="getmainwnd"></a> CWinThread:: GetMainWnd
 
 Uygulamanız bir OLE sunucusu ise, uygulama nesnesinin üyesine doğrudan başvurmak yerine uygulamanın etkin ana penceresine bir işaretçi almak için bu işlevi çağırın `m_pMainWnd` .
 
@@ -226,7 +227,7 @@ Uygulamanız bir OLE sunucusu değilse, bu işlevi çağırmak, uygulama nesneni
 
 Varsayılan davranışı değiştirmek için bu işlevi geçersiz kılın.
 
-## <a name="cwinthreadgetthreadpriority"></a><a name="getthreadpriority"></a>CWinThread:: GetThreadPriority
+## <a name="cwinthreadgetthreadpriority"></a><a name="getthreadpriority"></a> CWinThread:: GetThreadPriority
 
 Bu iş parçacığının geçerli iş parçacığı öncelik düzeyini alır.
 
@@ -254,9 +255,9 @@ int GetThreadPriority();
 
 Bu öncelikler hakkında daha fazla bilgi için bkz. Windows SDK [SetThreadPriority](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) .
 
-## <a name="cwinthreadinitinstance"></a><a name="initinstance"></a>CWinThread:: InitInstance
+## <a name="cwinthreadinitinstance"></a><a name="initinstance"></a> CWinThread:: InitInstance
 
-`InitInstance`Kullanıcı arabirimi iş parçacığının her yeni örneğini başlatmak için geçersiz kılınmalıdır.
+`InitInstance` Kullanıcı arabirimi iş parçacığının her yeni örneğini başlatmak için geçersiz kılınmalıdır.
 
 ```
 virtual BOOL InitInstance();
@@ -272,7 +273,7 @@ Genellikle, `InitInstance` bir iş parçacığı ilk oluşturulduğunda tamamlan
 
 Bu üye işlevi yalnızca kullanıcı arabirimi iş parçacıklarında kullanılır. [AfxBeginThread](application-information-and-management.md#afxbeginthread)'e geçirilen denetim işlevindeki çalışan iş parçacıklarının başlatma işlemini gerçekleştirin.
 
-## <a name="cwinthreadisidlemessage"></a><a name="isidlemessage"></a>CWinThread:: Isıdeboşta Iletisi
+## <a name="cwinthreadisidlemessage"></a><a name="isidlemessage"></a> CWinThread:: Isıdeboşta Iletisi
 
 `OnIdle`Belirli iletiler oluşturulduktan sonra çağrılması için bu işlevi geçersiz kılın.
 
@@ -299,7 +300,7 @@ Bir uygulama kısa bir Zamanlayıcı oluşturup, `OnIdle` performans sorunların
 
 Bu şekilde WM_TIMER işleme, kısa süreli zamanlayıcılar kullanan uygulamaların performansını iyileştirir.
 
-## <a name="cwinthreadm_bautodelete"></a><a name="m_bautodelete"></a>CWinThread:: m_bAutoDelete
+## <a name="cwinthreadm_bautodelete"></a><a name="m_bautodelete"></a> CWinThread:: m_bAutoDelete
 
 `CWinThread`Nesnenin iş parçacığı sonlandırmada otomatik olarak silinip silinmeyeceğini belirtir.
 
@@ -313,7 +314,7 @@ BOOL m_bAutoDelete;
 
 Değeri, `m_bAutoDelete` temeldeki iş parçacığı tanıtıcısının nasıl kapatıldığını etkilemez, ancak tanıtıcıyı kapatma zamanlamasını etkiler. Nesne yok edildiğinde iş parçacığı tutamacı her zaman kapalıdır `CWinThread` .
 
-## <a name="cwinthreadm_hthread"></a><a name="m_hthread"></a>CWinThread:: m_hThread
+## <a name="cwinthreadm_hthread"></a><a name="m_hthread"></a> CWinThread:: m_hThread
 
 Bu öğesine eklenen iş parçacığına yönelik tanıtıcı `CWinThread` .
 
@@ -327,7 +328,7 @@ HANDLE m_hThread;
 
 CWinThread yıkıcısı üzerinde CloseHandle 'ı çağırır `m_hThread` . İş parçacığı sonlandırıldığında [M_BAUTODELETE](#m_bautodelete) true Ise, CWinThread nesnesi yok edilir ve bu, CWinThread nesnesi ve onun üye değişkenleri için herhangi bir işaretçiyi geçersiz kılar. `m_hThread`İş parçacığı çıkış değerini denetlemek için üyeye veya bir sinyal beklemeniz gerekebilir. `m_hThread`İş parçacığı yürütme sırasında, ve bittikten sonra, iş parçacığı yürütmesinin devam etmesine izin vermeden önce, CWinThread nesnesini ve üyesini tutmak IÇIN `m_bAutoDelete` false olarak ayarlayın. Aksi takdirde, iş parçacığı sonlandırılabilir, CWinThread nesnesini yok edebilir ve kullanmayı denemeden önce tanıtıcıyı kapatabilirsiniz. Bu tekniği kullanırsanız, CWinThread nesnesinin silinmesinden siz sorumlusunuz.
 
-## <a name="cwinthreadm_nthreadid"></a><a name="m_nthreadid"></a>CWinThread:: m_nThreadID
+## <a name="cwinthreadm_nthreadid"></a><a name="m_nthreadid"></a> CWinThread:: m_nThreadID
 
 Bu öğesine eklenen iş parçacığının KIMLIĞI `CWinThread` .
 
@@ -344,7 +345,7 @@ Ayrıca [m_hThread](#m_hthread) ömür hakkında açıklamalara bakın.
 
   [AfxGetThread](application-information-and-management.md#afxgetthread)örneğine bakın.
 
-## <a name="cwinthreadm_pactivewnd"></a><a name="m_pactivewnd"></a>CWinThread:: m_pActiveWnd
+## <a name="cwinthreadm_pactivewnd"></a><a name="m_pactivewnd"></a> CWinThread:: m_pActiveWnd
 
 İş parçacığınızın etkin pencere nesnesine bir işaretçi depolamak için bu veri üyesini kullanın.
 
@@ -354,11 +355,11 @@ CWnd* m_pActiveWnd;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tarafından başvurulan pencere kapatıldığında Microsoft Foundation Class Kitaplığı iş parçacığlarınızı otomatik olarak sonlandırır `m_pActiveWnd` . Bu iş parçacığı bir uygulama için birincil iş parçacığıdır, uygulama da sonlandırılır. Bu veri üyesi NULL ise, uygulamanın nesnesi için etkin pencere `CWinApp` devralınır. `m_pActiveWnd`, türünde ortak bir değişkendir `CWnd*` .
+Tarafından başvurulan pencere kapatıldığında Microsoft Foundation Class Kitaplığı iş parçacığlarınızı otomatik olarak sonlandırır `m_pActiveWnd` . Bu iş parçacığı bir uygulama için birincil iş parçacığıdır, uygulama da sonlandırılır. Bu veri üyesi NULL ise, uygulamanın nesnesi için etkin pencere `CWinApp` devralınır. `m_pActiveWnd` , türünde ortak bir değişkendir `CWnd*` .
 
 Genellikle, geçersiz kıldığınızda Bu üye değişkenini ayarlarsınız `InitInstance` . Bir çalışan iş parçacığında, bu veri üyesinin değeri üst iş parçacığından devralınır.
 
-## <a name="cwinthreadm_pmainwnd"></a><a name="m_pmainwnd"></a>CWinThread:: m_pMainWnd
+## <a name="cwinthreadm_pmainwnd"></a><a name="m_pmainwnd"></a> CWinThread:: m_pMainWnd
 
 İş parçacığınızın ana pencere nesnesine bir işaretçi depolamak için bu veri üyesini kullanın.
 
@@ -368,11 +369,11 @@ CWnd* m_pMainWnd;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tarafından başvurulan pencere kapatıldığında Microsoft Foundation Class Kitaplığı iş parçacığlarınızı otomatik olarak sonlandırır `m_pMainWnd` . Bu iş parçacığı bir uygulama için birincil iş parçacığıdır, uygulama da sonlandırılır. Bu veri üyesi NULL ise, uygulamanın nesnesinin ana penceresi, `CWinApp` iş parçacığının ne zaman sonlanılacağını belirlemede kullanılacaktır. `m_pMainWnd`, türünde ortak bir değişkendir `CWnd*` .
+Tarafından başvurulan pencere kapatıldığında Microsoft Foundation Class Kitaplığı iş parçacığlarınızı otomatik olarak sonlandırır `m_pMainWnd` . Bu iş parçacığı bir uygulama için birincil iş parçacığıdır, uygulama da sonlandırılır. Bu veri üyesi NULL ise, uygulamanın nesnesinin ana penceresi, `CWinApp` iş parçacığının ne zaman sonlanılacağını belirlemede kullanılacaktır. `m_pMainWnd` , türünde ortak bir değişkendir `CWnd*` .
 
 Genellikle, geçersiz kıldığınızda Bu üye değişkenini ayarlarsınız `InitInstance` . Bir çalışan iş parçacığında, bu veri üyesinin değeri üst iş parçacığından devralınır.
 
-## <a name="cwinthreadonidle"></a><a name="onidle"></a>CWinThread:: OnIdle
+## <a name="cwinthreadonidle"></a><a name="onidle"></a> CWinThread:: OnIdle
 
 Boş zamanlı işleme gerçekleştirmek için bu üye işlevini geçersiz kılın.
 
@@ -391,9 +392,9 @@ Daha fazla boş işlem süresi almak için sıfır dışında; daha fazla boş i
 
 ### <a name="remarks"></a>Açıklamalar
 
-`OnIdle`, iş parçacığının ileti sırası boş olduğunda varsayılan ileti döngüsünde çağrılır. Kendi arka plan boşta işleyici görevlerinizi çağırmak için geçersiz kılmanızı kullanın.
+`OnIdle` , iş parçacığının ileti sırası boş olduğunda varsayılan ileti döngüsünde çağrılır. Kendi arka plan boşta işleyici görevlerinizi çağırmak için geçersiz kılmanızı kullanın.
 
-`OnIdle`ek bir boş işlem süresi gerekmediğini belirtmek için 0 döndürmelidir. Her *lCount* seferinde bir `OnIdle` ileti sırası boş olduğunda ve her yeni ileti işlendiğinde 0 olarak sıfırlandığında lCount parametresi artırılır. Bu sayıya göre farklı boşta yordamlarınızı çağırabilirsiniz.
+`OnIdle` ek bir boş işlem süresi gerekmediğini belirtmek için 0 döndürmelidir. Her  seferinde bir `OnIdle` ileti sırası boş olduğunda ve her yeni ileti işlendiğinde 0 olarak sıfırlandığında lCount parametresi artırılır. Bu sayıya göre farklı boşta yordamlarınızı çağırabilirsiniz.
 
 Bu üye işlevi için varsayılan uygulama, geçici nesneleri ve kullanılmayan dinamik bağlantı kitaplıklarını bellekten serbest bırakır.
 
@@ -401,7 +402,7 @@ Bu üye işlevi yalnızca kullanıcı arabirimi iş parçacıklarında kullanıl
 
 Uygulama, dönüşene kadar mesajları işleyemediği için `OnIdle` , bu işlevde uzun görevler gerçekleştirmeyin.
 
-## <a name="cwinthreadoperator-handle"></a><a name="operator_handle"></a>CWinThread:: operator işleci
+## <a name="cwinthreadoperator-handle"></a><a name="operator_handle"></a> CWinThread:: operator işleci
 
 Nesnesinin tanıtıcısını alır `CWinThread` .
 
@@ -417,7 +418,7 @@ Başarılı olursa, iş parçacığı nesnesinin tanıtıcısı; Aksi takdirde, 
 
 Windows API 'Lerini doğrudan çağırmak için tanıtıcıyı kullanın.
 
-## <a name="cwinthreadpostthreadmessage"></a><a name="postthreadmessage"></a>CWinThread::P ostThreadMessage
+## <a name="cwinthreadpostthreadmessage"></a><a name="postthreadmessage"></a> CWinThread::P ostThreadMessage
 
 Kullanıcı tanımlı bir iletiyi başka bir nesneye göndermek için çağırılır `CWinThread` .
 
@@ -450,7 +451,7 @@ Postalanan ileti, ileti eşleme makrosu ON_THREAD_MESSAGE uygun ileti işleyicis
 > [!NOTE]
 > [PostThreadMessage](/windows/win32/api/winuser/nf-winuser-postthreadmessagew)' ı çağırdığınızda ileti, iş parçacığının ileti kuyruğuna yerleştirilir. Ancak, bu şekilde gönderilen iletiler bir pencereyle ilişkili olmadığından, MFC bunları ileti veya komut işleyicilerine göndermez. Bu iletileri işlemek için, `PreTranslateMessage()` CWinApp türetilmiş sınıfınızın işlevini geçersiz kılın ve iletileri el ile işleyin.
 
-## <a name="cwinthreadpretranslatemessage"></a><a name="pretranslatemessage"></a>CWinThread::P reTranslateMessage
+## <a name="cwinthreadpretranslatemessage"></a><a name="pretranslatemessage"></a> CWinThread::P reTranslateMessage
 
 Pencere iletilerini [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage)Windows işlevlerine dağıtılmadan önce filtrelemek için bu işlevi geçersiz kılın.
 
@@ -471,7 +472,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 Bu üye işlevi yalnızca kullanıcı arabirimi iş parçacıklarında kullanılır.
 
-## <a name="cwinthreadprocessmessagefilter"></a><a name="processmessagefilter"></a>CWinThread::P rocessMessageFilter
+## <a name="cwinthreadprocessmessagefilter"></a><a name="processmessagefilter"></a> CWinThread::P rocessMessageFilter
 
 Framework 'ün kanca işlevi, belirli Windows iletilerini filtrelemek ve bunlara yanıt vermek için bu üye işlevini çağırır.
 
@@ -499,7 +500,7 @@ Kanca işlevi, olayları uygulamanın normal ileti işlemeye gönderilmeden önc
 
 Bu gelişmiş özelliği geçersiz kılarsınız, Framework 'ün kanca işlemesini sürdürmek için temel sınıf sürümü çağırdığınızdan emin olun.
 
-## <a name="cwinthreadprocesswndprocexception"></a><a name="processwndprocexception"></a>CWinThread::P rocessWndProcException
+## <a name="cwinthreadprocesswndprocexception"></a><a name="processwndprocexception"></a> CWinThread::P rocessWndProcException
 
 Bu üye işlevi, işleyicinin iş parçacığınızın iletisi veya komut işleyicilerinden birinde oluşturulan bir özel durum yakaiçermediği zaman bu üye işlevini çağırır.
 
@@ -536,7 +537,7 @@ Bu üye işlevin varsayılan uygulanması yalnızca aşağıdaki iletilerden olu
 
 Bu üye işlevi yalnızca ileti göndericisi olan iş parçacıklarında kullanılır.
 
-## <a name="cwinthreadpumpmessage"></a><a name="pumpmessage"></a>CWinThread::P öncelik Iletisi
+## <a name="cwinthreadpumpmessage"></a><a name="pumpmessage"></a> CWinThread::P öncelik Iletisi
 
 İş parçacığının ileti döngüsünü içerir.
 
@@ -546,11 +547,11 @@ virtual BOOL PumpMessage();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`PumpMessage`iş parçacığının ileti döngüsünü içerir. `PumpMessage`, tarafından `CWinThread` iş parçacığının iletilerini aktarmak için çağrılır. `PumpMessage`İletileri işlenmek üzere zorlamak için doğrudan çağrı yapabilir veya `PumpMessage` varsayılan davranışını değiştirmek için geçersiz kılabilirsiniz.
+`PumpMessage` iş parçacığının ileti döngüsünü içerir. `PumpMessage` , tarafından `CWinThread` iş parçacığının iletilerini aktarmak için çağrılır. `PumpMessage`İletileri işlenmek üzere zorlamak için doğrudan çağrı yapabilir veya `PumpMessage` varsayılan davranışını değiştirmek için geçersiz kılabilirsiniz.
 
 `PumpMessage`Doğrudan çağırmak ve varsayılan davranışını geçersiz kılmak yalnızca gelişmiş kullanıcılar için önerilir.
 
-## <a name="cwinthreadresumethread"></a><a name="resumethread"></a>CWinThread:: ResumeThread
+## <a name="cwinthreadresumethread"></a><a name="resumethread"></a> CWinThread:: ResumeThread
 
 [SuspendThread](#suspendthread) üye işlevi tarafından askıya alınan bir iş parçacığının yürütülmesini veya CREATE_SUSPENDED bayrağıyla oluşturulmuş bir iş parçacığını yeniden başlatmak için çağırılır.
 
@@ -560,13 +561,13 @@ DWORD ResumeThread();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa iş parçacığının önceki askıya alma sayısı; `0xFFFFFFFF`Aksi takdirde. Dönüş değeri sıfırsa, geçerli iş parçacığı askıya alınmaz. Dönüş değeri bir ise, iş parçacığı askıya alındı, ancak şimdi yeniden başlatıldı. Birden büyük dönüş değeri, iş parçacığının askıda kaldığı anlamına gelir.
+Başarılı olursa iş parçacığının önceki askıya alma sayısı; `0xFFFFFFFF` Aksi takdirde. Dönüş değeri sıfırsa, geçerli iş parçacığı askıya alınmaz. Dönüş değeri bir ise, iş parçacığı askıya alındı, ancak şimdi yeniden başlatıldı. Birden büyük dönüş değeri, iş parçacığının askıda kaldığı anlamına gelir.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Geçerli iş parçacığının askıya alma sayısı bir tane azaltılır. Askıya alma sayısı sıfıra düşürüldüğünde iş parçacığı yürütmeyi sürdürür; Aksi takdirde iş parçacığı askıda kalır.
 
-## <a name="cwinthreadrun"></a><a name="run"></a>CWinThread:: Run
+## <a name="cwinthreadrun"></a><a name="run"></a> CWinThread:: Run
 
 Kullanıcı arabirimi iş parçacıkları için varsayılan bir ileti döngüsü sağlar.
 
@@ -580,13 +581,13 @@ virtual int Run();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Run`uygulama [WM_QUIT](/windows/win32/winmsg/wm-quit) bir ileti alana kadar Windows iletilerini alır ve gönderir. İş parçacığında ileti sırası şu anda hiçbir ileti içermiyorsa, `Run` `OnIdle` boşta kalma süresi işleme çağrısı yapın. Gelen iletiler, özel işleme için [PreTranslateMessage](#pretranslatemessage) üye işlevine ve ardından standart klavye çevirisi için Windows Işlevi [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) öğesine gider. Son olarak, [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevi çağırılır.
+`Run` uygulama [WM_QUIT](/windows/win32/winmsg/wm-quit) bir ileti alana kadar Windows iletilerini alır ve gönderir. İş parçacığında ileti sırası şu anda hiçbir ileti içermiyorsa, `Run` `OnIdle` boşta kalma süresi işleme çağrısı yapın. Gelen iletiler, özel işleme için [PreTranslateMessage](#pretranslatemessage) üye işlevine ve ardından standart klavye çevirisi için Windows Işlevi [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) öğesine gider. Son olarak, [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevi çağırılır.
 
-`Run`nadiren geçersiz kılındı, ancak özel davranış uygulamak için geçersiz kılabilirsiniz.
+`Run` nadiren geçersiz kılındı, ancak özel davranış uygulamak için geçersiz kılabilirsiniz.
 
 Bu üye işlevi yalnızca kullanıcı arabirimi iş parçacıklarında kullanılır.
 
-## <a name="cwinthreadsetthreadpriority"></a><a name="setthreadpriority"></a>CWinThread:: SetThreadPriority
+## <a name="cwinthreadsetthreadpriority"></a><a name="setthreadpriority"></a> CWinThread:: SetThreadPriority
 
 Bu işlev, geçerli iş parçacığının öncelik düzeyini öncelik sınıfı içinde ayarlar.
 
@@ -623,7 +624,7 @@ Bu öncelikler hakkında daha fazla bilgi için bkz. Windows SDK [SetThreadPrior
 
 Yalnızca, [CreateThread](#createthread) başarıyla döndüğünde çağrılabilir.
 
-## <a name="cwinthreadsuspendthread"></a><a name="suspendthread"></a>CWinThread:: SuspendThread
+## <a name="cwinthreadsuspendthread"></a><a name="suspendthread"></a> CWinThread:: SuspendThread
 
 Geçerli iş parçacığının askıya alma sayısını artırır.
 
@@ -633,7 +634,7 @@ DWORD SuspendThread();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa iş parçacığının önceki askıya alma sayısı; `0xFFFFFFFF`Aksi takdirde.
+Başarılı olursa iş parçacığının önceki askıya alma sayısı; `0xFFFFFFFF` Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 

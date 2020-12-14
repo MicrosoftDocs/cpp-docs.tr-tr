@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CAsyncMonikerFile Class'
 title: CAsyncMonikerFile sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - CAsyncMonikerFile [MFC], OnStartBinding
 - CAsyncMonikerFile [MFC], OnStopBinding
 ms.assetid: 17378b66-a49a-4b67-88e3-7756ad26a2fc
-ms.openlocfilehash: 259d31b9c1e198b326ba616481dbbf5315225546
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 559ffd5ed3a8b7100d9901dc70fe4f5349c05f7f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845945"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343535"
 ---
 # <a name="casyncmonikerfile-class"></a>CAsyncMonikerFile sınıfı
 
@@ -281,7 +282,7 @@ virtual void OnProgress(
 ### <a name="parameters"></a>Parametreler
 
 *ulProgress*<br/>
-Bağlama işleminin, *ulProgressMax*içinde gösterilen beklenen maksimum sınıra göre geçerli ilerlemesini gösterir.
+Bağlama işleminin, *ulProgressMax* içinde gösterilen beklenen maksimum sınıra göre geçerli ilerlemesini gösterir.
 
 *ulProgressMax*<br/>
 Bu işlem için çağrı süresince beklenen en büyük değer olan *ulProgress* değerini gösterir `OnProgress` .
@@ -290,7 +291,7 @@ Bu işlem için çağrı süresince beklenen en büyük değer olan *ulProgress*
 Bağlama işleminin ilerleme durumuyla ilgili ek bilgi sağlar. Geçerli değerler `BINDSTATUS` numaralandırmasından alınır. Olası değerler için bkz. açıklamalar.
 
 *szStatusText*<br/>
-Geçerli ilerleme hakkında, *ulStatusCode*değerine bağlı olarak bilgiler. Olası değerler için bkz. açıklamalar.
+Geçerli ilerleme hakkında, *ulStatusCode* değerine bağlı olarak bilgiler. Olası değerler için bkz. açıklamalar.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -414,7 +415,7 @@ Dosya başarıyla açılırsa sıfır dışı; Aksi takdirde 0.
 
 Bu çağrı bağlama işlemini başlatır.
 
-*LpszURL* parametresi IÇIN bir URL veya dosya adı kullanabilirsiniz. Örnek:
+*LpszURL* parametresi IÇIN bir URL veya dosya adı kullanabilirsiniz. Örneğin:
 
 [!code-cpp[NVC_MFCWinInet#6](../../mfc/codesnippet/cpp/casyncmonikerfile-class_2.cpp)]
 

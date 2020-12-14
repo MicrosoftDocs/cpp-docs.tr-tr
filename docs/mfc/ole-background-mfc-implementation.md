@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: OLE arka planı: MFC Uygulama'
 title: 'OLE Arka Planı: MFC Uygulaması'
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - OLE IMoniker interface
 - OLE IUnknown
 ms.assetid: 2b67016a-d78e-4d60-925f-c28ec8fb6180
-ms.openlocfilehash: 1dffdafbd02697db5aec341fec253c84217a0faf
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 81b62fc1ff704a8a0f34bfd1ac864142720b3864
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619871"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343548"
 ---
 # <a name="ole-background-mfc-implementation"></a>OLE Arka Planı: MFC Uygulaması
 
@@ -27,7 +28,7 @@ Ham OLE API 'sinin boyutu ve karmaşıklığı nedeniyle doğrudan OLE uygulamal
 
 Bu makalede, OLE API 'sinin MFC içinde uygulanmamış kısımları açıklanmaktadır. Tartışmada ayrıca, Windows SDK OLE bölümüne nasıl uygulandığı açıklanır.
 
-## <a name="portions-of-ole-not-implemented-by-the-class-library"></a><a name="_core_portions_of_ole_not_implemented_by_the_class_library"></a>OLE 'nin bölümleri sınıf kitaplığı tarafından uygulanmadı
+## <a name="portions-of-ole-not-implemented-by-the-class-library"></a><a name="_core_portions_of_ole_not_implemented_by_the_class_library"></a> OLE 'nin bölümleri sınıf kitaplığı tarafından uygulanmadı
 
 OLE 'nin birkaç arabirimi ve özelliği doğrudan MFC tarafından sağlanmamıştır. Bu özellikleri kullanmak istiyorsanız, OLE API 'sini doğrudan çağırabilirsiniz.
 
@@ -37,7 +38,7 @@ IUnknown ve IComparer arabirimleri `IUnknown` arabirimi sınıf kitaplığı tar
 
 Docfiles (bileşik dosyalar) Birleşik dosyalar, sınıf kitaplığı tarafından kısmen desteklenir. Bileşik dosyaları oluşturma ötesinde doğrudan işleyen işlevlerden hiçbiri desteklenir. MFC `COleFileStream` , standart dosya işlevleriyle akışların işlenmesini desteklemek için sınıfını kullanır. Daha fazla bilgi için bkz. [kapsayıcı: bileşik dosyalar](containers-compound-files.md).
 
-İşlem içi sunucular ve nesne Işleyicileri işlem içi sunucular ve nesne işleyicileri, dinamik bir bağlantı kitaplığındaki (DLL) görsel veri nesnesi veya tam bileşen nesne modeli (COM) nesnelerinin uygulanmasına izin verir. Bunu yapmak için, OLE API 'sini doğrudan çağırarak DLL 'nizi uygulayabilirsiniz. Ancak, bir Otomasyon sunucusu yazıyorsanız ve sunucunuzun kullanıcı arabirimi yoksa, uygulamanızın işlem içi bir sunucu olmasını ve tamamen bir DLL 'ye koyabilmeniz için AppWizard 'ı kullanabilirsiniz. Bu konular hakkında daha fazla bilgi için bkz. [Automation Servers](automation-servers.md).
+In-Process sunucuları ve nesne Işleyicileri işlem Içi sunucular ve nesne işleyicileri, dinamik bir bağlantı kitaplığındaki (DLL) görsel düzenlemenin veya tam bileşen nesne modeli (COM) nesnelerinin uygulanmasına izin verir. Bunu yapmak için, OLE API 'sini doğrudan çağırarak DLL 'nizi uygulayabilirsiniz. Ancak, bir Otomasyon sunucusu yazıyorsanız ve sunucunuzun kullanıcı arabirimi yoksa, uygulamanızın işlem içi bir sunucu olmasını ve tamamen bir DLL 'ye koyabilmeniz için AppWizard 'ı kullanabilirsiniz. Bu konular hakkında daha fazla bilgi için bkz. [Automation Servers](automation-servers.md).
 
 > [!TIP]
 > Otomasyon sunucusunu uygulamanın en kolay yolu bir DLL 'ye yerleştirmelidir. MFC bu yaklaşımı destekler.
@@ -47,4 +48,4 @@ Microsoft Foundation OLE sınıflarının OLE arabirimlerini nasıl uygulayan ha
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE arka planı](ole-background.md)<br/>
-[OLE Arka Planı: Uygulama Stratejileri](ole-background-implementation-strategies.md)
+[OLE arka planı: uygulama stratejileri](ole-background-implementation-strategies.md)

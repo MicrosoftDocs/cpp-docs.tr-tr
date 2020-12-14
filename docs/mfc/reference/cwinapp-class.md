@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CWinApp sınıfı'
 title: CWinApp sınıfı
 ms.date: 07/15/2019
 f1_keywords:
@@ -192,12 +193,12 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-ms.openlocfilehash: f8ca4ad2023902d40a1f63c881a8dd2fd38a9ae9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 60ea2ea2ef1545a814406da047d1aef42b49a7a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837612"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344945"
 ---
 # <a name="cwinapp-class"></a>CWinApp sınıfı
 
@@ -252,10 +253,10 @@ class CWinApp : public CWinThread
 |[CWinApp:: Istaskbarınteractionenabled](#istaskbarinteractionenabled)|Windows 7 görev çubuğu etkileşiminin etkinleştirilip etkinleştirilmeyeceğini belirtir.|
 |[CWinApp:: LoadCursor](#loadcursor)|Bir imleç kaynağı yükler.|
 |[CWinApp:: LoadIcon](#loadicon)|Bir simge kaynağı yükler.|
-|[CWinApp:: LoadOEMCursor](#loadoemcursor)|**OCR_** sabitlerinin Windows 'da BELIRTDIĞI Windows OEM önceden tanımlanmış bir imlecini yükler. Olsun.|
-|[CWinApp:: LoadOEMIcon](#loadoemicon)|**OIC_** sabitlerinin Windows 'da belirtilerinin önceden tanımlanmış BIR Windows OEM simgesini yükler. Olsun.|
-|[CWinApp:: LoadStandardCursor](#loadstandardcursor)|**IDC_** sabitlerinin Windows 'da belirtdiği bir Windows önceden tanımlı imleç yükler. Olsun.|
-|[CWinApp:: LoadStandardIcon](#loadstandardicon)|**IDI_** sabitlerinin Windows 'da BelirtiBir Windows önceden tanımlanmış simgesi yükler. Olsun.|
+|[CWinApp:: LoadOEMCursor](#loadoemcursor)|**OCR_** sabitlerinin Windows. H 'de BELIRTDIĞI Windows OEM önceden tanımlanmış bir imlecini yükler.|
+|[CWinApp:: LoadOEMIcon](#loadoemicon)|**OIC_** sabitlerinin Windows. H 'de belirtilerinin önceden tanımlanmış BIR Windows OEM simgesi yükler.|
+|[CWinApp:: LoadStandardCursor](#loadstandardcursor)|**IDC_** sabitlerinin Windows. H içinde belirtmesini sağlayan Windows önceden tanımlı bir imleç yükler.|
+|[CWinApp:: LoadStandardIcon](#loadstandardicon)|**IDI_** sabitlerinin Windows. H içinde belirtmesini sağlayan Windows önceden tanımlanmış bir simge yükler.|
 |[CWinApp:: Ondalıklar Decommand](#onddecommand)|Dinamik veri değişimi (DDE) yürütme komutuna yanıt olarak Framework tarafından çağırılır.|
 |[CWinApp:: OnIdle](#onidle)|Uygulamaya özgü boşta kalma süresi işlemini gerçekleştirmek için geçersiz kılın.|
 |[CWinApp:: OpenDocumentFile](#opendocumentfile)|Bir dosyadan belge açmak için Framework tarafından çağırılır.|
@@ -816,7 +817,7 @@ Uygulama tarafından kullanılan yardım türü. Daha fazla bilgi için bkz. [CW
 
 ## <a name="cwinappgetnextdoctemplate"></a><a name="getnextdoctemplate"></a> CWinApp:: GetNextDocTemplate
 
-*POS*tarafından tanımlanan belge şablonunu alır, ardından *POS* 'u konum değerine ayarlar.
+*POS* tarafından tanımlanan belge şablonunu alır, ardından *POS* 'u konum değerine ayarlar.
 
 ```
 CDocTemplate* GetNextDocTemplate(POSITION& pos) const;
@@ -899,7 +900,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 Bu üye işlevi büyük/küçük harfe duyarlı değildir, bu nedenle *lpszSection* ve *lpszEntry* parametrelerindeki dizeler büyük/küçük harf bakımından farklı olabilir.
 
 > [!NOTE]
-> `GetProfileBinary`bir arabellek ayırır ve ppData içinde adresini döndürür \* *ppData*. Çağıran, **delete []** kullanılarak arabelleği boşaltmaktan sorumludur.
+> `GetProfileBinary`bir arabellek ayırır ve ppData içinde adresini döndürür \* . Çağıran, **delete []** kullanılarak arabelleği boşaltmaktan sorumludur.
 
 > [!IMPORTANT]
 > Bu işlev tarafından döndürülen verilerin NULL sonlandırılacağı ve çağıranın doğrulama gerçekleştirmesi gerekir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
@@ -1146,7 +1147,7 @@ Başarılı olursa simgeye yönelik bir tanıtıcı; Aksi takdirde NULL.
 
 ## <a name="cwinapploadoemcursor"></a><a name="loadoemcursor"></a> CWinApp:: LoadOEMCursor
 
-*Nıdcursor*tarafından belirtilen Windows önceden tanımlanmış imleç kaynağını yükler.
+*Nıdcursor* tarafından belirtilen Windows önceden tanımlanmış imleç kaynağını yükler.
 
 ```
 HCURSOR LoadOEMCursor(UINT nIDCursor) const;
@@ -1155,7 +1156,7 @@ HCURSOR LoadOEMCursor(UINT nIDCursor) const;
 ### <a name="parameters"></a>Parametreler
 
 *Nıdcursor*<br/>
-Önceden tanımlanmış bir Windows imlecini belirten **OCR_** bildirimi sabit tanımlayıcısı. `#define OEMRESOURCE` `#include \<afxwin.h>` WINDOWS 'daki **OCR_** sabitlerine erişebilmek için önce sahip olmanız gerekir. Olsun.
+Önceden tanımlanmış bir Windows imlecini belirten **OCR_** bildirimi sabit tanımlayıcısı. `#define OEMRESOURCE` `#include \<afxwin.h>` WINDOWS. H 'de **OCR_** sabitlerine erişebilmek için önce sahip olmanız gerekir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1173,7 +1174,7 @@ Başarılı olursa imlecin bir tutamacı. Aksi takdirde NULL.
 
 ## <a name="cwinapploadoemicon"></a><a name="loadoemicon"></a> CWinApp:: LoadOEMIcon
 
-*Nidicon*tarafından belirtilen Windows önceden tanımlanmış simge kaynağını yükler.
+*Nidicon* tarafından belirtilen Windows önceden tanımlanmış simge kaynağını yükler.
 
 ```
 HICON LoadOEMIcon(UINT nIDIcon) const;
@@ -1182,7 +1183,7 @@ HICON LoadOEMIcon(UINT nIDIcon) const;
 ### <a name="parameters"></a>Parametreler
 
 *nIDIcon*<br/>
-Önceden tanımlanmış bir Windows simgesi belirten **OIC_** bildirimi sabit tanımlayıcısı. `#define OEMRESOURCE` `#include \<afxwin.h>` WINDOWS 'da **OIC_** sabitlerine erişmeniz gerekir. Olsun.
+Önceden tanımlanmış bir Windows simgesi belirten **OIC_** bildirimi sabit tanımlayıcısı. `#define OEMRESOURCE` `#include \<afxwin.h>` WINDOWS. H 'de **OIC_** sabitlerine erişmeniz gerekir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1203,7 +1204,7 @@ HCURSOR LoadStandardCursor(LPCTSTR lpszCursorName) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpszCursorName*<br/>
-Önceden tanımlanmış bir Windows imlecini belirten **IDC_** bildirimi sabit tanımlayıcısı. Bu tanımlayıcılar WINDOWS 'da tanımlanmıştır. Olsun. Aşağıdaki listede *lpszCursorName*için olası önceden tanımlanmış değerler ve anlamları gösterilmektedir:
+Önceden tanımlanmış bir Windows imlecini belirten **IDC_** bildirimi sabit tanımlayıcısı. Bu tanımlayıcılar WINDOWS. H 'de tanımlanmıştır. Aşağıdaki listede *lpszCursorName* için olası önceden tanımlanmış değerler ve anlamları gösterilmektedir:
 
 - IDC_ARROW Standart ok imleci
 
@@ -1252,7 +1253,7 @@ HICON LoadStandardIcon(LPCTSTR lpszIconName) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpszIconName*<br/>
-Önceden tanımlanmış bir pencere simgesi belirten bir bildirim sabiti tanımlayıcısı. Bu tanımlayıcılar WINDOWS 'da tanımlanmıştır. Olsun. Önceden tanımlanmış olabilecek değerlerin ve açıklamalarının listesi için, Windows SDK [LoadIcon](/windows/win32/api/winuser/nf-winuser-loadiconw) Içindeki *Lpiconname* parametresine bakın.
+Önceden tanımlanmış bir pencere simgesi belirten bir bildirim sabiti tanımlayıcısı. Bu tanımlayıcılar WINDOWS. H 'de tanımlanmıştır. Önceden tanımlanmış olabilecek değerlerin ve açıklamalarının listesi için, Windows SDK [LoadIcon](/windows/win32/api/winuser/nf-winuser-loadiconw) Içindeki *Lpiconname* parametresine bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1433,10 +1434,10 @@ LPCTSTR m_pszAppName;
 
 Uygulama adı, [CWinApp](#cwinapp) oluşturucusuna geçirilen parametreden veya belirtilmemişse, kaynak DIZESINE AFX_IDS_APP_TITLE kimliği ile gelebilir. Uygulama adı kaynakta bulunamazsa programın öğesinden gelir. EXE dosya adı.
 
-[AfxGetAppName](application-information-and-management.md#afxgetappname)genel işlevi tarafından döndürüldü. `m_pszAppName`**const char**türünde ortak bir değişkendir <strong>\*</strong> .
+[AfxGetAppName](application-information-and-management.md#afxgetappname)genel işlevi tarafından döndürüldü. `m_pszAppName`**const char** türünde ortak bir değişkendir <strong>\*</strong> .
 
 > [!NOTE]
-> ' A bir değer atarsanız `m_pszAppName` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örnek:
+> ' A bir değer atarsanız `m_pszAppName` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örneğin:
 
 [!code-cpp[NVC_MFCWindowing#57](../../mfc/reference/codesnippet/cpp/cwinapp-class_18.cpp)]
 
@@ -1454,10 +1455,10 @@ LPCTSTR m_pszExeName;
 
 ### <a name="remarks"></a>Açıklamalar
 
-[M_pszAppName](#m_pszappname)aksine, bu ad boşluk içeremez. `m_pszExeName`**const char**türünde ortak bir değişkendir <strong>\*</strong> .
+[M_pszAppName](#m_pszappname)aksine, bu ad boşluk içeremez. `m_pszExeName`**const char** türünde ortak bir değişkendir <strong>\*</strong> .
 
 > [!NOTE]
-> ' A bir değer atarsanız `m_pszExeName` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örnek:
+> ' A bir değer atarsanız `m_pszExeName` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örneğin:
 
 [!code-cpp[NVC_MFCWindowing#58](../../mfc/reference/codesnippet/cpp/cwinapp-class_20.cpp)]
 
@@ -1471,10 +1472,10 @@ LPCTSTR m_pszHelpFilePath;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak Framework, `m_pszHelpFilePath` "ile uygulamanın adı ile başlatılır. HLP "eklendi. Yardım dosyasının adını değiştirmek için, `m_pszHelpFilePath` istenen yardım dosyasının tüm adını içeren bir dizeye işaret olarak ayarlayın. Bunu yapmak için uygun bir yer, uygulamanın [InitInstance](#initinstance) işlevidir. `m_pszHelpFilePath`**const char**türünde ortak bir değişkendir <strong>\*</strong> .
+Varsayılan olarak Framework, `m_pszHelpFilePath` "ile uygulamanın adı ile başlatılır. HLP "eklendi. Yardım dosyasının adını değiştirmek için, `m_pszHelpFilePath` istenen yardım dosyasının tüm adını içeren bir dizeye işaret olarak ayarlayın. Bunu yapmak için uygun bir yer, uygulamanın [InitInstance](#initinstance) işlevidir. `m_pszHelpFilePath`**const char** türünde ortak bir değişkendir <strong>\*</strong> .
 
 > [!NOTE]
-> ' A bir değer atarsanız `m_pszHelpFilePath` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örnek:
+> ' A bir değer atarsanız `m_pszHelpFilePath` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örneğin:
 
 [!code-cpp[NVC_MFCWindowing#59](../../mfc/reference/codesnippet/cpp/cwinapp-class_21.cpp)]
 
@@ -1488,10 +1489,10 @@ LPCTSTR m_pszProfileName;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_pszProfileName`**const char**türünde ortak bir değişkendir <strong>\*</strong> .
+`m_pszProfileName`**const char** türünde ortak bir değişkendir <strong>\*</strong> .
 
 > [!NOTE]
-> ' A bir değer atarsanız `m_pszProfileName` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örnek:
+> ' A bir değer atarsanız `m_pszProfileName` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örneğin:
 
 [!code-cpp[NVC_MFCWindowing#60](../../mfc/reference/codesnippet/cpp/cwinapp-class_22.cpp)]
 
@@ -1509,7 +1510,7 @@ Normalde, bu veri üyesi salt okunurdur.
 
 - Değer bir kayıt defteri anahtarında depolanır. Uygulama profili ayarının adı şu kayıt defteri anahtarına eklenir: HKEY_CURRENT_USER/Software/LocalAppWizard-Generated/.
 
-' A bir değer atarsanız `m_pszRegistryKey` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örnek:
+' A bir değer atarsanız `m_pszRegistryKey` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örneğin:
 
 [!code-cpp[NVC_MFCWindowing#61](../../mfc/reference/codesnippet/cpp/cwinapp-class_23.cpp)]
 
@@ -1828,7 +1829,7 @@ Bu gelişmiş özelliği geçersiz kılarsınız, Framework 'ün kanca işlemesi
 
 ## <a name="cwinappprocessshellcommand"></a><a name="processshellcommand"></a> CWinApp::P rocessShellCommand
 
-Bu üye işlevi, Rcmınfo tarafından tanımlanan nesneden geçirilen parametreleri kabul etmek için [InitInstance](#initinstance) tarafından çağırılır `CCommandLineInfo` ve belirtilen eylemi gerçekleştirir. *rCmdInfo*
+Bu üye işlevi, Rcmınfo tarafından tanımlanan nesneden geçirilen parametreleri kabul etmek için [InitInstance](#initinstance) tarafından çağırılır `CCommandLineInfo` ve belirtilen eylemi gerçekleştirir. 
 
 ```
 BOOL ProcessShellCommand(CCommandLineInfo& rCmdInfo);
@@ -1991,7 +1992,7 @@ Yöntem başarılı olursa S_OK; Aksi takdirde hata kodu.
 
 Uygulamanız, dosyaları yeniden kaydetmeye yönelik varsayılan MFC uygulamasını kullanıyorsa, basit sürümünü kullanmanız gerekir `RegisterWithRestartManager` . `RegisterWithRestartManager`Uygulamanızın otomatik kaydetme davranışını özelleştirmek istiyorsanız, karmaşık sürümünü kullanın.
 
-Bu yöntemi *strRestartIdentifier*için boş bir dize ile çağırırsanız, `RegisterWithRestartManager` restart Manager 'ın bu örneği için benzersiz bir tanımlayıcı dizesi oluşturur.
+Bu yöntemi *strRestartIdentifier* için boş bir dize ile çağırırsanız, `RegisterWithRestartManager` restart Manager 'ın bu örneği için benzersiz bir tanımlayıcı dizesi oluşturur.
 
 Bir uygulama beklenmedik bir şekilde çıktığında, yeniden başlatma Yöneticisi uygulamayı komut satırından yeniden başlatır ve isteğe bağlı bağımsız değişken olarak benzersiz yeniden başlatma tanımlayıcısı sağlar. Bu senaryoda, çerçeve `RegisterWithRestartManager` iki kez çağırır. İlk çağrı, bir dize tanımlayıcısı için boş bir dize ile [CWinApp:: InitInstance](#initinstance) 'tan geliyor. Ardından, [CWinApp::P rocessShellCommand](#processshellcommand) öğesini `RegisterWithRestartManager` benzersiz yeniden başlatma tanımlayıcısıyla çağırır.
 
@@ -2179,7 +2180,7 @@ Kayıt defteri anahtarının adını içeren bir dize kaynağının KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, *m_pszRegistryKey*' `GetProfileInt` nin,, `GetProfileString` `WriteProfileInt` ve `WriteProfileString` üye işlevleri `CWinApp` tarafından kullanılan m_pszRegistryKey ayarlar. Bu işlev çağrılırsa, en son kullanılanlar (MRU) dosyalarının listesi de kayıt defterinde saklanır. Kayıt defteri anahtarı genellikle şirketin adıdır. Aşağıdaki formun bir anahtarında depolanır: HKEY_CURRENT_USER \Software \\<şirket adı \> \\<uygulama adı \> \\<Bölüm adı \> \\<değer adı \> .
+Bu işlev, ' `GetProfileInt` nin,, `GetProfileString` `WriteProfileInt` ve `WriteProfileString` üye işlevleri `CWinApp` tarafından kullanılan m_pszRegistryKey ayarlar. Bu işlev çağrılırsa, en son kullanılanlar (MRU) dosyalarının listesi de kayıt defterinde saklanır. Kayıt defteri anahtarı genellikle şirketin adıdır. Aşağıdaki formun bir anahtarında depolanır: HKEY_CURRENT_USER\Software\\<şirket adı \> \\<uygulama adı \> \\<Bölüm adı \> \\<değer adı \> .
 
 ## <a name="cwinappsupportsapplicationrecovery"></a><a name="supportsapplicationrecovery"></a> CWinApp:: SupportsApplicationRecovery
 

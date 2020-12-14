@@ -1,5 +1,6 @@
 ---
-title: CVSListBox Sınıfı
+description: 'Daha fazla bilgi edinin: CVSListBox sınıfı'
+title: CVSListBox sınıfı
 ms.date: 11/19/2018
 f1_keywords:
 - CVSListBox
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - CVSListBox [MFC], SetItemData
 - CVSListBox [MFC], GetListHwnd
 ms.assetid: c79be7b4-46ed-4af8-a41e-68962782d8ef
-ms.openlocfilehash: 4ea48a263a01133419067979ee5fa3e62105c7f5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6912eccd4cc8e7c78407d0cda0a0dc1305d0bde8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373185"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344984"
 ---
-# <a name="cvslistbox-class"></a>CVSListBox Sınıfı
+# <a name="cvslistbox-class"></a>CVSListBox sınıfı
 
-Sınıf, `CVSListBox` değiştirilebilir bir liste denetimini destekler.
+`CVSListBox`Sınıfı, düzenlenebilir bir liste denetimini destekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CVSListBox : public CVSListBoxBase
@@ -49,55 +50,55 @@ class CVSListBox : public CVSListBoxBase
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CVSListBox::CVSListBox](#cvslistbox)|Bir `CVSListBox` nesne inşa eder.|
+|[CVSListBox:: CVSListBox](#cvslistbox)|Bir `CVSListBox` nesnesi oluşturur.|
 |`CVSListBox::~CVSListBox`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CVSListBox::AddItem](#additem)|Liste denetimine bir dize ekler. (Geçersiz `CVSListBoxBase::AddItem`kılar .)|
-|[CVSListBox::EditItem](#edititem)|Liste denetim öğesinin metninde bir denetim işlemi başlatır. (Geçersiz `CVSListBoxBase::EditItem`kılar .)|
-|[CVSListBox::GetCount](#getcount)|Editable liste denetiminde dizelerin sayısını alır. (Geçersiz `CVSListBoxBase::GetCount`kılar .)|
-|[CVSListBox::GetItemData](#getitemdata)|Kullanılabilir liste denetim öğesiyle ilişkili uygulamaya özgü 32 bit lik bir değer alır. (Geçersiz `CVSListBoxBase::GetItemData`kılar .)|
-|[CVSListBox::GetItemText](#getitemtext)|Editable list denetim öğesinin metnini alır. (Geçersiz `CVSListBoxBase::GetItemText`kılar .)|
-|[CVSListBox::GetSelItem](#getselitem)|Şu anda seçili maddenin sıfır tabanlı dizinini kullanılabilir liste denetiminde alır. (Geçersiz `CVSListBoxBase::GetSelItem`kılar .)|
-|`CVSListBox::PreTranslateMessage`|Pencere iletilerini [Çeviri İletisi](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine gönderilmeden önce çevirir. Daha fazla bilgi ve yöntem sözdizimi için [Bkz. CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Geçersiz `CVSListBoxBase::PreTranslateMessage`kılar .)|
-|[CVSListBox::RemoveItem](#removeitem)|Bir öğeyi kullanılabilir liste denetiminden kaldırır. (Geçersiz `CVSListBoxBase::RemoveItem`kılar .)|
-|[CVSListBox::SelectItem](#selectitem)|Editable liste denetim dizesi seçer. (Geçersiz `CVSListBoxBase::SelectItem`kılar .)|
-|[CVSListBox::SetItemData](#setitemdata)|Uygulamaya özgü 32 bit değeri, kullanılabilir liste denetim öğesiyle ilişkilendirin. (Geçersiz `CVSListBoxBase::SetItemData`kılar .)|
+|[CVSListBox:: AddItem](#additem)|Liste denetimine bir dize ekler. (Geçersiz kılmalar `CVSListBoxBase::AddItem` .)|
+|[CVSListBox:: EditItem](#edititem)|Bir liste denetim öğesi metni üzerinde bir düzenleme işlemi başlatır. (Geçersiz kılmalar `CVSListBoxBase::EditItem` .)|
+|[CVSListBox:: GetCount](#getcount)|Düzenlenebilir liste denetimindeki dize sayısını alır. (Geçersiz kılmalar `CVSListBoxBase::GetCount` .)|
+|[CVSListBox:: GetItemData](#getitemdata)|Düzenlenebilir bir liste denetim öğesiyle ilişkili uygulamaya özgü 32 bitlik bir değer alır. (Geçersiz kılmalar `CVSListBoxBase::GetItemData` .)|
+|[CVSListBox:: GetItemText](#getitemtext)|Düzenlenebilir liste denetim öğesinin metnini alır. (Geçersiz kılmalar `CVSListBoxBase::GetItemText` .)|
+|[CVSListBox:: Getselıdıtem](#getselitem)|Seçili olan öğenin sıfır tabanlı dizinini düzenlenebilir liste denetiminde alır. (Geçersiz kılmalar `CVSListBoxBase::GetSelItem` .)|
+|`CVSListBox::PreTranslateMessage`|[TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine dağıtılmadan önce pencere iletilerini çevirir. Daha fazla bilgi ve Yöntem sözdizimi için bkz. [CWnd::P reTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Geçersiz kılmalar `CVSListBoxBase::PreTranslateMessage` .)|
+|[CVSListBox:: RemoveItem](#removeitem)|Düzenlenebilir liste denetiminden bir öğeyi kaldırır. (Geçersiz kılmalar `CVSListBoxBase::RemoveItem` .)|
+|[CVSListBox:: SelectItem](#selectitem)|Düzenlenebilir bir liste denetim dizesi seçer. (Geçersiz kılmalar `CVSListBoxBase::SelectItem` .)|
+|[CVSListBox:: SetItemData](#setitemdata)|Uygulamaya özgü 32 bitlik bir değeri düzenlenebilir liste denetim öğesiyle ilişkilendirir. (Geçersiz kılmalar `CVSListBoxBase::SetItemData` .)|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CVSListBox::GetListHwnd](#getlisthwnd)|Tanıtıcıyı geçerli katışılmış liste görünümü denetimine döndürür.|
+|[CVSListBox:: GetListHwnd](#getlisthwnd)|Geçerli katıştırılmış liste görünümü denetimine yönelik tanıtıcıyı döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf, `CVSListBox` kullanıcının liste denetimindeki öğeleri oluşturmasına, değiştirmesine, silmesini veya yeniden düzenlemesine olanak tanıyan bir düzenleme düğmesi kümesi sağlar.
+`CVSListBox`Sınıfı, kullanıcının liste denetimindeki öğeleri oluşturmasını, değiştirmesini, silmesini veya yeniden düzenlemesini sağlayan bir düzenleme düğmeleri kümesi sağlar.
 
-Aşağıda, değiştirilebilir liste denetiminin bir resmi verem. "Item2" başlıklı ikinci liste girişi, düzenleme için seçilir.
+Düzenlenebilir liste denetiminin bir resmi aşağıda verilmiştir. "Item2" başlıklı ikinci liste girişi, düzenlenmek üzere seçilidir.
 
-![CVSListBox kontrolü](../../mfc/reference/media/cvslistbox.png "CVSListBox kontrolü")
+![CVSListBox denetimi](../../mfc/reference/media/cvslistbox.png "CVSListBox denetimi")
 
-Kullanılabilir bir liste denetimi eklemek için kaynak düzenleyicisini kullanıyorsanız, düzenleyicinin **Araç Kutusu** bölmesinin önceden tanımlanmış bir editable list denetimi sağlamadığını unutmayın. Bunun yerine, **Grup Kutusu** denetimi gibi statik bir denetim ekleyin. Çerçeve, değiştirilebilir liste denetiminin boyutunu ve konumunu belirtmek için yer tutucu olarak statik denetimi kullanır.
+Düzenlenebilir bir liste denetimi eklemek için kaynak Düzenleyicisi 'ni kullanırsanız, düzenleyicinin **araç kutusu** bölmesinin önceden tanımlanmış bir düzenlenebilir liste denetimi sağlamadığına dikkat edin. Bunun yerine, **Grup kutusu** denetimi gibi bir statik denetim ekleyin. Çerçeve, düzenlenebilir liste denetiminin boyutunu ve konumunu belirtmek için statik denetimi bir yer tutucu olarak kullanır.
 
-İletişim kutusu şablonunda değiştirilebilir liste denetimi kullanmak için `CVSListBox` iletişim kutusu sınıfınızda bir değişken bildirin. Değişken ve denetim arasındaki veri alışverişini `DDX_Control` desteklemek için `DoDataExchange` iletişim kutusu yönteminde bir makro girişi tanımlayın. Varsayılan olarak, düzenleme listesi denetimi düzenleme düğmeleri olmadan oluşturulur. Devralma düğmelerini etkinleştirmek için devralınan CVSListBoxBase::SetStandardButtons yöntemini kullanın.
+Bir iletişim kutusu şablonunda düzenlenebilir liste denetimini kullanmak için `CVSListBox` iletişim kutusu sınıfınızda bir değişken bildirin. Değişken ve denetim arasındaki veri değişimini desteklemek için, `DDX_Control` iletişim kutusunun yönteminde bir makro girişi tanımlayın `DoDataExchange` . Varsayılan olarak, düzenlenebilir liste denetimi düzenleme düğmeleri olmadan oluşturulur. Düzenleme düğmelerini etkinleştirmek için devralınmış CVSListBoxBase:: SetStandardButtons metodunu kullanın.
 
-Daha fazla bilgi için Örnekler dizini, `New Controls` örnek, Page3.cpp ve Page3.h dosyalarına bakın.
+Daha fazla bilgi için bkz. Samples dizini, `New Controls` örnek, PAGE3. cpp ve Page3. h dosyaları.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
-[Cstatic](../../mfc/reference/cstatic-class.md)
+[CStatic](../../mfc/reference/cstatic-class.md)
 
 `CVSListBoxBase`
 
@@ -105,9 +106,9 @@ Daha fazla bilgi için Örnekler dizini, `New Controls` örnek, Page3.cpp ve Pag
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxvslistbox.h
+**Üstbilgi:** afxvslistbox. h
 
-## <a name="cvslistboxadditem"></a><a name="additem"></a>CVSListBox::AddItem
+## <a name="cvslistboxadditem"></a><a name="additem"></a> CVSListBox:: AddItem
 
 Liste denetimine bir dize ekler.
 
@@ -120,26 +121,26 @@ virtual int AddItem(
 
 ### <a name="parameters"></a>Parametreler
 
-*strIext*<br/>
-[içinde] Bir dize için bir başvuru.
+*Çarpıcı*<br/>
+'ndaki Bir dizeye başvuru.
 
-*Dwdata*<br/>
-[içinde] Dize ile ilişkili uygulamaya özgü 32 bit değeri. Varsayılan değer 0’dır.
+*dwData*<br/>
+'ndaki Dizeyle ilişkili, uygulamaya özgü 32 bitlik bir değer. Varsayılan değer 0’dır.
 
-*ıındex*<br/>
-[içinde] Dizeyi tutacak konumun sıfır tabanlı dizin. *iIndex* parametresi -1 ise, dize listenin sonuna eklenir. Varsayılan değer -1'dir.
+*IIndex*<br/>
+'ndaki Dizeyi tutacak konumun sıfır tabanlı dizini. *IIndex* parametresi-1 ise, dize listenin sonuna eklenir. Varsayılan değer -1'dir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste denetimindeki dizenin konumunun sıfır tabanlı dizin.
+Liste denetimindeki dize konumunun sıfır tabanlı dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*dwData* parametresi tarafından belirtilen değeri almak için [CVSListBox::GetItemData](#getitemdata) yöntemini kullanın. Bu değer uygulamaya özgü bir tamsayı veya diğer verilere işaretçi olabilir.
+*DwData* parametresi tarafından belirtilen değeri almak Için [CVSListBox:: GetItemData](#getitemdata) metodunu kullanın. Bu değer, uygulamaya özgü bir tamsayı veya diğer verilere yönelik bir işaretçi olabilir.
 
-## <a name="cvslistboxcvslistbox"></a><a name="cvslistbox"></a>CVSListBox::CVSListBox
+## <a name="cvslistboxcvslistbox"></a><a name="cvslistbox"></a> CVSListBox:: CVSListBox
 
-Bir `CVSListBox` nesne inşa eder.
+Bir `CVSListBox` nesnesi oluşturur.
 
 ```
 CVSListBox();
@@ -149,9 +150,9 @@ CVSListBox();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cvslistboxedititem"></a><a name="edititem"></a>CVSListBox::EditItem
+## <a name="cvslistboxedititem"></a><a name="edititem"></a> CVSListBox:: EditItem
 
-Liste denetim öğesinin metninde bir denetim işlemi başlatır.
+Bir liste denetim öğesi metni üzerinde bir düzenleme işlemi başlatır.
 
 ```
 virtual BOOL EditItem(int iIndex);
@@ -159,20 +160,20 @@ virtual BOOL EditItem(int iIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*ıındex*<br/>
-[içinde] Liste denetim öğesinin sıfır tabanlı dizin.
+*IIndex*<br/>
+'ndaki Liste denetim öğesinin sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Edit işlemi başarıyla başlarsa DOĞRU; aksi takdirde, YANLIŞ.
+Düzenleme işlemi başarıyla başlarsa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı, bir öğenin etiketini çift tıklatarak veya bir öğe nin odak noktası olduğunda **F2** veya **SPACEBAR** tuşuna basarak bir düzenleme işlemi başlatır.
+Kullanıcı bir öğe etiketine çift tıklayarak ya da bir öğe odağa sahip olduğunda **F2** veya **boşluk** tuşuna basarak bir düzenleme işlemi başlatır.
 
-## <a name="cvslistboxgetcount"></a><a name="getcount"></a>CVSListBox::GetCount
+## <a name="cvslistboxgetcount"></a><a name="getcount"></a> CVSListBox:: GetCount
 
-Editable liste denetiminde dizelerin sayısını alır.
+Düzenlenebilir liste denetimindeki dize sayısını alır.
 
 ```
 virtual int GetCount() const;
@@ -180,15 +181,15 @@ virtual int GetCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste denetimindeki öğe sayısı.
+Liste denetimindeki öğelerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizin sıfır tabanlı olduğundan, sayım son maddenin dizin değerinden bir büyük olduğunu unutmayın.
+Dizin sıfır tabanlı olduğundan, sayının son öğenin dizin değerinden bir daha büyük olduğunu unutmayın.
 
-## <a name="cvslistboxgetitemdata"></a><a name="getitemdata"></a>CVSListBox::GetItemData
+## <a name="cvslistboxgetitemdata"></a><a name="getitemdata"></a> CVSListBox:: GetItemData
 
-Kullanılabilir liste denetim öğesiyle ilişkili uygulamaya özgü 32 bit lik bir değer alır.
+Düzenlenebilir bir liste denetim öğesiyle ilişkili uygulamaya özgü 32 bitlik bir değer alır.
 
 ```
 virtual DWORD_PTR GetItemData(int iIndex) const;
@@ -196,20 +197,20 @@ virtual DWORD_PTR GetItemData(int iIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*ıındex*<br/>
-[içinde] Bir editable liste denetim öğesinin sıfır tabanlı dizin.
+*IIndex*<br/>
+'ndaki Düzenlenebilir liste denetim öğesinin sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen maddeyle ilişkili 32 bit lik değer.
+Belirtilen öğeyle ilişkili 32 bitlik değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-32 bit değerini liste kontrol öğesiyle ilişkilendirmek için [CVSListBox::SetItemData](#setitemdata) veya [CVSListBox::AddItem](#additem) yöntemini kullanın. Bu değer uygulamaya özgü bir tamsayı veya diğer verilere işaretçi olabilir.
+32 bitlik değeri liste denetim öğesiyle ilişkilendirmek için [CVSListBox:: SetItemData](#setitemdata) veya [CVSListBox:: addidıtem](#additem) metodunu kullanın. Bu değer, uygulamaya özgü bir tamsayı veya diğer verilere yönelik bir işaretçi olabilir.
 
-## <a name="cvslistboxgetitemtext"></a><a name="getitemtext"></a>CVSListBox::GetItemText
+## <a name="cvslistboxgetitemtext"></a><a name="getitemtext"></a> CVSListBox:: GetItemText
 
-Editable list denetim öğesinin metnini alır.
+Düzenlenebilir liste denetim öğesinin metnini alır.
 
 ```
 virtual CString GetItemText(int iIndex) const;
@@ -217,8 +218,8 @@ virtual CString GetItemText(int iIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*ıındex*<br/>
-[içinde] Bir editable liste denetim öğesinin sıfır tabanlı dizin.
+*IIndex*<br/>
+'ndaki Düzenlenebilir liste denetim öğesinin sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -226,9 +227,9 @@ Belirtilen öğenin metnini içeren bir [CString](../../atl-mfc-shared/reference
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cvslistboxgetlisthwnd"></a><a name="getlisthwnd"></a>CVSListBox::GetListHwnd
+## <a name="cvslistboxgetlisthwnd"></a><a name="getlisthwnd"></a> CVSListBox:: GetListHwnd
 
-Tanıtıcıyı geçerli katışılmış liste görünümü denetimine döndürür.
+Geçerli katıştırılmış liste görünümü denetimine yönelik tanıtıcıyı döndürür.
 
 ```
 virtual HWND GetListHwnd() const;
@@ -236,15 +237,15 @@ virtual HWND GetListHwnd() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Katıştılmış liste görünümü denetimine bir tanıtıcı.
+Katıştırılmış liste görünümü denetimine yönelik bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CVSListBox` Sınıfı destekleyen katışılmış liste görünümü denetimine bir tanıtıcı almak için bu yöntemi kullanın.
+Sınıfı destekleyen katıştırılmış liste görünümü denetimine bir tanıtıcı almak için bu yöntemi kullanın `CVSListBox` .
 
-## <a name="cvslistboxgetselitem"></a><a name="getselitem"></a>CVSListBox::GetSelItem
+## <a name="cvslistboxgetselitem"></a><a name="getselitem"></a> CVSListBox:: Getselıdıtem
 
-Şu anda seçili maddenin sıfır tabanlı dizinini kullanılabilir liste denetiminde alır.
+Seçili olan öğenin sıfır tabanlı dizinini düzenlenebilir liste denetiminde alır.
 
 ```
 virtual int GetSelItem() const;
@@ -252,13 +253,13 @@ virtual int GetSelItem() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa, şu anda seçili öğenin sıfır tabanlı dizin; aksi takdirde, -1.
+Bu yöntem başarılı olursa, şu anda seçili öğenin sıfır tabanlı dizini; Aksi takdirde,-1.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cvslistboxremoveitem"></a><a name="removeitem"></a>CVSListBox::RemoveItem
+## <a name="cvslistboxremoveitem"></a><a name="removeitem"></a> CVSListBox:: RemoveItem
 
-Bir öğeyi kullanılabilir liste denetiminden kaldırır.
+Düzenlenebilir liste denetiminden bir öğeyi kaldırır.
 
 ```
 virtual BOOL RemoveItem(int iIndex);
@@ -266,18 +267,18 @@ virtual BOOL RemoveItem(int iIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*ıındex*<br/>
-[içinde] Bir editable liste denetim öğesinin sıfır tabanlı dizin.
+*IIndex*<br/>
+'ndaki Düzenlenebilir liste denetim öğesinin sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen öğe kaldırılırsa DOĞRU; aksi takdirde, YANLIŞ.
+Belirtilen öğe kaldırılırsa doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cvslistboxselectitem"></a><a name="selectitem"></a>CVSListBox::SelectItem
+## <a name="cvslistboxselectitem"></a><a name="selectitem"></a> CVSListBox:: SelectItem
 
-Editable liste denetim dizesi seçer.
+Düzenlenebilir bir liste denetim dizesi seçer.
 
 ```
 virtual BOOL SelectItem(int iItem);
@@ -285,20 +286,20 @@ virtual BOOL SelectItem(int iItem);
 
 ### <a name="parameters"></a>Parametreler
 
-*iÖğe*<br/>
-[içinde] Bir editable liste denetim öğesinin sıfır tabanlı dizin.
+*IItem*<br/>
+'ndaki Düzenlenebilir liste denetim öğesinin sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem belirtilen öğeyi seçer ve gerekirse öğeyi görünüme kaydırır.
+Bu yöntem belirtilen öğeyi seçer ve gerekliyse, öğeyi görünüme kaydırır.
 
-## <a name="cvslistboxsetitemdata"></a><a name="setitemdata"></a>CVSListBox::SetItemData
+## <a name="cvslistboxsetitemdata"></a><a name="setitemdata"></a> CVSListBox:: SetItemData
 
-Uygulamaya özgü 32 bit değeri, kullanılabilir liste denetim öğesiyle ilişkilendirin.
+Uygulamaya özgü 32 bitlik bir değeri düzenlenebilir liste denetim öğesiyle ilişkilendirir.
 
 ```
 virtual void SetItemData(
@@ -308,15 +309,15 @@ virtual void SetItemData(
 
 ### <a name="parameters"></a>Parametreler
 
-*ıındex*<br/>
-[içinde] Bir editable liste denetim öğesinin sıfır tabanlı dizin.
+*IIndex*<br/>
+'ndaki Düzenlenebilir liste denetim öğesinin sıfır tabanlı dizini.
 
-*Dwdata*<br/>
-[içinde] 32 bit lik bir değer. Bu değer uygulamaya özgü bir tamsayı veya diğer verilere işaretçi olabilir.
+*dwData*<br/>
+'ndaki 32 bitlik bir değer. Bu değer, uygulamaya özgü bir tamsayı veya diğer verilere yönelik bir işaretçi olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)

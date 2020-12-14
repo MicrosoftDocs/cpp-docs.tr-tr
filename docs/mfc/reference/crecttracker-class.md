@@ -1,5 +1,6 @@
 ---
-title: CRectTracker Sınıfı
+description: 'Daha fazla bilgi edinin: CRectTracker sınıfı'
+title: CRectTracker sınıfı
 ms.date: 11/19/2018
 f1_keywords:
 - CRectTracker
@@ -38,18 +39,18 @@ helpviewer_keywords:
 - CRectTracker [MFC], m_rect
 - CRectTracker [MFC], m_sizeMin
 ms.assetid: 99caa7f2-3c0d-4a42-bbee-e5d1d342d4ee
-ms.openlocfilehash: c3600bc5a945c24e91269bc280b4b8e99c54d4c8
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 8406b6b45a99ca2e1816cb650f243fcea2db8ddc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81750449"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343026"
 ---
-# <a name="crecttracker-class"></a>CRectTracker Sınıfı
+# <a name="crecttracker-class"></a>CRectTracker sınıfı
 
-Bir öğenin farklı şekillerde görüntülenmesine, taşınmasına ve yeniden boyutlandırılmasına izin verir.
+Bir öğenin farklı fashiler halinde görüntülenmesine, taşınmasına ve yeniden boyutlandırılabilmesini sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CRectTracker
@@ -59,46 +60,46 @@ class CRectTracker
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CRectTracker::CRectTracker](#crecttracker)|Bir `CRectTracker` nesne inşa eder.|
+|[CRectTracker:: CRectTracker](#crecttracker)|Bir `CRectTracker` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CRectTracker::AdjustRect](#adjustrect)|Dikdörtgen yeniden boyutlandırıldığında çağrılır.|
-|[CRectTracker::Draw](#draw)|Dikdörtgeni işler.|
-|[CRectTracker::DrawTrackerRect](#drawtrackerrect)|Bir `CRectTracker` nesnenin kenarlığı çizerken çağrılır.|
-|[CRectTracker::GetHandleMask](#gethandlemask)|Bir `CRectTracker` öğenin yeniden boyutlandırma tutamaçlarının maskesini almak için çağrıldı.|
-|[CRectTracker::GetTrueRect](#gettruerect)|Yeniden boyutlandırma tutamaçları da dahil olmak üzere dikdörtgenin genişliğini ve yüksekliğini döndürür.|
-|[CRectTracker::HitTest](#hittest)|`CRectTracker` Imlecin nesneyle ilgili geçerli konumunu döndürür.|
-|[CRectTracker::NormalizeHit](#normalizehit)|Bir isabet testi kodunu normalleştirir.|
-|[CRectTracker::OnChangedRect](#onchangedrect)|Dikdörtgen yeniden boyutlandırıldığında veya taşındığında çağrılır.|
-|[CRectTracker::SetCursor](#setcursor)|İmleci dikdörtgenin üzerindeki konumuna bağlı olarak ayarlar.|
-|[CRectTracker::İzle](#track)|Kullanıcının dikdörtgeni işlemesini sağlar.|
-|[CRectTracker::TrackRubberBand](#trackrubberband)|Kullanıcının seçimi "lastik bantla" bantlamasına olanak tanır.|
+|[CRectTracker:: AdjustRect](#adjustrect)|Dikdörtgen yeniden boyutlandırılırken çağırılır.|
+|[CRectTracker::D RAW](#draw)|Dikdörtgeni işler.|
+|[CRectTracker::D rawTrackerRect](#drawtrackerrect)|Bir nesnenin kenarlığını çizerken çağırılır `CRectTracker` .|
+|[CRectTracker:: GetHandleMask](#gethandlemask)|Bir `CRectTracker` öğenin yeniden boyutlandırma tutamaçlarının maskesini almak için çağırılır.|
+|[CRectTracker:: GetTrueRect](#gettruerect)|Yeniden boyutlandırma tutamaçları dahil olmak üzere dikdörtgenin genişliğini ve yüksekliğini döndürür.|
+|[CRectTracker:: HitTest](#hittest)|Nesneyle ilgili imlecin geçerli konumunu döndürür `CRectTracker` .|
+|[CRectTracker:: NormalizeHit](#normalizehit)|İsabet sınama kodunu normalleştirir.|
+|[CRectTracker:: OnChangedRect](#onchangedrect)|Dikdörtgen yeniden boyutlandırılırken veya taşındığında çağırılır.|
+|[CRectTracker:: SetCursor](#setcursor)|İmleci dikdörtgen üzerinde konumuna göre ayarlar.|
+|[CRectTracker:: Track](#track)|Kullanıcının dikdörtgeni işlemesini sağlar.|
+|[CRectTracker:: TrackRubberBand](#trackrubberband)|Kullanıcının seçimi "lastik" kullanmasına izin verir.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CRectTracker::m_nHandleSize](#m_nhandlesize)|Yeniden boyutlandırma tanıtıcılarının boyutunu belirler.|
-|[CRectTracker::m_nStyle](#m_nstyle)|İzleyicinin geçerli stili(ler).|
-|[CRectTracker::m_rect](#m_rect)|Dikdörtgenin geçerli konumu (piksel olarak).|
-|[CRectTracker::m_sizeMin](#m_sizemin)|Minimum dikdörtgen genişliğini ve yüksekliğini belirler.|
+|[CRectTracker:: m_nHandleSize](#m_nhandlesize)|Yeniden boyutlandırma tutamaçlarının boyutunu belirler.|
+|[CRectTracker:: m_nStyle](#m_nstyle)|İzleyicide geçerli stil (ler) i.|
+|[CRectTracker:: m_rect](#m_rect)|Dikdörtgenin geçerli konumu (piksel cinsinden).|
+|[CRectTracker:: m_sizeMin](#m_sizemin)|Minimum dikdörtgen genişliğini ve yüksekliğini belirler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CRectTracker`taban sınıfa sahip değildir.
+`CRectTracker` taban sınıfına sahip değildir.
 
-Sınıf, `CRectTracker` kullanıcının grafik arabirimi kullanarak OLE öğeleriyle etkileşim kurabilmesi için tasarlanmış olsa da, kullanımı OLE özellikli uygulamalarla sınırlı değildir. Böyle bir kullanıcı arabirimi gerekli olduğu her yerde kullanılabilir.
+Sınıfı, `CRectTracker` bir grafik arabirim kullanarak kullanıcının OLE öğeleriyle etkileşime girmesine izin vermek üzere tasarlansa da, kullanımı OLE özellikli uygulamalarla sınırlı değildir. Bu, bir kullanıcı arabirimi gereken her yerde kullanılabilir.
 
-`CRectTracker`kenarlıklar düz veya noktalı çizgiler olabilir. Öğe, yumurtadan çıkmış bir kenarlık verilebilir veya maddenin farklı durumlarını belirtmek için yumurtadan çıkarılmış bir desenle kaplanabilir. Öğenin dış veya iç kenarlığı üzerinde sekiz yeniden boyutlandırma tutamacı yerleştirebilirsiniz. (Yeniden boyutlandırma tutamaçlarının açıklaması için [Bkz. GetHandleMask.)](#gethandlemask) Son olarak, bir `CRectTracker` öğenin yönünü yeniden boyutlandırma sırasında değiştirmenize olanak tanır.
+`CRectTracker` kenarlıklar düz veya noktalı çizgiler olabilir. Öğe, bir taranmış kenarlık veya öğenin farklı durumlarını göstermek üzere taranmış bir desenli kaplama olabilir. Öğenin dışına veya iç kenarlığına sekiz yeniden boyutlandırma tutamacı yerleştirebilirsiniz. (Yeniden boyutlandırma tutamaçlarının açıklaması için bkz. [GetHandleMask](#gethandlemask).) Son olarak, bir `CRectTracker` öğenin yeniden boyutlandırma sırasında yönünü değiştirmenize izin verir.
 
-Kullanmak `CRectTracker`için, `CRectTracker` bir nesne oluşturmak ve hangi ekran durumları baş harfe olduğunu belirtin. Daha sonra bu arabirimi, kullanıcıya `CRectTracker` nesneyle ilişkili OLE öğesinin geçerli durumu hakkında görsel geri bildirim vermek için kullanabilirsiniz.
+Kullanmak için `CRectTracker` bir nesnesi oluşturun `CRectTracker` ve hangi görüntüleme durumlarının başlatıldığını belirtin. Daha sonra bu arabirimi, nesneyle ilişkili OLE öğesinin geçerli durumu hakkında kullanıcıya görsel geri bildirim vermek için kullanabilirsiniz `CRectTracker` .
 
-Kullanma `CRectTracker`hakkında daha fazla bilgi için, makale [Trackers](../../mfc/trackers.md)bakın.
+Kullanma hakkında daha fazla bilgi için `CRectTracker` bkz. [trackingseçiciler](../../mfc/trackers.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -106,11 +107,11 @@ Kullanma `CRectTracker`hakkında daha fazla bilgi için, makale [Trackers](../..
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxext.h
+**Üstbilgi:** afxext. h
 
-## <a name="crecttrackeradjustrect"></a><a name="adjustrect"></a>CRectTracker::AdjustRect
+## <a name="crecttrackeradjustrect"></a><a name="adjustrect"></a> CRectTracker:: AdjustRect
 
-İzleme dikdörtgeni yeniden boyutlandırıldığında, yeniden boyutlandırma tutamacı kullanılarak çerçeve tarafından çağrılır.
+İzleme dikdörtgeni bir yeniden boyutlandırma tutamacı kullanılarak yeniden boyutlandırılırken Framework tarafından çağırılır.
 
 ```
 virtual void AdjustRect(
@@ -120,23 +121,23 @@ virtual void AdjustRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*nHandle*<br/>
-Kullanılan tutamaç dizin.
+*Ntanıtıcı*<br/>
+Kullanılan tanıtıcının dizini.
 
-*Lprect*<br/>
-Dikdörtgenin geçerli boyutunu işaretçi. (Dikdörtgenin boyutu, yüksekliği ve genişliği ile verilir.)
+*lpRect*<br/>
+Dikdörtgenin geçerli boyutuna yönelik işaretçi. (Bir dikdörtgenin boyutu yükseklik ve genişlik ile verilir.)
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevin varsayılan davranışı, dikdörtgenin yönünüyalnızca ters `Track` çevrildiğinde ve `TrackRubberBand` izin verilen ters çevrildiğinde değiştirmesini sağlar.
+Bu işlevin varsayılan davranışı, dikdörtgenin yönünün yalnızca `Track` ve `TrackRubberBand` ters çevirme ile çağrıldığında değiştirilmesine izin verir.
 
-Sürükleme işlemi sırasında izleme dikdörtgeninin ayarını denetlemek için bu işlevi geçersiz kılın. Bir yöntem dönmeden önce *lpRect* tarafından belirtilen koordinatları ayarlamaktır.
+Sürükleme işlemi sırasında izleme dikdörtgeninin ayarlanmasını denetlemek için bu işlevi geçersiz kılın. Bir yöntem, döndürülmeden önce *lpRect* tarafından belirtilen koordinatları ayarlamadır.
 
-Bu işlevi geçersiz kılarak, `CRectTracker`eşzamanlı veya tutma-en boy oranı gibi doğrudan tarafından desteklenmeyen özel özellikler uygulanabilir.
+`CRectTracker`Kılavuza uydur veya en boy oranı gibi, tarafından doğrudan desteklenmeyen özel özellikler, bu işlev geçersiz kılınarak uygulanabilir.
 
-## <a name="crecttrackercrecttracker"></a><a name="crecttracker"></a>CRectTracker::CRectTracker
+## <a name="crecttrackercrecttracker"></a><a name="crecttracker"></a> CRectTracker:: CRectTracker
 
-Bir `CRectTracker` nesne oluşturur ve başharfe bleştirir.
+Bir nesne oluşturur ve başlatır `CRectTracker` .
 
 ```
 CRectTracker();
@@ -149,30 +150,30 @@ CRectTracker(
 ### <a name="parameters"></a>Parametreler
 
 *lpSrcRect*<br/>
-Dikdörtgen nesnenin koordinatları.
+Dikdörtgen nesnesinin koordinatları.
 
 *nStyle*<br/>
-Nesnenin stilini `CRectTracker` belirtir. Aşağıdaki stiller desteklenir:
+Nesnenin stilini belirtir `CRectTracker` . Aşağıdaki stiller desteklenir:
 
-- `CRectTracker::solidLine`Dikdörtgen kenarlığı için düz bir çizgi kullanın.
+- `CRectTracker::solidLine` Dikdörtgen kenarlığı için düz bir çizgi kullanın.
 
-- `CRectTracker::dottedLine`Dikdörtgen kenarlığı için noktalı bir çizgi kullanın.
+- `CRectTracker::dottedLine` Dikdörtgen kenarlığı için noktalı çizgi kullanın.
 
-- `CRectTracker::hatchedBorder`Dikdörtgen kenarlığı için kapaklı bir desen kullanın.
+- `CRectTracker::hatchedBorder` Dikdörtgen kenarlığı için bir hadallanmış model kullanın.
 
-- `CRectTracker::resizeInside`Dikdörtgenin içinde bulunan tutamaçları yeniden boyutlandırın.
+- `CRectTracker::resizeInside` Dikdörtgenin içinde bulunan tutamaçları yeniden boyutlandırın.
 
-- `CRectTracker::resizeOutside`Dikdörtgenin dışında bulunan tutamaçları yeniden boyutlandırın.
+- `CRectTracker::resizeOutside` Dikdörtgenin dışında bulunan tutamaçları yeniden boyutlandırın.
 
-- `CRectTracker::hatchInside`Yumurtadan çıkmış desen tüm dikdörtgeni kaplar.
+- `CRectTracker::hatchInside` Hadallanmış desenler tüm dikdörtgeni kapsıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan oluşturucu, nesneyi `CRectTracker` *lpSrcRect'ten* gelen değerlerle başharfe çeker ve diğer boyutları sistem varsayılanlarına başlar. Nesne parametreleri olmadan `m_rect` oluşturulursa, `m_nStyle` ve veri üyeleri uninitialized.
+Varsayılan Oluşturucu, `CRectTracker` nesneyi *lpSrcRect* değerleri ile başlatır ve diğer boyutları sistem varsayılanlarına başlatır. Nesne parametresiz oluşturulduysa, `m_rect` ve `m_nStyle` veri üyeleri başlatılmamış olur.
 
-## <a name="crecttrackerdraw"></a><a name="draw"></a>CRectTracker::Draw
+## <a name="crecttrackerdraw"></a><a name="draw"></a> CRectTracker::D RAW
 
-Dikdörtgenin dış çizgilerini ve iç bölgesini çizmek için bu işlevi arayın.
+Dikdörtgenin dış hatlarını ve iç bölgesini çizmek için bu işlevi çağırın.
 
 ```cpp
 void Draw(CDC* pDC) const;
@@ -180,16 +181,16 @@ void Draw(CDC* pDC) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-Çizecek aygıt bağlamını işaretle.
+*Kökündeki*<br/>
+Üzerinde çizilecek cihaz bağlamına yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İzleyicinin stili çizimin nasıl yapılacağını belirler. Kullanılabilir stiller `CRectTracker` hakkında daha fazla bilgi için oluşturucuya bakın.
+İzleyici stili, çizimin nasıl yapıldığını belirler. `CRectTracker`Kullanılabilir stiller hakkında daha fazla bilgi için oluşturucusuna bakın.
 
-## <a name="crecttrackerdrawtrackerrect"></a><a name="drawtrackerrect"></a>CRectTracker::DrawTrackerRect
+## <a name="crecttrackerdrawtrackerrect"></a><a name="drawtrackerrect"></a> CRectTracker::D rawTrackerRect
 
-İzleyicinin konumu `Track` veya `TrackRubberBand` üye işlevin içindeyken ne zaman değişse çerçeve tarafından çağrılır.
+`Track`Veya üye işlevi içindeyken izleyici konumu her değiştiğinde Framework tarafından çağırılır `TrackRubberBand` .
 
 ```
 virtual void DrawTrackerRect(
@@ -201,27 +202,27 @@ virtual void DrawTrackerRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lprect*<br/>
-Çizmek için `RECT` dikdörtgen içeren işaretçi.
+*lpRect*<br/>
+`RECT`Çizilecek dikdörtgeni içeren öğesine yönelik işaretçi.
 
 *pWndClipTo*<br/>
-Dikdörtgenkırpma de kullanmak için pencereişaretçisi.
+Dikdörtgenin kırpılması sırasında kullanılacak pencerenin işaretçisi.
 
-*Pdc*<br/>
-Çizecek aygıt bağlamını işaretle.
+*Kökündeki*<br/>
+Üzerinde çizilecek cihaz bağlamına yönelik işaretçi.
 
-*Pwnd*<br/>
-Çizimin gerçekleşeceği pencereyi işaretle.
+*pWnd*<br/>
+Çizimin gerçekleşeceği pencerenin işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan `CDC::DrawFocusRect`uygulama, noktalı dikdörtgen çizen bir çağrı yapar.
+Varsayılan uygulama, noktalı bir dikdörtgen çizen öğesine bir çağrısı yapar `CDC::DrawFocusRect` .
 
 İzleme işlemi sırasında farklı geri bildirim sağlamak için bu işlevi geçersiz kılın.
 
-## <a name="crecttrackergethandlemask"></a><a name="gethandlemask"></a>CRectTracker::GetHandleMask
+## <a name="crecttrackergethandlemask"></a><a name="gethandlemask"></a> CRectTracker:: GetHandleMask
 
-Çerçeve, bir dikdörtgenin yeniden boyutlandırma tutamaçları için maskeyi almak için bu üye işlevi çağırır.
+Çerçeve, bir dikdörtgenin yeniden boyutlandırma tutamaçlarının maskesini almak için bu üye işlevini çağırır.
 
 ```
 virtual UINT GetHandleMask() const;
@@ -229,23 +230,23 @@ virtual UINT GetHandleMask() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `CRectTracker` öğenin yeniden boyutlandırma tutamacının maskesi.
+Bir `CRectTracker` öğenin yeniden boyutlandırma tutamaçlarının maskesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeniden boyutlandırma tutamaçları dikdörtgenin yanlarında ve köşelerinde görünür ve kullanıcının dikdörtgenin şeklini ve boyutunu denetlemesine olanak sağlar.
+Yeniden boyutlandırma tutamaçları dikdörtgenin kenarlarında ve köşelerinde görünür ve kullanıcının dikdörtgenin şeklini ve boyutunu denetlemesine izin verir.
 
-Bir dikdörtgen0-7 numaralı 8 yeniden boyutlandırma tutamacı vardır. Her yeniden boyutlandırma tutamacı maskede biraz ile temsil edilir; bu bitin değeri 2^ *n*' dir, *n* yeniden boyutlandırma tutamacı numarasıdır. 0-3 bitleri, sol üstkısımdan başlayarak saat yönünde hareket eden köşe yeniden boyutlandırma kollarına karşılık gelir. Bit 4-7, saat yönünde hareket eden üstten başlayarak yan yeniden boyutlandırma kollarına karşılık gelir. Aşağıdaki resimde, bir dikdörtgenin yeniden boyutlandırma tutamaçları ve bunların karşılık gelen yeniden boyutlandırma tutamacı numaraları ve değerleri gösterilmektedir:
+Dikdörtgen, 8 yeniden boyutlandırma tanıtıcı 0-7 ' dir. Her yeniden boyutlandırma tutamacı maskenin içindeki bir bit ile temsil edilir; Bu bitin değeri 2 ^ *n*, burada *n* , yeniden boyutlandırma tanıtıcı numarasıdır. BITS 0-3, sol üst saat yönünde hareket eden köşe yeniden boyutlandırma işleyicilerine karşılık gelir. BITS 4-7, saatin saat yönünde hareket ettirilerek başlayan yan yeniden boyutlandırma işleyicilerine karşılık gelir. Aşağıdaki çizim, bir dikdörtgenin yeniden boyutlandırma tutamaçlarını ve karşılık gelen yeniden boyutlandırma tanıtıcı numaralarını ve değerlerini göstermektedir:
 
-![Tutamacı numaralarını yeniden boyutlandırma](../../mfc/reference/media/vc35dp1.gif "Tutamacı numaralarını yeniden boyutlandırma")
+![Tanıtıcı numaralarını yeniden boyutlandır](../../mfc/reference/media/vc35dp1.gif "Tanıtıcı numaralarını yeniden boyutlandır")
 
-Varsayılan uygulama, `GetHandleMask` yeniden boyutlandırma tanıtıcılarının görünmesi için bitlerin maskesini döndürür. Tek bit açıktıysa, karşılık gelen yeniden boyutlandırma tutamacı çizilir.
+Varsayılan uygulama, `GetHandleMask` yeniden boyutlandırma tutamaçlarının görünmesi için bitlerin maskesini döndürür. Tek bit açık ise, karşılık gelen yeniden boyutlandırma tutamacı çizilecektir.
 
-Belirtilen yeniden boyutlandırma tanıtıcılarını gizlemek veya göstermek için bu üye işlevi geçersiz kılın.
+Belirtilen yeniden boyutlandırma tutamaçlarını gizlemek veya göstermek için bu üye işlevini geçersiz kılın.
 
-## <a name="crecttrackergettruerect"></a><a name="gettruerect"></a>CRectTracker::GetTrueRect
+## <a name="crecttrackergettruerect"></a><a name="gettruerect"></a> CRectTracker:: GetTrueRect
 
-Dikdörtgenin koordinatlarını almak için bu işlevi arayın.
+Dikdörtgenin koordinatlarını almak için bu işlevi çağırın.
 
 ```cpp
 void GetTrueRect(LPRECT lpTrueRect) const;
@@ -254,15 +255,15 @@ void GetTrueRect(LPRECT lpTrueRect) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpTrueRect*<br/>
-Nesnenin `RECT` aygıt koordinatlarını içeren yapıyı `CRectTracker` işaretçi.
+`RECT`Nesnenin aygıt koordinatlarını içerecek yapıya yönelik işaretçi `CRectTracker` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dikdörtgenin boyutları, dış kenarlıkta bulunan yeniden boyutlandırma tutamaçlarının yükseklik ve genişliğini içerir. Döndükten *sonra, lpTrueRect* cihaz koordinatlarında her zaman normalleştirilmiş bir dikdörtgendir.
+Dikdörtgenin boyutları, dış kenarlıkta bulunan herhangi bir yeniden boyutlandırma tutamaçlarının yüksekliğini ve genişliğini içerir. Geri dönerek, *lpTrueRect* her zaman cihaz koordinatlarındaki normalleştirilmiş bir dikdörtgendir.
 
-## <a name="crecttrackerhittest"></a><a name="hittest"></a>CRectTracker::HitTest
+## <a name="crecttrackerhittest"></a><a name="hittest"></a> CRectTracker:: HitTest
 
-Kullanıcının yeniden boyutlandırma tutamacını yakalayıp yakalamadığını öğrenmek için bu işlevi arayın.
+Kullanıcının bir yeniden boyutlandırma tutamacı içerip içermediğini öğrenmek için bu işlevi çağırın.
 
 ```
 int HitTest(CPoint point) const;
@@ -270,36 +271,36 @@ int HitTest(CPoint point) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Nokta*<br/>
-Nokta, cihaz koordinatlarında, test etmek için.
+*seçeneğinin*<br/>
+Test etmek için cihaz koordinatlarındaki noktası.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürülen değer numaralandırılmış türü `CRectTracker::TrackerHit` temel alınr ve aşağıdaki değerlerden birine sahip olabilir:
+Döndürülen değer, numaralandırılmış türü temel alır `CRectTracker::TrackerHit` ve aşağıdaki değerlerden birine sahip olabilir:
 
-- `CRectTracker::hitNothing`-1
+- `CRectTracker::hitNothing` -1
 
-- `CRectTracker::hitTopLeft`0
+- `CRectTracker::hitTopLeft` 0
 
-- `CRectTracker::hitTopRight`1
+- `CRectTracker::hitTopRight` 1
 
-- `CRectTracker::hitBottomRight`2
+- `CRectTracker::hitBottomRight` iki
 
-- `CRectTracker::hitBottomLeft`3
+- `CRectTracker::hitBottomLeft` 03
 
-- `CRectTracker::hitTop`4
+- `CRectTracker::hitTop` 4
 
-- `CRectTracker::hitRight`5
+- `CRectTracker::hitRight` e
 
-- `CRectTracker::hitBottom`6
+- `CRectTracker::hitBottom` inç
 
-- `CRectTracker::hitLeft`7
+- `CRectTracker::hitLeft` 7@@
 
-- `CRectTracker::hitMiddle`8
+- `CRectTracker::hitMiddle` 240
 
-## <a name="crecttrackerm_nhandlesize"></a><a name="m_nhandlesize"></a>CRectTracker::m_nHandleSize
+## <a name="crecttrackerm_nhandlesize"></a><a name="m_nhandlesize"></a> CRectTracker:: m_nHandleSize
 
-Boyutlandırma tutamaçlarının `CRectTracker` piksel boyutu.
+`CRectTracker`Yeniden boyutlandırma tutamaçlarının piksel cinsinden boyutu.
 
 ```
 int m_nHandleSize;
@@ -307,19 +308,19 @@ int m_nHandleSize;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan sistem değeri ile baş harfe getirilmektedir.
+Varsayılan sistem değeri ile başlatılır.
 
-## <a name="crecttrackerm_rect"></a><a name="m_rect"></a>CRectTracker::m_rect
+## <a name="crecttrackerm_rect"></a><a name="m_rect"></a> CRectTracker:: m_rect
 
-İstemci koordinatlarında (piksel) dikdörtgenin geçerli konumu.
+Dikdörtgenin istemci koordinatlarındaki geçerli konumu (piksel).
 
 ```
 CRect m_rect;
 ```
 
-## <a name="crecttrackerm_sizemin"></a><a name="m_sizemin"></a>CRectTracker::m_sizeMin
+## <a name="crecttrackerm_sizemin"></a><a name="m_sizemin"></a> CRectTracker:: m_sizeMin
 
-Dikdörtgenin minimum boyutu.
+Dikdörtgenin en küçük boyutu.
 
 ```
 CSize m_sizeMin;
@@ -327,9 +328,9 @@ CSize m_sizeMin;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her iki `cx` varsayılan `cy`değer ve , kenarlık genişliği için varsayılan sistem değerinden hesaplanır. Bu veri üyesi yalnızca `AdjustRect` üye işlev tarafından kullanılır.
+Hem varsayılan değerler hem de, `cx` `cy` Kenarlık genişliği için varsayılan sistem değerinden hesaplanır. Bu veri üyesi yalnızca üye işlevi tarafından kullanılır `AdjustRect` .
 
-## <a name="crecttrackerm_nstyle"></a><a name="m_nstyle"></a>CRectTracker::m_nStyle
+## <a name="crecttrackerm_nstyle"></a><a name="m_nstyle"></a> CRectTracker:: m_nStyle
 
 Dikdörtgenin geçerli stili.
 
@@ -339,11 +340,11 @@ UINT m_nStyle;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olası stillerin listesi için [CRectTracker::CRectTracker'a](#crecttracker) bakın.
+Olası stillerin listesi için bkz. [CRectTracker:: CRectTracker](#crecttracker) .
 
-## <a name="crecttrackernormalizehit"></a><a name="normalizehit"></a>CRectTracker::NormalizeHit
+## <a name="crecttrackernormalizehit"></a><a name="normalizehit"></a> CRectTracker:: NormalizeHit
 
-Potansiyel olarak ters çevrilmiş bir tutamacı dönüştürmek için bu işlevi arayın.
+Muhtemelen ters çevrilen bir tutamacı dönüştürmek için bu işlevi çağırın.
 
 ```
 int NormalizeHit(int nHandle) const;
@@ -351,20 +352,20 @@ int NormalizeHit(int nHandle) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nHandle*<br/>
+*Ntanıtıcı*<br/>
 Kullanıcı tarafından seçilen tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Normalleştirilmiş tutamacın dizini.
+Normalleştirilmiş tanıtıcının dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İzin verilen ters çevirme yle çağrıldığında, `CRectTracker::Track` dikdörtgenin x ekseni, y ekseni veya her ikisinde ters çevrilmesi mümkündür. `CRectTracker::TrackRubberBand` Bu durumda, `HitTest` dikdörtgen ile ilgili olarak da ters olan tutamaçları döndürür. Geri bildirim, değiştirilecek dikdörtgen veri yapısının bölümüne değil, dikdörtgenin ekran konumuna bağlı olduğundan imleç geri bildirimi çizmek için uygun değildir.
+`CRectTracker::Track`Veya `CRectTracker::TrackRubberBand` ters çevirme ile çağrıldığında, dikdörtgenin x ekseni, y ekseni veya her ikisinde de ters çevrilme olasılığı vardır. Bu durumda, `HitTest` dikdörtgenle ilgili olarak da ters çevrilen tutamaçları döndürür. Bu, geri bildirim, dikdörtgenin ekran konumuna bağlı olduğundan, değiştirilecek dikdörtgen veri yapısının bölümünü değil, imlecin geri bildirimini çizmek için uygun değildir.
 
-## <a name="crecttrackeronchangedrect"></a><a name="onchangedrect"></a>CRectTracker::OnChangedRect
+## <a name="crecttrackeronchangedrect"></a><a name="onchangedrect"></a> CRectTracker:: OnChangedRect
 
-Bir çağrı sırasında izci dikdörtgeni değiştiğinde çerçeve `Track`tarafından çağrılır.
+Bir çağrısı sırasında izleyici dikdörtgeni her değiştiğinde Framework tarafından çağırılır `Track` .
 
 ```
 virtual void OnChangedRect(const CRect& rectOld);
@@ -372,18 +373,18 @@ virtual void OnChangedRect(const CRect& rectOld);
 
 ### <a name="parameters"></a>Parametreler
 
-*rektEski*<br/>
-`CRectTracker` Nesnenin eski aygıt koordinatlarını içerir.
+*Recbildirilir*<br/>
+Nesnenin eski cihaz koordinatlarını içerir `CRectTracker` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev çağrıldığında, çekilen `DrawTrackerRect` tüm geri bildirim kaldırıldı. Bu işlevin varsayılan uygulaması hiçbir şey yapmaz.
+Bu işlevin çağrıldığı zamanda, ile çizilen tüm geri bildirimler `DrawTrackerRect` kaldırılmıştır. Bu işlevin varsayılan uygulanması hiçbir şey yapmaz.
 
-Dikdörtgen yeniden boyutlandıktan sonra herhangi bir eylemi gerçekleştirmek istediğinizde bu işlevi geçersiz kılın.
+Dikdörtgen yeniden boyutlandırdıktan sonra herhangi bir eylem gerçekleştirmek istediğinizde bu işlevi geçersiz kılın.
 
-## <a name="crecttrackersetcursor"></a><a name="setcursor"></a>CRectTracker::SetCursor
+## <a name="crecttrackersetcursor"></a><a name="setcursor"></a> CRectTracker:: SetCursor
 
-`CRectTracker` Nesnenin bölgesi üzerindeyken imleç şeklini değiştirmek için bu işlevi çağırın.
+İmleç şeklini nesne bölgesinin üzerindeyken değiştirmek için bu işlevi çağırın `CRectTracker` .
 
 ```
 BOOL SetCursor(
@@ -393,23 +394,23 @@ BOOL SetCursor(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pwnd*<br/>
-Şu anda imleci içeren pencereyi işaret eder.
+*pWnd*<br/>
+Şu anda imlecin bulunduğu pencereyi işaret eder.
 
 *nHitTest*<br/>
-Önceki isabet testinin sonuçları, WM_SETCURSOR iletisinden.
+WM_SETCURSOR iletisinden önceki isabet testinin sonuçları.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki isabet izci dikdörtgen üzerinde ise Nonzero; aksi takdirde 0.
+Önceki isabet izleyici dikdörtgeninin üzerindeyken sıfır dışında; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevi, WM_SETCURSOR iletiyi işleyen pencerenizin işlevinin `OnSetCursor`içinden (genellikle) çağırın.
+Bu işlevi, WM_SETCURSOR iletisini işleyen pencerenizin işlevinin içinden çağırın (genellikle `OnSetCursor` ).
 
-## <a name="crecttrackertrack"></a><a name="track"></a>CRectTracker::İzle
+## <a name="crecttrackertrack"></a><a name="track"></a> CRectTracker:: Track
 
-Dikdörtgeni yeniden boyutlandırmak için kullanıcı arabirimini görüntülemek için bu işlevi arayın.
+Dikdörtgeni yeniden boyutlandırmak için Kullanıcı arabirimini göstermek üzere bu işlevi çağırın.
 
 ```
 BOOL Track(
@@ -421,33 +422,33 @@ BOOL Track(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pwnd*<br/>
+*pWnd*<br/>
 Dikdörtgeni içeren pencere nesnesi.
 
-*Nokta*<br/>
-İstemci alanına göre geçerli fare konumunun aygıt koordinatları.
+*seçeneğinin*<br/>
+İstemci alanına göre geçerli fare konumunun cihaz koordinatları.
 
 *bAllowInvert*<br/>
-TRUE ise, dikdörtgen x ekseni veya y ekseni boyunca ters çevrilebilir; aksi takdirde YANLIŞ.
+Değer TRUE ise, dikdörtgen x ekseni veya y ekseni üzerinde ters çevrilenebilir; Aksi halde yanlış.
 
 *pWndClipTo*<br/>
-Çizim işlemlerinin kırpılacak penceresi. NULL ise, *pWnd* kırpma dikdörtgeni olarak kullanılır.
+Çizim işlemleri için kırpılacak pencere. NULL ise, *pWnd* kırpma dikdörtgeni olarak kullanılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ESC tuşuna basıldığında izleme işlemi durdurulur, izcide depolanan dikdörtgen değiştirilmez ve 0 döndürülür. Değişiklik yapılırsa, fareyi hareket ettirerek ve sol fare düğmesini bırakarak, yeni konum ve/veya boyut izleyicinin dikdörtgenine kaydedilir ve sıfırsız döndürülür.
+ESC tuşuna basıldığında, izleme işlemi durdurulur, izleyici 'de depolanan dikdörtgen değiştirilmez ve 0 döndürülür. Değişiklik kaydedilmişse, fareyi taşıyarak ve sol fare düğmesini bırakarak yeni konum ve/veya boyut izleyici dikdörtgenine kaydedilir ve sıfır sıfır döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu genellikle `WM_LBUTTONDOWN` iletiyi işleyen uygulamanızın işlevi içinden çağrılır `OnLButtonDown`(genellikle).
+Bu, genellikle iletiyi işleyen uygulamanızın işlevinin içinden çağrılır `WM_LBUTTONDOWN` (genellikle `OnLButtonDown` ).
 
-Bu işlev, kullanıcı sol fare düğmesini serbest bırakana, ESC tuşuna basana veya sağ fare düğmesine basana kadar fareyi yakalar. Kullanıcı fare imlecini hareket ettikçe, geri bildirim `DrawTrackerRect` `OnChangedRect`arayarak güncelleştirilir ve .
+Bu işlev, Kullanıcı sol fare düğmesini bıraktığında, ESC tuşuna bastığında veya sağ fare düğmesine bastığında fareyi yakalar. Kullanıcı fare imlecini taşırken, ve çağırarak geri bildirim güncelleştirilir `DrawTrackerRect` `OnChangedRect` .
 
-*bAllowInvert* TRUE ise, izleme dikdörtgeni x ekseni veya y ekseni üzerinde ters çevrilebilir.
+*BALLOWINVERT* true ise, izleme dikdörtgeni x ekseninde ya da y ekseninde ters çevrilebiliyor.
 
-## <a name="crecttrackertrackrubberband"></a><a name="trackrubberband"></a>CRectTracker::TrackRubberBand
+## <a name="crecttrackertrackrubberband"></a><a name="trackrubberband"></a> CRectTracker:: TrackRubberBand
 
-Kauçuk bant seçimi yapmak için bu işlevi arayın.
+Lastik bant seçimini yapmak için bu işlevi çağırın.
 
 ```
 BOOL TrackRubberBand(
@@ -458,31 +459,31 @@ BOOL TrackRubberBand(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pwnd*<br/>
+*pWnd*<br/>
 Dikdörtgeni içeren pencere nesnesi.
 
-*Nokta*<br/>
-İstemci alanına göre geçerli fare konumunun aygıt koordinatları.
+*seçeneğinin*<br/>
+İstemci alanına göre geçerli fare konumunun cihaz koordinatları.
 
 *bAllowInvert*<br/>
-TRUE ise, dikdörtgen x ekseni veya y ekseni boyunca ters çevrilebilir; aksi takdirde YANLIŞ.
+Değer TRUE ise, dikdörtgen x ekseni veya y ekseni üzerinde ters çevrilenebilir; Aksi halde yanlış.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Fare hareket ettiyse ve dikdörtgen boş değilse sıfırsız; aksi takdirde 0.
+Fare taşınmışsa ve dikdörtgen boş değilse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genellikle WM_LBUTTONDOWN iletisini işleyen uygulamanızın işlevi içinden çağrılır `OnLButtonDown`(genellikle).
+Genellikle, WM_LBUTTONDOWN iletisini işleyen uygulamanızın işlevinin içinden çağrılır (genellikle `OnLButtonDown` ).
 
-Bu işlev, kullanıcı sol fare düğmesini serbest bırakana, ESC tuşuna basana veya sağ fare düğmesine basana kadar fareyi yakalar. Kullanıcı fare imlecini hareket ettikçe, geri bildirim `DrawTrackerRect` `OnChangedRect`arayarak güncelleştirilir ve .
+Bu işlev, Kullanıcı sol fare düğmesini bıraktığında, ESC tuşuna bastığında veya sağ fare düğmesine bastığında fareyi yakalar. Kullanıcı fare imlecini taşırken, ve çağırarak geri bildirim güncelleştirilir `DrawTrackerRect` `OnChangedRect` .
 
-İzleme, sağ alt tutamaktan lastik bant tipi bir seçimle gerçekleştirilir. Ters çevirmeye izin verilirse, dikdörtgen yukarı ve sola veya aşağıya ve sağa sürükleyerek boyutlandırılabilir.
+İzleme, sağ alt tanıtıcıdan bir lastik bant türü seçimiyle gerçekleştirilir. Ters çevirme izin veriliyorsa, dikdörtgen yukarı ve aşağı ve sağa sürükleyerek boyutlandırılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek TRACKER](../../overview/visual-cpp-samples.md)<br/>
-[MFC Örnek ÇEKMECE](../../overview/visual-cpp-samples.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[COleResizeBar Sınıfı](../../mfc/reference/coleresizebar-class.md)<br/>
-[CRect Sınıfı](../../atl-mfc-shared/reference/crect-class.md)
+[MFC örnek IZLEYICISI](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek DRAWCLı](../../overview/visual-cpp-samples.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[COleResizeBar sınıfı](../../mfc/reference/coleresizebar-class.md)<br/>
+[CRect sınıfı](../../atl-mfc-shared/reference/crect-class.md)

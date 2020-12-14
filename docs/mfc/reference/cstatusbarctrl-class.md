@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CStatusBarCtrl class'
 title: CStatusBarCtrl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -44,12 +45,12 @@ helpviewer_keywords:
 - CStatusBarCtrl [MFC], SetText
 - CStatusBarCtrl [MFC], SetTipText
 ms.assetid: 8504ad38-7b91-4746-aede-ac98886eb47b
-ms.openlocfilehash: d2440eb05a1367b7d4980494e3d7f5de646d5fd0
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 424edbd2d78fc82c7c78315dea1d430c6ea9459d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562655"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342640"
 ---
 # <a name="cstatusbarctrl-class"></a>CStatusBarCtrl sınıfı
 
@@ -178,7 +179,7 @@ Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş
 Durum çubuğu denetiminin stilini belirtir. Windows SDK [ortak denetim stillerinde](/windows/win32/Controls/common-control-styles) listelenen durum çubuğu denetim stillerinin herhangi bir birleşimini uygulayın. Bu parametre WS_CHILD stilini içermelidir. Ayrıca WS_VISIBLE stilini de içermelidir.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
+*PParentWnd* istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencerenin işaretçisi.
@@ -313,7 +314,7 @@ int GetParts(
 Koordinatları alınacak parça sayısı. Bu parametre denetimdeki parçaların sayısından büyükse ileti yalnızca varolan parçaların koordinatlarını alır.
 
 *pParts 'lar*<br/>
-*NParts*tarafından belirtilen parça sayısıyla aynı sayıda öğeye sahip bir tamsayı dizisinin adresi. Dizideki her öğe, ilgili bölümün sağ kenarının istemci koordinatını alır. Bir öğe-1 olarak ayarlandıysa, bu bölüm için sağ kenarın konumu durum çubuğunun sağ kenarına genişletilir.
+*NParts* tarafından belirtilen parça sayısıyla aynı sayıda öğeye sahip bir tamsayı dizisinin adresi. Dizideki her öğe, ilgili bölümün sağ kenarının istemci koordinatını alır. Bir öğe-1 olarak ayarlandıysa, bu bölüm için sağ kenarın konumu durum çubuğunun sağ kenarına genişletilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -562,7 +563,7 @@ BOOL SetParts(
 Ayarlanacak bölüm sayısı. Parça sayısı 255 ' den büyük olamaz.
 
 *Pgenişlikleri*<br/>
-*NParts*tarafından belirtilen parçalar ile aynı sayıda öğeye sahip bir tamsayı dizisinin adresi. Dizideki her öğe, ilgili bölümün sağ kenarının istemci koordinatlarındaki konumu belirtir. Bir öğe-1 ise, bu bölüm için sağ kenarın konumu denetimin sağ kenarına genişletilir.
+*NParts* tarafından belirtilen parçalar ile aynı sayıda öğeye sahip bir tamsayı dizisinin adresi. Dizideki her öğe, ilgili bölümün sağ kenarının istemci koordinatlarındaki konumu belirtir. Bir öğe-1 ise, bu bölüm için sağ kenarın konumu denetimin sağ kenarına genişletilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

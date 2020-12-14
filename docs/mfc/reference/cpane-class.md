@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CPane sınıfı'
 title: CPane sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -133,18 +134,18 @@ helpviewer_keywords:
 - CPane [MFC], m_bHandleMinSize
 - CPane [MFC], m_recentDockInfo
 ms.assetid: 5c651a64-3c79-4d94-9676-45f6402a6bc5
-ms.openlocfilehash: 4609a56c7a7bf6909c687e371b67eeb6e42ae9d9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bf6dff5b8e8000d5b5f7a388b2c54130865b2f82
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219644"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343505"
 ---
 # <a name="cpane-class"></a>CPane sınıfı
 
 `CPane`Sınıfı, [CControlBar sınıfının](../../mfc/reference/ccontrolbar-class.md)geliştirmedir. Varolan bir MFC projesini yükseltiyorsanız, ' nin tüm yinelemelerini değiştirin `CControlBar` `CPane` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CPane : public CBasePane
@@ -264,7 +265,7 @@ Genellikle, `CPane` nesneler doğrudan örneklenemez. Yerleştirme işlevine sah
 
 **Üstbilgi:** afxPane. h
 
-## <a name="cpaneadjustsizeimmediate"></a><a name="adjustsizeimmediate"></a>CPane:: Adjustsizeımimmediate
+## <a name="cpaneadjustsizeimmediate"></a><a name="adjustsizeimmediate"></a> CPane:: Adjustsizeımimmediate
 
 Bir bölmenin yerleşimini hemen yeniden hesaplar.
 
@@ -281,7 +282,7 @@ virtual void AdjustSizeImmediate(BOOL bRecalcLayout = TRUE);
 
 Bir bölmenin yerleşimini dinamik olarak değiştirdiğinizde bu yöntemi çağırın. Örneğin, araç çubuğu düğmelerini gizlediğinizde veya gösterdiğinizde bu yöntemi çağırmak isteyebilirsiniz.
 
-## <a name="cpaneallocelements"></a><a name="allocelements"></a>CPane:: AllocElements
+## <a name="cpaneallocelements"></a><a name="allocelements"></a> CPane:: AllocElements
 
 Dahili kullanım için depolamayı ayırır.
 
@@ -303,7 +304,7 @@ BOOL AllocElements(
 
 Bellek ayırma başarısız olursa yanlış; Aksi takdirde, doğru.
 
-## <a name="cpaneallowshowonpanemenu"></a><a name="allowshowonpanemenu"></a>CPane:: Allowshowonbölmesi menüsü
+## <a name="cpaneallowshowonpanemenu"></a><a name="allowshowonpanemenu"></a> CPane:: Allowshowonbölmesi menüsü
 
 Bölmenin, uygulama için çalışma zamanı tarafından oluşturulan bölmeler listesinde listelenip listelenmediğini belirtir.
 
@@ -319,7 +320,7 @@ Bölme listede görüntüleniyorsa doğru; Aksi takdirde, FALSE. Temel uygulama 
 
 AppWizard tarafından oluşturulan uygulama, içerdiği bölmeleri listeleyen bir menü seçeneği içerir. Bu yöntem, bölmenin listede görüntülenip görüntülenmediğini belirler.
 
-## <a name="cpanecalcavailablesize"></a><a name="calcavailablesize"></a>CPane:: CalcAvailableSize
+## <a name="cpanecalcavailablesize"></a><a name="calcavailablesize"></a> CPane:: CalcAvailableSize
 
 Belirtilen bir dikdörtgen ve geçerli pencere dikdörtgeni arasındaki boyutun farkını hesaplar.
 
@@ -336,7 +337,7 @@ virtual CSize CalcAvailableSize(CRect rectRequired);
 
 Genişlik ve yüksekliğin yanı sıra, *Rectrequired* ve geçerli pencere dikdörtgeni arasındaki fark.
 
-## <a name="cpanecalcinsiderect"></a><a name="calcinsiderect"></a>CPane:: CalcInsideRect
+## <a name="cpanecalcinsiderect"></a><a name="calcinsiderect"></a> CPane:: CalcInsideRect
 
 Kenarlıklar ve kavrayıcılar dahil olmak üzere bir bölmenin iç dikdörtgenini hesaplar.
 
@@ -358,7 +359,7 @@ dışı Bölmenin istemci alanının boyutunu ve konumunu içerir.
 
 Bu yöntem, bir bölmenin yerleşimini yeniden hesaplaması gerektiğinde Framework tarafından çağırılır. *Rect* parametresi, bölmenin istemci alanının boyutuyla ve uzaklığa göre doldurulur. Bu, kenarlıklarını ve kavrayıcılar içerir.
 
-## <a name="cpanecalcrecentdockedrect"></a><a name="calcrecentdockedrect"></a>CPane:: CalcRecentDockedRect
+## <a name="cpanecalcrecentdockedrect"></a><a name="calcrecentdockedrect"></a> CPane:: CalcRecentDockedRect
 
 Son yerleştirilen dikdörtgeni hesaplar.
 
@@ -370,7 +371,7 @@ void CalcRecentDockedRect();
 
 Bu yöntem [CPane:: m_recentDockInfo](#m_recentdockinfo)güncelleştirir.
 
-## <a name="cpanecalcsize"></a><a name="calcsize"></a>CPane:: CalcSize
+## <a name="cpanecalcsize"></a><a name="calcsize"></a> CPane:: CalcSize
 
 Bölmenin boyutunu hesaplar.
 
@@ -391,7 +392,7 @@ Bu yöntemin varsayılan uygulamasında bir boyut (0, 0) döndürülür.
 
 Türetilmiş sınıflar bu yöntemi geçersiz kılmalıdır.
 
-## <a name="cpanecanbedocked"></a><a name="canbedocked"></a>CPane:: Canbeyerleştirildi
+## <a name="cpanecanbedocked"></a><a name="canbedocked"></a> CPane:: Canbeyerleştirildi
 
 Bölmenin belirtilen temel bölmeye yerleştirilmeyeceğini belirler.
 
@@ -414,7 +415,7 @@ Bu yöntem, bir bölmenin belirtilen sabitleme bölmesine yerleştirilip yerleş
 
 [CBasePane:: enabletakmayı](../../mfc/reference/cbasepane-class.md#enabledocking)çağırarak çerçeve penceresinin çeşitli taraflarına yerleştirmeyi etkinleştirirsiniz.
 
-## <a name="cpanecanbetabbeddocument"></a><a name="canbetabbeddocument"></a>CPane:: CanBeTabbedDocument
+## <a name="cpanecanbetabbeddocument"></a><a name="canbetabbeddocument"></a> CPane:: CanBeTabbedDocument
 
 Bölmenin sekmeli bir belgeye dönüştürülüp dönüştürülmeyeceğini belirler.
 
@@ -430,7 +431,7 @@ Bölme sekmeli belgeye dönüştürülebiliyorsa TRUE; Aksi takdirde, FALSE.
 
 Türetilmiş bir sınıfta bu yöntemi geçersiz kılın ve bir bölmenin sekmeli belgeye dönüştürülmesini engellemek istiyorsanız FALSE döndürün. Sekmeli belge pencere konumu menüsünde listelenmeyecektir.
 
-## <a name="cpaneconverttotabbeddocument"></a><a name="converttotabbeddocument"></a>CPane:: ConvertToTabbedDocument
+## <a name="cpaneconverttotabbeddocument"></a><a name="converttotabbeddocument"></a> CPane:: ConvertToTabbedDocument
 
 Bir yerleştirilebilir bölmesini sekmeli belgeye dönüştürür.
 
@@ -447,7 +448,7 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 
 Sekmeli belgelere yalnızca yerleştirilebilir bölmeleri dönüştürülebilirler. Bilgi için bkz. [CDockablePane:: ConvertToTabbedDocument](../../mfc/reference/cdockablepane-class.md#converttotabbeddocument).
 
-## <a name="cpanecopystate"></a><a name="copystate"></a>CPane:: CopyState
+## <a name="cpanecopystate"></a><a name="copystate"></a> CPane:: CopyState
 
 Bölmenin durumunu kopyalar.
 
@@ -464,7 +465,7 @@ virtual void CopyState(CPane* pOrgBar);
 
 Bu yöntem, *pOrgBar* durumunu geçerli bölmeye kopyalar.
 
-## <a name="cpanecreate"></a><a name="create"></a>CPane:: Create
+## <a name="cpanecreate"></a><a name="create"></a> CPane:: Create
 
 Bir denetim çubuğu oluşturur ve bunu [CPane](../../mfc/reference/cpane-class.md) nesnesine ekler.
 
@@ -510,9 +511,9 @@ Bölme başarıyla oluşturulduysa doğru; Aksi takdirde, FALSE.
 
 Bu yöntem bir Windows bölmesi oluşturur ve `CPane` nesneye ekler.
 
-' İ çağırmadan önce [CPane:: m_recentDockInfo](#m_recentdockinfo) açıkça başlatılmamışsa `Create` , dikdörtgen parametresi, bölmeyi *rect* kayan veya yuvalandığı zaman dikdörtgen olarak kullanılacaktır.
+' İ çağırmadan önce [CPane:: m_recentDockInfo](#m_recentdockinfo) açıkça başlatılmamışsa `Create` , dikdörtgen parametresi, bölmeyi  kayan veya yuvalandığı zaman dikdörtgen olarak kullanılacaktır.
 
-## <a name="cpanecreatedefaultminiframe"></a><a name="createdefaultminiframe"></a>CPane:: CreateDefaultMiniframe
+## <a name="cpanecreatedefaultminiframe"></a><a name="createdefaultminiframe"></a> CPane:: CreateDefaultMiniframe
 
 Kayan bölme için bir mini çerçeve penceresi oluşturur.
 
@@ -535,7 +536,7 @@ Bu yöntem, bir bölme katdığında bir mini çerçeve penceresi oluşturmak i�
 
 Mini çerçeve penceresi için çalışma zamanı sınıfı bilgileri, `CPane::m_pMiniFrameRTC` üyede depolanır. Özelleştirilmiş mini çerçeve pencereleri oluşturmaya karar verirseniz, bu üyeyi ayarlamak için türetilmiş bir sınıfı kullanabilirsiniz.
 
-## <a name="cpanecreateex"></a><a name="createex"></a>CPane:: CreateEx
+## <a name="cpanecreateex"></a><a name="createex"></a> CPane:: CreateEx
 
 Bir denetim çubuğu oluşturur ve bunu [CPane](../../mfc/reference/cpane-class.md) nesnesine ekler.
 
@@ -585,9 +586,9 @@ Bölme başarıyla oluşturulduysa doğru; Aksi takdirde, FALSE.
 
 Bu yöntem bir Windows bölmesi oluşturur ve `CPane` nesneye ekler.
 
-' İ çağırmadan önce [CPane:: m_recentDockInfo](#m_recentdockinfo) açıkça başlatılmamışsa `CreateEx` , dikdörtgen parametresi, bölmeyi *rect* kayan veya yuvalandığı zaman dikdörtgen olarak kullanılacaktır.
+' İ çağırmadan önce [CPane:: m_recentDockInfo](#m_recentdockinfo) açıkça başlatılmamışsa `CreateEx` , dikdörtgen parametresi, bölmeyi  kayan veya yuvalandığı zaman dikdörtgen olarak kullanılacaktır.
 
-## <a name="cpanedockbymouse"></a><a name="dockbymouse"></a>CPane::D Ockbyfare
+## <a name="cpanedockbymouse"></a><a name="dockbymouse"></a> CPane::D Ockbyfare
 
 Fareyi kullanarak bir bölmeyi noktaları.
 
@@ -604,7 +605,7 @@ virtual BOOL DockByMouse(CBasePane* pDockBar);
 
 Bölme başarıyla yerleştirilmişse doğru; Aksi takdirde, FALSE.
 
-## <a name="cpanedockpane"></a><a name="dockpane"></a>CPane::D ockPane
+## <a name="cpanedockpane"></a><a name="dockpane"></a> CPane::D ockPane
 
 Kayan bölmeyi temel bölmeye göre noktaları.
 
@@ -632,7 +633,7 @@ virtual BOOL DockPane(
 |DM_MOUSE|Dahili olarak kullanılır.|
 |DM_DBL_CLICK|Bu seçenek, kavrayıcı çift tıklandığında kullanılır. Bölmesi en son yerleştirme konumunda yeniden konumlandırılabilir. Bölme çift tıklanla çıkartıyorsa bölme en son kayan konumunda yeniden konumlandırılır.|
 |DM_SHOW|Bu seçenek, bölmeyi program aracılığıyla sabitlemek için kullanılabilir. Bölmesi en son kayan konumunu depolar.|
-|DM_RECT|Bölmesi, *lpRect*tarafından belirtilen bölgeye yerleştirildi.|
+|DM_RECT|Bölmesi, *lpRect* tarafından belirtilen bölgeye yerleştirildi.|
 |DM_STANDARD|Bu seçeneği kullandığınızda, çerçeve taşınırken bölmeyi bir ana hat çerçevesi olarak çizer.|
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -643,7 +644,7 @@ Bölme başarıyla yerleştirilmişse doğru; Aksi takdirde, FALSE.
 
 Bu yöntem, bölmeyi *pDockBar* parametresi tarafından belirtilen temel bölmeye göre belirlenir. Önce [CBasePane:: enabletakmayı](../../mfc/reference/cbasepane-class.md#enabledocking)çağırarak yerleştirmeyi etkinleştirmeniz gerekir.
 
-## <a name="cpanedockpanestandard"></a><a name="dockpanestandard"></a>CPane::D Ockbölmesi standardı
+## <a name="cpanedockpanestandard"></a><a name="dockpanestandard"></a> CPane::D Ockbölmesi standardı
 
 Ana hat (Standart) yerleştirmeyi kullanarak bir bölmeyi yuvaya yerleştirme.
 
@@ -664,7 +665,7 @@ Bu yöntem her zaman **`this`** işaretçiyi döndürür.
 
 Bu yöntem yalnızca [CDockablePane sınıfından](../../mfc/reference/cdockablepane-class.md)türetilmiş bölmeler için kullanılır. Daha fazla bilgi için bkz. [CDockablePane::D Ockbölmesi standart](../../mfc/reference/cdockablepane-class.md#dockpanestandard).
 
-## <a name="cpanedocktoframewindow"></a><a name="docktoframewindow"></a>CPane: ockToFrameWindow:D
+## <a name="cpanedocktoframewindow"></a><a name="docktoframewindow"></a> CPane: ockToFrameWindow:D
 
 Bir çerçeveye yerleştirilebilir bölmesi noktası oluşturma.
 
@@ -696,7 +697,7 @@ virtual BOOL DockToFrameWindow(
 'ndaki LIP.
 
 *Bukenar*<br/>
-'ndaki Doğru ise ve *dwhizalaması*tarafından belirtilen tarafta diğer yerleştirilebilir bölmeler varsa, bölmesi diğer bölmelerin dışına yerleştirilir ve üst çerçevenin kenarına yaklaştırır. YANLıŞSA, bölmesi istemci alanının merkezine daha yakın bir şekilde yerleştirilir.
+'ndaki Doğru ise ve *dwhizalaması* tarafından belirtilen tarafta diğer yerleştirilebilir bölmeler varsa, bölmesi diğer bölmelerin dışına yerleştirilir ve üst çerçevenin kenarına yaklaştırır. YANLıŞSA, bölmesi istemci alanının merkezine daha yakın bir şekilde yerleştirilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -704,7 +705,7 @@ Bölme bölücü ( [CPaneDivider sınıfı](../../mfc/reference/cpanedivider-cla
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedoesallowsiblingbars"></a><a name="doesallowsiblingbars"></a>CPane::D oesAllowSiblingBars
+## <a name="cpanedoesallowsiblingbars"></a><a name="doesallowsiblingbars"></a> CPane::D oesAllowSiblingBars
 
 Geçerli bölmenin yerleştirilmiş olduğu satıra başka bir bölme sabitleyebilir olup olmayacağını gösterir.
 
@@ -722,7 +723,7 @@ Bu bölme kendisiyle aynı satırdaki başka bir bölmeye sabitleyebilir, doğru
 
 Varsayılan olarak, araç çubuklarında özel satır modu devre dışıdır ve menü çubuğunda özel satır modu etkinleştirilmiştir.
 
-## <a name="cpanefloatpane"></a><a name="floatpane"></a>CPane:: FloatPane
+## <a name="cpanefloatpane"></a><a name="floatpane"></a> CPane:: FloatPane
 
 Bölmeyi kayın.
 
@@ -752,7 +753,7 @@ Bölme başarılı bir şekilde kaydırılır veya bir bölme, [CBasePane:: CanF
 
 *RectFloat* parametresiyle belirtilen konumdaki bölmeyi kaydırmak için bu yöntemi çağırın. Bu yöntem, bölme için otomatik olarak bir üst çerçeve penceresi oluşturur.
 
-## <a name="cpanegetavailableexpandsize"></a><a name="getavailableexpandsize"></a>CPane:: GetAvailableExpandSize
+## <a name="cpanegetavailableexpandsize"></a><a name="getavailableexpandsize"></a> CPane:: GetAvailableExpandSize
 
 Bölmenin genişleyebilir olduğu miktarı piksel cinsinden döndürür.
 
@@ -766,7 +767,7 @@ Bölme yatay olarak yuvalanmışsa, dönüş değeri kullanılabilir genişlikte
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanegetavailablestretchsize"></a><a name="getavailablestretchsize"></a>CPane:: Getavailableboyutunu
+## <a name="cpanegetavailablestretchsize"></a><a name="getavailablestretchsize"></a> CPane:: Getavailableboyutunu
 
 Bölmenin küçülebileceği miktarı piksel cinsinden döndürür.
 
@@ -782,7 +783,7 @@ Bölmenin küçülebileceği miktar (piksel cinsinden). Bölme yatay olarak yuva
 
 Kullanılabilir Esnetme boyutu, bölmenin ( [CPane:: GetMinSize](#getminsize)) izin verilen minimum boyutu geçerli boyuttan ( [CWnd:: GetWindowRect](../../mfc/reference/cwnd-class.md#getwindowrect)) çıkarılmasıyla hesaplanır.
 
-## <a name="cpanegetborders"></a><a name="getborders"></a>CPane:: Getkenarlýklar
+## <a name="cpanegetborders"></a><a name="getborders"></a> CPane:: Getkenarlýklar
 
 Bölmedeki kenarlıkların genişliğini döndürür.
 
@@ -798,7 +799,7 @@ Bölmenin her bir tarafındaki geçerli genişliği piksel cinsinden içeren bir
 
 Kenarlıkların boyutunu ayarlamak için [CPane:: Setkenarlýklarý](#setborders)çağırın.
 
-## <a name="cpanegetclienthotspot"></a><a name="getclienthotspot"></a>CPane:: Getclienthotleke
+## <a name="cpanegetclienthotspot"></a><a name="getclienthotspot"></a> CPane:: Getclienthotleke
 
 Bölme için *etkin noktayı* döndürür.
 
@@ -812,7 +813,7 @@ CPoint GetClientHotSpot() const;
 
 *Etkin nokta* , bölmenin hareket ettirmek için kullanıcının seçtiği ve tuttuğu bölmedeki noktasıdır. Bölme yerleştirilmiş bir konumdan taşındığında kesintisiz animasyon için etkin bir nokta kullanılır.
 
-## <a name="cpanegetdocksiterow"></a><a name="getdocksiterow"></a>CPane:: Getdocksıterow
+## <a name="cpanegetdocksiterow"></a><a name="getdocksiterow"></a> CPane:: Getdocksıterow
 
 Bölmenin yerleştirildiği Dock satırını ( [CDockingPanesRow sınıfı](../../mfc/reference/cdockingpanesrow-class.md)) döndürür.
 
@@ -824,7 +825,7 @@ CDockingPanesRow* GetDockSiteRow() const;
 
 `CDockingPanesRow`Bölmenin yerleştirildiği Dock satırına işaret eden bir * veya bölme YERLEŞTIRILMEMIŞSE null.
 
-## <a name="cpanegetexclusiverowmode"></a><a name="getexclusiverowmode"></a>CPane:: Getexclusıverowmode
+## <a name="cpanegetexclusiverowmode"></a><a name="getexclusiverowmode"></a> CPane:: Getexclusıverowmode
 
 Bölmenin özel satır modunda olup olmadığını belirler.
 
@@ -840,7 +841,7 @@ Bölme özel satır modundaysa doğru; Aksi takdirde, FALSE.
 
 Özel satır modu hakkında daha fazla bilgi için bkz. [CPane:: Setexclusıverowmode](#setexclusiverowmode).
 
-## <a name="cpanegethotspot"></a><a name="gethotspot"></a>CPane:: GetHotSpot
+## <a name="cpanegethotspot"></a><a name="gethotspot"></a> CPane:: GetHotSpot
 
 Temel alınan bir nesnede depolanan etkin noktayı döndürür `CMFCDragFrameImpl` .
 
@@ -854,7 +855,7 @@ CPoint GetHotSpot() const;
 
 `CPane`Sınıfı, `CMFCDragFrameImpl` `m_dragFrameImpl` Kullanıcı Standart yerleştirme modunda bir bölmeyi taşırken görüntülenen dikdörtgeni çizmekten sorumlu bir nesnesi içerir. Etkin nokta, Kullanıcı bölmeyi taşırken geçerli fare konumuna göre dikdörtgeni çizmek için kullanılır.
 
-## <a name="cpanegetminsize"></a><a name="getminsize"></a>CPane:: GetMinSize
+## <a name="cpanegetminsize"></a><a name="getminsize"></a> CPane:: GetMinSize
 
 Bölme için izin verilen en küçük boyutu alır.
 
@@ -865,11 +866,11 @@ virtual void GetMinSize(CSize& size) const;
 ### <a name="parameters"></a>Parametreler
 
 *boyutla*<br/>
-dışı `CSize`İzin verilen en küçük boyut ile doldurulmuş bir nesne.
+dışı `CSize` İzin verilen en küçük boyut ile doldurulmuş bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanegetpanename"></a><a name="getpanename"></a>CPane:: GetPaneName
+## <a name="cpanegetpanename"></a><a name="getpanename"></a> CPane:: GetPaneName
 
 Bölmenin başlığını alır.
 
@@ -880,13 +881,13 @@ virtual void GetPaneName(CString& strName) const;
 ### <a name="parameters"></a>Parametreler
 
 *strName*<br/>
-dışı `CString`Açıklamalı alt yazı adıyla doldurulan bir nesne.
+dışı `CString` Açıklamalı alt yazı adıyla doldurulan bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bölme başlığı, bölme veya kayan olduğunda başlık alanında görüntülenir. Bölmesi sekmeli bir grubun parçasıysa, başlık sekme alanında görüntülenir. Bölme otomatik gizleme modundaysa, başlık bir üzerinde görüntülenir `CMFCAutoHideButton` .
 
-## <a name="cpanegetvirtualrect"></a><a name="getvirtualrect"></a>CPane:: GetVirtualRect
+## <a name="cpanegetvirtualrect"></a><a name="getvirtualrect"></a> CPane:: GetVirtualRect
 
 Bölmenin *sanal dikdörtgenini* alır.
 
@@ -897,7 +898,7 @@ void GetVirtualRect(CRect& rectVirtual) const;
 ### <a name="parameters"></a>Parametreler
 
 *rectVirtual*<br/>
-dışı `CRect`Sanal dikdörtgenle doldurulmuş bir nesne.
+dışı `CRect` Sanal dikdörtgenle doldurulmuş bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -905,7 +906,7 @@ Bir bölme taşındığında Framework, bölmenin orijinal konumunu bir sanal di
 
 Bölmeleri program aracılığıyla taşımadığınız müddetçe, sanal dikdörtgenlerle ilgili yöntemleri çağırmayın.
 
-## <a name="cpaneischangestate"></a><a name="ischangestate"></a>CPane:: IsChangeState
+## <a name="cpaneischangestate"></a><a name="ischangestate"></a> CPane:: IsChangeState
 
 Bölme taşınırken, bu yöntem diğer bölmelere göre konumunu analiz eder, satırları yerleştir ve mini çerçeve pencereleri ve uygun AFX_CS_STATUS değerini döndürür.
 
@@ -934,7 +935,7 @@ Aşağıdaki AFX_CS_STATUS değerlerinden biri:
 |CS_DELAY_DOCK|Bölmesi, başka bir takma bölmesi veya ana çerçevenin bir kenarı olan bir dock sitesi üzerinde bulunur. Çerçeve, Kullanıcı taşımayı bıraktığında bölmeyi bırakır.|
 |CS_DELAY_DOCK_TO_TAB|Bölmesi, bölmenin sekmeli pencereye yerleştirilmesine neden olan bir dock sitesi üzerinde bulunur. Bu, bölme başka bir yerleştirme bölmesinin ya da sekmeli bölmenin sekme alanının üzerinde olduğunda gerçekleşir. Çerçeve, Kullanıcı taşımayı bıraktığında bölmeyi bırakır.|
 
-## <a name="cpaneisdragmode"></a><a name="isdragmode"></a>CPane:: ısdragmode
+## <a name="cpaneisdragmode"></a><a name="isdragmode"></a> CPane:: ısdragmode
 
 Bölmenin taşınıp taşınmadığını belirtir.
 
@@ -948,7 +949,7 @@ Bölme taşınmakta ise doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpaneisinfloatingmultipaneframewnd"></a><a name="isinfloatingmultipaneframewnd"></a>CPane:: ısinfloatingmultipane Framewnd
+## <a name="cpaneisinfloatingmultipaneframewnd"></a><a name="isinfloatingmultipaneframewnd"></a> CPane:: ısinfloatingmultipane Framewnd
 
 Bölmenin çok bölgeli bir çerçeve penceresinde ( [Cmultipane Framewnd sınıfı](../../mfc/reference/cmultipaneframewnd-class.md)) olup olmadığını belirtir.
 
@@ -964,7 +965,7 @@ Bölme çok bölgeli bir çerçeve penceresinde ise doğru; Aksi takdirde, FALSE
 
 Yalnızca yerleştirilebilir bölmeler, çok bölgeli bir çerçeve penceresinde taşınabilir. Bu nedenle, `CPane::IsInFloatingMultiPaneFrameWnd` her zaman false döndürür.
 
-## <a name="cpaneisleftof"></a><a name="isleftof"></a>CPane:: ısleftof
+## <a name="cpaneisleftof"></a><a name="isleftof"></a> CPane:: ısleftof
 
 Bölmenin belirtilen dikdörtgenden (veya üstünde) sol olup olmadığını belirler.
 
@@ -977,7 +978,7 @@ bool IsLeftOf(
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-'ndaki `CRect`Karşılaştırma için kullanılan bir nesne.
+'ndaki `CRect` Karşılaştırma için kullanılan bir nesne.
 
 *bWindowRect*<br/>
 'ndaki TRUE ise, *Rect* ekran koordinatları içeren varsayılır; YANLıŞSA, istemci koordinatlarını içeren *Rect* kabul edilir.
@@ -988,7 +989,7 @@ bool IsLeftOf(
 
 Bölme yatay olarak yuvalanmışsa, bu yöntem konumunun *Rect*'in sol tarafında olup olmadığını denetler. Aksi takdirde, bu yöntem konumun *Rect*'in üzerinde olup olmadığını denetler.
 
-## <a name="cpaneisresizable"></a><a name="isresizable"></a>CPane:: ısboyutlandırılabilir
+## <a name="cpaneisresizable"></a><a name="isresizable"></a> CPane:: ısboyutlandırılabilir
 
 Bölmenin yeniden boyutlandırılabilir olup olmadığını belirtir.
 
@@ -1008,7 +1009,7 @@ Yerleştirme Yöneticisi bölme yerleşimini belirlemede yeniden boyutlandırıl
 
 Yeniden boyutlandırılamayan bölmeler, yerleştirme kapsayıcılarında yer alamaz.
 
-## <a name="cpaneistabbed"></a><a name="istabbed"></a>CPane:: ıssekmeli
+## <a name="cpaneistabbed"></a><a name="istabbed"></a> CPane:: ıssekmeli
 
 Bölmenin sekmeli pencerenin Sekme denetimine eklenip eklenmeyeceğini belirler.
 
@@ -1024,7 +1025,7 @@ Bölme sekmeli ise doğru; Aksi takdirde, FALSE.
 
 Sekmeli durum, kayan, sabitlenmiş ve otomatik gizleme durumlarından ayrı olarak değerlendirilir.
 
-## <a name="cpaneloadstate"></a><a name="loadstate"></a>CPane:: LoadState
+## <a name="cpaneloadstate"></a><a name="loadstate"></a> CPane:: LoadState
 
 Bölme durumunu kayıt defterinden yükler.
 
@@ -1056,7 +1057,7 @@ Framework, kayıt defterinden bölme durumunu yüklemek için bu yöntemi çağ�
 
 Bu yöntemi geçersiz kıldığınızda Ayrıca temel yöntemi çağırın ve Base yöntemi FALSE döndürürse FALSE döndürün.
 
-## <a name="cpanem_bhandleminsize"></a><a name="m_bhandleminsize"></a>CPane:: m_bHandleMinSize
+## <a name="cpanem_bhandleminsize"></a><a name="m_bhandleminsize"></a> CPane:: m_bHandleMinSize
 
 Minimum bölme boyutlarının tutarlı işlemesini sunar.
 
@@ -1070,7 +1071,7 @@ Uygulamanızdaki bir veya daha fazla yerleştirme bölmesi geçersiz kılınıyo
 
 Bu değer TRUE olarak ayarlanırsa, boyutu en düşük boyutunun altına düşürülmesi gereken tüm bölmeler, genişletilmez, kırpılır. Framework bölme amacıyla pencere bölgelerini kullandığından, bu değer TRUE olarak ayarlanırsa, yerleştirme bölmeleri için pencere bölgesinin boyutunu değiştirmeyin.
 
-## <a name="cpanem_recentdockinfo"></a><a name="m_recentdockinfo"></a>CPane:: m_recentDockInfo
+## <a name="cpanem_recentdockinfo"></a><a name="m_recentdockinfo"></a> CPane:: m_recentDockInfo
 
 Son yerleştirme bilgilerini içerir.
 
@@ -1082,7 +1083,7 @@ CRecentDockSiteInfo m_recentDockInfo;
 
 Framework, bu üyenin bölmesi için en son yerleştirme durumu bilgilerini depolar.
 
-## <a name="cpanemovebyalignment"></a><a name="movebyalignment"></a>CPane:: MoveByAlignment
+## <a name="cpanemovebyalignment"></a><a name="movebyalignment"></a> CPane:: MoveByAlignment
 
 Bölmeyi ve sanal dikdörtgeni belirtilen miktara göre kaydırır.
 
@@ -1116,7 +1117,7 @@ BOOL MoveByAlignment(
 
 *Dwhizalaması* CBRS_ALIGN_LEFT veya CBRS_ALIGN_RIGHT bayrağını içeriyorsa, bölme ve sanal dikdörtgen yatay olarak taşınır; Aksi takdirde, *Dwhizalaması* CBRS_ALIGN_TOP veya CBRS_ALIGN_BOTTOM bayrağını içeriyorsa, bölme ve sanal dikdörtgen dikey olarak taşınır.
 
-## <a name="cpanemovepane"></a><a name="movepane"></a>CPane:: MovePane
+## <a name="cpanemovepane"></a><a name="movepane"></a> CPane:: MovePane
 
 Bölmeyi belirtilen dikdörtgene kaydırır.
 
@@ -1146,7 +1147,7 @@ virtual CSize MovePane(
 
 Bu yöntem yalnızca yerleştirilebilir bölmeler için kullanılır.
 
-## <a name="cpaneonafterchangeparent"></a><a name="onafterchangeparent"></a>CPane:: OnAfterChangeParent
+## <a name="cpaneonafterchangeparent"></a><a name="onafterchangeparent"></a> CPane:: OnAfterChangeParent
 
 Bir bölmenin üst öğesi değiştiğinde Framework tarafından çağırılır.
 
@@ -1163,7 +1164,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 
 Bu yöntem, bir bölme veya kayan işlem nedeniyle bölmenin üst öğesi değiştiği zaman Framework tarafından çağırılır.
 
-## <a name="cpaneonafterdock"></a><a name="onafterdock"></a>CPane:: OnAfterDock
+## <a name="cpaneonafterdock"></a><a name="onafterdock"></a> CPane:: OnAfterDock
 
 Bir bölme yerleştirildiğinde Framework tarafından çağırılır.
 
@@ -1185,7 +1186,7 @@ virtual void OnAfterDock(
 *Dockyöntemi*<br/>
 'ndaki Bu parametre kullanılmaz.
 
-## <a name="cpaneonafterfloat"></a><a name="onafterfloat"></a>CPane:: OnAfterFloat
+## <a name="cpaneonafterfloat"></a><a name="onafterfloat"></a> CPane:: OnAfterFloat
 
 Bir bölme kaydıktan sonra Framework tarafından çağırılır.
 
@@ -1197,7 +1198,7 @@ virtual void OnAfterFloat();
 
 Bir bölme kaymasından sonra herhangi bir işlem gerçekleştirmek istiyorsanız, türetilmiş bir sınıfta bu yöntemi geçersiz kılabilirsiniz.
 
-## <a name="cpaneonbeforechangeparent"></a><a name="onbeforechangeparent"></a>CPane:: OnBeforeChangeParent
+## <a name="cpaneonbeforechangeparent"></a><a name="onbeforechangeparent"></a> CPane:: OnBeforeChangeParent
 
 Bölmenin üst öğesi değiştirmek üzereyken Framework tarafından çağırılır.
 
@@ -1221,7 +1222,7 @@ Bu yöntem, bölme yerleştirilmiş veya kaydırılmış olduğu için bölmenin
 
 Varsayılan olarak, bölmesi çağırarak yerleştirme bölmesi ile birlikte kaydedilir `CDockSite::RemovePane` .
 
-## <a name="cpaneonbeforedock"></a><a name="onbeforedock"></a>CPane:: OnBeforeDock
+## <a name="cpaneonbeforedock"></a><a name="onbeforedock"></a> CPane:: OnBeforeDock
 
 Bölmesi sabitlemek üzereyken Framework tarafından çağırılır.
 
@@ -1251,7 +1252,7 @@ Bölme sabitlenebilir ise TRUE. İşlev FALSE döndürürse, yerleştirme işlem
 
 Bu yöntem, bir bölme yerleştirilme konusunda olduğunda Framework tarafından çağırılır. Bir bölme son yerleştirilmesinden önce herhangi bir işlem gerçekleştirmek istiyorsanız, türetilmiş bir sınıfta bu yöntemi geçersiz kılabilirsiniz.
 
-## <a name="cpaneonbeforefloat"></a><a name="onbeforefloat"></a>CPane:: OnBeforeFloat
+## <a name="cpaneonbeforefloat"></a><a name="onbeforefloat"></a> CPane:: OnBeforeFloat
 
 Bir bölme, kaydırma yapmak üzereyken Framework tarafından çağırılır.
 
@@ -1277,7 +1278,7 @@ Bölme kaydırılır ise doğru; Aksi takdirde, FALSE.
 
 Bu yöntem, bir bölme, kaydırma yapmak üzereyken Framework tarafından çağırılır. Bölmeden son yüzden önce herhangi bir işlem gerçekleştirmek istiyorsanız, türetilmiş bir sınıfta bu yöntemi geçersiz kılabilirsiniz.
 
-## <a name="cpaneonpressclosebutton"></a><a name="onpressclosebutton"></a>CPane:: OnPressCloseButton
+## <a name="cpaneonpressclosebutton"></a><a name="onpressclosebutton"></a> CPane:: OnPressCloseButton
 
 Kullanıcı bölmenin başlık sayfasındaki Kapat düğmesine bastığında Framework tarafından çağırılır.
 
@@ -1289,7 +1290,7 @@ virtual void OnPressCloseButton();
 
 Bu yöntem, bir Kullanıcı bölmenin başlık sayfasındaki **Kapat** düğmesine bastığında Framework tarafından çağrılır. **Close** olayı hakkında bildirim almak için, türetilmiş bir sınıfta bu yöntemi geçersiz kılabilirsiniz.
 
-## <a name="cpaneonshowcontrolbarmenu"></a><a name="onshowcontrolbarmenu"></a>CPane:: OnShowControlBarMenu
+## <a name="cpaneonshowcontrolbarmenu"></a><a name="onshowcontrolbarmenu"></a> CPane:: OnShowControlBarMenu
 
 Özel bir bölme menüsü görüntülenmek üzereyken Framework tarafından çağırılır.
 
@@ -1308,9 +1309,9 @@ Menü görüntülenebiliyorsa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Menü, bölmenin davranışını belirtmenizi sağlayan, yani **kayan**, **yerleştirme** **, otomatik gizleme ve** **gizleme**gibi çeşitli öğeler içerir. Bu menüyü, [CDockingManager:: EnableDockSiteMenu](../../mfc/reference/cdockingmanager-class.md#enabledocksitemenu)çağırarak tüm bölmeler için etkinleştirebilirsiniz.
+Menü, bölmenin davranışını belirtmenizi sağlayan, yani **kayan**, **yerleştirme** **, otomatik gizleme ve** **gizleme** gibi çeşitli öğeler içerir. Bu menüyü, [CDockingManager:: EnableDockSiteMenu](../../mfc/reference/cdockingmanager-class.md#enabledocksitemenu)çağırarak tüm bölmeler için etkinleştirebilirsiniz.
 
-## <a name="cpanerecalclayout"></a><a name="recalclayout"></a>CPane:: RecalcLayout
+## <a name="cpanerecalclayout"></a><a name="recalclayout"></a> CPane:: RecalcLayout
 
 Bölmenin düzen bilgilerini yeniden hesaplar.
 
@@ -1324,7 +1325,7 @@ Bölme yerleştirilmişse, bu yöntem boyutunu bölmenin geçerli boyutuna ayarl
 
 Bölme Eğer kayan ise, bu yöntem üst mini çerçeveye, bölmenin boyutunu mini çerçevenin boyutuna ayarlamaya yönelik bilgilendirir. Çerçeve, Mini karenin en azından bölme için izin verilen en düşük boyut ( [CPane:: GetMinSize](#getminsize)) olmasını sağlar ve gerekirse mini çerçeveyi yeniden boyutlandırır.
 
-## <a name="cpanesavestate"></a><a name="savestate"></a>CPane:: Savemlak
+## <a name="cpanesavestate"></a><a name="savestate"></a> CPane:: Savemlak
 
 Bölmenin durumunu kayıt defterine kaydeder.
 
@@ -1356,7 +1357,7 @@ Framework, bölmenin durumunu kayıt defterine kaydettiğinde bu yöntemi çağ�
 
 Bu yöntemi geçersiz kıldığınızda Ayrıca temel yöntemi çağırın ve Base yöntemi FALSE döndürürse FALSE döndürün.
 
-## <a name="cpanesetactiveingroup"></a><a name="setactiveingroup"></a>CPane:: SetActiveInGroup
+## <a name="cpanesetactiveingroup"></a><a name="setactiveingroup"></a> CPane:: SetActiveInGroup
 
 Bir bölmeyi etkin olarak işaretler.
 
@@ -1377,7 +1378,7 @@ Bölmesiyle ilişkili bir otomatik gizleme düğmesinin görünümü iki etkene 
 
 `CMFCAutoHideButton::m_bOverlappingTabs`Yanlışsa veya bölme bir grupta bulunmuyorsa, çerçeve ilişkili otomatik gizleme düğmesini bir simge ve etiket olarak görüntüler.
 
-## <a name="cpanesetborders"></a><a name="setborders"></a>CPane:: Setkenarlýklar
+## <a name="cpanesetborders"></a><a name="setborders"></a> CPane:: Setkenarlýklar
 
 Bölmenin kenarlık değerlerini ayarlar.
 
@@ -1412,7 +1413,7 @@ void SetBorders(LPCRECT lpRect);
 
 Bölmenin kenarlık boyutlarını ayarlamak için bu işlevi çağırın.
 
-## <a name="cpanesetclienthotspot"></a><a name="setclienthotspot"></a>CPane:: Setclienthotleke
+## <a name="cpanesetclienthotspot"></a><a name="setclienthotspot"></a> CPane:: Setclienthotleke
 
 Bölme için *etkin noktayı* ayarlar.
 
@@ -1423,13 +1424,13 @@ void SetClientHotSpot(const CPoint& ptNew);
 ### <a name="parameters"></a>Parametreler
 
 *ptNew*<br/>
-'ndaki `CPoint`Yeni etkin noktayı belirten nesne.
+'ndaki `CPoint` Yeni etkin noktayı belirten nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
 *Etkin nokta* , bölmenin hareket ettirmek için kullanıcının seçtiği ve tuttuğu bölmedeki noktasıdır. Pencere yerleştirilmiş bir konumdan sürüklendiğinde kesintisiz animasyon için etkin bir nokta kullanılır.
 
-## <a name="cpanesetdockstate"></a><a name="setdockstate"></a>CPane:: SetDockState
+## <a name="cpanesetdockstate"></a><a name="setdockstate"></a> CPane:: SetDockState
 
 Bölme için yerleştirme durum bilgilerini geri yükler.
 
@@ -1448,7 +1449,7 @@ Bu yöntem, bölme için son yerleştirme durumu bilgilerini geri yüklemek içi
 
 Ayrıca, bir dış kaynaktan bölme bilgilerini yüklerken takma durumunu ayarlamak için bu yöntemi çağırabilirsiniz.
 
-## <a name="cpanesetexclusiverowmode"></a><a name="setexclusiverowmode"></a>CPane:: Setexclusıverowmode
+## <a name="cpanesetexclusiverowmode"></a><a name="setexclusiverowmode"></a> CPane:: Setexclusıverowmode
 
 Özel satır modunu etkinleştirilir veya devre dışı bırakır.
 
@@ -1467,7 +1468,7 @@ virtual void SetExclusiveRowMode(BOOL bExclusive = TRUE);
 
 Varsayılan olarak, tüm araç çubuklarında özel satır modu devre dışıdır ve menü çubuğunda özel satır modu etkinleştirilmiştir.
 
-## <a name="cpanesetminsize"></a><a name="setminsize"></a>CPane:: SetMinSize
+## <a name="cpanesetminsize"></a><a name="setminsize"></a> CPane:: SetMinSize
 
 Bölme için izin verilen en küçük boyutu ayarlar.
 
@@ -1478,11 +1479,11 @@ void SetMinSize(const CSize& size);
 ### <a name="parameters"></a>Parametreler
 
 *boyutla*<br/>
-'ndaki `CSize`Bölme için izin verilen en küçük boyutu içeren nesne.
+'ndaki `CSize` Bölme için izin verilen en küçük boyutu içeren nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanesetvirtualrect"></a><a name="setvirtualrect"></a>CPane:: SetVirtualRect
+## <a name="cpanesetvirtualrect"></a><a name="setvirtualrect"></a> CPane:: SetVirtualRect
 
 Bölmenin *sanal dikdörtgenini* ayarlar.
 
@@ -1495,7 +1496,7 @@ void SetVirtualRect(
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-'ndaki `CRect`Ayarlanacak sanal dikdörtgeni belirten nesne.
+'ndaki `CRect` Ayarlanacak sanal dikdörtgeni belirten nesne.
 
 *bMapToParent*<br/>
 'ndaki *Rect* ana pencereye göre noktaları içeriyorsa true değerini belirtin.
@@ -1506,7 +1507,7 @@ Bir *sanal dikdörtgen* , taşındıktan sonra bölmenin orijinal konumunu depol
 
 Bölmeleri program aracılığıyla taşımadığınız müddetçe, sanal dikdörtgenlerle ilgili yöntemleri çağırmayın.
 
-## <a name="cpanesetminiframertc"></a><a name="setminiframertc"></a>CPane:: Setminifoymertc
+## <a name="cpanesetminiframertc"></a><a name="setminiframertc"></a> CPane:: Setminifoymertc
 
 Varsayılan mini çerçeve penceresi için çalışma zamanı sınıf bilgilerini ayarlar.
 
@@ -1523,7 +1524,7 @@ void SetMiniFrameRTC(CRuntimeClass* pClass);
 
 Bir bölme kaydırılır, bir [CPane Framewnd](../../mfc/reference/cpaneframewnd-class.md) (mini çerçeve) penceresine konur. `CPaneFrameWnd` [CPane:: CreateDefaultMiniframe](#createdefaultminiframe) çağrıldığında kullanılacak özel türetilmiş bir sınıf sağlayabilirsiniz.
 
-## <a name="cpanestretchpanedeferwndpos"></a><a name="stretchpanedeferwndpos"></a>CPane:: Tısalbölmesi Deferwndpos
+## <a name="cpanestretchpanedeferwndpos"></a><a name="stretchpanedeferwndpos"></a> CPane:: Tısalbölmesi Deferwndpos
 
 Bölmeyi, yerleştirme stiline göre dikey veya yatay olarak uzatır.
 
@@ -1549,7 +1550,7 @@ Bölmenin esnetilmiş olduğu gerçek miktar (piksel cinsinden).
 
 Gerekirse, bu yöntem bölmenin boyut sınırlarını aşmadığından emin olmak için *nen boyutunu* değiştirir. Bu sınırlar [CPane:: getavailableısıze](#getavailablestretchsize) ve [CPane:: GetAvailableExpandSize](#getavailableexpandsize)çağırarak elde edilir.
 
-## <a name="cpanetoggleautohide"></a><a name="toggleautohide"></a>CPane:: Toggleotomatik gizle
+## <a name="cpanetoggleautohide"></a><a name="toggleautohide"></a> CPane:: Toggleotomatik gizle
 
 Otomatik gizleme moduna geçiş yapar.
 
@@ -1561,7 +1562,7 @@ virtual void ToggleAutoHide();
 
 Otomatik gizleme modunu değiştirmek için bu yöntemi çağırın. Otomatik gizleme moduna geçmek için bölmenin bir ana çerçeve penceresine yerleştirilmiş olması gerekir.
 
-## <a name="cpaneundockpane"></a><a name="undockpane"></a>CPane:: UndockPane
+## <a name="cpaneundockpane"></a><a name="undockpane"></a> CPane:: UndockPane
 
 Bölmeyi yerleştirme sitesinden, varsayılan kaydırıcıdan veya şu anda yerleştirilmiş olan mini çerçeve penceresinden kaldırır.
 
@@ -1578,7 +1579,7 @@ virtual void UndockPane(BOOL bDelay = FALSE);
 
 Bir bölmeyi programlamayla çıkarmak için bu yöntemi kullanın.
 
-## <a name="cpaneupdatevirtualrect"></a><a name="updatevirtualrect"></a>CPane:: UpdateVirtualRect
+## <a name="cpaneupdatevirtualrect"></a><a name="updatevirtualrect"></a> CPane:: UpdateVirtualRect
 
 Sanal dikdörtgeni güncelleştirir.
 
@@ -1591,18 +1592,18 @@ void UpdateVirtualRect(CSize sizeNew);
 ### <a name="parameters"></a>Parametreler
 
 *ptOffset*<br/>
-'ndaki `CPoint`Bölmenin kaydırılacağı bir sapmayı belirten nesne.
+'ndaki `CPoint` Bölmenin kaydırılacağı bir sapmayı belirten nesne.
 
 *sizeNew*<br/>
-'ndaki `CSize`Bölme için yeni bir boyut belirten nesne.
+'ndaki `CSize` Bölme için yeni bir boyut belirten nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
 İlk aşırı yükleme sanal dikdörtgeni bölmenin geçerli konumunu ve boyutunu kullanarak ayarlar.
 
-İkinci aşırı yükleme, sanal dikdörtgeni *ptOffset*tarafından belirtilen miktara kaydırır.
+İkinci aşırı yükleme, sanal dikdörtgeni *ptOffset* tarafından belirtilen miktara kaydırır.
 
-Üçüncü aşırı yükleme, bölmenin geçerli konumunu ve *sizeNew*tarafından belirtilen boyutu kullanarak sanal dikdörtgeni ayarlar.
+Üçüncü aşırı yükleme, bölmenin geçerli konumunu ve *sizeNew* tarafından belirtilen boyutu kullanarak sanal dikdörtgeni ayarlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

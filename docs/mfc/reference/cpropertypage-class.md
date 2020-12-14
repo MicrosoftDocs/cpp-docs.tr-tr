@@ -1,5 +1,6 @@
 ---
-title: CPropertyPage Sınıfı
+description: 'Daha fazla bilgi edinin: CPropertyPage sınıfı'
+title: CPropertyPage sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CPropertyPage
@@ -40,18 +41,18 @@ helpviewer_keywords:
 - CPropertyPage [MFC], SetModified
 - CPropertyPage [MFC], m_psp
 ms.assetid: d9000a21-aa81-4530-85d9-f43432afb4dc
-ms.openlocfilehash: f46566eb562f1515e98aedf938ca68b225ee1b67
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: ea95b6d909b97e424081e44b4ef618a7c7e3c4dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81751108"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343364"
 ---
-# <a name="cpropertypage-class"></a>CPropertyPage Sınıfı
+# <a name="cpropertypage-class"></a>CPropertyPage sınıfı
 
-Bir özellik sayfasının tek tek sayfalarını temsil eder, aksi takdirde sekme iletişim kutusu olarak bilinir.
+Bir özellik sayfasının tek tek sayfalarını gösterir, aksi halde sekme iletişim kutusu olarak bilinir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CPropertyPage : public CDialog
@@ -61,63 +62,63 @@ class CPropertyPage : public CDialog
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CpropertyPage::cpropertypage](#cpropertypage)|Bir `CPropertyPage` nesne inşa eder.|
+|[CPropertyPage:: CPropertyPage](#cpropertypage)|Bir `CPropertyPage` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CpropertyPage::CanceltoClose](#canceltoclose)|Bir modal özellik sayfasının sayfasında kurtarılamayan bir değişiklikten sonra Tamam düğmesini kapat'ı değiştirir ve İptal düğmesini devre dışı kılabilir.|
-|[CPropertyPage::Yapı](#construct)|Bir `CPropertyPage` nesne inşa eder. Parametrelerinizi çalışma zamanında belirtmek istiyorsanız veya dizi kullanıyorsanız kullanın. `Construct`|
-|[CPropertyPage::GetPSP](#getpsp)|`CPropertyPage` Nesneyle ilişkili Windows [PROPSHEETPAGE](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) yapısını alır.|
-|[CpropertyPage::OnApply](#onapply)|Şimdi Uygula düğmesine tıklandığında çerçeve tarafından çağrılır.|
-|[CpropertyPage::OnCancel](#oncancel)|İptal düğmesi tıklatıldığında çerçeve tarafından çağrılır.|
-|[CpropertyPage::OnKillActive](#onkillactive)|Geçerli sayfa artık etkin sayfa olmadığında çerçeve tarafından çağrılır. Burada veri doğrulama gerçekleştirin.|
-|[CpropertyPage::OnOK](#onok)|Tamam, Şimdi Uygula veya Kapat düğmesi tıklatıldığında çerçeve tarafından çağrılır.|
-|[CpropertyPage::OnQueryCancel](#onquerycancel)|İptal düğmesi tıklatıldığında ve iptal gerçekleşmeden önce çerçeve tarafından çağrılır.|
-|[CPropertyPage::OnReset](#onreset)|İptal düğmesi tıklatıldığında çerçeve tarafından çağrılır.|
-|[Cpropertypage::Onsetactive](#onsetactive)|Sayfa etkin sayfa yapıldığında çerçeve tarafından çağrılır.|
-|[CpropertyPage::OnWizardback](#onwizardback)|Sihirbaz türünde bir özellik sayfası kullanırken Geri düğmesine tıklandığında çerçeve tarafından çağrılır.|
-|[CpropertyPage::OnwizardFinish](#onwizardfinish)|Sihirbaz türünde bir özellik sayfası kullanırken Bitiş düğmesi tıklatıldığında çerçeve tarafından çağrılır.|
-|[CpropertyPage::OnWizardNext](#onwizardnext)|Sihirbaz türünde bir özellik sayfası kullanırken Sonraki düğmesine tıklandığında çerçeve tarafından çağrılır.|
-|[CPropertyPage::QuerySiblings](#querysiblings)|İletiyi özellik sayfasının her sayfasına iletir.|
-|[CpropertyPage::Setmodi](#setmodified)|Şimdi Uygula düğmesini etkinleştirmek veya devre dışı bırakmak için arayın.|
+|[CPropertyPage:: CancelToClose](#canceltoclose)|Tamam düğmesini Oku Kapat olarak değiştirir ve kalıcı özellik sayfası sayfasında kurtarılamaz bir değişiklikten sonra Iptal düğmesini devre dışı bırakır.|
+|[CPropertyPage:: yapısı](#construct)|Bir `CPropertyPage` nesnesi oluşturur. `Construct`Çalışma zamanında parametrelerinizi belirtmek istiyorsanız veya diziler kullanıyorsanız kullanın.|
+|[CPropertyPage:: GetPSP](#getpsp)|Nesnesiyle ilişkili Windows [propsheetpage](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) yapısını alır `CPropertyPage` .|
+|[CPropertyPage:: OnApply](#onapply)|Şimdi Uygula düğmesine tıklandığında Framework tarafından çağırılır.|
+|[CPropertyPage:: OnCancel](#oncancel)|Iptal düğmesine tıklandığında Framework tarafından çağırılır.|
+|[CPropertyPage:: OnKillActive](#onkillactive)|Geçerli sayfa artık etkin sayfa olmadığında Framework tarafından çağırılır. Veri doğrulamasını burada gerçekleştirin.|
+|[CPropertyPage:: OnOK](#onok)|Tamam, şimdi Uygula ya da Kapat düğmesine tıklandığında Framework tarafından çağırılır.|
+|[CPropertyPage:: OnQueryCancel](#onquerycancel)|Iptal düğmesine tıklandığında ve iptal gerçekleşmeden önce Framework tarafından çağırılır.|
+|[CPropertyPage:: OnReset](#onreset)|Iptal düğmesine tıklandığında Framework tarafından çağırılır.|
+|[CPropertyPage:: OnSetActive](#onsetactive)|Sayfa etkin sayfa yapıldığında Framework tarafından çağırılır.|
+|[CPropertyPage:: OnWizardBack](#onwizardback)|Sihirbaz türü özellik sayfası kullanılırken geri düğmesine tıklandığında Framework tarafından çağırılır.|
+|[CPropertyPage:: onwizardtamamlay](#onwizardfinish)|Sihirbaz türü özellik sayfası kullanılırken son düğmesine tıklandığında Framework tarafından çağırılır.|
+|[CPropertyPage:: OnWizardNext](#onwizardnext)|Sihirbaz türü özellik sayfası kullanılırken Ileri düğmesine tıklandığında Framework tarafından çağırılır.|
+|[CPropertyPage:: Queryeşdüzey 'lar](#querysiblings)|İletiyi Özellik sayfasının her sayfasına iletir.|
+|[CPropertyPage:: SetModified](#setmodified)|Şimdi Uygula düğmesini etkinleştirmek veya devre dışı bırakmak için çağırın.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CPropertyPage::m_psp](#m_psp)|Windows [PROPSHEETPAGE](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) yapısı. Temel özellik sayfası parametrelerine erişim sağlar.|
+|[CPropertyPage:: m_psp](#m_psp)|Windows [propsheetpage](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) yapısı. Temel özellik sayfası parametrelerine erişim sağlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Standart iletişim kutularında olduğu gibi, özellik `CPropertyPage` sayfanızdaki her sayfa için bir sınıf türetin. Türetilmiş nesneleri kullanmak `CPropertyPage`için önce bir [CPropertySheet](../../mfc/reference/cpropertysheet-class.md) nesnesi oluşturun ve ardından özellik sayfasına giren her sayfa için bir nesne oluşturun. [CPropertySheet'i arayın::Sayfadaki](../../mfc/reference/cpropertysheet-class.md#addpage) her sayfa için Sayfa Yı ekleyin ve [ardından CPropertySheet::Dmodal](../../mfc/reference/cpropertysheet-class.md#domodal) özellik sayfası için oModal veya [CPropertySheet::Modeless](../../mfc/reference/cpropertysheet-class.md#create) özellik sayfası için oluşturun'u arayarak özellik sayfasını görüntüleyin.
+Standart iletişim kutularında olduğu gibi, `CPropertyPage` özellik sayfanızdaki her sayfa için bir sınıf türetirsiniz. `CPropertyPage`Türetilmiş nesneleri kullanmak için, önce bir [CPropertySheet](../../mfc/reference/cpropertysheet-class.md) nesnesi oluşturun ve sonra özellik sayfasında yer alan her sayfa için bir nesne oluşturun. Sayfadaki her sayfa için [CPropertySheet:: AddPage](../../mfc/reference/cpropertysheet-class.md#addpage) ' i çağırın ve ardından [cpropertysheet::D omodal](../../mfc/reference/cpropertysheet-class.md#domodal) ' ı çağırarak özellik sayfasını, kalıcı bir özellik sayfası Için veya [CPropertySheet:: Create](../../mfc/reference/cpropertysheet-class.md#create) için bir kalıcı özellik sayfası ile görüntüleyin.
 
-Sihirbaz adı verilen ve kullanıcıya aygıt ayarlama veya bülten oluşturma gibi işlem adımlarından rehberlik eden özellik sayfaları dizisiiçeren bir özellik sayfası içeren bir sekme iletişim kutusu türü oluşturabilirsiniz. Sihirbaz türü sekmesi iletişim kutusunda, özellik sayfalarında sekmeler yoktur ve aynı anda yalnızca bir özellik sayfası görünür. Ayrıca, Tamam ve Şimdi Uygula düğmelerine sahip olmak yerine, sihirbaz türü sekmesi iletişim kutusunda Geri Düğmesi, İleri veya Bitiş düğmesi ve İptal düğmesi bulunur.
+Bir cihaz ayarlama veya bülten oluşturma gibi bir işlemin adımları boyunca kullanıcıya kılavuzluk eden Özellik sayfaları dizisi olan bir özellik sayfasından oluşan, sihirbaz adlı bir sekme iletişim kutusu türü oluşturabilirsiniz. Sihirbaz-tür sekmesi iletişim kutusunda, özellik sayfalarında sekmeler yoktur ve tek seferde yalnızca bir özellik sayfası görünür. Ayrıca, tamam ve şimdi Uygula düğmelerine sahip olmak yerine, bir sihirbaz türü sekme iletişim kutusu geri düğmesi, Ileri veya son düğmesi ve bir Iptal düğmesi içerir.
 
-Sihirbaz olarak bir özellik sayfası oluşturma hakkında daha fazla bilgi için [Bkz. CPropertySheet::SetWizardMode](../../mfc/reference/cpropertysheet-class.md#setwizardmode). Nesneleri kullanma `CPropertyPage` hakkında daha fazla bilgi [için, makaleözellik sayfaları ve Özellik Sayfaları](../../mfc/property-sheets-and-property-pages-in-mfc.md)bakın.
+Sihirbaz olarak bir özellik sayfası oluşturma hakkında daha fazla bilgi için bkz. [CPropertySheet:: SetWizardMode](../../mfc/reference/cpropertysheet-class.md#setwizardmode). Nesneleri kullanma hakkında daha fazla bilgi için `CPropertyPage` , özellik sayfaları [ve özellik sayfaları](../../mfc/property-sheets-and-property-pages-in-mfc.md)makalesine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
-[Cdialog](../../mfc/reference/cdialog-class.md)
+[CDialog](../../mfc/reference/cdialog-class.md)
 
 `CPropertyPage`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxdlgs.h
+**Üstbilgi:** afxdlgs. h
 
-## <a name="cpropertypagecanceltoclose"></a><a name="canceltoclose"></a>CpropertyPage::CanceltoClose
+## <a name="cpropertypagecanceltoclose"></a><a name="canceltoclose"></a> CPropertyPage:: CancelToClose
 
-Modal özellik sayfasının bir sayfasındaki verilerde kurtarılamaz bir değişiklik yapıldıktan sonra bu işlevi arayın.
+Kalıcı bir özellik sayfasının sayfasındaki verilerde kurtarılamaz bir değişiklik yapıldıktan sonra bu işlevi çağırın.
 
 ```cpp
 void CancelToClose();
@@ -125,17 +126,17 @@ void CancelToClose();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev Tamam düğmesini Kapat düğmesine değiştirir ve İptal düğmesini devre dışı eder. Bu değişiklik, kullanıcıyı bir değişikliğin kalıcı olduğu ve değişikliklerin iptal edilemeyeceği konusunda uyarır.
+Bu işlev, Kapat düğmesini kapatmak ve Iptal düğmesini devre dışı bırakmak için Tamam düğmesini değiştirecek. Bu değişiklik, kullanıcıyı bir değişikliğin kalıcı olduğunu ve değişikliklerin iptal edilemez olduğunu uyarır.
 
-Modeless özellik sayfasında varsayılan olarak İptal düğmesi `CancelToClose` olmadığından, üye işlev modeless özellik sayfasında hiçbir şey yapmaz.
+Kalıcı olmayan özellik sayfasında `CancelToClose` Varsayılan olarak bir iptal düğmesi bulunmadığından, üye işlevi modsuz bir özellik sayfasında hiçbir şey yapmaz.
 
 ### <a name="example"></a>Örnek
 
-  CPropertyPage örneğine [bakın:QuerySiblings](#querysiblings).
+  [CPropertyPage:: Queryeşdüzey](#querysiblings)örnekleri için örneğe bakın.
 
-## <a name="cpropertypageconstruct"></a><a name="construct"></a>CPropertyPage::Yapı
+## <a name="cpropertypageconstruct"></a><a name="construct"></a> CPropertyPage:: yapısı
 
-Bir `CPropertyPage` nesne oluşturmak için bu üye işlevi çağırın.
+Bir nesne oluşturmak için bu üye işlevini çağırın `CPropertyPage` .
 
 ```cpp
 void Construct(
@@ -161,42 +162,42 @@ void Construct(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDTemplate*<br/>
-Bu sayfa için kullanılan şablonun kimliği.
+*Nıdtemplate*<br/>
+Bu sayfa için kullanılan şablonun KIMLIĞI.
 
 *nIDCaption*<br/>
-Bu sayfanın sekmesine yerleştirilecek adın kimliği. 0 ise, ad bu sayfanın iletişim şablonundan alınır.
+Bu sayfanın sekmesine yerleştirilecek adın KIMLIĞI. 0 ise, Bu sayfa için iletişim şablonundan ad alınır.
 
 *lpszTemplateName*<br/>
-Şablon kaynağının adı olan null-sonlandırılan bir dize içerir.
+Bir şablon kaynağının adı olan null ile sonlandırılmış bir dize içerir.
 
-*nIDHeaderBaşlık*<br/>
-Özellik sayfası üstbilgisinin başlık yerine yerleştirilecek adın kimliği. Varsayılan olarak, 0.
+*Nıdheadertitle*<br/>
+Özellik sayfası üstbilgisinin başlık konumuna yerleştirilecek adın KIMLIĞI. Varsayılan olarak 0.
 
-*nIDHeaderSubTitle*<br/>
-Özellik sayfası üstbilgisinin altyazı konumuna yerleştirilecek adın kimliği. Varsayılan olarak, 0.
+*Nıdheaderalt başlığı*<br/>
+Özellik sayfası üstbilgisinin alt başlık konumuna yerleştirilecek adın KIMLIĞI. Varsayılan olarak 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne, aşağıdaki koşulların tümü karşılandıktan sonra görüntülenir:
+Nesnesi aşağıdaki koşulların tümü karşılandıktan sonra görüntülenir:
 
-- Sayfa CPropertySheet kullanılarak bir özellik sayfasına [eklendi::AddPage](../../mfc/reference/cpropertysheet-class.md#addpage).
+- Sayfa, [CPropertySheet:: AddPage](../../mfc/reference/cpropertysheet-class.md#addpage)kullanılarak bir özellik sayfasına eklenmiştir.
 
-- Özellik sayfasının [DoModal](../../mfc/reference/cpropertysheet-class.md#domodal) veya [Create](../../mfc/reference/cpropertysheet-class.md#create) işlevi çağrıldı.
+- Özellik sayfasının [DoModal](../../mfc/reference/cpropertysheet-class.md#domodal) veya [oluşturma](../../mfc/reference/cpropertysheet-class.md#create) işlevi çağrıldı.
 
-- Kullanıcı bu sayfayı seçmiştir (sekmeli beslenmiştir).
+- Kullanıcı (sekmeli) bu sayfayı seçti.
 
-Diğer `Construct` sınıf oluşturucularından biri çağrılmediyse arayın. `Construct` Parametre deyimini boş bırakıp ardından kodunuzun herhangi bir noktasında birden çok parametre ve yapı belirtebildiğiniz için üye işlev esnektir.
+`Construct`Diğer sınıf oluşturucularından biri çağrılmışsa çağırın. `Construct`Parametre ifadesini boş bırakabileceğiniz ve kodunuzda herhangi bir noktada birden fazla parametre ve oluşturma belirten üye işlevi esnektir.
 
-Dizilerle `Construct` çalışırken kullanmanız gerekir ve veri üyelerine uygun değerler atanması için dizinin her üyesini aramanız `Construct` gerekir.
+`Construct`Dizilerle çalışırken kullanmanız gerekir ve `Construct` veri üyelerine uygun değerler atanması için dizinin her üyesi için çağrı yapmanız gerekir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#112](../../mfc/codesnippet/cpp/cpropertypage-class_1.cpp)]
 
-## <a name="cpropertypagecpropertypage"></a><a name="cpropertypage"></a>CpropertyPage::cpropertypage
+## <a name="cpropertypagecpropertypage"></a><a name="cpropertypage"></a> CPropertyPage:: CPropertyPage
 
-Bir `CPropertyPage` nesne inşa eder.
+Bir `CPropertyPage` nesnesi oluşturur.
 
 ```
 CPropertyPage();
@@ -228,40 +229,40 @@ CPropertyPage(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDTemplate*<br/>
-Bu sayfa için kullanılan şablonun kimliği.
+*Nıdtemplate*<br/>
+Bu sayfa için kullanılan şablonun KIMLIĞI.
 
 *nIDCaption*<br/>
-Bu sayfanın sekmesine yerleştirilecek adın kimliği. 0 ise, ad bu sayfanın iletişim şablonundan alınır.
+Bu sayfanın sekmesine yerleştirilecek adın KIMLIĞI. 0 ise, Bu sayfa için iletişim şablonundan ad alınır.
 
 *dwSize*<br/>
-*lpszTemplateName* Bu sayfanın şablonunun adını içeren bir dizeyi işaret eder. NULL olamaz.
+*lpszTemplateName* Bu sayfa için şablon adını içeren bir dizeye işaret eder. NULL olamaz.
 
-*nIDHeaderBaşlık*<br/>
-Özellik sayfası üstbilgisinin başlık yerine yerleştirilecek adın kimliği.
+*Nıdheadertitle*<br/>
+Özellik sayfası üstbilgisinin başlık konumuna yerleştirilecek adın KIMLIĞI.
 
-*nIDHeaderSubTitle*<br/>
-Özellik sayfası üstbilgisinin altyazı konumuna yerleştirilecek adın kimliği.
+*Nıdheaderalt başlığı*<br/>
+Özellik sayfası üstbilgisinin alt başlık konumuna yerleştirilecek adın KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne, aşağıdaki koşulların tümü karşılandıktan sonra görüntülenir:
+Nesnesi aşağıdaki koşulların tümü karşılandıktan sonra görüntülenir:
 
-- Sayfa CPropertySheet kullanılarak bir özellik sayfasına [eklendi::AddPage](../../mfc/reference/cpropertysheet-class.md#addpage).
+- Sayfa, [CPropertySheet:: AddPage](../../mfc/reference/cpropertysheet-class.md#addpage)kullanılarak bir özellik sayfasına eklenmiştir.
 
-- Özellik sayfasının [DoModal](../../mfc/reference/cpropertysheet-class.md#domodal) veya [Create](../../mfc/reference/cpropertysheet-class.md#create) işlevi çağrıldı.
+- Özellik sayfasının [DoModal](../../mfc/reference/cpropertysheet-class.md#domodal) veya [oluşturma](../../mfc/reference/cpropertysheet-class.md#create) işlevi çağrıldı.
 
-- Kullanıcı bu sayfayı seçmiştir (sekmeli beslenmiştir).
+- Kullanıcı (sekmeli) bu sayfayı seçti.
 
-Birden çok parametreniz varsa (örneğin, bir dizi kullanıyorsanız), [CPropertySheet kullanın::Yapı](../../mfc/reference/cpropertysheet-class.md#construct) yerine. `CPropertyPage`
+Birden çok parametreye sahipseniz (örneğin, bir dizi kullanıyorsanız), yerine [CPropertySheet:: yapısını](../../mfc/reference/cpropertysheet-class.md#construct) kullanın `CPropertyPage` .
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#113](../../mfc/codesnippet/cpp/cpropertypage-class_2.cpp)]
 
-## <a name="cpropertypagegetpsp"></a><a name="getpsp"></a>CPropertyPage::GetPSP
+## <a name="cpropertypagegetpsp"></a><a name="getpsp"></a> CPropertyPage:: GetPSP
 
-`CPropertyPage` Nesneyle ilişkili Windows [PROPSHEETPAGE](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) yapısını alır.
+Nesnesiyle ilişkili Windows [propsheetpage](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) yapısını alır `CPropertyPage` .
 
 ```
 const PROPSHEETPAGE& GetPSP() const;
@@ -271,11 +272,11 @@ PROPSHEETPAGE& GetPSP();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yapıya `PROPSHEETPAGE` bir gönderme.
+Yapıya bir başvuru `PROPSHEETPAGE` .
 
-## <a name="cpropertypagem_psp"></a><a name="m_psp"></a>CPropertyPage::m_psp
+## <a name="cpropertypagem_psp"></a><a name="m_psp"></a> CPropertyPage:: m_psp
 
-`m_psp`üyeleri [PROPSHEETPAGE](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2)özelliklerini depolayan bir yapıdır.
+`m_psp` , üyeleri [propsheetpage](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2)özelliklerini depolayan bir yapıdır.
 
 ```
 PROPSHEETPAGE m_psp;
@@ -283,17 +284,17 @@ PROPSHEETPAGE m_psp;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir özellik sayfasının oluşturulduktan sonra görünümünü başlatmayı sağlamak için bu yapıyı kullanın.
+Bir özellik sayfasının oluşturulduktan sonra görünümünü başlatmak için bu yapıyı kullanın.
 
-Üyelerinin listesi de dahil olmak üzere bu yapı `PROPSHEETPAGE` hakkında daha fazla bilgi için Windows SDK'ya bakın.
+Üyelerinin bir listesi de dahil olmak üzere bu yapı hakkında daha fazla bilgi için, `PROPSHEETPAGE` Windows SDK bakın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#128](../../mfc/codesnippet/cpp/cpropertypage-class_3.cpp)]
 
-## <a name="cpropertypageonapply"></a><a name="onapply"></a>CpropertyPage::OnApply
+## <a name="cpropertypageonapply"></a><a name="onapply"></a> CPropertyPage:: OnApply
 
-Kullanıcı Tamam veya Şimdi Uygula düğmesini seçtiğinde bu üye işlev çerçeve tarafından çağrılır.
+Bu üye işlevi, Kullanıcı Tamam veya Şimdi Uygula düğmesini seçtiğinde Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnApply();
@@ -301,25 +302,25 @@ virtual BOOL OnApply();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değişiklikler kabul edilirse sıfır olmayan; aksi takdirde 0.
+Değişiklikler kabul edilirse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve bu işlevi aradığında, özellik sayfasındaki tüm özellik sayfalarında yapılan değişiklikler kabul edilir, `OnApply` özellik sayfası odağı korur ve TRUE (değer 1) döndürür. Çerçeve `OnApply` tarafından çağrılmadan [önce, SetModified'i](#setmodified) aramış ve parametresini TRUE olarak ayarlamış olmalısınız. Bu, kullanıcı özellik sayfasında değişiklik yapar etmez Şimdi Uygula düğmesini etkinleştirecektir.
+Çerçeve bu işlevi çağırdığında, özellik sayfasındaki tüm özellik sayfalarında yapılan değişiklikler kabul edilir, özellik sayfası odağı korur ve `OnApply` true değerini döndürür (1 değeri). `OnApply`Framework tarafından çağrılmadan önce [SetModified](#setmodified) ÇAĞRıLMALıDıR ve parametresini true olarak ayarlamanız gerekir. Bu işlem, Kullanıcı Özellik sayfasında bir değişiklik yaptığında Şimdi Uygula düğmesini etkinleştirir.
 
-Kullanıcı Şimdi Uygula düğmesini tıklattığında programınızın hangi eylemi yaptığını belirtmek için bu üye işlevini geçersiz kılın. Geçersiz kılınırken, işlev değişiklikleri kabul etmek için TRUE ve değişikliklerin etkili olmasını önlemek için FALSE döndürmelidir.
+Kullanıcı Şimdi Uygula düğmesine tıkladığında programınızın hangi eyleme uygulanacağını belirtmek için bu üye işlevi geçersiz kılın. Geçersiz kıldığınızda, değişikliklerin etkili olmasını engellemek için, işlevi değişiklikleri kabul etmek için TRUE, FALSE değerini döndürmelidir.
 
-Çağrıların `OnApply` `OnOK`varsayılan uygulaması.
+Çağrıların varsayılan uygulama `OnApply` `OnOK` .
 
-Kullanıcı bir özellik sayfasında Ki Şimdi Uygula veya Tamam düğmesine bastığında gönderilen bildirim iletileri hakkında daha fazla bilgi için Windows SDK'daki [PSN_APPLY](/windows/win32/Controls/psn-apply) bakın.
+Kullanıcı bir özellik sayfasında Şimdi Uygula veya Tamam düğmesine bastığında gönderilen bildirim iletileri hakkında daha fazla bilgi için Windows SDK [PSN_APPLY](/windows/win32/Controls/psn-apply) bakın.
 
 ### <a name="example"></a>Örnek
 
-  CPropertyPage örneğine [bakın::OnOK](#onok).
+  [CPropertyPage:: OnOK](#onok)örneğine bakın.
 
-## <a name="cpropertypageoncancel"></a><a name="oncancel"></a>CpropertyPage::OnCancel
+## <a name="cpropertypageoncancel"></a><a name="oncancel"></a> CPropertyPage:: OnCancel
 
-Bu üye işlev, İptal düğmesi seçildiğinde çerçeve tarafından çağrılır.
+Bu üye işlevi, Iptal düğmesi seçildiğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnCancel();
@@ -327,15 +328,15 @@ virtual void OnCancel();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İptal düğmesi eylemlerini gerçekleştirmek için bu üye işlevi geçersiz kılın. Varsayılan, yapılan değişiklikleri geçersiz kıldığı için.
+Iptal düğmesi eylemlerini gerçekleştirmek için bu üye işlevini geçersiz kılın. Varsayılan değer yapılan tüm değişiklikleri geçersiz kılar.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#114](../../mfc/codesnippet/cpp/cpropertypage-class_4.cpp)]
 
-## <a name="cpropertypageonkillactive"></a><a name="onkillactive"></a>CpropertyPage::OnKillActive
+## <a name="cpropertypageonkillactive"></a><a name="onkillactive"></a> CPropertyPage:: OnKillActive
 
-Bu üye işlev, sayfa artık etkin sayfa olmadığında çerçeve tarafından çağrılır.
+Bu üye işlevi, sayfa artık etkin sayfa olmadığında Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnKillActive();
@@ -343,23 +344,23 @@ virtual BOOL OnKillActive();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Veri başarıyla güncelleştirildiyse sıfır olmayan, aksi takdirde 0.
+Veriler başarıyla güncellendiyse sıfır dışında, 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel veri doğrulama görevleri gerçekleştirmek için bu üye işlevi geçersiz kılın.
+Özel veri doğrulama görevlerini gerçekleştirmek için bu üye işlevini geçersiz kılın.
 
-Bu üye işlevin varsayılan uygulaması, özellik sayfasındaki denetimlerden özellik sayfasının üye değişkenlerine kadar ayarları kopyalar. Bir iletişim veri doğrulama (DDV) hatası nedeniyle veriler başarıyla güncelleştirilmediyse, sayfa odağı korur.
+Bu üye işlevinin varsayılan uygulanması, özellik sayfasındaki denetimlerden ayarları özellik sayfasının üye değişkenlerine kopyalar. Bir iletişim kutusu veri doğrulama (DDV) hatası nedeniyle veriler başarıyla güncellenmemişse, sayfa odağı korur.
 
-Bu üye işlev başarıyla döndükten sonra, çerçeve sayfanın [OnOK](#onok) işlevini çağırır.
+Bu üye işlevi başarılı bir şekilde döndüğünde, çerçeve sayfanın [OnOK](#onok) işlevini çağırır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#115](../../mfc/codesnippet/cpp/cpropertypage-class_5.cpp)]
 
-## <a name="cpropertypageonok"></a><a name="onok"></a>CpropertyPage::OnOK
+## <a name="cpropertypageonok"></a><a name="onok"></a> CPropertyPage:: OnOK
 
-Bu üye işlev, kullanıcı Ok veya Şimdi Uygula düğmesini seçtiğinde, çerçeve [OnKillActive'i](#onkillactive)çağırdıktan hemen sonra çerçeve tarafından çağrılır.
+Bu üye işlevi, Kullanıcı, bir daha önce Tamam veya Şimdi Uygula düğmesini seçtiğinde çerçeve tarafından [çağrılır.](#onkillactive)
 
 ```
 virtual void OnOK();
@@ -367,19 +368,19 @@ virtual void OnOK();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı Tamam veya Şimdi Uygula düğmesini seçtiğinde, çerçeve özellik sayfasından [PSN_APPLY](/windows/win32/Controls/psn-apply) bildirimi alır. Özellik sayfası `OnOK` bu durumda bildirimi göndermediği için [CPropertySheet::PressButton'ı](../../mfc/reference/cpropertysheet-class.md#pressbutton) ararsanız çağrı yapılmaz.
+Kullanıcı Tamam veya Şimdi Uygula düğmesini seçtiğinde, çerçeve özellik sayfasından [PSN_APPLY](/windows/win32/Controls/psn-apply) bildirimini alır. `OnOK`Özellik sayfası bildirimi Bu durumda göndermediğinden [CPropertySheet::P ressButton](../../mfc/reference/cpropertysheet-class.md#pressbutton) öğesini çağırdığınızda çağrı yapılmaz.
 
-Kullanıcı tüm özellik sayfasını reddettiğinde, şu anda etkin olan sayfaya özgü ek davranış uygulamak için bu üye işlevini geçersiz kılın.
+Kullanıcı tüm özellik sayfasını devre dışı kılıyorsa, şu anda etkin olan sayfaya özgü ek davranışı uygulamak için bu üye işlevi geçersiz kılın.
 
-Bu üye işlevin varsayılan uygulaması, verilerin `OnKillActive` işlevde güncelleştirileni yansıtacak şekilde sayfayı "temiz" olarak işaretler.
+Bu üye işlevi için varsayılan uygulama, sayfada verinin güncelleştirildiğini yansıtmak için sayfayı "Temizle" olarak işaretler `OnKillActive` .
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#116](../../mfc/codesnippet/cpp/cpropertypage-class_6.cpp)]
 
-## <a name="cpropertypageonquerycancel"></a><a name="onquerycancel"></a>CpropertyPage::OnQueryCancel
+## <a name="cpropertypageonquerycancel"></a><a name="onquerycancel"></a> CPropertyPage:: OnQueryCancel
 
-Bu üye işlevi, kullanıcı İptal düğmesini tıklattığında ve iptal eylemi gerçekleşmeden önce çerçeve tarafından çağrılır.
+Bu üye işlevi, Kullanıcı Iptal düğmesine tıkladığında ve iptal etme eylemi gerçekleşmeden önce Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnQueryCancel();
@@ -387,21 +388,21 @@ virtual BOOL OnQueryCancel();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İptal işlemini önlemek için FALSE veya izin vermek için TRUE döndürür.
+İptal işlemini engellemek için FALSE, izin vermek için TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı İptal düğmesini tıklattığında programın aldığı bir eylemi belirtmek için bu üye işlevini geçersiz kılın.
+Kullanıcı Iptal düğmesine tıkladığında programın yapacağı bir eylem belirtmek için bu üye işlevi geçersiz kılın.
 
-True döndürür `OnQueryCancel` varsayılan uygulaması.
+Varsayılan uygulama, `OnQueryCancel` true döndürür.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#117](../../mfc/codesnippet/cpp/cpropertypage-class_7.cpp)]
 
-## <a name="cpropertypageonreset"></a><a name="onreset"></a>CPropertyPage::OnReset
+## <a name="cpropertypageonreset"></a><a name="onreset"></a> CPropertyPage:: OnReset
 
-Kullanıcı İptal düğmesini seçtiğinde bu üye işlev çerçeve tarafından çağrılır.
+Bu üye işlevi, Kullanıcı Iptal düğmesini seçtiğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnReset();
@@ -409,19 +410,19 @@ virtual void OnReset();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve bu işlevi aradığında, daha önce Şimdi Uygula düğmesini seçen kullanıcı tarafından yapılan tüm özellik sayfalarındayapılan değişiklikler atılır ve özellik sayfası odağı korur.
+Çerçeve bu işlevi çağırdığında, Kullanıcı tarafından daha önce Uygula düğmesinin seçilmesiyle yapılmış olan tüm özellik sayfalarındaki değişiklikler atılır ve özellik sayfası odağı korur.
 
-Kullanıcı İptal düğmesini tıklattığında programın hangi eylemi yaptığını belirtmek için bu üye işlevini geçersiz kılın.
+Kullanıcı Iptal düğmesine tıkladığında programın hangi eylemi aldığını belirtmek için bu üye işlevi geçersiz kılın.
 
-Varsayılan uygulama `OnReset` hiçbir şey yapmaz.
+Varsayılan uygulamasının `OnReset` hiçbir şey yapmaz.
 
 ### <a name="example"></a>Örnek
 
-  CPropertyPage örneğine [bakın::OnCancel](#oncancel).
+  [CPropertyPage:: OnCancel](#oncancel)örneğine bakın.
 
-## <a name="cpropertypageonsetactive"></a><a name="onsetactive"></a>Cpropertypage::Onsetactive
+## <a name="cpropertypageonsetactive"></a><a name="onsetactive"></a> CPropertyPage:: OnSetActive
 
-Bu üye işlev, sayfa kullanıcı tarafından seçildiğinde ve etkin sayfa olduğunda çerçeve tarafından çağrılır.
+Bu üye işlevi, sayfa Kullanıcı tarafından seçildiğinde çerçeve tarafından çağrılır ve etkin sayfa olur.
 
 ```
 virtual BOOL OnSetActive();
@@ -429,21 +430,21 @@ virtual BOOL OnSetActive();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sayfa başarıyla etkin olarak ayarlanmışsa sıfır olmayan; aksi takdirde 0.
+Sayfa başarıyla etkin ayarlandıysa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir sayfa etkinleştirildiğinde görevleri gerçekleştirmek için bu üye işlevi geçersiz kılın. Bu üye işlevin geçersiz kılınması, sayfa denetimlerini yeni verilerle güncelleştirmesine izin vermek için genellikle veri üyelerini güncelleştirmeden sonra varsayılan sürümü çağırır.
+Bir sayfa etkinleştirildiğinde görevleri gerçekleştirmek için bu üye işlevini geçersiz kılın. Bu üye işlevinin geçersiz kılınması, genellikle veri üyelerini güncelleştirdikten sonra varsayılan sürümü çağırır ve bu da sayfa denetimlerini yeni verilerle güncelleştirmesine izin verir.
 
-Varsayılan uygulama, daha önce oluşturulmamadıysa sayfa için pencere oluşturur ve onu etkin sayfa yapar.
+Varsayılan uygulama, daha önce oluşturulmadıysa sayfanın penceresini oluşturur ve etkin sayfa yapar.
 
 ### <a name="example"></a>Örnek
 
-  CPropertySheet örneğine [bakın:SetFinishText](../../mfc/reference/cpropertysheet-class.md#setfinishtext).
+  [CPropertySheet:: Setsonlandırhtext](../../mfc/reference/cpropertysheet-class.md#setfinishtext)örneğine bakın.
 
-## <a name="cpropertypageonwizardback"></a><a name="onwizardback"></a>CpropertyPage::OnWizardback
+## <a name="cpropertypageonwizardback"></a><a name="onwizardback"></a> CPropertyPage:: OnWizardBack
 
-Bu üye işlev, kullanıcı bir sihirbazda Geri Düğmesini tıklattığında çerçeve tarafından çağrılır.
+Bu üye işlevi, Kullanıcı bir sihirbazda geri düğmesine tıkladığında Framework tarafından çağırılır.
 
 ```
 virtual LRESULT OnWizardBack();
@@ -451,21 +452,21 @@ virtual LRESULT OnWizardBack();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-0 otomatik olarak bir sonraki sayfaya ilerlemek için; -1 sayfanın değişmesini önlemek için. Bir sonrakisayfadan başka bir sayfaya atlamak için, görüntülenecek iletişim kutusunun tanımlayıcısını döndürün.
+sonraki sayfaya otomatik olarak ilerlemek için 0; -1 sayfanın değiştirilmesini engellemek için. Bir sonraki bir sayfaya geçmek için, görüntülenecek iletişim kutusunun tanımlayıcısını döndürün.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geri düğmesine basıldığında kullanıcının yapması gereken bazı eylemlerbelirtmek için bu üye işlevini geçersiz kılın.
+Geri düğmesine basıldığında kullanıcının yapması gereken eylemi belirtmek için bu üye işlevi geçersiz kılın.
 
-Sihirbaz türünde bir özellik sayfasının nasıl yapılacağını hakkında daha fazla bilgi için [Bkz. CPropertySheet::SetWizardMode](../../mfc/reference/cpropertysheet-class.md#setwizardmode).
+Sihirbaz türü özellik sayfası oluşturma hakkında daha fazla bilgi için bkz. [CPropertySheet:: SetWizardMode](../../mfc/reference/cpropertysheet-class.md#setwizardmode).
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#118](../../mfc/codesnippet/cpp/cpropertypage-class_8.cpp)]
 
-## <a name="cpropertypageonwizardfinish"></a><a name="onwizardfinish"></a>CpropertyPage::OnwizardFinish
+## <a name="cpropertypageonwizardfinish"></a><a name="onwizardfinish"></a> CPropertyPage:: onwizardtamamlay
 
-Bu üye işlev, kullanıcı bir sihirbazda Finish düğmesini tıklattığında çerçeve tarafından çağrılır.
+Bu üye işlevi, Kullanıcı sihirbazın son düğmesine tıkladığında Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnWizardFinish();
@@ -473,17 +474,17 @@ virtual BOOL OnWizardFinish();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sihirbaz bittiğinde özellik sayfası yok edilirse sıfırolmayan; aksi takdirde sıfır.
+Sihirbaz tamamlandığında Özellik sayfası yok edildiğinde sıfır dışında; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir kullanıcı sihirbazda **Bitiş** düğmesini tıklattığında, çerçeve bu işlevi çağırır; TRUE `OnWizardFinish` (sıfır olmayan bir değer) döndürdüğünde, özellik sayfası yok edilebilir (ancak gerçekte yok edilmez). Mülkiyet `DestroyWindow` sayfasını yok etmek için arayın. `DestroyWindow` Aramayın; `OnWizardFinish` bunu yapmak yığın bozulmasına veya diğer hatalara neden olur.
+Bir Kullanıcı bir sihirbazda **son** düğmesine tıkladığında framework bu işlevi çağırır; `OnWizardFinish` true değerini döndürdüğünde (sıfır olmayan bir değer), özellik sayfası yok edilebilir (ancak aslında yok edilmez). `DestroyWindow`Özellik sayfasını yok etmek için çağırın. ' `DestroyWindow` Den çağırmayın `OnWizardFinish` ; bunu yapmak yığın bozulmasına veya diğer hatalara neden olur.
 
-Bitiş düğmesine basıldığında kullanıcının yapması gereken bazı eylemlerbelirtmek için bu üye işlevini geçersiz kılabilirsiniz. Bu işlevi geçersiz kılarak, özellik sayfasının yok olmasını önlemek için FALSE döndürün.
+Son düğmesine basıldığında kullanıcının yapması gereken eylemi belirtmek için bu üye işlevi geçersiz kılabilirsiniz. Bu işlevi geçersiz kıldığınızda, özellik sayfasının yok edilmesi için FALSE döndürün.
 
-Kullanıcı sihirbaz özellik sayfasında Kiİşleme düğmesine bastığında gönderilen bildirim iletileri hakkında daha fazla bilgi için Windows SDK'daki [PSN_WIZFINISH](/windows/win32/Controls/psn-wizfinish) bakın.
+Kullanıcı sihirbaz Özellik sayfasında son düğmesine bastığında gönderilen bildirim iletileri hakkında daha fazla bilgi için Windows SDK [PSN_WIZFINISH](/windows/win32/Controls/psn-wizfinish) bakın.
 
-Sihirbaz türünde bir özellik sayfasının nasıl yapılacağını hakkında daha fazla bilgi için [Bkz. CPropertySheet::SetWizardMode](../../mfc/reference/cpropertysheet-class.md#setwizardmode).
+Sihirbaz türü özellik sayfası oluşturma hakkında daha fazla bilgi için bkz. [CPropertySheet:: SetWizardMode](../../mfc/reference/cpropertysheet-class.md#setwizardmode).
 
 ### <a name="example"></a>Örnek
 
@@ -495,9 +496,9 @@ Sihirbaz türünde bir özellik sayfasının nasıl yapılacağını hakkında d
 
 [!code-cpp[NVC_MFCDocView#122](../../mfc/codesnippet/cpp/cpropertypage-class_12.cpp)]
 
-## <a name="cpropertypageonwizardnext"></a><a name="onwizardnext"></a>CpropertyPage::OnWizardNext
+## <a name="cpropertypageonwizardnext"></a><a name="onwizardnext"></a> CPropertyPage:: OnWizardNext
 
-Bu üye işlev, kullanıcı bir sihirbazda İleri düğmesini tıklattığında çerçeve tarafından çağrılır.
+Bu üye işlevi, Kullanıcı bir sihirbazda Ileri düğmesine tıkladığında Framework tarafından çağırılır.
 
 ```
 virtual LRESULT OnWizardNext();
@@ -505,21 +506,21 @@ virtual LRESULT OnWizardNext();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-0 otomatik olarak bir sonraki sayfaya ilerlemek için; -1 sayfanın değişmesini önlemek için. Bir sonrakisayfadan başka bir sayfaya atlamak için, görüntülenecek iletişim kutusunun tanımlayıcısını döndürün.
+sonraki sayfaya otomatik olarak ilerlemek için 0; -1 sayfanın değiştirilmesini engellemek için. Bir sonraki bir sayfaya geçmek için, görüntülenecek iletişim kutusunun tanımlayıcısını döndürün.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İleri düğmesine basıldığında kullanıcının yapması gereken bazı eylemlerbelirtmek için bu üye işlevini geçersiz kılın.
+Ileri düğmesine basıldığında kullanıcının yapması gereken eylemi belirtmek için bu üye işlevi geçersiz kılın.
 
-Sihirbaz türünde bir özellik sayfasının nasıl yapılacağını hakkında daha fazla bilgi için [Bkz. CPropertySheet::SetWizardMode](../../mfc/reference/cpropertysheet-class.md#setwizardmode).
+Sihirbaz türü özellik sayfası oluşturma hakkında daha fazla bilgi için bkz. [CPropertySheet:: SetWizardMode](../../mfc/reference/cpropertysheet-class.md#setwizardmode).
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#123](../../mfc/codesnippet/cpp/cpropertypage-class_13.cpp)]
 
-## <a name="cpropertypagequerysiblings"></a><a name="querysiblings"></a>CPropertyPage::QuerySiblings
+## <a name="cpropertypagequerysiblings"></a><a name="querysiblings"></a> CPropertyPage:: Queryeşdüzey 'lar
 
-Özellik sayfasındaki her sayfaya bir ileti iletmek için bu üye işlevini arayın.
+Özellik sayfasındaki her sayfaya bir ileti iletmek için bu üye işlevini çağırın.
 
 ```
 LRESULT QuerySiblings(
@@ -529,19 +530,19 @@ LRESULT QuerySiblings(
 
 ### <a name="parameters"></a>Parametreler
 
-*Wparam*<br/>
-İletiye bağımlı ek bilgileri belirtir.
+*wParam*<br/>
+İleti ile bağımlı ek bilgileri belirtir.
 
-*Lparam*<br/>
+*lParam*<br/>
 İletiye bağımlı ek bilgileri belirtir
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özellik sayfasındaki bir sayfadan sıfır olmayan değer veya tüm sayfalar 0 değeri döndürüyorsa 0.
+Özellik sayfasındaki bir sayfadan sıfır dışında bir değer veya tüm sayfalar 0 değerini döndürürse 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir sayfa sıfır olmayan bir değer döndürürse, özellik sayfası iletiyi sonraki sayfalara göndermez.
+Bir sayfa sıfır dışında bir değer döndürürse, özellik sayfası iletiyi sonraki sayfalara göndermez.
 
 ### <a name="example"></a>Örnek
 
@@ -551,9 +552,9 @@ Bir sayfa sıfır olmayan bir değer döndürürse, özellik sayfası iletiyi so
 
 [!code-cpp[NVC_MFCDocView#126](../../mfc/codesnippet/cpp/cpropertypage-class_16.cpp)]
 
-## <a name="cpropertypagesetmodified"></a><a name="setmodified"></a>CpropertyPage::Setmodi
+## <a name="cpropertypagesetmodified"></a><a name="setmodified"></a> CPropertyPage:: SetModified
 
-Özellik sayfasındaki ayarların uygun dış nesneye uygulanıp uygulanmayacağına bağlı olarak Şimdi Uygula düğmesini etkinleştirmek veya devre dışı etmek için bu üye işlevini arayın.
+Özellik sayfasındaki ayarların uygun dış nesneye uygulanıp uygulanamayacağını temel alarak Şimdi Uygula düğmesini etkinleştirmek veya devre dışı bırakmak için bu üye işlevi çağırın.
 
 ```cpp
 void SetModified(BOOL bChanged = TRUE);
@@ -561,12 +562,12 @@ void SetModified(BOOL bChanged = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*b Değiştirildi*<br/>
-Özellik sayfası ayarlarının son uygulandığından beri değiştirildiğini belirtmek için TRUE; Özellik sayfası ayarlarının uygulandığını veya yoksayılması gerektiğini belirtmek için FALSE.
+*bChanged*<br/>
+Özellik sayfası ayarlarının, son uygulanma zamanından bu yana değiştirildiğini belirtmek için TRUE; Özellik sayfası ayarlarının uygulandığını göstermek için FALSE veya yok sayılacak olmalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve, hangi sayfaların "kirli" olduğunu, yani sizin için `SetModified( TRUE )`çağırdığınız özellik sayfalarını izler. Sayfalardan birini ararsanız `SetModified( TRUE )` Şimdi Uygula düğmesi her zaman etkinleştirilir. Şimdi Uygula düğmesi, sayfalardan `SetModified( FALSE )` birini aradiğinizde, ancak diğer sayfaların hiçbiri "kirli" değilse devre dışı bırakılır.
+Framework hangi sayfaların "kirli,", yani hangi özellik sayfaları olduğunu izler `SetModified( TRUE )` . Sayfadan birini çağırırsanız, şimdi Uygula düğmesi her zaman etkinleştirilecek `SetModified( TRUE )` . `SetModified( FALSE )`Bir sayfadan birini çağırdığınızda, ancak yalnızca diğer sayfalardan hiçbiri "kirli" değilse, şimdi Uygula düğmesi devre dışı bırakılır.
 
 ### <a name="example"></a>Örnek
 
@@ -574,11 +575,11 @@ void SetModified(BOOL bChanged = TRUE);
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Numune CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
-[MFC Numune CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
-[MFC Örnek PROPDLG](../../overview/visual-cpp-samples.md)<br/>
-[MFC Örnek SNAPVW](../../overview/visual-cpp-samples.md)<br/>
-[CDialog Sınıfı](../../mfc/reference/cdialog-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CPropertySheet Sınıfı](../../mfc/reference/cpropertysheet-class.md)<br/>
-[CDialog Sınıfı](../../mfc/reference/cdialog-class.md)
+[MFC örnek CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek PROPDLG](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek SNAPVW](../../overview/visual-cpp-samples.md)<br/>
+[CDialog sınıfı](../../mfc/reference/cdialog-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CPropertySheet sınıfı](../../mfc/reference/cpropertysheet-class.md)<br/>
+[CDialog sınıfı](../../mfc/reference/cdialog-class.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: örnek çoklu Iş parçacığı C programı'
 title: Örnek Çoklu İş Parçacığı Kullanan C Programı
 ms.date: 08/09/2019
 ms.assetid: 4706f6cd-ff9c-4dbf-99a2-1c999b568f17
-ms.openlocfilehash: 355024b995dc638b89a335983bd2e0f2cb0d96ce
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: a46bd370a309a29c6877eacaea428ff9fc42902e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924765"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342341"
 ---
 # <a name="sample-multithread-c-program"></a>Örnek Çoklu İş Parçacığı Kullanan C Programı
 
@@ -21,9 +22,9 @@ Programlar varsayılan olarak çok iş parçacıklı olarak derlenir.
 
 ::: moniker range=">=msvc-160"
 
-1. **Dosya** menüsünde **Yeni** > **Proje** ' yi seçin.
+1. **Dosya** menüsünde **Yeni** > **Proje**' yi seçin.
 
-1. **Yeni proje oluştur** iletişim kutusunda **C++** , **Windows** ve **konsol** etiketlerine sahip **konsol uygulaması** şablonunu seçin. Devam etmek için **İleri** ’yi seçin.
+1. **Yeni proje oluştur** iletişim kutusunda **C++**, **Windows** ve **konsol** etiketlerine sahip **konsol uygulaması** şablonunu seçin. Devam etmek için **İleri**’yi seçin.
 
 1. **Yeni projenizi yapılandırın** iletişim kutusunda, projeniz Için "sıçrama" gibi bir ad girin. Devam etmek için **Oluştur** ' a tıklayın.
 
@@ -39,7 +40,7 @@ Programlar varsayılan olarak çok iş parçacıklı olarak derlenir.
 
 ::: moniker range="<=msvc-150"
 
-1. **Dosya** menüsünde **Yeni** > **Proje** ' yi seçin.
+1. **Dosya** menüsünde **Yeni** > **Proje**' yi seçin.
 
 1. **Yeni proje** iletişim kutusunda sol bölmedeki **Visual C++** ' ı seçin ve ardından orta bölmedeki **boş proje** ' yi seçin.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CStatic sınıfı'
 title: CStatic sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - CStatic [MFC], SetEnhMetaFile
 - CStatic [MFC], SetIcon
 ms.assetid: e7c94cd9-5ebd-428a-aa30-b3e51f8efb95
-ms.openlocfilehash: 1f6aac50b2143a4d5296baac906b1ebd0ef542f5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fa151382cc1342151e937662781a625739e82bd3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215965"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342666"
 ---
 # <a name="cstatic-class"></a>CStatic sınıfı
 
 Windows statik denetimi işlevlerini sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CStatic : public CWnd
@@ -92,7 +93,7 @@ Bir `CStatic` pencere içinde bir nesne oluşturursanız, bunu yok etmeniz de ge
 
 **Üstbilgi:** Afxwin. h
 
-## <a name="cstaticcreate"></a><a name="create"></a>CStatic:: Create
+## <a name="cstaticcreate"></a><a name="create"></a> CStatic:: Create
 
 Windows statik denetimini oluşturur ve `CStatic` nesneye ekler.
 
@@ -154,7 +155,7 @@ Statik denetimde bir bit eşlem, imleç, simge veya meta dosya görüntüleyecek
 
 [!code-cpp[NVC_MFC_CStatic#1](../../mfc/reference/codesnippet/cpp/cstatic-class_1.cpp)]
 
-## <a name="cstaticcstatic"></a><a name="cstatic"></a>CStatic:: CStatic
+## <a name="cstaticcstatic"></a><a name="cstatic"></a> CStatic:: CStatic
 
 Bir `CStatic` nesnesi oluşturur.
 
@@ -166,7 +167,7 @@ CStatic();
 
 [!code-cpp[NVC_MFC_CStatic#2](../../mfc/reference/codesnippet/cpp/cstatic-class_2.cpp)]
 
-## <a name="cstaticdrawitem"></a><a name="drawitem"></a>CStatic::D rawItem
+## <a name="cstaticdrawitem"></a><a name="drawitem"></a> CStatic::D rawItem
 
 Sahip tarafından çizilmiş bir statik denetim çizmek için Framework tarafından çağırılır.
 
@@ -183,7 +184,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 
 Sahip tarafından çizilmiş bir nesne için çizim uygulamak üzere bu işlevi geçersiz kılın `CStatic` (denetimin stili ss_ownerdraw).
 
-## <a name="cstaticgetbitmap"></a><a name="getbitmap"></a>CStatic:: GetBitmap
+## <a name="cstaticgetbitmap"></a><a name="getbitmap"></a> CStatic:: GetBitmap
 
 Daha önce ile ilişkili [SetBitmap](#setbitmap)ile ayarlanan bit eşlemin tanıtıcısını alır `CStatic` .
 
@@ -199,7 +200,7 @@ Geçerli bit eşlem için bir tanıtıcı veya bit eşlem ayarlanmamışsa NULL.
 
 [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]
 
-## <a name="cstaticgetcursor"></a><a name="getcursor"></a>CStatic:: GetCursor
+## <a name="cstaticgetcursor"></a><a name="getcursor"></a> CStatic:: GetCursor
 
 İle ilişkili olan, daha önce [SetCursor](#setcursor)ile ayarlanan imlecin tanıtıcısını alır `CStatic` .
 
@@ -215,7 +216,7 @@ Geçerli imlecin bir tutamacı veya imleç ayarlanmamışsa NULL.
 
 [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]
 
-## <a name="cstaticgetenhmetafile"></a><a name="getenhmetafile"></a>CStatic:: GetEnhMetaFile
+## <a name="cstaticgetenhmetafile"></a><a name="getenhmetafile"></a> CStatic:: GetEnhMetaFile
 
 İle ilişkili olan, daha önce [SetEnhMetaFile](#setenhmetafile)ile ayarlanmış olan gelişmiş meta dosyası tanıtıcısını alır `CStatic` .
 
@@ -231,7 +232,7 @@ Geçerli Gelişmiş Meta dosyası için bir tanıtıcı veya gelişmiş bir dosy
 
 [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]
 
-## <a name="cstaticgeticon"></a><a name="geticon"></a>CStatic:: GetIcon
+## <a name="cstaticgeticon"></a><a name="geticon"></a> CStatic:: GetIcon
 
 İle ilişkili olan, daha önce [setIcon](#seticon)ile ayarlanan simgenin tanıtıcısını alır `CStatic` .
 
@@ -247,7 +248,7 @@ Geçerli simgeye yönelik bir tanıtıcı veya hiçbir simge ayarlanmamışsa NU
 
 [!code-cpp[NVC_MFC_CStatic#6](../../mfc/reference/codesnippet/cpp/cstatic-class_6.cpp)]
 
-## <a name="cstaticsetbitmap"></a><a name="setbitmap"></a>CStatic:: SetBit eşlem
+## <a name="cstaticsetbitmap"></a><a name="setbitmap"></a> CStatic:: SetBit eşlem
 
 Statik denetimle yeni bir bit eşlem ilişkilendirir.
 
@@ -276,7 +277,7 @@ Aşağıdakiler de dahil olmak üzere çeşitli pencere ve statik denetim stille
 
 - MFC, `CBitmap` yalnızca Win32 işlevini çağırmak yerine bir bit eşlem görüntüsüyle daha fazla yapmanız gerektiğinde kullanabileceğiniz sınıfını sağlar `LoadBitmap` . `CBitmap`bir tür GDI nesnesi içeren, genellikle bir `CStatic` `CWnd` grafik nesnesini statik denetim olarak görüntülemek için kullanılan bir sınıf olan ile birlikte işlem içinde kullanılır.
 
-`CImage`, cihazdan bağımsız bit eşlemlerle (DIB) daha kolay çalışabilmenizi sağlayan bir ATL/MFC sınıfıdır. Daha fazla bilgi için bkz. [CImage sınıfı](../../atl-mfc-shared/reference/cimage-class.md).
+`CImage` , cihazdan bağımsız bit eşlemlerle (DIB) daha kolay çalışabilmenizi sağlayan bir ATL/MFC sınıfıdır. Daha fazla bilgi için bkz. [CImage sınıfı](../../atl-mfc-shared/reference/cimage-class.md).
 
 - Tipik kullanım, `CStatic::SetBitmap` bir veya NESNESININ HBıX operatörü tarafından döndürülen BIR GDI nesnesi vermektir `CBitmap` `CImage` . Bunu yapmak için kod aşağıdaki satıra benzer.
 
@@ -290,7 +291,7 @@ Aşağıdaki örnek `CStatic` yığında iki nesne oluşturur. Daha sonra bir do
 
 [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]
 
-## <a name="cstaticsetcursor"></a><a name="setcursor"></a>CStatic:: SetCursor
+## <a name="cstaticsetcursor"></a><a name="setcursor"></a> CStatic:: SetCursor
 
 Yeni bir imleç görüntüsünü statik denetimle ilişkilendirir.
 
@@ -321,7 +322,7 @@ Aşağıdakiler de dahil olmak üzere çeşitli pencere ve statik denetim stille
 
 [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]
 
-## <a name="cstaticsetenhmetafile"></a><a name="setenhmetafile"></a>CStatic:: SetEnhMetaFile
+## <a name="cstaticsetenhmetafile"></a><a name="setenhmetafile"></a> CStatic:: SetEnhMetaFile
 
 Yeni bir geliştirilmiş meta dosyası görüntüsünü statik denetimle ilişkilendirir.
 
@@ -350,7 +351,7 @@ Aşağıdakiler de dahil olmak üzere çeşitli pencere ve statik denetim stille
 
 [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]
 
-## <a name="cstaticseticon"></a><a name="seticon"></a>CStatic:: SetIcon
+## <a name="cstaticseticon"></a><a name="seticon"></a> CStatic:: SetIcon
 
 Yeni bir simge görüntüsünü statik denetimle ilişkilendirir.
 

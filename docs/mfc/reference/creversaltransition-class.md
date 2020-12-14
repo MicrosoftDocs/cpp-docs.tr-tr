@@ -1,5 +1,6 @@
 ---
-title: CReversalTransition Sınıf
+description: 'Daha fazla bilgi edinin: CReversalTransition sınıfı'
+title: CReversalTransition sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CReversalTransition
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - CReversalTransition [MFC], Create
 - CReversalTransition [MFC], m_duration
 ms.assetid: e89516be-2d07-4885-95a8-fc278f46e3ad
-ms.openlocfilehash: 73d12fb6bbaefcfac1437248ebe11f3a5c24c45b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f1d16562751e93ccf6df7ca3f70dac08bda8423d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368310"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343013"
 ---
-# <a name="creversaltransition-class"></a>CReversalTransition Sınıf
+# <a name="creversaltransition-class"></a>CReversalTransition sınıfı
 
-Ters geçişi kapsüller.
+Ters çevirme geçişini kapsüller.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CReversalTransition : public CBaseTransition;
@@ -33,29 +34,29 @@ class CReversalTransition : public CBaseTransition;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CreversalTransition::creversaltransition](#creversaltransition)|Ters geçiş nesnesi oluşturuyor ve süresini başharfe döndürer.|
+|[CReversalTransition:: CReversalTransition](#creversaltransition)|Ters çevirme geçiş nesnesi oluşturur ve süresini başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CReversalTransition::Create](#create)|Kapsüllü geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır. (CBaseTransition geçersiz [kılar::Oluştur](../../mfc/reference/cbasetransition-class.md#create).)|
+|[CReversalTransition:: Create](#create)|Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır. ( [CBaseTransition:: Create](../../mfc/reference/cbasetransition-class.md#create)geçersiz kılar.)|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CReversalTransition::m_duration](#m_duration)|Geçiş süresi.|
+|[CReversalTransition:: m_duration](#m_duration)|Geçişin süresi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tersine çevirme geçişi, belirli bir süre boyunca yönünü sorunsuz bir şekilde değiştirir. Son değer ilk değerle aynı olacak ve son hız ilk hızın negatifi olacaktır. Tüm geçişler otomatik olarak temizlenerek, operatör yeni kullanılarak ayrılması önerilir. Kapsüllü IUIAnimationTransition COM nesnesi CAnimationController tarafından oluşturulur::AnimateGroup, o zamana kadar NULL' s. Bu COM nesnesinin oluşturulduktan sonra üye değişkenleri değiştirmenin hiçbir etkisi yoktur.
+Ters çevirme geçişi belirli bir süre boyunca düzgün şekilde değişir. Son değer başlangıç değeri ile aynı olur ve nihai hız ilk hızın negatifi olacaktır. Tüm geçişler otomatik olarak temizlendiğinden, Yeni işleç kullanılarak ayrılmaları önerilir. Encapsulated IUIAnimationTransition COM nesnesi, NULL olana kadar CAnimationController:: AnimateGroup tarafından oluşturulur. Bu COM nesnesi oluşturulduktan sonra üye değişkenlerinin değiştirilmesinin etkisi olmaz.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 [CBaseTransition](../../mfc/reference/cbasetransition-class.md)
 
@@ -63,11 +64,11 @@ Tersine çevirme geçişi, belirli bir süre boyunca yönünü sorunsuz bir şek
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxanimationcontroller.h
+**Üstbilgi:** afxanimationcontroller. h
 
-## <a name="creversaltransitioncreate"></a><a name="create"></a>CReversalTransition::Create
+## <a name="creversaltransitioncreate"></a><a name="create"></a> CReversalTransition:: Create
 
-Kapsüllü geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır.
+Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır.
 
 ```
 virtual BOOL Create(
@@ -77,16 +78,16 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*pKütüphane*<br/>
-Standart geçişlerin oluşturulmasından sorumlu geçiş kitaplığı için bir işaretçi.
+*pLibrary*<br/>
+Standart geçişlerin oluşturulmasından sorumlu olan geçiş kitaplığı için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçiş başarıyla oluşturulursa DOĞRU; aksi takdirde YANLIŞ.
+Geçiş başarıyla oluşturulursa doğru; Aksi halde yanlış.
 
-## <a name="creversaltransitioncreversaltransition"></a><a name="creversaltransition"></a>CreversalTransition::creversaltransition
+## <a name="creversaltransitioncreversaltransition"></a><a name="creversaltransition"></a> CReversalTransition:: CReversalTransition
 
-Ters geçiş nesnesi oluşturuyor ve süresini başharfe döndürer.
+Ters çevirme geçiş nesnesi oluşturur ve süresini başlatır.
 
 ```
 CReversalTransition(UI_ANIMATION_SECONDS duration);
@@ -94,12 +95,12 @@ CReversalTransition(UI_ANIMATION_SECONDS duration);
 
 ### <a name="parameters"></a>Parametreler
 
-*Süre*<br/>
-Geçiş süresi.
+*süre*<br/>
+Geçişin süresi.
 
-## <a name="creversaltransitionm_duration"></a><a name="m_duration"></a>CReversalTransition::m_duration
+## <a name="creversaltransitionm_duration"></a><a name="m_duration"></a> CReversalTransition:: m_duration
 
-Geçiş süresi.
+Geçişin süresi.
 
 ```
 UI_ANIMATION_SECONDS m_duration;

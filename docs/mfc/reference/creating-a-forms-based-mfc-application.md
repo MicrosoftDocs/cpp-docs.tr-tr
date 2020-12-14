@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Forms-Based MFC uygulaması oluşturma'
 title: Form Tabanlı MFC Uygulaması Oluşturma
 ms.date: 09/09/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - applications [MFC], forms-based
 - forms-based applications [MFC]
 ms.assetid: 048d2f7d-b60d-4386-ad8e-71d49af9c05e
-ms.openlocfilehash: 1dbbc5c29f85ced846cb3e07a02a5d6a55c94b20
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: 2023f4f2c074ef1d0e3adf936cd4c31bd334b795
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70908052"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343244"
 ---
 # <a name="creating-a-forms-based-mfc-application"></a>Form Tabanlı MFC Uygulaması Oluşturma
 
@@ -28,11 +29,11 @@ SDI, MDI ve birden çok üst düzey belge uygulaması, tüm form tabanlıdır ve
 
 Tüm iletişim tabanlı uygulamalar, tanım temelinde Forms tabanlıdır. İletişim temelli bir uygulama belge/görünüm mimarisini kullanmaz, bu nedenle kendi ek formlarınız için oluşturma ve erişim yöntemlerini yönetmeniz gerekir.
 
-Form tabanlı uygulamalar için temel sınıf [CFormView](cformview-class.md)' dir. Uygulamanızda veritabanı desteği varsa, ' den `CFormView`türetilen tüm sınıfları da seçebilirsiniz. Form, öğesinden `CFormView`devralan herhangi bir sınıftan `CFormView` veya ondan türetilmiş herhangi bir penceredir.
+Form tabanlı uygulamalar için temel sınıf [CFormView](cformview-class.md)' dir. Uygulamanızda veritabanı desteği varsa, ' den türetilen tüm sınıfları da seçebilirsiniz `CFormView` . Form, öğesinden devralan herhangi bir sınıftan veya ondan türetilmiş herhangi bir penceredir `CFormView` `CFormView` .
 
-[CView](cview-class.md)gibi bir temel sınıf kullansanız bile, daha sonra uygulamalarınızdan TÜRETILMIŞ `CFormView` [bir MFC sınıfı ekleyerek](adding-an-mfc-class.md) uygulamalarınızı Forms tabanlı hale getirebilirsiniz.
+[CView](cview-class.md)gibi bir temel sınıf kullansanız bile, daha sonra uygulamalarınızdan TÜRETILMIŞ [bir MFC sınıfı ekleyerek](adding-an-mfc-class.md) uygulamalarınızı Forms tabanlı hale getirebilirsiniz `CFormView` .
 
-Sihirbazla tamamladıktan sonra projeniz açılır ve temel sınıfınız olarak (veya öğesinden `CFormView` `CFormView`devralan bir sınıf) seçtiyseniz veya iletişim kutusu tabanlı bir uygulama oluşturduysanız, görsel C++ iletişim kutusu düzenleyicisini açar. Bu noktada, ilk formunuzu tasarlamaya hazırlanın.
+Sihirbazla tamamladıktan sonra projeniz açılır ve `CFormView` temel sınıfınız olarak (veya öğesinden devralan bir sınıf `CFormView` ) seçtiyseniz veya iletişim kutusu tabanlı bir uygulama oluşturduysanız, iletişim kutusu düzenleyicisini açar Visual C++. Bu noktada, ilk formunuzu tasarlamaya hazırlanın.
 
 ### <a name="to-begin-creating-a-forms-based-mfc-executable"></a>Form tabanlı MFC çalıştırılabilir dosyası oluşturmaya başlamak için
 
@@ -40,26 +41,26 @@ Sihirbazla tamamladıktan sonra projeniz açılır ve temel sınıfınız olarak
 
 1. MFC Uygulama Sihirbazı [uygulama türü](application-type-mfc-application-wizard.md) sayfasında **belge/görünüm mimari desteği** onay kutusunu seçin.
 
-1. **Tek belge**, **birden çok belge**veya **birden çok üst düzey belge**seçin.
+1. **Tek belge**, **birden çok belge** veya **birden çok üst düzey belge** seçin.
 
     > [!NOTE]
-    >  Bir SDI, MDI veya birden çok üst düzey belge arabirimi uygulaması seçerseniz, varsayılan olarak, `CView` sihirbazın [oluşturulan sınıflar](generated-classes-mfc-application-wizard.md) sayfasında uygulamanızın görünümü için temel sınıf olarak ayarlanır. Form tabanlı bir uygulama oluşturmak için, uygulamanın görünümü için temel `CFormView` sınıf olarak öğesini seçmeniz gerekir. Sihirbazın form tabanlı bir uygulama için yazdırma desteği sunmadığını unutmayın.
+    >  Bir SDI, MDI veya birden çok üst düzey belge arabirimi uygulaması seçerseniz, varsayılan olarak, `CView` sihirbazın [oluşturulan sınıflar](generated-classes-mfc-application-wizard.md) sayfasında uygulamanızın görünümü için temel sınıf olarak ayarlanır. Form tabanlı bir uygulama oluşturmak için, `CFormView` uygulamanın görünümü için temel sınıf olarak öğesini seçmeniz gerekir. Sihirbazın form tabanlı bir uygulama için yazdırma desteği sunmadığını unutmayın.
 
 1. Sihirbazın diğer sayfalarında istediğiniz diğer proje seçeneklerini ayarlayın.
 
 1. İskelet uygulamasını oluşturmak için **son** ' a tıklayın.
 
-Daha fazla bilgi için bkz.:
+Daha fazla bilgi için bkz:
 
 - [Türetilmiş Görünüm sınıfları](../derived-view-classes-available-in-mfc.md)
 
 - [Belge/görünüm mimarisi alternatifleri](../alternatives-to-the-document-view-architecture.md)
 
-- [Uygulama Tasarımı Seçimleri](../application-design-choices.md)
+- [Uygulama tasarımı seçimleri](../application-design-choices.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Uygulama Sihirbazı](mfc-application-wizard.md)<br/>
 [Form görünümleri](../form-views-mfc.md)<br/>
-[Dosya Gezgini Stilinde MFC Uygulaması Oluşturma](creating-a-file-explorer-style-mfc-application.md)<br/>
-[Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma](creating-a-web-browser-style-mfc-application.md)
+[MFC uygulaması Explorer-Style dosya oluşturma](creating-a-file-explorer-style-mfc-application.md)<br/>
+[Web Browser-Style MFC uygulaması oluşturma](creating-a-web-browser-style-mfc-application.md)

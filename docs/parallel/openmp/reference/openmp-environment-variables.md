@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: OpenMP Ortam değişkenleri'
 title: OpenMP Ortam Değişkenleri
 ms.date: 03/20/2019
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - OMP_NUM_THREADS OpenMP environment variable
 - OMP_SCHEDULE OpenMP environment variable
 ms.assetid: 2178ce2b-ffa1-45ec-a455-64437711d15d
-ms.openlocfilehash: 3f9117c531bdf0c5a0c94e0b18a055591f431036
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 58ca563033906f4e5e7e9d59089dc463396aa91c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503748"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342393"
 ---
 # <a name="openmp-environment-variables"></a>OpenMP Ortam Değişkenleri
 
