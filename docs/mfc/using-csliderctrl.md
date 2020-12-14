@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: CSliderCtrl kullanma'
 title: CSliderCtrl Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CSliderCtrl class [MFC], using
 - slider controls [MFC], using
 ms.assetid: 242c7bcd-126e-4b9b-8f76-8082ad06fe73
-ms.openlocfilehash: 5fb26bc981630b59a918acf5bb81b9f3fdb4620a
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 79d2736d6b0dc09ae8aaa68f01387125fbec1e4b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441793"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202398"
 ---
 # <a name="using-csliderctrl"></a>CSliderCtrl Kullanma
 
@@ -22,13 +23,13 @@ Kaydırıcı denetimindeki kaydırıcı, oluştururken belirttiğiniz artışlar
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Kaydırıcı Denetimlerini Kullanma](../mfc/using-slider-controls.md)
+- [Kaydırıcı denetimlerini kullanma](../mfc/using-slider-controls.md)
 
-- [Kaydırıcı Denetim Stilleri](../mfc/slider-control-styles.md)
+- [Kaydırıcı denetim stilleri](../mfc/slider-control-styles.md)
 
-- [Kaydırıcı Denetimi Üye İşlevleri](../mfc/slider-control-member-functions.md)
+- [Kaydırıcı denetimi üye Işlevleri](../mfc/slider-control-member-functions.md)
 
-- [Kaydırıcı Bildirim İletileri](../mfc/slider-notification-messages.md)
+- [Kaydırıcı bildirim Iletileri](../mfc/slider-notification-messages.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

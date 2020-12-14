@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Iletişim kutusunda ortak denetimleri kullanma'
 title: İletişim Kutusunda Ortak Denetimleri Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - dialog box controls [MFC], common controls
 - Windows common controls [MFC], in dialog boxes
 ms.assetid: 17713caf-09f8-484a-bf54-5f48bf09cce9
-ms.openlocfilehash: 1a3dcb7151952b52affcfeb838ced15f0d116fce
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 73395ae5b3542f338f3783fd5f0c41116821fed6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500343"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202411"
 ---
 # <a name="using-common-controls-in-a-dialog-box"></a>İletişim Kutusunda Ortak Denetimleri Kullanma
 
@@ -23,7 +24,7 @@ Windows ortak denetimleri [iletişim kutularında](../mfc/dialog-boxes.md), form
 
 1. İletişim [kutusu düzenleyicisini kullanarak](../mfc/using-the-dialog-editor-to-add-controls.md)denetimi iletişim şablonuna yerleştirin.
 
-1. İletişim kutusu sınıfına, denetimi temsil eden bir üye değişkeni ekleyin. **Üye değişkeni Ekle** Iletişim kutusunda **Denetim değişkenini** denetleyin ve **Kategori**için **denetimin** seçili olduğundan emin olun.
+1. İletişim kutusu sınıfına, denetimi temsil eden bir üye değişkeni ekleyin. **Üye değişkeni Ekle** Iletişim kutusunda **Denetim değişkenini** denetleyin ve **Kategori** için **denetimin** seçili olduğundan emin olun.
 
 1. Bu ortak denetim programa giriş sağladıysanız, bu giriş değerlerini işlemek için diyalog sınıfında ek üye değişkenleri bildirin.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: missing_wait sınıfı'
 title: missing_wait Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - missing_wait class
 ms.assetid: ff981875-bd43-47e3-806f-b03c9f418b18
-ms.openlocfilehash: cf81d1ee6c144da210da5b1f37aca7910ae37bc8
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: bfbfdf4c2a52573d08c048bac278386aed1dc5a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142384"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202190"
 ---
 # <a name="missing_wait-class"></a>missing_wait Sınıfı
 
-Bu sınıf, nesnenin yıkıcının yürütüldüğü sırada bir `task_group` veya `structured_task_group` nesnesine hala zamanlanan görevler olduğunda oluşturulan bir özel durumu açıklar. Bu özel durum, bir özel durumun sonucu olarak bir yığın geri sarma işlemi nedeniyle yok edici olursa hiçbir durum oluşturulmaz.
+Bu sınıf `task_group` `structured_task_group` , nesnenin yıkıcının yürütüldüğü sırada bir veya nesnesine hala zamanlanan görevler olduğunda oluşturulan bir özel durumu açıklar. Bu özel durum, bir özel durumun sonucu olarak bir yığın geri sarma işlemi nedeniyle yok edici olursa hiçbir durum oluşturulmaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class missing_wait : public std::exception;
@@ -31,11 +32,11 @@ class missing_wait : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[missing_wait](#ctor)|Fazla Yüklendi. `missing_wait` nesnesi oluşturur.|
+|[missing_wait](#ctor)|Fazla Yüklendi. Bir `missing_wait` nesnesi oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Özel durum akışı yok, bu nesnenin Destruct 'a izin vermeden önce bir `task_group` veya `structured_task_group` nesnesinin `wait` ya da `run_and_wait` yöntemini çağırmak sizin sorumluluğunuzdadır. Çalışma zamanı, `wait` veya `run_and_wait` yöntemini çağırmayı unuttuistediğinizi belirten bir gösterge olarak bu özel durumu oluşturur.
+Özel durum akışı yok, `wait` `run_and_wait` `task_group` `structured_task_group` Bu nesnenin Destruct kullanmasına izin vermeden önce bir veya nesnesinin ya da yöntemini çağırmak sizin sorumluluğunuzdadır. Çalışma zamanı, veya yöntemini çağırmayı unuttubir gösterge olarak bu özel durumu `wait` oluşturur `run_and_wait` .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -49,9 +50,9 @@ class missing_wait : public std::exception;
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="ctor"></a>missing_wait
+## <a name="missing_wait"></a><a name="ctor"></a> missing_wait
 
-`missing_wait` nesnesi oluşturur.
+Bir `missing_wait` nesnesi oluşturur.
 
 ```cpp
 explicit _CRTIMP missing_wait(_In_z_ const char* _Message) throw();
@@ -66,8 +67,8 @@ Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-[task_group Sınıfı](task-group-class.md)<br/>
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
+[task_group sınıfı](task-group-class.md)<br/>
 [bekleneceğini](task-group-class.md)<br/>
 [run_and_wait](task-group-class.md)<br/>
-[structured_task_group Sınıfı](structured-task-group-class.md)
+[structured_task_group sınıfı](structured-task-group-class.md)

@@ -1,5 +1,6 @@
 ---
-title: C++Özellik sayfalarında hata ayıklama
+description: 'Hakkında daha fazla bilgi edinin: C++ hata ayıklama özellik sayfaları'
+title: C++ hata ayıklama özellik sayfaları
 ms.date: 07/24/2019
 ms.topic: article
 ms.assetid: 78115a6b-3799-4515-814e-8566b5bdc55d
@@ -35,16 +36,16 @@ f1_keywords:
 - VC.Project.IVCWebSvcDebugPageObject.HttpUrl
 - VC.Project.IVCWebSvcDebugPageObject.DebuggerType
 - VC.Project.IVCWebSvcDebugPageObject.SQLDebugging
-ms.openlocfilehash: c2190c4406e165cfec1915234b688c598f228777
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 16a7fec317485dd20a430baab9a413586f913fa3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169714"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201748"
 ---
-# <a name="c-debugging-property-pages"></a>C++Özellik sayfalarında hata ayıklama
+# <a name="c-debugging-property-pages"></a>C++ hata ayıklama özellik sayfaları
 
-Bu özellik sayfaları, **hata ayıklama** > **yapılandırma özellikleri** > **Proje** > **özellikleri** altında bulunur. Açılan denetimde hata ayıklayıcı türünü seçin. Hata ayıklama C++ kodu hakkında daha fazla bilgi için bkz. [öğretici: Visual C++ Studio kullanarak kod hata ayıklamayı öğrenin](/visualstudio/debugger/getting-started-with-the-debugger-cpp) ve [yerel kod hatalarını](/visualstudio/debugger/debugging-native-code)ayıklayın.
+Bu özellik sayfaları **Proje**  >  **özellikleri**  >  **yapılandırma özellikleri**  >  **hata ayıklama** altında bulunur. Açılan denetimde hata ayıklayıcı türünü seçin. C++ kodunda hata ayıklama hakkında daha fazla bilgi için bkz. [öğretici: Visual Studio kullanarak C++ kodunun hatalarını](/visualstudio/debugger/getting-started-with-the-debugger-cpp) [ayıklamayı ve yerel kod hatalarını ayıklamayı](/visualstudio/debugger/debugging-native-code)öğrenin.
 
 ## <a name="local-windows-debugger-property-page"></a>Yerel Windows hata ayıklayıcısı Özellik sayfası
 
@@ -56,7 +57,7 @@ Yürütülecek hata ayıklama komutu.
 
 Uygulamaya geçirilecek komut satırı bağımsız değişkenleri.
 
-### <a name="working-directory"></a>Çalışma Dizini
+### <a name="working-directory"></a>Çalışma dizini
 
 Uygulamanın çalışma dizini. Varsayılan olarak, proje dosyasını içeren dizin.
 
@@ -68,14 +69,14 @@ Hata ayıklama başladığında hata ayıklayıcının varolan bir işleme iliş
 
 Kullanılacak hata ayıklayıcı türünü belirtir. Auto olarak ayarlandığında, hata ayıklayıcı türü exe dosyasının içeriğine göre seçilir.
 
-**Yapabileceği**
+**Seçenekler**
 
 - Yalnızca **Yerel** -yerel
 - Yalnızca **yönetilen** -yönetilen
 - **Karma** karışık
 - **Otomatik** otomatik
 - **Betik** betiği
-- **Yalnızca GPU (C++ amp)** -yalnızca GPU (C++ amp)
+- **Yalnızca GPU (C++ amp)** -yalnızca gpu (C++ amp)
 
 ### <a name="environment"></a>Ortam
 
@@ -89,7 +90,7 @@ GPU kodunda hata ayıklamak için kullanılacak hata ayıklama Hızlandırıcı 
 
 GPU hata ayıklayıcının ne sıklıkta bölüneceğini ayarlar.
 
-**Yapabileceği**
+**Seçenekler**
 
 - Çarpıt başına her çarpıtma için **bir kez kes**
 - Her iş parçacığı için **Kes (CPU davranışı gibi)** -her iş parçacığı için kesme (CPU davranışı gibi)
@@ -104,11 +105,11 @@ SQL hata ayıklayıcısını iliştirin.
 
 ### <a name="amp-default-accelerator"></a>Amp varsayılan Hızlandırıcı
 
-AMP C++ varsayılan Hızlandırıcı seçimini geçersiz kılar. Yönetilen kodda hata ayıklanırken Özellik uygulanmaz.
+C++ AMP varsayılan Hızlandırıcı seçimini geçersiz kılın. Yönetilen kodda hata ayıklanırken Özellik uygulanmaz.
 
 ## <a name="remote-windows-debugger-property-page"></a>Uzak Windows hata ayıklayıcısı Özellik sayfası
 
-Uzaktan hata ayıklama hakkında daha fazla bilgi için bkz. [Visual Studio C++ 'da bir Visual projesinde uzaktan hata ayıklama](/visualstudio/debugger/remote-debugging-cpp).
+Uzaktan hata ayıklama hakkında daha fazla bilgi için bkz. [Visual Studio 'da Visual C++ projesindeki uzaktan hata ayıklama](/visualstudio/debugger/remote-debugging-cpp).
 
 ### <a name="remote-command"></a>Uzak komut
 
@@ -118,7 +119,7 @@ Yürütülecek hata ayıklama komutu.
 
 Uygulamaya geçirilecek komut satırı bağımsız değişkenleri.
 
-### <a name="working-directory"></a>Çalışma Dizini
+### <a name="working-directory"></a>Çalışma dizini
 
 Uygulamanın çalışma dizini. Varsayılan olarak, proje dosyasını içeren dizin.
 
@@ -130,7 +131,7 @@ Uzak sunucu adını belirtir.
 
 Bağlantı türünü belirtir.
 
-**Yapabileceği**
+**Seçenekler**
 
 - Windows [kimlik doğrulaması ile](/windows-server/security/windows-authentication/windows-authentication-overview)uzaktan **Windows kimlik doğrulaması ile** uzaktan.
 - Kimlik doğrulaması olmadan uzak uzaktan **kimlik doğrulaması yok** .
@@ -139,14 +140,14 @@ Bağlantı türünü belirtir.
 
 Kullanılacak hata ayıklayıcı türünü belirtir. Auto olarak ayarlandığında, hata ayıklayıcı türü exe dosyasının içeriğine göre seçilir.
 
-**Yapabileceği**
+**Seçenekler**
 
 - Yalnızca **Yerel** -yerel
 - Yalnızca **yönetilen** -yönetilen
 - **Karma** karışık
 - **Otomatik** otomatik
 - **Betik** betiği
-- **Yalnızca GPU (C++ amp)** -yalnızca GPU (C++ amp)
+- **Yalnızca GPU (C++ amp)** -yalnızca gpu (C++ amp)
 
 ### <a name="environment"></a>Ortam
 
@@ -160,7 +161,7 @@ GPU kodunda hata ayıklamak için kullanılacak hata ayıklama Hızlandırıcı 
 
 GPU hata ayıklayıcının ne sıklıkta bölüneceğini ayarlar.
 
-**Yapabileceği**
+**Seçenekler**
 
 - Çarpıt başına her çarpıtma için **bir kez kes**
 - Her iş parçacığı için **Kes (CPU davranışı gibi)** -her iş parçacığı için kesme (CPU davranışı gibi)
@@ -187,7 +188,7 @@ Etkin platform (Win32, x64 veya ARM) için hata ayıklama çalışma zamanı kit
 
 ### <a name="amp-default-accelerator"></a>Amp varsayılan Hızlandırıcı
 
-AMP C++ varsayılan Hızlandırıcı seçimini geçersiz kılar. Yönetilen kodda hata ayıklanırken Özellik uygulanmaz.
+C++ AMP varsayılan Hızlandırıcı seçimini geçersiz kılın. Yönetilen kodda hata ayıklanırken Özellik uygulanmaz.
 
 ## <a name="web-browser-debugger-property-page"></a>Web tarayıcısı hata ayıklayıcısı Özellik sayfası
 
@@ -199,7 +200,7 @@ Projenin URL 'sini belirtir.
 
 Kullanılacak hata ayıklayıcı türünü belirtir. Auto olarak ayarlandığında, hata ayıklayıcı türü exe dosyasının içeriğine göre seçilir.
 
-**Yapabileceği**
+**Seçenekler**
 
 - Yalnızca **Yerel** -yerel
 - Yalnızca **yönetilen** -yönetilen
@@ -217,7 +218,7 @@ Projenin URL 'sini belirtir.
 
 Kullanılacak hata ayıklayıcı türünü belirtir. Auto olarak ayarlandığında, hata ayıklayıcı türü exe dosyasının içeriğine göre seçilir.
 
-**Yapabileceği**
+**Seçenekler**
 
 - Yalnızca **Yerel** -yerel
 - Yalnızca **yönetilen** -yönetilen

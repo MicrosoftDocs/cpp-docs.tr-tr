@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: multitype_join sınıfı'
 title: multitype_join Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,18 +18,18 @@ f1_keywords:
 helpviewer_keywords:
 - multitype_join class
 ms.assetid: 236e87a0-4867-49fd-869a-bef4010e49a7
-ms.openlocfilehash: c648e77e404cf39eab281a93e03d8b427da375f8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ee4e3a282bc9fa410140fefb79f31ac5ed9463ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87205866"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202125"
 ---
 # <a name="multitype_join-class"></a>multitype_join Sınıfı
 
 `multitype_join`Mesajlaşma bloğu, kaynaklarından her birinin farklı türlerindeki iletileri birleştiren ve hedeflerine Birleşik iletilerin bir listesini sunan çok kaynaklı, tek hedef mesajlaşma bloğudur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<
@@ -91,7 +92,7 @@ Daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../../parallel/co
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="accept"></a><a name="accept"></a>ettiğinizde
+## <a name="accept"></a><a name="accept"></a> ettiğinizde
 
 Bu blok tarafından sunulan `multitype_join` ve sahipliği çağırana aktaran bir iletiyi kabul eder.
 
@@ -113,7 +114,7 @@ Yöntemi çağıran hedef bloğa yönelik bir işaretçi `accept` .
 
 Çağıranın artık sahipliği olan iletinin bir işaretçisi.
 
-## <a name="acquire_ref"></a><a name="acquire_ref"></a>acquire_ref
+## <a name="acquire_ref"></a><a name="acquire_ref"></a> acquire_ref
 
 `multitype_join`Silmeyi engellemek için bu mesajlaşma bloğunda bir başvuru sayısı alır.
 
@@ -130,7 +131,7 @@ Bu yöntemi çağıran hedef bloğa yönelik bir işaretçi.
 
 Bu yöntem `ITarget` , yöntemi sırasında bu kaynağa bağlanan bir nesne tarafından çağırılır `link_target` .
 
-## <a name="consume"></a><a name="consume"></a>kullanan
+## <a name="consume"></a><a name="consume"></a> kullanan
 
 İleti bloğu tarafından daha önce sunulan `multitype_join` ve hedefi tarafından başarıyla ayrılmış olan bir iletiyi tüketir ve sahipliği çağırana aktarmıştır.
 
@@ -156,7 +157,7 @@ Yöntemi çağıran hedef bloğa yönelik bir işaretçi `consume` .
 
 `consume`Yöntemi öğesine benzerdir `accept` , ancak her zaman döndürülen bir çağrı gelmelidir `reserve` **`true`** .
 
-## <a name="link_target"></a><a name="link_target"></a>link_target
+## <a name="link_target"></a><a name="link_target"></a> link_target
 
 Bu mesajlaşma bloğuna bir hedef bloğu bağlar `multitype_join` .
 
@@ -169,7 +170,7 @@ virtual void link_target(_Inout_ ITarget<_Destination_type>* _PTarget);
 *_PTarget*<br/>
 `ITarget`Bu mesajlaşma bloğuna bağlanacak bloğa yönelik bir işaretçi `multitype_join` .
 
-## <a name="multitype_join"></a><a name="ctor"></a>multitype_join
+## <a name="multitype_join"></a><a name="ctor"></a> multitype_join
 
 `multitype_join`İleti bloğu oluşturur.
 
@@ -209,7 +210,7 @@ Veya parametrelerini belirtmezseniz, çalışma zamanı varsayılan zamanlayıc�
 
 Taşıma işlemi bir kilit altında gerçekleştirilmez, bu, taşıma sırasında uçuş kapsamında hiçbir hafif görev olmadığından emin olmak için kullanıcıya ait olduğu anlamına gelir. Aksi takdirde, çok sayıda özel durum ortaya çıkabilir, bu durum istisnalara veya tutarsız duruma gelebilir.
 
-## <a name="multitype_join"></a><a name="dtor"></a>~ multitype_join
+## <a name="multitype_join"></a><a name="dtor"></a> ~ multitype_join
 
 `multitype_join`Mesajlaşma bloğunu yok eder.
 
@@ -217,7 +218,7 @@ Taşıma işlemi bir kilit altında gerçekleştirilmez, bu, taşıma sırasınd
 ~multitype_join();
 ```
 
-## <a name="release"></a><a name="release"></a>Yayın
+## <a name="release"></a><a name="release"></a> Yayın
 
 Önceki başarılı bir ileti ayırmasını serbest bırakır.
 
@@ -235,7 +236,7 @@ virtual void release(
 *_PTarget*<br/>
 Yöntemi çağıran hedef bloğa yönelik bir işaretçi `release` .
 
-## <a name="release_ref"></a><a name="release_ref"></a>release_ref
+## <a name="release_ref"></a><a name="release_ref"></a> release_ref
 
 Bu mesajlaşma bloğunda bir başvuru sayısı yayınlar `multiple_join` .
 
@@ -252,7 +253,7 @@ Bu yöntemi çağıran hedef bloğa yönelik bir işaretçi.
 
 Bu yöntem, `ITarget` Bu kaynaktan bağlantısı kesilmekte olan bir nesne tarafından çağırılır. Kaynak bloğunun hedef blok için ayrılan kaynakları serbest bırakmaya izin verilir.
 
-## <a name="reserve"></a><a name="reserve"></a>ayırmaya
+## <a name="reserve"></a><a name="reserve"></a> ayırmaya
 
 Bu mesajlaşma bloğu tarafından daha önce sunulan bir iletiyi ayırır `multitype_join` .
 
@@ -278,7 +279,7 @@ Yöntemi çağıran hedef bloğa yönelik bir işaretçi `reserve` .
 
 Öğesini çağırdıktan sonra, başarılı olursa, `reserve` `consume` `release` sırasıyla iletinin sahipliğini almak veya vermek için ya da ' i çağırmanız gerekir.
 
-## <a name="unlink_target"></a><a name="unlink_target"></a>unlink_target
+## <a name="unlink_target"></a><a name="unlink_target"></a> unlink_target
 
 Bu mesajlaşma bloğundan bir hedef bloğunun bağlantısını kaldırır `multitype_join` .
 
@@ -291,7 +292,7 @@ virtual void unlink_target(_Inout_ ITarget<_Destination_type>* _PTarget);
 *_PTarget*<br/>
 `ITarget`Bu mesajlaşma bloğunun bağlantısını kaldırmak için bir blok işaretçisi `multitype_join` .
 
-## <a name="unlink_targets"></a><a name="unlink_targets"></a>unlink_targets
+## <a name="unlink_targets"></a><a name="unlink_targets"></a> unlink_targets
 
 Bu mesajlaşma bloğundan tüm hedeflerin bağlantısını kaldırır `multitype_join` .
 

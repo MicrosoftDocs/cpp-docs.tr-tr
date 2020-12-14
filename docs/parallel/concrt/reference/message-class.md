@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ileti sınıfı'
 title: message Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - message class
 ms.assetid: 3e1f3505-6c0c-486c-8191-666d0880ec62
-ms.openlocfilehash: 700d052b6f22c970387a3ab45d299538a5b74e1b
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 0e15dafd9606e68f7a6ed1bed3795791c0f6870c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77139535"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202320"
 ---
 # <a name="message-class"></a>message Sınıfı
 
@@ -32,7 +33,7 @@ class message : public ::Concurrency::details::_Runtime_object;
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
+*T*<br/>
 İleti içindeki yükün veri türü.
 
 ## <a name="members"></a>Üyeler
@@ -41,28 +42,28 @@ class message : public ::Concurrency::details::_Runtime_object;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`type`|`T`için bir tür diğer adı.|
+|`type`|İçin bir tür diğer adı `T` .|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[message](#ctor)|Fazla Yüklendi. `message` nesnesi oluşturur.|
-|[~ ileti yok edicisi](#dtor)|`message` nesnesini yok eder.|
+|[İleti](#ctor)|Fazla Yüklendi. Bir `message` nesnesi oluşturur.|
+|[~ ileti yok edicisi](#dtor)|Nesneyi yok eder `message` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[add_ref](#add_ref)|`message` nesne için başvuru sayısına ekler. İleti ömrünü belirlemede başvuru saymayı gerektiren ileti blokları için kullanılır.|
-|[msg_id](#msg_id)|`message` nesnesinin KIMLIĞINI döndürür.|
-|[remove_ref](#remove_ref)|`message` nesne için başvuru sayısından çıkartır. İleti ömrünü belirlemede başvuru saymayı gerektiren ileti blokları için kullanılır.|
+|[add_ref](#add_ref)|Nesnenin başvuru sayısına ekler `message` . İleti ömrünü belirlemede başvuru saymayı gerektiren ileti blokları için kullanılır.|
+|[msg_id](#msg_id)|Nesnenin KIMLIĞINI döndürür `message` .|
+|[remove_ref](#remove_ref)|Nesnenin başvuru sayısından çıkartır `message` . İleti ömrünü belirlemede başvuru saymayı gerektiren ileti blokları için kullanılır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[te](#payload)|`message` nesnesinin yükü.|
+|[yük](#payload)|`message`Nesnesinin yükü.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -78,9 +79,9 @@ Daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../../parallel/co
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="add_ref"></a>add_ref
+## <a name="add_ref"></a><a name="add_ref"></a> add_ref
 
-`message` nesne için başvuru sayısına ekler. İleti ömrünü belirlemede başvuru saymayı gerektiren ileti blokları için kullanılır.
+Nesnenin başvuru sayısına ekler `message` . İleti ömrünü belirlemede başvuru saymayı gerektiren ileti blokları için kullanılır.
 
 ```cpp
 long add_ref();
@@ -90,9 +91,9 @@ long add_ref();
 
 Başvuru sayısının yeni değeri.
 
-## <a name="ctor"></a>İleti
+## <a name="message"></a><a name="ctor"></a> İleti
 
-`message` nesnesi oluşturur.
+Bir `message` nesnesi oluşturur.
 
 ```cpp
 message(
@@ -118,23 +119,23 @@ Bu iletinin yükü.
 Bu iletinin benzersiz KIMLIĞI.
 
 *_Msg*<br/>
-`message` nesnesine bir başvuru veya işaretçi.
+Bir nesnenin başvurusu veya işaretçisi `message` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bağımsız değişken olarak bir `message` nesnesine işaretçi alan Oluşturucu, parametre `_Msg` `NULL`ise [invalid_argument](../../../standard-library/invalid-argument-class.md) özel durum oluşturur.
+Bağımsız değişken olarak bir nesne işaretçisi alan Oluşturucu, `message` parametresi ise [invalid_argument](../../../standard-library/invalid-argument-class.md) bir özel durum oluşturur `_Msg` `NULL` .
 
-## <a name="dtor"></a>~ ileti
+## <a name="message"></a><a name="dtor"></a> ~ ileti
 
-`message` nesnesini yok eder.
+Nesneyi yok eder `message` .
 
 ```cpp
 virtual ~message();
 ```
 
-## <a name="msg_id"></a>msg_id
+## <a name="msg_id"></a><a name="msg_id"></a> msg_id
 
-`message` nesnesinin KIMLIĞINI döndürür.
+Nesnenin KIMLIĞINI döndürür `message` .
 
 ```cpp
 runtime_object_identity msg_id() const;
@@ -142,19 +143,19 @@ runtime_object_identity msg_id() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`message` nesnesinin `runtime_object_identity`.
+`runtime_object_identity` `message` Nesnesinin.
 
-## <a name="payload"></a>te
+## <a name="payload"></a><a name="payload"></a> te
 
-`message` nesnesinin yükü.
+`message`Nesnesinin yükü.
 
 ```cpp
 T const payload;
 ```
 
-## <a name="remove_ref"></a>remove_ref
+## <a name="remove_ref"></a><a name="remove_ref"></a> remove_ref
 
-`message` nesne için başvuru sayısından çıkartır. İleti ömrünü belirlemede başvuru saymayı gerektiren ileti blokları için kullanılır.
+Nesnenin başvuru sayısından çıkartır `message` . İleti ömrünü belirlemede başvuru saymayı gerektiren ileti blokları için kullanılır.
 
 ```cpp
 long remove_ref();
@@ -166,4 +167,4 @@ Başvuru sayısının yeni değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)

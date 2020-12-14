@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: CReBarCtrl kullanma'
 title: CReBarCtrl Kullanma
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - combo boxes [MFC], in rebar controls
 - rebar controls
 ms.assetid: 2c0aeec2-ffc3-44b8-97b5-0f56e116a338
-ms.openlocfilehash: 2578ddbb626da4959c81cf37a38082315ec8c6a0
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 8f1393079c929e79753ac378fdecfafd19e00423
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441953"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202437"
 ---
 # <a name="using-crebarctrl"></a>CReBarCtrl Kullanma
 
@@ -23,17 +24,17 @@ Aşağıdaki çizimde, iki bant içeren bir Rebar denetimi gösterilmektedir. Bi
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [CReBar ile CReBarCtrl karşılaştırması](../mfc/crebar-vs-crebarctrl.md)
+- [CReBar ile CReBarCtrl Karşılaştırması](../mfc/crebar-vs-crebarctrl.md)
 
-- [Rebar Denetimi Oluşturma](../mfc/creating-a-rebar-control.md)
+- [Rebar denetimi oluşturma](../mfc/creating-a-rebar-control.md)
 
-- [Rebar Denetimleri ve Bantları](../mfc/rebar-controls-and-bands.md)
+- [Yeniden çubuk denetimleri ve bantları](../mfc/rebar-controls-and-bands.md)
 
-- [Rebar Denetimiyle Birlikte Bir Görüntü Listesi Kullanma](../mfc/using-an-image-list-with-a-rebar-control.md)
+- [Rebar Denetimiyle bir görüntü listesi kullanma](../mfc/using-an-image-list-with-a-rebar-control.md)
 
-- [Rebar Denetimiyle Birlikte Bir İletişim Çubuğu Kullanma](../mfc/using-a-dialog-bar-with-a-rebar-control.md)
+- [Rebar Denetimiyle bir Iletişim çubuğu kullanma](../mfc/using-a-dialog-bar-with-a-rebar-control.md)
 
-- [Bir Rebar Denetiminde Bildirim İletilerini İşleme](../mfc/processing-notification-messages-in-a-rebar-control.md)
+- [Rebar denetiminde bildirim Iletilerini işleme](../mfc/processing-notification-messages-in-a-rebar-control.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

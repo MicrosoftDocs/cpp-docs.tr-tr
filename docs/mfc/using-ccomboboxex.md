@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: CComboBoxEx kullanma'
 title: CComboBoxEx Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - combo boxes [MFC], CComboBoxEx class
 - CComboBox class [MFC], extended
 ms.assetid: c23cbfe8-75d2-4f98-a753-c942416eda52
-ms.openlocfilehash: a9f3ca623ca729837da56c5b8a8be92b29a5c913
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: bd8a31a44b74671465ec817d32aa69f9d17369ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447093"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202606"
 ---
 # <a name="using-ccomboboxex"></a>CComboBoxEx Kullanma
 
@@ -22,13 +23,13 @@ Genişletilmiş Birleşik giriş kutusu denetimi, öğe görüntüleri için yer
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Genişletilmiş Birleşik Giriş Kutusu Denetimi Oluşturma](../mfc/creating-an-extended-combo-box-control.md)
+- [Genişletilmiş Birleşik giriş kutusu denetimi oluşturma](../mfc/creating-an-extended-combo-box-control.md)
 
-- [Genişletilmiş Birleşik Giriş Kutusu Denetiminde Görüntü Listeleri Kullanma](../mfc/using-image-lists-in-an-extended-combo-box-control.md)
+- [Genişletilmiş Birleşik giriş kutusu denetiminde görüntü listeleri kullanma](../mfc/using-image-lists-in-an-extended-combo-box-control.md)
 
-- [Ayrı Bir Öğe için Görüntüleri Ayarlama](../mfc/setting-the-images-for-an-individual-item.md)
+- [Tek bir öğe için görüntüleri ayarlama](../mfc/setting-the-images-for-an-individual-item.md)
 
-- [Genişletilmiş Birleşik Giriş Kutusu Denetimlerinde Bildirim İletilerini İşleme](../mfc/processing-notification-messages-in-extended-combo-box-controls.md)
+- [Genişletilmiş Birleşik giriş kutusu denetimlerinde bildirim Iletilerini işleme](../mfc/processing-notification-messages-in-extended-combo-box-controls.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

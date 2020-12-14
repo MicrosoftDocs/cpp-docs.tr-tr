@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: isteğe bağlı sınıf'
 title: isteğe bağlı sınıf
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,20 +14,20 @@ helpviewer_keywords:
 - optional/std::optional::reset
 - optional/std::optional::value
 - optional/std::optional::value_or
-ms.openlocfilehash: b1e77325cc485da1caec91316ce5d46cfa6357dc
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fc0f14eb8bffc55c10db73b9b2f1ea5bcfdf6995
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841941"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201943"
 ---
 # <a name="optional-class"></a>isteğe bağlı sınıf
 
-Sınıf şablonu, `optional<T>` `T` *içerilen değer*olarak bilinen türünde bir değer içerebilen veya içermeyen bir nesneyi tanımlar.
+Sınıf şablonu, `optional<T>` `T` *içerilen değer* olarak bilinen türünde bir değer içerebilen veya içermeyen bir nesneyi tanımlar.
 
 Bir örneği `optional<T>` bir değer içerdiğinde, içerilen değer nesnenin depolama alanı içinde `optional` , tür için uygun şekilde hizalı bir bölgede ayrılır `T` . `optional<T>` **`bool`** ' A dönüştürüldüğünde, sonuç **`true`** nesnenin bir değer içermesidir; Aksi takdirde, olur **`false`** .
 
-Kapsanan nesne türü `T` [in_place_t](in-place-t-struct.md) veya [nullopt_t](nullopt-t-structure.md)olmamalıdır. `T`*ters çevrilebilir*olmalıdır, yani yıkıcının sahip olduğu tüm kaynakları geri kazanmalıdır ve hiçbir özel durum oluşturmamalıdır.
+Kapsanan nesne türü `T` [in_place_t](in-place-t-struct.md) veya [nullopt_t](nullopt-t-structure.md)olmamalıdır. `T`*ters çevrilebilir* olmalıdır, yani yıkıcının sahip olduğu tüm kaynakları geri kazanmalıdır ve hiçbir özel durum oluşturmamalıdır.
 
 `optional`Sınıfı c++ 17 ' de yenidir.
 
@@ -58,7 +59,7 @@ template<class T> optional(T) -> optional<T>;
 | [Kur](#swap) | İçerilen değeri veya boş durumu başka bir metinle değiştirir `optional` . |
 | **Gözlemciler** | |
 | [has_value](#has_value) | Bir `optional` nesnenin bir değer içerip içermediğini döndürür. |
-| [deeri](#value) | İçerilen değeri döndürür. |
+| [değer](#value) | İçerilen değeri döndürür. |
 | [value_or](#value_or) | İçerilen değeri veya hiçbir değer yoksa bir alternatif döndürür. |
 | [operator->](#op_as) | Bir nesnenin içerilen değerine başvurur `optional` . |
 | [işlecinde](#op_mem) | Bir nesnenin içerilen değerine başvurur `optional` . |

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: message_processor Sınıfı'
 title: message_processor Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,16 +12,16 @@ f1_keywords:
 helpviewer_keywords:
 - message_processor class
 ms.assetid: 23afb052-daa7-44ed-bf24-d2513db748da
-ms.openlocfilehash: 88944b2d935eebd0e031be1431c2a0f4efa3d760
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: f74314bde6e12ea8b00bfc7bfd2567ca15864f75
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77139475"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202203"
 ---
 # <a name="message_processor-class"></a>message_processor Sınıfı
 
-`message_processor` sınıfı, `message` nesnelerinin işlenmesine yönelik soyut temel sınıftır. İleti sıralaması hakkında garanti yoktur.
+`message_processor`Sınıfı, nesneleri işlemek için soyut temel sınıftır `message` . İleti sıralaması hakkında garanti yoktur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,8 +32,8 @@ class message_processor;
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Bu `message_processor` nesnesi tarafından işlenen iletiler içindeki yükün veri türü.
+*T*<br/>
+Bu nesne tarafından işlenen iletiler içindeki yükün veri türü `message_processor` .
 
 ## <a name="members"></a>Üyeler
 
@@ -40,7 +41,7 @@ Bu `message_processor` nesnesi tarafından işlenen iletiler içindeki yükün v
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`type`|`T`için bir tür diğer adı.|
+|`type`|İçin bir tür diğer adı `T` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -66,7 +67,7 @@ Bu `message_processor` nesnesi tarafından işlenen iletiler içindeki yükün v
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="async_send"></a>async_send
+## <a name="async_send"></a><a name="async_send"></a> async_send
 
 Türetilmiş bir sınıfta geçersiz kılınırsa, iletileri zaman uyumsuz olarak bloğa koyar.
 
@@ -77,13 +78,13 @@ virtual void async_send(_Inout_opt_ message<T>* _Msg) = 0;
 ### <a name="parameters"></a>Parametreler
 
 *_Msg*<br/>
-Zaman uyumsuz olarak gönderilmek üzere bir `message` nesnesi.
+`message`Zaman uyumsuz olarak gönderilmek üzere bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
 İşlemci uygulamaları bu yöntemi geçersiz kılmalıdır.
 
-## <a name="process_incoming_message"></a>process_incoming_message
+## <a name="process_incoming_message"></a><a name="process_incoming_message"></a> process_incoming_message
 
 Türetilmiş bir sınıfta geçersiz kılınırsa, iletilerin bloğa iletme işlemini gerçekleştirir. Her yeni ileti eklendiğinde ve kuyruğun boş olduğu her seferinde bir kez çağırılır.
 
@@ -95,7 +96,7 @@ virtual void process_incoming_message() = 0;
 
 İleti bloğu uygulamaları bu yöntemi geçersiz kılmalıdır.
 
-## <a name="sync_send"></a>sync_send
+## <a name="sync_send"></a><a name="sync_send"></a> sync_send
 
 Türetilmiş bir sınıfta geçersiz kılındıklarında, iletileri zaman uyumlu olarak bloğa koyar.
 
@@ -106,13 +107,13 @@ virtual void sync_send(_Inout_opt_ message<T>* _Msg) = 0;
 ### <a name="parameters"></a>Parametreler
 
 *_Msg*<br/>
-Zaman uyumlu olarak göndermek için bir `message` nesnesi.
+`message`Zaman uyumlu olarak gönderilmek üzere bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
 İşlemci uygulamaları bu yöntemi geçersiz kılmalıdır.
 
-## <a name="wait"></a>bekleneceğini
+## <a name="wait"></a><a name="wait"></a> bekleneceğini
 
 Türetilmiş bir sınıfta geçersiz kılınırsa, tüm zaman uyumsuz işlemlerin tamamlanmasını bekler.
 
@@ -126,5 +127,5 @@ virtual void wait() = 0;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-[ordered_message_processor Sınıfı](ordered-message-processor-class.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
+[ordered_message_processor sınıfı](ordered-message-processor-class.md)

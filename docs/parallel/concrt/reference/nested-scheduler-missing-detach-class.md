@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nested_scheduler_missing_detach sınıfı'
 title: nested_scheduler_missing_detach Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - nested_scheduler_missing_detach class
 ms.assetid: 65d3f277-6d43-4160-97ef-caf8b26c1641
-ms.openlocfilehash: 8c9553b036890c4ce28f1060bfe2f58ee1904935
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 3d1232b8f9b807835f5b4b1e19c6049d049f12f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77138862"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202112"
 ---
 # <a name="nested_scheduler_missing_detach-class"></a>nested_scheduler_missing_detach Sınıfı
 
-Bu sınıf, Eşzamanlılık Çalışma Zamanı bir özel durum tanımlar ve bu, `Scheduler` nesnesinin `Attach` yöntemini kullanarak ikinci bir Scheduler 'a eklenmiş bir bağlamda `CurrentScheduler::Detach` yöntemini çağırmak için ihmal edileceğini algıladığında oluşur.
+Bu sınıf, Eşzamanlılık Çalışma Zamanı bir özel durum tanımlar ve bu, `CurrentScheduler::Detach` yöntemi, nesne yöntemi kullanılarak ikinci bir Scheduler 'a eklenmiş bir bağlamda yöntemi çağırmak için ihmal ettiğiniz algılandığında oluşur `Attach` `Scheduler` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class nested_scheduler_missing_detach : public std::exception;
@@ -31,11 +32,11 @@ class nested_scheduler_missing_detach : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[nested_scheduler_missing_detach](#ctor)|Fazla Yüklendi. `nested_scheduler_missing_detach` nesnesi oluşturur.|
+|[nested_scheduler_missing_detach](#ctor)|Fazla Yüklendi. Bir `nested_scheduler_missing_detach` nesnesi oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu özel durum yalnızca, zaten başka bir Scheduler 'a ait olan veya başka bir zamanlayıcıya bağlanmış bir bağlamda bir `Scheduler` nesnesinin `Attach` yöntemini çağırarak bir zamanlayıcıyı bir başka iç içe aktardığınızda oluşturulur. Eşzamanlılık Çalışma Zamanı, sorunu bulmaya yardımcı olması için senaryoyu algılayabildiği zaman bu özel durumu mümkün olduğunda oluşturur. `CurrentScheduler::Detach` yöntemini çağırmak için her denenmemesi örneği değil, bu özel durumu oluşturmak için garanti edilir.
+Bu özel durum yalnızca, `Attach` `Scheduler` zaten başka bir Scheduler 'a ait olan veya başka bir zamanlayıcıya bağlanmış bir bağlamda bir nesnenin yöntemini çağırarak bir zamanlayıcıyı bir tane iç içe aktardığınızda oluşturulur. Eşzamanlılık Çalışma Zamanı, sorunu bulmaya yardımcı olması için senaryoyu algılayabildiği zaman bu özel durumu mümkün olduğunda oluşturur. Yöntemi çağırmak için her denenmemesi örneğinin değil, `CurrentScheduler::Detach` Bu özel durumu oluşturmak için garanti edilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -49,9 +50,9 @@ Bu özel durum yalnızca, zaten başka bir Scheduler 'a ait olan veya başka bir
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="ctor"></a>nested_scheduler_missing_detach
+## <a name="nested_scheduler_missing_detach"></a><a name="ctor"></a> nested_scheduler_missing_detach
 
-`nested_scheduler_missing_detach` nesnesi oluşturur.
+Bir `nested_scheduler_missing_detach` nesnesi oluşturur.
 
 ```cpp
 explicit _CRTIMP nested_scheduler_missing_detach(_In_z_ const char* _Message) throw();
@@ -66,5 +67,5 @@ Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-[Zamanlayıcı Sınıfı](scheduler-class.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
+[Zamanlayıcı sınıfı](scheduler-class.md)
