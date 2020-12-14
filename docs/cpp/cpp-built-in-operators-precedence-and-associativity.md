@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C++ yerleşik işleçleri, önceliği ve ilişkilendirilebilirliği'
 title: C++ yerleşik işleçleri, önceliği ve ilişkilendirilebilirlik
 ms.date: 07/23/2020
 helpviewer_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - evaluation order
 - hierarchy, operator
 ms.assetid: 95c1f0ba-dad8-4034-b039-f79a904f112f
-ms.openlocfilehash: 10c9e5db569ba211ed8d42386816b4f6bb71ee29
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ff8ae84a62ef47449364d0815922326d7b8566d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221776"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253968"
 ---
 # <a name="c-built-in-operators-precedence-and-associativity"></a>C++ yerleşik işleçleri, önceliği ve ilişkilendirilebilirlik
 
 C++ dili tüm C işleçlerini içerir ve birkaç yeni işleç ekler. İşleçler, bir veya daha fazla işlenen üzerinde gerçekleştirilecek bir değerlendirme belirtir.
 
-## <a name="precedence-and-associativity"></a>Öncelik ve birleşim
+## <a name="precedence-and-associativity"></a>Öncelik ve ilişkisellik
 
 İşleç *önceliği* , birden fazla işleç içeren ifadelerde işlem sırasını belirtir. İşleç *ilişkilendirilebilirliği* , aynı önceliğe sahip birden çok işleç içeren bir ifadede, bir işlenenin sol veya sağ taraftaki bir ile gruplanıp gruplandırılmadığını belirtir.
 
@@ -35,12 +36,12 @@ C++, bazı işleçler için alternatif yazımlar belirler. C 'de alternatif yaz�
 
 Aşağıdaki tablo C++ işleçlerinin önceliğini ve ilişkilendirilebilirliğini (en yüksekten en düşük öncelikliye) göstermektedir. Başka bir ilişki açıkça parantezlerle zorlanmadıkça aynı öncelik numarasına sahip işleçler eşit önceliğe sahiptir.
 
-| İşleç Açıklaması | İşleç | Yapıyı |
+| İşleç Açıklaması | Operatör | Yapıyı |
 |--|--|--|
 | **Grup 1 önceliği, birleşim yok** |
 | [Kapsam çözümlemesi](../cpp/scope-resolution-operator.md) | [`::`](../cpp/scope-resolution-operator.md) |
 | **Grup 2 önceliği, soldan sağa ilişkilendirilebilirlik** |
-| [Üye seçimi (nesne veya işaretçi)](../cpp/member-access-operators-dot-and.md) | [`.`veya`->`](../cpp/member-access-operators-dot-and.md) |
+| [Üye seçimi (nesne veya işaretçi)](../cpp/member-access-operators-dot-and.md) | [`.` veya `->`](../cpp/member-access-operators-dot-and.md) |
 | [Dizi alt simgesi](../cpp/subscript-operator.md) | [`[]`](../cpp/subscript-operator.md) |
 | [İşlev çağrısı](../cpp/function-call-operator-parens.md) | [`()`](../cpp/function-call-operator-parens.md) |
 | [Sonek artışı](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md) | [`++`](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md) |
@@ -64,7 +65,7 @@ Aşağıdaki tablo C++ işleçlerinin önceliğini ve ilişkilendirilebilirliği
 | [Nesneyi yok et](../cpp/delete-operator-cpp.md) | [`delete`](../cpp/delete-operator-cpp.md) |
 | [Amaz](../cpp/cast-operator-parens.md) | [`()`](../cpp/cast-operator-parens.md) |
 | **Grup 4 önceliği, soldan sağa ilişkilendirilebilirliği** |
-| [Üye işaretçisi (nesneler veya işaretçiler)](../cpp/pointer-to-member-operators-dot-star-and-star.md) | [`.*`veya`->*`](../cpp/pointer-to-member-operators-dot-star-and-star.md) |
+| [Üye işaretçisi (nesneler veya işaretçiler)](../cpp/pointer-to-member-operators-dot-star-and-star.md) | [`.*` veya `->*`](../cpp/pointer-to-member-operators-dot-star-and-star.md) |
 | **Grup 5 önceliği, soldan sağa ilişkilendirilebilirliği** |
 | [Çarpma](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`*`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
 | [Bölüm](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`/`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
@@ -79,7 +80,7 @@ Aşağıdaki tablo C++ işleçlerinin önceliğini ve ilişkilendirilebilirliği
 | [Küçüktür](../cpp/relational-operators-equal-and-equal.md) | [`<`](../cpp/relational-operators-equal-and-equal.md) |
 | [Büyüktür](../cpp/relational-operators-equal-and-equal.md) | [`>`](../cpp/relational-operators-equal-and-equal.md) |
 | [Küçüktür veya eşittir](../cpp/relational-operators-equal-and-equal.md) | [`<=`](../cpp/relational-operators-equal-and-equal.md) |
-| [Büyüktür veya eşittir](../cpp/relational-operators-equal-and-equal.md) | [`>=`](../cpp/relational-operators-equal-and-equal.md) |
+| [Büyük veya eşittir](../cpp/relational-operators-equal-and-equal.md) | [`>=`](../cpp/relational-operators-equal-and-equal.md) |
 | **Grup 9 önceliği, soldan sağa ilişkilendirilebilirliği** |
 | [Eşitlik](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) | [`==`](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) |
 | [Eşitsizlik](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) | [`!=`](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) | **`not_eq`** |

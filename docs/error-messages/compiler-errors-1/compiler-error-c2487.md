@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2487'
 title: Derleyici hatası C2487
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2487
 ms.assetid: 95d734fb-64ac-488d-b799-64f084eecb09
-ms.openlocfilehash: 33824d6e88aa4885aa5e330f8f5c9c6ee0065860
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 4b115fefebd1e1a6926cb99eb6f8f8ba63eb5fff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80205081"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253694"
 ---
 # <a name="compiler-error-c2487"></a>Derleyici hatası C2487
 

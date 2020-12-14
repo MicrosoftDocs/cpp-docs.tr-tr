@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: menüler ve kaynaklar: kapsayıcı eklemeleri'
 title: 'Menüler ve Kaynaklar: Kapsayıcı Ekleme'
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CONTAIN tutorial [MFC]
 - Links menu item [MFC]
 ms.assetid: 425448be-8ca0-412e-909a-a3a9ce845288
-ms.openlocfilehash: a082a75ef0292e190e597f29be0cdc0bd0b497ef
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e32167e66693587a32732c1c20fc6d85d3010ecb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626233"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253370"
 ---
 # <a name="menus-and-resources-container-additions"></a>Menüler ve Kaynaklar: Kapsayıcı Ekleme
 
@@ -39,7 +40,7 @@ Bu makalede ele alınan konular şunları içerir:
 
 - [Dize tablosu eklemeleri](#_core_string_table_additions_for_container_applications)
 
-## <a name="container-menu-additions"></a><a name="_core_container_menu_additions"></a>Kapsayıcı menüsü eklemeleri
+## <a name="container-menu-additions"></a><a name="_core_container_menu_additions"></a> Kapsayıcı menüsü eklemeleri
 
 Düzenleme menüsüne aşağıdaki öğeleri eklemeniz gerekir:
 
@@ -54,7 +55,7 @@ Bu makalede listelenen değişikliklere ek olarak, kaynak dosyanız AFXOLECL iç
 
 Kapsanan öğelerin yerinde etkinleştirilmesini desteklemek istiyorsanız, kapsayıcı uygulamanız için yeni bir menü oluşturmalısınız. Bu menü, dosyalar açıkken aynı dosya menüsünden ve pencere açılır menülerinden oluşur, ancak aralarında iki ayırıcı yer alır. Bu ayırıcılar, sunucu (bileşen) öğesinin (uygulama) yerinde etkinleştirildiğinde menülerini Nereye yerleşeceğini belirtmek için kullanılır. Bu menü birleştirme tekniği hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: menü birleştirme](menus-and-resources-menu-merging.md).
 
-## <a name="container-application-accelerator-table-additions"></a><a name="_core_container_application_accelerator_table_additions"></a>Kapsayıcı uygulama Hızlandırıcısı tablo eklemeleri
+## <a name="container-application-accelerator-table-additions"></a><a name="_core_container_application_accelerator_table_additions"></a> Kapsayıcı uygulama Hızlandırıcısı tablo eklemeleri
 
 Yerinde etkinleştirmeyi destekliyorsanız bir kapsayıcı uygulamasının Hızlandırıcı tablo kaynaklarında küçük değişiklikler yapmanız gerekir. İlk değişiklik, kullanıcının yerinde Düzenle modunu iptal etmek için kaçış tuşuna (ESC) basışını sağlar. Ana Hızlandırıcı tablosuna aşağıdaki girişi ekleyin:
 
@@ -74,7 +75,7 @@ Yerinde etkinleştirmeyi destekliyorsanız bir kapsayıcı uygulamasının Hızl
 |ID_PREV_PANE|SHıFT + VK_F6|**VıRTKEY**|
 |ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VıRTKEY**|
 
-## <a name="string-table-additions-for-container-applications"></a><a name="_core_string_table_additions_for_container_applications"></a>Kapsayıcı uygulamaları için dize tablosu eklemeleri
+## <a name="string-table-additions-for-container-applications"></a><a name="_core_string_table_additions_for_container_applications"></a> Kapsayıcı uygulamaları için dize tablosu eklemeleri
 
 Kapsayıcı uygulamalarına yönelik dize tablolarında yapılan değişikliklerin çoğu [kapsayıcı menüsü eklemeleri](#_core_container_menu_additions)bölümünde bahsedilen ek menü öğelerine karşılık gelir. Her menü öğesi görüntülenirken durum çubuğunda görünen metni sağlarlar. Örnek olarak, Uygulama Sihirbazının oluşturduğu dize tablosu girdileri aşağıda verilmiştir:
 
@@ -86,4 +87,4 @@ Kapsayıcı uygulamalarına yönelik dize tablolarında yapılan değişiklikler
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Menüler ve kaynaklar (OLE)](menus-and-resources-ole.md)<br/>
-[Menüler ve Kaynaklar: Sunucu Ekleme](menus-and-resources-server-additions.md)
+[Menüler ve kaynaklar: sunucu eklemeleri](menus-and-resources-server-additions.md)

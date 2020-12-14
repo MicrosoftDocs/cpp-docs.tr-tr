@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: C++ dil başvurusu'
 title: C++ Dil Başvurusu
 ms.custom: index-page
 ms.date: 12/10/2019
 helpviewer_keywords:
 - C++, language reference
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
-ms.openlocfilehash: 7b0d1227419aef3174d4f18b11cdc334879383b1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 67d1adf6105d0f90a7ef29402624148dbcf8ea53
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221750"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253929"
 ---
 # <a name="c-language-reference"></a>C++ Dil Başvurusu
 
@@ -69,8 +70,8 @@ Aşırı yüklenmiş işleçler, işleç aşırı yüklemesi için kurallar.
 [Özel Durum İşleme](../cpp/exception-handling-in-visual-cpp.md)<br/>
 C++ özel durum işleme, yapılandırılmış özel durum işleme (SEH), özel durum işleme deyimleri yazılırken kullanılan anahtar sözcükler.
 
-[Onaylama ve Kullanıcı tarafından sağlanan Iletiler](../cpp/assertion-and-user-supplied-messages-cpp.md)<br/>
-`#error`yönergesi, **`static_assert`** anahtar sözcüğü, `assert` makro.
+[Onaylama ve User-Supplied Iletileri](../cpp/assertion-and-user-supplied-messages-cpp.md)<br/>
+`#error` yönergesi, **`static_assert`** anahtar sözcüğü, `assert` makro.
 
 [Şablonlar](../cpp/templates-cpp.md)<br/>
 Şablon belirtimleri, işlev şablonları, sınıf şablonları, **`typename`** anahtar sözcük, şablonlar ve makrolar, şablonlar ve akıllı işaretçiler.
@@ -87,7 +88,7 @@ Blok içinde derleme dili ve C++ kullanma **`__asm`** .
 [Derleyici COM desteği](../cpp/compiler-com-support.md)<br/>
 COM türlerini destekleyen Microsoft'a özgü sınıflar ve genel işlevler için bir başvuru.
 
-[Microsoft uzantıları](../cpp/microsoft-extensions.md)<br/>
+[Microsoft Uzantıları](../cpp/microsoft-extensions.md)<br/>
 C++ için Microsoft uzantıları.
 
 [Standart olmayan davranış](../cpp/nonstandard-behavior.md)<br/>

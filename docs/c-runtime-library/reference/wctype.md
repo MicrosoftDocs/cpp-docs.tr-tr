@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: wctype'
 title: wctype
 ms.date: 11/04/2016
 api_name:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - wctype function
 - wide characters
 ms.assetid: 14aded12-4087-4123-bc48-db4e10999223
-ms.openlocfilehash: f77082bbcc5f3cd9d82fb40993c3ac678e7e7ba2
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 0791d4f048dfa5d6804db14d577b1370ffbf8754
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957791"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254202"
 ---
 # <a name="wctype"></a>wctype
 
@@ -45,12 +46,12 @@ wctype_t wctype(
 
 ### <a name="parameters"></a>Parametreler
 
-*property*<br/>
+*özelliði*<br/>
 Özellik dizesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Geçerli yerel ayarın **LC_CTYPE** kategorisi, adı özellik dizesi *özelliği*ile eşleşen bir sınıflandırma kuralı tanımlamıyorsa, işlev sıfır döndürür. Aksi halde, sonraki [towctrans](towctrans.md)çağrısının ikinci bağımsız değişkeni olarak kullanılmak üzere uygun olmayan bir değer döndürür.
+Geçerli yerel ayarın **LC_CTYPE** kategorisi, adı özellik dizesi *özelliği* ile eşleşen bir sınıflandırma kuralı tanımlamıyorsa, işlev sıfır döndürür. Aksi halde, sonraki [towctrans](towctrans.md)çağrısının ikinci bağımsız değişkeni olarak kullanılmak üzere uygun olmayan bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -74,11 +75,11 @@ Geçerli yerel ayarın **LC_CTYPE** kategorisi, adı özellik dizesi *özelliği
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**wctype**|\<wctype. h >|
+|**wctype**|\<wctype.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kaynak dosyalar (C++)'
 title: Kaynak Dosyalar (C++)
 ms.date: 02/14/2019
 f1_keywords:
@@ -24,17 +25,17 @@ helpviewer_keywords:
 - files [C++], editable types
 - resource editing
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
-ms.openlocfilehash: 463c27959b049436e29f872c966bc276c6ef5f2d
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 8d76a8778cc3c94dd06b6b5b0ea3d6ee6b951e28
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507019"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263333"
 ---
 # <a name="resource-files-c"></a>Kaynak Dosyalar (C++)
 
 > [!NOTE]
-> .NET programlama dillerinde bulunan projeler kaynak betik dosyalarını kullanmadığından, kaynaklarınızı **Çözüm Gezgini**açmalısınız. Yönetilen projelerdeki kaynak dosyalarıyla çalışmak için [resim düzenleyicisini](../windows/image-editor-for-icons.md) ve [ikili düzenleyiciyi](binary-editor.md) kullanın.
+> .NET programlama dillerinde bulunan projeler kaynak betik dosyalarını kullanmadığından, kaynaklarınızı **Çözüm Gezgini** açmalısınız. Yönetilen projelerdeki kaynak dosyalarıyla çalışmak için [resim düzenleyicisini](../windows/image-editor-for-icons.md) ve [ikili düzenleyiciyi](binary-editor.md) kullanın.
 >
 > Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.
 
@@ -48,7 +49,7 @@ ms.locfileid: "91507019"
 
 - Geliştirme ortamı tarafından oluşturulan bir üst bilgi dosyası. Bu tür `Resource.h` , bir. rc dosyasından başvurulan, içerir.
 
-. Exe,. dll ve. res dosyaları gibi diğer dosya türlerinde bulunan kaynaklar *kaynak*olarak adlandırılır.
+. Exe,. dll ve. res dosyaları gibi diğer dosya türlerinde bulunan kaynaklar *kaynak* olarak adlandırılır.
 
 Projenizin içinden *kaynak dosyaları* ve *kaynaklarla* çalışabilirsiniz. Ayrıca, geçerli projenin parçası olmayan ya da Visual Studio 'nun geliştirme ortamı dışında oluşturulmuş olanlarla çalışabilirsiniz. Örneğin, şunları yapabilirsiniz:
 
@@ -117,7 +118,7 @@ Bir bildirim kaynağında bulunan sürümü ve tür bilgilerini görüntülemek 
 
 ### <a name="to-open-a-manifest-resource"></a>Bildirim kaynağını açmak için
 
-1. Projenizi Visual Studio 'da açın ve **Çözüm Gezgini**gidin.
+1. Projenizi Visual Studio 'da açın ve **Çözüm Gezgini** gidin.
 
 1. **Kaynak dosyaları** klasörünü genişletin, ardından:
 

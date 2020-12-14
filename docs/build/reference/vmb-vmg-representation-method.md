@@ -1,4 +1,5 @@
 ---
+description: :/VMB,/VMG (temsil yöntemi) hakkında daha fazla bilgi
 title: /vmb, /vmg (Temsil Yöntemi)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,22 +14,22 @@ helpviewer_keywords:
 - representation method compiler options [C++]
 - /vmg compiler option [C++]
 ms.assetid: ecdb391c-7dab-40b1-916b-673d10889fd4
-ms.openlocfilehash: 25d24d7f92537f16e36213b8a8fd7b945fda7f5a
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 19d183ef8d1dd152043d7249d907c9d5b48de230
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504308"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254292"
 ---
 # <a name="vmb-vmg-representation-method"></a>/vmb, /vmg (Temsil Yöntemi)
 
-Sınıf üyeleri için işaretçiler temsil etmek için derleyicinin kullandığı yöntemi seçin.
+Sınıf üyelerine yönelik işaretçileri temsil etmek için derleyicinin kullandığı yöntemi seçin.
 
-Kullanım **/vmb** sınıfının bir üyesine bir işaretçi bildirimini önce her zaman bir sınıfı tanımlamanız durumunda.
+Sınıfın bir üyesine yönelik bir işaretçi göndermeden önce her zaman bir sınıf tanımlarsanız, **/VMB** kullanın.
 
-Kullanım **/vmg** sınıfı tanımlamadan önce bir sınıf üyesi için bir işaretçi bildirmek için. Birbirine başvuru iki farklı sınıflardaki üye tanımlarsanız, bu ihtiyacı ortaya çıkabilir. Tanımlanmadan karşılıklı olarak başvurulan tür sınıflar için bir sınıf başvurulmuş olması gerekir.
+Sınıfı tanımlamadan önce bir sınıfın üyesine yönelik bir işaretçi bildirmek için **/VMG** kullanın. Bu gereksinim, birbirine başvuran iki farklı sınıfta üye tanımlarsanız ortaya çıkabilir. Bu tür karşılıklı başvurulan sınıflar için, tanımlanmadan önce bir sınıfa başvurulmalıdır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /vmb
@@ -37,17 +38,17 @@ Kullanım **/vmg** sınıfı tanımlamadan önce bir sınıf üyesi için bir i�
 
 ## <a name="remarks"></a>Açıklamalar
 
-Ayrıca [pointers_to_members](../../preprocessor/pointers-to-members.md) veya [devralma anahtar sözcükleri](../../cpp/inheritance-keywords.md) kodunuzda bir işaretçi gösterimini belirtin.
+Bir işaretçi temsili belirtmek için kodunuzda [pointers_to_members](../../preprocessor/pointers-to-members.md) veya [Devralma anahtar sözcüklerini](../../cpp/inheritance-keywords.md) de kullanabilirsiniz.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++** klasörünü tıklatın.
 
-1. Tıklayın **komut satırı** özellik sayfası.
+1. **Komut satırı** Özellik sayfasına tıklayın.
 
-1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+1. **Ek seçenekler** kutusuna derleyici seçeneğini yazın.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -55,5 +56,5 @@ Ayrıca [pointers_to_members](../../preprocessor/pointers-to-members.md) veya [d
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

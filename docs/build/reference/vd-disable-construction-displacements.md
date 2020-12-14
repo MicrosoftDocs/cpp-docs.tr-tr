@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/vd (oluşturma ile yeniden devre dışı bırak)
 title: /vd (Yapı Yer Değiştirmelerini Devre Dışı Bırak)
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - vd0 compiler option [C++]
 - Disable Construction Displacements compiler option
 ms.assetid: 93258964-14d7-4b1c-9cbc-d6f4d74eab69
-ms.openlocfilehash: df8891cc71dd5a4cfd417969578c0c1b46ae3be3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9c90e2fa4f93ea0ba3892a07e13f2a15e848d608
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223817"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253201"
 ---
 # <a name="vd-disable-construction-displacements"></a>/vd (Yapı Yer Değiştirmelerini Devre Dışı Bırak)
 
@@ -73,4 +74,4 @@ Bu seçenekler tüm kaynak dosyaları etkiler. Bir sınıf temelinde vtordisp al
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: &lt; type_traits &gt; işlevleri'
 title: '&lt;type_traits &gt; işlevleri'
 ms.date: 11/04/2016
 ms.assetid: dce4492f-f3e4-4d5e-bdb4-5875321254ec
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - std::is_trivially_copy_assignable
 - std::is_trivially_move_assignable
 - std::is_trivially_move_constructible
-ms.openlocfilehash: 11defadff0b1785f6e4c5aba6356f7b68a78b9fc
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a1608ddc9d846ca9e8e851ef67d390aebb6f840e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841785"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253331"
 ---
 # <a name="lttype_traitsgt-functions"></a>&lt;type_traits &gt; işlevleri
 

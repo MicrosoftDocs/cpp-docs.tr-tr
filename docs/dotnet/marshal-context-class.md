@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: marshal_context sınıfı'
 title: marshal_context Sınıfı
 ms.date: 01/16/2019
 ms.topic: reference
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::marshal_context class [C++]
 ms.assetid: 241b0cf6-4ca4-4812-aaee-d671c11dc034
-ms.openlocfilehash: aa5935332cfa12c02e8084136a311a7593a4f3b9
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 6fa625ed52ac69682574d52c423e54d200461e73
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508579"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253661"
 ---
 # <a name="marshal_context-class"></a>marshal_context Sınıfı
 
 Bu sınıf, verileri yerel ve yönetilen ortamlar arasında dönüştürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class marshal_context

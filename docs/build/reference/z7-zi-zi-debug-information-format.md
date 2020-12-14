@@ -1,4 +1,5 @@
 ---
+description: Hakkında daha fazla bilgi edinin:/Z7,/Zi,/ZI (hata ayıklama bilgileri biçimi)
 title: /Z7, /Zi, /ZI (Hata Ayıklama Bilgileri Biçimi)
 ms.date: 07/06/2020
 f1_keywords:
@@ -23,11 +24,12 @@ helpviewer_keywords:
 - line numbers only compiler option [C++]
 - cl.exe compiler, debugging options
 - -Z7 compiler option [C++]
-ms.openlocfilehash: bc3fd9c065219a128e29290084b1e1fb51fc773e
-ms.sourcegitcommit: 85d96eeb1ce41d9e1dea947f65ded672e146238b
+ms.openlocfilehash: 604c34cac5c3cd049f23e21f5db033c0ecc8c480
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86058600"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263237"
 ---
 # <a name="z7-zi-zi-debug-information-format"></a>/Z7, /Zi, /ZI (Hata Ayıklama Bilgileri Biçimi)
 
@@ -43,7 +45,7 @@ ms.locfileid: "86058600"
 
 Bir hata ayıklama seçeneği belirttiğinizde, derleyici, hata ayıklayıcı tarafından kullanılmak üzere işlevler ve değişkenler, tür bilgileri ve satır konumları için sembol adları üretir. Bu sembolik hata ayıklama bilgileri *`.obj`* , derleyici tarafından üretilen nesne dosyalarına (dosyalar) veya yürütülebilir dosya için ayrı bır pdb dosyasında (bir *`.pdb`* dosya) bulunabilir. Hata ayıklama bilgileri biçim seçenekleri aşağıdaki bölümlerde açıklanmıştır.
 
-### <a name="none"></a>Hiçbiri
+### <a name="none"></a>Yok
 
 Varsayılan olarak, hata ayıklama bilgileri biçim seçeneği belirtilmemişse, derleyici hata ayıklama bilgisi üretmez, bu nedenle derleme daha hızlıdır.
 
@@ -71,7 +73,7 @@ Kullanılarak derlenen nesnelerden bir kitaplık oluşturursanız **`/Zi`** , ki
 
 **`/ZI`** Seçeneği ile benzerdir **`/Zi`** , ancak [Düzenle ve devam et](/visualstudio/debugger/edit-and-continue-visual-cpp) ÖZELLIĞINI destekleyen bir biçimde pdb dosyası oluşturur. Düzenle ve devam et hata ayıklama özelliklerini kullanmak için bu seçeneği kullanmanız gerekir. Düzenle ve devam et özelliği, geliştirici üretkenliği için yararlıdır, ancak kod boyutu, performans ve derleyici uyumluluğu konularında sorunlara yol açabilir. Çoğu iyileştirme Düzenle ve devam et ile uyumlu olmadığından, kullanmak **`/ZI`** kodunuzdaki deyimleri devre dışı bırakır `#pragma optimize` . **`/ZI`** Seçeneği, [ `__LINE__` önceden tanımlanmış makronun](../../preprocessor/predefined-macros.md)kullanımıyla de uyumsuzdur; ile derlenen kod **`/ZI`** `__LINE__` , tür olmayan bir şablon bağımsız değişkeni olarak kullanılamaz, ancak `__LINE__` makro genişletmeleri içinde kullanılabilir.
 
-**`/ZI`** Seçeneği, derinizde kullanılmak üzere hem [ `/Gy` (işlev düzeyi bağlamayı etkinleştir)](gy-enable-function-level-linking.md) hem de [ `/FC` (Tanılama 'da kaynak kodu dosyası tam yolu)](fc-full-path-of-source-code-file-in-diagnostics.md) seçeneklerini zorlar.
+Bu **`/ZI`** seçenek, derlemede kullanılmak üzere hem [ `/Gy` (Function-Level bağlamayı etkinleştir)](gy-enable-function-level-linking.md) hem de [ `/FC` (Tanılama 'da kaynak kodu dosyasının tam yolu)](fc-full-path-of-source-code-file-in-diagnostics.md) seçeneklerini zorlar.
 
 **`/ZI`**, [ `/clr` (ortak dil çalışma zamanı derlemesi)](clr-common-language-runtime-compilation.md)ile uyumsuzdur.
 

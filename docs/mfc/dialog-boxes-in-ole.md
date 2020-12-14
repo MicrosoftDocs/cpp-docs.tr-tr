@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: OLE içindeki Iletişim kutuları'
 title: OLE'deki İletişim Kutuları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - dialog boxes [MFC], OLE
 - Insert object
 ms.assetid: 73c41eb8-738a-4d02-9212-d3395bb09a3a
-ms.openlocfilehash: b59ba16e6e68df2a539232636e8fe710750e3214
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 39353e75fafd65af1f3e5665afce28e3495a978b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616905"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261508"
 ---
 # <a name="dialog-boxes-in-ole"></a>OLE'deki İletişim Kutuları
 
@@ -30,7 +31,7 @@ Bu iletişim kutusu, kullanıcının bileşik bir belgeye veri yapıştırırken
 *Simgeyi Değiştir*<br/>
 Bu iletişim kutusu, kullanıcının bağlantılı veya katıştırılmış öğeyi göstermek için hangi simgenin görüntüleneceğini seçmesine olanak sağlar. Kullanıcı düzenleme menüsünden Değiştir simgesini seçtiğinde veya Özel Yapıştır veya Dönüştür iletişim kutularında Simgeyi Değiştir düğmesini seçtiğinde bu iletişim kutusunu görüntüleyin. Ayrıca, Kullanıcı nesne Ekle iletişim kutusunu açtığında ve simge olarak göster ' i seçtiğinde bu gösterimi de görüntülenir. Bu iletişim kutusunu göstermek için [Cotachangeicondialog](reference/colechangeicondialog-class.md) sınıfını kullanın.
 
-*Dönüştür*<br/>
+*Melidir*<br/>
 Bu iletişim kutusu, kullanıcının katıştırılmış veya bağlantılı bir öğenin türünü değiştirmesine izin verir. Örneğin, bileşik bir belgede bir meta dosyası katıştırdıysanız ve daha sonra gömülü meta dosyayı değiştirmek için başka bir uygulama kullanmak istiyorsanız, Dönüştür iletişim kutusunu kullanabilirsiniz. Bu iletişim kutusu genellikle düzenleme menüsünde *öğe türü* nesne ' ye tıklanarak ve ardından basamaklı menüsünde Dönüştür ' e tıklayarak görüntülenir. Bu iletişim kutusunu göstermek için [Cotaconvertdialog](reference/coleconvertdialog-class.md) sınıfını kullanın. Örnek olarak, MFC OLE örnek [Oclient](../overview/visual-cpp-samples.md)' ı çalıştırın.
 
 *Bağlantıları Düzenle veya bağlantıları güncelleştir*<br/>
@@ -41,6 +42,6 @@ Kullanıcı bir öğeyi etkinleştirmeye çalıştığında ve genellikle sunucu
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim Kutuları](dialog-boxes.md)<br/>
+[İletişim kutuları](dialog-boxes.md)<br/>
 [MFC’de İletişim Kutularıyla çalışma](life-cycle-of-a-dialog-box.md)<br/>
 [OLE](ole-in-mfc.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Ağaç Denetim öğesi konumu'
 title: Ağaç Denetim Öğesi Konumu
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,22 +8,22 @@ helpviewer_keywords:
 - tree controls [MFC], item position
 - position, CTreeCtrl items
 ms.assetid: cd264344-2cf9-4d90-9ea8-c6900b6f60e7
-ms.openlocfilehash: 238cb40319d28a53592a594a72947f400720f935
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7eeab82c48344f7e16a31b8d6962007024277dfc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392485"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264082"
 ---
 # <a name="tree-control-item-position"></a>Ağaç Denetim Öğesi Konumu
 
-Ağaç denetimi için öğe eklendiğinde bir öğenin ilk konumunu ayarlanır ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) kullanarak `InsertItem` üye işlevi. Üye işlev çağrısı, üst öğesinin tanıtıcısı ve daha sonra eklenecek yeni öğe olan öğenin tanıtıcı belirtir. İkinci tanıtıcı belirli bir üst grubun bir alt öğesi tanımlamalıdır veya bu değerlerden birini: `TVI_FIRST`, `TVI_LAST`, veya `TVI_SORT`.
+Öğe, üye işlevi kullanılarak ağaç denetimine ([Ctreecini](../mfc/reference/ctreectrl-class.md)) eklendiğinde bir öğenin ilk konumu ayarlanır `InsertItem` . Üye işlevi çağrısı, üst öğenin tanıtıcısını ve yeni öğe eklenecek öğenin tanıtıcısını belirtir. İkinci işleyici, belirtilen üst öğenin bir alt öğesini veya şu değerlerden birini tanımlamalıdır: `TVI_FIRST` , `TVI_LAST` , veya `TVI_SORT` .
 
-Zaman `TVI_FIRST` veya `TVI_LAST` belirtilirse, ağaç denetimi, belirli bir üst öğenin alt öğelerinin listesini başında veya sonunda yeni öğe yerleştirir. Zaman `TVI_SORT` belirtilirse, ağaç denetimi etiketlerini metne göre alfabetik sırada alt öğe listesine yeni öğe ekler.
+`TVI_FIRST`Veya `TVI_LAST` belirtildiğinde, ağaç denetimi, belirtilen üst öğenin alt öğe listesinin başına veya sonuna yeni öğe koyar. Belirtildiğinde `TVI_SORT` , ağaç denetimi, öğe etiketlerinin metnine göre alfabetik sırada alt öğeler listesine yeni öğe ekler.
 
-Çağırarak bir üst öğenin alt öğelerinin listesi alfabetik sırada koyabilirsiniz [SortChildren](../mfc/reference/ctreectrl-class.md#sortchildren) üye işlevi. Bu işlev, belirtilen üst öğesinden azalan düzende alt öğelerinin tüm düzeyleri de alfabetik olarak sıralanmış olup olmadığını belirten bir parametre içerir.
+[SortChildren](../mfc/reference/ctreectrl-class.md#sortchildren) member işlevini çağırarak, bir üst öğenin alt öğe listesini alfabetik sırada yerleştirebilirsiniz. Bu işlev, belirtilen üst öğeden azalan alt öğe düzeylerinin aynı zamanda alfabetik sırada sıralanıp sıralanmayacağını belirten bir parametre içerir.
 
-[SortChildrenCB](../mfc/reference/ctreectrl-class.md#sortchildrencb) üye işlevi, belirlediğiniz ölçütlere göre alt öğeleri sıralama olanak tanır. Bu işlev çağırdığınızda, iki alt öğelerin göreli sırasını kampanyanızın olması gerektiğinde ağaç denetimi çağırabilen bir uygulama tanımlı geri çağırma işlevi belirtin. Uygulama tanımlı iki 32-bit değerleri karşılaştırılan öğelerin ve çağırırken belirttiğiniz üçüncü bir 32-bit değeri geri çağırma işlevini alır `SortChildrenCB`.
+[SortChildrenCB](../mfc/reference/ctreectrl-class.md#sortchildrencb) üye işlevi, tanımladığınız ölçütlere göre alt öğeleri sıralamanıza olanak tanır. Bu işlevi çağırdığınızda, iki alt öğenin göreli sırası karar verilmesi gerektiğinde ağaç denetiminin çağırabileceği uygulama tanımlı bir geri çağırma işlevi belirtirsiniz. Geri arama işlevi, karşılaştırılan öğeler için 2 32 bitlik uygulama tanımlı değerler ve çağrılırken belirttiğiniz üçüncü 32 bit bir değer alır `SortChildrenCB` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

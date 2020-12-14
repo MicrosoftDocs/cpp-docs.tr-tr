@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _itoa_s, _ltoa_s, _ultoa_s, _i64toa_s, _ui64toa_s, _itow_s, _ltow_s, _ultow_s, _i64tow_s, _ui64tow_s'
 title: _itoa_s, _itow_s işlevleri
 ms.date: 4/2/2020
 api_name:
@@ -90,12 +91,12 @@ helpviewer_keywords:
 - _ui64tot_s function
 - _i64toa_s function
 ms.assetid: eb746581-bff3-48b5-a973-bfc0a4478ecf
-ms.openlocfilehash: 5cc3706abd07e11c819d4b2d37ff89e9b9137a22
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c02ca2e6090c9396a3a6c91cd6353604d5df8096
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916565"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254241"
 ---
 # <a name="_itoa_s-_ltoa_s-_ultoa_s-_i64toa_s-_ui64toa_s-_itow_s--_ltow_s--_ultow_s-_i64tow_s-_ui64tow_s"></a>_itoa_s, _ltoa_s, _ultoa_s, _i64toa_s, _ui64toa_s, _itow_s, _ltow_s, _ultow_s, _i64tow_s, _ui64tow_s
 
@@ -146,7 +147,7 @@ errno_t _ultow_s( unsigned long value, wchar_t (&buffer)[size], int radix );
 
 ### <a name="parameters"></a>Parametreler
 
-*deeri*<br/>
+*değer*<br/>
 Dönüştürülecek sayı.
 
 *arabelleğin*<br/>
@@ -156,7 +157,7 @@ Dönüştürmenin sonucunu tutan çıkış arabelleği.
 Karakter veya geniş karakterdeki *arabelleğin* boyutu.
 
 *taban*<br/>
-Değeri dönüştürmek için kullanılan taban veya sayısal temel *değer*2-36 aralığında olmalıdır.
+Değeri dönüştürmek için kullanılan taban veya sayısal temel *değer* 2-36 aralığında olmalıdır.
 
 ## <a name="return-value"></a>Döndürülen değer
 
@@ -164,16 +165,16 @@ Başarılıysa sıfır; hatada hata kodu. Aşağıdaki koşullardan herhangi bir
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|value|arabelleğin|size|taban|Döndürülmesini|
+|değer|arabelleğin|boyut|taban|Döndürülmesini|
 |-----------|------------|----------------------|-----------|------------|
-|kaydedilmemiş|**DEĞER**|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|
-|kaydedilmemiş|kaydedilmemiş|<= 0|kaydedilmemiş|**EıNVAL**|
-|kaydedilmemiş|kaydedilmemiş|<= gereken sonuç dizesinin uzunluğu|kaydedilmemiş|**EıNVAL**|
-|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|*taban* < 2 veya *taban* > 36|**EıNVAL**|
+|herhangi biri|**DEĞER**|herhangi biri|herhangi biri|**EıNVAL**|
+|herhangi biri|herhangi biri|<= 0|herhangi biri|**EıNVAL**|
+|herhangi biri|herhangi biri|<= gereken sonuç dizesinin uzunluğu|herhangi biri|**EıNVAL**|
+|herhangi biri|herhangi biri|herhangi biri|*taban* < 2 veya *taban* > 36|**EıNVAL**|
 
 ### <a name="security-issues"></a>Güvenlik sorunları
 
-*Arabellek* geçerli belleğe işaret etmezse ve **null**değilse ya da arabelleğin uzunluğu sonuç dizesini tutabilecek kadar uzun değilse, bu işlevler erişim ihlali oluşturabilir.
+*Arabellek* geçerli belleğe işaret etmezse ve **null** değilse ya da arabelleğin uzunluğu sonuç dizesini tutabilecek kadar uzun değilse, bu işlevler erişim ihlali oluşturabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -201,8 +202,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_itoa_s**, **_ltoa_s**, **_ultoa_s**, **_i64toa_s**, **_ui64toa_s**|\<Stdlib. h>|
-|**_itow_s**, **_ltow_s**, **_ultow_s**, **_i64tow_s**, **_ui64tow_s**|\<Stdlib. h> veya \<wchar. h>|
+|**_itoa_s**, **_ltoa_s**, **_ultoa_s**, **_i64toa_s**, **_ui64toa_s**|\<stdlib.h>|
+|**_itow_s**, **_ltow_s**, **_ultow_s**, **_i64tow_s**, **_ui64tow_s**|\<stdlib.h> veya \<wchar.h>|
 
 Bu işlevler, Microsoft 'a özgüdür. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

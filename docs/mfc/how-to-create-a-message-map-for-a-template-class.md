@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: bir şablon sınıfı için Ileti eşlemesi oluşturma'
 title: 'Nasıl yapılır: Bir Şablon Sınıfı için İleti Eşlemesi Oluşturma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - template classes [MFC], creating message maps
 - message maps [MFC], template classes
 ms.assetid: 4e7e24f8-06df-4b46-82aa-7435c8650de3
-ms.openlocfilehash: 65ddc77b4e8fd466c7d651e54e93a504b4858da1
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 16d1d486bae77d0e580521ba71d29216701c4481
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620056"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253435"
 ---
 # <a name="how-to-create-a-message-map-for-a-template-class"></a>Nasıl yapılır: Bir Şablon Sınıfı için İleti Eşlemesi Oluşturma
 
@@ -63,4 +64,4 @@ Testi gerçekleştirmek için, `StringizeElement` işlevin sınıfla çalışmas
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [BEGIN_TEMPLATE_MESSAGE_MAP](reference/message-map-macros-mfc.md#begin_template_message_map)<br/>
-[İleti İşleme ve Eşleme](message-handling-and-mapping.md)
+[İleti Işleme ve eşleme](message-handling-and-mapping.md)

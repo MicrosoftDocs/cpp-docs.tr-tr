@@ -1,60 +1,61 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Kullanıcı tanımlı araçlar'
 title: Kullanıcı Tanımlı Araçlar
 ms.date: 11/19/2018
 helpviewer_keywords:
 - user-defined tools (MFC Extensions)
 ms.assetid: cb887421-78ce-4652-bc67-96a53984ccaa
-ms.openlocfilehash: 785e37c63653dde91176bedd0321fc58ac122c7e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4cccd0a68751a2f196c8c2e652088e8939e3f162
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180838"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263640"
 ---
 # <a name="user-defined-tools"></a>Kullanıcı Tanımlı Araçlar
 
-MFC, kullanıcı tanımlı Araçlar destekler. Bir kullanıcı tanımlı araç bir harici, kullanıcı tarafından belirtilen programını yürüten özel bir komuttur. Özelleştirme işlemi, kullanıcı tanımlı Araçlar yönetmek için kullanabilirsiniz. Ancak, uygulama nesnenizin türünden türetilmediğinden varsa, bu işlem kullanamazsınız [CWinAppEx sınıfı](../mfc/reference/cwinappex-class.md). Özelleştirme hakkında daha fazla bilgi için bkz. [MFC için özelleştirme](../mfc/customization-for-mfc.md).
+MFC Kullanıcı tanımlı araçları destekler. Kullanıcı tanımlı bir araç, dış, Kullanıcı tarafından belirtilen bir programı yürüten özel bir komuttur. Kullanıcı tanımlı araçları yönetmek için özelleştirme sürecini kullanabilirsiniz. Ancak, uygulama nesneniz [CWinAppEx sınıfından](../mfc/reference/cwinappex-class.md)türetildiyse bu işlemi kullanamazsınız. Özelleştirme hakkında daha fazla bilgi için bkz. [MFC Için özelleştirme](../mfc/customization-for-mfc.md).
 
-Kullanıcı tanımlı Araçlar desteği etkinleştirilirse, özelleştirme iletişim kutusunda otomatik olarak içerir **Araçları** sekmesi. Aşağıdaki çizimde gösterildiği **Araçları** sayfası.
+Kullanıcı tanımlı araçlar desteğini etkinleştirdiyseniz, özelleştirme iletişim kutusu **Araçlar** sekmesini otomatik olarak ekler. Aşağıdaki çizimde **Araçlar** sayfası gösterilmektedir.
 
-![Araçlar sekmesindeki özelleştirme iletişim kutusunda](../mfc/media/custdialogboxtoolstab.png "araçları sekmede Özelleştir iletişim kutusu") <br/>
-Özelleştirme iletişim kutusu araçları sekmesi
+![Özelleştir iletişim kutusundaki Araçlar sekmesi](../mfc/media/custdialogboxtoolstab.png "Özelleştir iletişim kutusundaki Araçlar sekmesi") <br/>
+Özelleştirme iletişim kutusu Araçlar sekmesi
 
-## <a name="enabling-user-defined-tools-support"></a>Kullanıcı tanımlı etkinleştirme desteği araçları
+## <a name="enabling-user-defined-tools-support"></a>Kullanıcı tanımlı araç desteğini etkinleştirme
 
-Kullanıcı tanımlı Araçlar uygulamada etkinleştirmek için çağrı [CWinAppEx::EnableUserTools](../mfc/reference/cwinappex-class.md#enableusertools). Ancak, bu çağrı için parametre olarak kullanılacak, uygulamanızın kaynak dosyalarındaki ilk birkaç sabitleri tanımlamalısınız.
+Bir uygulamada Kullanıcı tanımlı araçları etkinleştirmek için, [CWinAppEx:: EnableUserTools](../mfc/reference/cwinappex-class.md#enableusertools)komutunu çağırın. Ancak, öncelikle uygulamanızın kaynak dosyalarında bu çağrı için parametre olarak kullanılacak birkaç sabiti tanımlamanız gerekir.
 
-Kaynak Düzenleyicisi'nde uygun komut kimliği kullanan işlevsiz bir komut oluşturun Aşağıdaki örnekte `ID_TOOLS_ENTRY` olarak komut kimliği. Bu komut kimliği framework kullanıcı tanımlı Araçlar nerede ekleyecek bir konumda bir veya daha fazla menüleri işaretler.
+Kaynak düzenleyicisinde, uygun bir komut KIMLIĞI kullanan bir kukla komut oluşturun. Aşağıdaki örnekte, `ID_TOOLS_ENTRY` komut kimliği olarak kullanırız. Bu komut KIMLIĞI, çerçevenin Kullanıcı tanımlı araçları ekleneceği bir veya daha fazla menülerde bir konum belirtir.
 
-Kullanıcı tanımlı Araçlar temsil eden dize tablosunda art arda bazı kimlikler kenara ayarlamanız gerekir. Kullanıcılar tanımlayabilir kullanıcı araçlarını sayısı için kenara bırakmanızı dizeleri sayısı eşittir. Aşağıdaki örnekte, bu adlandırılmış `ID_USER_TOOL1` aracılığıyla `ID_USER_TOOL10`.
+Kullanıcı tanımlı araçları temsil etmek için dize tablosunda ardışık bazı kimlikler ayarlamanız gerekir. Ayrılan dizelerin sayısı, kullanıcıların tanımlayabilirler en fazla Kullanıcı aracı sayısına eşittir. Aşağıdaki örnekte bunlar `ID_USER_TOOL1` ile adlandırılır `ID_USER_TOOL10` .
 
-Öneriler, dizinler ve çağrılacak dış programları için bağımsız değişkenler araçları yardımcı olmak için kullanıcılara sunabilir. Bunu yapmak için kaynak Düzenleyicisi'nde iki açılır menüler oluşturma. Aşağıdaki örnekte bu adlandırılmış `IDR_MENU_ARGS` ve `IDR_MENU_DIRS`. Bu menülerde her komut için uygulama dize tablosunda bir dize tanımlar. Dize kaynak kimliği komut kimliğine eşit olmalıdır
+Kullanıcılara, araçlar olarak çağrılacak dış programların dizinlerini ve bağımsız değişkenlerini seçmesini sağlamak için öneriler sunabilirsiniz. Bunu yapmak için kaynak Düzenleyicisi 'nde iki açılan menü menüsü oluşturun. Aşağıdaki örnekte bunlar ve olarak adlandırılmıştır `IDR_MENU_ARGS` `IDR_MENU_DIRS` . Bu menülerdeki her komut için, uygulama dize tablonuzda bir dize tanımlayın. Dizenin kaynak KIMLIĞI, komut KIMLIĞINE eşit olmalıdır.
 
-Öğesinden türetilen bir sınıf oluşturabilirsiniz [CUserTool sınıfı](../mfc/reference/cusertool-class.md) varsayılan uygulama değiştirilecek. Bunu yapmak için RUNTIME_CLASS yerine CWinAppEx::EnableUserTools dördüncü parametre olarak, türetilmiş sınıf için çalışma zamanı bilgilerini geçirmek ([CUserTool sınıfı](../mfc/reference/cusertool-class.md)).
+Ayrıca, varsayılan uygulamayı değiştirmek için [CUserTool sınıfından](../mfc/reference/cusertool-class.md) türetilmiş bir sınıf de oluşturabilirsiniz. Bunu yapmak için, türetilmiş sınıfınız için çalışma zamanı bilgilerini RUNTIME_CLASS ([CUserTool sınıfı](../mfc/reference/cusertool-class.md)) yerine CWinAppEx:: EnableUserTools içinde dördüncü parametre olarak geçirin.
 
-Uygun sabitleri tanımladıktan sonra çağırma [CWinAppEx::EnableUserTools](../mfc/reference/cwinappex-class.md#enableusertools) kullanıcı tanımlı Araçlar etkinleştirmek için.
+Uygun sabitleri tanımladıktan sonra, Kullanıcı tanımlı araçları etkinleştirmek için [CWinAppEx:: EnableUserTools](../mfc/reference/cwinappex-class.md#enableusertools) komutunu çağırın.
 
-Aşağıdaki yöntem çağrısını bu sabiti kullanma işlemini gösterir:
+Aşağıdaki yöntem çağrısı, bu sabitlerin nasıl kullanılacağını gösterir:
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#1](../mfc/codesnippet/cpp/user-defined-tools_1.cpp)]
 
-Bu örnekte, Araçlar sekmesindeki dahil edilir **özelleştirme** iletişim kutusu. Framework komut kimliği eşleşen herhangi bir komutu yerini alacak `ID_TOOLS_ENTRY` bir kullanıcı bu menü açıldığında şu anda tanımlanmış kullanıcı araçlar kümesi ile herhangi bir menüde. Komut kimlikleri `ID_USER_TOOL1` aracılığıyla `ID_USER_TOOL10` kullanıcı tanımlı Araçlar kullanılmak için ayrılmıştır. Sınıf [CUserTool sınıfı](../mfc/reference/cusertool-class.md) kullanıcı araçlarını çağrılarını işler. Aracı sekmesinde **özelleştirme** iletişim kutusu sağlar menüleri erişim hakkı bağımsız değişken ve dizin girişi alanlarının düğmelere **IDR_MENU_ARGS** ve **IDR_MENU_DIRS**. Bir kullanıcı bu menüler birinden bir komutu seçtiğinde framework uygun metin kutusuna komutu kimliğine eşit kaynak kimliğinin dizesi ekler.
+Bu örnekte, Araçlar sekmesi **Özelleştirme** iletişim kutusuna dahil edilir. Çerçeve, `ID_TOOLS_ENTRY` bir Kullanıcı menüyü her açtığında, herhangi bir menüdeki komut kimliğiyle eşleşen komutu, tanımlı kullanıcı araçlarının kümesiyle değiştirecek. Aracılığıyla komut kimlikleri `ID_USER_TOOL1` `ID_USER_TOOL10` Kullanıcı tanımlı araçlar için kullanılmak üzere ayrılmıştır. [CUserTool sınıfı](../mfc/reference/cusertool-class.md) , Kullanıcı araçlarına yapılan çağrıları işler. **Özelleştirme** iletişim kutusunun araç sekmesi, **IDR_MENU_ARGS** ve **IDR_MENU_DIRS** menülere erişmek için bağımsız değişkenin ve Dizin girişi alanlarının sağ tarafındaki düğmeleri sağlar. Bir Kullanıcı bu menülerden bir komut seçtiğinde, çerçeve, kaynak KIMLIĞI komut KIMLIĞINE eşit olan dizeyi uygun metin kutusuna ekler.
 
-### <a name="including-predefined-tools"></a>Önceden tanımlanmış Araçlar dahil olmak üzere
+### <a name="including-predefined-tools"></a>Önceden tanımlanmış araçları dahil etme
 
-Uygulama başlangıcında bazı araçlar ön tanımlamasında istiyorsanız, geçersiz kılmanız gerekir [CFrameWnd::LoadFrame](../mfc/reference/cframewnd-class.md#loadframe) uygulamanızın ana pencerenin yöntemi. Bu yöntemde, aşağıdaki adımları gerçekleştirmeniz gerekir.
+Uygulama başlangıcında bazı araçları önceden tanımlamak istiyorsanız, uygulamanızın ana penceresindeki [CFrameWnd:: LoadFrame](../mfc/reference/cframewnd-class.md#loadframe) metodunu geçersiz kılmanız gerekir. Bu yöntemde, aşağıdaki adımları gerçekleştirmeniz gerekir.
 
-##### <a name="to-add-new-tools-in-loadframe"></a>LoadFrame içinde yeni araçları eklemek için
+##### <a name="to-add-new-tools-in-loadframe"></a>LoadFrame 'e yeni araçlar eklemek için
 
-1. Bir işaretçi alma [CUserToolsManager sınıfı](../mfc/reference/cusertoolsmanager-class.md) çağırarak [CWinAppEx::GetUserToolsManager](../mfc/reference/cwinappex-class.md#getusertoolsmanager).
+1. [CWinAppEx:: Getuseraraçları yöneticisini](../mfc/reference/cwinappex-class.md#getusertoolsmanager)çağırarak [Cusermanagementmanager sınıfı](../mfc/reference/cusertoolsmanager-class.md) nesnesine bir işaretçi alın.
 
-1. Oluşturmak istediğiniz her aracı için çağrı [CUserToolsManager::CreateNewTool](../mfc/reference/cusertoolsmanager-class.md#createnewtool). Bu yöntem bir işaretçi döndürür. bir [CUserTool sınıfı](../mfc/reference/cusertool-class.md) nesne ve yeni oluşturulan kullanıcı aracı araçların iç koleksiyona ekler. Çalışma zamanı bilgileri türetilmiş bir sınıf için sağlamadığınızı [CUserTool sınıfı](../mfc/reference/cusertool-class.md) dördüncü parametre olarak [CWinAppEx::EnableUserTools](../mfc/reference/cwinappex-class.md#enableusertools), [CUserToolsManager::CreateNewTool](../mfc/reference/cusertoolsmanager-class.md#createnewtool) örneği oluşturmak ve bunun yerine bu sınıfın bir örneğini döndürür.
+1. Oluşturmak istediğiniz her araç için, [Cuser, Manager:: CreateNewTool](../mfc/reference/cusertoolsmanager-class.md#createnewtool)' ı çağırın. Bu yöntem, bir [CUserTool sınıfı](../mfc/reference/cusertool-class.md) nesnesine bir işaretçi döndürür ve yeni oluşturulan kullanıcı aracını iç araç koleksiyonuna ekler. Bir [CUserTool sınıfının](../mfc/reference/cusertool-class.md) türetilmiş sınıfına ilişkin çalışma zamanı bilgilerini [CWinAppEx:: EnableUserTools](../mfc/reference/cwinappex-class.md#enableusertools)öğesinin dördüncü parametresi olarak sağladıysanız, [Cuseraraçlarý Manager:: CreateNewTool](../mfc/reference/cusertoolsmanager-class.md#createnewtool) bunun yerine bu sınıfın bir örneğini oluşturur ve döndürür.
 
-1. Her aracı için metin etiketini ayarlamak için `CUserTool::m_strLabel` komutunu çağırarak ayarlayın `CUserTool::SetCommand`. Varsayılan uygulaması [CUserTool sınıfı](../mfc/reference/cusertool-class.md) otomatik olarak yapılan çağrıda belirtilen program kullanılabilir simgeleri alır `SetCommand`.
+1. Her araç için, öğesini çağırarak metin etiketini ayarlayın `CUserTool::m_strLabel` ve öğesini çağırarak komutunu ayarlayın `CUserTool::SetCommand` . [CUserTool sınıfının](../mfc/reference/cusertool-class.md) varsayılan uygulanması, ' ın ' de belirtilen programdan kullanılabilir simgeleri otomatik olarak alır `SetCommand` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC için Özelleştirme](../mfc/customization-for-mfc.md)<br/>
-[CUserTool Sınıfı](../mfc/reference/cusertool-class.md)<br/>
-[CUserToolsManager Sınıfı](../mfc/reference/cusertoolsmanager-class.md)<br/>
-[CWinAppEx Sınıfı](../mfc/reference/cwinappex-class.md)
+[CUserTool sınıfı](../mfc/reference/cusertool-class.md)<br/>
+[Cuser, yönetici sınıfı](../mfc/reference/cusertoolsmanager-class.md)<br/>
+[CWinAppEx sınıfı](../mfc/reference/cwinappex-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ürenlpe'
 title: spawnlpe
 ms.date: 12/16/2019
 api_name:
@@ -23,16 +24,16 @@ f1_keywords:
 helpviewer_keywords:
 - spawnlpe function
 ms.assetid: 379143a7-f3d0-41de-83cc-2b4321146390
-ms.openlocfilehash: e0dd321c26e02989898016c1ea707f6b6de886ff
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: da4f8a77592d737864e2caeac083f3c3b2089da1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75300735"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262951"
 ---
 # <a name="spawnlpe"></a>spawnlpe
 
-`spawnlpe` Microsoft 'a özgü işlev adı, [_spawnlpe](spawnlpe-wspawnlpe.md) işlevi için kullanım dışı bırakılmış bir diğer addır. Varsayılan olarak, [Derleyici Uyarısı (düzey 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)oluşturur. Ad, uygulamaya özgü adlarla ilgili standart C kurallarını izlemediğinden kullanım dışı bırakılmıştır. Ancak, işlev hala desteklenmektedir.
+Microsoft 'a özgü işlev adı, `spawnlpe` [_spawnlpe](spawnlpe-wspawnlpe.md) işlevi için kullanım dışı bir diğer addır. Varsayılan olarak, [Derleyici Uyarısı (düzey 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)oluşturur. Ad, uygulamaya özgü adlarla ilgili standart C kurallarını izlemediğinden kullanım dışı bırakılmıştır. Ancak, işlev hala desteklenmektedir.
 
 Bunun yerine [_spawnlpe](spawnlpe-wspawnlpe.md) kullanmanızı öneririz. Ya da bu işlev adını kullanmaya devam edebilir ve uyarıyı devre dışı bırakabilirsiniz. Daha fazla bilgi için bkz. [Uyarı](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) ve [POSIX işlev adlarını](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)kapatma.
 

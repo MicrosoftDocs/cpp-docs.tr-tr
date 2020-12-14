@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: Visual Studio sürümlerindeki C++ araçları ve özellikleri'
 title: Visual Studio Sürümlerinde C++ Araçları ve Özellikleri
 ms.date: 05/21/2019
 helpviewer_keywords:
 - tools and platforms [C++]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
-ms.openlocfilehash: c2ef6c539d5845beee044a963e0056d3287ba679
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 6253e52fa300cc60de4b2700b384fde6f5ffe1ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924804"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254631"
 ---
 # <a name="c-tools-and-features-in-visual-studio-editions"></a>Visual Studio Sürümlerinde C++ Araçları ve Özellikleri
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ı, isgreaterequal, ısless, islessequal, ılessdaha fazla, ısýralanmamýþ'
 title: isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered
 ms.date: 01/31/2019
 f1_keywords:
@@ -21,18 +22,18 @@ helpviewer_keywords:
 - islessequal function
 - islessgreater function
 - isunordered function
-ms.openlocfilehash: 907b26f4e1824d7ef5c7c1a36b4e4d8ccb74c978
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 90e01de2caeb5a73b1b48a0c78678d975cdca6e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220723"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262977"
 ---
 # <a name="isgreater-isgreaterequal-isless-islessequal-islessgreater-isunordered"></a>isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered
 
 İki kayan nokta değeri arasındaki sıralama ilişkisini belirler.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int isgreater(
@@ -113,11 +114,11 @@ Karşılaştırılacak kayan nokta değerleri.
 
 Tüm karşılaştırmalarda, aynı imza karşılaştırmalarının eşit olduğu sonsuz. Negatif sonsuzluk, sınırlı değerden veya pozitif sonsuzdan daha az. Pozitif sonsuzluk, sınırlı değerden veya negatif sonsuzdan daha büyük. Sıfır işareti ne olursa olsun eşittir. NaNs, başka bir NaN da dahil olmak üzere herhangi bir değerden küçük, eşit veya daha büyük değil.
 
-Bağımsız değişken bir NaN olduğunda, *x* ve *y* arasında belirtilen sıralama ilişkisi doğru tutuyorsa **sıralama makroları,** **isgreaterequal**, **ısless**ve **islessequal** sıfır olmayan bir değer döndürür. Bu makrolar, ya da her iki bağımsız değişkeni NaNs ise veya sıralama ilişkisi yanlışsa 0 döndürür. İşlev formları aynı şekilde davranır, ancak **`true`** veya döndürür **`false`** .
+Bağımsız değişken bir NaN olduğunda, *x* ve *y* arasında belirtilen sıralama ilişkisi doğru tutuyorsa **sıralama makroları,** **isgreaterequal**, **ısless** ve **islessequal** sıfır olmayan bir değer döndürür. Bu makrolar, ya da her iki bağımsız değişkeni NaNs ise veya sıralama ilişkisi yanlışsa 0 döndürür. İşlev formları aynı şekilde davranır, ancak **`true`** veya döndürür **`false`** .
 
 Her ikisi de *x* ve *y* , nans değilse ve *x* , *y*'den küçük ya da daha büyükse, **ılessdaha fazla** makro sıfır olmayan bir değer döndürür. Ya da her iki bağımsız değişken NaNs ise veya Değerler eşitse 0 döndürür. İşlev formu aynı şekilde davranır, ancak **`true`** veya döndürür **`false`** .
 
-**Isýralanmamýþ** Macro, *x*, *y*ya da her ikisi de nans olduğunda sıfır olmayan bir değer döndürür. Aksi takdirde, 0 döndürür. İşlev formu aynı şekilde davranır, ancak **`true`** veya döndürür **`false`** .
+**Isýralanmamýþ** Macro, *x*, *y* ya da her ikisi de nans olduğunda sıfır olmayan bir değer döndürür. Aksi takdirde, 0 döndürür. İşlev formu aynı şekilde davranır, ancak **`true`** veya döndürür **`false`** .
 
 ## <a name="remarks"></a>Açıklamalar
 

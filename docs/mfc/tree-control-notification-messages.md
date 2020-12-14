@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ağaç denetimi bildirim Iletileri'
 title: Ağaç Denetimi Bildirim İletileri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,31 +9,31 @@ helpviewer_keywords:
 - notifications [MFC], CTreeCtrl
 - tree controls [MFC], notification messages
 ms.assetid: ac7013b4-91dd-4668-bd75-439ca0680ef9
-ms.openlocfilehash: 90e2e112d7862dfed7d8af31cfb72ff45633a2c1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 899b6469a2de9a076dd33e62c5023f502448d45f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62181650"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263991"
 ---
 # <a name="tree-control-notification-messages"></a>Ağaç Denetimi Bildirim İletileri
 
-Ağaç denetimi ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) wm_notıfy iletileri aşağıdaki bildirim iletilerini gönderir:
+Ağaç denetimi ([Ctreeci](../mfc/reference/ctreectrl-class.md)) aşağıdaki bildirim iletilerini WM_NOTIFY iletileri olarak gönderir:
 
 |Bildirim iletisi|Açıklama|
 |--------------------------|-----------------|
-|TVN_BEGINDRAG|Bir Sürükle ve bırak işleminin başlangıç sinyalleri|
-|TVN_BEGINLABELEDIT|Yerinde etiket düzenleme başlangıç sinyalleri|
-|TVN_BEGINRDRAG|Sağ fare düğmesini kullanarak, bir Sürükle ve bırak işleminin başlangıç sinyalleri|
-|TVN_DELETEITEM|Belirli bir öğeyi silme işlemi sinyalleri|
-|TVN_ENDLABELEDIT|Etiket düzenleme sonuna sinyalleri|
-|TVN_GETDISPINFO|Bir öğeyi görüntülemek için ağaç denetimi gerektirdiğini bilgisini ister|
-|TVN_ITEMEXPANDED|Bir üst öğenin alt öğelerinin listesini genişletilmiş veya daraltılmış, sinyaller|
-|TVN_ITEMEXPANDING|Yaklaşık genişletilmiş veya daraltılmış bir üst öğenin alt öğelerinin listesi olan sinyalleri|
-|TVN_KEYDOWN|Klavye olay sinyalini verir|
-|TVN_SELCHANGED|Seçimin bir öğeden diğerine değiştiğini sinyalleri|
-|TVN_SELCHANGING|Seçimin bir öğeden diğerine değiştirilmek üzere olan sinyalleri|
-|TVN_SETDISPINFO|Bir öğe için tutulan bilgileri güncelleştirmek için bildirim|
+|TVN_BEGINDRAG|Sürükle ve bırak işleminin başlangıcına bildirir|
+|TVN_BEGINLABELEDIT|Yerinde etiket düzenlemesinin başlangıcına bildirir|
+|TVN_BEGINRDRAG|Bir sürükle ve bırak işleminin başlangıcını, sağ fare düğmesini kullanarak bildirir|
+|TVN_DELETEITEM|Belirli bir öğenin silinmesini bildirir|
+|TVN_ENDLABELEDIT|Etiket düzenlemenin sonuna işaret eder|
+|TVN_GETDISPINFO|Ağaç denetiminin bir öğeyi görüntülemesi için gereken bilgileri ister|
+|TVN_ITEMEXPANDED|Üst öğenin alt öğe listesinin genişletildiğini veya daraltılacağını bildirir|
+|TVN_ITEMEXPANDING|Üst öğenin alt öğe listesinin genişletilmekte veya daraltılmak üzere olduğunu bildirir|
+|TVN_KEYDOWN|Klavye olayına işaret eder|
+|TVN_SELCHANGED|Seçimin bir öğeden diğerine değiştiğini bildirir|
+|TVN_SELCHANGING|Seçimin bir öğeden diğerine değiştirilme olduğunu bildirir|
+|TVN_SETDISPINFO|Bir öğe için tutulan bilgileri güncelleştirme bildirimi|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

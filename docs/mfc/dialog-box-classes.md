@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Iletişim kutusu sınıfları'
 title: İletişim Kutusu Sınıfları
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - common dialog classes [MFC]
 - tab dialog boxes
 ms.assetid: db75da23-4eff-4c6c-beae-79cf046fbce9
-ms.openlocfilehash: 2399b27fc081dcc810277079729b0e62ef80d603
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 5c178bc6895e338bf4b2876be5233c1b80007abc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616946"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261560"
 ---
 # <a name="dialog-box-classes"></a>İletişim Kutusu Sınıfları
 
@@ -60,7 +61,7 @@ Windows ortak sayfa kurulumu iletişim kutusu tarafından sunulan hizmetleri, ya
 OLE, Windows 'a birkaç ortak iletişim kutusu ekler. Bu sınıflar OLE ortak iletişim kutularını kapsülleme.
 
 [Colet Iletişim kutusu](reference/coledialog-class.md)<br/>
-Framework tarafından tüm OLE iletişim kutuları için ortak uygulamaları içerecek şekilde kullanılır. Kullanıcı arabirimi kategorisindeki tüm iletişim kutusu sınıfları bu temel sınıftan türetilir. `COleDialog`doğrudan kullanılamaz.
+Framework tarafından tüm OLE iletişim kutuları için ortak uygulamaları içerecek şekilde kullanılır. Kullanıcı arabirimi kategorisindeki tüm iletişim kutusu sınıfları bu temel sınıftan türetilir. `COleDialog` doğrudan kullanılamaz.
 
 [COleInsertDialog](reference/coleinsertdialog-class.md)<br/>
 Yeni OLE bağlantılı veya katıştırılmış öğeleri eklemek için standart Kullanıcı arabirimi olan nesne Ekle iletişim kutusunu görüntüler.

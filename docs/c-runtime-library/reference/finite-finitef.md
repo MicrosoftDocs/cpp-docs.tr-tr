@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: issonlu, _finite, _finitef'
 title: isfinite, _finite, _finitef
 ms.date: 01/31/2019
 api_name:
@@ -35,18 +36,18 @@ helpviewer_keywords:
 - _finite function
 - _finitef function
 ms.assetid: 5a7d7ca7-befb-4e1f-831d-28713c6eb805
-ms.openlocfilehash: 7e15a6619e584ff52c07048fcf591835b799587f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ef0747c88d62445c1cbd31f5c7afe6a651f50880
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218708"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263120"
 ---
 # <a name="isfinite-_finite-_finitef"></a>isfinite, _finite, _finitef
 
 Kayan nokta değerinin sonlu olup olmadığını belirler.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int isfinite(
@@ -78,13 +79,13 @@ Sınanacak kayan nokta değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`isfinite`C olarak derlendiğinde bir makro ve C++ olarak derlendiğinde bir satır içi şablon işlevidir. `_finite`Ve `_finitef` Işlevleri, Microsoft 'a özgüdür. `_finitef`İşlevi yalnızca x86, ARM veya ARM64 platformları için derlendiğinde kullanılabilir.
+`isfinite` C olarak derlendiğinde bir makro ve C++ olarak derlendiğinde bir satır içi şablon işlevidir. `_finite`Ve `_finitef` Işlevleri, Microsoft 'a özgüdür. `_finitef`İşlevi yalnızca x86, ARM veya ARM64 platformları için derlendiğinde kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |--------------|---------------------------|-------------------------------|
-|`_finite`|\<float.h> veya \<math.h>|\<float.h>, \<math.h> , \<cfloat> veya\<cmath>|
+|`_finite`|\<float.h> veya \<math.h>|\<float.h>, \<math.h> , \<cfloat> veya \<cmath>|
 |`isfinite`, `_finitef`|\<math.h>|\<math.h> veya \<cmath>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).

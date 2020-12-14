@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Framework içindeki Dialog-Box bileşenleri'
 title: Framework'te İletişim Kutusu Bileşenleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - dialog templates [MFC], MFC framework
 - MFC dialog boxes [MFC], dialog resource
 ms.assetid: 592db160-0a8a-49be-ac72-ead278aca53f
-ms.openlocfilehash: b3290107337f60854e6abbd2f744aaa38af0b741
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 406ffda122c6663d698f008a25164f8836221a2f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616919"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261547"
 ---
 # <a name="dialog-box-components-in-the-framework"></a>Framework'te İletişim Kutusu Bileşenleri
 
@@ -29,5 +30,5 @@ MFC çerçevesinde, bir iletişim kutusunun iki bileşeni vardır:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim Kutuları](dialog-boxes.md)<br/>
+[İletişim kutuları](dialog-boxes.md)<br/>
 [MFC’de İletişim Kutularıyla çalışma](life-cycle-of-a-dialog-box.md)

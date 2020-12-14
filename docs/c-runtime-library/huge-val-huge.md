@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: HUGE_VAL _HUGE'
 title: HUGE_VAL, _HUGE
 ms.date: 11/04/2016
 api_name:
@@ -17,16 +18,16 @@ helpviewer_keywords:
 - HUGE_VAL constant
 - double value
 ms.assetid: 3f044b45-02cd-46b2-b1de-87fd0441dd6a
-ms.openlocfilehash: 3a0469b7158e765b1b1c6f34cb01c0e90beb1401
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c4109b61b9af65681ca2a006a3839e3d0338fa73
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70940272"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253149"
 ---
 # <a name="huge_val-_huge"></a>HUGE_VAL, _HUGE
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <math.h>
@@ -34,8 +35,8 @@ ms.locfileid: "70940272"
 
 ## <a name="remarks"></a>Açıklamalar
 
-`HUGE_VAL`en büyük gösterilemeyen Double değeridir. Bu değer, bir hata oluştuğunda birçok çalışma zamanı matematik işlevi tarafından döndürülür. Bazı işlevler için-`HUGE_VAL` döndürülür. `HUGE_VAL`olarak `_HUGE`tanımlanır, ancak çalışma zamanı matematik işlevleri döndürülür `HUGE_VAL`. Ayrıca, kodunuzda tutarlılık `HUGE_VAL` için kullanmanız gerekir.
+`HUGE_VAL` en büyük gösterilemeyen Double değeridir. Bu değer, bir hata oluştuğunda birçok çalışma zamanı matematik işlevi tarafından döndürülür. Bazı işlevler için- `HUGE_VAL` döndürülür. `HUGE_VAL` olarak tanımlanır `_HUGE` , ancak çalışma zamanı matematik işlevleri döndürülür `HUGE_VAL` . Ayrıca, `HUGE_VAL` kodunuzda tutarlılık için kullanmanız gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Global sabitler](../c-runtime-library/global-constants.md)

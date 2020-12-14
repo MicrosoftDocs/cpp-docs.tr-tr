@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64'
 title: _findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64
 ms.date: 4/2/2020
 api_name:
@@ -112,12 +113,12 @@ helpviewer_keywords:
 - wfindfirst64i32 function
 - _wfindfirst64 function
 ms.assetid: 9bb46d1a-b946-47de-845a-a0b109a33ead
-ms.openlocfilehash: 879a84b14f612992ae7ed3a96211637aaf5c4783
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: dce0c283a6177940019f1d358bd6cfa500c04306
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911735"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263146"
 ---
 # <a name="_findfirst-_findfirst32-_findfirst32i64-_findfirst64-_findfirst64i32-_findfirsti64-_wfindfirst-_wfindfirst32-_wfindfirst32i64-_wfindfirst64-_wfindfirst64i32-_wfindfirsti64"></a>_findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64
 
@@ -193,7 +194,7 @@ Başarılı olursa **_findfirst** , [_findnext](findnext-functions.md) veya [_fi
 | **EıNVAL** | Geçersiz parametre: *dosyabelirtimi* veya *FILEINFO* **null**. Ya da, işletim sistemi beklenmeyen bir hata döndürdü. |
 | **ENOENT** | Eşleştirileceği dosya belirtimi. |
 | **ENOMEM** | Yetersiz bellek. |
-| **EıNVAL** | Geçersiz dosya adı belirtimi veya verilen dosya adı **MAX_PATH**daha büyük. |
+| **EıNVAL** | Geçersiz dosya adı belirtimi veya verilen dosya adı **MAX_PATH** daha büyük. |
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -211,7 +212,7 @@ Bu işlevler, *FileInfo* parametresi için **_finddata_t** yapısının çeşitl
 
 64 bitlik bir zaman türü kullanan Çeşitlemeler, dosya oluşturma tarihlerinin 23:59:59, 31 Aralık 3000, UTC 'ye kadar ifade edilmesi için izin sağlar. 32 bitlik zaman türleri kullanan olanlar yalnızca 23:59:59 Ocak 2038 ve UTC tarihleri arasında tarihleri temsil eder. Gece yarısı, 1 Ocak 1970, tüm bu işlevler için tarih aralığının alt sınırdır.
 
-Zaman boyutunu açıkça belirten sürümleri kullanmak için belirli bir nedeniniz yoksa **_findfirst** veya **_wfindfirst** kullanın veya 3 GB 'tan büyük dosya boyutlarını desteklemeniz gerekiyorsa, **_findfirsti64** veya **_wfindfirsti64**kullanın. Tüm bu işlevler 64 bitlik saat türünü kullanır. Önceki sürümlerde, bu işlevler 32 bitlik bir zaman türü kullandı. Bu bir uygulama için önemli bir değişiklik ise eski davranışa dönmek için **_USE_32BIT_TIME_T** tanımlayabilirsiniz. **_USE_32BIT_TIME_T** tanımlanmışsa, **_findfirst**, **_Finfirsti64**ve bunlara karşılık gelen Unicode sürümleri 32 bitlik bir süre kullanır.
+Zaman boyutunu açıkça belirten sürümleri kullanmak için belirli bir nedeniniz yoksa **_findfirst** veya **_wfindfirst** kullanın veya 3 GB 'tan büyük dosya boyutlarını desteklemeniz gerekiyorsa, **_findfirsti64** veya **_wfindfirsti64** kullanın. Tüm bu işlevler 64 bitlik saat türünü kullanır. Önceki sürümlerde, bu işlevler 32 bitlik bir zaman türü kullandı. Bu bir uygulama için önemli bir değişiklik ise eski davranışa dönmek için **_USE_32BIT_TIME_T** tanımlayabilirsiniz. **_USE_32BIT_TIME_T** tanımlanmışsa, **_findfirst**, **_Finfirsti64** ve bunlara karşılık gelen Unicode sürümleri 32 bitlik bir süre kullanır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -243,18 +244,18 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_findfirst**|\<GÇ. h>|
-|**_findfirst32**|\<GÇ. h>|
-|**_findfirst64**|\<GÇ. h>|
-|**_findfirsti64**|\<GÇ. h>|
-|**_findfirst32i64**|\<GÇ. h>|
-|**_findfirst64i32**|\<GÇ. h>|
-|**_wfindfirst**|\<GÇ. h> veya \<wchar. h>|
-|**_wfindfirst32**|\<GÇ. h> veya \<wchar. h>|
-|**_wfindfirst64**|\<GÇ. h> veya \<wchar. h>|
-|**_wfindfirsti64**|\<GÇ. h> veya \<wchar. h>|
-|**_wfindfirst32i64**|\<GÇ. h> veya \<wchar. h>|
-|**_wfindfirst64i32**|\<GÇ. h> veya \<wchar. h>|
+|**_findfirst**|\<io.h>|
+|**_findfirst32**|\<io.h>|
+|**_findfirst64**|\<io.h>|
+|**_findfirsti64**|\<io.h>|
+|**_findfirst32i64**|\<io.h>|
+|**_findfirst64i32**|\<io.h>|
+|**_wfindfirst**|\<io.h> veya \<wchar.h>|
+|**_wfindfirst32**|\<io.h> veya \<wchar.h>|
+|**_wfindfirst64**|\<io.h> veya \<wchar.h>|
+|**_wfindfirsti64**|\<io.h> veya \<wchar.h>|
+|**_wfindfirst32i64**|\<io.h> veya \<wchar.h>|
+|**_wfindfirst64i32**|\<io.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

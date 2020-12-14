@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: C999-C1999 aracılığıyla derleyici önemli hataları'
 title: C999 ile C1999 arasındaki önemli derleyici hataları
 ms.date: 04/21/2019
 f1_keywords:
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - C1505
 - C1901
 ms.assetid: 6c8df109-7594-48ed-987a-97d9fe2b04af
-ms.openlocfilehash: 395d7403ef4fe04b671a84a61d320b27ad8ad1c7
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 93b1e9d3998a3ad29d45e2b1c197807bf61e4176
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73626563"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262847"
 ---
 # <a name="compiler-fatal-errors-c999-through-c1999"></a>C999 ile C1999 arasındaki önemli derleyici hataları
 
@@ -67,16 +68,16 @@ Belgelerinin bu bölümündeki makaleler, Microsoft C/C++ derleyicisi tarafında
 
 |Hata|İleti|
 |-----------|-------------|
-|[Önemli hata C999](../../error-messages/compiler-errors-1/fatal-error-c999.md)|BILINMEYEN ILETI lütfen görsel C++ Yardım menüsünde Teknik destek komutunu seçin veya daha fazla bilgi Için Teknik destek yardım dosyasını açın|
-|[Önemli hata C1001](../../error-messages/compiler-errors-1/fatal-error-c1001.md)|Derleyicide bir iç hata oluştu.<br /> (derleyici dosyası '*Dosya*', satır *numarası*)<br /> Bu sorunu geçici olarak çözmek için, yukarıda listelenen konumların yakınında programı basitleştirmeyi veya değiştirmeyi deneyin. Lütfen görsel C++ Yardım menüsünde Teknik destek komutunu seçin veya daha fazla bilgi Için Teknik destek yardım dosyasını açın|
-|[Önemli hata C1002](../../error-messages/compiler-errors-1/fatal-error-c1002.md)|2\. geçişte derleyicinin yığın alanı kalmadı|
-|[Önemli hata C1003](../../error-messages/compiler-errors-1/fatal-error-c1003.md)|hata sayısı *sayıyı*aşıyor; derleme durduruluyor|
+|[Önemli hata C999](../../error-messages/compiler-errors-1/fatal-error-c999.md)|BILINMEYEN ILETI lütfen Visual C++ Yardım menüsünde Teknik destek komutunu seçin veya daha fazla bilgi için teknik destek yardım dosyasını açın|
+|[Önemli hata C1001](../../error-messages/compiler-errors-1/fatal-error-c1001.md)|Derleyicide iç hata oluştu.<br /> (derleyici dosyası '*Dosya*', satır *numarası*)<br /> Bu sorunu geçici olarak çözmek için, yukarıda listelenen konumların yakınında programı basitleştirmeyi veya değiştirmeyi deneyin. Lütfen Visual C++ Yardım menüsünde Teknik destek komutunu seçin veya daha fazla bilgi için teknik destek yardım dosyasını açın|
+|[Önemli hata C1002](../../error-messages/compiler-errors-1/fatal-error-c1002.md)|2. geçişte derleyicinin yığın alanı kalmadı|
+|[Önemli hata C1003](../../error-messages/compiler-errors-1/fatal-error-c1003.md)|hata sayısı *sayıyı* aşıyor; derleme durduruluyor|
 |[Önemli hata C1004](../../error-messages/compiler-errors-1/fatal-error-c1004.md)|beklenmeyen dosya sonu bulundu|
 |[Önemli hata C1005](../../error-messages/compiler-errors-1/fatal-error-c1005.md)|dize arabellek için çok büyük|
 |[Önemli hata C1007](../../error-messages/compiler-errors-1/fatal-error-c1007.md)|'*Option*' içinde tanınmayan bayrak '*String*'|
 |[Önemli hata C1008](../../error-messages/compiler-errors-1/fatal-error-c1008.md)|giriş dosyası belirtilmedi|
 |[Önemli hata C1009](../../error-messages/compiler-errors-1/fatal-error-c1009.md)|Derleyici sınırı: makrolar çok derin iç içe yerleştirilmiş|
-|[Önemli hata C1010](../../error-messages/compiler-errors-1/fatal-error-c1010.md)|önceden derlenmiş üst bilgi aranırken beklenmeyen dosya sonu. Kaynağınıza ' #include \<*file*> ' eklemeyi mi unuttunuz?|
+|[Önemli hata C1010](../../error-messages/compiler-errors-1/fatal-error-c1010.md)|önceden derlenmiş üst bilgi aranırken beklenmeyen dosya sonu. Kaynağınıza ' #include ' eklemeyi mi unuttunuz \<*file*> ?|
 |[Önemli hata C1012](fatal-error-c1012.md)|eşleşmeyen parantez: '*character*' eksik|
 |[Önemli hata C1013](fatal-error-c1013.md)|Derleyici sınırı: çok fazla açık parantez|
 |[Önemli hata C1014](fatal-error-c1014.md)|çok fazla içerme dosyası: derinlik = *sayı*|
@@ -95,7 +96,7 @@ Belgelerinin bu bölümündeki makaleler, Microsoft C/C++ derleyicisi tarafında
 |Önemli hata C1036|önceki program veritabanı biçiminin üzerine yazılamıyor, '*Dosya*' öğesini silip yeniden derleyin|
 |[Önemli hata C1037](fatal-error-c1037.md)|'*Dosya*' nesne dosyası açılamıyor|
 |[Önemli hata C1038](fatal-error-c1038.md)|Derleyici sınırı: '*Function*': denetim akışı durumu çok karmaşık; basitleşme işlevi|
-|Önemli hata C1041|'*Dosya*' program veritabanı açılamıyor; Eğer birden çok CL. EXE aynı yazma. PDB dosyası, lütfen/FS kullanın|
+|Önemli hata C1041|'*Dosya*' program veritabanı açılamıyor; birden çok CL.EXE aynı şekilde yazarsanız. PDB dosyası, lütfen/FS kullanın|
 |[Önemli hata C1045](fatal-error-c1045.md)|Derleyici sınırı: bağlantı belirtimleri çok derin iç içe|
 |[Önemli Hata C1046](../../error-messages/compiler-errors-1/fatal-error-c1046.md)|Derleyici sınırı: *Yapı* çok derin iç içe|
 |[Önemli hata C1047](fatal-error-c1047.md)|'*File*' nesne veya kitaplık dosyası diğer nesnelerden daha eski bir derleyici ile oluşturulmuş; eski nesneleri ve kitaplıkları yeniden oluşturma|
@@ -137,7 +138,7 @@ Belgelerinin bu bölümündeki makaleler, Microsoft C/C++ derleyicisi tarafında
 |[Önemli hata C1091](fatal-error-c1091.md)|Derleyici sınırı: dize *sayı* baytı uzunluğunu aşıyor|
 |[Önemli hata C1092](../../error-messages/compiler-errors-1/fatal-error-c1092.md)|Düzenle ve devam et veri türlerinde yapılan değişiklikleri desteklemez; derleme gerekiyor|
 |[Önemli hata C1093](../../error-messages/compiler-errors-1/fatal-error-c1093.md)|'*Function*' API çağrısı '*HRESULT*' başarısız oldu: '*Description*'|
-|[Önemli hata C1094](../../error-messages/compiler-errors-1/fatal-error-c1094.md)|'-ZM*Number*': komut satırı seçeneği önceden derlenmiş üstbilgiyi oluşturmak için kullanılan değerle tutarsız ('-ZM*Number*')|
+|[Önemli hata C1094](../../error-messages/compiler-errors-1/fatal-error-c1094.md)|'-ZM *Number*': komut satırı seçeneği önceden derlenmiş üstbilgiyi oluşturmak için kullanılan değerle tutarsız ('-ZM *Number*')|
 |[Önemli hata C1098](fatal-error-c1098.md)|Düzenle ve devam et altyapısında sürüm uyuşmazlığı|
 |[Önemli hata C1099](fatal-error-c1099.md)|Düzenle ve devam et altyapısı derlemeyi sonlandırıyor|
 |[Önemli hata c1100](fatal-error-c1100.md)|OLE başlatılamıyor: *hata*|
@@ -151,7 +152,7 @@ Belgelerinin bu bölümündeki makaleler, Microsoft C/C++ derleyicisi tarafında
 |[Önemli hata C1109](fatal-error-c1109.md)|'*Dosya*' dll dosyasında '*symbol*' bulunamadı|
 |Önemli hata C1110|çok fazla iç içe şablon/genel tanım|
 |Önemli hata C1111|çok fazla şablon/genel parametre|
-|Önemli hata C1112|Derleyici sınırı: `'number`' çok fazla makro bağımsız değişkeni, yalnızca izin verilen *sayı*|
+|Önemli hata C1112|Derleyici sınırı: `'number` ' çok fazla makro bağımsız değişkeni, yalnızca izin verilen *sayı*|
 |[Önemli hata C1113](../../error-messages/compiler-errors-1/fatal-error-c1113.md)|'*File*' üzerinde #using başarısız oldu|
 |Önemli hata C1114|'*Dosya*': WinRT yönetilen bir derlemenin #using desteklemiyor|
 |[Önemli hata C1120](../../error-messages/compiler-errors-1/fatal-error-c1120.md)|'*Function*' için GetProcAddress çağrısı başarısız oldu|
@@ -164,7 +165,7 @@ Belgelerinin bu bölümündeki makaleler, Microsoft C/C++ derleyicisi tarafında
 |[Önemli hata C1192](../../error-messages/compiler-errors-1/fatal-error-c1192.md)|'*File*' üzerinde #using başarısız oldu|
 |Önemli hata C1193|*dosyada*(*satır*) beklenen bir hataya ulaşılmadı|
 |Önemli hata C1195|aynı komut satırında/Yu ve/Rivc kullanımı/clr seçeneğiyle uyumsuzdur|
-|[Önemli hata C1196](fatal-error-c1196.md)|'*tanımlayıcı*': '*TypeLib*' tür kitaplığında bulunan tanımlayıcı geçerli C++ bir tanımlayıcı değil|
+|[Önemli hata C1196](fatal-error-c1196.md)|'*tanımlayıcı*': '*TypeLib*' tür kitaplığında bulunan tanımlayıcı geçerli bir C++ tanımlayıcısı değil|
 |[Önemli hata C1197](../../error-messages/compiler-errors-1/fatal-error-c1197.md)|Program '*File*' öğesine zaten başvurulduğundan '*Dosya*' öğesine başvurulamaz|
 |[Önemli hata C1201](fatal-error-c1201.md)|sınıf şablonu tanımındaki sözdizimi hatasından sonra devam edilemiyor|
 |[Önemli hata C1202](fatal-error-c1202.md)|özyinelemeli tür veya işlev bağımlılığı bağlamı çok karmaşık|
@@ -176,13 +177,13 @@ Belgelerinin bu bölümündeki makaleler, Microsoft C/C++ derleyicisi tarafında
 |[Önemli hata C1210](fatal-error-c1210.md)|/clr: Pure ve/clr: Safe yüklü olan çalışma zamanı sürümü tarafından desteklenmiyor|
 |[Önemli hata C1211](fatal-error-c1211.md)|TypeForwardedTo özel özniteliği yüklü olan çalışma zamanı sürümü tarafından desteklenmiyor|
 |Önemli hata C1300|Program veritabanı *dosyasına* erişilirken hata oluştu (*ileti*)|
-|Önemli hata C1301|Program veritabanı *dosyasına*erişilirken hata oluştu, geçersiz biçim; lütfen silin ve yeniden oluşturun|
+|Önemli hata C1301|Program veritabanı *dosyasına* erişilirken hata oluştu, geçersiz biçim; lütfen silin ve yeniden oluşturun|
 |Önemli hata C1302|'*Dosya*' profil veritabanındaki '*module*' modülü için profil verisi yok|
 |[Önemli hata C1305](../../error-messages/compiler-errors-1/fatal-error-c1305.md)|'*Dosya*' profil veritabanı farklı bir mimari için|
 |Önemli hata C1306|'*File*' profil veri tabanına yapılan son değişiklik iyileştirme Analizi değildi; iyileştirme kararları güncel olmayabilir|
 |[Önemli hata C1307](../../error-messages/compiler-errors-1/fatal-error-c1307.md)|profil verileri toplandıktan sonra program düzenlendi|
 |[Önemli hata C1308](../../error-messages/compiler-errors-1/fatal-error-c1308.md)|*Dosya*: derlemelerin bağlanması desteklenmiyor|
-|[Önemli hata C1309](../../error-messages/compiler-errors-1/fatal-error-c1309.md)|Eşleşmeyen C2 sürümleri. DLL ve pgodb*ver*. DOSYASıNı|
+|[Önemli hata C1309](../../error-messages/compiler-errors-1/fatal-error-c1309.md)|Eşleşmeyen C2.DLL ve pgodb *ver* sürümleri. DOSYASıNı|
 |[Önemli hata C1310](fatal-error-c1310.md)|Profil temelli iyileştirmeler OpenMP ile kullanılamaz|
 |[Önemli hata C1311](../../error-messages/compiler-errors-1/fatal-error-c1311.md)|COFF biçimi '*symbol*' adresini bir adresin *sayı* baytına göre statik olarak başlatamıyor|
 |[Önemli hata C1312](fatal-error-c1312.md)|İşlevde çok fazla koşullu dal.  Kaynak kodunu kolaylaştırın veya yeniden düzenleyin.|
@@ -194,17 +195,17 @@ Belgelerinin bu bölümündeki makaleler, Microsoft C/C++ derleyicisi tarafında
 |[Önemli hata C1382](../../error-messages/compiler-errors-1/fatal-error-c1382.md)|'*obj*' oluşturulduktan sonra '*Dosya*' pch dosyası yeniden oluşturuldu. Lütfen bu nesneyi yeniden derleyin|
 |[Önemli hata C1383](fatal-error-c1383.md)|/GL derleyici seçeneği yüklü olan ortak dil çalışma zamanının sürümüyle uyumsuz|
 |Önemli hata C1384|'*File*' bağlanırken PGO_PATH_TRANSLATION için yanlış ayar|
-|Önemli hata C1451|Concurrency::p arallel_for_each için çağrı grafı derlenirken hata ayıklama bilgileri oluşturulamadı: '*çağıran site*'|
+|Önemli hata C1451|Şu adreste eşzamanlılık::p arallel_for_each için çağrı grafı derlenirken hata ayıklama bilgileri oluşturulamadı: '*çağıran site*'|
 |Önemli hata C1505|kurtarılamaz ayrıştırıcı görünümü ileri hatası|
 |[Önemli hata C1506](../../error-messages/compiler-errors-1/fatal-error-c1506.md)|kurtarılamaz blok kapsamı hatası|
 |[Önemli hata C1508](fatal-error-c1508.md)|Derleyici sınırı: '*Function*': 65535 'den fazla bağımsız değişken bayt|
 |[Önemli hata C1509](../../error-messages/compiler-errors-1/fatal-error-c1509.md)|Derleyici sınırı: '*Function*' işlevinde çok fazla özel durum işleyici durumu; basitleşme işlevi|
-|[Önemli hata C1510](../../error-messages/compiler-errors-1/fatal-error-c1510.md)|Clui. dll dil kaynağı açılamıyor|
+|[Önemli hata C1510](../../error-messages/compiler-errors-1/fatal-error-c1510.md)|Dil kaynağı açılamıyor clui.dll|
 |[Önemli hata C1601](../../error-messages/compiler-errors-1/fatal-error-c1601.md)|desteklenmeyen satır içi derleme işlem kodu|
 |[Önemli hata C1602](../../error-messages/compiler-errors-1/fatal-error-c1602.md)|Desteklenmeyen iç öğe|
 |[Önemli hata C1603](../../error-messages/compiler-errors-1/fatal-error-c1603.md)|satır içi derleme dalı hedefi, *sayı* baytlarına göre Aralık dışında|
 |[Önemli hata C1852](fatal-error-c1852.md)|'*File*' geçerli bir ön derlenmiş üstbilgi dosyası değil|
-|[Önemli Hata C1853](../../error-messages/compiler-errors-1/fatal-error-c1853.md)|'*File*' ön derlenmiş üstbilgi dosyası derleyicinin önceki bir sürümünden veya ön derlenmiş üstbilgi C++ ve C 'den kullanıyorsunuz (veya tersi)|
+|[Önemli Hata C1853](../../error-messages/compiler-errors-1/fatal-error-c1853.md)|'*File*' ön derlenmiş üstbilgi dosyası derleyicinin önceki bir sürümünden veya ön derlenmiş üstbilgi C++ ve bunu C 'den kullanıyorsunuz (veya tersi)|
 |[Önemli hata C1854](../../error-messages/compiler-errors-1/fatal-error-c1854.md)|nesne dosyasındaki ön derlenmiş üstbilginin oluşturulması sırasında oluşturulan bilgilerin üzerine yazılamıyor: '*Dosya*'|
 |[Önemli hata C1900](../../error-messages/compiler-errors-1/fatal-error-c1900.md)|'*Araç*' sürümü '*Number*' ve '*Tool*' sürümü '*Number*' arasında Il uyuşmazlığı|
 |Önemli hata C1901|İç bellek yönetimi hatası|
@@ -215,4 +216,4 @@ Belgelerinin bu bölümündeki makaleler, Microsoft C/C++ derleyicisi tarafında
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ derleyici ve derleme araçları hataları ve uyarıları](../compiler-errors-1/c-cpp-build-errors.md)
+[C/C++ Derleyicisi ve derleme araçları hata ve uyarıları](../compiler-errors-1/c-cpp-build-errors.md)

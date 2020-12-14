@@ -1,4 +1,5 @@
 ---
+description: ': Platform:: Collections:: Vectorterator sınıfı hakkında daha fazla bilgi edinin'
 title: 'Platform:: Collections:: Vectorterator sınıfı'
 ms.date: 03/27/2019
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - VectorIterator Class
 ms.assetid: d531cb42-27e0-48a6-bf5e-c265891a18ff
-ms.openlocfilehash: bade67a104774c3ab6187e250c6faf6969002c0c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ad572a8b426092fb0ddb39db44f387598674c988
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218422"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253916"
 ---
 # <a name="platformcollectionsvectoriterator-class"></a>Platform:: Collections:: Vectorterator sınıfı
 
@@ -20,7 +21,7 @@ Windows Çalışma Zamanı IVector arabiriminden türetilmiş nesneler için sta
 
 VectorIterator, VectorProxy türünde öğeleri depolayan bir proxy Yineleyici \<T> . Ancak, proxy nesnesi neredeyse hiçbir şekilde Kullanıcı koduna görünmez. Daha fazla bilgi için bkz. [Koleksiyonlar (C++/CX)](../cppcx/collections-c-cx.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template <typename T>
@@ -80,11 +81,11 @@ VectorIterator şablon sınıfının TypeName 'i.
 
 **Ad alanı:** Platform:: Collections
 
-## <a name="vectoriteratoroperator-gt-operator"></a><a name="operator-arrow"></a>VectorIterator:: operator- &gt; işleci
+## <a name="vectoriteratoroperator-gt-operator"></a><a name="operator-arrow"></a> VectorIterator:: operator- &gt; işleci
 
 Geçerli VectorIterator tarafından başvurulan öğenin adresini alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 Detail::ArrowProxy<T> operator->() const;
@@ -96,11 +97,11 @@ Geçerli VectorIterator tarafından başvurulan öğenin değeri.
 
 Dönüş değerinin türü, bu işlecin uygulanması için gerekli olan belirtilmemiş bir iç türdür.
 
-## <a name="vectoriteratoroperator---operator"></a><a name="operator-decrement"></a>VectorIterator:: operator--Işleci
+## <a name="vectoriteratoroperator---operator"></a><a name="operator-decrement"></a> VectorIterator:: operator--Işleci
 
 Geçerli Vektörtorterator 'ı azaltır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 
@@ -118,11 +119,11 @@ VectorIterator operator--(int);
 
 İkinci sözdizimi sonrası, geçerli Vektörtorterator ' i azaltır. **`int`** İkinci söz diziminde tür, gerçek bir tamsayı işleneni değil, azaltma sonrası bir işlemi gösterir.
 
-## <a name="vectoriteratoroperator-operator"></a><a name="operator-dereference"></a>VectorIterator:: operator \* işleci
+## <a name="vectoriteratoroperator-operator"></a><a name="operator-dereference"></a> VectorIterator:: operator \* işleci
 
 Geçerli VectorIterator tarafından belirtilen öğenin adresini alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 reference operator*() const;
@@ -132,11 +133,11 @@ reference operator*() const;
 
 Geçerli VectorIterator tarafından belirtilen öğe.
 
-## <a name="vectoriteratoroperator-operator"></a><a name="operator-equality"></a>VectorIterator:: operator = = Işleci
+## <a name="vectoriteratoroperator-operator"></a><a name="operator-equality"></a> VectorIterator:: operator = = Işleci
 
 Geçerli VectorIterator 'ın belirtilen bir VectorIterator değerine eşit olup olmadığını gösterir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 bool operator==(const VectorIterator& other) const;
@@ -149,13 +150,13 @@ Başka bir VectorIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**`true`** geçerli VectorIterator *diğer*bir değere eşitse; Aksi takdirde, **`false`** .
+**`true`** geçerli VectorIterator *diğer* bir değere eşitse; Aksi takdirde, **`false`** .
 
-## <a name="vectoriteratoroperatorgt-operator"></a><a name="operator-greater-than"></a>VectorIterator:: operator &gt; işleci
+## <a name="vectoriteratoroperatorgt-operator"></a><a name="operator-greater-than"></a> VectorIterator:: operator &gt; işleci
 
 Geçerli VectorIterator 'ın belirtilen bir VectorIterator değerinden büyük olup olmadığını gösterir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool operator>(const VectorIterator& other) const
@@ -170,11 +171,11 @@ Başka bir VectorIterator.
 
 **`true`** geçerli VectorIterator *bundan büyükse;* Aksi takdirde, **`false`** .
 
-## <a name="vectoriteratoroperatorgt-operator"></a><a name="operator-greater-than-or-equals"></a>VectorIterator:: operator &gt; = işleci
+## <a name="vectoriteratoroperatorgt-operator"></a><a name="operator-greater-than-or-equals"></a> VectorIterator:: operator &gt; = işleci
 
 Geçerli VectorIterator 'ın belirtilen VectorIterator değerinden büyük veya bu değere eşit olup olmadığını gösterir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool operator>=(const VectorIterator& other) const
@@ -189,11 +190,11 @@ Başka bir VectorIterator.
 
 **`true`** geçerli VectorIterator öğesinden büyükse veya buna *eşitse;* Aksi takdirde, **`false`** .
 
-## <a name="vectoriteratoroperator-operator"></a><a name="operator-increment"></a>VectorIterator:: operator + + Işleci
+## <a name="vectoriteratoroperator-operator"></a><a name="operator-increment"></a> VectorIterator:: operator + + Işleci
 
 Geçerli Vektörtorterator 'ı arttırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 VectorIterator& operator++();
@@ -210,11 +211,11 @@ VectorIterator operator++(int);
 
 İkinci sözdizimi, son vektör terator ' i arttırır. **`int`** İkinci sözdiziminde tür, gerçek bir tamsayı işleneni değil, artırma sonrası bir işlemi gösterir.
 
-## <a name="vectoriteratoroperator-operator"></a><a name="operator-inequality"></a>VectorIterator:: operator! = Işleci
+## <a name="vectoriteratoroperator-operator"></a><a name="operator-inequality"></a> VectorIterator:: operator! = Işleci
 
 Geçerli VectorIterator 'ın belirtilen bir VectorIterator öğesine eşit olup olmadığını gösterir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 bool operator!=(const VectorIterator& other) const;
@@ -227,13 +228,13 @@ Başka bir VectorIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**`true`** geçerli VectorIterator *diğer*değere eşit değilse; Aksi takdirde, **`false`** .
+**`true`** geçerli VectorIterator *diğer* değere eşit değilse; Aksi takdirde, **`false`** .
 
-## <a name="vectoriteratoroperatorlt-operator"></a><a name="operator-less-than"></a>VectorIterator:: operator &lt; işleci
+## <a name="vectoriteratoroperatorlt-operator"></a><a name="operator-less-than"></a> VectorIterator:: operator &lt; işleci
 
 Geçerli VectorIterator 'ın belirtilen bir VectorIterator değerinden küçük olup olmadığını gösterir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool operator<(const VectorIterator& other) const
@@ -246,13 +247,13 @@ Başka bir VectorIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**`true`** geçerli VectorIterator *varsayılandan*küçükse; Aksi takdirde, **`false`** .
+**`true`** geçerli VectorIterator *varsayılandan* küçükse; Aksi takdirde, **`false`** .
 
-## <a name="vectoriteratoroperatorlt-operator"></a><a name="operator-less-than-or-equals"></a>VectorIterator:: operator &lt; = işleci
+## <a name="vectoriteratoroperatorlt-operator"></a><a name="operator-less-than-or-equals"></a> VectorIterator:: operator &lt; = işleci
 
 Geçerli VectorIterator 'ın belirtilen bir VectorIterator değerinden küçük veya bu değere eşit olup olmadığını gösterir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool operator<=(const VectorIterator& other) const
@@ -265,13 +266,13 @@ Başka bir VectorIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**`true`** geçerli VectorIterator *diğer*değerden küçükse veya buna eşitse; Aksi takdirde, **`false`** .
+**`true`** geçerli VectorIterator *diğer* değerden küçükse veya buna eşitse; Aksi takdirde, **`false`** .
 
-## <a name="vectoriteratoroperator--operator"></a><a name="operator-minus"></a>VectorIterator:: operator-Işleci
+## <a name="vectoriteratoroperator--operator"></a><a name="operator-minus"></a> VectorIterator:: operator-Işleci
 
 Geçerli yineleyiciden belirtilen sayıda öğeyi, yeni bir yineleyici oluşturan ya da geçerli yineleyiciden belirtilen bir yineleyiciyi, yineleyiciler arasındaki öğe sayısını çıkaran şekilde çıkartır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 
@@ -282,7 +283,7 @@ difference_type operator-(const VectorIterator& other) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*No*<br/>
+*n*<br/>
 Bir dizi öğe.
 
 *farklı*<br/>
@@ -292,11 +293,11 @@ Başka bir VectorIterator.
 
 İlk işleç sözdizimi, `n` geçerli vectoriterator öğesinden daha az öğe olan bir VectorIterator nesnesi döndürüyor. İkinci işleç sözdizimi, geçerli ve vektörtorterator arasındaki öğe sayısını döndürür `other` .
 
-## <a name="vectoriteratoroperator-operator"></a><a name="operator-plus-assign"></a>VectorIterator:: operator + = Işleci
+## <a name="vectoriteratoroperator-operator"></a><a name="operator-plus-assign"></a> VectorIterator:: operator + = Işleci
 
 Belirtilen öteleme ile geçerli Vektörtorterator 'ı arttırır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 VectorIterator& operator+=(difference_type n);
@@ -304,18 +305,18 @@ VectorIterator& operator+=(difference_type n);
 
 ### <a name="parameters"></a>Parametreler
 
-*No*<br/>
+*n*<br/>
 Tamsayı değiştirme.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Güncelleştirilmiş VectorIterator.
 
-## <a name="vectoriteratoroperator-operator"></a><a name="operator-plus"></a>VectorIterator:: operator + Işleci
+## <a name="vectoriteratoroperator-operator"></a><a name="operator-plus"></a> VectorIterator:: operator + Işleci
 
 Belirtilen VectorIterator öğesinden belirtilen yer alan öğeye başvuran bir VectorIterator döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 
@@ -332,7 +333,7 @@ inline VectorIterator<T> operator+(
 *T*<br/>
 İkinci sözdiziminde, VectorIterator typeName.
 
-*No*<br/>
+*n*<br/>
 Bir tamsayı değiştirme.
 
 *i*<br/>
@@ -348,11 +349,11 @@ Bir tamsayı değiştirme.
 
 İlk sözdizimi örneği
 
-## <a name="vectoriteratoroperator--operator"></a><a name="operator-minus-equals"></a>VectorIterator:: operator-= Işleci
+## <a name="vectoriteratoroperator--operator"></a><a name="operator-minus-equals"></a> VectorIterator:: operator-= Işleci
 
 Belirtilen öteleme ile geçerli Vektörtorterator 'ı azaltır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 VectorIterator& operator-=(difference_type n);
@@ -360,18 +361,18 @@ VectorIterator& operator-=(difference_type n);
 
 ### <a name="parameters"></a>Parametreler
 
-*No*<br/>
+*n*<br/>
 Bir tamsayı değiştirme.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Güncelleştirilmiş VectorIterator.
 
-## <a name="vectoriteratoroperator"></a><a name="operator-at"></a>VectorIterator:: işleci\[\]
+## <a name="vectoriteratoroperator"></a><a name="operator-at"></a> VectorIterator:: işleci\[\]
 
 Geçerli VectorIterator öğesinden belirtilen bir öteleme olan öğeye bir başvuru alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 reference operator[](difference_type n) const;
@@ -379,18 +380,18 @@ reference operator[](difference_type n) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*No*<br/>
+*n*<br/>
 Bir tamsayı değiştirme.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 `n`Geçerli VectorIterator öğesinden öğeler tarafından yer alan öğe.
 
-## <a name="vectoriteratorvectoriterator-constructor"></a><a name="ctor"></a>VectorIterator:: Vectorterator Oluşturucusu
+## <a name="vectoriteratorvectoriterator-constructor"></a><a name="ctor"></a> VectorIterator:: Vectorterator Oluşturucusu
 
 VectorIterator sınıfının yeni bir örneğini başlatır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 VectorIterator();

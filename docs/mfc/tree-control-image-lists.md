@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Ağaç Denetim resmi listeleri'
 title: Ağaç Denetim Görüntü Listeleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - tree controls [MFC], image lists
 - CTreeCtrl class [MFC], image lists
 ms.assetid: f560c4f2-20d2-4d28-ac33-4017e65fb0a6
-ms.openlocfilehash: 8f9e323244657ea6a7cc132deab6deedfcd1a167
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: ce76cca5642208d4158b36c45c150202270258e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513365"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264160"
 ---
 # <a name="tree-control-image-lists"></a>Ağaç Denetim Görüntü Listeleri
 
@@ -23,9 +24,9 @@ Ağaç denetiminin görüntü listeleri, öğe görüntülerinde kullanılmak ü
 
 Bir durum görüntüsü listesi belirtilmişse, ağaç denetimi bir durum görüntüsü için her öğenin simgesinin solunda yer alan alanı ayırır. Uygulama, uygulama tanımlı öğe durumlarını göstermek için, denetlenen ve temizlenmiş onay kutuları gibi durum görüntülerini kullanabilir. Bit olarak 12 ile 15 arasında sıfır olmayan bir değer, bir durum görüntüsünün tek tabanlı dizinini belirtir (0 durum görüntüsü olmadığını gösterir).
 
-Bir görüntünün dizini yerine **I_IMAGECALLBACK** değerini belirterek, öğe yeniden çizilene kadar seçili veya seçili olmayan görüntünün belirtilmesini erteleyebilirsiniz. **I_IMAGECALLBACK** , ağaç denetimini, [TVN_GETDISPINFO](/windows/win32/Controls/tvn-getdispinfo) bildirim iletisini göndererek dizine ait uygulamayı sorgulamak üzere yönlendirir.
+Bir görüntünün dizini yerine **I_IMAGECALLBACK** değerini belirterek, öğe yeniden çizilene kadar seçili veya seçili olmayan görüntünün belirtilmesini erteleyebilirsiniz. **I_IMAGECALLBACK** , ağaç denetimini, dizin için [TVN_GETDISPINFO](/windows/win32/Controls/tvn-getdispinfo) bildirim iletisini göndererek uygulamayı sorgulamak üzere yönlendirir.
 
-[GetImageList](../mfc/reference/ctreectrl-class.md#getimagelist) üye işlevi bir ağaç denetiminin görüntü listesinin tanıtıcısını alır. Bu işlev, listeye daha fazla görüntü eklemeniz gerekiyorsa yararlıdır. Görüntü listeleri hakkında daha fazla bilgi için bkz. [CImageList](../mfc/using-cimagelist.md), *MFC başvurusu*içindeki [CImageList](../mfc/reference/cimagelist-class.md) ve Windows SDK [görüntü listeleri](/windows/win32/controls/image-lists) kullanma.
+[GetImageList](../mfc/reference/ctreectrl-class.md#getimagelist) üye işlevi bir ağaç denetiminin görüntü listesinin tanıtıcısını alır. Bu işlev, listeye daha fazla görüntü eklemeniz gerekiyorsa yararlıdır. Görüntü listeleri hakkında daha fazla bilgi için bkz. [CImageList](../mfc/using-cimagelist.md), *MFC başvurusu* içindeki [CImageList](../mfc/reference/cimagelist-class.md) ve Windows SDK [görüntü listeleri](/windows/win32/controls/image-lists) kullanma.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C++ proje şablonları'
 title: Visual C++ Proje Türleri
 ms.date: 08/13/2019
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - applications [C++], projects
 - C++ projects, types
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
-ms.openlocfilehash: e929142181ebd849c820ad50e5ce64c2d4f5ab44
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 924e53e0d977b4f9b3b40bf7444f8495dbe1d451
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509329"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253175"
 ---
 # <a name="c-project-templates"></a>C++ proje şablonları
 

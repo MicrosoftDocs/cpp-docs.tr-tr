@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64'
 title: _findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
 ms.date: 4/2/2020
 api_name:
@@ -114,12 +115,12 @@ helpviewer_keywords:
 - tfindnext32i64 function
 - _tfindnexti64 function
 ms.assetid: 75d97188-5add-4698-a46c-4c492378f0f8
-ms.openlocfilehash: acb680db3b07b0f600b758401f1270deccf03da7
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5513f3932b78d450ecce81947e0095efb8df1d9d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911660"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263133"
 ---
 # <a name="_findnext-_findnext32-_findnext32i64-_findnext64-_findnext64i32-_findnexti64-_wfindnext-_wfindnext32-_wfindnext32i64-_wfindnext64-_wfindnext64i32-_wfindnexti64"></a>_findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
 
@@ -181,7 +182,7 @@ int _wfindnext64i32(
 ### <a name="parameters"></a>Parametreler
 
 *tutamaçlardan*<br/>
-**_Findfirst**için önceki bir çağrı tarafından döndürülen arama tanıtıcısı.
+**_Findfirst** için önceki bir çağrı tarafından döndürülen arama tanıtıcısı.
 
 *bilgis*<br/>
 Dosya bilgileri arabelleği.
@@ -194,7 +195,7 @@ Başarılı olursa 0 döndürür. Aksi takdirde,-1 döndürür ve hata doğasın
 |-|-|
 | **EıNVAL** | Geçersiz parametre: *FileInfo* **null**. Ya da, işletim sistemi beklenmeyen bir hata döndürdü. |
 | **ENOENT** | Daha fazla eşleşen dosya bulunamadı. |
-| **ENOMEM** | Yeterli bellek yok veya dosya adının uzunluğu **MAX_PATH**aşıldı. |
+| **ENOMEM** | Yeterli bellek yok veya dosya adının uzunluğu **MAX_PATH** aşıldı. |
 
 Geçersiz bir parametre geçirilirse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır.
 
@@ -206,7 +207,7 @@ Bu işlevlerin **w** ön ekine sahip çeşitlemeleri, geniş karakter sürümler
 
 Bu işlevlerin çeşitlemeleri 32 bit veya 64 bit zaman türlerini ve 32-bit veya 64-bit dosya boyutlarını destekler. İlk sayısal sonek (**32** veya **64**) kullanılan zaman türü boyutunu belirtir; İkinci sonek, dosya boyutunun 32-bit veya 64 bit tamsayı olarak temsil edilip edilmeyeceğini gösteren **i32** veya **i64**. Hangi sürümlerin 32-bit ve 64 bit zaman türlerini ve dosya boyutlarını desteklediği hakkında bilgi için aşağıdaki tabloya bakın. 64 bitlik bir zaman türü kullanan Çeşitlemeler, dosya oluşturma tarihlerinin 23:59:59, 31 Aralık 3000, UTC; ile belirtilmesine izin verir 32 bit zaman türlerini kullanan olanlar yalnızca tarihleri 23:59:59 Ocak 2038, UTC olarak temsil eder. Gece yarısı, 1 Ocak 1970, tüm bu işlevler için tarih aralığının alt sınırdır.
 
-Zaman boyutunu açıkça belirten sürümleri kullanmak için belirli bir nedeniniz yoksa **_findnext** veya **_wfindnext** kullanın veya 3 GB 'tan büyük dosya boyutlarını desteklemeniz gerekiyorsa, **_findnexti64** veya **_wfindnexti64**kullanın. Tüm bu işlevler 64 bitlik saat türünü kullanır. Önceki sürümlerde, bu işlevler 32 bitlik bir zaman türü kullandı. Bu bir uygulama için önemli bir değişiklik ise, eski davranışı almak için **_USE_32BIT_TIME_T** tanımlayabilirsiniz. **_USE_32BIT_TIME_T** tanımlanmışsa **_findnext**, **_Finnexti64** ve bunlara karşılık gelen Unicode sürümleri 32 bitlik bir süre kullanır.
+Zaman boyutunu açıkça belirten sürümleri kullanmak için belirli bir nedeniniz yoksa **_findnext** veya **_wfindnext** kullanın veya 3 GB 'tan büyük dosya boyutlarını desteklemeniz gerekiyorsa, **_findnexti64** veya **_wfindnexti64** kullanın. Tüm bu işlevler 64 bitlik saat türünü kullanır. Önceki sürümlerde, bu işlevler 32 bitlik bir zaman türü kullandı. Bu bir uygulama için önemli bir değişiklik ise, eski davranışı almak için **_USE_32BIT_TIME_T** tanımlayabilirsiniz. **_USE_32BIT_TIME_T** tanımlanmışsa **_findnext**, **_Finnexti64** ve bunlara karşılık gelen Unicode sürümleri 32 bitlik bir süre kullanır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -238,18 +239,18 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_findnext**|\<GÇ. h>|
-|**_findnext32**|\<GÇ. h>|
-|**_findnext64**|\<GÇ. h>|
-|**_findnexti64**|\<GÇ. h>|
-|**_findnext32i64**|\<GÇ. h>|
-|**_findnext64i32**|\<GÇ. h>|
-|**_wfindnext**|\<GÇ. h> veya \<wchar. h>|
-|**_wfindnext32**|\<GÇ. h> veya \<wchar. h>|
-|**_wfindnext64**|\<GÇ. h> veya \<wchar. h>|
-|**_wfindnexti64**|\<GÇ. h> veya \<wchar. h>|
-|**_wfindnext32i64**|\<GÇ. h> veya \<wchar. h>|
-|**_wfindnext64i32**|\<GÇ. h> veya \<wchar. h>|
+|**_findnext**|\<io.h>|
+|**_findnext32**|\<io.h>|
+|**_findnext64**|\<io.h>|
+|**_findnexti64**|\<io.h>|
+|**_findnext32i64**|\<io.h>|
+|**_findnext64i32**|\<io.h>|
+|**_wfindnext**|\<io.h> veya \<wchar.h>|
+|**_wfindnext32**|\<io.h> veya \<wchar.h>|
+|**_wfindnext64**|\<io.h> veya \<wchar.h>|
+|**_wfindnexti64**|\<io.h> veya \<wchar.h>|
+|**_wfindnext32i64**|\<io.h> veya \<wchar.h>|
+|**_wfindnext64i32**|\<io.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

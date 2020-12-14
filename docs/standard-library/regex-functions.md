@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; Regex &gt; işlevleri'
 title: '&lt;Regex &gt; işlevleri'
 ms.date: 09/10/2018
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - std::regex_search [C++]
 - std::swap [C++]
 - std::swap [C++]
-ms.openlocfilehash: fd7087025939a0aacf17153f201e37fc377653f9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: aa2186d7b394d1b603d5600d1977efa8d268a32f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842877"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253344"
 ---
 # <a name="ltregexgt-functions"></a>&lt;Regex &gt; işlevleri
 
@@ -124,11 +125,11 @@ Eşleştirilecek sıranın başlangıcı işaretçisi. *PTR* ise `char*` , `cmat
 Eşleştirilecek normal ifade. `regex`Ve için `string` `char*` , veya `wregex` için yazın `wstring` `wchar_t*` .
 
 *üstbilgisine*\
-Eşleştirilecek dize. *Eled*türüne karşılık gelir.
+Eşleştirilecek dize. *Eled* türüne karşılık gelir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her şablon işlevi yalnızca, tüm işlenen dizisi *Str* , normal ifade bağımsız değişkeni *yeniden*ile tam olarak eşleşiyorsa true değerini döndürür. Hedef [regex_search](../standard-library/regex-functions.md#regex_search) dizi içindeki bir alt dizeyle eşleştirmek ve `regex_iterator` birden çok eşleşme bulmak için regex_search kullanın. Bir nesneyi alan işlevler, `match_results` eşleşmenin başarılı olup olmadığını yansıtmak için üyelerini, normal ifadede de bulunan çeşitli yakalama gruplarını yansıtır.
+Her şablon işlevi yalnızca, tüm işlenen dizisi *Str* , normal ifade bağımsız değişkeni *yeniden* ile tam olarak eşleşiyorsa true değerini döndürür. Hedef [](../standard-library/regex-functions.md#regex_search) dizi içindeki bir alt dizeyle eşleştirmek ve `regex_iterator` birden çok eşleşme bulmak için regex_search kullanın. Bir nesneyi alan işlevler, `match_results` eşleşmenin başarılı olup olmadığını yansıtmak için üyelerini, normal ifadede de bulunan çeşitli yakalama gruplarını yansıtır.
 
 Bir nesneyi alan işlevler, `match_results` eşleşmenin başarılı olup olmadığını yansıtmak için üyelerini, normal ifadede de bulunan çeşitli yakalama gruplarını yansıtır.
 
@@ -258,7 +259,7 @@ Eşleştirilecek dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk işlev [regex_iterator bir sınıf](../standard-library/regex-iterator-class.md) nesnesi oluşturur `iter(first, last, re, flags)` ve onu kendi giriş aralığını bir dizi subsequences bölmek için kullanır; `[first, last)` `T0 M0 T1 M1...TN-1 MN-1 TN` burada `Mn` Yineleyici tarafından algılanan nth eşleşmedir. Hiçbir eşleşme bulunamazsa, `T0` tüm giriş aralığıdır ve `N` sıfırdır. `(flags & format_first_only) != 0`Yalnızca ilk eşleşme kullanılırsa, `T1` eşleşmeyi izleyen giriş metninin hepsi ve `N` 1 ' dir. Aralıkta bulunan her biri için `i` `[0, N)` `(flags & format_no_copy) == 0` aralıktaki metni `Ti` Yineleyici olarak kopyalar. *out* Ardından öğesini çağırır `m.format(out, fmt, flags)` , burada, `m` `match_results` alt dizinin Yineleyici nesnesinin döndürdüğü nesnedir `iter` `Mi` . Son olarak, `(flags & format_no_copy) == 0` aralıktaki metni `TN` Yineleyici *dışına*kopyalar. İşlev *, döndürür.*
+İlk işlev [regex_iterator bir sınıf](../standard-library/regex-iterator-class.md) nesnesi oluşturur `iter(first, last, re, flags)` ve onu kendi giriş aralığını bir dizi subsequences bölmek için kullanır; `[first, last)` `T0 M0 T1 M1...TN-1 MN-1 TN` burada `Mn` Yineleyici tarafından algılanan nth eşleşmedir. Hiçbir eşleşme bulunamazsa, `T0` tüm giriş aralığıdır ve `N` sıfırdır. `(flags & format_first_only) != 0`Yalnızca ilk eşleşme kullanılırsa, `T1` eşleşmeyi izleyen giriş metninin hepsi ve `N` 1 ' dir. Aralıkta bulunan her biri için `i` `[0, N)` `(flags & format_no_copy) == 0` aralıktaki metni `Ti` Yineleyici olarak kopyalar.  Ardından öğesini çağırır `m.format(out, fmt, flags)` , burada, `m` `match_results` alt dizinin Yineleyici nesnesinin döndürdüğü nesnedir `iter` `Mi` . Son olarak, `(flags & format_no_copy) == 0` aralıktaki metni `TN` Yineleyici *dışına* kopyalar. İşlev *, döndürür.*
 
 İkinci işlev, `result` türünde `basic_string<charT>` ve çağrılarından oluşan yerel bir değişken oluşturur `regex_replace(back_inserter(result), str.begin(), str.end(), re, fmt, flags)` . Döndürür `result` .
 

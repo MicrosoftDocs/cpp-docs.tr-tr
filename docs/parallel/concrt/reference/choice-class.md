@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: seçim sınıfı'
 title: seçenek Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,18 +21,18 @@ f1_keywords:
 helpviewer_keywords:
 - choice class
 ms.assetid: 4157a539-d5c2-4161-b1ab-536ce2888397
-ms.openlocfilehash: a5b9bc26b6d9ec66dc74e7adaad31eea1eece118
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a7597a3bd530185e316cdc42ebbc4696162d498f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224987"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254475"
 ---
 # <a name="choice-class"></a>seçenek Sınıfı
 
 `choice`İleti bloğu, bir kaynak kümesiyle denetim akışı etkileşimini temsil eden çok kaynaklı, tek hedef bir bloğudur. Seçim bloğu, birden fazla kaynağın bir ileti oluşturmasını ve iletiyi üreten kaynağın dizinini yaymasını bekler.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<
@@ -75,7 +76,7 @@ class choice: public ISource<size_t>;
 |[Rezerve et](#reserve)|Bu mesajlaşma bloğu tarafından daha önce sunulan bir iletiyi ayırır `choice` .|
 |[unlink_target](#unlink_target)|Bu mesajlaşma bloğundan bir hedef bloğunun bağlantısını kaldırır `choice` .|
 |[unlink_targets](#unlink_targets)|Bu mesajlaşma bloğundan tüm hedeflerin bağlantısını kaldırır `choice` . ( [ISource:: unlink_targets](isource-class.md#unlink_targets)geçersiz kılar)|
-|[deeri](#value)|Dizini mesajlaşma bloğu tarafından seçilmiş olan iletiyi alır `choice` .|
+|[değer](#value)|Dizini mesajlaşma bloğu tarafından seçilmiş olan iletiyi alır `choice` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -95,7 +96,7 @@ Daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../../parallel/co
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="accept"></a><a name="accept"></a>ettiğinizde
+## <a name="accept"></a><a name="accept"></a> ettiğinizde
 
 Bu blok tarafından sunulan `choice` ve sahipliği çağırana aktaran bir iletiyi kabul eder.
 
@@ -117,7 +118,7 @@ Yöntemi çağıran hedef bloğa yönelik bir işaretçi `accept` .
 
 Çağıranın artık sahipliği olan iletinin bir işaretçisi.
 
-## <a name="acquire_ref"></a><a name="acquire_ref"></a>acquire_ref
+## <a name="acquire_ref"></a><a name="acquire_ref"></a> acquire_ref
 
 `choice`Silmeyi engellemek için bu mesajlaşma bloğunda bir başvuru sayısı alır.
 
@@ -134,7 +135,7 @@ Bu yöntemi çağıran hedef bloğa yönelik bir işaretçi.
 
 Bu yöntem `ITarget` , yöntemi sırasında bu kaynağa bağlanan bir nesne tarafından çağırılır `link_target` .
 
-## <a name="choice"></a><a name="ctor"></a>seçe
+## <a name="choice"></a><a name="ctor"></a> seçe
 
 `choice`İleti bloğu oluşturur.
 
@@ -174,7 +175,7 @@ Veya parametrelerini belirtmezseniz, çalışma zamanı varsayılan zamanlayıc�
 
 Taşıma işlemi bir kilit altında gerçekleştirilmez, bu, taşıma sırasında uçuş kapsamında hiçbir hafif görev olmadığından emin olmak için kullanıcıya ait olduğu anlamına gelir. Aksi takdirde, çok sayıda özel durum ortaya çıkabilir, bu durum istisnalara veya tutarsız duruma gelebilir.
 
-## <a name="choice"></a><a name="dtor"></a>~ Choice
+## <a name="choice"></a><a name="dtor"></a> ~ Choice
 
 `choice`Mesajlaşma bloğunu yok eder.
 
@@ -182,7 +183,7 @@ Taşıma işlemi bir kilit altında gerçekleştirilmez, bu, taşıma sırasınd
 ~choice();
 ```
 
-## <a name="consume"></a><a name="consume"></a>kullanan
+## <a name="consume"></a><a name="consume"></a> kullanan
 
 Bu mesajlaşma bloğunun daha önce sunduğu `choice` ve hedefi tarafından başarıyla ayrılmış olan bir iletiyi tüketir ve sahipliği çağırana aktarmıştır.
 
@@ -208,7 +209,7 @@ Yöntemi çağıran hedef bloğa yönelik bir işaretçi `consume` .
 
 `consume`Yöntemi öğesine benzerdir `accept` , ancak her zaman döndürülen bir çağrı gelmelidir `reserve` **`true`** .
 
-## <a name="has_value"></a><a name="has_value"></a>has_value
+## <a name="has_value"></a><a name="has_value"></a> has_value
 
 Bu `choice` mesajlaşma bloğunun henüz bir değer ile başlatılmış olup olmadığını denetler.
 
@@ -220,7 +221,7 @@ bool has_value() const;
 
 **`true`** blok bir değer aldıysa, **`false`** tersi durumda.
 
-## <a name="index"></a><a name="index"></a>indeks
+## <a name="index"></a><a name="index"></a> indeks
 
 `tuple`İleti bloğu tarafından seçilen öğeyi temsil eden öğesine bir dizin döndürür `choice` .
 
@@ -236,7 +237,7 @@ size_t index();
 
 İleti yükü yöntemi kullanılarak ayıklanabilir `get` .
 
-## <a name="link_target"></a><a name="link_target"></a>link_target
+## <a name="link_target"></a><a name="link_target"></a> link_target
 
 Bu mesajlaşma bloğuna bir hedef bloğu bağlar `choice` .
 
@@ -249,7 +250,7 @@ virtual void link_target(_Inout_ ITarget<size_t>* _PTarget);
 *_PTarget*<br/>
 `ITarget`Bu mesajlaşma bloğuna bağlanacak bloğa yönelik bir işaretçi `choice` .
 
-## <a name="release"></a><a name="release"></a>Yayın
+## <a name="release"></a><a name="release"></a> Yayın
 
 Önceki başarılı bir ileti ayırmasını serbest bırakır.
 
@@ -267,7 +268,7 @@ virtual void release(
 *_PTarget*<br/>
 Yöntemi çağıran hedef bloğa yönelik bir işaretçi `release` .
 
-## <a name="release_ref"></a><a name="release_ref"></a>release_ref
+## <a name="release_ref"></a><a name="release_ref"></a> release_ref
 
 Bu mesajlaşma bloğunda bir başvuru sayısı yayınlar `choice` .
 
@@ -284,7 +285,7 @@ Bu yöntemi çağıran hedef bloğa yönelik bir işaretçi.
 
 Bu yöntem, `ITarget` Bu kaynaktan bağlantısı kesilmekte olan bir nesne tarafından çağırılır. Kaynak bloğunun hedef blok için ayrılan kaynakları serbest bırakmaya izin verilir.
 
-## <a name="reserve"></a><a name="reserve"></a>ayırmaya
+## <a name="reserve"></a><a name="reserve"></a> ayırmaya
 
 Bu mesajlaşma bloğu tarafından daha önce sunulan bir iletiyi ayırır `choice` .
 
@@ -310,7 +311,7 @@ Yöntemi çağıran hedef bloğa yönelik bir işaretçi `reserve` .
 
 Öğesini çağırdıktan sonra, başarılı olursa, `reserve` `consume` `release` sırasıyla iletinin sahipliğini almak veya vermek için ya da ' i çağırmanız gerekir.
 
-## <a name="unlink_target"></a><a name="unlink_target"></a>unlink_target
+## <a name="unlink_target"></a><a name="unlink_target"></a> unlink_target
 
 Bu mesajlaşma bloğundan bir hedef bloğunun bağlantısını kaldırır `choice` .
 
@@ -323,7 +324,7 @@ virtual void unlink_target(_Inout_ ITarget<size_t>* _PTarget);
 *_PTarget*<br/>
 `ITarget`Bu mesajlaşma bloğunun bağlantısını kaldırmak için bir blok işaretçisi `choice` .
 
-## <a name="unlink_targets"></a><a name="unlink_targets"></a>unlink_targets
+## <a name="unlink_targets"></a><a name="unlink_targets"></a> unlink_targets
 
 Bu mesajlaşma bloğundan tüm hedeflerin bağlantısını kaldırır `choice` .
 
@@ -335,7 +336,7 @@ virtual void unlink_targets();
 
 İç bloğun yıkıcısı doğru şekilde kaldırılacak olduğundan, bu yöntemin yıkıcıdan çağrılması gerekmez `single_assignment` .
 
-## <a name="value"></a><a name="value"></a>deeri
+## <a name="value"></a><a name="value"></a> deeri
 
 Dizini mesajlaşma bloğu tarafından seçilmiş olan iletiyi alır `choice` .
 

@@ -1,5 +1,6 @@
 ---
-title: 'Windows Yuvaları: İşlem dizisi'
+description: 'Daha fazla bilgi edinin: Windows Yuvaları: Işlem dizisi'
+title: 'Windows Yuvaları: İşlem Dizisi'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Windows Sockets [MFC], operations
@@ -8,67 +9,67 @@ helpviewer_keywords:
 - sockets [MFC], operations
 - stream sockets [MFC]
 ms.assetid: 43ce76f5-aad3-4247-b8a6-16cc7d012796
-ms.openlocfilehash: 0f9fd339fdbdfee9381ea693568f40473c2397e9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 89870de642abcc8e0584c2c5dc93860eda9785e8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62296520"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263380"
 ---
-# <a name="windows-sockets-sequence-of-operations"></a>Windows Yuvaları: İşlem dizisi
+# <a name="windows-sockets-sequence-of-operations"></a>Windows Yuvaları: İşlem Dizisi
 
-Bu makalede, yan yana sunucu yuvası ve istemci yuvası için işlemlerin sırasını gösterir. Yuva kullandığından `CArchive` nesneler oldukları mutlaka [akış yuvaları](../mfc/windows-sockets-stream-sockets.md).
+Bu makalede, bir sunucu yuvası ve bir istemci yuvası için işlem sırası ve yan yana gösterilmektedir. Yuvalar `CArchive` nesneleri kullandığından, [akış yuvaları](../mfc/windows-sockets-stream-sockets.md)olması gerekir.
 
-## <a name="sequence-of-operations-for-a-stream-socket-communication"></a>Stream yuva iletişimi için işlem dizisi
+## <a name="sequence-of-operations-for-a-stream-socket-communication"></a>Akış yuvası Iletişimi için Işlem dizisi
 
-Oluşturma noktaya kadar bir `CSocketFile` nesnesi (birkaç parametre farklılıklar) aşağıdaki sıra doğruysa hem `CAsyncSocket` ve `CSocket`. Bu noktadan itibaren içindir kesin olarak sıralı `CSocket`. Aşağıdaki tabloda, bir istemci ve sunucu arasında iletişim kurma için işlem dizisi gösterilmektedir.
+Bir nesne oluşturma noktasına kadar `CSocketFile` , hem hem de için aşağıdaki sıra doğru (birkaç parametre farimiyle) `CAsyncSocket` `CSocket` . Bu noktadan itibaren, sırası kesinlikle içindir `CSocket` . Aşağıdaki tabloda, bir istemci ile sunucu arasındaki iletişimi ayarlamaya yönelik işlemlerin sırası gösterilmektedir.
 
-### <a name="setting-up-communication-between-a-server-and-a-client"></a>Bir sunucu ve istemci arasında iletişim kurma
+### <a name="setting-up-communication-between-a-server-and-a-client"></a>Sunucu ile Istemci arasında Iletişim kurma
 
 |Sunucu|İstemci|
 |------------|------------|
 |`// construct a socket`<br /><br /> `CSocket sockSrvr;`|`// construct a socket`<br /><br /> `CSocket sockClient;`|
-|`// create the SOCKET`<br /><br /> `sockSrvr.Create(nPort);`1,2|`// create the SOCKET`<br /><br /> `sockClient.Create( );`2|
+|`// create the SOCKET`<br /><br /> `sockSrvr.Create(nPort);`1, 2|`// create the SOCKET`<br /><br /> `sockClient.Create( );`iki|
 |`// start listening`<br /><br /> `sockSrvr.Listen( );`||
-||`// seek a connection`<br /><br /> `sockClient.Connect(strAddr, nPort);`3,4|
-|`// construct a new, empty socket`<br /><br /> `CSocket sockRecv;`<br /><br /> `// accept connection`<br /><br /> `sockSrvr.Accept( sockRecv );` 5||
+||`// seek a connection`<br /><br /> `sockClient.Connect(strAddr, nPort);`3, 4|
+|`// construct a new, empty socket`<br /><br /> `CSocket sockRecv;`<br /><br /> `// accept connection`<br /><br /> `sockSrvr.Accept( sockRecv );` e||
 |`// construct file object`<br /><br /> `CSocketFile file(&sockRecv);`|`// construct file object`<br /><br /> `CSocketFile file(&sockClient);`|
-|`// construct an archive`<br /><br /> `CArchive arIn(&file, CArchive::load);`<br /><br /> -veya-<br /><br /> `CArchive arOut(&file, CArchive::store);`<br /><br /> - veya her ikisi de-|`// construct an archive`<br /><br /> `CArchive arIn(&file, CArchive::load);`<br /><br /> -veya-<br /><br /> `CArchive arOut(&file, CArchive::store);`<br /><br /> - veya her ikisi de-|
-|`// use the archive to pass data:`<br /><br /> `arIn >> dwValue;`<br /><br /> -veya-<br /><br /> `arOut << dwValue;`6|`// use the archive to pass data:`<br /><br /> `arIn >> dwValue;`<br /><br /> -veya-<br /><br /> `arOut << dwValue;`6|
+|`// construct an archive`<br /><br /> `CArchive arIn(&file, CArchive::load);`<br /><br /> -veya-<br /><br /> `CArchive arOut(&file, CArchive::store);`<br /><br /> -veya her Ikisi-|`// construct an archive`<br /><br /> `CArchive arIn(&file, CArchive::load);`<br /><br /> -veya-<br /><br /> `CArchive arOut(&file, CArchive::store);`<br /><br /> -veya her Ikisi-|
+|`// use the archive to pass data:`<br /><br /> `arIn >> dwValue;`<br /><br /> -veya-<br /><br /> `arOut << dwValue;`inç|`// use the archive to pass data:`<br /><br /> `arIn >> dwValue;`<br /><br /> -veya-<br /><br /> `arOut << dwValue;`inç|
 
-1. Burada *nbağlantı noktası* bir bağlantı noktası numarasıdır. Bkz: [Windows Yuvaları: Bağlantı noktaları ve yuva adresleri](../mfc/windows-sockets-ports-and-socket-addresses.md) bağlantı noktaları hakkında ayrıntılı bilgi için.
+1. Burada *nport* bir bağlantı noktası numarasıdır. Bağlantı noktaları hakkında ayrıntılı bilgi için bkz. [Windows Yuvaları: bağlantı noktaları ve yuva adresleri](../mfc/windows-sockets-ports-and-socket-addresses.md) .
 
-2. İstemciler bağlanabilmesi için sunucu her zaman bir bağlantı noktası belirtmeniz gerekir. `Create` Çağrı, bazen de bir adresi belirtir. İstemci tarafında, tüm kullanılabilir bağlantı noktası kullanmayı MFC isteyin varsayılan parametreleri kullanın.
+2. İstemcilerin bağlanabilmesi için sunucunun her zaman bir bağlantı noktası belirtmesi gerekir. `Create`Çağrı bazen bir adresi de belirtir. İstemci tarafında, MFC 'nin kullanılabilir herhangi bir bağlantı noktasını kullanmasını istemek için varsayılan parametreleri kullanın.
 
-3. Burada *nbağlantı noktası* bir bağlantı noktası numarası ve *strAddr* makine adresi veya bir Internet Protokolü (IP) adresi.
+3. Burada *Nport* bir bağlantı noktası numarasıdır ve *straddr* bir makine adresi veya Internet Protokolü (IP) adresidir.
 
-4. Makine adresleri birden fazla form alabilir: "ftp.microsoft.com", "microsoft.com". IP adresleri "noktalı sayı" form "127.54.67.32" kullanın. `Connect` (Bu sayı ağdaki geçerli bir makine olduğundan emin olmak için kontrol etmez rağmen) adresi noktalı bir sayı olup olmadığını görmek için işlev denetler. Aksi halde `Connect` diğer biçimlerden makine adını kabul eder.
+4. Makine adresleri birkaç form alabilir: "ftp.microsoft.com", "microsoft.com". IP adresleri "127.54.67.32" "noktalı sayı" formunu kullanır. `Connect`İşlevi, adresin noktalı bir sayı olup olmadığını denetler (ancak numaranın ağdaki geçerli bir makine olduğundan emin olup olmadığını denetlemez). Aksi takdirde, `Connect` diğer formlardan birinin makine adını varsayar.
 
-5. Çağırdığınızda `Accept` sunucu tarafında geçirdiğiniz yeni bir yuva nesnesine bir başvuru. Bu nesne ilk oluşturmalıdır, ancak çağırmayın `Create` de. Aklınızda bu yuva nesnesi kapsamını, bağlantıyı kapatır aşması durumunda. MFC bağlanır yeni nesneye bir **YUVA** tanıtıcı. Yuva gösterildiği gibi yığını veya yığın oluşturabilirsiniz.
+5. `Accept`Sunucu tarafında çağırdığınızda, yeni bir yuva nesnesine bir başvuru geçirirsiniz. Önce bu nesneyi oluşturmanız gerekir, ancak bunu çağırmayın `Create` . Bu yuva nesnesi kapsam dışına geçtiğinde bağlantının kapandığını aklınızda bulundurun. MFC yeni nesneyi bir **yuva** tanıtıcısına bağlar. Yuva üzerinde veya yığında veya yığında oluşturabilirsiniz.
 
-6. Bunlar kapsam dışına çıkmadan, arşiv ve yuva dosya kapatılır. Yuva nesnenin yok Edicisi de çağırır [Kapat](../mfc/reference/casyncsocket-class.md#close) nesne kapsam dışına gider veya silinirse yuva nesnesi için üye işlevi.
+6. Arşiv ve yuva dosyası, kapsam dışına gittiklerinde kapalıdır. Yuva nesnesinin yıkıcısı, nesne kapsam dışına geçtiğinde ya da silindiğinde yuva nesnesi için [Close](../mfc/reference/casyncsocket-class.md#close) üye işlevini çağırır.
 
-## <a name="additional-notes-about-the-sequence"></a>Sırası hakkında ek notlar
+## <a name="additional-notes-about-the-sequence"></a>Dizi hakkında ek notlar
 
-Yukarıdaki tabloda gösterilen çağrıları için bir akış yuva dizisidir. Bağlantısız olan veri birimi yuvaları gerektirmez [CAsyncSocket::Connect](../mfc/reference/casyncsocket-class.md#connect), [dinleme](../mfc/reference/casyncsocket-class.md#listen), ve [kabul](../mfc/reference/casyncsocket-class.md#accept) çağrıları (isteğe bağlı olarak kullanabilirsiniz,ancak`Connect`). Bunun yerine, sınıf kullanıyorsanız `CAsyncSocket`, veri birimi yuvaları kullanın `CAsyncSocket::SendTo` ve `ReceiveFrom` üye işlevleri. (Kullanırsanız `Connect` kullandığınız bir veri birimi yuvasıyla `Send` ve `Receive`.) Çünkü `CArchive` çalışmıyor veri birimi ile kullanmayın `CSocket` ile yuva bir veri birimi ise bir arşiv.
+Yukarıdaki tabloda gösterilen çağrıların sırası, Stream yuvası içindir. Bağlantısız olan veri birimi yuvaları, [CAsyncSocket:: Connect](../mfc/reference/casyncsocket-class.md#connect), [dinlemesi](../mfc/reference/casyncsocket-class.md#listen)ve [kabul etme](../mfc/reference/casyncsocket-class.md#accept) çağrılarına (isteğe bağlı olarak da kullanabilirsiniz) gerek yoktur `Connect` . Bunun yerine, sınıfı kullanıyorsanız `CAsyncSocket` , veri birimi yuvaları `CAsyncSocket::SendTo` ve `ReceiveFrom` üye işlevlerini kullanır. ( `Connect` Bir veri birimi yuvası ile kullanıyorsanız, `Send` ve kullanırsınız `Receive` .) `CArchive` , İş birimleri ile çalışmadığından, `CSocket` yuva bir veri birimi ise, bir arşiv ile kullanmayın.
 
-[CSocketFile](../mfc/reference/csocketfile-class.md) tüm desteklemiyor `CFile`'s işlevselliği; `CFile` üyeler gibi `Seek`, hangi hiçbir mantıklı bir yuva iletişimi için kullanılamaz. Bu nedenle, bazı varsayılan MFC `Serialize` işlevler ile uyumlu değildir `CSocketFile`. Bu, özellikle true `CEditView` sınıfı. Seri hale getirmek denememelisiniz `CEditView` verilerine bir `CArchive` nesne iliştirilmiş bir `CSocketFile` kullanarak nesne `CEditView::SerializeRaw`; kullanma `CEditView::Serialize` yerine (belgelenmemiştir). [SerializeRaw](../mfc/reference/ceditview-class.md#serializeraw) işlevi gibi işlevleri sağlamak için dosya nesnesi bekliyor `Seek`, o `CSocketFile` desteklemez.
+[CSocketFile](../mfc/reference/csocketfile-class.md) `CFile` , tüm işlevleri desteklemez; gibi `CFile` `Seek` bir yuva iletişimi için bir fikir sahibi olmayan Üyeler kullanılamaz. Bu nedenle, bazı varsayılan MFC `Serialize` işlevleri ile uyumlu değildir `CSocketFile` . Bu, sınıfının özellikle de doğrudur `CEditView` . `CEditView`Kullanarak bir nesneye eklenen bir nesne aracılığıyla veri serileştirmenize çalışmayın `CArchive` `CSocketFile` `CEditView::SerializeRaw` ; `CEditView::Serialize` bunun yerine kullanın (belgelenmemiş). [Serializsilinebilir w](../mfc/reference/ceditview-class.md#serializeraw) işlevi dosya nesnesinin, gibi işlevleri olmasını bekler `Seek` `CSocketFile` .
 
-Daha fazla bilgi için bkz.:
+Daha fazla bilgi için bkz:
 
-- [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Windows Yuvaları: Arşivlerle yuvaları kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-- [Windows Yuvaları: Sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows Yuvaları: sınıf CAsyncSocket kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
 
-- [Windows Yuvaları: Bağlantı noktaları ve yuva adresleri](../mfc/windows-sockets-ports-and-socket-addresses.md)
+- [Windows Yuvaları: bağlantı noktaları ve yuva adresleri](../mfc/windows-sockets-ports-and-socket-addresses.md)
 
-- [Windows Yuvaları: Stream yuva](../mfc/windows-sockets-stream-sockets.md)
+- [Windows Yuvaları: akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)
 
-- [Windows Yuvaları: Veri birimi yuvaları](../mfc/windows-sockets-datagram-sockets.md)
+- [Windows Yuvaları: veri birimi Yuvaları](../mfc/windows-sockets-datagram-sockets.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)<br/>
-[CSocket Sınıfı](../mfc/reference/csocket-class.md)<br/>
-[CAsyncSocket::Create](../mfc/reference/casyncsocket-class.md#create)<br/>
-[CAsyncSocket::Close](../mfc/reference/casyncsocket-class.md#close)
+[CSocket sınıfı](../mfc/reference/csocket-class.md)<br/>
+[CAsyncSocket:: Create](../mfc/reference/casyncsocket-class.md#create)<br/>
+[CAsyncSocket:: Close](../mfc/reference/casyncsocket-class.md#close)

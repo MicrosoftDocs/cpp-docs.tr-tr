@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: önemli hata C1004'
 title: Önemli hata C1004
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1004
 ms.assetid: dbe034b0-6eb0-41b4-a50c-2fccf9e78ad4
-ms.openlocfilehash: 82a1a3e410505be53d4356e46d5521aebb72763c
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f21978f5ff314a8273dde60428dc89ca0c5767b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756974"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262691"
 ---
 # <a name="fatal-error-c1004"></a>Önemli hata C1004
 
@@ -31,7 +32,7 @@ Bu hatayı çözmek için aşağıdakileri kontrol edin:
 
 - Varsayılan disk sürücüsünde geçici dosyalar için yeterli alan yok. Bu, kaynak dosyayla iki kat daha fazla alan gerektirir.
 
-- False olarak değerlendirilen bir `#if` yönergesinin kapanış `#endif` yönergesi yok.
+- `#if`False olarak değerlendirilen bir yönerge bir kapanış yönergesi içermez `#endif` .
 
 - Kaynak dosya bir satır başı ve satır besleme ile bitmiyor.
 

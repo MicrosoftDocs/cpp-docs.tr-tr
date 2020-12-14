@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: karışık (yerel ve yönetilen) derlemeler'
 title: Karışık (Yerel ve Yönetilen) Derlemeler
 ms.date: 09/18/2018
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - mixed assemblies [C++]
 - native code [C++], .NET interoperatibility
 ms.assetid: 4299dfce-392f-4933-8bf0-5da2f0d1c282
-ms.openlocfilehash: eee54a6101a83a64c221ae016f69931e7fd7829b
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: b96ccb5a521cf009f7feabef01a292ac805b0b4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403705"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253660"
 ---
 # <a name="mixed-native-and-managed-assemblies"></a>Karışık (yerel ve yönetilen) derlemeler
 
@@ -53,7 +54,7 @@ Uygulama etki alanları için Visual C++ desteğini açıklar.
 Yönetilen işlev için yerel bir giriş noktasının performans etkilerini açıklar.
 
 [/Clr ile oluşturulan COM nesnelerini tüketirken CLR kapatmasıyla ilgili özel durumları önleme](../dotnet/avoiding-exceptions-on-clr-shutdown-when-consuming-com-objects-built-with-clr.md)<br/>
-**/Clr**ile derlenen bir com nesnesini kullanan yönetilen bir uygulamanın düzgün şekilde kapatılmasını nasıl sağlamak istediğinizi açıklar.
+**/Clr** ile derlenen bir com nesnesini kullanan yönetilen bir uygulamanın düzgün şekilde kapatılmasını nasıl sağlamak istediğinizi açıklar.
 
 [Nasıl yapılır: CRT kitaplık DLL 'inin bağımlılığını kaldırarak kısmen güvenilen bir uygulama oluşturma](../dotnet/create-a-partially-trusted-application.md)<br/>
 msvcm90.dll bağımlılığı kaldırılarak Visual C++ kullanılarak kısmen güvenilir bir ortak dil çalışma zamanı uygulamasının nasıl oluşturulduğunu açıklar.
