@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _free_locale'
 title: _free_locale
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - locales, freeing
 - _free_locale function
 ms.assetid: 1f08d348-ab32-4028-a145-6cbd51b49af9
-ms.openlocfilehash: 8dbc424c00464966605cce5c44118b88eb5335d3
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 441686a1ee037097c164ae60b4ccc418f0d38ac8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920431"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211277"
 ---
 # <a name="_free_locale"></a>_free_locale
 
@@ -57,7 +58,7 @@ Yerel ayar nesnesini ücretsiz olarak.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Free_locale** işlevi, **_get_current_locale** veya **_create_locale**çağrısından alınan yerel ayar nesnesini serbest bırakmak için kullanılır.
+**_Free_locale** işlevi, **_get_current_locale** veya **_create_locale** çağrısından alınan yerel ayar nesnesini serbest bırakmak için kullanılır.
 
 Bu işlevin önceki adı, **__free_locale** (iki önde gelen alt çizgi ile) kullanım dışıdır.
 
@@ -67,7 +68,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |**Yordam**|Gerekli başlık|
 |---------------|---------------------|
-|**_free_locale**|\<locale. h>|
+|**_free_locale**|\<locale.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

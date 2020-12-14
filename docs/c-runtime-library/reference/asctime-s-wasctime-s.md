@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: asctime_s _wasctime_s'
 title: asctime_s, _wasctime_s
 ms.date: 4/2/2020
 api_name:
@@ -36,18 +37,18 @@ helpviewer_keywords:
 - _wasctime_s function
 - asctime_s function
 ms.assetid: 17ad9b2b-a459-465d-976a-42822897688a
-ms.openlocfilehash: 529663a8c36a1b934a4dd99852aee19fb1a1e6e6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d743aea81abdba2e1aa2b470f71081cb92e6fc64
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217018"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211329"
 ---
 # <a name="asctime_s-_wasctime_s"></a>asctime_s, _wasctime_s
 
 Bir **TM** zaman yapısını bir karakter dizesine Dönüştür. Bu işlevler, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklanan şekilde, güvenlik geliştirmeleriyle [_wasctime asctime](asctime-wasctime.md) sürümleridir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 errno_t asctime_s(
@@ -75,17 +76,17 @@ errno_t _wasctime_s(
 ### <a name="parameters"></a>Parametreler
 
 *arabelleğin*<br/>
-Karakter dizesi sonucunu depolamak için arabelleğin bir işaretçisi. Bu işlev, *numberOfElements*tarafından belirtilen boyuttaki geçerli bir bellek konumuna yönelik bir işaretçi olduğunu varsayar.
+Karakter dizesi sonucunu depolamak için arabelleğin bir işaretçisi. Bu işlev, *numberOfElements* tarafından belirtilen boyuttaki geçerli bir bellek konumuna yönelik bir işaretçi olduğunu varsayar.
 
 *numberOfElements*<br/>
 Sonucu depolamak için kullanılan arabelleğin boyutu.
 
 *tmSource*<br/>
-Saat/tarih yapısı. Bu işlev, geçerli bir TM nesnesine bir işaretçi olduğunu varsayar **`struct`** **tm** .
+Saat/tarih yapısı. Bu işlev, geçerli bir TM nesnesine bir işaretçi olduğunu varsayar **`struct`**  .
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır. Bir hata oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, dönüş değeri bir hata kodudur. Hata kodları ERRNO içinde tanımlanmıştır. Olsun. Daha fazla bilgi için bkz. [errno sabitleri](../../c-runtime-library/errno-constants.md). Her bir hata koşulu için döndürülen gerçek hata kodları aşağıdaki tabloda gösterilmiştir.
+Başarılıysa sıfır. Bir hata oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, dönüş değeri bir hata kodudur. Hata kodları ERRNO. H içinde tanımlanır. Daha fazla bilgi için bkz. [errno sabitleri](../../c-runtime-library/errno-constants.md). Her bir hata koşulu için döndürülen gerçek hata kodları aşağıdaki tabloda gösterilmiştir.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
@@ -102,7 +103,7 @@ Başarılıysa sıfır. Bir hata oluşursa, [parametre doğrulama](../../c-runti
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Asctime** işlevi bir yapı olarak depolanan bir saati bir karakter dizesine dönüştürür. *Tmsource* değeri genellikle **gmtime** veya **localtime**çağrısından alınır. Her iki işlev de bir **TM** yapısını, zaman içinde tanımlandığı şekilde doldurmanız için kullanılabilir. Olsun.
+**Asctime** işlevi bir yapı olarak depolanan bir saati bir karakter dizesine dönüştürür. *Tmsource* değeri genellikle **gmtime** veya **localtime** çağrısından alınır. Her iki işlev de, TIME. H içinde tanımlandığı şekilde bir **TM** yapısını doldurmanız için kullanılabilir.
 
 |timeptr üyesi|Değer|
 |--------------------|-----------|
@@ -118,15 +119,15 @@ Başarılıysa sıfır. Bir hata oluşursa, [parametre doğrulama](../../c-runti
 
 Dönüştürülen karakter dizesi de yerel saat dilimi ayarlarına göre ayarlanır. Saat dilimi ortamı ve genel değişkenleri tanımlama hakkında bilgi için yerel saati ve [_ftime64](tzset.md) işlevini yapılandırma hakkında bilgi için [zaman, _time32, _time64](time-time32-time64.md), [_ftime, _ftime32, localtime_s](ftime-ftime32-ftime64.md)ve _localtime32_s [,](localtime-s-localtime32-s-localtime64-s.md) _localtime64_s, _tzset işlevlerine bakın.
 
-**Asctime_s** tarafından üretilen dize sonucu, tam 26 karakter içerir ve forma sahiptir `Wed Jan 02 02:03:55 1980\n\0` . 24 saatlik bir saat kullanılır. Tüm alanların sabit bir genişliği vardır. Yeni satır karakteri ve null karakter, dizenin son iki konumunu kaplar. İkinci parametre olarak geçirilen değer en az bu büyük olmalıdır. Daha az ise, **EINVAL**bir hata kodu döndürülür.
+**Asctime_s** tarafından üretilen dize sonucu, tam 26 karakter içerir ve forma sahiptir `Wed Jan 02 02:03:55 1980\n\0` . 24 saatlik bir saat kullanılır. Tüm alanların sabit bir genişliği vardır. Yeni satır karakteri ve null karakter, dizenin son iki konumunu kaplar. İkinci parametre olarak geçirilen değer en az bu büyük olmalıdır. Daha az ise, **EINVAL** bir hata kodu döndürülür.
 
-**_wasctime_s** , **asctime_s**geniş karakterli bir sürümüdür. **_wasctime_s** ve **asctime_s** aynı şekilde davranır.
+**_wasctime_s** , **asctime_s** geniş karakterli bir sürümüdür. **_wasctime_s** ve **asctime_s** aynı şekilde davranır.
 
 Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)kullanın.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
-### <a name="generic-text-routine-mapping"></a>Genel metin rutin eşleme
+### <a name="generic-text-routine-mapping"></a>Generic-Text rutin eşleme
 
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|

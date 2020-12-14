@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: eşzamanlılık ad alanı işlevleri (AMP)'
 title: Eşzamanlılık ad alanı işlevleri (AMP)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ f1_keywords:
 - amp/Concurrency::global_memory_fence
 - amp/Concurrency::tile_static_memory_fence
 ms.assetid: 2bef0985-cb90-4ece-90b9-66529aec73c9
-ms.openlocfilehash: b03a6189d2205dff62d94f07bc597ca2e1013a28
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 65255f14acdc402003be46de5f978da6d9a8f8ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840212"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211823"
 ---
 # <a name="concurrency-namespace-functions-amp"></a>Eşzamanlılık ad alanı işlevleri (AMP)
 
@@ -101,7 +102,7 @@ Karşılaştırılacak değerlerden birinin okunduğu ve yeni değerin (varsa) d
 *_Expected_value*<br/>
 İkinci değerin karşılaştırılacağı konum okundu.
 
-*deeri*<br/>
+*değer*<br/>
 Öğesine eşitse, tarafından belirtilen bellek konumuna depolanacak değer `_Dest` `_Dest` `_Expected_value` .
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -134,7 +135,7 @@ inline float atomic_exchange(
 *_Dest*<br/>
 Hedef konuma yönelik işaretçi.
 
-*deeri*<br/>
+*değer*<br/>
 Yeni değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -162,7 +163,7 @@ inline unsigned int atomic_fetch_add(
 *_Dest*<br/>
 Bellek konumu işaretçisi.
 
-*deeri*<br/>
+*değer*<br/>
 Eklenecek değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -190,7 +191,7 @@ inline unsigned int atomic_fetch_and(
 *_Dest*<br/>
 Bellek konumu işaretçisi.
 
-*deeri*<br/>
+*değer*<br/>
 Bit düzeyinde AND hesaplamasında kullanılacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -257,7 +258,7 @@ inline unsigned int atomic_fetch_max(
 *_Dest*<br/>
 Karşılaştırılacağı değerlerden birinin okunduğu ve iki değerin en fazla depolanacağı konum, bu değerin saklanacağı konumdur.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen konumdaki değerle karşılaştırılacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -285,7 +286,7 @@ inline unsigned int atomic_fetch_min(
 *_Dest*<br/>
 Karşılaştırılacak değerlerden birinin okunduğu ve iki değerin en az bir şekilde depolanacağı konum burada.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen konumdaki değerle karşılaştırılacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -313,7 +314,7 @@ inline unsigned int atomic_fetch_or(
 *_Dest*<br/>
 Bellek konumu işaretçisi.
 
-*deeri*<br/>
+*değer*<br/>
 Bit düzeyinde veya hesaplamada kullanılacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -341,7 +342,7 @@ inline unsigned int atomic_fetch_sub(
 *_Dest*<br/>
 Hedef konuma yönelik işaretçi.
 
-*deeri*<br/>
+*değer*<br/>
 Çıkarılacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -369,7 +370,7 @@ inline unsigned int atomic_fetch_xor(
 *_Dest*<br/>
 Bellek konumu işaretçisi.
 
-*deeri*<br/>
+*değer*<br/>
 XOR hesaplamasında kullanılacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri

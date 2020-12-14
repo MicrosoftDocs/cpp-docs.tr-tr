@@ -1,49 +1,50 @@
 ---
-title: 'TN045: Uzun Varchar-Varbinary için MFC-Veritabanı Desteği'
+description: 'Hakkında daha fazla bilgi edinin: TN045: Long varchar/varbinary için MFC/veritabanı desteği'
+title: 'TN045: uzun Varchar-Varbinary MFC-Database desteği'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - TN045
 - Varbinary data type
 - Varchar data type
 ms.assetid: cf572c35-5275-45b5-83df-5f0e36114f40
-ms.openlocfilehash: 55a68ba970d0a26163f426d51818c701c13ed051
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 4e19147ab5ca392307f331b12d3cf24eb5fcc06f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81750284"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215189"
 ---
 # <a name="tn045-mfcdatabase-support-for-long-varcharvarbinary"></a>TN045: Uzun Varchar/Varbinary için MFC/Veritabanı Desteği
 
 > [!NOTE]
-> Aşağıdaki teknik not, çevrimiçi belgelere ilk olarak eklenmediğinden beri güncelleştirilemedi. Sonuç olarak, bazı yordamlar ve konular güncel veya yanlış olabilir. En son bilgiler için, çevrimiçi belge dizini ilgi alanı için arama nız önerilir.
+> Aşağıdaki teknik Not, çevrimiçi belgelere ilk eklenmesinden beri güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konular güncel olmayabilir veya yanlış olabilir. En son bilgiler için çevrimiçi belge dizininde ilgilendiğiniz konuyu aramanız önerilir.
 
-Bu not, MFC veritabanı sınıflarını kullanarak ODBC **SQL_LONGVARCHAR** ve **SQL_LONGVARBINARY** veri türlerinin nasıl alınıp gönderilen açıklar.
+Bu notta, MFC veritabanı sınıflarını kullanarak ODBC **SQL_LONGVARCHAR** ve **SQL_LONGVARBINARY** veri türlerinin nasıl alınacağını ve gönderileceğini açıklanır.
 
-## <a name="overview-of-long-varcharvarbinary-support"></a>Uzun Varchar/Varikili Desteğe Genel Bakış
+## <a name="overview-of-long-varcharvarbinary-support"></a>Uzun varchar/varbinary desteğine genel bakış
 
-ODBC **SQL_LONG_VARCHAR** ve **SQL_LONGBINARY** veri türleri (burada uzun veri sütunları olarak adlandırılır) büyük miktarda veri tutabilir. Bu verileri işlemenin 3 yolu vardır:
+ODBC **sql_long_varchar** ve **SQL_LONGBINARY** veri türleri (burada uzun veri sütunları olarak adlandırılır) çok büyük miktarlarda veri tutabilir. Bu verileri işleyebilmeniz için 3 yol vardır:
 
-- Bir `CString` / `CByteArray`.
+- Bir öğesine bağlayın `CString` / `CByteArray` .
 
-- Bir `CLongBinary`.
+- Bir öğesine bağlayın `CLongBinary` .
 
-- Veritabanı sınıflarından bağımsız olarak uzun veri değerini el ile alıp göndermeyin.
+- Onu hiç bağlamayın ve uzun veri değerini, veritabanı sınıflarından bağımsız olarak el ile alın ve gönderin.
 
-Her üç yöntem avantajları ve dezavantajları vardır.
+Üç yöntemin her biri avantajları ve dezavantajlara sahiptir.
 
-Uzun veri sütunları, sorguparametreleri için desteklenmez. Bunlar yalnızca çıktılar Için DesteklenirSütunlar.
+Bir sorguya yönelik parametreler için uzun veri sütunları desteklenmez. Yalnızca outputColumns için desteklenir.
 
-## <a name="binding-a-long-data-column-to-a-cstringcbytearray"></a>Uzun Veri Sütunu CString/CByteArray'e Bağlama
+## <a name="binding-a-long-data-column-to-a-cstringcbytearray"></a>Uzun veri sütununu CString/CByteArray öğesine bağlama
 
 Artılar:
 
-Bu yaklaşımı anlamak kolaydır ve tanıdık sınıflarla çalışırsınız. Çerçeve ile `CFormView` `CString` `DDX_Text`destek sağlar. Ve `CString` `CByteArray` sınıflarla birlikte çok sayıda genel dize veya toplama işleviniz vardır ve veri değerini tutmak için yerel olarak ayrılan bellek miktarını denetleyebilirsiniz. Çerçeve, arama sırasında veya `Edit` `AddNew` işlev çağrıları sırasında alan verilerinin eski bir kopyasını tutar ve çerçeve sizin için verilerdeki değişiklikleri otomatik olarak algılayabilir.
+Bu yaklaşım anlaşılması basittir ve tanıdık sınıflarla çalışırsınız. Framework `CFormView` ile için destek sağlar `CString` `DDX_Text` . Ve sınıflarıyla çok sayıda genel dize veya koleksiyon işlevi vardır `CString` `CByteArray` ve veri değerini tutmak için yerel olarak ayrılan bellek miktarını kontrol edebilirsiniz. Çerçeve, veya işlev çağrıları sırasında alan verilerinin eski bir kopyasını tutar `Edit` `AddNew` ve çerçeve sizin için verilerde yapılan değişiklikleri otomatik olarak algılayabilir.
 
 > [!NOTE]
-> `CString` Karakter verileri üzerinde çalışmak `CByteArray` ve ikili veriler üzerinde çalışmak için tasarlandığından, karakter verilerini **(SQL_LONGVARCHAR)** ve ikili verileri `CString` `CByteArray`**(SQL_LONGVARBINARY)** içine koymanız önerilir.
+> `CString`, Karakter verilerinde çalışmak için tasarlandığından ve `CByteArray` ikili veriler üzerinde çalışmak için, karakter verilerini (**SQL_LONGVARCHAR**) `CString` ve ikili verileri (**SQL_LONGVARBINARY**) içine koymanız önerilir `CByteArray` .
 
-RFX, veri `CString` `CByteArray` sütunu için alınan değeri tutmak için ayrılan belleğin varsayılan boyutunu geçersiz kılmanıza olanak tanıyan ek bir bağımsız değişken için çalışır ve vardır. Aşağıdaki işlev bildirimlerinde nMaxLength bağımsız değişkenine dikkat edin:
+İçin RFX işlevleri `CString` ve `CByteArray` veri sütunu için alınan değeri tutmak üzere ayrılan belleğin varsayılan boyutunu geçersiz kılabilmenizi sağlayan ek bir bağımsız değişkeni vardır. Aşağıdaki işlev bildirimlerinde nMaxLength bağımsız değişkenine göz önünde edin:
 
 ```cpp
 void AFXAPI RFX_Text(CFieldExchange* pFX,
@@ -59,64 +60,64 @@ void AFXAPI RFX_Binary(CFieldExchange* pFX,
     int nMaxLength = 255);
 ```
 
-Uzun bir veri sütununu `CString` bir `CByteArray`veya , döndürülen maksimum veri miktarı na alırsanız, varsayılan olarak 255 bayt olur. Bunun ötesindeki her şey göz ardı edilir. Bu durumda, çerçeve **AFX_SQL_ERROR_DATA_TRUNCATED**özel durum atacaktır. Neyse ki, nMaxLength'ı **maxint'e**kadar daha büyük değerlere açıkça artırabilirsiniz.
+Bir veya ' a uzun veri sütunu alırsanız, `CString` `CByteArray` en fazla döndürülen veri miktarı varsayılan olarak 255 bayttır. Bunun ötesinde herhangi bir şey yok sayılır. Bu durumda, çerçeve **afx_sql_error_data_truncated** özel durumu oluşturur. Neyse ki, en fazla **maxint** olmak üzere nMaxLength 'i daha büyük değerler olarak artırabilirsiniz.
 
 > [!NOTE]
-> nMaxLength değeri `SQLBindColumn` fonksiyonun yerel arabellek ayarlamak için MFC tarafından kullanılır. Bu, verilerin depolanması için yerel arabellektir ve gerçekte ODBC sürücüsü tarafından döndürülen veri miktarını etkilemez. `RFX_Text`ve `RFX_Binary` verileri arka `SQLFetch` uç veritabanından almak için yalnızca bir arama yapın. Her ODBC sürücüsü, tek bir getirmede döndürebilecekleri veri miktarı yla ilgili farklı bir sınırlamaya sahiptir. Bu sınır nMaxLength'ta ayarlanan değerden çok daha küçük olabilir ve bu durumda özel durum **AFX_SQL_ERROR_DATA_TRUNCATED** atılır. Bu koşullar altında, `RFX_LongBinary` tüm `RFX_Text` verilerin `RFX_Binary` alınabilmesi için yerine kullanmaya geçin.
+> NMaxLength değeri, işlevin yerel arabelleğini ayarlamak için MFC tarafından kullanılır `SQLBindColumn` . Bu, verilerin depolanması için yerel arabellekte bulunur ve aslında ODBC sürücüsü tarafından döndürülen veri miktarını etkilemez. `RFX_Text` ve `RFX_Binary` yalnızca `SQLFetch` , arka uç veritabanından veri almak için kullanarak bir çağrı yapın. Her ODBC sürücüsünün tek bir getirme işleminde döndürebilecekleri veri miktarına farklı bir sınırlaması vardır. Bu sınır nMaxLength ' de ayarlanan değerden çok daha küçük olabilir, bu durumda özel durum **afx_sql_error_data_truncated** atılır. Bu koşullarda, `RFX_LongBinary` `RFX_Text` tüm verilerin alınabilmesi için veya yerine kullanma ' ya geçiş yapın `RFX_Binary` .
 
-ClassWizard bir **SQL_LONGVARCHAR** `CString`bir veya bir **SQL_LONGVARBINARY** `CByteArray` sizin için bağlayacak. Uzun veri sütununuzu aldığınız 255'ten fazla bayt ayırmak istiyorsanız, nMaxLength için açık bir değer sağlayabilirsiniz.
+ClassWizard  `CString` , sizin için bir SQL_LONGVARCHAR veya **SQL_LONGVARBINARY** bir ' a bağlayacaktır `CByteArray` . Uzun veri sütununuzu aldığınız 255 bayttan fazlasını ayırmak istiyorsanız, nMaxLength için açık bir değer sağlayabilirsiniz.
 
-Uzun bir veri sütunu `CString` bir `CByteArray`veya , alan güncelleştirme bağlı olduğunda bir SQL_**VARCHAR** veya SQL_**VARBINARY**bağlı olduğu gibi çalışır. Sırasında, `Edit`veri değeri önbelleğe alınıp, `Update` veri değerindeki değişiklikleri algılamak ve sütun için Kirli ve Null değerlerini uygun şekilde ayarlamak için çağrıldığında karşılaştırılır.
+Bir veya uzun bir veri sütunu bir `CString` veya ' a bağlandığında `CByteArray` , alanı güncelleştirmek yalnızca bir sql_ **varchar** veya sql_ **VARBINARY** öğesine bağlandığına göre aynı şekilde çalışacaktır. Sırasında `Edit` veri değeri, `Update` veri değerinde yapılan değişiklikleri algılamak ve sütun için kirli ve null değerlerini ayarlamak üzere çağrıldığında, daha sonra önbelleğe alınır ve daha sonra karşılaştırılır.
 
-## <a name="binding-a-long-data-column-to-a-clongbinary"></a>Uzun Veri Sütununu CLongBinary'ye Bağlama
+## <a name="binding-a-long-data-column-to-a-clongbinary"></a>Uzun veri sütununu bir CLongBinary 'ye bağlama
 
-Uzun veri sütununuz daha fazla **MAXINT** bayt veri içeriyorsa, büyük `CLongBinary`olasılıkla bir .
+Uzun veri sütunlarınız daha fazla **MaxInt** bayt veri içeriyorsa, büyük olasılıkla bunu bir öğesine almayı göz önünde bulundurmanız gerekir `CLongBinary` .
 
 Artılar:
 
-Bu, kullanılabilir belleğe kadar tüm uzun bir veri sütunu alır.
+Bu, tüm uzun veri sütununu kullanılabilir belleğe kadar alır.
 
 Eksileri:
 
-Veriler bellekte tutulur. Bu yaklaşım, çok büyük miktarda veri için de son derece pahalıdır. Alanın bir `SetFieldDirty` `Update` işlemde yer aldığından emin olmak için bağlı veri üyesini aramanız gerekir.
+Veriler bellekte tutulur. Bu yaklaşım çok büyük miktarlarda veri için de canlı maliyetli hale getirmektedir. `SetFieldDirty`Alanın bir işleme dahil edildiğinden emin olmak için, bağlantılı veri üyesini çağırmanız gerekir `Update` .
 
-Uzun veri sütunlarını bir `CLongBinary`, veritabanı sınıfları uzun veri sütununun toplam boyutunu `HGLOBAL` denetler, ardından tüm veri değerini tutacak kadar büyük bir bellek kesimi ayırır. Veritabanı sınıfları daha sonra ayrılan içine `HGLOBAL`tüm veri değeri almak.
+' A uzun veri sütunları alırsanız `CLongBinary` , veritabanı sınıfları uzun veri sütununun toplam boyutunu kontrol eder ve ardından bir `HGLOBAL` bellek segmentini tüm veri değerini tutacak büyüklükte ayırır. Veritabanı sınıfları daha sonra tüm veri değerini ayrılmış olarak alır `HGLOBAL` .
 
-Veri kaynağı uzun veri sütununun beklenen boyutunu döndüremezse, çerçeve özel durum **AFX_SQL_ERROR_SQL_NO_TOTAL.** Başarısız ayırma girişimi `HGLOBAL` başarısız olursa, standart bir bellek özel durum atılır.
+Veri kaynağı uzun veri sütununun beklenen boyutunu döndüremiyorsa, çerçeve **afx_sql_error_sql_no_total** özel durumu oluşturur. Ayırma girişimi `HGLOBAL` başarısız olursa standart bir bellek özel durumu oluşturulur.
 
-ClassWizard sizin için bir **SQL_LONGVARBINARY** `CLongBinary` **SQL_LONGVARCHAR** veya SQL_LONGVARBINARY bağlayacak. Üye `CLongBinary` Değişken Ekle iletişim kutusunda Değişken Türü olarak seçin. ClassWizard daha sonra `RFX_LongBinary` çağrınıza `DoFieldExchange` bir çağrı ekler ve bağlı alanların toplam sayısını artırır.
+ClassWizard, sizin için bir **SQL_LONGVARCHAR** veya **SQL_LONGVARBINARY** bağlayacaktır `CLongBinary` . `CLongBinary`Üye değişkeni Ekle iletişim kutusunda değişken türü olarak öğesini seçin. Classınterm Sihirbazı daha sonra `RFX_LongBinary` çağrımya bir çağrı ekleyecek `DoFieldExchange` ve toplam bağlantılı alan sayısını artıracaktır.
 
-Uzun veri sütunu değerlerini güncelleştirmek için, öncelikle ayrılan ın yeni verilerinizi tutabilecek kadar `HGLOBAL` büyük `CLongBinary`olduğundan emin **olun: "GlobalSize,** *m_hData* üye. Çok küçükse, `HGLOBAL` bırakın ve uygun boyutu ayırın. Sonra yeni boyutu yansıtacak *şekilde m_dwDataLength* ayarlayın.
+Uzun veri sütunu değerlerini güncelleştirmek için, önce ayrılan değerin `HGLOBAL` , *m_hData* üyesinde **:: GlobalSize** çağırarak, yeni verilerinizi tutmak için yeterince büyük olduğundan emin olun `CLongBinary` . Çok küçükse, serbest bırakın `HGLOBAL` ve uygun boyutta bir tane ayırın. Ardından *m_dwDataLength* yeni boyutu yansıtacak şekilde ayarlayın.
 
-Aksi takdirde, *m_dwDataLength* değiştirdiğiniz verinin boyutundan daha büyükse, ya serbest `HGLOBAL`bırakabilir ve yeniden tahsis edebilirsiniz. *m_dwDataLength'da*fiilen kullanılan bayt sayısını belirttiğinden emin olun.
+Aksi takdirde, *m_dwDataLength* değiştirdiğiniz verilerin boyutundan daha büyükse, ' yi serbest bırakıp yeniden tahsis edebilir `HGLOBAL` ya da ayrılmış olursunuz. *M_dwDataLength*' de gerçekten kullanılan bayt sayısını belirttiğinizden emin olun.
 
-## <a name="how-updating-a-clongbinary-works"></a>CLongBinary Nasıl Çalışır Güncelleme
+## <a name="how-updating-a-clongbinary-works"></a>Bir CLongBinary 'Nin güncelleştirilmesi
 
-Bir güncelleştirmenin nasıl `CLongBinary` çalıştığını anlamak gerekli değildir, ancak aşağıda açıklanan bu üçüncü yöntemi seçerseniz, bir veri kaynağına uzun veri değerlerinin nasıl gönderilecek lerine ilişkin bir örnek olarak yararlı olabilir.
+Bir çalışma güncelleştirmesini anlamak gerekli değildir `CLongBinary` , ancak aşağıda açıklanan üçüncü yöntemi seçerseniz bir veri kaynağına uzun veri değerleri gönderme hakkında bir örnek olarak yararlı olabilir.
 
 > [!NOTE]
-> Bir `CLongBinary` alanın güncelleştirmeye dahil edilebilmesi için, alanı `SetFieldDirty` açıkça aramanız gerekir. Null ayarı da dahil olmak üzere bir alanda herhangi `SetFieldDirty`bir değişiklik yaparsanız, aramanız gerekir. Ayrıca, ikinci `SetFieldNull`parametre **FALSE**olan , alanı bir değere sahip olarak işaretlemek için de aramalısınız.
+> Bir `CLongBinary` alanın bir güncelleştirmeye dahil edilmesi için, alanı açıkça çağırmanız gerekir `SetFieldDirty` . Bir alanda değişiklik yaparsanız, null ayarı da dahil olmak üzere, öğesini çağırmanız gerekir `SetFieldDirty` . Ayrıca, `SetFieldNull` değeri bir değere sahip olacak şekilde işaretlemek için ikinci parametresi **false** olarak da çağırmanız gerekir.
 
-Bir `CLongBinary` alanı güncellerken, veritabanı sınıfları ODBC'nin **DATA_AT_EXEC** mekanizmasını `SQLSetPos`kullanır ('rgbValue bağımsız değişkeni ile ilgili ODBC belgelerine bakın). Çerçeve, ekleme veya güncelleştirme deyimini hazırlarken, verileri `HGLOBAL` içerene işaret etmek `CLongBinary` yerine, sütunun *adresi* ve **SQL_DATA_AT_EXEC**için uzunluk göstergesi olarak ayarlanır. *value* Daha sonra, güncelleştirme deyimi veri kaynağına `SQLExecDirect` gönderildiğinde, **SQL_NEED_DATA**döndürür. Bu, bu sütun için param değeri aslında bir `CLongBinary`. Çerçeve, `SQLGetData` sürücünün verilerin gerçek uzunluğunu döndürmesini bekleyerek küçük bir arabellekle bir kez çağırır. Sürücü ikili büyük nesnenin (BLOB) gerçek uzunluğunu döndürürse, MFC BLOB'u getirmek için gerektiği kadar alanı yeniden tahsis eder. Veri kaynağı **SQL_NO_TOTAL**döndürürse, BLOB'un boyutunu belirleyemeyeceğini gösterirse, MFC daha küçük bloklar oluşturur. Varsayılan başlangıç boyutu 64K'dır ve sonraki bloklar iki katı boyutta olacaktır; örneğin, ikinci 128K olacak, üçüncü 256K, ve benzeri. İlk boyut yapılandırılabilir.
+Bir alanı güncelleştirirken `CLongBinary` , veritabanı SıNıFLARı ODBC 'nin **data_at_exec** mekanizmasını kullanır (bkz `SQLSetPos` . rgbValue bağımsız değişkeni üzerinde ODBC belgeleri). Çerçeve INSERT veya Update ifadesini, verileri içeren içine işaret etmek yerine, ' `HGLOBAL` nin *adresi* , `CLongBinary` sütunun *değeri* olarak ayarlanır ve uzunluk göstergesi **sql_data_at_exec** olarak ayarlanır. Daha sonra, Update ifadesinin veri kaynağına gönderilmesi `SQLExecDirect` **sql_need_data** döndürür. Bu, bu sütun için param değerinin gerçekten bir adresi olduğunu gösteren çerçeveyi uyarır `CLongBinary` . Çerçeve, `SQLGetData` küçük bir arabellekle bir kez çağırır ve sürücünün gerçek veri uzunluğunu döndürmesi bekleniyor. Sürücü, ikili büyük nesne (BLOB) gerçek uzunluğunu döndürürse, MFC, blobu getirmek için gereken kadar fazla alan bulur. Veri kaynağı **SQL_NO_TOTAL** DÖNDÜRÜRSE, blob 'un boyutunu BELIRLEYEMEYECEĞINI belirten MFC daha küçük bloklar oluşturur. Varsayılan başlangıç boyutu 64K ve sonraki bloklar boyutu iki katına alınır; Örneğin, ikincisi 128K, üçüncüsü ise ve bu şekilde devam eder. Başlangıç boyutu yapılandırılabilir.
 
-## <a name="not-binding-retrievingsending-data-directly-from-odbc-with-sqlgetdata"></a>Bağlayıcı Değil: SQLGetData ile Doğrudan ODBC'den Veri Alma/Gönderme
+## <a name="not-binding-retrievingsending-data-directly-from-odbc-with-sqlgetdata"></a>Bağlama değil: SQLGetData ile doğrudan ODBC 'den veri alma/gönderme
 
-Bu yöntemle veritabanı sınıflarını tamamen atlayın ve uzun veri sütunuyla kendiniz ilgilenin.
+Bu yöntemle, veritabanı sınıflarını tamamen atlar ve uzun veri sütunuyla birlikte işlem yapabilirsiniz.
 
 Artılar:
 
-Gerekirse verileri diske olarak önbelleğe alabilir veya ne kadar veri alınacağına dinamik olarak karar verebilirsiniz.
+Gerekirse verileri diske önbelleğe alabilir veya ne kadar veri alınacağını dinamik olarak seçebilirsiniz.
 
 Eksileri:
 
-Çerçevenin `Edit` veya `AddNew` desteğin ini alamazsınız ve temel işlevselliği gerçekleştirmek için`Delete` kod kendiniz yazmanız gerekir (sütun düzeyinde bir işlem olmadığı için işe yarar).
+Framework 'ün `Edit` veya `AddNew` desteğinin yanı sıra temel işlevleri gerçekleştirmek için de kod yazmanız gerekir ( `Delete` bir sütun düzeyi işlem olmadığından, ancak çalışır).
 
-Bu durumda, uzun veri sütunu kayıt kümesinin seçili listesinde olmalıdır, ancak çerçeveye bağlı olmamalıdır. Bunu yapmanın bir yolu, lpszSQL `GetDefaultSQL` bağımsız değişkeni aracılığıyla veya `CRecordset`'işlevi olarak kendi SQL bildiriminizi sağlamak ve ek sütunu RFX_ bir işlev çağrısıyla `Open` bağlamamaktır. ODBC, bağlı olmayan alanların bağlı alanların sağında görünmesini gerektirir, bu nedenle bağlanmamış sütununuzu veya sütunlarınızı seçme listesinin sonuna ekleyin.
+Bu durumda, uzun veri sütunu, kayıt kümesinin seçim listesinde olmalıdır, ancak Framework tarafından bağlanmamalıdır. Bunu yapmanın bir yolu, kendi SQL deyiminizi `GetDefaultSQL` veya `CRecordset` `Open` bir RFX_ işlev çağrısıyla birlikte ek sütununu bağlamayın. ODBC, bağlantılı alanların sağında ilişkisiz alanların görünmesini gerektirir, bu nedenle, bağlı olmayan sütununuzu veya sütunlarınızı seçim listesinin sonuna ekleyin.
 
 > [!NOTE]
-> Uzun veri sütununuz çerçeveye bağlı olmadığından, bu sütundaki `CRecordset::Update` değişiklikler aramalarla işlenmez. Gerekli SQL **INSERT** ve **UPDATE** ifadelerini kendiniz oluşturmalı ve göndermelisiniz.
+> Uzun veri sütunlarınız Framework tarafından bağlanmadığından, üzerinde yapılan değişiklikler `CRecordset::Update` çağrılarla işlenmeyecektir. Gerekli SQL **Insert** ve **Update** deyimlerini kendiniz oluşturmanız ve göndermeniz gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+[Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)

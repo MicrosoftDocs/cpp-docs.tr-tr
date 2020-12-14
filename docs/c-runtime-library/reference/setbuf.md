@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: setarabelleğe'
 title: setbuf
 ms.date: 4/2/2020
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - setbuf function
 - stream buffering
 ms.assetid: 13beda22-7b56-455d-8a6c-f2eb636885b9
-ms.openlocfilehash: 40f23db88abf9733eada9e775aacda83cba5829a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 756cb09fb35ed6e8cf6369f20693e2f0f0b7acaa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910341"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211069"
 ---
 # <a name="setbuf"></a>setbuf
 
@@ -57,7 +58,7 @@ Kullanıcı tarafından ayrılan arabellek.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Setarabelleğe** işlevi *akış*için arabelleğe almayı denetler. *Stream* bağımsız değişkeni, okunamaz veya yazılmayan açık bir dosyaya başvurmalıdır. *Buffer* bağımsız değişkeni **null**ise, akışın ara belleğe alınmamış olması gerekir. Aksi takdirde, arabellek **bufsız**length bir karakter dizisine işaret etmelidir; burada **BUFSıZ** , stdio içinde tanımlanan arabellek boyutudur. Olsun. Belirtilen akış için varsayılan sistem tarafından ayrılan arabellek yerine Kullanıcı tarafından belirtilen arabellek g/ç arabelleğe alma için kullanılır. **Stderr** akışı varsayılan olarak arabelleğe alınmamış, ancak **stderr**'e arabellekler atamak için **setarabelleğe** kullanabilirsiniz.
+**Setarabelleğe** işlevi *akış* için arabelleğe almayı denetler. *Stream* bağımsız değişkeni, okunamaz veya yazılmayan açık bir dosyaya başvurmalıdır. *Buffer* bağımsız değişkeni **null** ise, akışın ara belleğe alınmamış olması gerekir. Aksi takdirde, arabellek **bufsız** length bir karakter dizisine işaret etmelidir; burada **BUFSıZ** , stdio. H içinde tanımlanan arabellek boyutudur. Belirtilen akış için varsayılan sistem tarafından ayrılan arabellek yerine Kullanıcı tarafından belirtilen arabellek g/ç arabelleğe alma için kullanılır. **Stderr** akışı varsayılan olarak arabelleğe alınmamış, ancak **stderr**'e arabellekler atamak için **setarabelleğe** kullanabilirsiniz.
 
 **setarabelleğe** , yeni kod için tercih edilen yordam olan [setvarabelleğe](setvbuf.md)ile değiştirilmiştir. **Setvarabelleğe**'nin aksine, **setarabelleğe** hata bildirme yolu yoktur. **setvbuffer** Ayrıca hem arabelleğe alma modunu hem de arabellek boyutunu denetlemenize olanak tanır. Mevcut kodla uyumluluk için **setarabelleğe** var.
 
@@ -67,7 +68,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**setbuf**|\<stdio. h>|
+|**setbuf**|\<stdio.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -112,7 +113,7 @@ stream2 buffering disabled
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [fflush](fflush.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>

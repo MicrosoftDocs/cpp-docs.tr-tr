@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _rotl8 _rotl16'
 title: _rotl8, _rotl16
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - _rotl8 intrinsic
 - _rotl16 intrinsic
 ms.assetid: 8c519ab6-aef9-4f07-a387-daee8408368f
-ms.openlocfilehash: 5dffde2d3f830b6ec4ad43865648c27b1defb593
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 71ef10bb6af750fc08955fbdf82975b1ed32fa94
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218033"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211914"
 ---
 # <a name="_rotl8-_rotl16"></a>_rotl8, _rotl16
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Giriş değerlerini, belirtilen sayıda bit konumuyla en önemli bit (MSB) ile sola döndürün.
 
@@ -42,7 +43,7 @@ unsigned short _rotl16(
 *karakter*\
 'ndaki Döndürülecek bit sayısı.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Döndürülen değer.
 
@@ -53,7 +54,7 @@ Döndürülen değer.
 |`_rotl8`|x86, ARM, x64, ARM64|
 |`_rotl16`|x86, ARM, x64, ARM64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

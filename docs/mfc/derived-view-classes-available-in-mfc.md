@@ -1,4 +1,5 @@
 ---
+description: "Daha fazla bilgi edinin: MFC 'de kullanılabilen türetilmiş Görünüm sınıfları"
 title: MFC'de Kullanılabilen Türetilmiş Görünüm Sınıfları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - derived classes [MFC], view classes
 - view classes [MFC], derived
 ms.assetid: dba42178-7459-4ccc-b025-f3d9b8a4b737
-ms.openlocfilehash: dc0f0b10ea291db32c576a7d36b7fc19728fa6ce
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 669fb0f47cc2124fcf45d0eed3666869837f56f6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616978"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211901"
 ---
 # <a name="derived-view-classes-available-in-mfc"></a>MFC'de Kullanılabilen Türetilmiş Görünüm Sınıfları
 
@@ -42,4 +43,4 @@ Uygulamanızda bu sınıfları kullanmak için uygulamanın görünüm sınıfla
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Görünümleri Kullanma](using-views.md)
+[Görünümleri kullanma](using-views.md)

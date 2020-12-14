@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _set_SSE2_enable'
 title: _set_SSE2_enable
 ms.date: 04/05/2018
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - Streaming SIMD Extensions 2 instructions
 - set_SSE2_enable function
 ms.assetid: 55db895d-fc1e-475a-9110-b781a9bb51c5
-ms.openlocfilehash: 8838282db851c6811a3f24c75a03b31c5870e6d3
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: a9c82b2f17d90bc158ac77b8d7ad9625491856aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948369"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211212"
 ---
 # <a name="_set_sse2_enable"></a>_set_SSE2_enable
 
@@ -57,17 +58,17 @@ SSE2 uygulamasının etkinleştirilmiş olması halinde sıfır dışı; SSE2 uy
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki işlevler, **_Set_sse2_enable**kullanılarak ETKINLEŞTIRILENEBILIR SSE2 uygulamalarına sahiptir:
+Aşağıdaki işlevlerde **_set_SSE2_enable** kullanılarak ETKINLEŞTIRILENEBILIR SSE2 uygulamaları vardır:
 
 - [atan](atan-atanf-atanl-atan2-atan2f-atan2l.md)
 
-- [ceil](ceil-ceilf-ceill.md)
+- [Ceil](ceil-ceilf-ceill.md)
 
 - [exp](exp-expf.md)
 
 - [sını](floor-floorf-floorl.md)
 
-- [log](log-logf-log10-log10f.md)
+- [açmasını](log-logf-log10-log10f.md)
 
 - [log10](log-logf-log10-log10f.md)
 
@@ -75,18 +76,18 @@ Aşağıdaki işlevler, **_Set_sse2_enable**kullanılarak ETKINLEŞTIRILENEBILIR
 
 - [POW](pow-powf-powl.md)
 
-Bu işlevlerin SSE2 uygulamaları varsayılan uygulamalardan biraz farklı yanıtlar verebilir, çünkü SSE2 ara değerleri 64 bitlik kayan nokta miktarları, ancak varsayılan uygulama ara değerleri 80 bittir kayan nokta miktarları.
+Bu işlevlerin SSE2 uygulamaları varsayılan uygulamalardan biraz farklı yanıtlar verebilir, çünkü SSE2 ara değerleri 64 bitlik kayan nokta miktarları, ancak varsayılan uygulama ara değerleri 80 bit kayan nokta miktarları.
 
 > [!NOTE]
-> Projeyi derlemek için [/Oi (Iç Işlevler üret)](../../build/reference/oi-generate-intrinsic-functions.md) derleyici seçeneğini kullanırsanız, **_Set_sse2_enable** seçeneğinin hiçbir etkisi olmaz. **/Oi** derleyici SEÇENEĞI derleyiciye CRT çağrılarını değiştirmek için iç bilgileri kullanma yetkisi verir; Bu davranış, **_Set_sse2_enable**efektini geçersiz kılar. **/Oi** 'ın **_Set_sse2_enable**öğesini geçersiz kılmadığından emin olmak istiyorsanız, projenizi derlemek için **/Oi-** kullanın. Bu, **/Oi**belirten diğer derleyici anahtarlarını kullandığınızda da iyi bir uygulama olabilir.
+> Projeyi derlemek için [/Oi (Iç Işlevler üret)](../../build/reference/oi-generate-intrinsic-functions.md) derleyici seçeneğini kullanırsanız, **_set_SSE2_enable** hiçbir etkisi olmaz. **/Oi** derleyici SEÇENEĞI derleyiciye CRT çağrılarını değiştirmek için iç bilgileri kullanma yetkisi verir; Bu davranış **_set_SSE2_enable** etkisini geçersiz kılar. **/Oi** 'ın **_set_SSE2_enable** geçersiz kılmadığından emin olmak istiyorsanız, projenizi derlemek için **/Oi-** kullanın. Bu, **/Oi** belirten diğer derleyici anahtarlarını kullandığınızda da iyi bir uygulama olabilir.
 
-SSE2 uygulama yalnızca tüm özel durumlar maskelenise kullanılır. Özel durumları maskelemek için [_control87, _controlfp](control87-controlfp-control87-2.md) kullanın.
+SSE2 uygulama yalnızca tüm özel durumlar maskelenise kullanılır. Özel durumları maskelemek için [_control87 _controlfp](control87-controlfp-control87-2.md) kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_set_SSE2_enable**|\<Math. h >|
+|**_set_SSE2_enable**|\<math.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -115,4 +116,4 @@ SSE2 enabled.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CRT Kitaplık Özellikleri](../../c-runtime-library/crt-library-features.md)<br/>
+[CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C eklenebilir Işleçler'
 title: C Ek İşleçleri
 ms.date: 10/18/2018
 helpviewer_keywords:
@@ -8,26 +9,26 @@ helpviewer_keywords:
 - additive operators
 - arithmetic operators [C++], additive operators
 ms.assetid: bb8ac205-b061-41fc-8dd4-dab87c8b900c
-ms.openlocfilehash: 29bea87e56aa90a8deab7ad7280b3fbdfb45c82b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b77c3e9716cba716f625fa142129f5c1ce095907
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62326917"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211602"
 ---
 # <a name="c-additive-operators"></a>C Ek İşleçleri
 
-Toplama işleçleri toplama (**+**) ve çıkarma (**-**) gerçekleştirir.
+Toplama işleçleri toplama ( **+** ) ve çıkarma () gerçekleştirir **-** .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *Toplamsal ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*çarpma ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*adli ifade* **+** *çoğulereptive-ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*adli ifade* **-** *çoğulereptive-ifadesi*
+&nbsp;&nbsp;&nbsp;&nbsp;*Toplamsal ifadesi* **+** *çarpma ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Toplamsal ifadesi* **-** *çarpma ifadesi*
 
 > [!NOTE]
-> *Adli ifadesi* için sözdizimi, *çoğulereptive ifadesi*içeriyor olsa da, bu ifadeler çarpma kullanan ifadelerin gerekli olduğunu göstermez. *Çarpma*ifadesi, *atama ifadesi*ve *birli Ifade*için [C dili sözdizimi özetinde](../c-language/c-language-syntax-summary.md)söz dizimine bakın.
+> *Adli ifadesi* için sözdizimi, *çoğulereptive ifadesi* içeriyor olsa da, bu ifadeler çarpma kullanan ifadelerin gerekli olduğunu göstermez. *Çarpma* ifadesi, *atama ifadesi* ve *birli Ifade* için [C dili sözdizimi özetinde](../c-language/c-language-syntax-summary.md)söz dizimine bakın.
 
 İşlenenler tamsayı veya kayan değerler olabilir. Bazı toplama işlemleri, her bir işlecin tartışması altında gösterildiği gibi işaretçi değerlerinde de gerçekleştirilebilir.
 
@@ -35,4 +36,4 @@ Toplama işleçleri, integral ve kayan işlenenler üzerinde Olağan aritmetik d
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ek İşleçler: + and -](../cpp/additive-operators-plus-and.md)
+[Toplama Işleçleri: + ve-](../cpp/additive-operators-plus-and.md)

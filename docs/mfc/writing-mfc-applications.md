@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: MFC uygulamaları yazma'
 title: MFC Uygulamaları Yazma
 ms.date: 09/12/2018
 helpviewer_keywords:
@@ -7,42 +8,42 @@ helpviewer_keywords:
 - application wizards [MFC], Internet applications
 - MFC, application development
 ms.assetid: 6a8d8a03-abfa-4976-86c2-c5773a4b7179
-ms.openlocfilehash: 63636e8c5738eb3823de0befa6237f7ae5b3491d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b01d147f5b15546c9e15e9f8bd5654c7b986cad6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399466"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209925"
 ---
 # <a name="writing-mfc-applications"></a>MFC Uygulamaları Yazma
 
-Bu makalede, uygulamanızı geliştirmek için ilk adımlar açıklanmaktadır. İlk olarak, yazmakta olduğunuz uygulama türüne karar vermeniz gerekir. Birkaç seçenek ele alınan [uygulama tasarımı seçimleri](../mfc/application-design-choices.md). Uygulamanız olacak:
+Bu makalede, uygulamanızı geliştirmek için uygulamanız gereken ilk adımlar açıklanmaktadır. İlk olarak, ne tür bir uygulama yazacağına karar vermelisiniz. Birçok seçenekten biri [uygulama tasarım seçimleriyle](../mfc/application-design-choices.md)tartışılır. Uygulamanız şu şekilde olacaktır:
 
-- Internet veya intranet üzerinde çalışıyor
+- Internet 'te veya intranette çalışan
 
-- Bir istemcide veya sunucuda çalıştırma
+- Bir istemcide veya sunucuda çalışan
 
 - Bir tarayıcıda veya tek başına bir uygulama olarak çalıştırma
 
-- COM veya etkin teknolojisini kullanarak
+- COM veya etkin teknolojiyi kullanma
 
-- WinINet veya zaman uyumsuz adlar kullanarak veri yükleme
+- WinInet veya zaman uyumsuz bilinen adlar kullanarak verileri indirme
 
-Kararlarınızı hangi sınıfların, uygulamanız için uygun olduğunu belirleyin. Yanıtlar, ayrıca, uygulamanızı oluşturma başlamak için Uygulama Sihirbazı'nı çalıştırdığınızda, yaptığınız seçimleri belirlemenize yardımcı.
+Kararlarınız, uygulamanız için uygun olan sınıfları tespit edilir. Yanıtlarınız, uygulamanızı oluşturmaya başlamak için uygulama Sihirbazı 'Nı çalıştırdığınızda yaptığınız seçimleri belirlemenize de yardımcı olur.
 
-Internet uygulamanızın ilk tasarım kararlarınızı yaptıktan sonra başlamak için Uygulama Sihirbazı'nı kullanabilirsiniz. İskelet bir uygulama oluşturun ve aşağıdaki makaleler de anlatıldığı gibi kodu değiştirmek için Uygulama Sihirbazı'nı kullanın:
+Internet uygulamanız hakkında ilk tasarım kararlarınızı yaptıktan sonra, kullanmaya başlamak için uygulama sihirbazını kullanabilirsiniz. Uygulama Sihirbazı 'Nı kullanarak bir çatı uygulaması oluşturun ve kodu aşağıdaki makalelerde açıklandığı gibi değiştirin:
 
-- ActiveX denetimi için bkz: [Internet'te ActiveX denetimleri](../mfc/activex-controls-on-the-internet.md).
+- Bir ActiveX denetimi için bkz. [Internet 'Teki ActiveX denetimleri](../mfc/activex-controls-on-the-internet.md).
 
-Aşağıdaki makaleler de programlama görevleriniz başlamanıza yardımcı olacak yönergeler sağlar:
+Aşağıdaki makaleler, programlama görevlerinizi başlamanıza yardımcı olacak yönergeler de sağlar:
 
-- [Uygulama Tasarımı Seçimleri](../mfc/application-design-choices.md)
+- [Uygulama tasarımı seçimleri](../mfc/application-design-choices.md)
 
-- [Internet'teki Zaman Uyumsuz Adlar](../mfc/asynchronous-monikers-on-the-internet.md)
+- [Internet 'te zaman uyumsuz bilinen adlar](../mfc/asynchronous-monikers-on-the-internet.md)
 
-- [WinInet Temelleri](../mfc/wininet-basics.md)
+- [Winınet temelleri](../mfc/wininet-basics.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Internet Programlama Görevleri](../mfc/mfc-internet-programming-tasks.md)<br/>
+[MFC Internet programlama görevleri](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)

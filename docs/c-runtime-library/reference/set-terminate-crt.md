@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: set_terminate (CRT)'
 title: set_terminate (CRT)
 ms.date: 4/2/2020
 api_name:
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - terminate function
 - exception handling, termination
 ms.assetid: 3ff1456a-7898-44bc-9266-a328a80b6006
-ms.openlocfilehash: 70ed4adb7ceada53205fd69f111c8976fe95c711
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6b25e141bc9299389c80e629ff6eb03d7deba23c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234022"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211108"
 ---
 # <a name="set_terminate-crt"></a>set_terminate (CRT)
 
-**Terminate**tarafından çağrılacak kendi sonlandırma yordamınıza sahip olun.
+**Terminate** tarafından çağrılacak kendi sonlandırma yordamınıza sahip olun.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 terminate_function set_terminate( terminate_function termFunction );
@@ -52,15 +53,15 @@ Yazdığınız sonlandırma işlevine yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Önceki işlevin daha sonra geri yüklenebilmesi için **set_terminate** tarafından kaydedilen önceki işleve yönelik bir işaretçi döndürür. Önceki bir işlev ayarlanmamışsa, varsayılan davranışı geri yüklemek için dönüş değeri kullanılabilir; Bu değer **null**olabilir.
+Önceki işlevin daha sonra geri yüklenebilmesi için **set_terminate** tarafından kaydedilen önceki işleve yönelik bir işaretçi döndürür. Önceki bir işlev ayarlanmamışsa, varsayılan davranışı geri yüklemek için dönüş değeri kullanılabilir; Bu değer **null** olabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Set_terminate** işlevi, **Sonlandır**tarafından çağrılan işlev olarak *termFunction* 'ı yüklüyor. **set_terminate** , C++ özel durum işlemesi ile kullanılır ve özel durum oluşturulmadan önce programınızdaki herhangi bir noktada çağrılabilir. Varsayılan olarak [iptal](abort.md) çağrıları **Sonlandır** . Kendi sonlandırma işlevinizi yazarak ve bağımsız değişkeni olarak işlevinizin adını **set_terminate** çağırarak, bu varsayılanı değiştirebilirsiniz. **sonlandır** **set_terminate**bir bağımsız değişken olarak verilen son işlevi çağırır. İstenen temizleme görevlerini gerçekleştirdikten sonra, *termFunction* programdan çıkmalıdır. Çıkış yoksa (çağıranı döndürürse), [iptal](abort.md) çağırılır.
+**Set_terminate** işlevi, **Sonlandır** tarafından çağrılan işlev olarak *termFunction* 'ı yüklüyor. **set_terminate** , C++ özel durum işlemesi ile kullanılır ve özel durum oluşturulmadan önce programınızdaki herhangi bir noktada çağrılabilir. Varsayılan olarak [iptal](abort.md) çağrıları **Sonlandır** . Kendi sonlandırma işlevinizi yazarak ve bağımsız değişkeni olarak işlevinizin adını **set_terminate** çağırarak, bu varsayılanı değiştirebilirsiniz. **sonlandır** **set_terminate** bir bağımsız değişken olarak verilen son işlevi çağırır. İstenen temizleme görevlerini gerçekleştirdikten sonra, *termFunction* programdan çıkmalıdır. Çıkış yoksa (çağıranı döndürürse), [iptal](abort.md) çağırılır.
 
 Çok iş parçacıklı bir ortamda, sonlandırma işlevleri her iş parçacığı için ayrı olarak korunur. Her yeni iş parçacığının kendi Terminate işlevini yüklemesi gerekir. Bu nedenle, her iş parçacığı kendi sonlandırma işlemenin ücretlendirilmiştir.
 
-**Terminate_function** türü Eh içinde tanımlanır. Kullanıcı tanımlı sonlandırma işlevinin işaretçisi olarak H, döndüren *termFunction* **`void`** . Özel işleviniz *termFunction* , bağımsız değişken alabilir ve çağırana dönmemelidir. Varsa, [iptal](abort.md) çağırılır. *TermFunction*içinden bir özel durum oluşmayabilir.
+**Terminate_function** türü Eh içinde tanımlanır. Kullanıcı tanımlı sonlandırma işlevinin işaretçisi olarak H, döndüren *termFunction* **`void`** . Özel işleviniz *termFunction* , bağımsız değişken alabilir ve çağırana dönmemelidir. Varsa, [iptal](abort.md) çağırılır. *TermFunction* içinden bir özel durum oluşmayabilir.
 
 ```cpp
 typedef void ( *terminate_function )( );

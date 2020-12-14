@@ -1,5 +1,6 @@
 ---
-title: 'TN056: Yerelleştirilmiş MFC bileşenlerini yükleme'
+description: 'Hakkında daha fazla bilgi edinin: TN056: yerelleştirilmiş MFC bileşenlerini yükleme'
+title: 'TN056: Yerelleştirilmiş MFC Bileşenlerini Yükleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - components [MFC]
@@ -14,20 +15,20 @@ helpviewer_keywords:
 - localization [MFC], resources
 - installing MFC components
 ms.assetid: 0b582615-3bb1-4fc0-b569-d127d6deccd3
-ms.openlocfilehash: df60bef3611d4e517998f6be5c769750c37f1f08
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: fc08d3213f0da24ee5c29cb8c8020977d647422d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65610942"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214864"
 ---
-# <a name="tn056-installation-of-localized-mfc-components"></a>TN056: Yerelleştirilmiş MFC bileşenlerini yükleme
+# <a name="tn056-installation-of-localized-mfc-components"></a>TN056: Yerelleştirilmiş MFC Bileşenlerini Yükleme
 
-Yerelleştirilmiş MFC bileşenlerini yükleme ele alınan, bu Teknik Not artık kullanımdan kalkmıştır.
+Yerelleştirilmiş MFC bileşenlerinin yüklenmesini tartışan bu teknik notun artık kullanım dışı olduğunu göreceksiniz.
 
-**Bkz:** [TechNote 57](../mfc/tn057-localization-of-mfc-components.md) MFC uygulamaları yerelleştirme hakkında daha fazla bilgi.
+MFC uygulamalarını yerelleştirme hakkında daha fazla bilgi için **bkz** . [TechNote 57](../mfc/tn057-localization-of-mfc-components.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+[Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)

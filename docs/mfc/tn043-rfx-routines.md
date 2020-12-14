@@ -1,5 +1,6 @@
 ---
-title: 'TN043: RFX rutinleri'
+description: 'Daha fazla bilgi edinin: TN043: RFX yordamları'
+title: 'TN043: RFX Rutinleri'
 ms.date: 06/28/2018
 f1_keywords:
 - RFX
@@ -8,23 +9,23 @@ helpviewer_keywords:
 - TN043
 - RFX (record field exchange)
 ms.assetid: f552d0c1-2c83-4389-b472-42c9940aa713
-ms.openlocfilehash: 18820c7d17ddea355490ee32679d5d690ec3533e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6e5ac8271739e5cab80b79cb915b07e7d25622cf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305404"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215228"
 ---
-# <a name="tn043-rfx-routines"></a>TN043: RFX rutinleri
+# <a name="tn043-rfx-routines"></a>TN043: RFX Rutinleri
 
 > [!NOTE]
-> Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
+> Aşağıdaki teknik Not, çevrimiçi belgelere ilk eklenmesinden beri güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konular güncel olmayabilir veya yanlış olabilir. En son bilgiler için çevrimiçi belge dizininde ilgilendiğiniz konuyu aramanız önerilir.
 
-Bu Not kayıt alanı değişimi (RFX) mimarisini açıklar. Ayrıca, nasıl yazılır açıklar bir **RFX_** yordamı.
+Bu notta kayıt alanı değişimi (RFX) mimarisi açıklanmaktadır. Ayrıca, bir **RFX_** yordamının nasıl yazılacağını açıklar.
 
-## <a name="overview-of-record-field-exchange"></a>Kayıt alanı değişimi genel bakış
+## <a name="overview-of-record-field-exchange"></a>Kayıt alanı değişimine genel bakış
 
-Tüm kayıt alan İşlevler, C++ kodu ile gerçekleştirilir. Özel kaynaklar veya Sihirli makroları yoktur. Her kayıt türetilen sınıfta geçersiz kılınması sanal bir işlev mekanizmasını kalbidir. Her zaman bu formda de bulunur:
+Tüm kayıt kümesi alanı işlevleri C++ kodu ile yapılır. Özel kaynak veya sihirli makrolar yoktur. Mekanizmanın kalp, her türetilmiş kayıt kümesi sınıfında geçersiz kılınabilmesi gereken bir sanal işlevdir. Bu formda her zaman bulunur:
 
 ```cpp
 void CMySet::DoFieldExchange(CFieldExchange* pFX)
@@ -36,81 +37,81 @@ void CMySet::DoFieldExchange(CFieldExchange* pFX)
 }
 ```
 
-Özel biçim AFX açıklamaları ClassWizard bulun ve bu işlev içindeki kod düzenlemek izin verin. ClassWizard ile uyumlu olmayan kod dışında özel biçim açıklamaları yerleştirilmelidir.
+Özel biçim AFX açıklamaları ClassWizard 'ın bu işlev içindeki kodu bulmasını ve düzenlemesini sağlar. ClassWizard ile uyumlu olmayan kod, özel biçim açıklamalarının dışına yerleştirilmelidir.
 
-Yukarıdaki örnekte, \<recordset_exchange_field_type_call > şu şekildedir:
+Yukarıdaki örnekte, \<recordset_exchange_field_type_call> şu biçimdedir:
 
 ```cpp
 pFX->SetFieldType(CFieldExchange::outputColumn);
 ```
 
-ve \<recordset_exchange_function_call > şu şekildedir:
+ve \<recordset_exchange_function_call> şu biçimdedir:
 
 ```cpp
 RFX_Custom(pFX, "Col2", m_Col2);
 ```
 
-Çoğu **RFX_** işlevlerine sahip üç yukarıda da gösterildiği gibi bağımsız değişkenleri, ancak bazı (örneğin `RFX_Text` ve `RFX_Binary`) ek isteğe bağlı bağımsız değişkenlere sahip.
+Çoğu **RFX_** işlevi yukarıda gösterildiği gibi üç bağımsız değişkene sahiptir, ancak bazıları (ör. `RFX_Text` ve `RFX_Binary` ) ek isteğe bağlı bağımsız değişkenlere sahiptir.
 
-Birden fazla **RFX_** her eklenebilir `DoDataExchange` işlevi.
+Her işlevde birden fazla **RFX_** bulunabilir `DoDataExchange` .
 
-'Afxdb.h' MFC ile sağlanan tüm kayıt alanı değişimi rutinleri listesi için bkz.
+MFC ile birlikte sunulan tüm kayıt kümesi alanı değişim yordamlarının listesi için bkz. ' Afxdb. h '.
 
-Kayıt kümesi alanı çağrılarıdır alan verilerini depolamak için bellek konumları (genellikle veri üyeleri) kaydetme bir yol bir `CMySet` sınıfı.
+Kayıt kümesi alan çağrıları, bir sınıf için alan verilerini depolamak üzere bellek konumlarını (genellikle veri üyeleri) kaydetmenin bir yoludur `CMySet` .
 
 ## <a name="notes"></a>Notlar
 
-Kayıt kümesi alanı işlevleri yalnızca birlikte çalışmak üzere tasarlanan `CRecordset` sınıfları. Bunlar herhangi bir MFC sınıfları tarafından genel olarak kullanılabilir değildir.
+Kayıt kümesi alanı işlevleri yalnızca sınıflarla çalışacak şekilde tasarlanmıştır `CRecordset` . Bunlar, diğer MFC sınıfları tarafından genel olarak kullanılabilir değildir.
 
-İlk veri değerlerinin standart C++ oluşturucuda, genellikle bir bloğu ile ayarlanır `//{{AFX_FIELD_INIT(CMylSet)` ve `//}}AFX_FIELD_INIT` yorumlar.
+İlk veri değerleri standart C++ oluşturucusunda, genellikle ve açıklamaları olan bir blokta ayarlanır `//{{AFX_FIELD_INIT(CMylSet)` `//}}AFX_FIELD_INIT` .
 
-Her **RFX_** işlevi alan düzenleme, hazırlama alanına arşivlenmesine alanın kirli durumu döndüren arasında çeşitli işlemler desteklemesi gerekir.
+Her bir **RFX_** işlevi, alanı düzenlemenin hazırlanmasından alanı arşivlemek için alanın kirli durumunun döndürülmesinin yanı değişen çeşitli işlemleri desteklemelidir.
 
-Çağıran her işlev `DoFieldExchange` (örneğin `SetFieldNull`, `IsFieldDirty`), kendi başlatmayı etrafında çağrısı yapan `DoFieldExchange`.
+Çağıran her işlev `DoFieldExchange` (örneğin `SetFieldNull` , `IsFieldDirty` ), çağrısı etrafında kendi başlatmasını yapar `DoFieldExchange` .
 
-## <a name="how-does-it-work"></a>Nasıl çalışır
+## <a name="how-does-it-work"></a>Nasıl çalışır?
 
-Kayıt alanı değişimi kullanmak için aşağıdakileri anlamanız gerekmez. Ancak, bunun arka planda nasıl çalıştığını yardımcı olacak anlama, kendi exchange yordamı yazın.
+Kayıt alanı değişimini kullanmak için aşağıdakileri anlamanız gerekmez. Ancak, bunun arka planda nasıl çalıştığını anlamak kendi Exchange yordamınıza yazmanızı sağlamanıza yardımcı olur.
 
-`DoFieldExchange` Üye işlevi olan çok benzer `Serialize` üye işlevi — ayarlamanın ya veri gönderip buralardan bir dış biçiminde (ODBC sorgusunun sonucunu bu büyük/küçük harf sütunları) / sınıf üyesi verilerine sorumludur. *PFX* parametre veri alışverişi yapmak için bağlam ve benzer *CArchive* parametresi `CObject::Serialize`. *PFX* (bir `CFieldExchange` nesnesi) benzer bir işlem göstergesi, ancak genelleştirilmiş *CArchive* yön bayrağı. RFX işlevi aşağıdaki işlemleri desteklemek sahip olabilir:
+`DoFieldExchange`Üye işlevi, üye işlevine çok benzer `Serialize` — bir dış formdan (bir ODBC sorgusunun sonucundan alınan sütunlarda), sınıftaki üye verilerinden/öğesinden veri alma veya sunucudan veri ayarlamaktan sorumludur. *PFX* parametresi, veri değişimi yapma bağlamıdır ve *CArchive* parametresine benzerdir `CObject::Serialize` . *PFX* (bir `CFieldExchange` nesne) için bir işlem göstergesi, ancak *CArchive* yön bayrağının genelleştirilmesidir. Bir RFX işlevinin aşağıdaki işlemleri desteklemesi gerekebilir:
 
-- `BindParam` — Belirtin ODBC parametre verileri nerede almanız gerekir
+- `BindParam` — ODBC 'nin parametre verilerini alması gereken yeri belirtin
 
-- `BindFieldToColumn` Gösterir burada ODBC alma/outputColumn veri havale gerekir
+- `BindFieldToColumn` — ODBC 'nin outputColumn verilerini alması/depozito gereken yeri belirtin
 
-- `Fixup` — Ayarlama `CString/CByteArray` uzunlukları, bit NULL durumu ayarla
+- `Fixup` — `CString/CByteArray` Uzunlukları ayarla, null durum bitini ayarla
 
-- `MarkForAddNew` — İşareti kirli AddNew çağrısından değer değiştiyse
+- `MarkForAddNew` — AddNew çağrısından bu yana değer değiştiyse kirli olarak işaretle
 
-- `MarkForUpdate` — İşareti kirli düzenleme çağrısından değer değiştiyse
+- `MarkForUpdate` — Bu tarihten sonra değer değiştiyse kirli olarak işaretle
 
-- `Name` — Kirli olarak işaretlenmiş alanlar için alan adlarını ekleme
+- `Name` — Kirli olarak işaretlenmiş alanlar için alan adlarını ekleyin
 
-- `NameValue` — Ekleme "\<sütun adı > =" kirli olarak işaretlenmiş alanlar için
+- `NameValue` — \<column name> Kirli olarak işaretlenmiş alanlar için "=" ekleyin
 
-- `Value` — Ekle "" ayırıcı tarafından izlenen, ister ',' veya ' '
+- `Value` — ', ' Veya ' ' gibi ayracın ardından "" ekleyin
 
-- `SetFieldDirty` — Durum bit kirli (yani değiştirilen) alanını ayarlayın
+- `SetFieldDirty` — Durum bit kirli (ör. değiştirilen) alanını ayarla
 
-- `SetFieldNull` — Durumu bit alanı için null değer belirten ayarlayın
+- `SetFieldNull` — Alanın null değerini gösteren durum bitini ayarla
 
-- `IsFieldDirty` — Kirli durumu bit değeri döndürür
+- `IsFieldDirty` — Kirli durum bitinin dönüş değeri
 
-- `IsFieldNull` — Null durumu bit değeri döndürür
+- `IsFieldNull` — Null durum bitinin dönüş değeri
 
-- `IsFieldNullable` — Alan NULL değerlerini tutabilecek, TRUE döndürür
+- `IsFieldNullable` — Alan NULL değerleri tutabiliyorsa, TRUE döndürün
 
-- `StoreField` — Arşiv alan değeri
+- `StoreField` — Arşiv alanı değeri
 
-- `LoadField` — Arşivlenmiş alan değeri yeniden yükleyin.
+- `LoadField` — Arşivlenmiş alan değerini yeniden yükle
 
-- `GetFieldInfoValue` — Bir alan genel bilgiler döndürür.
+- `GetFieldInfoValue` — Bir alanla ilgili genel bilgileri döndür
 
-- `GetFieldInfoOrdinal` — Bir alan genel bilgiler döndürür.
+- `GetFieldInfoOrdinal` — Bir alanla ilgili genel bilgileri döndür
 
 ## <a name="user-extensions"></a>Kullanıcı Uzantıları
 
-Varsayılan RFX mekanizmasını genişletmek için birkaç yolu vardır. Şunları yapabilirsiniz
+Varsayılan RFX mekanizmasını genişletmek için birkaç yol vardır. Şunları yapabilirsiniz
 
 - Yeni veri türleri ekleyin. Örneğin:
 
@@ -118,7 +119,7 @@ Varsayılan RFX mekanizmasını genişletmek için birkaç yolu vardır. Şunlar
     CBookmark
     ```
 
-- Yeni exchange yordamlar (RFX_) ekleyin.
+- Yeni Exchange yordamları (RFX_) ekleyin.
 
     ```cpp
     void AFXAPI RFX_Bigint(CFieldExchange* pFX,
@@ -126,7 +127,7 @@ Varsayılan RFX mekanizmasını genişletmek için birkaç yolu vardır. Şunlar
         BIGINT& value);
     ```
 
-- Sahip `DoFieldExchange` üye işlevi koşullu olarak dahil ek RFX çağrıları veya diğer herhangi bir geçerli C++ deyimleri.
+- `DoFieldExchange`Üye işlevine, ek RFX çağrılarını veya diğer geçerli C++ deyimlerini koşullu olarak ekleyin.
 
     ```cpp
     while (posExtraFields != NULL)
@@ -138,27 +139,27 @@ Varsayılan RFX mekanizmasını genişletmek için birkaç yolu vardır. Şunlar
     ```
 
 > [!NOTE]
-> Bu tür kod ClassWizard tarafından düzenlenemez ve yalnızca özel biçim yorumları dışında kullanılması gerekir.
+> Bu kod, ClassWizard tarafından düzenlenemez ve yalnızca özel biçim açıklamalarının dışında kullanılmalıdır.
 
-## <a name="writing-a-custom-rfx"></a>Özel RFX yazma
+## <a name="writing-a-custom-rfx"></a>Özel bir RFX yazma
 
-Kendi özel RFX işlevi yazmak için mevcut bir RFX işlevi kopyalayıp kendi amaçlarınız için değiştirebilirsiniz önerilir. Kopyalamak için sağ RFX seçmek, işinizi çok daha kolay yapabilirsiniz. Bazı RFX işlevleri kopyalanacağı karar verirken dikkate almanız benzersiz bazı özellikler vardır.
+Kendi özel RFX işlevinizi yazmak için, var olan bir RFX işlevini kopyalamanız ve kendi amacınıza göre değiştirmeniz önerilir. Kopyalanacak doğru RFX seçilmesi, işinizi çok daha kolay hale getirir. Bazı RFX işlevleri, kopyalamanın ne olduğuna karar verirken dikkate almanız gereken bazı benzersiz özelliklere sahiptir.
 
-`RFX_Long` ve `RFX_Int`: En basit RFX işlevleri şunlardır. Veri değeri herhangi bir özel yorumu gerekli değildir ve veri boyutu sabit.
+`RFX_Long` ve `RFX_Int` : Bunlar en basıt RFX işlevleridir. Veri değeri herhangi bir özel yorumu gerektirmez ve veri boyutu sabittir.
 
-`RFX_Single` ve `RFX_Double`: Bu işlevler RFX_Long ve rfx_ınt yukarıdaki gibi basittir ve yapabilirsiniz varsayılan uygulamasını kapsamlı bir şekilde kullanın. Bunlar dbflt.cpp yerine dbrfx.cpp, ancak yalnızca açıkça başvuru olduklarında noktası kitaplığı kayan çalışma zamanı yükleme etkinleştirmek için depolanır.
+`RFX_Single` ve `RFX_Double` : yukarıdaki RFX_Long ve RFX_Int gibi, bu işlevler basittir ve varsayılan uygulamayı kapsamlı olarak kullanabilir. Ancak, yalnızca açıkça başvurduklarında çalışma zamanı kayan nokta kitaplığını yüklemeyi etkinleştirmek için dbrfx. cpp yerine dbflt. cpp içinde depolanır.
 
-`RFX_Text` ve `RFX_Binary`: Bu iki işlev dizesi/ikili bilgiyi tutmak için statik bir arabellek erişinceye ve kaydetme & değeri yerine bu arabellekleri ODBC SQLBindCol ile kaydetmeniz gerekir. Bu nedenle, bu iki işlev özel durum kodu bulunmaktadır.
+`RFX_Text` ve `RFX_Binary` : Bu iki işlev, dize/ikili bilgileri tutmak için statik bir arabellek önceden ayırır ve bu arabellekleri &değerini kaydetmek yerıne ODBC SQLBindCol ile kaydetmelidir. Bu nedenle, bu iki işlev çok sayıda özel durum koduna sahiptir.
 
-`RFX_Date`: ODBC kendi TIMESTAMP_STRUCT veri yapısında tarih ve saat bilgilerini döndürür. Bu işlev dinamik olarak bir TIMESTAMP_STRUCT bir "proxy" olarak göndermek ve tarih saat verilerini almak için ayırır. Çeşitli işlemler tarih ve saat bilgilerini arasında aktarmalısınız C++ `CTime` nesne ve TIMESTAMP_STRUCT proxy. Bu işlev bu oldukça karmaşık hale getirir, ancak bu veri aktarımı için bir ara sunucu kullanmak nasıl daha iyi bir örnektir.
+`RFX_Date`: ODBC, kendi TIMESTAMP_STRUCT veri yapısındaki tarih ve saat bilgilerini döndürür. Bu işlev, tarih saat verilerinin gönderilmesi ve alınması için bir TIMESTAMP_STRUCT dinamik olarak bir "proxy" olarak ayırır. Çeşitli işlemler, C++ `CTime` nesnesi ve TIMESTAMP_STRUCT proxy arasında tarih ve saat bilgilerini aktarmalıdır. Bu, bu işlevi önemli ölçüde karmaşıklaştırır, ancak veri aktarımı için proxy kullanma konusunda iyi bir örnektir.
 
-`RFX_LongBinary`: Yalnızca sınıf kitaplığı veri gönderip için sütun bağlama kullanmaz RFX işlev budur. Bu işlev BindFieldToColumn işlemi yok sayar ve bunun yerine, düzeltme işlemi sırasında gelen SQL_LONGVARCHAR veya SQL_LONGVARBINARY verileri tutmak için depolama alanı ayırır ve ardından ayrılan depolama alanına değerini almak için bir SQLGetData araması gerçekleştirir. Bu işlev, veri değerlerinin (örneğin, işlemi NameValue ve değer) veri kaynağına geri göndermek hazırlık yaparken, ODBC DATA_AT_EXEC işlevselliğini kullanır. Bkz: [Teknik Not 45](../mfc/tn045-mfc-database-support-for-long-varchar-varbinary.md) SQL_LONGVARBINARY ve SQL_LONGVARCHARs ile çalışma hakkında daha fazla bilgi.
+`RFX_LongBinary`: Bu, veri almak ve göndermek için sütun bağlamayı kullanmayan tek sınıf kitaplığı RFX işlevidir. Bu işlev, BindFieldToColumn işlemini yoksayar ve bunun yerine, düzeltme işlemi sırasında depolama alanını gelen SQL_LONGVARCHAR veya SQL_LONGVARBINARY verileri tutacak şekilde ayırır, ardından değeri ayrılan depolamaya almak için bir SQLGetData çağrısı gerçekleştirir. Veri değerlerini veri kaynağına (NameValue ve value işlemleri gibi) geri göndermek için hazırlanırken, bu işlev ODBC 'nin DATA_AT_EXEC işlevselliğini kullanır. SQL_LONGVARBINARY ve SQL_LONGVARCHARs çalışma hakkında daha fazla bilgi için bkz. [Teknik bilgi 45](../mfc/tn045-mfc-database-support-for-long-varchar-varbinary.md) .
 
-Kendi yazarken **RFX_** işlevi, genellikle oluşturabileceksiniz kullanılacak `CFieldExchange::Default` belirli bir işlemini uygulamak için. Varsayılan uygulama söz konusu işlemi için bakın. İşlemi gerçekleştirdiğinde, yazma, **RFX_** işlevi için temsilci `CFieldExchange::Default`. Arama örneklerini gördüğünüz `CFieldExchange::Default` dbrfx.cpp içinde
+Kendi **RFX_** işlevinizi yazarken, genellikle `CFieldExchange::Default` belirli bir işlemi uygulamak için kullanabilirsiniz. Söz konusu işlem için varsayılan uygulamaya bakın. Bu işlem, **RFX_** işlevinizde yazma işlemi gerçekleştirirse, ' a temsilci seçebilirsiniz `CFieldExchange::Default` . `CFieldExchange::Default`Dbrfx. cpp içinde çağırma örnekleri görebilirsiniz
 
-Çağrılacak önemlidir `IsFieldType` RFX işlevi ve hemen FALSE döndürürse dönüş başlangıcı. Bu mekanizma üzerinde gerçekleştirilen gelen parametre operations tutar *outputColumns*ve bunun tersi de geçerlidir (arama gibi `BindParam` üzerinde bir *outputColumn*). Ayrıca, `IsFieldType` otomatik olarak sayısını izler *outputColumns* (*m_nFields*) ve params (*m_nParams*).
+`IsFieldType`RFX işlevinizin başlangıcında çağırmak önemlidir ve false döndürürse hemen döndürülür. Bu mekanizma, *outputColumns* üzerinde parametre işlemlerinin gerçekleştirilmesini önler ve tam tersi de ( `BindParam` bir *outputColumn* üzerinde çağırma gibi). Ayrıca, `IsFieldType` *outputcolumns* (*m_nFields*) ve params (*m_nParams*) sayısını otomatik olarak izler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+[Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)
