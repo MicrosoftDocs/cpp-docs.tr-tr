@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CListCtrl sınıfı'
 title: CListCtrl sınıfı
 ms.date: 06/13/2019
 f1_keywords:
@@ -264,12 +265,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-ms.openlocfilehash: a1fa9f4bb7ba844dd2f0300cf007a786e8fde902
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: a72cc336a6f962eb5129bec15ccb3ed2fe748e10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562486"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333481"
 ---
 # <a name="clistctrl-class"></a>CListCtrl sınıfı
 
@@ -666,7 +667,7 @@ Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş
 Liste denetiminin stilini belirtir. Denetime liste denetim stillerinin herhangi bir birleşimini uygulayın. Bu stillerin tüm listesi için, bkz. [liste görünümü pencere stilleri](/windows/win32/Controls/list-view-window-styles) Windows SDK.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
+*PParentWnd* istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencerenin işaretçisi.
@@ -682,11 +683,11 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 `CreateEx`Windows genişletilmiş stil ön yüzü **ws_ex_** tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için [Create](#create) yerine kullanın.
 
-`CreateEx`*dwExStyle*tarafından belirtilen Genişletilmiş Windows stilleriyle denetimi oluşturur. Bir denetime özgü genişletilmiş stilleri ayarlamak için [Setil dedstyle](#setextendedstyle)' ı çağırın. Örneğin, `CreateEx` Bu tür stilleri ws_ex_contexthelp olarak ayarlamak için kullanın, ancak `SetExtendedStyle` Bu tür stilleri LVS_EX_FULLROWSELECT olarak ayarlamak için kullanın. Daha fazla bilgi için Windows SDK [Genişletilmiş liste görünümü stillerinde](/windows/win32/Controls/extended-list-view-styles) makalesinde açıklanan stillere bakın.
+`CreateEx`*dwExStyle* tarafından belirtilen Genişletilmiş Windows stilleriyle denetimi oluşturur. Bir denetime özgü genişletilmiş stilleri ayarlamak için [Setil dedstyle](#setextendedstyle)' ı çağırın. Örneğin, `CreateEx` Bu tür stilleri ws_ex_contexthelp olarak ayarlamak için kullanın, ancak `SetExtendedStyle` Bu tür stilleri LVS_EX_FULLROWSELECT olarak ayarlamak için kullanın. Daha fazla bilgi için Windows SDK [Genişletilmiş liste görünümü stillerinde](/windows/win32/Controls/extended-list-view-styles) makalesinde açıklanan stillere bakın.
 
 ## <a name="clistctrlcreatedragimage"></a><a name="createdragimage"></a> CListCtrl:: CreateDragImage
 
-*Nitem*tarafından belirtilen öğe için bir sürükle resmi listesi oluşturur.
+*Nitem* tarafından belirtilen öğe için bir sürükle resmi listesi oluşturur.
 
 ```
 CImageList* CreateDragImage(
@@ -1163,7 +1164,7 @@ Genişliği alınacak olan sütunun dizinini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Ncol*tarafından belirtilen sütunun piksel cinsinden genişliği.
+*Ncol* tarafından belirtilen sütunun piksel cinsinden genişliği.
 
 ### <a name="example"></a>Örnek
 
@@ -1444,7 +1445,7 @@ BOOL GetGroupRect(
 'ndaki Bir grubu belirtir.
 
 *lpRect*\
-[in, out] [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına yönelik işaretçi. Bu yöntem başarılı olursa, yapı *ıgroupıd*tarafından belirtilen grubun dikdörtgen koordinatlarını alır.
+[in, out] [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına yönelik işaretçi. Bu yöntem başarılı olursa, yapı *ıgroupıd* tarafından belirtilen grubun dikdörtgen koordinatlarını alır.
 
 *ıcords*\
 'ndaki Alınacak dikdörtgen koordinatlarını belirtir. Şu değerlerden birini kullanın:
@@ -2051,7 +2052,7 @@ Metni alınacak alt öğesi belirtir.
 Öğe metnini alacak bir dize işaretçisi.
 
 *nLen*<br/>
-*LpszText*tarafından işaret edilen arabelleğin uzunluğu.
+*LpszText* tarafından işaret edilen arabelleğin uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2135,7 +2136,7 @@ Bu yöntem, Windows SDK açıklanan [LVM_GETNEXTITEMINDEX](/windows/win32/contro
 
 ## <a name="clistctrlgetnextselecteditem"></a><a name="getnextselecteditem"></a> CListCtrl:: Getnextselectedidıtem
 
-*POS*tarafından tanımlanan liste öğesinin dizinini alır, ardından *POS* 'u konum değerine ayarlar.
+*POS* tarafından tanımlanan liste öğesinin dizinini alır, ardından *POS* 'u konum değerine ayarlar.
 
 ```
 int GetNextSelectedItem(POSITION& pos) const;
@@ -2148,7 +2149,7 @@ Bir veya için önceki çağrının döndürdüğü bir konum değerine başvuru
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*POS*tarafından tanımlanan liste öğesinin dizini.
+*POS* tarafından tanımlanan liste öğesinin dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2339,7 +2340,7 @@ Genişliği belirlenecek olan, null ile sonlandırılmış bir dizenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Lpsz*tarafından işaret edilen dizenin piksel cinsinden genişliği.
+*Lpsz* tarafından işaret edilen dizenin piksel cinsinden genişliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2584,7 +2585,7 @@ void GetWorkAreas(
 `RECT` *PRect* dizisinde içerilen yapıların sayısı.
 
 *pRect*<br/>
-`RECT`Liste görünümü denetiminin çalışma alanını alan bir yapı dizisine [CRect](../../atl-mfc-shared/reference/crect-class.md) (veya ekip nesneleri) yönelik bir işaretçi. Bu yapılardaki değerler istemci koordinatlarıdır.
+`RECT`Liste görünümü denetiminin çalışma alanını alan bir yapı dizisine [](../../atl-mfc-shared/reference/crect-class.md) (veya ekip nesneleri) yönelik bir işaretçi. Bu yapılardaki değerler istemci koordinatlarıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2640,7 +2641,7 @@ Testin sonuçları hakkında bilgi alan bir tamsayıya yönelik işaretçi. `fla
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Herhangi bir veya-1 değilse, *pHitTestInfo*tarafından belirtilen konumdaki öğenin dizini.
+Herhangi bir veya-1 değilse, *pHitTestInfo* tarafından belirtilen konumdaki öğenin dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -3799,7 +3800,7 @@ Bu üye işlevi, Windows SDK 'da açıklandığı gibi [ListView_SetItemCountEx]
 
 ## <a name="clistctrlsetitemdata"></a><a name="setitemdata"></a> CListCtrl:: SetItemData
 
-*Nitem*tarafından belirtilen öğeyle ilişkili 32 bitlik uygulamaya özgü değeri ayarlar.
+*Nitem* tarafından belirtilen öğeyle ilişkili 32 bitlik uygulamaya özgü değeri ayarlar.
 
 ```
 BOOL SetItemData(int nItem, DWORD_PTR dwData);
@@ -4191,7 +4192,7 @@ void SetWorkAreas(
 ### <a name="parameters"></a>Parametreler
 
 *nWorkAreas*<br/>
-`RECT` *LpRect*tarafından işaret edilen dizideki yapıların (veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnelerinin) sayısı.
+`RECT` *LpRect* tarafından işaret edilen dizideki yapıların (veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnelerinin) sayısı.
 
 *lpRect*<br/>
 `RECT` `CRect` Liste görünümü denetiminin yeni iş bölgelerini belirten bir yapı dizisinin (veya nesnelerinin) adresi. Bu alanların istemci koordinatlarıyla belirtilmesi gerekir. Bu parametre NULL ise, çalışma alanı denetimin istemci alanına ayarlanır.
@@ -4261,7 +4262,7 @@ Yöntem başarılı olursa doğru; Aksi halde yanlış.
 
 Bu yöntem, her öğenin dizinini yeni sırayı yansıtacak şekilde değiştirir.
 
-*PfnCompare*karşılaştırma işlevinin aşağıdaki biçimi vardır:
+*PfnCompare* karşılaştırma işlevinin aşağıdaki biçimi vardır:
 
 ```
 int CALLBACK CompareFunc(LPARAM lParam1,
@@ -4323,7 +4324,7 @@ Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 Bu yöntem, her öğenin dizinini yeni sırayı yansıtacak şekilde değiştirir.
 
-*PfnCompare*karşılaştırma işlevinin aşağıdaki biçimi vardır:
+*PfnCompare* karşılaştırma işlevinin aşağıdaki biçimi vardır:
 
 ```
 int CALLBACK CompareFunc(LPARAM lParam1,
@@ -4427,7 +4428,7 @@ void CListCtrlDlg::OnDblClk(NMHDR* pNMHDR, LRESULT* pResult)
 
 ## <a name="clistctrlupdate"></a><a name="update"></a> CListCtrl:: Update
 
-Liste görünümü denetimini *nitem*tarafından belirtilen öğeyi yeniden çizilecek şekilde zorlar.
+Liste görünümü denetimini *nitem* tarafından belirtilen öğeyi yeniden çizilecek şekilde zorlar.
 
 ```
 BOOL Update(int nItem);

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: hash_set (STL/CLR)'
 title: hash_set (STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -95,12 +96,12 @@ helpviewer_keywords:
 - value_compare member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: d110e356-ba3e-4e52-9e2d-d997bf975c96
-ms.openlocfilehash: c6df41836433b952d7d2e0e7d744270174c5768a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 0705dd674af21958b5d4f4b0a5a904eb42aff76a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508737"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335473"
 ---
 # <a name="hash_set-stlclr"></a>hash_set (STL/CLR)
 
@@ -240,7 +241,7 @@ Bir öğeyi silme veya kaldırma, kendi saklı değeri için yıkıcıyı çağ�
 
 Denetlenen dizinin başlangıcını belirtir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 iterator begin();
@@ -282,7 +283,7 @@ int main()
 
 Demetlerin sayısını sayar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 int bucket_count();
@@ -356,7 +357,7 @@ max_load_factor() = 0.25
 
 Tüm öğeleri kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void clear();
@@ -414,7 +415,7 @@ size() = 0
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef T2 const_iterator;
@@ -456,7 +457,7 @@ a b c
 
 Bir öğe için sabit bir başvuru türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef value_type% const_reference;
@@ -501,7 +502,7 @@ a b c
 
 Denetlenen sıra için bir sabit ters yineleyicinin türü..
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef T4 const_reverse_iterator;
@@ -556,7 +557,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Member işlevi, *anahtar*ile eşdeğer sıralamaya sahip olan denetimli dizideki öğe sayısını döndürür. Belirtilen bir anahtarla eşleşen denetimli dizide bulunan öğe sayısını öğrenmek için bunu kullanırsınız.
+Member işlevi, *anahtar* ile eşdeğer sıralamaya sahip olan denetimli dizideki öğe sayısını döndürür. Belirtilen bir anahtarla eşleşen denetimli dizide bulunan öğe sayısını öğrenmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -596,7 +597,7 @@ count(L'C') = 0
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef int difference_type;
@@ -651,7 +652,7 @@ begin()-end() = -3
 
 Bir öğe olup olmadığını sınar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 bool empty();
@@ -703,7 +704,7 @@ empty() = True
 
 Denetlenen dizinin bitişini belirtir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 iterator end();
@@ -831,16 +832,16 @@ Silinecek anahtar değer.
 *soyadına*<br/>
 Silinecek aralığın sonu.
 
-*konum*<br/>
+*olmadığı*<br/>
 Silinecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye *işlevi, öğesinin*işaret ettiği denetlenen sıranın öğesini kaldırır ve kaldırılan öğenin ötesinde ilk öğeyi atayan bir yineleyici döndürür ya da böyle bir öğe yoksa [hash_set:: End (STL/CLR)](#end) `()` . Tek bir öğeyi kaldırmak için bunu kullanırsınız.
+İlk üye *işlevi, öğesinin* işaret ettiği denetlenen sıranın öğesini kaldırır ve kaldırılan öğenin ötesinde ilk öğeyi atayan bir yineleyici döndürür ya da böyle bir öğe yoksa [hash_set:: End (STL/CLR)](#end) `()` . Tek bir öğeyi kaldırmak için bunu kullanırsınız.
 
 İkinci üye işlevi, [,) aralığındaki denetimli sıranın öğelerini kaldırır `first` `last` ve kaldırılan tüm öğelerin ötesinde kalan ilk öğeyi veya böyle bir öğe yoksa bir yineleyici döndürür `end()` . Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
 
-Üçüncü üye işlevi, anahtarı *anahtara*denk sıralama değerine sahip denetimli dizinin herhangi bir öğesini kaldırır ve kaldırılan öğe sayısının sayısını döndürür. Bu anahtarı, belirtilen bir anahtarla eşleşen tüm öğeleri kaldırmak ve saymak için kullanırsınız.
+Üçüncü üye işlevi, anahtarı *anahtara* denk sıralama değerine sahip denetimli dizinin herhangi bir öğesini kaldırır ve kaldırılan öğe sayısının sayısını döndürür. Bu anahtarı, belirtilen bir anahtarla eşleşen tüm öğeleri kaldırmak ve saymak için kullanırsınız.
 
 Her bir öğe, denetlenen dizideki öğelerin sayısının logaritması ile orantılı bir zaman alır.
 
@@ -909,7 +910,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen dizide en az bir öğe *anahtar*ile eşdeğer sıralamaya sahipse, üye işlevi bu öğelerden birini tanımlayarak bir yineleyici döndürür; Aksi takdirde [hash_set:: End (STL/CLR)](#end)döndürür `()` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğeyi bulmak için bunu kullanırsınız.
+Denetlenen dizide en az bir öğe *anahtar* ile eşdeğer sıralamaya sahipse, üye işlevi bu öğelerden birini tanımlayarak bir yineleyici döndürür; Aksi takdirde [hash_set:: End (STL/CLR)](#end)döndürür `()` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğeyi bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -952,7 +953,7 @@ find C = False
 
 Kapsayıcının genel arabiriminin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Microsoft::VisualC::StlClr::
@@ -1016,7 +1017,7 @@ a b c d e
 
 Kapsayıcı için genel arabirimle birlikte kullanılacak bir yineleyici türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Microsoft::VisualC::StlClr::Generic::
@@ -1072,7 +1073,7 @@ a
 
 Kapsayıcı için genel arabirimle birlikte kullanılacak ters yineleyicinin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Microsoft::VisualC::StlClr::Generic::
@@ -1128,7 +1129,7 @@ c
 
 Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef GValue generic_value;
@@ -1182,7 +1183,7 @@ a
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 hasher^ hash_delegate();
@@ -1272,25 +1273,25 @@ Oluşturucu:
 
 `explicit hash_set(key_compare^ pred);`
 
-denetlenen sırayı, sıralama koşulu *Pred*ve varsayılan karma işlevi ile hiçbir öğe olmadan başlatır. Bu işlemi, belirtilen sıralama koşulu ve varsayılan karma işlevi ile birlikte boş bir ilk denetimli sıra belirtmek için kullanırsınız.
+denetlenen sırayı, sıralama koşulu *Pred* ve varsayılan karma işlevi ile hiçbir öğe olmadan başlatır. Bu işlemi, belirtilen sıralama koşulu ve varsayılan karma işlevi ile birlikte boş bir ilk denetimli sıra belirtmek için kullanırsınız.
 
 Oluşturucu:
 
 `hash_set(key_compare^ pred, hasher^ hashfn);`
 
-denetlenen sırayı, sıralama koşulu *Pred*ile ve *hashfn*karma işlevi ile birlikte hiçbir öğe olmadan başlatır. Belirtilen sıralama koşulu ve karma işleviyle birlikte boş bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
+denetlenen sırayı, sıralama koşulu *Pred* ile ve *hashfn* karma işlevi ile birlikte hiçbir öğe olmadan başlatır. Belirtilen sıralama koşulu ve karma işleviyle birlikte boş bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
 
 Oluşturucu:
 
 `hash_set(hash_set<Key>% right);`
 
-denetlenen sırayı, `right.begin()` `right.end()` varsayılan sıralama koşulu ile ve varsayılan karma işlevle birlikte [,) sırasıyla başlatır. Bu, varsayılan sıralama koşulu ve karma işlevi ile *hash_set nesnesi tarafından*denetlenen sıranın bir kopyası olan bir ilk denetimli sıra belirtmek için kullanılır.
+denetlenen sırayı, `right.begin()` `right.end()` varsayılan sıralama koşulu ile ve varsayılan karma işlevle birlikte [,) sırasıyla başlatır. Bu, varsayılan sıralama koşulu ve karma işlevi ile *hash_set nesnesi tarafından* denetlenen sıranın bir kopyası olan bir ilk denetimli sıra belirtmek için kullanılır.
 
 Oluşturucu:
 
 `hash_set(hash_set<Key>^ right);`
 
-denetlenen sırayı, `right->begin()` `right->end()` varsayılan sıralama koşulu ile ve varsayılan karma işlevle birlikte [,) sırasıyla başlatır. Bu, varsayılan sıralama koşulu ve karma işlevi ile *hash_set nesnesi tarafından*denetlenen sıranın bir kopyası olan bir ilk denetimli sıra belirtmek için kullanılır.
+denetlenen sırayı, `right->begin()` `right->end()` varsayılan sıralama koşulu ile ve varsayılan karma işlevle birlikte [,) sırasıyla başlatır. Bu, varsayılan sıralama koşulu ve karma işlevi ile *hash_set nesnesi tarafından* denetlenen sıranın bir kopyası olan bir ilk denetimli sıra belirtmek için kullanılır.
 
 Oluşturucu:
 
@@ -1302,31 +1303,31 @@ Oluşturucu:
 
 `template<typename InIter> hash_set(InIter first, InIter last, key_compare^ pred);`
 
-[,) sırası ile denetimli sırayı, `first` `last` sıralama koşulu *Pred*ve varsayılan karma işlevi ile başlatır. Bu işlemi, denetimli diziyi, belirtilen sıralama koşulu ve varsayılan karma işlevi ile başka bir dizinin bir kopyası yapmak için kullanırsınız.
+[,) sırası ile denetimli sırayı, `first` `last` sıralama koşulu *Pred* ve varsayılan karma işlevi ile başlatır. Bu işlemi, denetimli diziyi, belirtilen sıralama koşulu ve varsayılan karma işlevi ile başka bir dizinin bir kopyası yapmak için kullanırsınız.
 
 Oluşturucu:
 
 `template<typename InIter> hash_set(InIter first, InIter last, key_compare^ pred, hasher^ hashfn);`
 
-[,) sırası ile denetimli sırayı, `first` `last` sıralama koşulu *Pred*ile ve *hashfn*karma işlevi ile başlatır. Belirtilen sıralama koşulu ve karma işlevi ile, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
+[,) sırası ile denetimli sırayı, `first` `last` sıralama koşulu *Pred* ile ve *hashfn* karma işlevi ile başlatır. Belirtilen sıralama koşulu ve karma işlevi ile, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
 
 Oluşturucu:
 
 `hash_set(System::Collections::Generic::IEnumerable<Key>^ right);`
 
-denetlenen sırayı, varsayılan sıralama koşulu ile ve varsayılan karma işlevle birlikte Numaralandırıcı *hakkı*tarafından belirlenen sırayla başlatır. Denetim, varsayılan sıralama koşulu ve karma işlevi ile, bir Numaralandırıcı tarafından tanımlanan başka bir dizinin kopyasını oluşturmak için kullanılır.
+denetlenen sırayı, varsayılan sıralama koşulu ile ve varsayılan karma işlevle birlikte Numaralandırıcı *hakkı* tarafından belirlenen sırayla başlatır. Denetim, varsayılan sıralama koşulu ve karma işlevi ile, bir Numaralandırıcı tarafından tanımlanan başka bir dizinin kopyasını oluşturmak için kullanılır.
 
 Oluşturucu:
 
 `hash_set(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred);`
 
-denetlenen diziyi, Numaralandırıcı *hakkı*ile, sıralama koşulu *Pred*ve varsayılan karma işlevi ile belirlenen sırayla başlatır. Denetim, belirtilen sıralama koşulu ve varsayılan karma işlevi ile bir Numaralandırıcı tarafından tanımlanan başka bir dizinin kopyasını oluşturmak için kullanılır.
+denetlenen diziyi, Numaralandırıcı *hakkı* ile, sıralama koşulu *Pred* ve varsayılan karma işlevi ile belirlenen sırayla başlatır. Denetim, belirtilen sıralama koşulu ve varsayılan karma işlevi ile bir Numaralandırıcı tarafından tanımlanan başka bir dizinin kopyasını oluşturmak için kullanılır.
 
 Oluşturucu:
 
 `hash_set(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred, hasher^ hashfn);`
 
-denetlenen diziyi, Numaralandırıcı *hakkı*ile, sıralama koşulu *Pred*ve *diyez FN*karma işlevi ile belirlenen sırayla başlatır. Denetim, belirtilen sıralama koşulu ve karma işlevi ile bir Numaralandırıcı tarafından tanımlanan başka bir dizinin kopyasını oluşturmak için kullanılır.
+denetlenen diziyi, Numaralandırıcı *hakkı* ile, sıralama koşulu *Pred* ve *diyez FN* karma işlevi ile belirlenen sırayla başlatır. Denetim, belirtilen sıralama koşulu ve karma işlevi ile bir Numaralandırıcı tarafından tanımlanan başka bir dizinin kopyasını oluşturmak için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -1460,7 +1461,7 @@ a b c
 
 Bir anahtar için karma temsilcisi.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 Microsoft::VisualC::StlClr::UnaryDelegate<GKey, int>
@@ -1523,7 +1524,7 @@ Eklenecek sabit listesi.
 *Acil*<br/>
 Eklenecek anahtar değer.
 
-*konum*<br/>
+*olmadığı*<br/>
 Kapsayıcının ekleneceği yer (yalnızca ipucu).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1532,11 +1533,11 @@ Kapsayıcının ekleneceği yer (yalnızca ipucu).
 
 İlk üye işlevi, value değeri olan bir öğe eklemek için endeavors ve bir *çift değer döndürür* `X` . `X.second`True ise, `X.first` yeni eklenen öğeyi belirtir; Aksi takdirde, `X.first` zaten var olan ve yeni bir öğe eklenmemiş eşdeğer sıralamaya sahip bir öğe atar. Tek bir öğe eklemek için bunu kullanırsınız.
 
-İkinci üye işlevi, bir ipucu olarak *WHERE* (performansı artırmak için) ve yeni eklenen öğeyi atayan bir yineleyici döndüren bir *değer değeri olan*bir öğe ekler. Bildiğiniz bir öğeye bitişik olabilecek tek bir öğe eklemek için bunu kullanırsınız.
+İkinci üye işlevi, bir ipucu olarak *WHERE* (performansı artırmak için) ve yeni eklenen öğeyi atayan bir yineleyici döndüren bir *değer değeri olan* bir öğe ekler. Bildiğiniz bir öğeye bitişik olabilecek tek bir öğe eklemek için bunu kullanırsınız.
 
 Üçüncü üye işlevi [,) dizisini ekler `first` `last` . Başka bir dizide kopyalanmış sıfır veya daha fazla öğe eklemek için bunu kullanırsınız.
 
-Dördüncü üye işlevi, *sağ*tarafından belirlenen diziyi ekler. Bir Numaralandırıcı tarafından tanımlanan bir sıra eklemek için bunu kullanırsınız.
+Dördüncü üye işlevi, *sağ* tarafından belirlenen diziyi ekler. Bir Numaralandırıcı tarafından tanımlanan bir sıra eklemek için bunu kullanırsınız.
 
 Her öğe ekleme, denetlenen dizideki öğelerin sayısının logaritması ile orantılı bir zaman alır. Ekleme noktası, ekleme noktasına bitişik bir öğe atayan bir ipucu verildiğinde, sabit zamanlı olarak ekleme yapılabilir.
 
@@ -1615,7 +1616,7 @@ a b c x y
 
 Denetlenen dizi için bir yineleyici türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef T1 iterator;
@@ -1657,7 +1658,7 @@ a b c
 
 Sıralama temsilcisini iki anahtar için kopyalar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 key_compare^key_comp();
@@ -1716,7 +1717,7 @@ compare(L'b', L'a') = True
 
 İki anahtar için sıralama temsilcisi.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 Microsoft::VisualC::StlClr::BinaryDelegate<GKey, GKey, bool>
@@ -1776,7 +1777,7 @@ compare(L'b', L'a') = True
 
 Bir sıralama anahtarının türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Key key_type;
@@ -1784,7 +1785,7 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametre *anahtarı*için bir eş anlamlı.
+Tür, şablon parametre *anahtarı* için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -1821,7 +1822,7 @@ a b c
 
 Demet başına ortalama öğeyi sayar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 float load_factor();
@@ -1908,7 +1909,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli dizideki ilk öğeyi, `X` *anahtar* ile aynı demetini karma hale getirir ve *anahtara*eşdeğer sıralama içerir. Böyle bir öğe yoksa [hash_set:: End (STL/CLR)](#end)döndürür `()` ; Aksi takdirde, öğesini atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen, denetlenen dizide bulunan bir öğe dizisinin başlangıcını bulmak için bunu kullanırsınız.
+Üye işlevi, denetimli dizideki ilk öğeyi, `X` *anahtar* ile aynı demetini karma hale getirir ve *anahtara* eşdeğer sıralama içerir. Böyle bir öğe yoksa [hash_set:: End (STL/CLR)](#end)döndürür `()` ; Aksi takdirde, öğesini atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen, denetlenen dizide bulunan bir öğe dizisinin başlangıcını bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1965,7 +1966,7 @@ Kullanılacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `value_type` anahtarı *anahtar*olan bir nesne döndürür. Diğer birçok üye işlevi ile kullanmak üzere uygun bir nesne oluşturmak için bunu kullanırsınız.
+Üye işlevi, `value_type` anahtarı *anahtar* olan bir nesne döndürür. Diğer birçok üye işlevi ile kullanmak üzere uygun bir nesne oluşturmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2014,7 +2015,7 @@ Depolanacak yeni en fazla yük faktörü.
 
 İlk üye işlevi, geçerli saklı maksimum yük faktörünü döndürür. En büyük ortalama demet boyutunu bulmak için bunu kullanırsınız.
 
-İkinci üye işlevi, mağaza en fazla yük faktörünü *new_factor*ile değiştirir. Sonraki bir ekleme yapılıncaya kadar otomatik yeniden karma gerçekleşmez.
+İkinci üye işlevi, mağaza en fazla yük faktörünü *new_factor* ile değiştirir. Sonraki bir ekleme yapılıncaya kadar otomatik yeniden karma gerçekleşmez.
 
 ### <a name="example"></a>Örnek
 
@@ -2120,7 +2121,7 @@ a b c
 
 Ters denetlenen sıranın başlangıcını belirtir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 reverse_iterator rbegin();
@@ -2168,7 +2169,7 @@ a b c
 
 Bir öğe için bir başvuru türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef value_type% reference;
@@ -2213,7 +2214,7 @@ a b c
 
 Karma tabloyu yeniden oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void rehash();
@@ -2287,7 +2288,7 @@ max_load_factor() = 0.25
 
 Ters denetlenen sıranın sonunu belirtir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 reverse_iterator rend();
@@ -2336,7 +2337,7 @@ a b c
 
 Denetlenen sıra için ters yineleyicinin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef T3 reverse_iterator;
@@ -2378,7 +2379,7 @@ c b a
 
 Öğe sayısını sayar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 size_type size();
@@ -2432,7 +2433,7 @@ size() = 2 after adding 2
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef int size_type;
@@ -2493,7 +2494,7 @@ void swap(hash_set<Key>% right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, ve sağ arasındaki denetlenen dizileri **`this`** değiştirir *right*. Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
+Üye işlevi, ve sağ arasındaki denetlenen dizileri **`this`** değiştirir . Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2548,7 +2549,7 @@ a b c
 
 Denetimli sırayı yeni bir diziye kopyalar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 cli::array<value_type>^ to_array();
@@ -2611,7 +2612,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli dizideki son öğeyi, `X` *anahtar* ile aynı demetini karma hale getirir ve *anahtara*denk sıralama içerir. Böyle bir öğe yoksa veya `X` denetlenen dizideki son öğe ise [hash_set:: End (STL/CLR)](#end)döndürür `()` ; Aksi takdirde ilk öğeyi daha sonra atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğe dizisinin sonunu bulmak için bunu kullanırsınız.
+Üye işlevi, denetimli dizideki son öğeyi, `X` *anahtar* ile aynı demetini karma hale getirir ve *anahtara* denk sıralama içerir. Böyle bir öğe yoksa veya `X` denetlenen dizideki son öğe ise [hash_set:: End (STL/CLR)](#end)döndürür `()` ; Aksi takdirde ilk öğeyi daha sonra atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğe dizisinin sonunu bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2655,7 +2656,7 @@ upper_bound(L'x')==end() = True
 
 İki öğe değeri için sıralama temsilcisini kopyalar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 value_compare^ value_comp();
@@ -2699,7 +2700,7 @@ compare(L'b', L'a') = False
 
 İki öğe değeri için sıralama temsilcisi.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 Microsoft::VisualC::StlClr::BinaryDelegate<generic_value, generic_value, bool>
@@ -2744,7 +2745,7 @@ compare(L'b', L'a') = False
 
 Öğenin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef generic_value value_type;

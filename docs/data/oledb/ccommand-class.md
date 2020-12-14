@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CCommand sınıfı'
 title: CCommand Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -49,12 +50,12 @@ helpviewer_keywords:
 - SetParameterInfo method
 - Unprepare method
 ms.assetid: 0760bfc5-b9ee-4aee-8e54-31bd78714d3a
-ms.openlocfilehash: 109998dd742828b3c41672fa2afa8716e4687f6a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 150d543b666896964794503d185637680e6da8fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501008"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335516"
 ---
 # <a name="ccommand-class"></a>CCommand Sınıfı
 
@@ -121,7 +122,7 @@ Sağlayıcı saklı yordamları desteklemediğinden, saklı yordamları Jet içi
 
 Komutuyla ilişkili erişimci satır kümesini yayınlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void Close();
@@ -168,7 +169,7 @@ Standart HRESULT.
 
 Bir sonuç kümesi daha önce getirildiyseniz, bu işlev önceki sonuç kümesini serbest bırakır ve sütunların bağlantısını kaldırır. *BBind* ise **`true`** , yeni sütunları bağlar.
 
-Bu işlevi yalnızca `CCommand` *TMultiple*şablon parametresini ayarlayarak birden çok sonuç belirttiyseniz çağırmalısınız = `CMultipleResults` .
+Bu işlevi yalnızca `CCommand` *TMultiple* şablon parametresini ayarlayarak birden çok sonuç belirttiyseniz çağırmalısınız = `CMultipleResults` .
 
 ## <a name="ccommandopen"></a><a name="open"></a> CCommand:: Open
 
@@ -222,13 +223,13 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 'ndaki Ayarlanacak özellikleri ve değerleri içeren bir [dbpropset](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları dizisine yönelik bir işaretçi. Windows SDK *OLE DB Programcı başvurusu* Içindeki [özellik kümeleri ve özellik grupları](/previous-versions/windows/desktop/ms713696(v=vs.85)) bölümüne bakın.
 
 *etkilenen Prowsa*<br/>
-[ın/out] Bir komuttan etkilenen satır sayısının döndürüldüğü bir bellek işaretçisi. Eğer * \* PROWSA,* null ise, satır sayısı döndürülmez. Aksi takdirde, `Open` aşağıdaki koşullara göre * \* prowsa'* u ayarlar:
+[ın/out] Bir komuttan etkilenen satır sayısının döndürüldüğü bir bellek işaretçisi. Eğer *\* PROWSA,* null ise, satır sayısı döndürülmez. Aksi takdirde, `Open` aşağıdaki koşullara göre *\* prowsa'* u ayarlar:
 
 |Eğer|Ardından|
 |--------|----------|
-|`cParamSets`Öğesi 1 ' `pParams` den büyük|* \* prowsaall* , yürütmede belirtilen tüm parametre kümelerinden etkilenen toplam satır sayısını temsil eder.|
-|Etkilenen satır sayısı kullanılamıyor|* \* Prowsa,* -1 olarak ayarlanmıştır.|
-|Komut satırları güncelleştirmez, silemez veya eklemez|* \* Prowsa,* tanımsız.|
+|`cParamSets`Öğesi 1 ' `pParams` den büyük|*\* prowsaall* , yürütmede belirtilen tüm parametre kümelerinden etkilenen toplam satır sayısını temsil eder.|
+|Etkilenen satır sayısı kullanılamıyor|*\* Prowsa,* -1 olarak ayarlanmıştır.|
+|Komut satırları güncelleştirmez, silemez veya eklemez|*\* Prowsa,* tanımsız.|
 
 *Guidkomutu*<br/>
 'ndaki Sağlayıcı için komut metnini ayrıştırırken kullanılacak sözdizimini ve genel kuralları belirten bir GUID. Ayrıntılar için *OLE DB Programcı başvurusunda* bkz. [ICommandText:: GetCommandText](/previous-versions/windows/desktop/ms709825(v=vs.85)) ve [ICommandText \ metin:: setCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85)) .
@@ -366,7 +367,7 @@ Bu yöntem, [ICommandText::P repof](/previous-versions/windows/desktop/ms718370(
 
 Parametre erişimcisini serbest bırakır, ardından komutun kendisini yayınlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void CCommandBase::ReleaseCommand() throw();
@@ -400,7 +401,7 @@ Standart HRESULT.
 
 Geçerli komut yürütme planını atar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT CCommandBase::Unprepare() throw();

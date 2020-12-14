@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMapWordToOb sınıfı'
 title: CMapWordToOb sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,18 +35,18 @@ helpviewer_keywords:
 - CMapWordToOb [MFC], RemoveKey
 - CMapWordToOb [MFC], SetAt
 ms.assetid: 9c9bcd76-456f-4cf9-b03c-dd28b49d5e4f
-ms.openlocfilehash: f360760bb5c04400ed77ef49c5968f8e9e7a6e59
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: da21902c3789f1547055baffae5650fcb6b8c789
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222998"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336702"
 ---
 # <a name="cmapwordtoob-class"></a>CMapWordToOb sınıfı
 
 `CObject`16 bit sözcüklerle anahtarlanan işaretçilerin haritalarını destekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMapWordToOb : public CObject
@@ -93,7 +94,7 @@ class CMapWordToOb : public CObject
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMapWordToOb`öğelerinin serileştirilmesi ve dökümünü desteklemek için IMPLEMENT_SERIAL makrosunu ekler. Her bir öğe, aşırı yüklenmiş ekleme ( **<<** ) işleci veya member işlevi ile bir arşive depolanıyorsa, her öğe sırayla serileştirilir `Serialize` .
+`CMapWordToOb` öğelerinin serileştirilmesi ve dökümünü desteklemek için IMPLEMENT_SERIAL makrosunu ekler. Her bir öğe, aşırı yüklenmiş ekleme ( **<<** ) işleci veya member işlevi ile bir arşive depolanıyorsa, her öğe sırayla serileştirilir `Serialize` .
 
 Tek sözcük öğelerinin bir dökümünden birine ihtiyacınız varsa `CObject` , döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 

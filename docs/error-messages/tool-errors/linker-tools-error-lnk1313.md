@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları hata LNK1313'
 title: Bağlayıcı Araçları Hatası LNK1313
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1313
 ms.assetid: 5df0b72e-bb3f-428c-8d84-6084238f9827
-ms.openlocfilehash: 03ff61a1f3501b3ea106138e957a657ed064e645
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 1c10038def9a448645e80ae10fc47d4372769b58
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90683448"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310738"
 ---
 # <a name="linker-tools-error-lnk1313"></a>Bağlayıcı Araçları Hatası LNK1313
 
@@ -19,7 +20,7 @@ ms.locfileid: "90683448"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Geçerli Visual C++ sürümü, yerel veya karma yönetilen/yerel. obj dosyalarını **/clr: Pure**ile derlenen. obj dosyalarıyla bağlamayı desteklemez.
+Geçerli Visual C++ sürümü, yerel veya karma yönetilen/yerel. obj dosyalarını **/clr: Pure** ile derlenen. obj dosyalarıyla bağlamayı desteklemez.
 
 **/Clr: Pure** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ' de desteklenmez.
 

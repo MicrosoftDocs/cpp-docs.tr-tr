@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3421'
 title: Derleyici hatası C3421
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3421
 ms.assetid: b52050c6-17a4-424a-8894-337b0cec7010
-ms.openlocfilehash: 39a57aa7b85b9f8a8aae0b93e2b346584edef8de
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ccb7301eefaddda36f33cf292174c799711b3866
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756246"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316042"
 ---
 # <a name="compiler-error-c3421"></a>Derleyici hatası C3421
 

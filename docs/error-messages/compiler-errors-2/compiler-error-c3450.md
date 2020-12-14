@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3450'
 title: Derleyici hatası C3450
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3450
 ms.assetid: 78892cf7-0b82-4589-90d0-e06666247003
-ms.openlocfilehash: 7b57b67e8f4542266818ad5b3d90d78a1a943d55
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: e56382a3f71b59fee42b6a545318cf3846e1a1f7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756233"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316056"
 ---
 # <a name="compiler-error-c3450"></a>Derleyici hatası C3450
 
 ' Type ': öznitelik değil; [System:: AttributeUsageAttribute] veya [Windows:: Foundation:: Metadata:: AttributeUsageAttribute] belirtilemiyor
 
-Kullanıcı tanımlı yönetilen öznitelik <xref:System.ComponentModel.AttributeCollection.%23ctor%2A>'ten devralması gerekir. Windows Çalışma Zamanı özniteliğin `Windows::Foundation::Metadata` ad alanında tanımlanması gerekir.
+Kullanıcı tanımlı yönetilen bir özniteliğin öğesinden devralması gerekir <xref:System.ComponentModel.AttributeCollection.%23ctor%2A> . Ad alanında bir Windows Çalışma Zamanı özniteliği tanımlanmalıdır `Windows::Foundation::Metadata` .
 
 Daha fazla bilgi için bkz. [Kullanıcı tanımlı öznitelikler](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 

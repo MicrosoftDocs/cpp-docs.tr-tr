@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Iş parçacığı yerel depolaması (TLS)'
 title: İş Parçacığı Yerel Depolaması (TLS)
 ms.date: 08/09/2019
 helpviewer_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - thread attribute
 - Thread Local Storage [C++]
 ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
-ms.openlocfilehash: f677d7382a9747df63023bd83b104a6bb3b74c1f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1259f0c3af84f90fcd82483d3891124d1553eeb9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222660"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342328"
 ---
 # <a name="thread-local-storage-tls"></a>İş Parçacığı Yerel Depolaması (TLS)
 
 İş parçacığı yerel depolaması (TLS), belirli bir çok iş parçacıklı işlemdeki her iş parçacığının iş parçacığına özgü verilerin depolandığı konumları ayırabileceği yöntemdir. Dinamik olarak bağlı (çalışma zamanı) iş parçacığına özgü veriler TLS API ([TlsAlloc](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc)) yöntemi tarafından desteklenir. Win32 ve Microsoft C++ derleyicisi artık mevcut API uygulamasına ek olarak her iş parçacığı için statik olarak ilişkilendirilmiş (yük-zaman) verileri desteklemektedir.
 
-## <a name="compiler-implementation-for-tls"></a><a name="_core_compiler_implementation_for_tls"></a>TLS için derleyici uygulama
+## <a name="compiler-implementation-for-tls"></a><a name="_core_compiler_implementation_for_tls"></a> TLS için derleyici uygulama
 
 **C++ 11:**  **`thread_local`** Depolama sınıfı Belirleyicisi, nesneler ve sınıf üyeleri için iş parçacığı yerel depolama belirtmek için önerilen yoldur. Daha fazla bilgi için bkz. [Depolama sınıfları (C++)](../cpp/storage-classes-cpp.md).
 
@@ -92,7 +93,7 @@ Statik olarak bağlantılı iş parçacığı yerel nesneleri ve değişkenleri 
 
    Bu kısıtlama C++ ' da uygulanmaz. C++ tüm nesnelerin dinamik başlatılmasına izin verdiğinden, bir nesneyi bir iş parçacığı yerel değişkeninin adresini kullanan bir ifade kullanarak başlatabilirsiniz. İş parçacığı yerel nesnelerinin oluşturulması gibi yapılır. Örneğin, daha önce gösterilen kod, C++ kaynak dosyası olarak derlendiğinde bir hata oluşturmaz. İş parçacığı yerel değişkeninin adresi yalnızca adresin alındığı iş parçacığı olduğu sürece geçerlidir.
 
-- Standart C, yalnızca statik olmayan uzantı nesneleri için bir başvuruyu içeren bir ifade ile bir nesne veya değişkenin başlatılmasına izin verir. C++ genellikle bir başvuruyu içeren bir ifadeyle nesnelerin bu tür dinamik başlatılmasına izin verse de, iş parçacığı yerel nesneleriyle bu tür bir başlatmaya izin verilmez. Örnek:
+- Standart C, yalnızca statik olmayan uzantı nesneleri için bir başvuruyu içeren bir ifade ile bir nesne veya değişkenin başlatılmasına izin verir. C++ genellikle bir başvuruyu içeren bir ifadeyle nesnelerin bu tür dinamik başlatılmasına izin verse de, iş parçacığı yerel nesneleriyle bu tür bir başlatmaya izin verilmez. Örneğin:
 
     ```C
     __declspec( thread )int tls_i = tls_i;                // Error in C and C++

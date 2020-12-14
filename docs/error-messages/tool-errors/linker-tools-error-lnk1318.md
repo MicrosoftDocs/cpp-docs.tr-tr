@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları hata LNK1318'
 title: Bağlayıcı Araçları Hatası LNK1318
 ms.date: 05/29/2018
 f1_keywords:
 - LNK1318
 helpviewer_keywords:
 - LNK1318
-ms.openlocfilehash: cce2c03783039a62b5cb6f60ecf8d76b23589483
-ms.sourcegitcommit: e15b46ea7888dbdd7e0bb47da76aeed680c3c1f3
+ms.openlocfilehash: c92a88f7c26e750ff7d5aace1683827c4d61da1e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86446719"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310734"
 ---
 # <a name="linker-tools-error-lnk1318"></a>Bağlayıcı Araçları Hatası LNK1318
 

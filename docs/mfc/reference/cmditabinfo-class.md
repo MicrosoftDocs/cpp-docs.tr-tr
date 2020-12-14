@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Cmditabınfo sınıfı'
 title: CMDITabInfo sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - CMDITabInfo [MFC], m_style
 - CMDITabInfo [MFC], m_tabLocation
 ms.assetid: 988ae1b7-4f7f-4239-b88f-7e28b3291c5e
-ms.openlocfilehash: 8e4053bf16672d693adc104c9e88bb46a67ba7dd
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4769bedc48e143e2dae6f35c50d2d1fef488e655
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845919"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336672"
 ---
 # <a name="cmditabinfo-class"></a>CMDITabInfo sınıfı
 
@@ -159,7 +160,7 @@ BOOL m_bTabCloseButton;
 
 ### <a name="remarks"></a>Açıklamalar
 
-TRUE ise, her sekme penceresinde sekmenin sağ kenarındaki **Close** düğmesi görüntülenir. Aksi halde **Kapat** düğmesi görüntülenmez. Varsayılan değer TRUE 'dur.
+TRUE ise, her sekme penceresinde sekmenin sağ kenarındaki **Kapat** düğmesi görüntülenir. Aksi halde **Kapat** düğmesi görüntülenmez. Varsayılan değer TRUE 'dur.
 
 ## <a name="cmditabinfom_btabcustomtooltips"></a><a name="m_btabcustomtooltips"></a> CMDITabInfo:: m_bTabCustomTooltips
 
@@ -183,7 +184,7 @@ BOOL m_bTabIcons;
 
 ### <a name="remarks"></a>Açıklamalar
 
-TRUE ise, her MDI sekmesinde simgeler görüntülenir. Aksi halde, simgeler sekmeler üzerinde görüntülenmez. Varsayılan değer FALSE 'dur.
+TRUE ise, simgeler her MDI sekmesinde görüntülenir. Aksi halde, simgeler sekmeler üzerinde görüntülenmez. Varsayılan değer FALSE 'dur.
 
 ## <a name="cmditabinfom_ntabbordersize"></a><a name="m_ntabbordersize"></a> CMDITabInfo:: m_nTabBorderSize
 

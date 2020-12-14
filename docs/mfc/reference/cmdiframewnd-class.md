@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMDIFrameWnd sınıfı'
 title: CMDIFrameWnd sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,18 +35,18 @@ helpviewer_keywords:
 - CMDIFrameWnd [MFC], MDISetMenu
 - CMDIFrameWnd [MFC], MDITile
 ms.assetid: fa8736e6-511b-4c51-8b4d-eba78378aeb9
-ms.openlocfilehash: 321ad0364257d7c20d54f9fdc884073381117c6f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 70192fb68710e54872f0aecbe862cfb00df14fcc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222959"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336675"
 ---
 # <a name="cmdiframewnd-class"></a>CMDIFrameWnd sınıfı
 
 Windows çoklu belge arabirimi (MDI) çerçeve penceresi işlevlerini, pencereyi yönetmek için üyelerle birlikte sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMDIFrameWnd : public CFrameWnd
@@ -87,7 +88,7 @@ Veya çağrısından önce `Create` `LoadFrame` , C++ işlecini kullanarak yığ
 
 `Create`Çerçevenin oluşturma parametrelerini hemen bağımsız değişken olarak geçirmek için üye işlevini kullanın.
 
-`LoadFrame`öğesinden daha az bağımsız değişken gerektirir `Create` ve bunun yerine çerçevenin başlık, simge, Hızlandırıcı tablosu ve menü dahil olmak üzere kaynaklardaki varsayılan değerlerinin çoğunu alır. Tarafından erişilebilmesi için `LoadFrame` , tüm bu kaynakların aynı kaynak kimliğine sahip olması gerekir (örneğin, IDR_MAINFRAME).
+`LoadFrame` öğesinden daha az bağımsız değişken gerektirir `Create` ve bunun yerine çerçevenin başlık, simge, Hızlandırıcı tablosu ve menü dahil olmak üzere kaynaklardaki varsayılan değerlerinin çoğunu alır. Tarafından erişilebilmesi için `LoadFrame` , tüm bu kaynakların aynı kaynak kimliğine sahip olması gerekir (örneğin, IDR_MAINFRAME).
 
 `MDIFrameWnd`, Öğesinden türetilse `CFrameWnd` , öğesinden türetilmiş bir çerçeve penceresi sınıfının `CMDIFrameWnd` ile bildirilmesine gerek yoktur `DECLARE_DYNCREATE` .
 
@@ -131,7 +132,7 @@ Hakkında daha fazla bilgi için `CMDIFrameWnd` bkz. [çerçeve pencereleri](../
 
 **Üstbilgi:** Afxwin. h
 
-## <a name="cmdiframewndcmdiframewnd"></a><a name="cmdiframewnd"></a>CMDIFrameWnd:: CMDIFrameWnd
+## <a name="cmdiframewndcmdiframewnd"></a><a name="cmdiframewnd"></a> CMDIFrameWnd:: CMDIFrameWnd
 
 Bir `CMDIFrameWnd` nesnesi oluşturur.
 
@@ -147,7 +148,7 @@ CMDIFrameWnd();
 
 [!code-cpp[NVC_MFCWindowing#13](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_1.cpp)]
 
-## <a name="cmdiframewndcreateclient"></a><a name="createclient"></a>CMDIFrameWnd:: CreateClient
+## <a name="cmdiframewndcreateclient"></a><a name="createclient"></a> CMDIFrameWnd:: CreateClient
 
 Nesneleri yöneten MDI istemci penceresini oluşturur `CMDIChildWnd` .
 
@@ -177,7 +178,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 [!code-cpp[NVC_MFCWindowing#14](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_2.cpp)]
 
-## <a name="cmdiframewndcreatenewchild"></a><a name="createnewchild"></a>CMDIFrameWnd:: CreateNewChild
+## <a name="cmdiframewndcreatenewchild"></a><a name="createnewchild"></a> CMDIFrameWnd:: CreateNewChild
 
 Yeni bir alt pencere oluşturur.
 
@@ -211,7 +212,7 @@ MDI çerçeve penceresinin alt pencerelerini oluşturmak için bu işlevi kullan
 
 [!code-cpp[NVC_MFCWindowing#15](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_3.cpp)]
 
-## <a name="cmdiframewndgetwindowmenupopup"></a><a name="getwindowmenupopup"></a>CMDIFrameWnd:: GetWindowMenuPopup
+## <a name="cmdiframewndgetwindowmenupopup"></a><a name="getwindowmenupopup"></a> CMDIFrameWnd:: GetWindowMenuPopup
 
 "Pencere" adlı geçerli açılır menüye (MDI pencere yönetimi için menü öğeleri içeren açılır menü) bir tanıtıcı almak için bu üye işlevi çağırın.
 
@@ -238,7 +239,7 @@ Standart Menü komut kimliklerini kullanmayan bir pencere menüsü varsa, bu üy
 
 [!code-cpp[NVC_MFCWindowing#16](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_4.cpp)]
 
-## <a name="cmdiframewndmdiactivate"></a><a name="mdiactivate"></a>CMDIFrameWnd:: Mdıactivate
+## <a name="cmdiframewndmdiactivate"></a><a name="mdiactivate"></a> CMDIFrameWnd:: Mdıactivate
 
 Farklı bir MDI alt penceresini etkinleştirir.
 
@@ -264,7 +265,7 @@ Bu, Kullanıcı fare veya klavyeyi kullanarak odağı bir MDI alt penceresine de
 
 [Cmdiframewnd:: GetWindowMenuPopup](#getwindowmenupopup)örneğine bakın.
 
-## <a name="cmdiframewndmdicascade"></a><a name="mdicascade"></a>CMDIFrameWnd:: MDICascade
+## <a name="cmdiframewndmdicascade"></a><a name="mdicascade"></a> CMDIFrameWnd:: MDICascade
 
 Tüm MDI alt pencerelerini basamaklı biçimde yerleştirir.
 
@@ -286,7 +287,7 @@ Cascade bayrağını belirtir. Yalnızca şu bayrak belirtilebilir: devre dış�
 
 [!code-cpp[NVC_MFCWindowing#17](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_5.cpp)]
 
-## <a name="cmdiframewndmdigetactive"></a><a name="mdigetactive"></a>CMDIFrameWnd:: MDIGetActive
+## <a name="cmdiframewndmdigetactive"></a><a name="mdigetactive"></a> CMDIFrameWnd:: MDIGetActive
 
 Geçerli etkin MDI alt penceresini, alt pencerenin ekranı kapladığını belirten bir bayrağıyla birlikte alır.
 
@@ -307,7 +308,7 @@ Etkin MDI alt penceresine yönelik bir işaretçi.
 
 [Cmdictepdwnd:: Mdıkapla](../../mfc/reference/cmdichildwnd-class.md#mdimaximize)örneğine bakın.
 
-## <a name="cmdiframewndmdiiconarrange"></a><a name="mdiiconarrange"></a>CMDIFrameWnd:: MDIIconArrange
+## <a name="cmdiframewndmdiiconarrange"></a><a name="mdiiconarrange"></a> CMDIFrameWnd:: MDIIconArrange
 
 Tüm küçültülmüş belge alt pencerelerini düzenler.
 
@@ -323,7 +324,7 @@ Simge durumuna küçültülmüş alt pencereleri etkilemez.
 
 [Cmdiframewnd:: MDICascade](#mdicascade)örneğine bakın.
 
-## <a name="cmdiframewndmdimaximize"></a><a name="mdimaximize"></a>CMDIFrameWnd:: Mdıkapla
+## <a name="cmdiframewndmdimaximize"></a><a name="mdimaximize"></a> CMDIFrameWnd:: Mdıkapla
 
 Belirtilen MDI alt penceresini en üst düzeye çıkarır.
 
@@ -346,7 +347,7 @@ Bir alt pencere ekranı kapladığında Windows, istemci alanının istemci penc
 
 [Cmdictepdwnd:: Mdıkapla](../../mfc/reference/cmdichildwnd-class.md#mdimaximize)örneğine bakın.
 
-## <a name="cmdiframewndmdinext"></a><a name="mdinext"></a>CMDIFrameWnd:: Mdınext
+## <a name="cmdiframewndmdinext"></a><a name="mdinext"></a> CMDIFrameWnd:: Mdınext
 
 Şu anda etkin olan alt pencerenin arkasındaki alt pencereyi etkinleştirir ve o anda etkin olan alt pencereyi diğer tüm alt pencerelerin arkasına koyar.
 
@@ -362,7 +363,7 @@ void MDINext();
 
 [!code-cpp[NVC_MFCWindowing#18](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_6.cpp)]
 
-## <a name="cmdiframewndmdiprev"></a><a name="mdiprev"></a>CMDIFrameWnd:: Mdıöncekini
+## <a name="cmdiframewndmdiprev"></a><a name="mdiprev"></a> CMDIFrameWnd:: Mdıöncekini
 
 Önceki alt pencereyi etkinleştirir ve o anda etkin olan alt pencereyi hemen arkasına koyar.
 
@@ -374,7 +375,7 @@ void MDIPrev();
 
 Şu anda etkin olan MDI alt penceresi ekranı kapladıysanız üye işlevi şu anda etkin olan alt öğesi geri yükler ve yeni etkinleştirilen alt öğesini en üst düzeye çıkarır.
 
-## <a name="cmdiframewndmdirestore"></a><a name="mdirestore"></a>CMDIFrameWnd:: MDIRestore
+## <a name="cmdiframewndmdirestore"></a><a name="mdirestore"></a> CMDIFrameWnd:: MDIRestore
 
 Bir MDI alt penceresini ekranı kaplamış veya küçültülmüş boyuttan geri yükler.
 
@@ -391,7 +392,7 @@ Geri yüklenecek pencereyi işaret eder.
 
 [Cmdictepdwnd:: MDIRestore](../../mfc/reference/cmdichildwnd-class.md#mdirestore)örneğine bakın.
 
-## <a name="cmdiframewndmdisetmenu"></a><a name="mdisetmenu"></a>CMDIFrameWnd:: MDISetMenu
+## <a name="cmdiframewndmdisetmenu"></a><a name="mdisetmenu"></a> CMDIFrameWnd:: MDISetMenu
 
 Bir MDI çerçevesi penceresi, pencere açılır menüsü veya her ikisi için de bir menü koyar.
 
@@ -429,7 +430,7 @@ MDI alt pencerelerini yönetmek için çerçevesini kullanıyorsanız bu üye i�
 
 [!code-cpp[NVC_MFCWindowing#20](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_8.cpp)]
 
-## <a name="cmdiframewndmditile"></a><a name="mditile"></a>CMDIFrameWnd:: MDITile
+## <a name="cmdiframewndmditile"></a><a name="mditile"></a> CMDIFrameWnd:: MDITile
 
 Tüm alt pencereleri döşeli bir biçimde düzenler.
 

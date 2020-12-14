@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Stack (STL/CLR)'
 title: yığın (STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -53,12 +54,12 @@ helpviewer_keywords:
 - top_item member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 6ee96b9f-8a33-4cf7-b7e0-6535c24bdefb
-ms.openlocfilehash: 316899aae024fbc8d9e568d6b5684ec4cfb11558
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2903af3bce3f4eba09324202dbb071b11e440573
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499656"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335380"
 ---
 # <a name="stack-stlclr"></a>yığın (STL/CLR)
 
@@ -140,7 +141,7 @@ Temel alınan kapsayıcının türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesnesi, *değer* öğelerini depolayan ve isteğe bağlı olarak büyüdüğü tür *kapsayıcısı*içindeki temeldeki bir kapsayıcı aracılığıyla denetlediği sıra için depolamayı ayırır ve boşaltır. Nesne, erişimi yalnızca son öğeyi alarak, son bir ilk çıkar kuyruğu (LıFO kuyruğu veya yığın olarak da bilinir) uygulayarak kısıtlar.
+Nesnesi, *değer* öğelerini depolayan ve isteğe bağlı olarak büyüdüğü tür *kapsayıcısı* içindeki temeldeki bir kapsayıcı aracılığıyla denetlediği sıra için depolamayı ayırır ve boşaltır. Nesne, erişimi yalnızca son öğeyi alarak, son bir ilk çıkar kuyruğu (LıFO kuyruğu veya yığın olarak da bilinir) uygulayarak kısıtlar.
 
 ## <a name="members"></a>Üyeler
 
@@ -202,7 +203,7 @@ a b c
 
 Bir öğe için sabit bir başvuru türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef value_type% const_reference;
@@ -246,7 +247,7 @@ c b a
 
 Temel alınan kapsayıcının türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Container value_type;
@@ -254,7 +255,7 @@ typedef Container value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi *kapsayıcısının*eşanlamlısıdır.
+Tür, şablon parametresi *kapsayıcısının* eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -288,7 +289,7 @@ a b c
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef int difference_type;
@@ -346,7 +347,7 @@ popping 3 = 3
 
 Bir öğe olup olmadığını sınar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 bool empty();
@@ -400,7 +401,7 @@ empty() = True
 
 Kapsayıcı bağdaştırıcısının genel arabiriminin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Microsoft::VisualC::StlClr::IStack<Value>
@@ -463,7 +464,7 @@ a b c d e
 
 Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef GValue generic_value;
@@ -521,7 +522,7 @@ c b a
 
 Temel alınan kapsayıcıya erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 container_type^ get_container();
@@ -617,7 +618,7 @@ a b c
 
 Son öğeyi kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void pop();
@@ -665,7 +666,7 @@ a b
 
 Yeni bir son öğe ekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void push(value_type val);
@@ -706,7 +707,7 @@ a b c
 
 Bir öğe için bir başvuru türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef value_type% reference;
@@ -755,7 +756,7 @@ a b x
 
 Öğe sayısını sayar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 size_type size();
@@ -809,7 +810,7 @@ size() = 4 after adding 2
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef int size_type;
@@ -887,7 +888,7 @@ Oluşturucu:
 
 `stack(stack<Value, Container>% right);`
 
-bir kopyası olan sarmalanmış bir kapsayıcı oluşturur `right.get_container()` . Yığın *nesnesi tarafından*denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
+bir kopyası olan sarmalanmış bir kapsayıcı oluşturur `right.get_container()` . Yığın *nesnesi tarafından* denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
 
 Oluşturucu:
 
@@ -951,7 +952,7 @@ x x x x x
 
 Denetimli sırayı yeni bir diziye kopyalar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 cli::array<Value>^ to_array();
@@ -1001,7 +1002,7 @@ a b c
 
 Son öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 reference top();
@@ -1053,7 +1054,7 @@ a b x
 
 Son öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 property value_type top_item;
@@ -1105,7 +1106,7 @@ a b x
 
 Öğenin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Value value_type;
@@ -1113,7 +1114,7 @@ typedef Value value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametre *değeri*için bir eş anlamlı.
+Tür, şablon parametre *değeri* için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -1240,7 +1241,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi, `i` `!(right[i] < left[i])` bunun da doğru olduğu en düşük konum için true değerini döndürür `left[i] < right[i]` . Aksi halde, iki yığın öğe öğesine `left->` göre karşılaştırıldığı zaman, sol taraftan ayrılmadığını test etmek için bunu kullanarak bir [yığın:: size (STL/CLR)](#size) döndürülür `() <` `right->size()` . *left* *right*
+İşleç işlevi, `i` `!(right[i] < left[i])` bunun da doğru olduğu en düşük konum için true değerini döndürür `left[i] < right[i]` . Aksi halde, iki yığın öğe öğesine `left->` göre karşılaştırıldığı zaman, sol taraftan ayrılmadığını test etmek için bunu kullanarak bir [yığın:: size (STL/CLR)](#size) döndürülür `() <` `right->size()` .  
 
 ### <a name="example"></a>Örnek
 

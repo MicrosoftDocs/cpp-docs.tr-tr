@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: rename_search_namespace Import özniteliği'
 title: rename_search_namespace içeri aktarma özniteliği
 ms.date: 08/29/2019
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - rename_search_namespace attribute
 ms.assetid: 47c9d7fd-59dc-4c62-87a1-9011a0040167
-ms.openlocfilehash: 42c6edb6aa34b441db8041dd2974728c138b2c82
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 36bbb96c23e729bb5294a75f52b65b3ec60219cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216627"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342315"
 ---
 # <a name="rename_search_namespace-import-attribute"></a>rename_search_namespace içeri aktarma özniteliği
 
-**C++Belirli**
+**C++ özel**
 
-, [Rename_namespace](../preprocessor/rename-namespace.md) özniteliğiyle aynı işlevselliğe sahiptir, ancak `#import` yönergesini [auto_search](../preprocessor/auto-search.md) özniteliğiyle birlikte kullandığınız tür kitaplıklarında kullanılır.
+[Rename_namespace](../preprocessor/rename-namespace.md) özniteliğiyle aynı işlevselliğe sahiptir, ancak `#import` yönergesini [auto_search](../preprocessor/auto-search.md) özniteliğiyle birlikte kullandığınız tür kitaplıklarında kullanılır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#import** *tür kitaplığı* **rename_search_namespace (** "*YeniAd*" **)**
+> **#import** *türü-kitaplık* **rename_search_namespace (** "*YeniAd*" **)**
 
 ### <a name="parameters"></a>Parametreler
 
@@ -30,7 +31,7 @@ Ad alanının yeni adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**SONA C++ özgü**
+**Son C++ özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
