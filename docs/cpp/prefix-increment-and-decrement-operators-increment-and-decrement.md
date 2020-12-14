@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: önek artırma ve azaltma Işleçleri: + + ve--'
 title: 'Önek Arttırma ve Azaltma İşleçleri: ++ ve --'
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,16 +14,16 @@ helpviewer_keywords:
 - decrement operators [C++], syntax
 - decrement operators [C++]
 ms.assetid: 45ea7fc7-f279-4be9-a216-1d9a0ef9eb7b
-ms.openlocfilehash: 0b84360f41c665707a03ad453909c054ac741405
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e484dde59a2bb58e7c408ad28242fc0ab4290051
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231162"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198648"
 ---
 # <a name="prefix-increment-and-decrement-operators--and---"></a>Önek Arttırma ve Azaltma İşleçleri: ++ ve --
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 ++ unary-expression
@@ -54,7 +55,7 @@ int main() {
 
 İntegral veya kayan türün işleneni, 1 tamsayı değeri tarafından artırılır veya azaltılır. Sonucun türü, işlenen türüyle aynıdır. İşaretçi türündeki bir işlenen, adreslenen nesnenin boyutuyla artırılır veya azaltılır. Artan bir işaretçi sonraki nesneye işaret eder; azaltma işaretçisi önceki nesneye işaret eder.
 
-Artırma ve azaltma işleçleri yan etkilere sahip olduğundan, bir [Önişlemci makrosunda](../preprocessor/macros-c-cpp.md) artırma veya azaltma işleçleri olan ifadelerin kullanılması istenmeyen sonuçlara neden olabilir. Şu örneği göz önünde bulundurun:
+Artırma ve azaltma işleçleri yan etkilere sahip olduğundan, bir [Önişlemci makrosunda](../preprocessor/macros-c-cpp.md) artırma veya azaltma işleçleri olan ifadelerin kullanılması istenmeyen sonuçlara neden olabilir. Bu örneği ele alalım:
 
 ```cpp
 // expre_Increment_and_Decrement_Operators2.cpp

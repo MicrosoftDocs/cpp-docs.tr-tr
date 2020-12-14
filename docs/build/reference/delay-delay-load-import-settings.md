@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/DELAY (yük Içeri aktarma ayarlarını geciktir)
 title: /DELAY (Gecikme Yükü İçe Aktarma Ayarları)
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - /DELAY linker option
 - -DELAY linker option
 ms.assetid: 9334b332-cc58-4dae-b10f-a4c75972d50c
-ms.openlocfilehash: ef6f5f768cf86f470d1322fa2a7bee6db794c2ef
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: f06a47280d563c138e184fdbdcdf033da705ce60
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69493002"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201527"
 ---
 # <a name="delay-delay-load-import-settings"></a>/DELAY (Gecikme Yükü İçe Aktarma Ayarları)
 
@@ -44,7 +45,7 @@ Yük gecikmesi olacak dll 'Leri belirtmek için [/delayload](delayload-delay-loa
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Bilgi için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
 1. **Yapılandırma özellikleri**' ni ve **bağlayıcı**' yı genişletin ve **Gelişmiş**' i seçin.
 
@@ -57,4 +58,4 @@ Yük gecikmesi olacak dll 'Leri belirtmek için [/delayload](delayload-delay-loa
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

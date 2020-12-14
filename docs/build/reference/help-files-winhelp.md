@@ -1,38 +1,39 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: yardım dosyaları (WinHelp)'
 title: Yardım Dosyaları (WinHelp)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - file types [C++], WinHelp files
 ms.assetid: 4fdcbd66-66b0-4866-894a-fd7b4c2557e4
-ms.openlocfilehash: 6810b3f608b9fa7892b686d72056994fb98c92db
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 77d00154db762d11e064fe91681b81fbe859e7be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707462"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200058"
 ---
 # <a name="help-files-winhelp"></a>Yardım Dosyaları (WinHelp)
 
-Yardım desteği WinHelp türünü seçerek uygulamanıza eklediğinizde, aşağıdaki dosyalar oluşturulur **bağlama duyarlı Yardım** onay kutusunu ve sonra seçerek **WinHelp biçimi** içinde[Gelişmiş Özellikler](../../mfc/reference/advanced-features-mfc-application-wizard.md) MFC Uygulama Sihirbazı sayfası.
+**Bağlama duyarlı yardım** onay kutusunu seçerek ve ardından MFC Uygulama sihirbazının [Gelişmiş Özellikler](../../mfc/reference/advanced-features-mfc-application-wizard.md) sayfasında **WinHelp biçimi** ' ni seçerek uygulamanıza yardım desteğinin WinHelp türünü eklediğinizde aşağıdaki dosyalar oluşturulur.
 
 |Dosya adı|Dizin konumu|Çözüm Gezgini konumu|Açıklama|
 |---------------|------------------------|--------------------------------|-----------------|
-|*PROJNAME*.hpj|*PROJNAME*\hlp|Kaynak dosyaları|Programınızı veya denetimin Yardım dosyası oluşturmak için Yardım Derleyici tarafından kullanılan Yardım proje dosyası.|
-|*PROJNAME*.rtf|*PROJNAME*\hlp|Yardım dosyaları|Düzenleyebileceğiniz şablonu konuları ve .hpj dosyanızı özelleştirme hakkında bilgi içerir.|
-|*PROJNAME*.cnt|*PROJNAME*\hlp|Yardım dosyaları|Yapısını sağlayan **içeriği** Windows Yardımı'nda penceresi.|
-|Makehelp.bat|*PROJNAME*|Kaynak dosyaları|Proje derlendiğinde Yardım Projeyi derlemek için sistem tarafından kullanılır.|
-|Print.rtf|*PROJNAME*\hlp|Yardım dosyaları|Projeniz yazdırma desteği (varsayılan) içeriyorsa, oluşturuldu. İletişim kutuları ve yazdırma komutları açıklar.|
-|*.bmp|*PROJNAME*\hlp|Kaynak Dosyalar|Görüntüler farklı oluşturulmuş Yardım dosyası konuları içerir.|
+|*ProjName*. hpj|*ProjName*\hlp|Kaynak dosyalar|Program veya denetiminizin yardım dosyasını oluşturmak için Yardım derleyicisi tarafından kullanılan yardım projesi dosyası.|
+|*ProjName*. rtf|*ProjName*\hlp|Yardım dosyaları|Düzenleyebilmeniz için kullanabileceğiniz şablon konularını ve. hpj dosyanızı özelleştirme bilgilerini içerir.|
+|*ProjName*. sayisi|*ProjName*\hlp|Yardım dosyaları|Windows Yardımı 'nda **içerikler** penceresi için yapı sağlar.|
+|Makehelp.bat|*ProjName*|Kaynak dosyalar|Proje derlendiğinde yardım projesi oluşturmak için sistem tarafından kullanılır.|
+|Print. rtf|*ProjName*\hlp|Yardım dosyaları|Projeniz yazdırma desteği (varsayılan) içeriyorsa oluşturulur. Yazdırma komutlarını ve iletişim kutularını açıklar.|
+|*. bmp|*ProjName*\hlp|Kaynak Dosyalar|Oluşturulmuş farklı yardım dosyası konuları için görüntü içerir.|
 
-Seçerek WinHelp desteği olan bir MFC ActiveX denetimi projeye ekleyebilirsiniz **Oluştur Yardım dosyaları** içinde [uygulama ayarları](../../mfc/reference/application-settings-mfc-activex-control-wizard.md) MFC ActiveX Denetim Sihirbazı'nı sekmesi. MFC ActiveX denetimi Yardım desteği eklediğinizde aşağıdaki dosyaları projenize eklenir:
+MFC ActiveX Denetim Sihirbazı 'nın [uygulama ayarları](../../mfc/reference/application-settings-mfc-activex-control-wizard.md) sekmesinde **Yardım dosyaları oluştur** ' a tıklayarak bir MFC ActiveX denetimi projesine WinHelp desteği ekleyebilirsiniz. MFC ActiveX denetimine yardım desteği eklediğinizde aşağıdaki dosyalar projenize eklenir:
 
 |Dosya adı|Dizin konumu|Çözüm Gezgini konumu|Açıklama|
 |---------------|------------------------|--------------------------------|-----------------|
-|*PROJNAME*.hpj|*PROJNAME*\hlp|Kaynak dosyaları|Proje dosyası, programı veya denetim Yardım dosyası oluşturmak için Yardım Derleyici tarafından kullanılan.|
-|*PROJNAME*.rtf|*PROJNAME*\hlp|Project|Düzenleyebileceğiniz şablonu konuları ve .hpj dosyanızı özelleştirme hakkında bilgi içerir.|
-|Makehelp.bat|*PROJNAME*|Kaynak dosyaları|Proje derlendiğinde Yardım Projeyi derlemek için sistem tarafından kullanılır.|
-|Bullet.bmp|*PROJNAME*|Kaynak Dosyalar|Madde işaretli listeler temsil etmek için standart dosya Yardımı tarafından kullanılır.|
+|*ProjName*. hpj|*ProjName*\hlp|Kaynak dosyalar|Program veya denetiminizin yardım dosyasını oluşturmak için Yardım derleyicisi tarafından kullanılan proje dosyası.|
+|*ProjName*. rtf|*ProjName*\hlp|Project|Düzenleyebilmeniz için kullanabileceğiniz şablon konularını ve. hpj dosyanızı özelleştirme bilgilerini içerir.|
+|Makehelp.bat|*ProjName*|Kaynak dosyalar|Proje derlendiğinde yardım projesi oluşturmak için sistem tarafından kullanılır.|
+|Bullet.bmp|*ProjName*|Kaynak Dosyalar|Madde işaretli listeleri temsil etmek için standart Yardım dosyası konuları tarafından kullanılır.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Oluşturulan türleri için Visual Studio dosya C++ projeleri](file-types-created-for-visual-cpp-projects.md)
+[Visual Studio C++ projeleri için oluşturulan dosya türleri](file-types-created-for-visual-cpp-projects.md)

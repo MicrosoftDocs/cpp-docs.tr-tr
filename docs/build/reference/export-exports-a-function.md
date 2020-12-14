@@ -1,4 +1,5 @@
 ---
+description: Hakkında daha fazla bilgi edinin:/EXPORT (bir Işlevi dışarı aktarır)
 title: /EXPORT (İşlevi Dışarı Aktarır)
 ms.date: 09/05/2018
 f1_keywords:
@@ -9,26 +10,26 @@ helpviewer_keywords:
 - EXPORT linker option
 - -EXPORT linker option
 ms.assetid: 0920fb44-a472-4091-a8e6-73051f494ca0
-ms.openlocfilehash: a55b2a4ce72de644fe426894ab389f62bd29b204
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a52ea79d0569d31c26eabd06d51ef58a10567119
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232696"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200812"
 ---
 # <a name="export-exports-a-function"></a>/EXPORT (İşlevi Dışarı Aktarır)
 
 Bir işlevi, programından ada veya sıraya göre veya verilere göre dışarı aktarır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/Export:**<em>EntryName</em>[**, \@ **<em>Ordinal</em>[**, noname**]] [**, veri**]
+> **/Export:**<em>EntryName</em>[**, \@**<em>Ordinal</em>[**, noname**]] [**, veri**]
 
 ## <a name="remarks"></a>Açıklamalar
 
 **/Export** seçeneği, programından dışarı aktarılacak bir işlev veya veri öğesi belirtir, böylece diğer programlar işlevi çağırabilir veya verileri kullanabilir. Dışarı aktarmalar genellikle DLL 'de tanımlanmıştır.
 
-*EntryName* , çağıran program tarafından kullanılacak şekilde işlevin veya veri öğesinin adıdır. *Ordinal* , 1 ile 65.535 arasında dışarı aktarmalar tablosuna bir dizin belirtir; *sıra*belirtmezseniz, bağlantı bir tane atar. **Noname** anahtar sözcüğü, *EntryName*olmadan işlevi yalnızca sıra olarak dışa aktarır.
+*EntryName* , çağıran program tarafından kullanılacak şekilde işlevin veya veri öğesinin adıdır. *Ordinal* , 1 ile 65.535 arasında dışarı aktarmalar tablosuna bir dizin belirtir; *sıra* belirtmezseniz, bağlantı bir tane atar. **Noname** anahtar sözcüğü, *EntryName* olmadan işlevi yalnızca sıra olarak dışa aktarır.
 
 **Data** anahtar sözcüğü, dışarıya aktarılmış öğenin bir veri öğesi olduğunu belirtir. İstemci programındaki veri öğesi **extern __declspec (dllimport)** kullanılarak bildirilmelidir.
 

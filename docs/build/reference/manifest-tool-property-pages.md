@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bildirim aracı özellik sayfaları'
 title: Bildirim Aracı Özellik Sayfaları
 ms.date: 07/24/2019
 ms.topic: article
@@ -24,114 +25,114 @@ f1_keywords:
 - VC.Project.VCManifestTool.UpdateFileHashesSearchPath
 - vc.project.AdditionalOptionsPage
 ms.assetid: f33499c4-7733-42d9-80e3-8a5018786965
-ms.openlocfilehash: e1d0f1ac889cb915216ceb70d48e36efe4ad21bc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6840c2296eacb31914cdde51d745f6f996928e90
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81336305"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199200"
 ---
 # <a name="manifest-tool-property-pages"></a>Bildirim Aracı Özellik Sayfaları
 
-[Mt.exe](/windows/win32/sbscs/mt-exe)için genel seçenekleri belirtmek için bu sayfaları kullanın. Bu sayfalar **Proje** > **Özellikleri** > Yapılandırma**Özellikleri** > Bildirim**Aracı**altında bulunur.
+[Mt.exe](/windows/win32/sbscs/mt-exe)için genel seçenekleri belirtmek üzere bu sayfaları kullanın. Bu sayfalar **Proje**  >  **özellikleri**  >  **yapılandırma özellikleri**  >  **bildirim aracı** altında bulunur.
 
-## <a name="general-property-page"></a>Genel Özellik Sayfası
+## <a name="general-property-page"></a>Genel özellik sayfası
 
-### <a name="suppress-startup-banner"></a>Başlangıç Banner'ı bastır
+### <a name="suppress-startup-banner"></a>Başlangıç başlığını gösterme
 
-   **Evet (/nologo),** bildirim aracı başlatıldığında standart Microsoft telif hakkı verilerinin gizleneceğini belirtir. Mt.exe'yi bir yapı işleminin parçası olarak veya bir yapı ortamından çalıştırdığınızda, günlük dosyalarındaki istenmeyen çıktıyı bastırmak için bu seçeneği kullanın.
+   **Evet (/nologo)** bildirim aracı başlatıldığında standart Microsoft telif hakkı verilerinin yeniden açılıp başlatılmadığını belirtir. Yapı işleminin bir parçası olarak mt.exe çalıştırdığınızda veya bir yapı ortamından, günlük dosyalarında istenmeyen çıktıyı bastırmak için bu seçeneği kullanın.
 
-### <a name="verbose-output"></a>Verbose Çıkışı
+### <a name="verbose-output"></a>Ayrıntılı çıkış
 
-   **Evet (/tambose)** ek yapı bilgilerinin bildirim oluşturma sırasında görüntüleneceğini belirtir.
+   **Evet (/verbose)** bildirim oluşturma sırasında ek derleme bilgilerinin gösterileceğini belirtir.
 
-### <a name="assembly-identity"></a>Montaj Kimliği
+### <a name="assembly-identity"></a>Bütünleştirilmiş kod kimliği
 
-AssemblyIdentity> Öğesi özniteliklerini içeren bir kimlik dizesini belirtmek için /identity seçeneğini kullanır. [ \<](/visualstudio/deployment/assemblyidentity-element-clickonce-application) Kimlik dizesi öznitelik `name` değeriyle başlar ve ardından *öznitelik* = *değer* çiftleri tarafından izlenir. Kimlik dizesindeki öznitelikler virgülle sınırlandırılır.
+, [ \<assemblyIdentity> Öğesinin](/visualstudio/deployment/assemblyidentity-element-clickonce-application)özniteliklerini kapsayan bir kimlik dizesi belirtmek için/Identity seçeneğini kullanır. Bir kimlik dizesi, öznitelik değeri ile başlar `name` ve ardından *öznitelik*  =  *değeri* çiftleri gelir. Bir kimlik dizesindeki öznitelikler virgülle ayrılır.
 
-Bu örnek bir kimlik dizesi:`Microsoft.Windows.Common-Controls, processorArchitecture=x86, version=6.0.0.0, type=win32, publicKeyToken=6595b64144ccf1df`
+Bu örnek bir kimlik dizesidir: `Microsoft.Windows.Common-Controls, processorArchitecture=x86, version=6.0.0.0, type=win32, publicKeyToken=6595b64144ccf1df`
 
-## <a name="input-and-output-property-page"></a>Giriş ve Çıkış Özelliği Sayfası
+## <a name="input-and-output-property-page"></a>Giriş ve çıkış Özellik sayfası
 
-### <a name="additional-manifest-files"></a>Ek Manifesto Dosyaları
+### <a name="additional-manifest-files"></a>Ek bildirim dosyaları
 
-Bildirim aracının işleyecek veya birleştireceği ek bildirim dosyalarının tam yollarını belirtmek için **/manifest** seçeneğini kullanır. Tam yollar bir yarı kolon ile sınırlandırılır. (-manifest [manifest1] [manifest2] ...)
+Bildirim Aracı tarafından işlenecek veya birleştirilecek ek bildirim dosyalarının tam yollarını belirtmek için **/MANIFEST** seçeneğini kullanır. Tam yollar noktalı virgülle ayrılır. (-manifest [manifest1] [manifest2]...)
 
-### <a name="input-resource-manifests"></a>Giriş Kaynak Bildirimleri
+### <a name="input-resource-manifests"></a>Giriş kaynağı bildirimleri
 
-Manifesto aracına giriş yapmak için RT_MANIFEST türünden bir kaynağın tam yolunu belirtmek için **/inputresource** seçeneğini kullanır. Yol, belirtilen kaynak kimliği tarafından izlenebilir. Örneğin:
+, Bildirim aracına girmek için RT_MANIFEST türünde bir kaynağın tam yolunu belirtmek için **/ınputresource** seçeneğini kullanır. Yolun ardından belirtilen kaynak KIMLIĞI gelebilir. Örneğin:
 
 `dll_with_manifest.dll;#1`
 
-### <a name="embed-manifest"></a>Bildirimi Gömme
+### <a name="embed-manifest"></a>Ekleme bildirimi
 
-- **Evet,** proje sisteminin uygulama bildirimi dosyasını derlemeye gömeceğini belirtir.
+- **Evet** , proje sisteminin uygulama bildirim dosyasını derlemeye katıştırabelirtir.
 
-- **Proje** sisteminin uygulama bildirimi dosyasını tek başına bir dosya olarak oluşturacağını belirtyoktur.
+- **Hayır** , proje sisteminin uygulama bildirim dosyasını tek başına bir dosya olarak oluşturulacağını belirtir.
 
-### <a name="output-manifest-file"></a>Çıktı Bildirimi Dosyası
+### <a name="output-manifest-file"></a>Çıkış bildirimi dosyası
 
-Çıktı bildirimi dosyasının adını belirtir. Bu özellik, bildirim aracı tarafından yalnızca bir bildirim dosyası işletildiğinde isteğe bağlıdır. (-out:[dosya];#[kaynak kimliği])
+Çıkış bildirimi dosyasının adını belirtir. Bildirim Aracı tarafından üzerinde yalnızca bir bildirim dosyası çalıştırıldığında, bu özellik isteğe bağlıdır. (-out: [dosya]; # [kaynak KIMLIĞI])
 
-### <a name="manifest-resource-file"></a>Manifest Kaynak Dosyası
+### <a name="manifest-resource-file"></a>Bildirim kaynak dosyası
 
-Bildirimi proje çıktısına yerleştirmek için kullanılan çıktı kaynakları dosyasını belirtir.
+Bildirimi proje çıkışına katıştırmak için kullanılan çıkış kaynakları dosyasını belirtir.
 
-### <a name="generate-catalog-files"></a>Katalog Dosyaları Oluşturma
+### <a name="generate-catalog-files"></a>Katalog dosyaları oluştur
 
-Katalog yapmak için kullanılan katalog tanım dosyaları (.cdf dosyaları) oluşturacağını belirtmek için **/makecdfs** seçeneğini kullanır. (/makecdfs)
+Bildirim aracının, katalog oluşturmak için kullanılan Katalog tanım dosyalarını (. CDF dosyaları) üretkullanacağını belirtmek için **/makecdfs** seçeneğini kullanır. /makecdfs
 
-### <a name="generate-manifest-from-managedassembly"></a>Yönetilen Montaj'dan Bildirim Oluşturma
+### <a name="generate-manifest-from-managedassembly"></a>ManagedAssembly öğesinden bildirim oluştur
 
-Yönetilen bir derlemeden bir bildirim oluşturur. (-yönetilen assemblyname:\[dosya])
+Yönetilen bir derlemeden bir bildirim oluşturur. (-managedassemblyname: \[ dosya])
 
-### <a name="suppress-dependency-element"></a>Bağımlılık Öğesini Bastırma
+### <a name="suppress-dependency-element"></a>Bağımlılık öğesini gizle
 
--managedassembly ile kullanılır. son bildirimde bağımlılık öğelerinin oluşumunu bastırır. (-nodependency)
+-Managedassembly ile kullanılır. Son bildirimdeki bağımlılık öğelerinin oluşturulmasını engeller. (-nodependency)
 
 ### <a name="generate-category-tags"></a>Kategori Etiketleri Oluştur
 
--managedassembly ile kullanılır. -kategori, kategori etiketlerinin oluşturulmasına neden olur. (-kategori)
+-Managedassembly ile kullanılır. -Kategori, kategori etiketlerinin oluşturulmasına neden olur. (-kategori)
 
-### <a name="dpi-awareness"></a>DPI Farkındalık
+### <a name="dpi-awareness"></a>DPı tanıma
 
-Uygulamanın DPI farkında olup olmadığını belirtir. Varsayılan olarak, ayar MFC projeleri için **Evet** **ve** aksi takdirde yalnızca MFC projeleri DPI bilinirliği yerleşik olduğundan. Farklı DPI ayarlarını işlemek için kod eklerseniz, ayarı **Evet** olarak geçersiz kılabilirsiniz. Uygulamanız, dpi farkında olarak ayarlarsanız bulanık veya küçük görünebilir.
+Uygulamanın DPı duyarlı olup olmadığını belirtir. Varsayılan olarak, bu ayar MFC projeleri için **Evet** **' tir, aksı takdirde** yalnızca MFC projeleri DPI tanıma göre oluşturulmuştur. Farklı DPı ayarlarını işleyecek kod eklerseniz, ayarı **Evet** olarak geçersiz kılabilirsiniz. Uygulamanız, değilse, bir belirsiz veya küçük görünebilir.
 
 **Seçenekler**
 
-- **Yok**
-- **Yüksek DPI Farkında**
-- **Monitör Başına Yüksek DPI Farkında**
+- **Hiçbiri**
+- **Yüksek DPı kullanan**
+- **Monitör başına yüksek DPı kullanan**
 
-## <a name="isolated-com-property-page"></a>Yalıtılmış COM Özellik Sayfası
+## <a name="isolated-com-property-page"></a>Yalıtılmış COM özellik sayfası
 
-Yalıtılmış COM hakkında daha fazla bilgi için, [Yalıtılmış Uygulamalar](/windows/win32/SbsCs/isolated-applications) ve [Nasıl Yapılır: COM Bileşenlerini Tüketmek Için Yalıtılmış Uygulamalar Oluşturma](../how-to-build-isolated-applications-to-consume-com-components.md).
+Yalıtılmış COM hakkında daha fazla bilgi için bkz. [yalıtılmış](/windows/win32/SbsCs/isolated-applications) uygulamalar ve [nasıl yapılır: com bileşenlerini kullanmak Için yalıtılmış uygulamalar oluşturma](../how-to-build-isolated-applications-to-consume-com-components.md).
 
-### <a name="type-library-file"></a>Tür Kitaplığı Dosyası
+### <a name="type-library-file"></a>Tür kitaplığı dosyası
 
-Regfree COM bildirim desteği için kullanılacak tür kitaplığını belirtir. (-tlb:[dosya])
+RegFree COM bildirim desteği için kullanılacak tür kitaplığını belirtir. (-tlb: [dosya])
 
-### <a name="registrar-script-file"></a>Kayıt Defteri Dosyası Dosyası
+### <a name="registrar-script-file"></a>Kaydedici betik dosyası
 
-Regfree COM bildirim desteği için kullanılacak kayıt defteri dosyasını belirtir. (-rgs:[dosya])
+RegFree COM bildirim desteği için kullanılacak kaydedici betik dosyasını belirtir. (-RGS: [dosya])
 
-### <a name="component-file-name"></a>Bileşen Dosya Adı
+### <a name="component-file-name"></a>Bileşen dosyası adı
 
-.tlb veya .rgs belirtileninden oluşturulmuş bileşenin dosya adını belirtir. (-dll:[dosya])
+Belirtilen. tlb veya. RGS tarafından oluşturulan bileşenin dosya adını belirtir. (-dll: [dosya])
 
-### <a name="replacements-file"></a>Değiştirmeler Dosyası
+### <a name="replacements-file"></a>Değişiklik dosyası
 
-RGS dosyasında değiştirilebilir dizeleri için değerler içeren dosyayı belirtir. (değiştirmeler:[dosya])
+RGS dosyasındaki değiştirilebilen dizelerin değerlerini içeren dosyayı belirtir. (değişiklikler: [dosya])
 
-## <a name="advanced-property-page"></a>Gelişmiş Özellik Sayfası
+## <a name="advanced-property-page"></a>Gelişmiş özellik sayfası
 
-### <a name="update-file-hashes"></a>Dosya Hehes'i Güncelleştir
+### <a name="update-file-hashes"></a>Dosya karmalarını güncelleştirme
 
-Dosya öğelerinde belirtilen dosyaların karmasını oluşturur ve karma özniteliği bu değerle güncelleştirir. (hashupdate:[yol])
+Dosya öğelerinde belirtilen dosyaların karmasını hesaplar ve karma özniteliğini bu değerle güncelleştirir. (hashupdate: [yol])
 
-### <a name="update-file-hashes-search-path"></a>Dosya Hashes Arama Yolunu Güncelleştir
+### <a name="update-file-hashes-search-path"></a>Dosya karma arama yolunu Güncelleştir
 
-Dosya işlemelerini güncellerken kullanılacak arama yolunu belirtir.
+Dosya karmalarını güncelleştirirken kullanılacak arama yolunu belirtir.
 
 ### <a name="additional-options"></a>Ek Seçenekler
 
@@ -139,4 +140,4 @@ Ek Seçenekler
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ proje özelliği sayfası başvurusu](property-pages-visual-cpp.md)
+[C++ proje özellik sayfası başvurusu](property-pages-visual-cpp.md)

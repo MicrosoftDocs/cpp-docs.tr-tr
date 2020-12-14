@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleme görevleri dosyasının ön Işleme Ifadesi'
 title: Derleme Görevleri Dosyası Önişlemlerindeki İfadeler
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,25 +7,25 @@ helpviewer_keywords:
 - expressions [C++], makefile preprocessing
 - makefiles, preprocessing
 ms.assetid: 37f0f413-97e0-452c-a83f-3c9002c44c92
-ms.openlocfilehash: 3d668492441eb2fc09be378dbebfe2b18c1b5753
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9b30900db493a2a87e0527e6f3c062185bb4ab43
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62271313"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200799"
 ---
 # <a name="expressions-in-makefile-preprocessing"></a>Derleme Görevleri Dosyası Önişlemlerindeki İfadeler
 
-**! Eğer** veya **! ELSE IF** `constantexpression` tamsayı Sabitleri (gösterimde ondalık ya da C dili), dize sabitleri veya komutları oluşur. İfadeleri gruplamak için parantez kullanın. C stili imzalı uzun tamsayı aritmetik ifadeler kullanın. 32 bitlik ikiye tamamlayıcı biçimde aralığında - 2147483648 ile 2147483647 arasında sayılardır.
+**!** Veya varsa **! DIĞER** `constantexpression` bir deyişle, tamsayı sabitlerinden (Decimal veya C dili gösteriminde), dize sabitleri veya komutlarla oluşur. İfadeleri gruplandırmak için ayraçları kullanın. İfadeler, C stili imzalı uzun tamsayı aritmetiğini kullanır; Sayılar 32------2147483647 2147483648 aralığında olan bitlik iki-tamamlama biçimidir.
 
-İfadeler, sabit değerleri, çıkış kodlarından komutları, dizeler, makroları ve dosya sistemi yolları gibi davranan işleçlerini kullanabilirsiniz.
+İfadeler sabit değerler, komut, dize, makro ve dosya sistemi yollarından çıkış kodları üzerinde davranan işleçleri kullanabilir.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-[Derleme görevleri dosyası ön işleme işleçleri](makefile-preprocessing-operators.md)
+[Derleme görevleri dosyası önişleme işleçleri](makefile-preprocessing-operators.md)
 
 [Programı önişlemde yürütme](executing-a-program-in-preprocessing.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleme Görevleri Dosyası Ön İşlemi](makefile-preprocessing.md)
+[Derleme görevleri dosyası ön Işleme](makefile-preprocessing.md)

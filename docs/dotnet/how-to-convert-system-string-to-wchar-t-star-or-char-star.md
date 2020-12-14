@@ -1,4 +1,5 @@
 ---
+description: "Hakkında daha fazla bilgi edinin: nasıl yapılır: System:: String 'i wchar_t * veya char * olarak dönüştürme"
 title: "Nasıl yapılır: System::String'i wchar_t* veya char* olarak dönüştürme"
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - wchart type, converting System::String
 - char data type, converting System::String to
 ms.assetid: 385da01b-5649-4543-8076-e3e251243ff0
-ms.openlocfilehash: 9fcea7d54f5b3dcfe5fa75092463465711b1a505
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 973d9c71e536865188dc03d88821dacce4b20e52
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988251"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198368"
 ---
 # <a name="how-to-convert-systemstring-to-wchar_t-or-char"></a>Nasıl yapılır: System::String'i wchar_t* veya char* olarak dönüştürme
 
-<xref:System.String> öğesini yerel `wchar_t *` veya `char *` öğesine dönüştürmek için Vcclr.h içinde `PtrToStringChars` öğesini kullanabilirsiniz.  CLR dizeleri dahili olarak Unicode olduğundan, bu her zaman geniş bir Unicode dize işaretçisini döndürür. Aşağıdaki örnekte gösterildiği gibi genişten dönüştürebilirsiniz.
+`PtrToStringChars`Vcclr. h içinde yerel veya dönüştürmek için kullanabilirsiniz <xref:System.String> `wchar_t *` `char *` .  Bu, CLR dizeleri dahili olarak Unicode olduğundan, her zaman geniş bir Unicode dize işaretçisi döndürür. Daha sonra aşağıdaki örnekte gösterildiği gibi geniş bir dönüştürme yapabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
@@ -66,4 +67,4 @@ Hello
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

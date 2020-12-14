@@ -1,5 +1,6 @@
 ---
-title: DLL yükleme özel durum kodları (CC++/)
+description: 'Daha fazla bilgi edinin: özel durumlar (C/C++)'
+title: DLL yükleme özel durum kodları (C/C++)
 ms.date: 11/19/2019
 f1_keywords:
 - ERROR_MOD_NOT_FOUND
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - ERROR_SEVERITY_ERROR exception
 - ERROR_MOD_NOT_FOUND exception
 ms.assetid: c03be05d-1c39-4f35-84cf-00c9af3bae9a
-ms.openlocfilehash: f557fe736f45f8c3f5411d076a0be18f1d1b670e
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 53ae6ab9a21309159b29a96e58d077f45fe30e12
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74243845"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200851"
 ---
 # <a name="exceptions-cc"></a>Özel Durumlar (C/C++)
 
@@ -45,4 +46,4 @@ Daha fazla bilgi için bkz. [Yapı ve sabit tanımlar](structure-and-constant-de
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata İşleme ve Bildirme](error-handling-and-notification.md)
+[Hata Işleme ve bildirim](error-handling-and-notification.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: çeviri birimleri ve bağlantı'
 title: Çeviri birimleri ve bağlantı (C++)
 ms.date: 12/11/2019
 ms.assetid: a6493ba0-24e2-4c89-956e-9da1dea660cb
-ms.openlocfilehash: 5a166efc7ae926f6b028c35007b0972d0a652d6d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e03edb374a61e461b7a6b30fb88981e7d0cb15f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227198"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198576"
 ---
 # <a name="translation-units-and-linkage"></a>Çeviri birimleri ve bağlantı
 
@@ -32,7 +33,7 @@ public:
 };
 ```
 
-Bir program bir veya daha fazla *çeviri biriminden*oluşur. Bir çeviri birimi, bir uygulama dosyasından ve doğrudan veya dolaylı olarak içerdiği tüm üst bilgilerden oluşur. Uygulama dosyaları, genellikle *cpp* veya *cxx*dosya uzantısına sahiptir. Üst bilgi dosyaları genellikle *h* veya *HPP*uzantısına sahiptir. Her çeviri birimi derleyici tarafından bağımsız olarak derlenir. Derleme tamamlandıktan sonra bağlayıcı, derlenmiş çeviri birimlerini tek bir *programda*birleştirir. ODR kuralının ihlalleri genellikle bağlayıcı hataları olarak gösterilir. Aynı adda farklı çeviri birimlerinde iki farklı tanım olduğunda bağlayıcı hataları oluşur.
+Bir program bir veya daha fazla *çeviri biriminden* oluşur. Bir çeviri birimi, bir uygulama dosyasından ve doğrudan veya dolaylı olarak içerdiği tüm üst bilgilerden oluşur. Uygulama dosyaları, genellikle *cpp* veya *cxx* dosya uzantısına sahiptir. Üst bilgi dosyaları genellikle *h* veya *HPP* uzantısına sahiptir. Her çeviri birimi derleyici tarafından bağımsız olarak derlenir. Derleme tamamlandıktan sonra bağlayıcı, derlenmiş çeviri birimlerini tek bir *programda* birleştirir. ODR kuralının ihlalleri genellikle bağlayıcı hataları olarak gösterilir. Aynı adda farklı çeviri birimlerinde iki farklı tanım olduğunda bağlayıcı hataları oluşur.
 
 Genel olarak, bir değişkeni birden çok dosya genelinde görünür yapmanın en iyi yolu, bir üst bilgi dosyasına koyulamıyor. Ardından, bildirimi gerektiren her *cpp* dosyasına bir #include yönergesi ekleyin. Üst bilgi içerikleri etrafında ekleme *koruyucuları* ekleyerek, bildirdiği adların yalnızca bir kez tanımlandığından emin olursunuz.
 
@@ -42,7 +43,7 @@ Bazı durumlarda, bir *cpp* dosyasında genel bir değişken veya sınıf bildir
 
 ## <a name="external-vs-internal-linkage"></a>Dış ve iç bağlantı
 
-*Ücretsiz bir işlev* , genel veya ad alanı kapsamında tanımlanan bir işlevdir. Const olmayan genel değişkenler ve ücretsiz işlevler varsayılan olarak *dış bağlantıya*sahiptir; Bunlar, programdaki herhangi bir çeviri biriminden görülebilir. Bu nedenle, başka bir genel nesne bu ada sahip olamaz. *İç bağlantıya* sahip bir simge veya *hiçbir bağlantı* , yalnızca bildirildiği çeviri birimi içinde görünür. Bir adın iç bağlantısı olduğunda, aynı ad başka bir çeviri biriminde bulunabilir. Sınıf tanımları veya işlev gövdeleri içinde belirtilen değişkenlerin bağlantısı yok.
+*Ücretsiz bir işlev* , genel veya ad alanı kapsamında tanımlanan bir işlevdir. Const olmayan genel değişkenler ve ücretsiz işlevler varsayılan olarak *dış bağlantıya* sahiptir; Bunlar, programdaki herhangi bir çeviri biriminden görülebilir. Bu nedenle, başka bir genel nesne bu ada sahip olamaz. *İç bağlantıya* sahip bir simge veya *hiçbir bağlantı* , yalnızca bildirildiği çeviri birimi içinde görünür. Bir adın iç bağlantısı olduğunda, aynı ad başka bir çeviri biriminde bulunabilir. Sınıf tanımları veya işlev gövdeleri içinde belirtilen değişkenlerin bağlantısı yok.
 
 Genel bir adı, olarak açıkça bildirerek iç bağlantıya sahip olacak şekilde zorlayabilirsiniz **`static`** . Bu, görünürlüğünü, bildirildiği aynı çeviri birimiyle sınırlandırır. Bu bağlamda, **`static`** yerel değişkenlere uygulandığında farklı bir şey anlamına gelir.
 

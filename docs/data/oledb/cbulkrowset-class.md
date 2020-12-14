@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CBulkRowset Sınıfı'
 title: CBulkRowset Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -95,18 +96,18 @@ helpviewer_keywords:
 - ReleaseRows method
 - SetRows method
 ms.assetid: c6bde426-c543-4022-a98a-9519d9e2ae59
-ms.openlocfilehash: 5c1c7bc381d30f701bad123807689b08ea47f65d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 106a8ffb3d70a021adbdb03b426e53ca39285b02
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838470"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198381"
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset Sınıfı
 
 Tek bir çağrıda birden çok satır tanıtıcısı alarak verileri toplu olarak çalışmak için satırları getirir ve yönetir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class TAccessor>
@@ -229,7 +230,7 @@ Standart HRESULT.
 
 Yer işaretiyle işaretlenmiş satırı veya belirtilen bir uzaklığında (*lSkip*) satırı bu yer işaretinden getirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
@@ -252,7 +253,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 
 Satır kümesindeki kesirli konumdan başlayarak satırları getirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
@@ -297,7 +298,7 @@ Standart HRESULT.
 
 Her çağrının aldığı satır tanıtıcılarının sayısını ayarlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void SetRows(DBROWCOUNT nRows) throw();

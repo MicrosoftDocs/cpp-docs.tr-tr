@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi: Visual C++ belge etiketleri için sınırlayıcılar'
 title: Visual C++ Belge Etiketleri için Sınırlayıcılar
 ms.date: 11/04/2016
 helpviewer_keywords:
 - XML documentation, delimiters
 ms.assetid: debfbdd9-63fa-4c58-a18e-a4d203d241d7
-ms.openlocfilehash: e8e312eacb46d82270d7ca1782b04d06012b207d
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 7878fa0454af9eb09c4aa537a3e59d8af4a3ee87
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041542"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201475"
 ---
 # <a name="delimiters-for-visual-c-documentation-tags"></a>Visual C++ Belge Etiketleri için Sınırlayıcılar
 
@@ -17,7 +18,7 @@ Belge etiketlerinin kullanımı, bir belge açıklamasının başladığı ve bi
 
 XML belge etiketleriyle aşağıdaki tür sınırlayıcıları kullanabilirsiniz:
 
-| Sınırlayıcı | Description |
+| Sınırlayıcı | Açıklama |
 |-|-|
 | `///` | Bu, belge örneklerinde gösterilen ve Visual Studio C++ proje şablonları tarafından kullanılan formdur.  |
 | `/** */`  | Bunlar çok satırlı sınırlayıcılardır.  |
@@ -70,4 +71,4 @@ Bazı örnekler:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[XML belgeleri](xml-documentation-visual-cpp.md)
+[XML Belgeleri](xml-documentation-visual-cpp.md)

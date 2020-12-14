@@ -1,21 +1,22 @@
 ---
+description: 'Daha fazla bilgi edinin: hata kancaları'
 title: Hata Kancaları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - delayed loading of DLLs, failure hooks
 ms.assetid: 12bb303b-ffe6-4471-bffe-9ef4f8bb2d30
-ms.openlocfilehash: 2fc22ae77d729868adbf8c37d40e450e35a8e866
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a0e74e3413fc81505941dd6f4545988a0d39436f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292854"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200734"
 ---
 # <a name="failure-hooks"></a>Hata Kancaları
 
-Hata kanca ile aynı şekilde etkin [bildirim kanca](notification-hooks.md). Kanca rutin gerekir böylece işleme uygun değeri döndürür (HINSTANCE veya FARPROC bir) devam edebilir veya bir özel durum olduğunu göstermek için 0.
+Hata kancası, [bildirim kancası](notification-hooks.md)ile aynı şekilde etkindir. Bir özel durumun oluşturulması gerektiğini göstermek için, kanca yordamının uygun bir değer döndürmesi gerekir (bir HıNSTANCE veya FARPROC) veya 0.
 
-Kullanıcı tanımlı işlevi için gösterir işaretçi değişkeninin şöyledir:
+Kullanıcı tanımlı işleve başvuran işaretçi değişkeni:
 
 ```
 // This is the failure hook, dliNotify = {dliFailLoadLib|dliFailGetProc}
@@ -23,20 +24,20 @@ ExternC
 PfnDliHook   __pfnDliFailureHook2;
 ```
 
-**DelayLoadInfo** yapısı doğru gelen değer de dahil olmak üzere, hata raporlama için gerekli tüm ilgili verileri içeren `GetLastError`.
+**DelayLoadInfo** yapısı, hatanın doğru raporlaması için gereken tüm ilgili verileri içerir, örneğin değeri `GetLastError` .
 
-Bildirim ise **dliFailLoadLib**, kanca işlevini döndürebilir:
+Bildirim **dliFailLoadLib** ise, kanca işlevi şu şekilde dönebilir:
 
-- 0 hata yürütemiyorsa.
+- 0, hatayı işleyemeyebilir.
 
-- Hata kanca sorunu düzeltildi ve kitaplığın kendisi yüklenen bir hModule'ü.
+- Hata kancasını sorunu düzeltti ve kitaplığın kendisini yükleirse bir HMODULE.
 
-Bildirim ise **dliFailGetProc**, kanca işlevini döndürebilir:
+Bildirim **dliFailGetProc** ise, kanca işlevi şu şekilde dönebilir:
 
-- 0 hata yürütemiyorsa.
+- 0, hatayı işleyemeyebilir.
 
-- Geçerli proc adresi (içeri aktarma işlevi adresi) başarılı ise hata kanca adresi alınırken.
+- Başarısız olan bir proc adresi (alma işlevi adresi), adresin kendisini alma işleminde başarılı oldu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata İşleme ve Bildirme](error-handling-and-notification.md)
+[Hata Işleme ve bildirim](error-handling-and-notification.md)

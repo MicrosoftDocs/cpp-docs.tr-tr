@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4838'
 title: Derleyici Uyarısı (düzey 1) C4838
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4838
 ms.assetid: fea07924-5feb-4ed4-99b5-1a8c41d28db6
-ms.openlocfilehash: c3ddc861e5da271903372eac1ef1e8f6916e06df
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2676ef05934ee3c5e6afbf6df8d6d7a306db68ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80199374"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197966"
 ---
 # <a name="compiler-warning-level-1-c4838"></a>Derleyici Uyarısı (düzey 1) C4838
 
@@ -19,7 +20,7 @@ ms.locfileid: "80199374"
 
 Toplama veya liste başlatma kullanılırken örtük bir daraltma dönüştürmesi bulundu.
 
-C dili, atamalar ve başlatma içindeki örtük daraltma dönüştürmelerine izin verir C++ ve beklenmeyen daraltma birçok kod hatasının nedeni olsa da bu şekilde ayarlanır. Kodu daha güvenli hale getirmek için C++ , bir başlatma listesinde daraltma dönüştürmesi gerçekleştiğinde standart bir tanılama iletisi gerektirir. Visual Studio C++2015 ' de başlangıçta desteklenen Tekdüzen başlatma sözdizimi kullanılırken, Visual Studio 'Da tanılama [derleyici hatası C2397](../../error-messages/compiler-errors-1/compiler-error-c2397.md) . Derleyici, Visual Studio 2013 tarafından desteklenen liste veya toplama başlatma sözdizimini kullanırken uyarı C4838 oluşturur.
+C dili, atamalar ve başlatmada örtük daraltma dönüştürmelerine izin verir ve C++, beklenmeyen daraltma pek çok kod hatasının nedeni olmasına rağmen, C++ ' ı izler. Kodu daha güvenli hale getirmek için, bir başlatma listesinde daraltma dönüştürmesi gerçekleştiğinde C++ standardı bir tanılama iletisi gerektirir. Visual C++, tanılama, Visual Studio 2015 ' de başlayarak desteklenen Tekdüzen başlatma sözdizimi kullanılırken [derleyici hatası C2397](../../error-messages/compiler-errors-1/compiler-error-c2397.md) . Derleyici, Visual Studio 2013 tarafından desteklenen liste veya toplama başlatma sözdizimini kullanırken uyarı C4838 oluşturur.
 
 Bir daraltma dönüştürmesi, olası dönüştürülen değer aralığının hedefe uyabileceklerini bildiğiniz durumlarda uygulanabilir. Bu durumda, derleyicisinden daha fazlasını öğrenmiş olursunuz. Özellikle bir daraltma dönüştürmesi yaparsanız, bir statik atama kullanarak amaclarınızı açık hale getirin. Aksi takdirde, bu uyarı iletisi neredeyse her zaman kodunuzda bir hata olduğunu gösterir. Başlattığınız nesnelerin girdileri işlemek için yeterince büyük türlere sahip olduğundan emin olarak bu çözümü çözebilirsiniz.
 

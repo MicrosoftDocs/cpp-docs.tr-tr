@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/F (yığın boyutunu ayarla)
 title: /F (Yığın Boyutunu Ayarla)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,45 +11,45 @@ helpviewer_keywords:
 - /F compiler option [C++]
 - stack, setting size
 ms.assetid: 17320b6f-8305-445b-9ec2-75833f4b29e0
-ms.openlocfilehash: 9db595daa7de7820b594a8515ece7481b4382c98
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5bf8b0855c65fc39caf8935b06a877c62a4e0df0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62293101"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200786"
 ---
 # <a name="f-set-stack-size"></a>/F (Yığın Boyutunu Ayarla)
 
-Program yığın boyutu bayt cinsinden ayarlar.
+Program yığın boyutunu bayt cinsinden ayarlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **/F** *numarası*
 
 ## <a name="arguments"></a>Arguments
 
-*Sayı*<br/>
-Yığın boyutunu bayt cinsinden.
+*sayısından*<br/>
+Yığın boyutu bayt cinsinden.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek olmadan, yığın boyutu 1 MB ile varsayılan olarak. *Numarası* bağımsız değişkeni, ondalık ya da C dili gösterimi olabilir. Bağımsız değişkeni 1'den bağlayıcı tarafından kabul edilen maksimum yığın boyutu değişebilir. Bağlayıcı, belirtilen değeri en yakın 4 bayt yuvarlar. Arasındaki boşluk **/F** ve *numarası* isteğe bağlıdır.
+Bu seçenek olmadan, yığın boyutu varsayılan olarak 1 MB 'tır. *Sayı* bağımsız değişkeni Decimal veya C dili gösteriminde olabilir. Bağımsız değişken, 1 ile bağlayıcı tarafından kabul edilen en büyük yığın boyutu arasında değişebilir. Bağlayıcı belirtilen değeri en yakın 4 bayta yuvarlar. **/F** ve *sayı* arasındaki alan isteğe bağlıdır.
 
-Programınızı yığın taşması iletileri alırsa yığın boyutunu artırabilir gerekebilir.
+Programınız yığın taşması iletileri alırsa yığın boyutunu artırmanız gerekebilir.
 
-Ayrıca yığın boyutu ayarlayabileceğiniz:
+Yığın boyutunu Ayrıca şu şekilde ayarlayabilirsiniz:
 
-- Kullanarak **/STACK** bağlayıcı seçeneği. Daha fazla bilgi için [/STACK](stack.md).
+- **/Stack** bağlayıcı seçeneğini kullanma. Daha fazla bilgi için bkz. [/Stack](stack.md).
 
-- EDITBIN .exe dosyası kullanma. Daha fazla bilgi için [EDITBIN başvurusu](editbin-reference.md).
+- . Exe dosyasında EDITBIN kullanma. Daha fazla bilgi için bkz. [editbin başvurusu](editbin-reference.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 
-1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+1. **Ek seçenekler** kutusuna derleyici seçeneğini yazın.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -56,5 +57,5 @@ Ayrıca yığın boyutu ayarlayabileceğiniz:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

@@ -1,38 +1,39 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: hata Işleme ve bildirim'
 title: Hata İşleme ve Bildirme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - error handling, and notification
 ms.assetid: b621cf60-d869-451a-b05e-dc86d78addaa
-ms.openlocfilehash: 29fe46e15712609ec0c4f268749aaefed103117e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 234d50d0b4a7e8b81874d1926ac056f8cba23376
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62293192"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200994"
 ---
 # <a name="error-handling-and-notification"></a>Hata İşleme ve Bildirme
 
-Hata işleme ve bildirme hakkında daha fazla bilgi için bkz. [yardımcı işlevini anlama](understanding-the-helper-function.md).
+Hata işleme ve bildirim hakkında daha fazla bilgi için bkz. [yardımcı Işlevini anlama](understanding-the-helper-function.md).
 
-Kanca işlevlerini raporlama hakkında daha fazla bilgi için bkz. [yapı ve sabit tanımları](structure-and-constant-definitions.md).
+Kanca işlevleri hakkında daha fazla bilgi için bkz. [Yapı ve sabit tanımlar](structure-and-constant-definitions.md).
 
-Programınızı Gecikmeli yüklenen DLL'ler kullanıyorsa, program çalışırken oluşan hata işlenmeyen özel durumları sonuçlanır olduğundan, hataları yerine işlemesi gerekir. Hata işleme iki bölümünü oluşur:
+Programınız Gecikmeli yüklenen dll 'Ler kullanıyorsa, program çalışırken oluşan hatalar işlenmemiş özel durumlara neden olacağı için robustly hataları işlemelidir. Hata işleme iki kısımdan oluşur:
 
-Bir kancası aracılığıyla kurtarma.
-Kodunuzu kurtarmak veya diğer kitaplığı ve/veya yordamı hatası sağlamak gerekiyorsa bir kanca sağladığınız veya durumu ortadan kaldırmak için yardımcı işlevini sağlanabilir. Kanca rutin gerekir böylece işleme uygun bir değer döndürür (HINSTANCE veya FARPROC bir) devam edebilir veya bir özel durum olduğunu göstermek için 0. Ayrıca kendi özel durum oluşturabilir veya **longjmp** kanca dışında. Bildirim kancaları ve hata kancaları vardır.
+Kanca üzerinden kurtarma.
+Kodunuzun kurtarmak veya hata durumunda başka bir kitaplık ve/veya yordamı sağlaması gerekiyorsa, bu durumu sağlayabilecek veya ortadan kaldırmanıza yardımcı işleve bir kanca sağlanması gerekebilir. Bir özel durumun oluşturulması gerektiğini göstermek için, kanca yordamının uygun bir değer döndürmesi gerekir, böylece işleme devam edebilir (bir HINSTANCE veya FARPROC) veya 0. Ayrıca, kendi özel durumunu veya daha sonra da **longjmp** 'yi oluşturabilir. Bildirim kancaları ve hata kancaları vardır.
 
-Bir özel durum raporlama.
-Tüm hata işleme için gerekli olan ise yordamı iptal etmek için kullanıcı kodu özel durumu işleyebilecek sürece hiçbir kanca gereklidir.
+Özel durum ile raporlama.
+Hatayı işlemek için gerekli olan tüm işlemler yordamı iptal etmek ise, Kullanıcı kodu özel durumu işleyebileceği sürece hiçbir kanca gerekmez.
 
-Hata işleme ve bildirme aşağıdaki konular açıklanmaktadır:
+Aşağıdaki konularda hata işleme ve bildirim ele alınmaktadır:
 
-- [Bildirim Kancaları](notification-hooks.md)
+- [Bildirim kancaları](notification-hooks.md)
 
-- [Hata Kancaları](failure-hooks.md)
+- [Hata kancaları](failure-hooks.md)
 
-- [Özel Durumlar](exceptions-c-cpp.md)
+- [Özel durumlar](exceptions-c-cpp.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](linker-support-for-delay-loaded-dlls.md)
+[Delay-Loaded dll 'Ler için bağlayıcı desteği](linker-support-for-delay-loaded-dlls.md)

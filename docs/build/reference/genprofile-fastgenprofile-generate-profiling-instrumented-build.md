@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/GENPROFILE,/FASTGENPROFıLE (Profil Oluşturucu belgelenmiş derleme oluştur)
 title: /GENPROFILE,/FASTGENPROFıLE (profil oluşturma belgelenmiş derleme oluştur)
 ms.date: 03/14/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - GENPROFILE
 - FASTGENPROFILE
 ms.assetid: deff5ce7-46f5-448a-b9cd-a7a83a6864c6
-ms.openlocfilehash: a0d1678cd400801f4cb809ec3e93d333fbc6416a
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 7bb0f9b1c7a6036c5e721f79b438bf9dd6504111
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041204"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200240"
 ---
 # <a name="genprofile-fastgenprofile-generate-profiling-instrumented-build"></a>/GENPROFILE,/FASTGENPROFıLE (profil oluşturma belgelenmiş derleme oluştur)
 
@@ -28,10 +29,10 @@ Profil temelli iyileştirme (PGO) desteği için bağlayıcı tarafından bir. p
 
 ### <a name="arguments"></a>Arguments
 
-Aşağıdaki bağımsız değişkenlerden biri **/Genprofile** veya **/fastgenprofile**olarak belirtilebilir. Burada bir kanal () karakteriyle ayrılmış olarak listelenen bağımsız değişkenler **|** birbirini dışlıyor. Seçenekleri ayırmak için virgül (**,**) karakterini kullanın.
+Aşağıdaki bağımsız değişkenlerden biri **/Genprofile** veya **/fastgenprofile** olarak belirtilebilir. Burada bir kanal () karakteriyle ayrılmış olarak listelenen bağımsız değişkenler **|** birbirini dışlıyor. Seçenekleri ayırmak için virgül (**,**) karakterini kullanın.
 
 **COUNTER32** &#124; **COUNTER64**<br/>
-32 bitlik araştırma sayaçlarının kullanımını belirtmek için **COUNTER32** kullanın ve 64-bit araştırma sayaçlarını belirtmek için **COUNTER64** . **/Genprofile**belirttiğinizde varsayılan değer **COUNTER64**' dir. **/Fastgenprofile**belirttiğinizde varsayılan değer **COUNTER32**' dir.
+32 bitlik araştırma sayaçlarının kullanımını belirtmek için **COUNTER32** kullanın ve 64-bit araştırma sayaçlarını belirtmek için **COUNTER64** . **/Genprofile** belirttiğinizde varsayılan değer **COUNTER64**' dir. **/Fastgenprofile** belirttiğinizde varsayılan değer **COUNTER32**' dir.
 
 **Tam** &#124; **NOTAM**<br/>
 Yoklamalar için iş parçacığı güvenli karşılıklı kilitli artışlarını belirtmek için **tam** kullanın. **NOTAM** , yoklamalar için korumasız artırma işlemleri belirtir. Varsayılan değer **NOTAM**' dır.
@@ -40,10 +41,10 @@ Yoklamalar için iş parçacığı güvenli karşılıklı kilitli artışların
 Bellekte eğitim verileri için maksimum ve en düşük ayırma boyutunu belirtmek için **MEMMAX** ve **memmin** kullanın. Değer, ayrılan bellek miktarıdır (bayt cinsinden). Varsayılan olarak, bu değerler dahili bir buluşsal yöntem tarafından belirlenir.
 
 **Yol**  &#124; **NOPATH** <br/>
-Bir işleve yönelik her benzersiz yol için ayrı bir PGO sayaç kümesi belirtmek üzere **yolunu**  kullanın. Her bir işlev için yalnızca bir sayaç kümesi belirtmek üzere **NOPATH**  kullanın. **/Genprofile**belirttiğinizde, varsayılan **yoldur** . **/Fastgenprofile**belirttiğinizde, varsayılan olarak **NOPATH** olur.
+Bir işleve yönelik her benzersiz yol için ayrı bir PGO sayaç kümesi belirtmek üzere **yolunu**  kullanın. Her bir işlev için yalnızca bir sayaç kümesi belirtmek üzere **NOPATH**  kullanın. **/Genprofile** belirttiğinizde, varsayılan **yoldur** . **/Fastgenprofile** belirttiğinizde, varsayılan olarak **NOPATH** olur.
 
 **Trackingkeh**  &#124; **NOTRACKEH** <br/>
-Eğitim sırasında özel durumlar oluştuğunda doğru bir sayı tutmak için ek sayaçların kullanılıp kullanılmayacağını belirtir. Tam sayı için ek sayaçlar belirtmek üzere **TRACKEH**  kullanın. Özel durum işleme kullanmayan veya eğitim senaryolarınızda özel durumlarla karşılaşmayan kod için tek sayaçlar belirtmek üzere **NOTRACKEH**  kullanın.  **/Genprofile**belirttiğinizde, varsayılan olarak **TRACKEH** olur. **/Fastgenprofile**belirttiğinizde, varsayılan olarak **NOTRACKEH** olur.
+Eğitim sırasında özel durumlar oluştuğunda doğru bir sayı tutmak için ek sayaçların kullanılıp kullanılmayacağını belirtir. Tam sayı için ek sayaçlar belirtmek üzere **TRACKEH**  kullanın. Özel durum işleme kullanmayan veya eğitim senaryolarınızda özel durumlarla karşılaşmayan kod için tek sayaçlar belirtmek üzere **NOTRACKEH**  kullanın.  **/Genprofile** belirttiğinizde, varsayılan olarak **TRACKEH** olur. **/Fastgenprofile** belirttiğinizde, varsayılan olarak **NOTRACKEH** olur.
 
 **PGD** = *dosya adı*<br/>
 . Pgd dosyası için bir taban dosya adı belirtir. Varsayılan olarak, bağlayıcı temel yürütülebilir görüntü dosyası adını. pgd uzantısıyla kullanır.
@@ -54,7 +55,7 @@ Eğitim sırasında özel durumlar oluştuğunda doğru bir sayı tutmak için e
 
 **/Fastgenprofile**' in **/GENPROFILE** kullanılarak oluşturulduktan sonra, bir profil oluşturma bilgileri, Araçlı uygulamayı çalıştırdığınızda yakalanır. Bu bilgiler, profil oluşturma adımını gerçekleştirmek için [/Useprofile](useprofile.md) bağlayıcı seçeneğini belirttiğinizde ve ardından iyileştirilmiş derleme adımına kılavuzluk etmek için kullanılırsa yakalanır. Uygulamanızı ve ayrıntıları toplanan verilerle eğitme hakkında daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md).
 
-**/Genprofile** veya **/Fastgenprofile**belirttiğinizde, **/LTCG** de belirtmeniz gerekir.
+**/Genprofile** veya **/Fastgenprofile** belirttiğinizde, **/LTCG** de belirtmeniz gerekir.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 

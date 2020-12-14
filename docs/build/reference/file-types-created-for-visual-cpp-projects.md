@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Visual Studio C++ projeleri için oluşturulan dosya türleri'
 title: Visual Studio C++ projeleri için oluşturulan dosya türleri
 ms.date: 04/08/2019
 helpviewer_keywords:
@@ -14,28 +15,28 @@ helpviewer_keywords:
 - .def files
 - licensing ActiveX controls
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
-ms.openlocfilehash: 27e15f8dec693c6b7e70f3e03f274dcbc4f04677
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bd1dad365ea2635549322c886f00f4e08ff47942
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169025"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200591"
 ---
 # <a name="file-types-created-for-visual-studio-c-projects"></a>Visual Studio C++ projeleri için oluşturulan dosya türleri
 
 Birçok dosya türü, klasik masaüstü uygulamaları için Visual Studio projeleriyle ilişkilendirilir. Projenizde bulunan gerçek dosyalar proje türüne ve sihirbaz kullanılırken belirlediğiniz seçeneklere bağlıdır.
 
-- [Proje ve Çözüm Dosyaları](project-and-solution-files.md)
+- [Proje ve çözüm dosyaları](project-and-solution-files.md)
 
 - [CLR projeleri](files-created-for-clr-projects.md)
 
-- [ATL Programı veya Denetim Kaynağı ve Başlık Dosyaları](atl-program-or-control-source-and-header-files.md)
+- [ATL programı veya denetim kaynağı ve üstbilgi dosyaları](atl-program-or-control-source-and-header-files.md)
 
-- [MFC Programı veya Denetim Kaynağı ve Başlık Dosyaları](mfc-program-or-control-source-and-header-files.md)
+- [MFC programı veya denetim kaynağı ve üstbilgi dosyaları](mfc-program-or-control-source-and-header-files.md)
 
-- [Önceden Derlenmiş Üst Bilgi Dosyaları](../creating-precompiled-header-files.md)
+- [Ön derlenmiş üstbilgi dosyaları](../creating-precompiled-header-files.md)
 
-- [Kaynak Dosyalar](resource-files-cpp.md)
+- [Kaynak dosyaları](resource-files-cpp.md)
 
 - [Yardım Dosyaları (WinHelp)](help-files-winhelp.md)
 
@@ -47,10 +48,10 @@ Projeler genellikle bir EXE ya da DLL üretir. Projeler birbirlerine bağımlı 
 
 Aşağıdaki tabloda bir Visual Studio projesindeki ortak dosyalar gösterilmektedir ve bunları dosya uzantısıyla tanımlar.
 
-|Dosya Uzantısı|Tür|İçindekiler|
+|Dosya uzantısı|Tür|İçindekiler|
 |--------------------|----------|--------------|
 |.asmx|Kaynak|Dağıtım dosyası.|
-|.asp|Kaynak|Active Server sayfa dosyası.|
+|\|Kaynak|Active Server sayfa dosyası.|
 |. ATP|Project|Uygulama şablonu proje dosyası.|
 |. bmp,. dib,. gif,. jpg,. jpe,. png|Kaynak|Genel resim dosyaları.|
 |. bsc|Derlen|Tarayıcı kodu dosyası.|
@@ -72,17 +73,17 @@ Aşağıdaki tabloda bir Visual Studio projesindeki ortak dosyalar gösterilmekt
 |. pch|Hata ayıklama|Ön derlenmiş üstbilgi dosyası.|
 |. RC,. RC2|Kaynak|[Kaynak oluşturmak Için kaynak betik dosyaları](../../windows/working-with-resource-files.md) .|
 |. sbr|Derlen|Kaynak tarayıcı ara dosyası. [BSCMAKE](bscmake-options.md)için giriş dosyası.|
-|.sln|Çözüm|[Çözüm](/visualstudio/ide/solutions-and-projects-in-visual-studio) dosyası.|
+|. sln|Çözüm|[Çözüm](/visualstudio/ide/solutions-and-projects-in-visual-studio) dosyası.|
 |. suo|Çözüm|Çözüm seçenekleri dosyası.|
-|c|Kaynak|Genellikle "Benioku" dosyası olan bir metin dosyası.|
+|.txt|Kaynak|Genellikle "Benioku" dosyası olan bir metin dosyası.|
 |. VAP|Project|Visual Studio Analyzer proje dosyası.|
 |. vbg|Çözüm|Uyumlu bir proje grubu dosyası.|
 |. vbp,. Vip,. vbproj|Project|Visual Basic proje dosyası.|
-|. vcxıtems|Project|Birden çok C++ proje arasında kod dosyaları paylaşmak Için paylaşılan öğeler projesi. Daha fazla bilgi için bkz. [Proje ve çözüm dosyaları](project-and-solution-files.md).|
+|. vcxıtems|Project|Birden çok C++ projesi arasında kod dosyaları paylaşmak için paylaşılan öğeler projesi. Daha fazla bilgi için bkz. [Proje ve çözüm dosyaları](project-and-solution-files.md).|
 |. vcxproj|Project|Visual Studio proje dosyası. Daha fazla bilgi için bkz. [Proje ve çözüm dosyaları](project-and-solution-files.md).|
 |. vcxproj. Filters|Project|Bir projeye dosya eklemek için Çözüm Gezgini kullandığınızda kullanılır. Filtreler dosyası, dosya adı uzantısına bağlı olarak dosyayı eklemek için Çözüm Gezgini ağaç görünümünde nerede olduğunu tanımlar.|
 |. VDPROJ|Project|Visual Studio dağıtımı proje dosyası.|
-|. vmx|Project|Makro proje dosyası.|
+|.vmx|Project|Makro proje dosyası.|
 |. VUP|Project|Yardımcı program proje dosyası.|
 
 Visual Studio ile ilişkili diğer dosyalar hakkında daha fazla bilgi için bkz. [Visual Studio .net 'Te dosya türleri ve dosya uzantıları](/visualstudio/ide/reference/project-and-solution-file-types).

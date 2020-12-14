@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _lock_file'
 title: _lock_file
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - _lock_file function
 - lock_file function
 ms.assetid: 75c7e0e6-efff-4747-b6ed-9bcf2b0894c3
-ms.openlocfilehash: e4f99203d5330a44b89239911e4a035a7958bf0b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 1eba161b5083235c1ef0724284e74e6f0f7df0cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911537"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198836"
 ---
 # <a name="_lock_file"></a>_lock_file
 
@@ -53,7 +54,7 @@ Dosya tanıtıcısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Lock_file** işlevi, *Dosya*tarafından belirtilen **Dosya** nesnesini kilitler. Temel alınan dosya **_lock_file**tarafından kilitlenmemiştir. Dosyadaki kilidi serbest bırakmak için [_unlock_file](unlock-file.md) kullanın. **_Lock_file** ve **_unlock_file** çağrılarının bir iş parçacığında eşleşmesi gerekir.
+**_Lock_file** işlevi, *Dosya* tarafından belirtilen **Dosya** nesnesini kilitler. Temel alınan dosya **_lock_file** tarafından kilitlenmemiştir. Dosyadaki kilidi serbest bırakmak için [_unlock_file](unlock-file.md) kullanın. **_Lock_file** ve **_unlock_file** çağrılarının bir iş parçacığında eşleşmesi gerekir.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -61,7 +62,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_lock_file**|\<stdio. h>|
+|**_lock_file**|\<stdio.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -142,7 +143,7 @@ eFciornsdt
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>
 [_unlock_file](unlock-file.md)<br/>

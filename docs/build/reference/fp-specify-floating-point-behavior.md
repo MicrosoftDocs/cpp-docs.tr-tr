@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/FP (kayan nokta davranışını belirt)
 title: /fp (Kayan nokta davranışını belirt)
 ms.date: 11/09/2018
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - -fp compiler option [C++]
 - /fp compiler option [C++]
 ms.assetid: 10469d6b-e68b-4268-8075-d073f4f5d57e
-ms.openlocfilehash: 7a8ae885bbbf00ae916505bf5df646b32268a17a
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 5d57bae24af9cd415a2dcfde073e276f51ce3ea3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040918"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200448"
 ---
 # <a name="fp-specify-floating-point-behavior"></a>/fp (Kayan nokta davranışını belirt)
 
@@ -24,7 +25,7 @@ Derleyicinin kayan nokta ifadelerini, iyileştirmeleri ve özel durumları nası
 
 ## <a name="syntax"></a>Syntax
 
-> **/FP:**[**precise**  |  **strict**  |  **fast**  |  **except**[ **-** ]] haricinde kesin kesin hızlı
+> **/FP:**[  |    |    |  [ **-** ]] haricinde kesin kesin hızlı
 
 ### <a name="arguments"></a>Arguments
 
@@ -69,7 +70,7 @@ Seçeneği, derleyicinin kayan nokta `/fp:fast` işlemlerini hız ve boşluk iç
 
 [/Za](za-ze-disable-language-extensions.md) (ANSI uyumluluğu) seçeneği ile uyumlu değildir `/fp` .
 
-### <a name="using-compiler-directives-to-control-floating-point-behavior"></a>Kayan nokta davranışını denetlemek için derleyici yönergelerini kullanma
+### <a name="using-compiler-directives-to-control-floating-point-behavior"></a>Floating-Point davranışını denetlemek için derleyici yönergelerini kullanma
 
 Derleyici, komut satırında belirtilen kayan nokta davranışını geçersiz kılmak için üç pragma yönergesi sağlar: [float_control](../../preprocessor/float-control.md), [fenv_access](../../preprocessor/fenv-access.md)ve [fp_contract](../../preprocessor/fp-contract.md). Bu yönergeleri, bir işlev içinde değil, işlev düzeyinde kayan nokta davranışını denetlemek için kullanabilirsiniz. Bu yönergelerin doğrudan seçeneklere karşılık gelmediğini unutmayın `/fp` . Bu tabloda, `/fp` seçeneklerin ve pragma yönergelerinin birbirleriyle nasıl eşlenme gösterilmektedir. Daha fazla bilgi için, tek tek seçenekler ve pragma yönergeleri için belgelere bakın.
 
@@ -269,4 +270,4 @@ Veya kullanılarak derlendiğinde `/O2` `/fp:precise` `/O2` `/fp:strict` , açı
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)<br/>

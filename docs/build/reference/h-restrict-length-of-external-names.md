@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/H (dış adların uzunluğunu kısıtla)
 title: /H (Dış Adların Uzunluğunu Kısıtla)
 ms.date: 09/05/2018
 f1_keywords:
@@ -10,31 +11,31 @@ helpviewer_keywords:
 - external names
 - -H compiler option [C++]
 ms.assetid: de701dd3-ed04-4c88-8195-960d2520ec2e
-ms.openlocfilehash: 9a8976700cfb0f333c2715c573aa2d239e2a8e3a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5df4c4765cc4917e6914eab0b4818c34fceea853
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218994"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200084"
 ---
 # <a name="h-restrict-length-of-external-names"></a>/H (Dış Adların Uzunluğunu Kısıtla)
 
 Kullanım dışı. Dış adların uzunluğunu kısıtlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **/H**<em>numarası</em>
 
 ## <a name="arguments"></a>Arguments
 
-*sayı*<br/>
+*sayısından*<br/>
 Bir programda izin verilen en fazla dış ad uzunluğunu belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
 Varsayılan olarak, dış (genel) adların uzunluğu 2.047 karakterdir. Bu, C ve C++ programları için geçerlidir. **/H** kullanılması yalnızca izin verilen en fazla tanımlayıcı uzunluğunu azaltabilir, bunu artırmaz. **/H** ve *sayı* arasındaki boşluk isteğe bağlıdır.
 
-Bir program *sayıdan*daha uzun dış adlar içeriyorsa, ek karakterler yok sayılır. Bir programı **/h** olmadan derlerseniz ve bir tanımlayıcı 2.047 'den fazla karakter içeriyorsa, derleyici [Önemli Hata C1064](../../error-messages/compiler-errors-1/fatal-error-c1064.md)oluşturacaktır.
+Bir program *sayıdan* daha uzun dış adlar içeriyorsa, ek karakterler yok sayılır. Bir programı **/h** olmadan derlerseniz ve bir tanımlayıcı 2.047 'den fazla karakter içeriyorsa, derleyici [Önemli Hata C1064](../../error-messages/compiler-errors-1/fatal-error-c1064.md)oluşturacaktır.
 
 Uzunluk sınırı, derleyici tarafından oluşturulan öndeki alt çizgi ( **\_** ) veya işareti ( **\@** ) içerir. Bu karakterler tanımlayıcının bir parçasıdır ve önemli bir konum alır.
 
@@ -87,4 +88,4 @@ Ayrıca, önceden tanımlanmış derleyici tanımlayıcıları nedeniyle **/h** 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

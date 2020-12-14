@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _locking'
 title: _locking
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - files [C++], locking
 - _locking function
 ms.assetid: 099aaac1-d4ca-4827-aed6-24dff9844150
-ms.openlocfilehash: c1c211ffaa63a0e4711374b01b0530ed8db20dfb
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 087fc65edbb30bdb6e36b7410f29cf165b119d38
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911543"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198810"
 ---
 # <a name="_locking"></a>_locking
 
@@ -71,13 +72,13 @@ Kilitlenecek bayt sayısı.
 | **EACCES** | Kilitleme ihlali (dosya zaten kilitli veya kilidi açılmış). |
 | **EBADF** | Geçersiz dosya tanımlayıcısı. |
 | **EDEADLOCK** | Kilitleme ihlali. **_LK_LOCK** veya **_LK_RLCK** bayrağı belirtildiğinde ve 10 denemeden sonra dosya kilitlenemediğinde döndürülür. |
-| **EıNVAL** | **_Locking**geçersiz bir bağımsız değişken verildi. |
+| **EıNVAL** | **_Locking** geçersiz bir bağımsız değişken verildi. |
 
 Hata, geçersiz bir dosya tanımlayıcısı gibi hatalı bir parametre nedeniyle kaynaklanıyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Locking** işlevi *FD*tarafından belirtilen dosyanın *nBytes* baytını kilitler veya kilidini açar. Bir dosyadaki kilitleme baytları diğer işlemlere göre bu baytlara erişimi engeller. Tüm kilitleme veya kilit açma işlemi, dosya işaretçisinin geçerli konumunda başlar ve sonraki *nBayt* baytları için devam eder. Dosya sonunun ötesinde baytları kilitlemek mümkündür.
+**_Locking** işlevi *FD* tarafından belirtilen dosyanın *nBytes* baytını kilitler veya kilidini açar. Bir dosyadaki kilitleme baytları diğer işlemlere göre bu baytlara erişimi engeller. Tüm kilitleme veya kilit açma işlemi, dosya işaretçisinin geçerli konumunda başlar ve sonraki *nBayt* baytları için devam eder. Dosya sonunun ötesinde baytları kilitlemek mümkündür.
 
 *mod* , kilitleme. h içinde tanımlanan aşağıdaki bildirim sabitlerinden biri olmalıdır.
 
@@ -85,8 +86,8 @@ Hata, geçersiz bir dosya tanımlayıcısı gibi hatalı bir parametre nedeniyle
 |-|-|
 | **_LK_LOCK** | Belirtilen baytları kilitler. Baytlar kilitlenmediyse, program 1 saniye sonra hemen yeniden dener. 10 denemeden sonra baytlar kilitlenmediyse, sabit bir hata döndürür. |
 | **_LK_NBLCK** | Belirtilen baytları kilitler. Baytlar kilitlenmediyse, sabit bir hata döndürür. |
-| **_LK_NBRLCK** | **_LK_NBLCK**ile aynı. |
-| **_LK_RLCK** | **_LK_LOCK**ile aynı. |
+| **_LK_NBRLCK** | **_LK_NBLCK** ile aynı. |
+| **_LK_RLCK** | **_LK_LOCK** ile aynı. |
 | **_LK_UNLCK** | Daha önce kilitli olması gereken belirtilen baytların kilidini açar. |
 
 Bir dosyanın örtüşmeyen birden çok bölgesi kilitlenebilir. Kilitlenmiş bir bölgenin daha önce kilitli olması gerekir. **_locking** bitişik bölgeleri birleştirmez; iki kilitli bölge bitişik ise, her bölgenin ayrı ayrı açılması gerekir. Bölgeler yalnızca kısa bir süre kilitli olmalıdır ve bir dosyayı kapatmadan veya programdan çıkmadan önce kilidinin açılması gerekir.
@@ -97,7 +98,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_locking**|\<GÇ. h> ve \<sys/kilitleme. h>|\<errno. h>|
+|**_locking**|\<io.h> ve \<sys/locking.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -156,7 +157,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_lockingtxt"></a>Giriş: crt_locking. txt
+### <a name="input-crt_lockingtxt"></a>Giriş: crt_locking.txt
 
 ```Input
 The first thirty bytes of this file will be locked.
@@ -172,6 +173,6 @@ Now I'm done. Do what you will with them
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>

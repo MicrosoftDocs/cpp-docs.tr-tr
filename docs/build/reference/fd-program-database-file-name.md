@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/FD (program veritabanı dosya adı)
 title: /Fd (Program Veritabanı Dosya Adı)
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - .pdb files, creating
 - FD compiler option [C++]
 ms.assetid: 3977a9ed-f0ac-45df-bf06-01cedd2ba85a
-ms.openlocfilehash: c686de7dc9c9c20c404240db558d2ff66078ceb7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3990cdd6c560dfdeaef7078a29e965831c2a9504
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292737"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200669"
 ---
 # <a name="fd-program-database-file-name"></a>/Fd (Program Veritabanı Dosya Adı)
 
-Tarafından oluşturulan program veritabanı (PDB) dosyası için bir dosya adı belirtir [/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](z7-zi-zi-debug-information-format.md).
+[/Z7,/Zi,/ZI (hata ayıklama bilgileri biçimi)](z7-zi-zi-debug-information-format.md)tarafından oluşturulan program VERITABANı (pdb) dosyası için bir dosya adı belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /Fdpathname
@@ -33,23 +34,23 @@ Tarafından oluşturulan program veritabanı (PDB) dosyası için bir dosya adı
 
 ## <a name="remarks"></a>Açıklamalar
 
-Olmadan **/Fd**, PDB dosya adı varsayılan olarak, VC için*x*0.pdb, burada *x* önemli Visual C++ sürümü kullanılıyor.
+**/FD** olmadan, pdb dosya adı varsayılan olarak VC *x* 0. pdb ' dir; burada *x* kullanılan Visual C++ ana sürümüdür.
 
-Bir dosya adı (yol sona eğik çizgi) içermeyen bir yol adı belirtirseniz, derleyici, VC adlı bir .pdb dosyası oluşturur.*x*belirtilen dizindeki 0. pdb.
+Bir dosya adı içermeyen bir yol adı belirtirseniz (yol ters eğik çizgiyle biter), derleyici belirtilen dizinde VC *x* 0. pdb adlı bir. pdb dosyası oluşturur.
 
-Bir uzantı içermeyen bir dosya adı belirtirseniz, derleyicinin .pdb bir uzantısı olarak kullanır.
+Uzantı içermeyen bir dosya adı belirtirseniz, derleyici uzantı olarak. pdb kullanır.
 
-Bu seçenek ayrıca en az yeniden derleme ve artımlı derleme için kullanılan durum (.idb) dosyasını adlandırır.
+Bu seçenek, en az yeniden oluşturma ve artımlı derleme için kullanılan durum (. idb) dosyasını da adlandırır.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++** klasörünü tıklatın.
 
-1. Tıklayın **Çıkış dosyalarını** özellik sayfası.
+1. **Çıkış dosyaları** Özellik sayfasına tıklayın.
 
-1. Değiştirme **Program veritabanı dosya adı** özelliği.
+1. **Program veritabanı dosya adı** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -57,7 +58,7 @@ Bu seçenek ayrıca en az yeniden derleme ve artımlı derleme için kullanılan
 
 ## <a name="example"></a>Örnek
 
-Bu komut satırı PROG.pdb ve PROG.idb adlı .idb dosyası adlı bir .pdb dosyası oluşturur:
+Bu komut satırı, PROG. pdb adlı bir. pdb dosyası ve program. IDB adlı bir. IDB dosyası oluşturur:
 
 ```
 CL /DDEBUG /Zi /FdPROG.PDB PROG.CPP
@@ -65,7 +66,7 @@ CL /DDEBUG /Zi /FdPROG.PDB PROG.CPP
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıktı Dosyası (/F) Seçenekleri](output-file-f-options.md)<br/>
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
-[Yol Adını Belirtme](specifying-the-pathname.md)
+[Çıktı dosyası (/F) seçenekleri](output-file-f-options.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)<br/>
+[Yol adını belirtme](specifying-the-pathname.md)

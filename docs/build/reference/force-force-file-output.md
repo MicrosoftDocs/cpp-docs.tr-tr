@@ -1,4 +1,5 @@
 ---
+description: Hakkında daha fazla bilgi edinin:/FORCE (Dosya çıktısını zorla)
 title: /FORCE (Dosya Çıktısını Zorla)
 ms.date: 07/19/2019
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - /FORCE linker option
 - -FORCE linker option
 ms.assetid: b1e9a218-a5eb-4e60-a4a4-65b4be15e5da
-ms.openlocfilehash: d1d85174290faa95e73c63a25f7d80c554e83ace
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: d84810828eef85c4db3558b70953630c70f8f82e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80079627"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200461"
 ---
 # <a name="force-force-file-output"></a>/FORCE (Dosya Çıktısını Zorla)
 
@@ -37,7 +38,7 @@ Bağımsız değişken içermeyen/FORCE, hem birden çok hem de çözülmemiş a
 
 Bu seçenekle oluşturulan bir dosya beklendiği gibi çalışmayabilir. /FORCE seçeneği belirtildiğinde bağlayıcı artımlı olarak bağlantı etmez.
 
-Bir modül **/clr**ile derlenirse **/Force** bir görüntü oluşturmaz.
+Bir modül **/clr** ile derlenirse **/Force** bir görüntü oluşturmaz.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
@@ -49,7 +50,7 @@ Bir modül **/clr**ile derlenirse **/Force** bir görüntü oluşturmaz.
 
 1. Seçeneği **ek seçenekler** kutusuna yazın.
 
-Daha fazla bilgi için bkz [. C++ Visual Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+Daha fazla bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -58,4 +59,4 @@ Daha fazla bilgi için bkz [. C++ Visual Studio 'da derleyici ve derleme özelli
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

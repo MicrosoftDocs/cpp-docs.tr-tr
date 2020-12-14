@@ -1,22 +1,23 @@
 ---
+description: 'Daha fazla bilgi edinin: genel özellik sayfası (dosya)'
 title: Genel Özellik Sayfası (Dosya)
 ms.date: 08/30/2019
 f1_keywords:
 - VC.Project.VCFileConfiguration.ExcludedFromBuild
 - VC.Project.VCFileConfiguration.Tool
 ms.assetid: 26e3711e-9e7d-4e8d-bc4c-2474538efdad
-ms.openlocfilehash: 7626e161e6f59de32d426b558827c423a0bb050d
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 03b91a028bce5423bcf80fab24153a36eb7435e8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041386"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200344"
 ---
 # <a name="general-property-page-file"></a>Genel Özellik Sayfası (Dosya)
 
 Bu konu, Windows projeleri için geçerlidir. Windows dışı projeler için bkz. [Linux C++ Özellik sayfası başvurusu](../../linux/prop-pages-linux.md).
 
-**Çözüm Gezgini**bir dosya düğümüne sağ tıkladığınızda, **yapılandırma özellikleri** düğümü altındaki **genel** Özellik sayfası açılır. Aşağıdaki özellikleri içerir:
+**Çözüm Gezgini** bir dosya düğümüne sağ tıkladığınızda, **yapılandırma özellikleri** düğümü altındaki **genel** Özellik sayfası açılır. Aşağıdaki özellikleri içerir:
 
 - **Derlemeden hariç tutuldu**
 

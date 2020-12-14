@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/GY (Function-Level bağlamayı etkinleştir)
 title: /Gy (İşlev Düzeyi Bağlamayı Etkinleştir)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - /Gy compiler option [C++]
 - packaged functions
 ms.assetid: 0d3cf14c-ed7d-4ad3-b4b6-104e56f61046
-ms.openlocfilehash: 8724ae4d018948c0f6aa9456f229db96878d7bf2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3c4136b25001f7f6d6729b9c6089995d1bcd71bf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81328275"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200136"
 ---
 # <a name="gy-enable-function-level-linking"></a>/Gy (İşlev Düzeyi Bağlamayı Etkinleştir)
 
-Derleyicinin tek tek işlevleri paketlenmiş işlevler (COMDATs) biçiminde paketlemesine olanak tanır.
+Derleyicinin paketlenmiş işlevler (Compts) biçiminde tek tek işlevleri paketetmesine olanak tanır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /Gy[-]
@@ -32,26 +33,26 @@ Derleyicinin tek tek işlevleri paketlenmiş işlevler (COMDATs) biçiminde pake
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bağlayıcı, dll veya .exe dosyasındaki tek tek işlevleri dışlamak veya sipariş etmek için işlevlerin COMDA olarak ayrı olarak paketlenir.
+Bağlayıcı, bir DLL veya. exe dosyasında ayrı işlevleri dışlamak veya sıralamak için işlevlerin Compts olarak ayrı paketlenmesi gerekir.
 
-Referanssız paket işlevleri .exe dosyasından hariç tutmak için bağlayıcı [/OPT (Optimizasyonlar)](opt-optimizations.md) seçeneğini kullanabilirsiniz.
+Başvurulmayan paketlenmiş işlevleri. exe dosyasından dışlamak için [/opt (iyileştirmeler)](opt-optimizations.md) bağlayıcı seçeneğini kullanabilirsiniz.
 
-.exe dosyasında belirli bir sırada paketlenmiş işlevleri eklemek için bağlayıcı [/ORDER (Sırayla İşlevler Koy)](order-put-functions-in-order.md) seçeneğini kullanabilirsiniz.
+Paketlenmiş işlevleri. exe dosyasında belirli bir sıraya dahil etmek için [/Order (Işlevleri sırayla koy)](order-put-functions-in-order.md) bağlayıcı seçeneğini kullanabilirsiniz.
 
-Satır altı işlevleri her zaman çağrı olarak anında paketlenirse (örneğin, satır ara kapalıysa veya bir işlev adresi alıyorsanız oluşur). Buna ek olarak, sınıf bildiriminde tanımlanan C++ üye işlevleri otomatik olarak paketlenir; diğer işlevler değildir ve bu seçeneğin seçilmesi, bunları paketlenmiş işlevler olarak derlemek için gereklidir.
+Satır içi işlevler, çağrı olarak örneklendiğinde her zaman paketlenir (örneğin, ıntıl kapalıysa veya bir işlev adresi alırsanız). Ayrıca, sınıf bildiriminde tanımlanan C++ üye işlevleri otomatik olarak paketlenmiştir; diğer işlevler değildir ve bunları paketlenmiş işlevler olarak derlemek için bu seçeneğin seçilmesi gerekir.
 
 > [!NOTE]
-> Edit ve Continue için kullanılan [/ZI](z7-zi-zi-debug-information-format.md) seçeneği otomatik olarak **/Gy** seçeneğini ayarlar.
+> Düzenle ve devam et için kullanılan [/Zi](z7-zi-zi-debug-information-format.md) seçeneği, **/GY** seçeneğini otomatik olarak ayarlar.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin **Özellik Sayfaları** iletişim kutusunu açın. Ayrıntılar için [Visual Studio'da C++ derleyicisi ayarlanın ve özellikler oluşturun.](../working-with-project-properties.md)
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
 1. **C/C++** klasörünü tıklatın.
 
-1. Kod **Oluşturma** özelliği sayfasını tıklatın.
+1. **Kod oluşturma** Özellik sayfasına tıklayın.
 
-1. **İşlev Düzeyi Bağlama** özelliğini etkinleştir'i değiştirin.
+1. **Etkinleştirme Function-Level bağlama** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -59,5 +60,5 @@ Satır altı işlevleri her zaman çağrı olarak anında paketlenirse (örneği
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

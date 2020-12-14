@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: RaiseException Işlevi'
 title: RaiseException İşlevi
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - RaiseException function
 ms.assetid: f9c74f6d-112a-4d2e-900f-622f795d5dbf
-ms.openlocfilehash: 3270057bf5b1b27a98bef1ab236291eab15d27ab
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b5353757ff04ab12c0fc61da6b2e98b2df835ef0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213635"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198446"
 ---
 # <a name="raiseexception-function"></a>RaiseException İşlevi
 
@@ -28,7 +29,7 @@ inline void __declspec(noreturn)   RaiseException(
 
 ### <a name="parameters"></a>Parametreler
 
-*HR*<br/>
+*sa*<br/>
 Yükseltilen özel durumun özel durum kodu; diğer bir deyişle, başarısız bir işlemin HRESULT.
 
 *dwExceptionFlags*<br/>
@@ -48,4 +49,4 @@ Daha fazla bilgi için bkz. Windows `RaiseException` işlevi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL::Details Ad Alanı](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D euçlar ad alanı](microsoft-wrl-details-namespace.md)

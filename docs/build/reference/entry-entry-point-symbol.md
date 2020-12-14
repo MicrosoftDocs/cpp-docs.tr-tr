@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/ENTRY (giriş noktası simgesi)
 title: /ENTRY (Giriş Noktası Simgesi)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - /ENTRY linker option
 - ENTRY linker option
 ms.assetid: 26c62ba2-4f52-4882-a7bd-7046a0abf445
-ms.openlocfilehash: 80833980b64e8fdd2a2f57b2dc40eb21c784b6f9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e4966ef44922a3a90d5abb5a7ac23460d4155f92
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232709"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201020"
 ---
 # <a name="entry-entry-point-symbol"></a>/ENTRY (Giriş Noktası Simgesi)
 
@@ -39,8 +40,8 @@ Varsayılan olarak, başlangıç adresi C çalışma zamanı kitaplığından bi
 |İşlev adı|İçin varsayılan|
 |-------------------|-----------------|
 |**mainCRTStartup** (veya **wmainCRTStartup**)|/SUBSYSTEM: CONSOLE; kullanan bir uygulama çağrılar `main` (veya `wmain` )|
-|**WinMainCRTStartup** (veya **wWinMainCRTStartup**)|/SUBSYSTEM:**WINDOWS**; kullanan bir uygulama `WinMain` `wWinMain` kullanılması için tanımlanması gereken çağrılar (veya)**`__stdcall`**|
-|**_DllMainCRTStartup**|BIR DLL; varsa `DllMain` , bunu kullanmak için tanımlanması gereken çağrılar**`__stdcall`**|
+|**WinMainCRTStartup** (veya **wWinMainCRTStartup**)|/SUBSYSTEM:**WINDOWS**; kullanan bir uygulama `WinMain` `wWinMain` kullanılması için tanımlanması gereken çağrılar (veya) **`__stdcall`**|
+|**_DllMainCRTStartup**|BIR DLL; varsa `DllMain` , bunu kullanmak için tanımlanması gereken çağrılar **`__stdcall`**|
 
 [/DLL](dll-build-a-dll.md) veya [/Subsystem](subsystem-specify-subsystem.md) seçeneği belirtilmemişse, bağlayıcı tanımlanmış olup olmadığına bağlı olarak bir alt sistem ve giriş noktası seçer `main` `WinMain` .
 

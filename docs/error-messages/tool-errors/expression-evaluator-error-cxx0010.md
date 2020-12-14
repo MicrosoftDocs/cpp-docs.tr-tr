@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Ifade değerlendirici hatası CXX0010'
 title: İfade Değerlendirici Hatası CXX0010
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CAN0010
 - CXX0010
 ms.assetid: 8bd474b0-da12-4990-8569-6392f09f05f6
-ms.openlocfilehash: afcce2405d487a2d88399ea28a95e63fd47f7106
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 18a317c30b4288bd2e28a276bc4e15d3b2e5c03b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80196150"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197770"
 ---
 # <a name="expression-evaluator-error-cxx0010"></a>İfade Değerlendirici Hatası CXX0010
 

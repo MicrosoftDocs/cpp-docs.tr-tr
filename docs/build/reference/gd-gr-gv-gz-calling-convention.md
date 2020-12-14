@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/GD,/gr,/GV,/GZ (çağırma kuralı)
 title: /Gd, /Gr, /Gv, /Gz (Çağırma Kuralı)
 ms.date: 09/05/2018
 f1_keywords:
@@ -20,18 +21,18 @@ helpviewer_keywords:
 - Gv compiler option [C++]
 - /Gr compiler option [C++]
 ms.assetid: fd3110cb-2d77-49f2-99cf-a03f9ead00a3
-ms.openlocfilehash: e1617b7c158e9705a6211310fa7873f667a62ba5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dd343466efd0b3b0d93fc783cd7e4305c2295ef3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234373"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200331"
 ---
 # <a name="gd-gr-gv-gz-calling-convention"></a>/Gd, /Gr, /Gv, /Gz (Çağırma Kuralı)
 
 Bu seçenekler, işlev bağımsız değişkenlerinin yığına gönderilme sırasını belirler. çağıran işlevi veya çağrılan işlev, çağrının sonundaki bağımsız değişkenleri yığından kaldırır ve derleyicinin bağımsız işlevleri tanımlamak için kullandığı ad dekorasyon kuralını belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`/Gd`**\
 > **`/Gr`**\
@@ -50,7 +51,7 @@ Bu seçenekler, işlev bağımsız değişkenlerinin yığına gönderilme sıra
 
 Değişken sayıda bağımsız değişken alan işlevlerin işaretlenmesi gerekir **`__cdecl`** .
 
-**`/Gd`**, **`/Gr`** **`/Gv`** ve, **`/Gz`** [`/clr:safe`](clr-common-language-runtime-compilation.md) veya **/clr: Pure**ile uyumlu değildir. **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ve sonrasında desteklenmez.
+**`/Gd`**, **`/Gr`** **`/Gv`** ve, **`/Gz`** [`/clr:safe`](clr-common-language-runtime-compilation.md) veya **/clr: Pure** ile uyumlu değildir. **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ve sonrasında desteklenmez.
 
 > [!NOTE]
 > Varsayılan olarak, x86 işlemcileri için C++ üye işlevleri kullanır [`__thiscall`](../../cpp/thiscall.md) .
@@ -111,4 +112,4 @@ C için, **`__vectorcall`** adlandırma kuralı, işlev adını, ardından iki i
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [MSVC derleyici seçenekleri](compiler-options.md)
-- [MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+- [MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

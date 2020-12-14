@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: etkinleştirme (C++)'
 title: Etkinleştirme (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - activation [MFC], embedded OLE items
 - OLE activation [MFC]
 ms.assetid: ed8357d9-e487-4aaa-aa6b-2edc4de25dfa
-ms.openlocfilehash: 47640a59180348bd3513013b65029a775545e211
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 726c64344f684c8ca9e79d9296daea80882af08f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619180"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197731"
 ---
 # <a name="activation-c"></a>Etkinleştirme (C++)
 
@@ -31,7 +32,7 @@ Bu makalede, OLE öğelerinin görsel düzenlemede etkinleştirme rolü açıkla
 
 Katıştırılmış OLE öğelerini ayrı bir pencerede düzenlemek de mümkündür. Kapsayıcı veya sunucu uygulaması yerinde etkinleştirmeyi desteklemiyorsa, bu durum gerçekleşir. Bu durumda, Kullanıcı katıştırılmış bir öğeyi çift tıkladığında, sunucu uygulaması ayrı bir pencerede başlatılır ve katıştırılmış öğe kendi belgesi olarak görünür. Kullanıcı Bu penceredeki öğeyi düzenler. Düzen tamamlandığında, Kullanıcı sunucu uygulamasını kapatır ve kapsayıcı uygulamasına geri döner.
 
-Alternatif olarak, Kullanıcı **düzenleme** menüsünde ** \<object> Aç** komutuyla "düzenleme aç" seçeneğini belirleyebilir. Bu, nesneyi ayrı bir pencerede açar.
+Alternatif olarak, Kullanıcı **düzenleme** menüsünde **\<object> Aç** komutuyla "düzenleme aç" seçeneğini belirleyebilir. Bu, nesneyi ayrı bir pencerede açar.
 
 > [!NOTE]
 > Katıştırılmış öğelerin ayrı bir pencerede düzenlenmesinin, OLE sürüm 1 ' deki standart davranışı ve bazı OLE uygulamaları yalnızca bu Düzenle stilini destekleyebilir.

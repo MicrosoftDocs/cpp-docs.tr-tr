@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: düzenlenmiş adlar'
 title: Düzenlenmiş Adlar
 ms.date: 09/05/2018
 helpviewer_keywords:
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - name decoration [C++]
 - names [C++], decorated
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
-ms.openlocfilehash: 0cda21b1650fa660175248c15560a7ab0b251d07
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 65135b4f5b85cfae7a25513763b998d304e79a0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504243"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201722"
 ---
 # <a name="decorated-names"></a>Düzenlenmiş Adlar
 
-C ve C++ programlarındaki işlevler, veriler ve nesneler kendi kendilerini düzenlenmiş adlarıyla temsil edilir. *Düzenlenmiş bir ad* , bir nesne, veri veya işlev tanımının derlenmesi sırasında derleyici tarafından oluşturulan kodlanmış bir dizedir. Kural, tür, işlev parametreleri ve diğer bilgileri birlikte çağıran bir adla kaydeder. *Ad değiştirmeyi*olarak da bilinen bu ad dekorasyonu, bağlayıcının bir yürütülebilir dosyayı bağlarken doğru işlevleri ve nesneleri bulmasına yardımcı olur.
+C ve C++ programlarındaki işlevler, veriler ve nesneler kendi kendilerini düzenlenmiş adlarıyla temsil edilir. *Düzenlenmiş bir ad* , bir nesne, veri veya işlev tanımının derlenmesi sırasında derleyici tarafından oluşturulan kodlanmış bir dizedir. Kural, tür, işlev parametreleri ve diğer bilgileri birlikte çağıran bir adla kaydeder. *Ad değiştirmeyi* olarak da bilinen bu ad dekorasyonu, bağlayıcının bir yürütülebilir dosyayı bağlarken doğru işlevleri ve nesneleri bulmasına yardımcı olur.
 
 Düzenlenmiş adlandırma kuralları, Visual Studio 'nun çeşitli sürümlerinde değiştirilmiştir ve farklı hedef mimarilerde de farklı olabilir. Visual Studio kullanılarak oluşturulan kaynak dosyalarla doğru bir şekilde bağlantı sağlamak için C ve C++ dll 'Leri ve kitaplıkları aynı derleyici araç takımı, bayraklar ve hedef mimari kullanılarak derlenmelidir.
 

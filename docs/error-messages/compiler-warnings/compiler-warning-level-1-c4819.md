@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4819'
 title: Derleyici Uyarısı (düzey 1) C4819
 ms.date: 04/08/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4819
 ms.assetid: c0316e85-249c-414d-9df0-622d077c6bc2
-ms.openlocfilehash: f81a4f44a489e2e4c5bd5c063d922129581819f9
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 871a861f7860f8561fb830cc6a19980af7726174
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509365"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198225"
 ---
 # <a name="compiler-warning-level-1-c4819"></a>Derleyici Uyarısı (düzey 1) C4819
 

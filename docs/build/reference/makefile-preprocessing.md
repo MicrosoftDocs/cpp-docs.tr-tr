@@ -1,20 +1,21 @@
 ---
+description: 'Daha fazla bilgi için: makefile ön Işleme'
 title: Derleme Görevleri Dosyası Önişlemesi
 ms.date: 11/04/2016
 helpviewer_keywords:
 - preprocessing makefiles
 - makefiles, preprocessing
 ms.assetid: a9185139-97c9-4adb-b4a9-1ec395cce9f8
-ms.openlocfilehash: fd29fc062191227204da2ea871a9754cda71a302
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c32aa8daa0fc868a48c7cc5875b95ca5efa9a510
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62321565"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199317"
 ---
 # <a name="makefile-preprocessing"></a>Derleme Görevleri Dosyası Önişlemesi
 
-NMAKE oturumu ön işleme yönergeleri ve ifadeleri kullanarak denetleyebilirsiniz. Ön işleme yönergeleri derleme görevleri dosyası veya Tools.ini yerleştirilebilir. Yönergeleri kullanarak, koşullu olarak, derleme görevleri dosyası işleme, hata iletilerini görüntüleyebilir, diğer derleme görevleri dosyalarını içerir, makro tanımlarını Kaldır ve belirli seçenekleri açıp kapatma.
+, Ön işleme yönergelerini ve deyimlerini kullanarak NMAKE oturumunu kontrol edebilirsiniz. Ön işleme yönergeleri, derleme görevleri dosyasına veya Tools.ini yerleştirilebilecek. Yönergeleri kullanarak, derleme görevleri dosyasını koşullu olarak işleyebilir, hata iletilerini görüntüleyebilir, diğer makefiles ekleyebilir, bir makro tanımlayabilir ve belirli seçenekleri etkinleştirebilir veya devre dışı bırakabilirsiniz.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
