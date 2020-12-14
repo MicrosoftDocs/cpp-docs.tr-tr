@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: geri sarma'
 title: geri sar
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - file pointers [C++], repositioning
 - file pointers [C++]
 ms.assetid: 1a460ce1-28d8-4b5e-83a6-633dca29c28a
-ms.openlocfilehash: 645b8bf105641b9f13a9f9fc0605e6b8526b4b56
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 1b66ee84e562ebbb743413c6f76f67071c754a67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917764"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250314"
 ---
 # <a name="rewind"></a>geri sar
 
@@ -61,9 +62,9 @@ void rewind(
 
 Ancak, [fseek](fseek-fseeki64.md)aksine **geri sarma** , akış için hata göstergelerini ve dosya sonu göstergesini temizler. Ayrıca, [fseek](fseek-fseeki64.md)'ın aksine, **geri sarma** , işaretçinin başarıyla taşındığını göstermek için bir değer döndürmez.
 
-Klavye arabelleğini temizlemek için, varsayılan olarak klavye ile ilişkili akış **stdin**ile **geri sarma** kullanın.
+Klavye arabelleğini temizlemek için, varsayılan olarak klavye ile ilişkili akış **stdin** ile **geri sarma** kullanın.
 
-Stream **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Stream **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -73,7 +74,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**rewind**|\<stdio. h>|
+|**geri sar**|\<stdio.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -123,4 +124,4 @@ The values read are: 1 and -37
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>

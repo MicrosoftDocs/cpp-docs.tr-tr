@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _resetstkoflw'
 title: _resetstkoflw
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - stack, recovering
 - _resetstkoflw function
 ms.assetid: 319529cd-4306-4d22-810b-2063f3ad9e14
-ms.openlocfilehash: 6f4d5d930ebdc487c3c2bcc2f93494a25528c438
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 02eb973c63bb372e43e57c413385b8e1b13d9f38
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216784"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250354"
 ---
 # <a name="_resetstkoflw"></a>_resetstkoflw
 
@@ -43,7 +44,7 @@ Yığın taşmasından kurtarır.
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 int _resetstkoflw( void );
@@ -57,7 +58,7 @@ int _resetstkoflw( void );
 
 **_Resetstkoflw** işlevi bir yığın taşması durumundan kurtarır, bir programın önemli bir özel durum hatasıyla başarısız olması yerine devam etmesine izin verir. **_Resetstkoflw** işlevi çağrılmadığından, önceki özel durumdan sonra koruma sayfası yoktur. Bir sonraki sefer bir yığın taşması olduğunda, hiç özel durum yoktur ve işlem uyarı vermeden sonlandırılır.
 
-Bir uygulamadaki bir iş parçacığı **EXCEPTION_STACK_OVERFLOW** bir özel duruma neden oluyorsa, iş parçacığı yığınını hasarlı durumda bıraktı. Bu, yığının bozuk olmadığı **EXCEPTION_ACCESS_VIOLATION** veya **EXCEPTION_INT_DIVIDE_BY_ZERO**gibi diğer özel durumlara karşı farklıdır. Program ilk yüklendiğinde yığın rasgele küçük bir değere ayarlanır. Yığın daha sonra iş parçacığının ihtiyaçlarını karşılamak için isteğe bağlı olarak artar. Bu, geçerli yığının sonunda PAGE_GUARD erişimine sahip bir sayfa yerleştirilerek uygulanır. Daha fazla bilgi için bkz. [koruma sayfaları oluşturma](/windows/win32/Memory/creating-guard-pages).
+Bir uygulamadaki bir iş parçacığı **EXCEPTION_STACK_OVERFLOW** bir özel duruma neden oluyorsa, iş parçacığı yığınını hasarlı durumda bıraktı. Bu, yığının bozuk olmadığı **EXCEPTION_ACCESS_VIOLATION** veya **EXCEPTION_INT_DIVIDE_BY_ZERO** gibi diğer özel durumlara karşı farklıdır. Program ilk yüklendiğinde yığın rasgele küçük bir değere ayarlanır. Yığın daha sonra iş parçacığının ihtiyaçlarını karşılamak için isteğe bağlı olarak artar. Bu, geçerli yığının sonunda PAGE_GUARD erişimine sahip bir sayfa yerleştirilerek uygulanır. Daha fazla bilgi için bkz. [koruma sayfaları oluşturma](/windows/win32/Memory/creating-guard-pages).
 
 Kod, yığın işaretçisinin bu sayfadaki bir adrese işaret etmesine neden olduğunda, bir özel durum oluşur ve sistem aşağıdaki üç şeyi yapar:
 

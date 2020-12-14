@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _lfind'
 title: _lfind
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - finding keys in arrays
 - _lfind function
 ms.assetid: a40ece70-1674-4b75-94bd-9f57cfff18f2
-ms.openlocfilehash: 4721ba96e145b3c2fde4ce0bb73157bbbcab4dff
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 50a3464f375e1f21f8afa2e57e76e910147ef3a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916454"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250367"
 ---
 # <a name="_lfind"></a>_lfind
 
@@ -62,10 +63,10 @@ Aranacak nesne.
 *base*<br/>
 Arama verileri tabanı işaretçisi.
 
-*number*<br/>
+*sayısından*<br/>
 Dizi öğelerinin sayısı.
 
-*genişlik*<br/>
+*width*<br/>
 Dizi öğelerinin genişliği.
 
 *Karşılaştır*<br/>
@@ -73,13 +74,13 @@ Karşılaştırma yordamının işaretçisi. İlk parametre, arama için bir tu�
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Anahtar bulunursa **_lfind** , *tabanında* eşleşen dizinin öğesine bir işaretçi *döndürür.* Anahtar bulunamazsa, **_Lfind** **null**döndürür.
+Anahtar bulunursa **_lfind** , *tabanında* eşleşen dizinin öğesine bir işaretçi *döndürür.* Anahtar bulunamazsa, **_Lfind** **null** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
 **_Lfind** işlevi, her *Genişlik* baytından oluşan *sayı* öğeleri dizisindeki değer *anahtarı* için doğrusal bir arama gerçekleştirir. **Bsearch**'ten farklı olarak **_lfind** , dizinin sıralanmasını gerektirmez. *Taban* bağımsız değişkeni, aranacak dizinin temelini gösteren bir işaretçidir. *Compare* bağımsız değişkeni, iki dizi öğesini karşılaştıran ve ilişkilerini belirten bir değer döndüren kullanıcı tarafından sağlanan yordamın bir işaretçisidir. **_lfind** , arama sırasında *karşılaştırma* yordamını bir veya daha fazla kez çağırarak her çağrıda iki dizi öğesine işaretçiler geçer. *Compare* yordamı, öğeleri karşılaştırmalıdır ve sıfır dışında bir değere (öğelerin farklı olduğu anlamına gelir) ya da 0 (öğeler özdeş) döndürmelidir.
 
-Bu işlev, parametrelerini doğrular. *Compare*, *Key* veya *Number* değeri **null**ise ya da *taban* **null** ve *sayı* sıfır değilse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı *width* gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür.
+Bu işlev, parametrelerini doğrular. *Compare*, *Key* veya *Number* değeri **null** ise ya da *taban* **null** ve *sayı* sıfır değilse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı  gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null** değerini döndürür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -87,7 +88,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_lfind**|\<Search. h>|
+|**_lfind**|\<search.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

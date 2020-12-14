@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _rmdir _wrmdir'
 title: _rmdir, _wrmdir
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - _wrmdir function
 - wrmdir function
 ms.assetid: 652c2a5a-b0ac-4493-864e-1edf484333c5
-ms.openlocfilehash: c0c5055a499614f364370b7aa90697898dc510ab
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c17324d5d2125f4f664140684c4f082181742700
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916925"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250315"
 ---
 # <a name="_rmdir-_wrmdir"></a>_rmdir, _wrmdir
 
@@ -80,9 +81,9 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno,
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Rmdir** işlevi, *DizinAdı*tarafından belirtilen dizini siler. Dizinin boş olması ve geçerli çalışma dizini veya kök dizin olmaması gerekir.
+**_Rmdir** işlevi, *DizinAdı* tarafından belirtilen dizini siler. Dizinin boş olması ve geçerli çalışma dizini veya kök dizin olmaması gerekir.
 
-**_wrmdir** , **_rmdir**geniş karakterli bir sürümüdür; _wrmdir *DizinAdı* bağımsız değişkeni **_wrmdir** geniş karakterli bir dizedir. **_wrmdir** ve **_rmdir** aynı şekilde davranır.
+**_wrmdir** , **_rmdir** geniş karakterli bir sürümüdür; _wrmdir *DizinAdı* bağımsız değişkeni  geniş karakterli bir dizedir. **_wrmdir** ve **_rmdir** aynı şekilde davranır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -96,8 +97,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_rmdir**|\<Direct. h>|
-|**_wrmdir**|\<Direct. h> veya \<wchar. h>|
+|**_rmdir**|\<direct.h>|
+|**_wrmdir**|\<direct.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
