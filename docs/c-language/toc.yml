@@ -138,6 +138,8 @@
           href: ../c-language/name-spaces.md
     - name: Bildirimler ve türler
       items:
+        - name: Hizalama (C11)
+          href: ../c-language/alignment-c.md
         - name: Bildirimler ve türler
           href: ../c-language/declarations-and-types.md
         - name: Bildirimlere genel bakış
