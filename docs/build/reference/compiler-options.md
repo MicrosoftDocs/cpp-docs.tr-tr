@@ -1,20 +1,19 @@
 ---
 description: 'Daha fazla bilgi edinin: derleyici seçenekleri'
 title: MSVC derleyici seçenekleri
-ms.date: 05/06/2019
+ms.date: 12/14/2020
 helpviewer_keywords:
 - cl.exe compiler
 - x86 MSVC compiler
 - ARM MSVC compiler
 - compiler options, C++
 - x64 MSVC compiler
-ms.assetid: ed3376c8-bef4-4c9a-80e9-3b5da232644c
-ms.openlocfilehash: a6b124fa5fce68844d53c1324da48c17ef5a9ccf
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: f89695b00be4ed67a00f947c6b76943bfa5eaf59
+ms.sourcegitcommit: 48b897797b3132ae934b1d191e3870c3c2466335
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97197029"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97514582"
 ---
 # <a name="compiler-options"></a>Derleyici Seçenekleri
 
@@ -25,7 +24,7 @@ cl.exe, Microsoft C++ (MSVC) C ve C++ derleyicilerini ve bağlayıcıyı denetle
 
 Derleyiciler ortak nesne dosyası biçimi (COFF) nesne (. obj) dosyaları oluşturur. Bağlayıcı yürütülebilir (. exe) dosyalar ya da dinamik bağlantı kitaplıkları (dll 'Ler) üretir.
 
-Tüm derleyici seçeneklerinin büyük/küçük harfe duyarlı olduğunu unutmayın. `/` `-` Bir derleyici seçeneğini belirtmek için eğik çizgi () veya tire () kullanabilirsiniz.
+Tüm derleyici seçenekleri büyük/küçük harfe duyarlıdır. `/` `-` Bir derleyici seçeneğini belirtmek için eğik çizgi () veya tire () kullanabilirsiniz.
 
 Bağlama olmadan derlemek için [/c](c-compile-without-linking.md) seçeneğini kullanın.
 

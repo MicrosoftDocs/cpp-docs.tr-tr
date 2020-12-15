@@ -4,12 +4,12 @@ description: Microsoft C/C++ derleyicisi komut satırı seçeneklerinin alfabeti
 ms.date: 07/29/2020
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: 81f2fbfe385e8655193c5862455e6ffca3719c96
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 532ee4aceef281f7aa52fee6cd405a3520409218
+ms.sourcegitcommit: 48b897797b3132ae934b1d191e3870c3c2466335
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520868"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97514555"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>Alfabetik listelenmiş derleyici seçenekleri
 
@@ -40,7 +40,7 @@ Bu tablo, derleyici seçeneklerinin alfabetik bir listesini içerir. Kategoriye 
 | [`/errorReport`](errorreport-report-internal-compiler-errors.md) | Kullanım dışı. Hata raporlama [Windows hata bildirimi (WER)](/windows/win32/wer/windows-error-reporting) ayarları tarafından denetlenir. |
 | [`/execution-charset`](execution-charset-set-execution-character-set.md) | Yürütme karakter kümesini ayarlayın. |
 | [`/experimental:module`](experimental-module.md) | Deneysel modül desteğini izin vermez. |
-| [`/experimental:preprocessor`](experimental-preprocessor.md) | Deneysel uyumsuz Önişlemci desteğini sunar. |
+| [`/experimental:preprocessor`](experimental-preprocessor.md) | Kullanım dışı. Deneysel uyumsuz Önişlemci desteğini sunar. Kullanırsınız [`/Zc:preprocessor`](zc-preprocessor.md) |
 | [`/F`](f-set-stack-size.md) | Yığın boyutunu ayarlar. |
 | [`/favor`](favor-optimize-for-architecture-specifics.md) | Belirli bir x64 mimarisi için en iyi duruma getirilmiş kodu üretir. Ya da AMD64 ve EM64T mimarilerinde belirli mikro mimariler için. |
 | [`/FA`](fa-fa-listing-file.md) | Bir listeleme dosyası oluşturur. |
@@ -119,7 +119,7 @@ Bu tablo, derleyici seçeneklerinin alfabetik bir listesini içerir. Kategoriye 
 | [`/Qspectre`](qspectre.md) | Belirli Spectre varyant 1 güvenlik açıklarına karşı hafifletmek için derleyici oluşturma yönergelerinin belirtir. |
 | [`/Qspectre-load`](qspectre-load.md) | Yük yönergelerine göre Spectre güvenlik açıklarını hafifletmek için, serileştirme yönergelerinin derleme üretilmesini belirtir. |
 | [`/Qspectre-load-cf`](qspectre-load-cf.md) | Belleği yükleyen denetim akışı yönergelerine göre Spectre güvenlik açıklarını azaltmak için derleyici oluşturma talimatlarını belirtir. |
-| [`/Qvec-report`(Otomatik Vektörleştirici raporlama düzeyi)](qvec-report-auto-vectorizer-reporting-level.md) | Otomatik vektörleştirme için raporlama düzeylerine izin vermez. |
+| [`/Qvec-report` (Otomatik Vektörleştirici raporlama düzeyi)](qvec-report-auto-vectorizer-reporting-level.md) | Otomatik vektörleştirme için raporlama düzeylerine izin vermez. |
 | [`/RTC`](rtc-run-time-error-checks.md) | Çalışma zamanı hata denetimini etkinleştirilir. |
 | [`/sdl`](sdl-enable-additional-security-checks.md) | Ek güvenlik özellikleri ve uyarılar sunar. |
 | [`/showIncludes`](showincludes-list-include-files.md) | Derleme sırasında içerme dosyaları listesini görüntüler. |

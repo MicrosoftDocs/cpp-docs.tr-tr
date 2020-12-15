@@ -6,12 +6,12 @@ helpviewer_keywords:
 - variadic macros [C++]
 - __VA_ARGS__ variadic macro specifier
 ms.assetid: 51e757dc-0134-4bb2-bb74-64ea5ad75134
-ms.openlocfilehash: 876e0ca46dd8774796c8a4f9d7572cbff5caa93c
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 74bf5b68696499ea8b1d88722d8a9e55f2ecab2d
+ms.sourcegitcommit: 48b897797b3132ae934b1d191e3870c3c2466335
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97149662"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97514588"
 ---
 # <a name="variadic-macros"></a>Değişen sayıda makro
 
@@ -21,7 +21,7 @@ Değişen sayıda bağımsız değişken içeren makrolar, değişken sayıda ba
 
 Değişen sayıda sayıda makro kullanmak için, üç nokta bir makro tanımında son biçimsel bağımsız değişken olarak belirtilebilir ve `__VA_ARGS__` ek bağımsız değişkenleri eklemek için tanımda değiştirme tanımlayıcısı kullanılabilir.  `__VA_ARGS__` , aralarında virgül de dahil olmak üzere üç nokta ile eşleşen tüm bağımsız değişkenlerle değiştirilmiştir.
 
-C standardı, makronun sondaki virgülden sonra bir ifadeye çözümlenmemesini sağlamak için en az bir bağımsız değişkenin üç noktaya geçirilmesi gerektiğini belirtir. Geleneksel Microsoft C++ uygulamasının, üç nokta işaretine hiçbir bağımsız değişken geçirilmezse sondaki virgül bastırır. `/experimental:preprocessor`Derleyici seçeneği ayarlandığında, sondaki virgül görüntülenmez.
+C standardı, makronun sonunda virgül olan bir ifadeye çözümlenmemesini sağlamak için üç nokta için en az bir bağımsız değişken geçirilmesi gerektiğini belirtir. Geleneksel Microsoft C++ uygulamasının, üç nokta işaretine hiçbir bağımsız değişken geçirilmezse sondaki virgül bastırır. [`/Zc:preprocessor`](../build/reference/zc-preprocessor.md)Derleyici seçeneği ayarlandığında, sondaki virgül gizlenemedi.
 
 ## <a name="example"></a>Örnek
 

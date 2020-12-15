@@ -2,7 +2,7 @@
 title: Önceden tanımlanmış makrolar
 description: Microsoft C++ derleyicisi önceden tanımlanmış Önişlemci makrolarını listeler ve açıklar.
 ms.custom: update_every_version
-ms.date: 09/11/2020
+ms.date: 12/14/2020
 f1_keywords:
 - _ATL_VER
 - __ATOM__
@@ -240,12 +240,12 @@ no-loc:
 - _WIN64
 - _WINRT_DLL
 - __func__
-ms.openlocfilehash: b5e2b34357456c4937d8ed17dee5661d36b7b0c0
-ms.sourcegitcommit: 25f6d52eb9e5d84bd0218c46372db85572af81da
+ms.openlocfilehash: e4577f7b74c6057df8ebe795ffa0056dbdeae298
+ms.sourcegitcommit: 48b897797b3132ae934b1d191e3870c3c2466335
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94448470"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97514540"
 ---
 # <a name="predefined-macros"></a>Önceden tanımlanmış makrolar
 
@@ -525,7 +525,9 @@ MSVC bu önceden tanımlanmış ek makroları destekler.
 
 - `__MSVC_RUNTIME_CHECKS` Derleyici seçeneklerinden biri ayarlandığında 1 olarak tanımlanır [`/RTC`](../build/reference/rtc-run-time-error-checks.md) . Aksi takdirde, tanımsız.
 
-- `_MSVC_TRADITIONAL` Önişlemci uyumluluk modu [`/experimental:preprocessor`](../build/reference/experimental-preprocessor.md) derleyici seçeneği ayarlandığında 0 olarak tanımlanır. [`/experimental:preprocessor-`](../build/reference/experimental-preprocessor.md)Geleneksel Önişlemci 'nin kullanımda olduğunu göstermek için varsayılan olarak veya derleyici seçeneği ayarlandığında 1 olarak tanımlanır. `_MSVC_TRADITIONAL`Visual Studio 2017 sürüm 15,8 ' den itibaren makro ve [ **`/experimental:preprocessor`** (Önişlemci uyumluluk modunu etkinleştir)](../build/reference/experimental-preprocessor.md) derleyici seçeneği kullanılabilir.
+- `_MSVC_TRADITIONAL`:
+    - Visual Studio 2017 sürüm 15,8 ile başlayarak kullanılabilir: Önişlemci uyumluluk modu [`/experimental:preprocessor`](../build/reference/experimental-preprocessor.md) derleyici seçeneği ayarlandığında 0 olarak tanımlanır. [`/experimental:preprocessor-`](../build/reference/experimental-preprocessor.md)Geleneksel Önişlemci 'nin kullanımda olduğunu göstermek için varsayılan olarak veya derleyici seçeneği ayarlandığında 1 olarak tanımlanır.
+    - Visual Studio 2019 sürüm 16,5 ile başlayarak kullanılabilir: Önişlemci uyumluluk modu [`/Zc:preprocessor`](../build/reference/zc-preprocessor.md) derleyici seçeneği ayarlandığında 0 olarak tanımlanır. Varsayılan olarak 1 olarak veya `/Zc:preprocessor-` derleyici seçeneği ayarlandığında geleneksel Önişlemci 'nin kullanımda olduğunu belirtmek için (Aslında, `/Zc:preprocessor` kullanım dışı seçeneğinin yerini alır `/experimental:preprocessor` ).
 
    ```cpp
    #if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL

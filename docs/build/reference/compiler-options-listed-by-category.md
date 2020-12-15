@@ -5,12 +5,12 @@ ms.date: 07/29/2020
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: beb10404075d9541872ff4780a725e177356a3b8
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: bf12948658b5f7e3211c423b5302bc52d1b87729
+ms.sourcegitcommit: 48b897797b3132ae934b1d191e3870c3c2466335
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520959"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97514569"
 ---
 # <a name="compiler-options-listed-by-category"></a>Kategorilere göre listelenen derleyici seçenekleri
 
@@ -144,10 +144,10 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 | [`/LDd`](md-mt-ld-use-run-time-library.md) | Bir hata ayıklama dinamik bağlantı kitaplığı oluşturur. |
 | [`/link`](link-pass-options-to-linker.md) | BAĞLAMA için belirtilen seçeneği geçirir. |
 | [`/LN`](ln-create-msil-module.md) | MSIL Modülü oluşturur. |
-| [`/MD`](md-mt-ld-use-run-time-library.md) | *Msvcrt. lib*kullanarak çok iş PARÇACıKLı bir dll oluşturmak için derler. |
-| [`/MDd`](md-mt-ld-use-run-time-library.md) | *Msvcrtd. lib*kullanarak bir hata ayıklama çok Iş parçacıklı DLL oluşturmak için derler. |
-| [`/MT`](md-mt-ld-use-run-time-library.md) | *LIBCMT. lib*kullanarak çok iş parçacıklı yürütülebilir dosya oluşturmak için derler. |
-| [`/MTd`](md-mt-ld-use-run-time-library.md) | *LIBCMTD. lib*kullanarak bir hata ayıklama çok iş parçacıklı yürütülebilir dosyası oluşturmak için derler. |
+| [`/MD`](md-mt-ld-use-run-time-library.md) | *Msvcrt. lib* kullanarak çok iş PARÇACıKLı bir dll oluşturmak için derler. |
+| [`/MDd`](md-mt-ld-use-run-time-library.md) | *Msvcrtd. lib* kullanarak bir hata ayıklama çok Iş parçacıklı DLL oluşturmak için derler. |
+| [`/MT`](md-mt-ld-use-run-time-library.md) | *LIBCMT. lib* kullanarak çok iş parçacıklı yürütülebilir dosya oluşturmak için derler. |
+| [`/MTd`](md-mt-ld-use-run-time-library.md) | *LIBCMTD. lib* kullanarak bir hata ayıklama çok iş parçacıklı yürütülebilir dosyası oluşturmak için derler. |
 
 ## <a name="miscellaneous"></a>Çeşitli
 
@@ -161,7 +161,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 | [`/cgthreads`](cgthreads-code-generation-threads.md) | İyileştirme ve kod oluşturma için kullanılacak *cl.exe* iş parçacığı sayısını belirtir. |
 | [`/errorReport`](errorreport-report-internal-compiler-errors.md) | Kullanım dışı. Hata raporlama [Windows hata bildirimi (WER)](/windows/win32/wer/windows-error-reporting) ayarları tarafından denetlenir. |
 | [`/FC`](fc-full-path-of-source-code-file-in-diagnostics.md) | Tanılama metninde *cl.exe* geçirilen kaynak kodu dosyalarının tam yolunu görüntüler. |
-| [`/FS`](fs-force-synchronous-pdb-writes.md) | *MSPDBSRV.EXE*aracılığıyla SERILEŞTIRILMESI için pdb dosyasına yazmaları zorlar. |
+| [`/FS`](fs-force-synchronous-pdb-writes.md) | *MSPDBSRV.EXE* aracılığıyla SERILEŞTIRILMESI için pdb dosyasına yazmaları zorlar. |
 | [`/H`](h-restrict-length-of-external-names.md) | Kullanım dışı. Dış (ortak) adların uzunluğunu kısıtlar. |
 | [`/HELP`](help-compiler-command-line-help.md) | Derleyici seçeneklerini listeler. |
 | [`/J`](j-default-char-type-is-unsigned.md) | Varsayılan türü değiştirir **`char`** . |
@@ -209,7 +209,7 @@ Deneysel seçenekler yalnızca derleyicinin belirli sürümleri tarafından dest
 | Seçenek | Amaç |
 |--|--|
 | [`/experimental:module`](experimental-module.md) | Deneysel modül desteğini izin vermez. |
-| [`/experimental:preprocessor`](experimental-preprocessor.md) | Deneysel uyumsuz Önişlemci desteğini sunar. |
+| [`/experimental:preprocessor`](experimental-preprocessor.md) | Kullanım dışı. Deneysel uyumsuz Önişlemci desteğini sunar. Kullanırsınız [`/Zc:preprocessor`](zc-preprocessor.md) |
 
 ## <a name="deprecated-and-removed-compiler-options"></a>Kullanım dışı ve kaldırılmış derleyici seçenekleri
 
