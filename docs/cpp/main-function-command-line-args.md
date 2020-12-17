@@ -1,7 +1,7 @@
 ---
 title: '`main` işlev ve komut satırı bağımsız değişkenleri (C++)'
 description: '`main`İşlevi, bir C++ programının giriş noktasıdır.'
-ms.date: 11/19/2020
+ms.date: 12/16/2020
 no-loc:
 - main
 - wmain
@@ -18,12 +18,12 @@ no-loc:
 - char
 - wchar_t
 - extern
-ms.openlocfilehash: 8a5ed43bdacf5d9d6dd2cbc5d1c56783c82b8e9a
-ms.sourcegitcommit: b02c61667ff7f38e7add266d0aabd8463f2dbfa1
+ms.openlocfilehash: a9c68f199d4169c02260542a9730472e4ab397bd
+ms.sourcegitcommit: 387ce22a3b0137f99cbb856a772b5a910c9eba99
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95483223"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97645078"
 ---
 # <a name="no-locmain-function-and-command-line-arguments"></a>`main` işlev ve komut satırı bağımsız değişkenleri
 
@@ -109,19 +109,21 @@ Aşağıdaki örnek *`argc`* ,, *`argv`* ve *`envp`* bağımsız değişkenlerin
 #include <string.h>
 
 using namespace std;
-int main( int argc, char *argv[], char *envp[] ) {
-    int iNumberLines = 0;    // Default is no line numbers.
+int main( int argc, char *argv[], char *envp[] )
+{
+    bool numberLines = false;    // Default is no line numbers.
 
     // If /n is passed to the .exe, display numbered listing
     // of environment variables.
-
     if ( (argc == 2) && _stricmp( argv[1], "/n" ) == 0 )
-         iNumberLines = 1;
+         numberLines = true;
 
     // Walk through list of strings until a NULL is encountered.
-    for( int i = 0; envp[i] != NULL; ++i ) {
-        if( iNumberLines )
-            cout << i << ": " << envp[i] << "\n";
+    for ( int i = 0; envp[i] != NULL; ++i )
+    {
+        if ( numberLines )
+            cout << i << ": "; // Prefix with numbers if /n specified
+        cout << envp[i] << "\n";
     }
 }
 ```
@@ -182,7 +184,7 @@ Aşağıdaki tabloda, önceki listede bulunan kuralları gösteren örnek giriş
 
 ## <a name="wildcard-expansion"></a>Joker karakter genişletmesi
 
-Microsoft derleyicisi isteğe bağlı olarak *wildcard* char , **`?`** **`*`** komut satırında dosya adı ve yol bağımsız değişkenlerini belirtmek için joker karakterleri, soru işaretini () ve yıldız işaretini () kullanmanıza olanak tanır.
+Microsoft derleyicisi isteğe bağlı olarak  char , **`?`** **`*`** komut satırında dosya adı ve yol bağımsız değişkenlerini belirtmek için joker karakterleri, soru işaretini () ve yıldız işaretini () kullanmanıza olanak tanır.
 
 Komut satırı bağımsız değişkenleri, varsayılan olarak joker karakterleri dize dizisindeki ayrı dizelerde genişletmeyen çalışma zamanı başlangıç kodundaki bir iç yordam tarafından işlenir `argv` . *`setargv.obj`* *`wsetargv.obj`* `wmain` **`/link`** Derleyici seçeneklerinizde veya komut satırlarınızın dosyasını (dosyası) **`LINK`** ekleyerek joker karakter genişletmeyi etkinleştirebilirsiniz.
 

@@ -1,23 +1,22 @@
 ---
-description: 'Hakkında daha fazla bilgi edinin: özel durum filtresi yazma'
+description: Yapısal bir özel durum filtresi yazma hakkında daha fazla bilgi edinin.
 title: Özel durum filtresi yazma
-ms.date: 11/04/2016
+ms.date: 12/16/2020
 helpviewer_keywords:
 - exception handling [C++], filters
-ms.assetid: 47fc832b-a707-4422-b60a-aaefe14189e5
-ms.openlocfilehash: 580c0f0b339b25137bb2aea0621463a89e99fc33
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 8b6706c7dfe0e96e26f77f1f3a452db638141803
+ms.sourcegitcommit: 387ce22a3b0137f99cbb856a772b5a910c9eba99
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97302822"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97645065"
 ---
 # <a name="writing-an-exception-filter"></a>Özel durum filtresi yazma
 
-Özel bir durumu, özel durum işleyicisinin düzeyine atlayarak veya yürütmeyi devam ettirerek işleyebilirsiniz. Özel durumu işlemek ve üzerinde gezinmek için özel durum işleyici kodu kullanmak yerine, sorunu temizlemek için *filtreyi* kullanabilir ve sonra-1 ' i döndürerek, yığını temizlemeden normal akışı sürdürebilirsiniz.
+Özel bir durumu, özel durum işleyicisinin düzeyine atlayarak veya yürütmeyi devam ettirerek işleyebilirsiniz. Özel durumu işlemek ve üzerinde gezinmek için özel durum işleyici kodu kullanmak yerine, sorunu temizlemek için bir *filtre* ifadesi kullanabilirsiniz. Ardından, `EXCEPTION_CONTINUE_EXECUTION` (-1) öğesini döndürerek, yığını temizlemeden normal akışı sürdürebilirsiniz.
 
 > [!NOTE]
-> Bazı özel durumlar devam ettirilemez. Bu tür bir özel durum için *filtre* -1 olarak değerlendirilirse, sistem yeni bir özel durum oluşturur. [RaiseException](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception)çağırdığınızda, özel durumun devam edip etmediğini belirlersiniz.
+> Bazı özel durumlar devam ettirilemez. Bu tür bir özel durum için *filtre* -1 olarak değerlendirilirse, sistem yeni bir özel durum oluşturur. [`RaiseException`](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception)' İ çağırdığınızda, özel durumun devam edip etmediğini belirlersiniz.
 
 Örneğin, aşağıdaki kod *filtre* ifadesinde bir işlev çağrısı kullanır: Bu işlev sorunu işler ve normal denetim akışını sürdürmeye yönelik-1 döndürür:
 
@@ -48,9 +47,9 @@ int Eval_Exception ( int n_except ) {
 
 Filtrenin karmaşık her şeyi *yapması gerektiğinde* *filtre* ifadesinde bir işlev çağrısı kullanmak iyi bir fikirdir. İfadenin değerlendirilmesi işlevin, bu durumda `Eval_Exception`'ın yürütülmesine neden olur.
 
-Özel durumu belirleyebilmek için [GetExceptionCode](/windows/win32/Debug/getexceptioncode) kullanımını göz önünde atın. Filtrenin içinde bu işlevi çağırmanız gerekir. `Eval_Exception` çağrılamıyor `GetExceptionCode` , ancak kendisine geçirilen özel durum kodu olmalıdır.
+[`GetExceptionCode`](/windows/win32/Debug/getexceptioncode)Özel durumu öğrenmek için kullanımını göz önünde edin. Bu işlev, deyiminin filtre ifadesinin içinde çağrılmalıdır **`__except`** . `Eval_Exception` çağrılamıyor `GetExceptionCode` , ancak kendisine geçirilen özel durum kodu olmalıdır.
 
-Bu işleyici, özel durum bir tamsayı veya kayan nokta taşması değilse deneyimi başka bir işleyiciye geçirir. Tamsayı veya kayan nokta taşmasıysa, işleyici bazı genel değişkenleri sıfırlamak için bir işlev çağırır (`ResetVars` yalnızca bir örnektir, API işlevi değildir). Bu örnekte boş olan *deyimin blok-2*' i hiçbir durumda `Eval_Exception` EXCEPTION_EXECUTE_HANDLER (1) döndürmediği için hiçbir şekilde yürütülemez.
+Bu işleyici, özel durum bir tamsayı veya kayan nokta taşması değilse deneyimi başka bir işleyiciye geçirir. Tamsayı veya kayan nokta taşmasıysa, işleyici bazı genel değişkenleri sıfırlamak için bir işlev çağırır (`ResetVars` yalnızca bir örnektir, API işlevi değildir). **`__except`** Bu örnekte boş olan bildiri bloğu hiçbir `Eval_Exception` süre (1) döndürülmediği için hiçbir şekilde yürütülemez `EXCEPTION_EXECUTE_HANDLER` .
 
 Bir işlev çağrısı kullanmak, karmaşık filtre ifadeleriyle başa çıkmak için genel anlamda iyi bir yöntemdir. Yararlı olan diğer iki C dili özelliği şunlardır:
 
@@ -58,7 +57,7 @@ Bir işlev çağrısı kullanmak, karmaşık filtre ifadeleriyle başa çıkmak 
 
 - Virgül işleci
 
-Koşullu işleç, belirli bir dönüş kodunu denetlemek ve ardından iki farklı değerden birini döndürmek için kullanılabildiğinden genellikle çok yararlı olur. Örneğin, aşağıdaki koddaki filtre özel durumu yalnızca özel durum STATUS_INTEGER_OVERFLOW tanır:
+Koşullu operatör genellikle burada yararlı olur. Bu, belirli bir dönüş kodunu denetlemek ve sonra iki farklı değerden birini döndürmek için kullanılabilir. Örneğin, aşağıdaki koddaki filtre özel durumu yalnızca özel durum ise tanır `STATUS_INTEGER_OVERFLOW` :
 
 ```cpp
 __except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ? 1 : 0 ) {
@@ -70,9 +69,9 @@ Bu durumda koşullu işlecin amacı, temel olarak netlik sağlamaktır, çünkü
 __except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ) {
 ```
 
-Koşullu operatör, filtrenin-1 ' i değerlendirmek isteyebileceğiniz durumlarda daha yararlı olur EXCEPTION_CONTINUE_EXECUTION.
+Koşullu operatör, filtrenin-1 ' i değerlendirmesini isteyebileceğiniz durumlarda daha yararlıdır `EXCEPTION_CONTINUE_EXECUTION` .
 
-Virgül işleci, tek bir ifade içerisinde birden fazla bağımsız işlemler gerçekleştirmenizi sağlar. Etkisi, kabaca birden fazla deyim yürütmeye ve ardından son ifadenin değerini döndürmeye benzerdir. Örneğin, aşağıdaki kod özel durum kodunu bir değişkende depolar ve ardından bunu test eder:
+Virgül işleci birden çok ifadeyi sırayla yürütmenize olanak sağlar. Ardından, son ifadenin değerini döndürür. Örneğin, aşağıdaki kod özel durum kodunu bir değişkende depolar ve ardından bunu test eder:
 
 ```cpp
 __except( nCode = GetExceptionCode(), nCode == STATUS_INTEGER_OVERFLOW )

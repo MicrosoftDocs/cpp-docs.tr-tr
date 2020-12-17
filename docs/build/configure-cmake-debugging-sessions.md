@@ -1,15 +1,15 @@
 ---
 title: Visual Studio 'da CMake hata ayıklama oturumlarını yapılandırma
 description: CMake hata ayıklayıcı ayarlarını yapılandırmak için Visual Studio 'Nun nasıl kullanılacağını açıklar.
-ms.date: 12/07/2020
+ms.date: 12/16/2020
 helpviewer_keywords:
 - CMake debugging
-ms.openlocfilehash: b289acf8d0aa89cef1d2a72c988b41d99914f828
-ms.sourcegitcommit: 102bd6f7a878d85c8ceab8f28d0359f562850ea0
+ms.openlocfilehash: 36a4d64b987c1468caa06ed8670dfaf7d44abad3
+ms.sourcegitcommit: 387ce22a3b0137f99cbb856a772b5a910c9eba99
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862574"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97645112"
 ---
 # <a name="configure-cmake-debugging-sessions"></a>CMake hata ayıklama oturumlarını yapılandırma
 
@@ -21,7 +21,7 @@ Yerel CMake desteği Visual Studio 2017 ve üzeri sürümlerde kullanılabilir. 
 
 ::: moniker range=">=msvc-150"
 
-Tüm yürütülebilir CMake hedefleri, **genel** araç çubuğundaki **Başlangıç öğesi** açılır listesinde gösterilir. Bir hata ayıklama oturumu başlatmak ve hata ayıklayıcıyı başlatmak için bir tane seçin.
+Tüm yürütülebilir CMake hedefleri, araç çubuğundaki **Başlangıç öğesi** açılır listesinde gösterilir. Bir hata ayıklama oturumu başlatmak ve hata ayıklayıcıyı başlatmak için bir tane seçin.
 
 ![CMake başlangıç öğesi açılan kutusu](media/cmake-startup-item-dropdown.png "CMake başlangıç öğesi açılan kutusu")
 
@@ -51,7 +51,7 @@ Herhangi bir sayıda CMake hedefi için hata ayıklama yapılandırması oluştu
 
 ## <a name="reference-keys-in-cmakesettingsjson"></a>CMakeSettings.jsiçindeki başvuru anahtarları
 
-Dosyadaki bir *CMakeSettings.js* herhangi bir anahtara başvurmak için, `cmake.` *launch.vs.jsüzerine* sonuna ekleyin. Aşağıdaki örnek, *launch.vs.json* `remoteCopySources` Şu anda seçili olan yapılandırma için *CMakeSettings.json* dosyasındaki anahtarın değerini gösteren basit birlaunch.vs.jsdosyası gösterir:
+Dosyadaki bir *CMakeSettings.js* herhangi bir anahtara başvurmak için, `cmake.` *launch.vs.jsüzerine* sonuna ekleyin. Aşağıdaki örnek,  `remoteCopySources` Şu anda seçili olan yapılandırma için *CMakeSettings.json* dosyasındaki anahtarın değerini gösteren basit birlaunch.vs.jsdosyası gösterir:
 
 ```json
 {
@@ -112,8 +112,10 @@ Visual Studio 2019 sürüm 16,6 ' de, `type: cppgdb` uzak sistemlerde ve WSL 'de
 #### <a name="additional-options-allowed-with-the-gdbserver-configuration-167-or-later"></a>Yapılandırmaya izin verilen ek seçenekler `gdbserver` (16,7 veya üzeri)
 
 - `program`: Varsayılan olarak olur `"${debugInfo.fullTargetPath}"` . Hata ayıklaması yapılacak uygulamanın UNIX yolu. Yalnızca derleme veya dağıtım konumundaki hedef yürütülebilir dosyadan farklıysa gereklidir.
-> [!TIP]
-> Dağıtım henüz yerel çapraz derleme senaryolarında desteklenmiyor. Windows üzerinde çapraz derleme yapıyorsanız (örneğin, Windows 'da bir Linux ARM yürütülebilir dosyası oluşturmak için bir çapraz derleyicisini kullanarak), `program` hata ayıklamadan önce, ikili dosyayı uzak ARM makinesinde belirtilen konuma el ile kopyalamanız gerekir.
+
+  > [!TIP]
+  > Dağıtım henüz yerel çapraz derleme senaryolarında desteklenmiyor. Windows üzerinde çapraz derleme yapıyorsanız (örneğin, Windows 'da bir Linux ARM yürütülebilir dosyası oluşturmak için bir çapraz derleyicisini kullanarak), `program` hata ayıklamadan önce, ikili dosyayı uzak ARM makinesinde belirtilen konuma el ile kopyalamanız gerekir.
+
 - `remoteMachineName`: Varsayılan olarak olur `"${debugInfo.remoteMachineName}"` . Hata ayıklama için programı barındıran uzak sistemin adı. Yalnızca yapı sisteminden farklıysa gereklidir. [Bağlantı yöneticisinde](../linux/connect-to-your-remote-linux-computer.md)mevcut bir giriş olmalıdır. Var olan tüm uzak bağlantıların listesini görüntülemek için **CTRL + boşluk** tuşlarına basın.
 - `cwd`: Varsayılan olarak olur `"${debugInfo.defaultWorkingDirectory}"` . Çalıştıran uzak sistemdeki dizinin tam UNIX yolu `program` . Dizinin var olması gerekir.
 - `gdbPath`: Varsayılan olarak olur `${debugInfo.vsInstalledGdb}` . `gdb`Hata ayıklama için kullanılan tam Windows yolu. , `gdb` C/C++ iş yüküyle Linux geliştirmeyle birlikte yüklenir.

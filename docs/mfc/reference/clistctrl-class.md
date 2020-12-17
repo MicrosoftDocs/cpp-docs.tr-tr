@@ -265,12 +265,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-ms.openlocfilehash: a72cc336a6f962eb5129bec15ccb3ed2fe748e10
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 8466d8436aaf76a3acdfc6e50682745c9ad4fcc2
+ms.sourcegitcommit: 387ce22a3b0137f99cbb856a772b5a910c9eba99
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97333481"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97645234"
 ---
 # <a name="clistctrl-class"></a>CListCtrl sınıfı
 
@@ -533,7 +533,7 @@ CSize ApproximateViewRect(
 Denetimin önerilen boyutları (piksel cinsinden). Boyutlar belirtilmemişse, çerçeve denetimin geçerli genişlik veya yükseklik değerlerini kullanır.
 
 *ıyeniden bağlama*<br/>
-Denetimde görüntülenecek öğe sayısı. Bu parametre-1 ise, çerçeve denetimde bulunan toplam öğe sayısını kullanır.
+Denetimde görüntülenecek öğe sayısı. Şu anda denetimde bulunan toplam öğe sayısını kullanmak için-1 ' i geçirin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -709,7 +709,7 @@ Başarılı olursa sürükle resmi listesine yönelik bir işaretçi. Aksi takdi
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CImageList`Nesne kalıcıdır ve tamamlandığında silmeniz gerekir. Örneğin:
+`CImageList`Nesne kalıcıdır ve tamamlandığında silmeniz gerekir. Örnek:
 
 ```cpp
         CImageList* pImageList = m_myListCtrl.CreateDragImage(nItem, &point);
@@ -3916,7 +3916,7 @@ BOOL SetItemState(
 ### <a name="parameters"></a>Parametreler
 
 *nÖğe*<br/>
-Durumu ayarlanacak olan öğenin dizini.
+Durumu ayarlanacak olan öğenin dizini. Durum değişikliğini tüm öğelere uygulamak için-1 ' i geçirin.
 
 *pItem*<br/>
 Windows SDK açıklanan şekilde bir [Lvidıtem](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının adresi. Yapının `stateMask` üyesi, değiştirilecek durum bitlerini ve yapının `state` üyesi bu bitlerin yeni değerlerini içerir. Diğer Üyeler yok sayılır.

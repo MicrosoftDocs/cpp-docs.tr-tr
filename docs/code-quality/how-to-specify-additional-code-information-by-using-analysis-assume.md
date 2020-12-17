@@ -1,40 +1,39 @@
 ---
-description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: _Analysis_assume kullanarak ek kod bilgileri belirtme'
-title: Kod Analizi ipuçları için _Analysis_assume kullanma
-ms.date: 11/04/2016
+description: _Analysis_assume_ kullanarak ek kod bilgileri belirtme hakkında daha fazla bilgi edinin.
+title: Kod Analizi ipuçları için _Analysis_assume_ kullanma
+ms.date: 12/16/2020
 ms.topic: conceptual
 f1_keywords:
-- _Analysis_assume
+- _Analysis_assume_
 helpviewer_keywords:
-- _Analysis_assume
-ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
-ms.openlocfilehash: 1960fae929f1bd0ffbac4979b76541fd0d396e42
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+- _Analysis_assume_
+ms.openlocfilehash: f4244a896d4334cb6c5e857e63b39be0cd53b08b
+ms.sourcegitcommit: 387ce22a3b0137f99cbb856a772b5a910c9eba99
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97151560"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97645130"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>Nasıl yapılır: _Analysis_assume kullanarak ek kod bilgileri belirtme
+# <a name="how-to-specify-additional-code-information-by-using-_analysis_assume_"></a>Kullanarak ek kod bilgileri belirtme `_Analysis_assume_`
 
-Analiz işleminin ve uyarıların azaltılmasına yardımcı olacak C/C++ kodu için kod analizi aracına yönelik ipuçları sağlayabilirsiniz. Ek bilgi sağlamak için aşağıdaki işlevi kullanın:
+Analiz işleminin ve uyarıların azaltılmasına yardımcı olacak C/C++ kodu için kod analizi aracına yönelik ipuçları sağlayabilirsiniz. Ek bilgi sağlamak için aşağıdaki işlev makrosunu kullanın:
 
-`_Analysis_assume(`  `expr`  `)`
+`_Analysis_assume( expr )`
 
-`expr` -true olarak değerlendirilme kabul edilen herhangi bir ifade.
+*`expr`* -true olarak değerlendirilme kabul edilen herhangi bir ifade.
 
-Kod Analizi Aracı, ifade tarafından temsil edilen koşulun işlevin göründüğü noktada doğru olduğunu varsayar ve örneğin bir değişkene atama yaparak ifade değiştirilene kadar doğru kalır.
+Kod Analizi Aracı, ifadenin gösterdiği koşulun *`expr`* işlevin göründüğü noktada doğru olduğunu varsayar. Ve, *`expr`* Örneğin bir değişkene atama ile değiştirilene kadar doğru kalır.
 
 > [!NOTE]
-> `_Analysis_assume` kod iyileştirmesini etkilemez. Kod Analizi aracının dışında, `_Analysis_assume` bir op olarak tanımlanır.
+> `_Analysis_assume_` kod iyileştirmesini etkilemez. Kod Analizi aracının dışında, `_Analysis_assume_` bir op olarak tanımlanır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, `_Analysis_assume` Kod Analizi uyarı [C6388](../code-quality/c6388.md)düzeltmek için kullanır:
+Aşağıdaki kod, `_Analysis_assume_` Kod Analizi uyarı [C6388](../code-quality/c6388.md)düzeltmek için kullanır:
 
 ```cpp
-#include<windows.h>
-#include<codeanalysis\sourceannotations.h>
+#include <windows.h>
+#include <codeanalysis\sourceannotations.h>
 
 using namespace vc_attributes;
 
@@ -48,7 +47,7 @@ void test()
 {
     char pc = (char)malloc(5);
     FreeAndNull(&pc);
-    _Analysis_assume(pc == NULL);
+    _Analysis_assume_(pc == NULL);
     f(pc);
 }
 ```

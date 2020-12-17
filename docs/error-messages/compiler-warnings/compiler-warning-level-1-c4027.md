@@ -1,21 +1,22 @@
 ---
-description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4027'
+description: Derleyici Uyarısı hakkında daha fazla bilgi edinin (düzey 1) C4027
 title: Derleyici Uyarısı (düzey 1) C4027
-ms.date: 11/04/2016
+ms.date: 12/16/2020
 f1_keywords:
 - C4027
 helpviewer_keywords:
 - C4027
-ms.assetid: f30d57b9-20c4-4284-8686-566d9f0ca7fc
-ms.openlocfilehash: 6f17cb0ccc3603abf1804827916a013fa2471f7f
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 1489ca32211854bcf1ef55d1a4ac806ab1611f43
+ms.sourcegitcommit: 387ce22a3b0137f99cbb856a772b5a910c9eba99
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97332252"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97645182"
 ---
 # <a name="compiler-warning-level-1-c4027"></a>Derleyici Uyarısı (düzey 1) C4027
 
-işlev biçimsel parametre listesi olmadan bildiriliyor
+> işlev biçimsel parametre listesi olmadan bildiriliyor
 
-İşlev bildiriminde biçimsel parametre yoktur, ancak işlev tanımında biçimsel parametreler veya bir çağrıda gerçek parametreler bulunur. Bu işlev için sonraki çağrılar, işlevin işlev tanımında veya çağrısında bulunan türlerin gerçek parametrelerini aldığını varsayar.
+İşlev bildiriminde hiç biçimsel parametre yoktu, ancak işlev tanımında veya bir çağrıda gerçek parametrelerde biçimsel parametreler var.
+
+Derleyici bir parametre listesi olmadan işlev adının eski C stili ileri bildirimini kabul eder, ancak bunu uyarır. Daha sonra bu işleve yapılan çağrılar için, derleyici işlevin işlev tanımında veya çağrısında bulunan türlerin gerçek parametrelerini aldığını varsayar. İşlev bildiridefinizin işlev tanımının imzasıyla eşleşecek şekilde değiştirmenizi öneririz.

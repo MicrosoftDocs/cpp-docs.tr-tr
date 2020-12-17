@@ -2,12 +2,12 @@
 title: Visual Studio 'da hedef Linux sisteminize bağlanma
 description: Visual Studio C++ projesinin içinden bir uzak Linux makinesine veya Linux için Windows alt sistemine bağlanma.
 ms.date: 01/17/2020
-ms.openlocfilehash: da74d1c735a29304fdf46e920eac45580f386259
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: b1907cc4c1c80a9d8ffba06849c9a80f1a8fbfbe
+ms.sourcegitcommit: 387ce22a3b0137f99cbb856a772b5a910c9eba99
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921795"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97645221"
 ---
 # <a name="connect-to-your-target-linux-system-in-visual-studio"></a>Visual Studio 'da hedef Linux sisteminize bağlanma
 
@@ -78,9 +78,9 @@ SSH zaten Linux sisteminizde ayarlanmamışsa ve çalışmıyorsa, yüklemek iç
 
 1. Aşağıdaki bilgileri girin:
 
-   | Giriş | Açıklama
+   | Giriş | Description
    | ----- | ---
-   | **Konak Adı**           | Hedef cihazınızın adı veya IP adresi
+   | **Ana bilgisayar adı**           | Hedef cihazınızın adı veya IP adresi
    | **Bağlantı noktası**                | SSH hizmetinin üzerinde çalıştığı bağlantı noktası, genellikle 22
    | **Kullanıcı adı**           | Kimlik doğrulaması yapılacak Kullanıcı
    | **Kimlik doğrulaması türü** | Parola ve özel anahtar her ikisi de desteklenir
@@ -106,7 +106,7 @@ SSH zaten Linux sisteminizde ayarlanmamışsa ve çalışmıyorsa, yüklemek iç
 
 ## <a name="logging-for-remote-connections"></a>Uzak bağlantılar için günlüğe kaydetme
 
-   Bağlantı sorunlarını gidermeye yardımcı olmak için günlük kaydını etkinleştirebilirsiniz. Menü çubuğunda **araçlar > seçenekler** ' i seçin. **Seçenekler** iletişim kutusunda, **platformlar arası > günlük kaydını** seçin:
+   Bağlantı sorunlarını gidermeye yardımcı olmak için günlük kaydını etkinleştirebilirsiniz. Menü çubuğunda **araçlar > seçenekler**' i seçin. **Seçenekler** iletişim kutusunda, **platformlar arası > günlük kaydını** seçin:
 
    ![Uzaktan günlüğe kaydetme](media/remote-logging-vs2019.png)
 
@@ -116,7 +116,7 @@ SSH zaten Linux sisteminizde ayarlanmamışsa ve çalışmıyorsa, yüklemek iç
 
 ## <a name="command-line-utility-for-the-connection-manager"></a>Bağlantı Yöneticisi için komut satırı yardımcı programı  
 
-**Visual studio 2019 sürüm 16,5 veya üzeri** : ConnectionManager.exe, Visual Studio dışında Uzaktan geliştirme bağlantılarını yönetmeye yönelik bir komut satırı yardımcı programıdır. Yeni bir geliştirme makinesi sağlama gibi görevler için faydalıdır. Ayrıca, bu uygulamayı kullanarak sürekli tümleştirme için Visual Studio 'Yu ayarlayabilirsiniz. Örnek olarak, ConnectionManager komutuna yönelik bir başvuru ve bkz. [ConnectionManager başvurusu](connectionmanager-reference.md).  
+**Visual studio 2019 sürüm 16,5 veya üzeri**: ConnectionManager.exe, Visual Studio dışında Uzaktan geliştirme bağlantılarını yönetmeye yönelik bir komut satırı yardımcı programıdır. Yeni bir geliştirme makinesi sağlama gibi görevler için faydalıdır. Ayrıca, bu uygulamayı kullanarak sürekli tümleştirme için Visual Studio 'Yu ayarlayabilirsiniz. Örnek olarak, ConnectionManager komutuna yönelik bir başvuru ve bkz. [ConnectionManager başvurusu](connectionmanager-reference.md).  
 
 ::: moniker-end
 
@@ -124,9 +124,9 @@ SSH zaten Linux sisteminizde ayarlanmamışsa ve çalışmıyorsa, yüklemek iç
 
 ## <a name="tcp-port-forwarding"></a>TCP bağlantı noktası Iletme
 
-Visual Studio 'nun Linux desteğinin TCP bağlantı noktası iletme bağımlılığı vardır. Uzak sisteminizde TCP bağlantı noktası iletme devre dışıysa, **rsync** ve **gdbserver** etkilenir. Bu bağımlılık etkilenirse, geliştirici topluluğu 'nda bu [öneri biletini](https://developercommunity.visualstudio.com/idea/840265/dont-rely-on-ssh-tcp-port-forwarding-for-c-remote.html) kullanabilirsiniz.
+Visual Studio 'nun Linux desteğinin TCP bağlantı noktası iletme bağımlılığı vardır. Uzak sisteminizde TCP bağlantı noktası iletme devre dışıysa, **rsync** ve **gdbserver** etkilenir. Bu bağımlılık etkilenirse, geliştirici topluluğu 'nda bu [öneri biletini](https://developercommunity2.visualstudio.com/t/shDonshshtsh-shrelysh-s/840265?space=62) kullanabilirsiniz.
 
-rsync, hem MSBuild tabanlı Linux projeleri hem de CMake projeleri tarafından, [uzak sisteminizdeki üst bilgileri IntelliSense tarafından kullanılmak üzere Windows 'a kopyalamak](configure-a-linux-project.md#remote_intellisense)için kullanılır. TCP bağlantı noktası iletmeyi etkinleştirmezseniz, uzak üst bilgilerin otomatik indirilmesini devre dışı bırakın. Devre dışı bırakmak için **araçlar > seçenekler > platformlar arası > bağlantı yöneticisi > uzak üstbilgiler IntelliSense Yöneticisi** ' ni kullanın. Uzak sistemde TCP bağlantı noktası iletme etkin değilse, IntelliSense için uzak üst bilgilerin indirilmesi başladığında bu hatayı görürsünüz:
+rsync, hem MSBuild tabanlı Linux projeleri hem de CMake projeleri tarafından, [uzak sisteminizdeki üst bilgileri IntelliSense tarafından kullanılmak üzere Windows 'a kopyalamak](configure-a-linux-project.md#remote_intellisense)için kullanılır. TCP bağlantı noktası iletmeyi etkinleştirmezseniz, uzak üst bilgilerin otomatik indirilmesini devre dışı bırakın. Devre dışı bırakmak için **araçlar > seçenekler > platformlar arası > bağlantı yöneticisi > uzak üstbilgiler IntelliSense Yöneticisi**' ni kullanın. Uzak sistemde TCP bağlantı noktası iletme etkin değilse, IntelliSense için uzak üst bilgilerin indirilmesi başladığında bu hatayı görürsünüz:
 
 ![Üst bilgiler hatası](media/port-forwarding-headers-error.png)
 

@@ -1,25 +1,23 @@
 ---
-description: 'Hakkında daha fazla bilgi edinin: __noop'
+description: 'Microsoft C/C++ iç hakkında daha fazla bilgi edinin: __noop'
 title: __noop
-ms.date: 09/02/2019
+ms.date: 12/16/2020
 f1_keywords:
 - __noop_cpp
 - __noop
 helpviewer_keywords:
 - __noop keyword [C++]
 ms.assetid: 81ac6e97-7bf8-496b-b3c4-fd02837573e5
-ms.openlocfilehash: 4b140141e0f773f01cd666dd67f77244d7aef8a5
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 5fd300ca8d68305a12e6b5540be05aa60a042a44
+ms.sourcegitcommit: 387ce22a3b0137f99cbb856a772b5a910c9eba99
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97222469"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97645091"
 ---
-# <a name="__noop"></a>__noop
+# `__noop`
 
-**Microsoft'a Özgü**
-
-İç öğe, **`__noop`** bir işlevin yoksayılması gerektiğini belirtir. Bağımsız değişken listesi ayrıştırılır, ancak bağımsız değişkenler için kod oluşturulmaz. Değişken sayıda bağımsız değişken alan genel hata ayıklama işlevlerinde kullanılmak üzere tasarlanmıştır.
+**Microsoft 'a özgü** **`__noop`** iç öğe, bir işlevin yoksayılması gerektiğini belirtir. Bağımsız değişken listesi ayrıştırılır, ancak bağımsız değişkenler için kod oluşturulmaz. Derleyici, bağımsız değişkenleri derleyici uyarısı C4100 ve benzer analizler için Başvurulmuş olarak değerlendirir. İç öğe, `__noop` değişken sayıda bağımsız değişken alan genel hata ayıklama işlevlerinde kullanılmak üzere tasarlanmıştır.
 
 Derleyici, **`__noop`** derleme zamanında iç öğesini 0 ' a dönüştürür.
 
@@ -29,6 +27,7 @@ Aşağıdaki kod nasıl kullanabileceğinizi gösterir **`__noop`** .
 
 ```cpp
 // compiler_intrinsics__noop.cpp
+// compile using: cl /EHsc /W4 compiler_intrinsics__noop.cpp
 // compile with or without /DDEBUG
 #include <stdio.h>
 
@@ -38,14 +37,17 @@ Aşağıdaki kod nasıl kullanabileceğinizi gösterir **`__noop`** .
    #define PRINT   __noop
 #endif
 
-int main() {
-   PRINT("\nhello\n");
+#define IGNORE(x) { __noop(x); }
+
+int main(int argv, char ** argc)
+{
+   IGNORE(argv);
+   IGNORE(argc);
+   PRINT("\nDEBUG is defined\n");
 }
 ```
-
-**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
-[Anahtar sözcükler](../cpp/keywords-cpp.md)
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)
