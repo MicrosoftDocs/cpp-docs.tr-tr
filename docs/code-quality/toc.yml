@@ -1,6 +1,6 @@
 - name: Kod analizi belgeleri
   href: ../code-quality/index.yml
-- name: Genel bakış
+- name: Genel Bakış
   displayName: C and C++ code analysis
   href: ../code-quality/code-analysis-for-c-cpp-overview.md
 - name: Hızlı başlangıç
@@ -38,7 +38,7 @@
       href: ../code-quality/intrinsic-functions.md
     - name: En iyi yöntemler ve örnekler (SAL)
       href: ../code-quality/best-practices-and-examples-sal.md
-- name: _Analysis_assume kullanarak ek kod bilgileri belirtme
+- name: Specify additional code information by using _Analysis_assume_
   href: ../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md
 - name: C++ Temel Yönergeleri denetleyici uyarıları
   items:
