@@ -68,7 +68,18 @@
     - name: CMake önceden tanımlanmış yapılandırma şeması başvurusu
       href: ../build/cmake-predefined-configuration-reference.md
 - name: 'vcpkg: C++ için bir paket yöneticisi'
-  href: ../build/vcpkg.md
+  expanded: false
+  items:
+    - name: 'vcpkg: C++ için bir paket yöneticisi'
+      href: ../build/vcpkg.md
+    - name: vcpkg’yi yükleme
+      href: ../build/install-vcpkg.md
+    - name: vcpkg’yi tümleştirme
+      href: ../build/integrate-vcpkg.md
+    - name: vcpkg ile kitaplıkları yönetme
+      href: ../build/manage-libraries-with-vcpkg.md
+    - name: vcpkg komut satırı başvurusu
+      href: ../build/vcpkg-command-line-reference.md
 - name: C++ Derleme İçgörüleri
   href: ../build-insights/get-started-with-cpp-build-insights.md
 - name: Önceden derlenmiş üst bilgi dosyaları
