@@ -5,12 +5,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Parallel Diagnostic Tools [Concurrency Runtime]
 ms.assetid: b1a3f1d2-f5df-4f29-852e-906b3d8341fc
-ms.openlocfilehash: 44d885e8e6c7529bd15fa0aa2e7930773400361f
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: ac6afbbc2bfef3793e9685a7c9e1054b7d677bd8
+ms.sourcegitcommit: 6183207b11575d7b44ebd7c18918e916a0d8c63d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97172433"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97951534"
 ---
 # <a name="parallel-diagnostic-tools-concurrency-runtime"></a>Paralel Tanılama Araçları (Eşzamanlılık Çalışma Zamanı)
 
@@ -28,7 +28,7 @@ Profil oluşturma araçları, çok iş parçacıklı bir uygulamanın kendisiyle
 
 Eşzamanlılık Çalışma Zamanı, çeşitli olaylar meydana geldiğinde profil oluşturucular gibi izleme araçlarına bildirmek için [Windows Için olay izleme](/windows/win32/ETW/event-tracing-portal) (ETW) kullanır. Bu olaylar, bir Scheduler 'ın ne zaman etkinleştirildiğini veya devre dışı bırakıldığını, bir bağlamın başladığı, bittiği, blokların, kaldırmaların veya ne zaman, ne zaman bir paralel algoritma başladığı veya bittiğini içerir.
 
-[Eşzamanlılık görselleştiricisi](/visualstudio/profiling/concurrency-visualizer) gibi araçlar bu işlevselliği kullanır; Bu nedenle, genellikle bu olaylarla doğrudan çalışmanız gerekmez. Ancak, bu olaylar özel bir profil oluşturucu geliştirirken veya [XPerf](https://go.microsoft.com/fwlink/p/?linkid=160628)gibi olay izleme araçlarını kullanırken faydalıdır.
+[Eşzamanlılık görselleştiricisi](/visualstudio/profiling/concurrency-visualizer) gibi araçlar bu işlevselliği kullanır; Bu nedenle, genellikle bu olaylarla doğrudan çalışmanız gerekmez. Ancak, bu olaylar özel bir profil oluşturucu geliştirirken veya [Windows performans araç seti](/windows-hardware/test/wpt/)gibi olay izleme araçlarını kullanırken faydalıdır.
 
 Eşzamanlılık Çalışma Zamanı, bu olayları yalnızca izleme etkinleştirildiğinde oluşturur. İzlemeyi devre dışı bırakmak için olay izlemeyi ve [eşzamanlılık::D isableTracing](reference/concurrency-namespace-functions.md#disabletracing) işlevini etkinleştirmek üzere [concurrency:: EnableTracing](reference/concurrency-namespace-functions.md#enabletracing) işlevini çağırın.
 

@@ -163,12 +163,12 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildren
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-ms.openlocfilehash: e126863bebcc3cb8f878a8ece41ee8d9385c0afe
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 8b5c31138601c96ca7af530dbfb1d3517e3998a8
+ms.sourcegitcommit: 6183207b11575d7b44ebd7c18918e916a0d8c63d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97345023"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97951533"
 ---
 # <a name="ctreectrl-class"></a>Ctreeckclass sınıfı
 
@@ -1503,7 +1503,7 @@ HTREEITEM MapAccIdToItem(UINT uAccId) const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Erişilebilirlik yardımları, Engelli kişilerin bilgisayarları kullanmasına yardımcı olan uygulamalardır. Bir erişilebilirlik tanımlayıcısı, `IAccessible` bir penceredeki bir öğeyi benzersiz olarak belirtmek için arabirimi tarafından kullanılır. Erişilebilirlik tanımlayıcıları hakkında daha fazla bilgi için, [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322)'Teki "etkin erişilebilirlik desteği hakkında" konusunu aratın.
+Erişilebilirlik yardımları, Engelli kişilerin bilgisayarları kullanmasına yardımcı olan uygulamalardır. Bir erişilebilirlik tanımlayıcısı, `IAccessible` bir penceredeki bir öğeyi benzersiz olarak belirtmek için arabirimi tarafından kullanılır. API 'ler hakkında daha fazla bilgi için `IAccessible` bkz. [Microsoft Etkin Erişilebilirlik](/windows/win32/winauto/microsoft-active-accessibility).
 
 Bu yöntem, Windows SDK açıklanan [TVM_MAPACCIDTOHTREEITEM](/windows/win32/Controls/tvm-mapaccidtohtreeitem) iletisini gönderir.
 
@@ -1538,7 +1538,7 @@ UINT MapItemToAccID(HTREEITEM hItem) const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Erişilebilirlik yardımları, Engelli kişilerin bilgisayarları kullanmasına yardımcı olan uygulamalardır. Bir erişilebilirlik tanımlayıcısı, `IAccessible` bir penceredeki bir öğeyi benzersiz olarak belirtmek için arabirimi tarafından kullanılır. Erişilebilirlik tanımlayıcıları hakkında daha fazla bilgi için, [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322)'Teki "etkin erişilebilirlik desteği hakkında" konusunu aratın.
+Erişilebilirlik yardımları, Engelli kişilerin bilgisayarları kullanmasına yardımcı olan uygulamalardır. Bir erişilebilirlik tanımlayıcısı, `IAccessible` bir penceredeki bir öğeyi benzersiz olarak belirtmek için arabirimi tarafından kullanılır. API 'ler hakkında daha fazla bilgi için `IAccessible` bkz. [Microsoft Etkin Erişilebilirlik](/windows/win32/winauto/microsoft-active-accessibility).
 
 Bu yöntem, Windows SDK açıklanan [TVM_MAPHTREEITEMTOACCID](/windows/win32/Controls/tvm-maphtreeitemtoaccid) iletisini gönderir.
 
@@ -2281,7 +2281,7 @@ void ShowInfoTip(HTREEITEM hItem);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç ipuçları ve bilgi ipuçları arasındaki fark hakkında daha fazla bilgi için, [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322)'Teki "araç Ipuçları ve bilgi ipuçları" konusunu aratın.
+Araç ipuçları ve bilgi ipuçları arasındaki fark hakkında daha fazla bilgi için bkz. [araç ipuçları ve bilgi ipuçları](/windows/win32/uxguide/ctrl-tooltips-and-infotips).
 
 Bu yöntem, Windows SDK açıklanan [TVM_SHOWINFOTIP](/windows/win32/Controls/tvm-showinfotip) iletisini gönderir.
 

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - .MODEL directive
 ms.assetid: 057f00df-1515-4c55-852a-d936c8a34b53
-ms.openlocfilehash: f4f69b88a2041a13a0b92445c61c4a84d43e442f
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: a4324b89f1194227edd7f1d5b7bd70560eca16be
+ms.sourcegitcommit: 6183207b11575d7b44ebd7c18918e916a0d8c63d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97131436"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97951428"
 ---
 # <a name="model-32-bit-masm"></a>. MODEL (32-bit masa)
 
@@ -51,7 +51,7 @@ Aşağıdaki tabloda, 16 bit ve 32-bit platformları hedeflenirken her bir param
 
 ## <a name="code"></a>Kod
 
-MASı ile ilgili örnekler için, [Visual Studio 2010 Visual C++ örnekleri ve Ilgili belgelerden](https://go.microsoft.com/fwlink/p/?linkid=178749)derleyici örneklerini indirin.
+MASı ile ilgili örnekler için, [Visual Studio 2010 Visual C++ örnekleri ve Ilgili belgelerden](https://github.com/Microsoft/vcsamples)derleyici örneklerini indirin.
 
 Aşağıdaki örnek, yönergesinin kullanımını gösterir `.MODEL` .
 

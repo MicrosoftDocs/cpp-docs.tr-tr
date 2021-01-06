@@ -11,12 +11,12 @@ helpviewer_keywords:
 - CWaitCursor [MFC], CWaitCursor
 - CWaitCursor [MFC], Restore
 ms.assetid: 5dfae2ff-d7b6-4383-b0ad-91e0868c67b3
-ms.openlocfilehash: f9552dcd6f5304c96d550e153870f69d78d932ad
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 5d2323e3be78154c6a9d3ded55ab9e1a951d78b7
+ms.sourcegitcommit: 6183207b11575d7b44ebd7c18918e916a0d8c63d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97318474"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97951508"
 ---
 # <a name="cwaitcursor-class"></a>CWaitCursor sınıfı
 
@@ -122,4 +122,4 @@ Bekleme imlecini, nesnenin bildirildiği sunucudan farklı bir işlevde geri yü
 [CCmdTarget:: EndWaitCursor](../../mfc/reference/ccmdtarget-class.md#endwaitcursor)<br/>
 [CCmdTarget:: RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor)<br/>
 [CWinApp::D oWaitCursor](../../mfc/reference/cwinapp-class.md#dowaitcursor)<br/>
-[Nasıl yapılır: bir Microsoft Foundation Class uygulamasında fare Imlecini değiştirme](https://go.microsoft.com/fwlink/p/?linkid=128044)
+[Visual C++ kullanarak MFC 'deki bir pencere için fare işaretçisini değiştirme](/troubleshoot/cpp/change-mouse-pointer-window-mfc)

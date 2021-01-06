@@ -13,12 +13,12 @@ helpviewer_keywords:
 - CException [MFC], Delete
 - CException [MFC], ReportError
 ms.assetid: cfacf14d-bfe4-4666-a5c7-38b800512920
-ms.openlocfilehash: 39d3266817ee1be20acde0b01c7c5d1aa90313cb
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 5aa5377315d526102f6358f36cb9ed6a60a133be
+ms.sourcegitcommit: 6183207b11575d7b44ebd7c18918e916a0d8c63d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97184666"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97951547"
 ---
 # <a name="cexception-class"></a>CException sınıfı
 
@@ -231,5 +231,4 @@ else
 
 [CObject sınıfı](cobject-class.md)<br/>
 [Hiyerarşi grafiği](../hierarchy-chart.md)<br/>
-[Özel durum Işleme](exception-processing.md)<br/>
-[Nasıl yapılır: kendi özel özel durum sınıflarımı oluşturma](https://go.microsoft.com/fwlink/p/?linkid=128045)
+[Özel durum Işleme](exception-processing.md)
