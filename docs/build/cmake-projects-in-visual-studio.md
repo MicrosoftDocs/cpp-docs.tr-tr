@@ -5,16 +5,16 @@ ms.date: 01/08/2020
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 693179c6da368fa84a5ccb0ffaf2b1b1596972b8
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 8aa11d05aba2fe5f0e781dce2c4b801533bede26
+ms.sourcegitcommit: 6acb62dae8e46d9cfaea7c564a7135b2ca037889
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92922335"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97905237"
 ---
 # <a name="cmake-projects-in-visual-studio"></a>Visual Studio 'da CMake projeleri
 
-CMake, birden çok platformda çalışan derleme işlemlerinin tanımlanması için platformlar arası, açık kaynaklı bir araçtır. Bu makalede CMake hakkında bilgi sahibi olduğunuz varsayılır. Geliştirme sırasında [, CMake Ile yazılımınızı test etme, test etme ve paketleme](https://cmake.org/)hakkında daha fazla bilgi edinebilirsiniz.
+[CMake](https://cmake.org) , birden çok platformda çalışan derleme işlemlerinin tanımlanması için platformlar arası, açık kaynaklı bir araçtır. Bu makalede CMake hakkında bilgi sahibi olduğunuz varsayılır. CMake hakkında daha fazla bilgi için bkz. [CMake belgeleri](https://cmake.org/cmake/help/latest/index.html#). [CMake öğreticisi](https://cmake.org/cmake/help/latest/guide/tutorial/index.html#guide:CMake%20Tutorial) , daha fazla bilgi edinmek için iyi bir başlangıç noktasıdır. 
 
 > [!NOTE]
 > CMake, son birkaç sürüm üzerinde Visual Studio ile daha fazla ve daha tümleştirilmiştir. Visual Studio 'nun tercih ettiğiniz sürümüne ilişkin belgeleri görmek için, **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
@@ -39,7 +39,7 @@ Daha fazla bilgi için bkz. [Visual Studio 'Da C++ Linux iş yükünü yüklemey
 
 - **Çözüm Gezgini** klasör yapısını ve dosyalarını görüntüler.
 
-- Visual Studio cmake.exe çalıştırır ve varsayılan (x64 hata ayıklama) yapılandırması için CMake önbellek dosyası ( *CMakeCache.txt* ) oluşturur. CMake komut satırı, CMake 'in ek çıktılarıyla birlikte **Çıkış penceresi** görüntülenir.
+- Visual Studio cmake.exe çalıştırır ve varsayılan (x64 hata ayıklama) yapılandırması için CMake önbellek dosyası (*CMakeCache.txt*) oluşturur. CMake komut satırı, CMake 'in ek çıktılarıyla birlikte **Çıkış penceresi** görüntülenir.
 
 - Arka planda, Visual Studio IntelliSense, gözatma bilgileri, yeniden düzenleme vb. etkinleştirmek için kaynak dosyaların dizinini oluşturup başlatır. Çalışmanız sırasında, Visual Studio düzenleyicideki değişiklikleri ve kaynakları kaynaklarla eşitlenmiş halde tutmak için diskte da izler.
 
@@ -62,11 +62,11 @@ Her proje klasöründeki **CMakeLists.txt** dosyasını, tıpkı herhangi bir CM
 Bağımsız değişkenleri hata ayıklama zamanında bir yürütülebilir dosyaya geçirmek için, **üzerindelaunch.vs.js** adlı başka bir dosya kullanabilirsiniz. Bazı senaryolarda, Visual Studio otomatik olarak bu dosyaları oluşturur. Bunları el ile düzenleyebilir, hatta dosyayı kendiniz oluşturabilirsiniz.
 
 > [!NOTE]
-> Diğer açık klasör projesi türleri için, iki ek JSON dosyası kullanılır: **üzerindeCppProperties.js** ve **tasks.vs.js** . Bunlardan hiçbiri CMake projelerine uygun değildir.
+> Diğer açık klasör projesi türleri için, iki ek JSON dosyası kullanılır: **üzerindeCppProperties.js** ve **tasks.vs.js**. Bunlardan hiçbiri CMake projelerine uygun değildir.
 
 ## <a name="open-an-existing-cache"></a>Var olan bir önbelleği aç
 
-Var olan bir CMake önbellek dosyasını ( *CMakeCache.txt* ) açtığınızda, Visual Studio sizin için önbelleğinizi ve derleme ağacınızı yönetmeyi denemez. Özel veya tercih ettiğiniz araçlarınız, CMake 'in projenizi nasıl yapılandırdığından emin olun. Visual Studio 'da var olan bir önbelleği açmak için **dosya > > CMake aç** ' ı seçin. Ardından, var olan bir *CMakeCache.txt* dosyasına gidin.
+Var olan bir CMake önbellek dosyasını (*CMakeCache.txt*) açtığınızda, Visual Studio sizin için önbelleğinizi ve derleme ağacınızı yönetmeyi denemez. Özel veya tercih ettiğiniz araçlarınız, CMake 'in projenizi nasıl yapılandırdığından emin olun. Visual Studio 'da var olan bir önbelleği açmak için **dosya > > CMake aç**' ı seçin. Ardından, var olan bir *CMakeCache.txt* dosyasına gidin.
 
 Mevcut bir CMake önbelleğini açık bir projeye ekleyebilirsiniz. Yeni bir yapılandırma ekleyeceğiniz şekilde yapılır. Daha fazla bilgi için, [Visual Studio 'da var olan bir önbelleği açmak](https://devblogs.microsoft.com/cppblog/open-existing-cmake-caches-in-visual-studio/)için blog gönderimize bakın.
 
@@ -78,7 +78,7 @@ CMake projesi oluşturmak için şu seçimlere sahipsiniz:
 
 1. *CMakeLists.txt* sağ tıklayın ve bağlam menüsünden **Oluştur** ' u seçin. Klasör yapınız içinde birden çok hedef varsa, tümünü veya yalnızca bir hedefi derlemeyi seçebilirsiniz.
 
-1. Ana menüden **oluştur > tümünü oluştur** ' u seçin ( **F7** veya **Ctrl + Shift + B** ). **Genel** araç çubuğundaki **Başlangıç öğesi** açılır listesinde bir CMake hedefinin zaten seçili olduğundan emin olun.
+1. Ana menüden **oluştur > tümünü oluştur** ' u seçin (**F7** veya **Ctrl + Shift + B**). **Genel** araç çubuğundaki **Başlangıç öğesi** açılır listesinde bir CMake hedefinin zaten seçili olduğundan emin olun.
 
 ![CMake oluştur menü komutu](media/cmake-build-menu.png "CMake derlemesi komut menüsü")
 
@@ -100,7 +100,7 @@ Dosyadaki **launch.vs.js** özelliklerini ayarlayarak CMake hata ayıklama oturu
 
 ## <a name="just-my-code-for-cmake-projects"></a>CMake projeleri için Yalnızca kendi kodum
 
-MSVC derleyicisini kullanarak Windows için derleme yaparken CMake projelerinde Yalnızca kendi kodum hata ayıklama desteği vardır. Yalnızca kendi kodum ayarını değiştirmek için, **Araçlar**  >  **Seçenekler**  >  **hata ayıklama**  >  **genel** ' e gidin.
+MSVC derleyicisini kullanarak Windows için derleme yaparken CMake projelerinde Yalnızca kendi kodum hata ayıklama desteği vardır. Yalnızca kendi kodum ayarını değiştirmek için, **Araçlar**  >  **Seçenekler**  >  **hata ayıklama**  >  **genel**' e gidin.
 
 ## <a name="vcpkg-integration"></a>Vcpkg tümleştirmesi
 
@@ -108,13 +108,13 @@ MSVC derleyicisini kullanarak Windows için derleme yaparken CMake projelerinde 
 
 ## <a name="customize-configuration-feedback"></a>Yapılandırma geri bildirimini özelleştirme
 
-Varsayılan olarak, çoğu yapılandırma iletisi bir hata olmadığı takdirde bastırılır. **Araçlar**  >  **Seçenekler**  >  **CMake** ' de bu özelliği etkinleştirerek tüm iletileri görebilirsiniz.
+Varsayılan olarak, çoğu yapılandırma iletisi bir hata olmadığı takdirde bastırılır. **Araçlar**  >  **Seçenekler**  >  **CMake**' de bu özelliği etkinleştirerek tüm iletileri görebilirsiniz.
 
    ![CMake tanılama seçeneklerini yapılandırma](media/vs2019-cmake-configure-options.png "CMake tanılama seçenekleri")
 
 ## <a name="editing-cmakeliststxt-files"></a>CMakeLists.txt dosyaları düzenleniyor
 
-Bir *CMakeLists.txt* dosyayı düzenlemek için, **Çözüm Gezgini** dosyasında dosyaya sağ tıklayın ve **Aç** ' ı seçin. Dosyada değişiklik yaparsanız, sarı bir durum çubuğu görünür ve IntelliSense 'in güncelleşmekte olduğunu bildirir. Güncelleştirme işlemini iptal etmek için size bir şans sağlar. *CMakeLists.txt* hakkında bilgi için bkz. [CMake belgeleri](https://cmake.org/documentation/).
+Bir *CMakeLists.txt* dosyayı düzenlemek için, **Çözüm Gezgini** dosyasında dosyaya sağ tıklayın ve **Aç**' ı seçin. Dosyada değişiklik yaparsanız, sarı bir durum çubuğu görünür ve IntelliSense 'in güncelleşmekte olduğunu bildirir. Güncelleştirme işlemini iptal etmek için size bir şans sağlar. *CMakeLists.txt* hakkında bilgi için bkz. [CMake belgeleri](https://cmake.org/documentation/).
 
    ![CMakeLists.txt dosya düzenlemesi](media/cmake-cmakelists.png "CMakeLists.txt dosya düzenlemesi")
 
@@ -128,7 +128,7 @@ Dosyayı kaydettikten hemen sonra yapılandırma adımı otomatik olarak çalı�
 
 ## <a name="troubleshooting-cmake-cache-errors"></a>CMake önbelleği hatalarıyla ilgili sorunları giderme
 
-Bir sorunu tanılamak için CMake önbelleğinin durumu hakkında daha fazla bilgiye ihtiyacınız varsa, aşağıdaki komutlardan birini çalıştırmak için **Proje** ana menüsünü veya Çözüm Gezgini *CMakeLists.txt* bağlam menüsünü açın **Solution Explorer** :
+Bir sorunu tanılamak için CMake önbelleğinin durumu hakkında daha fazla bilgiye ihtiyacınız varsa, aşağıdaki komutlardan birini çalıştırmak için **Proje** ana menüsünü veya Çözüm Gezgini *CMakeLists.txt* bağlam menüsünü açın  :
 
 - **Görüntüleme önbelleği** , düzenleyicide yapı kök klasöründen *CMakeCache.txt* dosyasını açar. ( *CMakeCache.txt* burada yaptığınız herhangi bir düzenleme, önbelleği temizleyene kadar temizlenir. Önbellek temizlendikten sonra devam eden değişiklikler yapmak için bkz. [CMake ayarlarını özelleştirme](customize-cmake-settings.md).)
 
@@ -191,7 +191,7 @@ Aksi takdirde, kaynak dosyaları belirtmek, kitaplıkları bulmak, derleyici ve 
 Hata ayıklama zamanında bir yürütülebilir dosyaya bağımsız değişkenler geçirmeniz gerekiyorsa, **üzerindelaunch.vs.js** adlı başka bir dosya kullanabilirsiniz. Bazı senaryolarda, Visual Studio otomatik olarak bu dosyaları oluşturur. Bunları el ile düzenleyebilir, hatta dosyayı kendiniz oluşturabilirsiniz.
 
 > [!NOTE]
-> Diğer açık klasör projesi türleri için, iki ek JSON dosyası kullanılır: **üzerindeCppProperties.js** ve **tasks.vs.js** . Bunlardan hiçbiri CMake projelerine uygun değildir.
+> Diğer açık klasör projesi türleri için, iki ek JSON dosyası kullanılır: **üzerindeCppProperties.js** ve **tasks.vs.js**. Bunlardan hiçbiri CMake projelerine uygun değildir.
 
 ## <a name="import-an-existing-cache"></a>Var olan bir önbelleği içeri aktar
 
@@ -201,13 +201,13 @@ Mevcut bir *CMakeCache.txt* dosyasını içeri aktardığınızda, Visual Studio
 
 ### <a name="to-import-an-existing-cache"></a>Var olan bir önbelleği içeri aktarmak için
 
-1. Ana menüden **dosya > > CMake aç** ' ı seçin:
+1. Ana menüden **dosya > > CMake aç**' ı seçin:
 
    ![CMake 'i aç](media/cmake-file-open.png "Dosya, açık, CMake")
 
    Bu komut, **önbellekten CMake Içeri aktarma** Sihirbazı 'nı getirir.
 
-2. İçeri aktarmak istediğiniz *CMakeCache.txt* dosyasına gidin ve ardından **Tamam** ' a tıklayın. **Önbellekten CMake projesini Içeri aktarma** Sihirbazı görünür:
+2. İçeri aktarmak istediğiniz *CMakeCache.txt* dosyasına gidin ve ardından **Tamam**' a tıklayın. **Önbellekten CMake projesini Içeri aktarma** Sihirbazı görünür:
 
    ![CMake önbelleğini içeri aktarma](media/cmake-import-wizard.png "CMake içeri aktarma önbelleği Sihirbazı 'nı açın")
 
@@ -221,7 +221,7 @@ CMake projesi oluşturmak için şu seçimlere sahipsiniz:
 
 1. *CMakeLists.txt* sağ tıklayın ve bağlam menüsünden **Oluştur** ' u seçin. Klasör yapınız içinde birden çok hedef varsa, tümünü veya yalnızca bir hedefi derlemeyi seçebilirsiniz.
 
-1. Ana menüden **derleme > Build Solution** ( **F7** veya **Ctrl + Shift + B** ) öğesini seçin. **Genel** araç çubuğundaki **Başlangıç öğesi** açılır listesinde bir CMake hedefinin zaten seçili olduğundan emin olun.
+1. Ana menüden **derleme > Build Solution** (**F7** veya **Ctrl + Shift + B**) öğesini seçin. **Genel** araç çubuğundaki **Başlangıç öğesi** açılır listesinde bir CMake hedefinin zaten seçili olduğundan emin olun.
 
 ![CMake oluştur menü komutu](media/cmake-build-menu.png "CMake derlemesi komut menüsü")
 
@@ -245,7 +245,7 @@ Dosyadaki **launch.vs.js** özelliklerini ayarlayarak CMake hata ayıklama oturu
 
 ## <a name="editing-cmakeliststxt-files"></a>CMakeLists.txt dosyaları düzenleniyor
 
-Bir *CMakeLists.txt* dosyayı düzenlemek için, **Çözüm Gezgini** dosyasında dosyaya sağ tıklayın ve **Aç** ' ı seçin. Dosyada değişiklik yaparsanız, sarı bir durum çubuğu görünür ve IntelliSense 'in güncelleşmekte olduğunu bildirir. Güncelleştirme işlemini iptal etmek için size bir şans sağlar. *CMakeLists.txt* hakkında bilgi için bkz. [CMake belgeleri](https://cmake.org/documentation/).
+Bir *CMakeLists.txt* dosyayı düzenlemek için, **Çözüm Gezgini** dosyasında dosyaya sağ tıklayın ve **Aç**' ı seçin. Dosyada değişiklik yaparsanız, sarı bir durum çubuğu görünür ve IntelliSense 'in güncelleşmekte olduğunu bildirir. Güncelleştirme işlemini iptal etmek için size bir şans sağlar. *CMakeLists.txt* hakkında bilgi için bkz. [CMake belgeleri](https://cmake.org/documentation/).
 
    ![CMakeLists.txt dosya düzenlemesi](media/cmake-cmakelists.png "CMakeLists.txt dosya düzenlemesi")
 
@@ -265,7 +265,7 @@ Derlemeleri ve hata ayıklama oturumlarını çalışma alanındaki projelerin b
 
 ## <a name="troubleshooting-cmake-cache-errors"></a>CMake önbelleği hatalarıyla ilgili sorunları giderme
 
-Bir sorunu tanılamak için CMake önbelleğinin durumu hakkında daha fazla bilgiye ihtiyacınız varsa, aşağıdaki komutlardan birini çalıştırmak için **CMake** ana menüsünü veya Çözüm Gezgini *CMakeLists.txt* bağlam menüsünü açın **Solution Explorer** :
+Bir sorunu tanılamak için CMake önbelleğinin durumu hakkında daha fazla bilgiye ihtiyacınız varsa, aşağıdaki komutlardan birini çalıştırmak için **CMake** ana menüsünü veya Çözüm Gezgini *CMakeLists.txt* bağlam menüsünü açın  :
 
 - **Görüntüleme önbelleği** , düzenleyicide yapı kök klasöründen  *CMakeCache.txt* dosyasını açar. (  *CMakeCache.txt* burada yaptığınız herhangi bir düzenleme, önbelleği temizleyene kadar temizlenir. Önbellek temizlendikten sonra devam eden değişiklikler yapmak için bkz. [CMake ayarlarını özelleştirme](customize-cmake-settings.md).)
 
