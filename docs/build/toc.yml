@@ -511,7 +511,7 @@
                   href: ../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md
                 - name: /errorReport (Dahili derleme hatalarını raporla)
                   href: ../build/reference/errorreport-report-internal-compiler-errors.md
-                - name: /execution/charset (Yürütme karakter kümesini ayarla)
+                - name: /execution-charset (Yürütme karakter kümesini ayarla)
                   href: ../build/reference/execution-charset-set-execution-character-set.md
                 - name: '/experimental:module'
                   href: ../build/reference/experimental-module.md
