@@ -2,12 +2,12 @@
 description: 'Hakkında daha fazla bilgi edinin: ARM64 ABı kurallarına genel bakış'
 title: ARM64 ABI kurallarına genel bakış
 ms.date: 03/27/2019
-ms.openlocfilehash: fbdb709eaa960446bb76712962dbbc3bfb66d38a
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: d597a50b771524b69ef2f2091082d7ca4d19d453
+ms.sourcegitcommit: e71b8da6c8a357aa06bb6b36936a8f4ecae082ad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97157119"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97976342"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI kurallarına genel bakış
 
@@ -204,7 +204,13 @@ Integral değerleri x0 içinde döndürülür.
 
 Kayan nokta değerleri, uygun şekilde S0, D0 veya V0 ' de döndürülür.
 
-HFA ve HVA değerleri, uygun şekilde S0-S3, D0-D3 veya v0-v3 ' de döndürülür.
+Aşağıdakilerden biri varsa bir tür HFA veya HVA olarak kabul edilir:
+
+- Boş değil,
+- Önemsiz olmayan varsayılan veya kopya oluşturucuları, Yıkıcılar veya atama işleçleri yoktur
+- Tüm üyeleri aynı HFA veya HVA türüne sahip veya diğer üyelerin HFA veya HVA türleriyle eşleşen float, Double veya neon türleridir.
+
+Dört veya daha az öğesi olan HFA ve HVA değerleri, S0-S3, D0-D3 veya v0-v3 ' de uygun şekilde döndürülür.
 
 Değere göre döndürülen türler, belirli özelliklere sahip olup olmadığına ve işlevin statik olmayan bir üye işlevi olup olmadığına bağlı olarak farklı şekilde işlenir. Bu özelliklere sahip olan türler,
 
