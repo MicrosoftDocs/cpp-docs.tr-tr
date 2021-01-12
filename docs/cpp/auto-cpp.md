@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - auto keyword [C++]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
-ms.openlocfilehash: 2237c8aa3cb1b1078a8b90ba5a3ba6cba0a7134b
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 061ddac33af4b8e1587b2ab1035d9f96ba18b108
+ms.sourcegitcommit: 14d6ae0d527d05d153e26463d4cd5ada0f43e864
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97319475"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98104758"
 ---
 # <a name="auto-c"></a>`auto` C++
 
@@ -50,7 +50,16 @@ Kullanmak isteyebileceğiniz dönüştürme durumları **`auto`** :
 
 Anahtar sözcüğünü kullanmak için bir **`auto`** değişken bildirmek üzere bir tür yerine bunu kullanın ve bir başlatma ifadesi belirtin. Ayrıca, **`auto`** anahtar sözcüğünü **`const`** ,, **`volatile`** işaretçi ( **`*`** ), başvuru () **`&`** ve rvalue başvurusu ( **`&&`** ) gibi belirticileri ve bildirimcileri kullanarak da değiştirebilirsiniz. Derleyici başlatma ifadesini değerlendirir ve değişkenin türünü bırakmak için bu bilgileri kullanır.
 
-Başlatma ifadesi bir atama (eşittir işareti söz dizimi), doğrudan başlatma (işlev stili sözdizimi), bir [`operator new`](new-operator-cpp.md) ifade veya başlatma ifadesi bir [Aralık tabanlı `for` deyim (C++)](../cpp/range-based-for-statement-cpp.md) deyimindeki *Aralık bildirimi* parametresi olabilir. Daha fazla bilgi için bu belgede daha sonra [başlatıcılar](../cpp/initializers.md) ve kod örnekleri bölümüne bakın.
+**`auto`** Başlatma ifadesi birkaç form alabilir:
+
+- Evrensel başlatma söz dizimi, örneğin `auto a { 42 };` .
+- Atama söz dizimi, örneğin `auto b = 0;` .
+- Önceki iki formu birleştiren evrensel atama söz dizimi `auto c = { 3.14156 };` .
+- Doğrudan başlatma veya gibi Oluşturucu stili sözdizimi `auto d( 1.41421f );` .
+
+Daha fazla bilgi için bu belgede daha sonra [başlatıcılar](../cpp/initializers.md) ve kod örnekleri bölümüne bakın.
+
+**`auto`** Aralık tabanlı bir ifadede döngü parametresini bildirmek için kullanıldığında, **`for`** Örneğin, farklı bir başlatma sözdizimi kullanır `for (auto& i : iterable) do_action(i);` . Daha fazla bilgi için bkz. [Aralık tabanlı `for` Ifade (C++)](../cpp/range-based-for-statement-cpp.md).
 
 **`auto`** Anahtar sözcüğü bir tür için yer tutucudur, ancak kendisi bir tür değildir. Bu nedenle **`auto`** anahtar sözcüğü, [`sizeof`](../cpp/sizeof-operator.md) ve gibi (C++/CLI için) atamalar veya operatörler içinde kullanılamaz [`typeid`](../extensions/typeid-cpp-component-extensions.md) .
 

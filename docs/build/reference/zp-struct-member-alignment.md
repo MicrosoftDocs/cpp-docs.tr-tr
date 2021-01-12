@@ -1,7 +1,7 @@
 ---
 description: Daha fazla bilgi edinin:/Zp (yapı üyesi hizalama)
 title: /Zp (Yapı Üyesi Hizalama)
-ms.date: 04/04/2019
+ms.date: 01/08/2021
 f1_keywords:
 - /zp
 - VC.Project.VCCLCompilerTool.StructMemberAlignment
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - /Zp compiler option [C++]
 - -Zp compiler option [C++]
 ms.assetid: 5242f656-ed9b-48a3-bc73-cfcf3ed2520f
-ms.openlocfilehash: b2029ebded53bcae1b44b5cd72bf59494e58ec4b
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 8d29c442726aff9503a42378fce6a7b8b09526ed
+ms.sourcegitcommit: 14d6ae0d527d05d153e26463d4cd5ada0f43e864
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97224315"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98104784"
 ---
 # <a name="zp-struct-member-alignment"></a>/Zp (Yapı Üyesi Hizalama)
 
@@ -44,9 +44,9 @@ Kullanılabilir Paketleme değerleri aşağıdaki tabloda açıklanmıştır:
 Belirli hizalama gereksinimleriniz yoksa bu seçeneği kullanmayın.
 
 > [!WARNING]
-> Windows SDK ayarlanan C++ üst bilgileri ve **`/Zp8`** dahili olarak paketleme kabul eder. **`/Zp`** Ayar Windows SDK üst bilgileri içinde değiştirilirse bellek bozulması oluşabilir. Üst bilgiler, **`/Zp`** komut satırında ayarladığınız herhangi bir seçenekten etkilenmez.
+> Windows SDK C/C++ üstbilgileri **`/Zp8`** dahili olarak paketlemeyi varsayar. Windows SDK üst bilgileri, **`/Zp`** komut satırında veya kullanarak kullanarak, varsayılan olarak ayarı değiştirmeyin `#pragma pack` . Aksi takdirde, uygulamanız çalışma zamanında bellek bozulmasına neden olabilir.
 
-[`pack`](../../preprocessor/pack.md)Yapı paketleme 'yi denetlemek için de kullanabilirsiniz. Hizalama hakkında daha fazla bilgi için bkz.
+Ayrıca, [ `pack` pragmayı](../../preprocessor/pack.md) denetim yapı paketleme olarak da kullanabilirsiniz. Hizalama hakkında daha fazla bilgi için bkz.
 
 - [`align`](../../cpp/align-cpp.md)
 

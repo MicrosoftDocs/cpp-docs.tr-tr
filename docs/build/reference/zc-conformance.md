@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: 13e06cd75f1ee684c2ee1ad6239aeb77b805675e
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 15027182d632c1076c78e2e8a1335e1059ac7e3b
+ms.sourcegitcommit: 14d6ae0d527d05d153e26463d4cd5ada0f43e864
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041529"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98104771"
 ---
 # <a name="zc-conformance"></a>`/Zc` Uyumsuzlu
 
@@ -33,10 +33,10 @@ Visual Studio C veya C++ ' a bir uzantısı standart ile uyumlu olmayan bir şek
 |--|--|
 | [`/Zc:alignedNew`](zc-alignednew.md) | C++ 17 üzerinde hizalanmış dinamik ayırmayı etkinleştirin (varsayılan olarak, C++ 17 ' de). |
 | [`/Zc:auto`](zc-auto-deduce-variable-type.md) | İçin yeni standart C++ anlamını zorla **`auto`** (varsayılan olarak açık). |
-| [`/Zc__cplusplus`](zc-cplusplus.md) | `__cplusplus`Desteklenen standardı (varsayılan olarak kapalı) raporlamak için makroyu etkinleştirin. |
+| [`/Zc:__cplusplus`](zc-cplusplus.md) | `__cplusplus`Desteklenen standardı (varsayılan olarak kapalı) raporlamak için makroyu etkinleştirin. |
 | [`/Zc:externConstexpr`](zc-externconstexpr.md) | Değişkenler için dış bağlantıları etkinleştirin **`constexpr`** (varsayılan olarak kapalıdır). |
 | [`/Zc:forScope`](zc-forscope-force-conformance-in-for-loop-scope.md) | Standart C++ **`for`** kapsam kurallarını zorla (varsayılan olarak açık). |
-| [`/ZcimplicitNoexcept`](zc-implicitnoexcept-implicit-exception-specifiers.md) | Gerekli işlevlerde örtük ' i etkinleştirin **`noexcept`** (varsayılan olarak açık). |
+| [`/Zc:implicitNoexcept`](zc-implicitnoexcept-implicit-exception-specifiers.md) | Gerekli işlevlerde örtük ' i etkinleştirin **`noexcept`** (varsayılan olarak açık). |
 | [`/Zc:inline`](zc-inline-remove-unreferenced-comdat.md) | Başvurulmayan işlevi veya verileri COMDAT ise veya yalnızca iç bağlantısı varsa kaldırın (varsayılan olarak kapalıdır). |
 | [`/Zc:noexceptTypes`](zc-noexcepttypes.md) | C++ 17 **`noexcept`** kurallarını (varsayılan olarak c++ 17 veya üzeri) uygulayın. |
 | [`/Zc:preprocessor`](zc-preprocessor.md) | Yeni uygun Önişlemci 'yi kullanın (C11/C17 dışında varsayılan olarak kapalıdır). |
@@ -56,4 +56,4 @@ Visual C++ uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Standart 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)
