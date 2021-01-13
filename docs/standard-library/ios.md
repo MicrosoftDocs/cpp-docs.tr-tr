@@ -4,16 +4,15 @@ title: '&lt;işlemine&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <ios>
-- ios/std::<ios>
 helpviewer_keywords:
 - ios header
 ms.assetid: d3d4c161-2f37-4f04-93cc-0a2a89984a9c
-ms.openlocfilehash: d9ea336c3dc36b6f9afa76d00496965bb860d1be
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 9904c91c46eb34bc278a0ce877e157f01a6f9a26
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97231413"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126045"
 ---
 # <a name="ltiosgt"></a>&lt;işlemine&gt;
 
@@ -32,7 +31,7 @@ Birden çok tür ve temel olarak Iostreams işleminin işlevlerini tanımlar. Bu
 
 Büyük bir işlev grubu, işleicilere sahiptir. İçinde bildirildiği bir işleyici \<ios> , sınıfının bağımsız değişken nesnesinde depolanan değerleri değiştirir [ios_base](../standard-library/ios-base-class.md). Diğer düzenlemeler, bu sınıftan türetilmiş bir türün nesneleri tarafından denetlenen akışlar, [basic_istream](../standard-library/basic-istream-class.md) veya [basic_ostream](../standard-library/basic-ostream-class.md)sınıf şablonlarından birinin özelleştirmesi gibi işlemler gerçekleştirir. Örneğin, [noskipws](../standard-library/ios-functions.md#noskipws)(**Str**) nesne içindeki biçim bayrağını temizler `ios_base::skipws` `str` ve bu türlerden biri olabilir.
 
-Ayrıca, öğesinden türetilmiş sınıflar için sağlanan özel ekleme ve ayıklama işlemleri nedeniyle bir işleme bir çıkış akışına ekleyerek veya bir giriş akışından çıkartarak bir işleme çağırabilirsiniz `ios_base` . Örneğin:
+Ayrıca, öğesinden türetilmiş sınıflar için sağlanan özel ekleme ve ayıklama işlemleri nedeniyle bir işleme bir çıkış akışına ekleyerek veya bir giriş akışından çıkartarak bir işleme çağırabilirsiniz `ios_base` . Örnek:
 
 ```cpp
 istr>> noskipws;
@@ -73,7 +72,7 @@ istr>> noskipws;
 |[nounitbuf](../standard-library/ios-functions.md#nounitbuf)|Arabellek dolduğunda çıktının arabelleğe alınmasına ve işlenmesine neden olur.|
 |[nouppercase](../standard-library/ios-functions.md#nouppercase)|Bilimsel gösterimdeki onaltılık basamakların ve üs harflerin küçük harf olarak göründüğünü belirtir.|
 |[Oct](../standard-library/ios-functions.md#oct)|Tamsayı değişkenlerinin taban 8 gösteriminde göründüğünü belirtir.|
-|[Right](../standard-library/ios-functions.md#right)|Çıktı genişliği doğru olmayan metnin akış temizlemesi durumunda sağ kenar boşluğu ile görünmesini sağlar.|
+|[sağ](../standard-library/ios-functions.md#right)|Çıktı genişliği doğru olmayan metnin akış temizlemesi durumunda sağ kenar boşluğu ile görünmesini sağlar.|
 |[bilimsel](../standard-library/ios-functions.md#scientific)|, Kayan nokta numaralarının bilimsel gösterim kullanılarak görüntülenmesine neden olur.|
 |[showbase](../standard-library/ios-functions.md#showbase)|Bir sayının gösterileceği notational tabanını gösterir.|
 |[showpoint](../standard-library/ios-functions.md#showpoint)|Kesirli bölüm sıfır olduğunda bile ondalık noktanın sağ tarafındaki bir kayan nokta sayısı ve rakamların tam sayı kısmını görüntüler.|

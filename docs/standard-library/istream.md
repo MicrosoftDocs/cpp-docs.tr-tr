@@ -3,18 +3,16 @@ description: 'Daha fazla bilgi edinin: &lt; IStream&gt;'
 title: '&lt;istream&gt;'
 ms.date: 11/04/2016
 f1_keywords:
-- istream/std::<istream>
 - <istream>
-- std::<istream>
 helpviewer_keywords:
 - istream header
 ms.assetid: efcf24e4-05d1-4719-ab0b-9e7ebe845d89
-ms.openlocfilehash: c897441eef935cd6ef5a8b4e9f4676d06a57e1af
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 9b9b647b044cd0333349931285c4bffce000d062
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97277823"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126539"
 ---
 # <a name="ltistreamgt"></a>&lt;istream&gt;
 
@@ -28,7 +26,7 @@ ms.locfileid: "97277823"
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Açıklama|
+|Tür adı|Description|
 |-|-|
 |[iostream](../standard-library/istream-typedefs.md#iostream)|`basic_iostream`Üzerinde özelleştirilmiş bir tür **`char`** .|
 |[istream](../standard-library/istream-typedefs.md#istream)|`basic_istream`Üzerinde özelleştirilmiş bir tür **`char`** .|

@@ -4,18 +4,16 @@ title: '&lt;işlevli&gt;'
 ms.date: 02/21/2019
 f1_keywords:
 - <functional>
-- functional/std::<functional>
-- std::<functional>
 helpviewer_keywords:
 - functors
 - functional header
 ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc
-ms.openlocfilehash: a13ddeb7bdb45b02bb8b35052e34a3b9601c6fec
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: fe9a42c2992557bd9cf1237a6fe66c4fbfcc232d
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97232154"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126136"
 ---
 # <a name="ltfunctionalgt"></a>&lt;işlevli&gt;
 

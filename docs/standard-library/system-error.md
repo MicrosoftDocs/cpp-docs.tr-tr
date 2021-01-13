@@ -4,16 +4,15 @@ title: '&lt;system_error&gt;'
 ms.date: 03/15/2019
 f1_keywords:
 - <system_error>
-- system_error
 helpviewer_keywords:
 - system_error header
 ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
-ms.openlocfilehash: 77ff4cae7d40ae4edb393e5d4f6743be1563556c
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: d2e08957933a6932e1ebb7a8c42214321cb3c406
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97259415"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126422"
 ---
 # <a name="ltsystem_errorgt"></a>&lt;system_error&gt;
 

@@ -3,17 +3,15 @@ description: 'Daha fazla bilgi edinin: &lt; bellek&gt;'
 title: '&lt;bellek&gt;'
 ms.date: 08/04/2019
 f1_keywords:
-- memory/std::<memory>
 - <memory>
-- std::<memory>
 helpviewer_keywords:
 - memory header
-ms.openlocfilehash: 27aea86d8329ee37c3aa1409b7dde7091cfe43bf
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 05d5b6e87b23ea2a88e4ff5a8a11c2d6b054691f
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97183782"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126526"
 ---
 # <a name="ltmemorygt"></a>&lt;bellek&gt;
 

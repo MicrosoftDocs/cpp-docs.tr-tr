@@ -4,16 +4,15 @@ title: '&lt;ş&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <complex>
-- std::<complex>
 helpviewer_keywords:
 - complex header
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
-ms.openlocfilehash: b16798cf1725ba6fa681b04f735d44f02a2b1b82
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 4019b32a6bb53c2fbf820c1a3d3d70824ccc6b7f
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97233844"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126643"
 ---
 # <a name="ltcomplexgt"></a>&lt;ş&gt;
 
@@ -43,7 +42,7 @@ Karmaşık ek ve karmaşık çarpma işlemlerine sahip karmaşık sayıların k�
 
    (*a**/(*<sup>2</sup>  +  *b*<sup></sup>2),-*b*/(2 <sup></sup>  +  *b*<sup></sup>2))
 
-*Z* a bı biçiminde *z* = (*a*, *b*) karmaşık numarasını temsil ederek  =    +  , *ı*<sup>2</sup> =-1 olduğunda, gerçek sayı kümesinin algebi kuralları, karmaşık sayılar ve bileşenleri kümesine uygulanabilir. Örneğin:
+*Z* a bı biçiminde *z* = (*a*, *b*) karmaşık numarasını temsil ederek  =    +  , *ı*<sup>2</sup> =-1 olduğunda, gerçek sayı kümesinin algebi kuralları, karmaşık sayılar ve bileşenleri kümesine uygulanabilir. Örnek:
 
    (1 + 2 *ı*) \* (2 + 3 *ı*) = 1 \* (2 + 3 *ı)*+ 2 *ı* \* (2 + 3 *ı*) = (2 + 3 *ı*) + (4 *i* + 6 *ı*<sup>2</sup>) = (2-6) + (3 + 4)*i* =-4 + 7 *ı*
 
@@ -127,7 +126,7 @@ Aksi belirtilmediği takdirde, birden çok değer döndürebilmesine olanak vere
 
 \<complex>Üst bilgi, gerçek bölüm sıfır ve sanal bölüm giriş parametresinin değeri olan karmaşık bir sayı oluşturan [Kullanıcı tanımlı aşağıdaki sabit değerleri](../cpp/user-defined-literals-cpp.md) tanımlar.
 
-|Bildirim|Açıklama|
+|Bildirim|Description|
 |-|-|
 |`constexpr complex<long double> operator""il(long double d)`<br />`constexpr complex<long double> operator""il(unsigned long long d)`|Döndürdüğü `complex<long double>{0.0L, static_cast<long double>(d)}`|
 |`constexpr complex<double> operator""i(long double d)`<br />`constexpr complex<double> operator""i(unsigned long long d)`|Döndürür: `complex<double>{0.0, static_cast<double>(d)}` .|

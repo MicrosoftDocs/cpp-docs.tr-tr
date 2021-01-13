@@ -4,15 +4,14 @@ title: '&lt;hash_map&gt;'
 ms.date: 01/18/2018
 f1_keywords:
 - <hash_map>
-- std::<hash_map>
 helpviewer_keywords:
 - hash_map header
-ms.openlocfilehash: b3e46a3f8ef1638525414c1a1414c4eb6e418c31
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 9d8274958a0f6b89892ec2c1c70080cd090d1c03
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97231881"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98125980"
 ---
 # <a name="lthash_mapgt"></a>&lt;hash_map&gt;
 
@@ -29,14 +28,14 @@ Kapsayıcı sınıfı şablonları hash_map ve hash_multimap ve destekleyici şa
 
 ### <a name="operators"></a>İşleçler
 
-|Hash_map sürümü|Hash_multimap sürümü|Açıklama|
+|Hash_map sürümü|Hash_multimap sürümü|Description|
 |-----------------------|----------------------------|-----------------|
 |[işleç! = (hash_map)](hash-map-operators.md#op_neq)|[işleç! = (hash_multimap)](hash-map-operators.md#op_neq_mm)|İşlecin sol tarafındaki hash_map veya hash_multimap nesnesinin sağ taraftaki hash_map veya hash_multimap nesnesine eşit olmadığını sınar.|
 |[işleç = = (hash_map)](hash-map-operators.md#op_eq_eq)|[işleç = = (hash_multimap)](hash-map-operators.md#op_eq_eq_mm)|İşlecin sol tarafındaki hash_map veya hash_multimap nesnesinin sağ taraftaki hash_map veya hash_multimap nesnesine eşit olup olmadığını sınar.|
 
 ### <a name="specialized-template-functions"></a>Özelleşmiş Şablon İşlevleri
 
-|Hash_map sürümü|Hash_multimap sürümü|Açıklama|
+|Hash_map sürümü|Hash_multimap sürümü|Description|
 |-----------------------|----------------------------|-----------------|
 |[takas (hash_map)](hash-map-class.md#swap)|[takas (hash_multimap)](hash-multimap-class.md#swap)|İki hash_maps veya hash_multimaps öğelerini değiş tokuş eder.|
 

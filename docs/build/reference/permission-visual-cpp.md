@@ -3,18 +3,17 @@ description: 'Daha fazla bilgi edinin: &lt; izin&gt;'
 title: '&lt;izin> (C++ belgeleri açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
-- permission
 - <permission>
 helpviewer_keywords:
 - <permission> C++ XML tag
 - permission C++ XML tag
 ms.assetid: 537ee2bc-95bd-48e4-9ce6-3420c3da87f4
-ms.openlocfilehash: cd815b5df831632afd399e752e4525082f20b063
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: faade1711afa1f086d26104242dbdb3cb8814462
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97226031"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126110"
 ---
 # <a name="ltpermissiongt"></a>&lt;yetkisi&gt;
 

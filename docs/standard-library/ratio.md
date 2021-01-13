@@ -3,6 +3,7 @@ description: 'Daha fazla bilgi edinin: &lt; oran&gt;'
 title: '&lt;sabit&gt;'
 ms.date: 11/04/2016
 f1_keywords:
+- <ratio>
 - ratio/std::mega
 - ratio/std::peta
 - ratio/std::ratio_greater
@@ -16,7 +17,6 @@ f1_keywords:
 - ratio/std::centi
 - ratio/std::ratio_greater_equal
 - ratio/std::ratio_subtract
-- <ratio>
 - ratio/std::atto
 - ratio/std::tera
 - ratio/std::milli
@@ -32,12 +32,12 @@ f1_keywords:
 - ratio/std::deci
 - ratio/std::deca
 ms.assetid: 8543e912-2d84-45ea-b3c0-bd7bfacee405
-ms.openlocfilehash: 8fab74cde47e4078781b665044bc2becd0a9dac3
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: a32a8252347de1e6d7bfd5ffd29927c779ce8489
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97337945"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126565"
 ---
 # <a name="ltratiogt"></a>&lt;sabit&gt;
 

@@ -1,23 +1,23 @@
 ---
-title: '&lt;paramref > (C++ belge açıklamaları)'
+title: '&lt;paramref> (C++ belgeleri açıklamaları)'
+description: Paramref C++ XML belge etiketi hakkında daha fazla bilgi edinin.
 ms.date: 11/04/2016
 f1_keywords:
-- paramref
 - <paramref>
 helpviewer_keywords:
 - paramref C++ XML tag
 - <paramref> C++ XML tag
 ms.assetid: c5730dc2-7159-421f-b2d5-bb971e307122
-ms.openlocfilehash: 1f4e9cb0e6b39e4da78e78048342dac2ecc9deea
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 393703e7816368fb80f71d962dc190a0db1cea03
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988683"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126162"
 ---
 # <a name="ltparamrefgt"></a>&lt;paramref&gt;
 
-\<paramref > etiketi, bir sözcüğün bir parametre olduğunu göstermek için bir yol sağlar. Bu parametreyi farklı bir şekilde biçimlendirmek için. xml dosyası işlenebilir.
+Etiketi, bir \<paramref> sözcüğün bir parametre olduğunu göstermek için bir yol sağlar. Bu parametreyi farklı bir şekilde biçimlendirmek için. xml dosyası işlenebilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,8 +27,8 @@ ms.locfileid: "74988683"
 
 #### <a name="parameters"></a>Parametreler
 
-*Adı*<br/>
-Başvurabileceğiniz parametrenin adı.  Adı tek veya çift tırnak içine alın.  Derleyici `name`bulamazsa bir uyarı verir.
+*ada*<br/>
+Başvurabileceğiniz parametrenin adı.  Adı tek veya çift tırnak içine alın.  Derleyici bulamazsa bir uyarı verir `name` .
 
 ## <a name="remarks"></a>Açıklamalar
 

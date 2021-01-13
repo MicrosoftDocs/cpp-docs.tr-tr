@@ -3,18 +3,17 @@ description: 'Hakkında daha fazla bilgi edinin: &lt; param&gt;'
 title: '&lt;param> (C++ belgeleri açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
-- param
 - <param>
 helpviewer_keywords:
 - param C++ XML tag
 - <param> C++ XML tag
 ms.assetid: 66c1a1c3-4f98-4bcf-8c7d-9a40308982fb
-ms.openlocfilehash: 7c3baabc6aef9a4cabdd7c7a9023fb628bd53793
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 1de18bd050cfd6986f1fba7f1ae7acc289a41e14
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97226149"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126214"
 ---
 # <a name="ltparamgt"></a>&lt;larına&gt;
 

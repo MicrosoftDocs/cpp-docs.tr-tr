@@ -3,20 +3,20 @@ description: 'Daha fazla bilgi edinin: &lt; hatası&gt;'
 title: '&lt;Chrono&gt;'
 ms.date: 05/07/2019
 f1_keywords:
+- <chrono>
 - chrono/std::chrono::nanoseconds
 - chrono/std::chrono::minutes
 - chrono/std::chrono::seconds
-- <chrono>
 - chrono/std::chrono::hours
 - chrono/std::chrono::milliseconds
 - chrono/std::chrono::microseconds
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
-ms.openlocfilehash: a59ad0d88a1d9266e61a8ef49e7cf9184da803b3
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: cc425d99d41d23fe25d2f66888240f9ea9a93cfb
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97325147"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126669"
 ---
 # <a name="ltchronogt"></a>&lt;Chrono&gt;
 
@@ -90,7 +90,7 @@ Aşağıdaki Typedefs 'ta kullanılan oran türleri hakkında daha fazla bilgi i
 
 **(C++ 11)** \<chrono> Üst bilgi, kodunuzun daha kolay, tür kullanımı ve bakım güvenliği için kullanabileceğiniz aşağıdaki [Kullanıcı tanımlı sabit değerleri](../cpp/user-defined-literals-cpp.md) tanımlar. Bu sabit değerler, `literals::chrono_literals` satır içi ad alanında tanımlanmıştır ve std::, kapsam içinde olduğunda kapsamdadır.
 
-|Bildirim|Açıklama|
+|Bildirim|Description|
 |-|-|
 |`hours operator "" h(unsigned long long Val)`|Bir integral değeri olarak saat belirtir.|
 |`duration<double, ratio<3600> > operator "" h(long double Val)`|Bir kayan nokta değeri olarak saat belirtir.|
