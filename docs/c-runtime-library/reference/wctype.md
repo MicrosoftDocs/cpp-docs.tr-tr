@@ -1,7 +1,7 @@
 ---
 description: 'Daha fazla bilgi edinin: wctype'
 title: wctype
-ms.date: 11/04/2016
+ms.date: 1/14/2021
 api_name:
 - wctype
 api_location:
@@ -15,6 +15,7 @@ api_location:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
+- api-ms-win-crt-string-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -24,15 +25,14 @@ f1_keywords:
 helpviewer_keywords:
 - wctype function
 - wide characters
-ms.assetid: 14aded12-4087-4123-bc48-db4e10999223
-ms.openlocfilehash: 0791d4f048dfa5d6804db14d577b1370ffbf8754
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: d0afd2bd163af967b11d0df58c84b62521ca6c2a
+ms.sourcegitcommit: 1cd8f8a75fd036ffa57bc70f3ca869042d8019d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97254202"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98242936"
 ---
-# <a name="wctype"></a>wctype
+# `wctype`
 
 Geniş karakterli kodlar için bir sınıflandırma kuralı belirler.
 
@@ -46,12 +46,12 @@ wctype_t wctype(
 
 ### <a name="parameters"></a>Parametreler
 
-*özelliði*<br/>
+*`property`*\
 Özellik dizesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Geçerli yerel ayarın **LC_CTYPE** kategorisi, adı özellik dizesi *özelliği* ile eşleşen bir sınıflandırma kuralı tanımlamıyorsa, işlev sıfır döndürür. Aksi halde, sonraki [towctrans](towctrans.md)çağrısının ikinci bağımsız değişkeni olarak kullanılmak üzere uygun olmayan bir değer döndürür.
+**`LC_CTYPE`** Geçerli yerel ayarın kategorisi, adı özellik dizesiyle eşleşen bir sınıflandırma kuralı tanımlamıyorsa *`property`* , işlev 0 döndürür. Aksi halde, sonraki bir çağrısının ikinci bağımsız değişkeni olarak kullanılmak üzere uygun olmayan bir değer döndürür [`towctrans`](towctrans.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -59,27 +59,27 @@ Geçerli yerel ayarın **LC_CTYPE** kategorisi, adı özellik dizesi *özelliği
 
 |İşlev|Aynı|
 |--------------|-------------|
-|iswalnum (c)|ıwctype (c, wctype ("alnum"))|
-|iswalpha (c)|ıwctype (c, wctype ("Alpha"))|
-|iswcnp (c)|ıwctype (c, wctype ("CNP"))|
-|iswdigit (c)|ıwctype (c, wctype ("digit"))|
-|iswgraf (c)|ıwctype (c, wctype ("Graph"))|
-|iswlower (c)|ıwctype (c, wctype ("Lower"))|
-|iswprınt (c)|ıwctype (c, wctype ("PRINT"))|
-|iswpunct (c)|ıwctype (c, wctype ("punct"))|
-|iswspace (c)|ıwctype (c, wctype ("Space"))|
-|iswupper (c)|ıwctype (c, wctype ("Upper"))|
-|iswxdigit (c)|ıwctype (c, wctype ("xdigit"))|
+|`iswalnum(c)`|`iswctype(c, wctype( "alnum" ))`|
+|`iswalpha(c)`|`iswctype(c, wctype( "alpha" ))`|
+|`iswcntrl(c)`|`iswctype(c, wctype( "cntrl" ))`|
+|`iswdigit(c)`|`iswctype(c, wctype( "digit" ))`|
+|`iswgraph(c)`|`iswctype(c, wctype( "graph" ))`|
+|`iswlower(c)`|`iswctype(c, wctype( "lower" ))`|
+|`iswprint(c)`|`iswctype(c, wctype( "print" ))`|
+|`iswpunct(c)`|`iswctype(c, wctype( "punct" ))`|
+|`iswspace(c)`|`iswctype(c, wctype( "space" ))`|
+|`iswupper(c)`|`iswctype(c, wctype( "upper" ))`|
+|`iswxdigit(c)`|`iswctype(c, wctype( "xdigit" ))`|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**wctype**|\<wctype.h>|
+|`wctype`|`<wctype.h>`|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
+[Veri dönüştürme](../../c-runtime-library/data-conversion.md)\
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)

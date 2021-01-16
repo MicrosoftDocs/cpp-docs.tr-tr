@@ -1,7 +1,7 @@
 ---
 description: 'Hakkında daha fazla bilgi edinin: beklenmeyen (CRT)'
 title: beklenmeyen (CRT)
-ms.date: 11/04/2016
+ms.date: 1/14/2021
 api_name:
 - unexpected
 api_location:
@@ -15,6 +15,7 @@ api_location:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -24,16 +25,16 @@ f1_keywords:
 helpviewer_keywords:
 - unexpected function
 ms.assetid: 2f873763-15ad-4556-a924-dcf28f2b52b4
-ms.openlocfilehash: 73c632c4dd5bfedbb1c3724e60786b348f77f0be
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 098d686e7c33d17020990b1db168d95c327d5112
+ms.sourcegitcommit: 1cd8f8a75fd036ffa57bc70f3ca869042d8019d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97186642"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98242910"
 ---
-# <a name="unexpected-crt"></a>beklenmeyen (CRT)
+# <a name="unexpected-crt"></a>`unexpected` CRT
 
-**Set_unexpected** kullanarak belirttiğiniz **sonlandırma** veya işlevi çağırır.
+**`terminate`** Kullanarak belirttiğiniz veya çağıran işlev **`set_unexpected`** .
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,15 +44,15 @@ void unexpected( void );
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Beklenmeyen** yordam, C++ özel durum işlemenin geçerli uygulamasıyla kullanılmaz. **beklenmeyen** çağrılar varsayılan olarak **sonlandırılır** . Özel bir sonlandırma işlevi yazarak ve bağımsız değişkeni olarak işlevinizin adını **set_unexpected** çağırarak, bu varsayılan davranışı değiştirebilirsiniz. **beklenmeyen** bir bağımsız değişken olarak verilen son işlevi çağıran **set_unexpected**.
+**`unexpected`** Yordam, C++ özel durum işlemenin geçerli uygulamasıyla kullanılmaz. **`unexpected`****`terminate`** Varsayılan olarak çağırır. Bu varsayılan davranışı, özel bir sonlandırma işlevi yazarak değiştirebilirsiniz. **`set_unexpected`** İşlevinizin adını bağımsız değişkeni olarak çağırın. **`unexpected`** geçirilen son işlevi çağırır **`set_unexpected`** .
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**bek**|\<eh.h>|
+|**`unexpected`**|`<eh.h>`|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

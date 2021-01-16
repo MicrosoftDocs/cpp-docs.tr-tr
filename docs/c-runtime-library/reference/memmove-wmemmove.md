@@ -1,7 +1,7 @@
 ---
 description: 'Hakkında daha fazla bilgi edinin: memmove, wmemmove'
 title: memmove, wmemmove
-ms.date: 11/04/2016
+ms.date: 1/14/2021
 api_name:
 - memmove
 - wmemmove
@@ -18,6 +18,7 @@ api_location:
 - ntdll.dll
 - ucrtbase.dll
 - ntoskrnl.exe
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -28,17 +29,16 @@ f1_keywords:
 helpviewer_keywords:
 - wmemmove function
 - memmove function
-ms.assetid: 3a906114-9cf3-40d7-bd99-ee452004f218
-ms.openlocfilehash: 15dee8eab2a1b7eedd3891d8673647a711c0e499
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 6f9942c232710585aa5837510f0f04e5db36fb2a
+ms.sourcegitcommit: 1cd8f8a75fd036ffa57bc70f3ca869042d8019d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97171393"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98243131"
 ---
-# <a name="memmove-wmemmove"></a>memmove, wmemmove
+# <a name="memmove-wmemmove"></a>`memmove`, `wmemmove`
 
-Bir arabelleği diğerine gider. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [memmove_s, wmemmove_s](memmove-s-wmemmove-s.md).
+Bir arabelleği diğerine gider. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [ `memmove_s` , `wmemmove_s` ](memmove-s-wmemmove-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,26 +57,26 @@ wchar_t *wmemmove(
 
 ### <a name="parameters"></a>Parametreler
 
-*HD*<br/>
+*`dest`*\
 Hedef nesne.
 
-*src*<br/>
+*`src`*\
 Kaynak nesne.
 
-*biriktirme*<br/>
-Kopyalanacak bayt (**memmove**) veya karakter (**wmemmove**) sayısı.
+*`count`*\
+Kopyalanacak bayt ( **`memmove`** ) veya karakter ( **`wmemmove`** ) sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*Hedef* değeri.
+Değeri *`dest`* .
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Src* 'den *hedefe* kadar olan *sayı* baytlarını (**memmove**) veya karakterleri (**wmemmove**) kopyalar. Kaynak alanın ve hedefin bazı bölgeleri çakışırsa, her iki işlev de çakışan bölgedeki özgün kaynak baytlarının üzerine yazılmadan önce kopyalanmasını güvence altına alınır.
+*`count`* Bayt ( **`memmove`** ) veya karakter ( **`wmemmove`** ) öğesini öğesinden kopyalar *`src`* *`dest`* . Kaynak alanın ve hedefin bazı bölgeleri çakışırsa, her iki işlev de çakışan bölgedeki özgün kaynak baytlarının üzerine yazılmadan önce kopyalanmasını güvence altına alınır.
 
 **Güvenlik notunun** Hedef arabelleğinin boyut veya Kaynak arabelleğinden daha büyük olduğundan emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-**Memmove** ve **wmemmove** işlevleri, işlevlerin kullanım dışı olması için aşağıdaki örnekte olduğu gibi, yalnızca sabit **_CRT_SECURE_DEPRECATE_MEMORY** dahil etme ifadesiyle önce tanımlanmışsa kullanım dışı bırakılır:
+**`memmove`** Ve **`wmemmove`** işlevleri, **`_CRT_SECURE_DEPRECATE_MEMORY`** Aşağıdaki örnekte olduğu gibi işlevlerin kullanım dışı olması için ekleme ifadesinden önce belirtilmişse kullanım dışı bırakılır:
 
 ```C
 #define _CRT_SECURE_DEPRECATE_MEMORY
@@ -94,10 +94,10 @@ veya
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**memmove**|\<string.h>|
-|**wmemmove**|\<wchar.h>|
+|**`memmove`**|`<string.h>`|
+|**`wmemmove`**|`<wchar.h>`|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -137,8 +137,8 @@ New string: aaaabb
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Arabellek Işleme](../../c-runtime-library/buffer-manipulation.md)<br/>
-[_memccpy](memccpy.md)<br/>
-[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
-[strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
-[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
+[Arabellek Işleme](../../c-runtime-library/buffer-manipulation.md)\
+[`_memccpy`](memccpy.md)\
+[`memcpy`, `wmemcpy`](memcpy-wmemcpy.md)\
+[`strcpy`, `wcscpy`, `_mbscpy`](strcpy-wcscpy-mbscpy.md)\
+[`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)\
