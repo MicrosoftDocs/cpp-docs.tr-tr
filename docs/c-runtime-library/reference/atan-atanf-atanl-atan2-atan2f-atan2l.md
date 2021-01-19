@@ -1,7 +1,7 @@
 ---
 title: atan, atanf, atanl, atan2, atan2f, atan2l
 description: Atan, atanf, atanl, atan2, atan2f ve atan2l için API başvurusu; bir kayan nokta değerinin arktanjantını hesaplayan.
-ms.date: 08/31/2020
+ms.date: 1/15/2021
 api_name:
 - atan2f
 - atan2l
@@ -12,6 +12,7 @@ api_name:
 - _o_atan
 - _o_atan2
 - _o_atan2f
+- _o_atanf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -45,19 +46,18 @@ helpviewer_keywords:
 - arctangent function
 - trigonometric functions
 - atan2f function
-ms.assetid: 7a87a18e-c94d-4727-9cb1-1bb5c2725ae4
-ms.openlocfilehash: 1f1d33aac86d94ab3731dd5cf5b124af99ccb3f2
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: bbfc08507bd48e1b9eb0b91350b2b39948d19a5f
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89555637"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98564075"
 ---
-# <a name="atan-atanf-atanl-atan2-atan2f-atan2l"></a>atan, atanf, atanl, atan2, atan2f, atan2l
+# <a name="atan-atanf-atanl-atan2-atan2f-atan2l"></a>`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`
 
-**X** (**atan**, **atanf**, ve **atanl**) veya **y** / **x** 'in arktanjantını (**atan2**, **atan2f**ve **atan2l**) hesaplar.
+(,, **`x`** Ve) **`atan`** **`atanf`** **`atanl`** veya **`y`** / **`x`** ( **`atan2`** , **`atan2f`** , ve **`atan2l`** ) öğesinin arktanjantını hesaplar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 double atan( double x );
@@ -79,28 +79,28 @@ long double atan2( long double y, long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*x*, *y*\
+*`x`*, *`y`*\
 Herhangi bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**atan** ,-π/2 ile π/2 radyan aralığında *x* 'in ark tanjantını döndürür. **atan2** *y* / ,-π aralığında y*x* 'in ark tanjantını döndürür. *X* 0 ise, **atan** 0 döndürür. Her iki **atan2** parametresi 0 ise, işlev 0 döndürür. Tüm sonuçlar radyan cinsinden olur.
+**`atan`***`x`*-π/2 ile π/2 radyan aralığında olan arktanjantını döndürür. **`atan2`***`y`* / *`x`* -π-π radyana aralığında olan arktanjantını döndürür. *`x`* 0 ise **`atan`** 0 döndürür. Her iki parametre de **`atan2`** 0 ise, işlev 0 döndürür. Tüm sonuçlar radyan cinsinden olur.
 
-**atan2** , dönüş değerinin çeyreğine ilişkin her iki parametrenin işaretlerini kullanır.
+**`atan2`** dönüş değerinin çeyreğine ilişkin her iki parametrenin işaretlerini kullanır.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **IND**|yok|**_DOMAIN**|
+|± **`QNAN`**, **`IND`**|yok|**`_DOMAIN`**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Atan** işlevi, *x*'in arktanjantını (ters tanjant işlevi) hesaplar. **atan2** *y*x 'in ark tanjantını hesaplar / *x* ( *x* eşitse 0, **atan2** *, y* pozitifse,-π/2 ise y negatifse 0 veya *y* 0 *y* ise 0 olur.)
+**`atan`** İşlevi arktanjantı (ters tanjant işlevi) hesaplar *`x`* . **`atan2`** öğesinin arktanjantını hesaplar *`y`* / *`x`* ( *`x`* 0 eşitse, **`atan2`** π/2 döndürür, Eğer *`y`* negatifse,-π/2 *`y`* veya 0 ise 0 *`y`* ).)
 
-\<tgmath.h> `atan()` Veya `atan2()` makrosunu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
+`<tgmath.h>` `atan()` Veya `atan2()` makrosunu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
-**atan** 'de Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulama vardır. SSE2 uygulamasını kullanma hakkında bilgi ve sınırlamalar için bkz. [_set_SSE2_enable](set-sse2-enable.md).
+**`atan`** Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulamaya sahiptir. SSE2 uygulamasını kullanma hakkında bilgi ve sınırlamalar için bkz [`_set_SSE2_enable`](set-sse2-enable.md) ..
 
-C++ aşırı yüklemeye izin verdiğinden, **atan** veya **atan2** **`float`** **`long double`** bağımsız değişken alan atan ve atan2 aşırı yüklerini çağırabilirsiniz. C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **atan** ve **atan2** her zaman **`double`** bağımsız değişken alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, **`atan`** ve **`atan2`** tarafından yapılan **`float`** veya **`long double`** bağımsız değişken olan aşırı yüklerini çağırabilirsiniz. C programında, `<tgmath.h>` Bu işlevi çağırmak için makroyu kullanmadığınız **`atan`** ve **`atan2`** her zaman **`double`** bağımsız değişkenler alıp bir döndüren bir **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -108,8 +108,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------|-|
-|**atan**, **atan2**, **atanf**, **atan2f**, **atanl**, **atan2l**|\<math.h>|\<cmath> veya \<math.h>|
-|**atan ()**, **atan2** makroları | \<tgmath.h> ||
+|**`atan`**, **`atan2`**, **`atanf`**, **`atan2f`**, **`atanl`**, **`atan2l`**|`<math.h>`|`<cmath>` veya `<math.h>`|
+|**`atan()`**, **`atan2`** makrolar | `<tgmath.h>` ||
 
 ## <a name="example"></a>Örnek
 
@@ -144,12 +144,12 @@ Arctangent of 0.500000 / 5.000000: 0.099669
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[acos, acosf, acosl](acos-acosf-acosl.md)<br/>
-[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
-[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[_matherr](matherr.md)<br/>
-[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
-[tan, tanf, tanl](tan-tanf-tanl.md)<br/>
-[_CIatan](../../c-runtime-library/ciatan.md)<br/>
-[_CIatan2](../../c-runtime-library/ciatan2.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)\
+[`acos`, `acosf`, `acosl`](acos-acosf-acosl.md)\
+[`asin`, `asinf`, `asinl`](asin-asinf-asinl.md)\
+[`cos`, `cosf`, `cosl`](cos-cosf-cosl.md)\
+[`_matherr`](matherr.md)\
+[`sin`, `sinf`, `sinl`](sin-sinf-sinl.md)\
+[`tan`, `tanf`, `tanl`](tan-tanf-tanl.md)\
+[`_CIatan`](../../c-runtime-library/ciatan.md)\
+[`_CIatan2`](../../c-runtime-library/ciatan2.md)

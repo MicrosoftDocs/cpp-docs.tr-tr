@@ -1,12 +1,13 @@
 ---
 title: tan, tanf, tanl
 description: Tan, tanf ve tanl için API başvurusu; bir kayan nokta değerinin tanjantını hesaplayan.
-ms.date: 08/31/2020
+ms.date: 1/15/2021
 api_name:
 - tan
 - tanf
 - tanl
 - _o_tan
+- _o_tanf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -38,18 +39,18 @@ helpviewer_keywords:
 - tanf function
 - trigonometric functions
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
-ms.openlocfilehash: 8137bf4cbce59083e8e7c09557400fbff4f6b1df
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 056afdf0bbac422c498bd54c2a154472bfd97c34
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89556547"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98564062"
 ---
-# <a name="tan-tanf-tanl"></a>tan, tanf, tanl
+# <a name="tan-tanf-tanl"></a>`tan`, `tanf`, `tanl`
 
 Tanjantı hesaplar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 double tan( double x );
@@ -65,23 +66,23 @@ long double tan( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*\
+*`x`*\
 Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Döndürülen değer
 
-**Tan** işlevleri *x*tanjantını döndürür. *X* , 263 veya daha büyük ya da-263 ' den büyükse veya eşitse, sonuçta anlam kaybı meydana gelir.
+**`tan`** İşlevleri, tanjantını döndürür *`x`* . *`x`* 263 ' den büyük veya buna eşitse ya da-263 ' den küçük ya da eşitse, sonuçta anlam kaybı meydana gelir.
 
-|Giriş|SEH özel durumu|**Matherr** Duruma|
+|Giriş|SEH özel durumu|**`Matherr`** duruma|
 |-----------|-------------------|-------------------------|
-|± QNAN, IND|yok|_DOMAIN|
-|± INF|**Geçersiz**|_DOMAIN|
+|`± QNAN`,`IND`|yok|`_DOMAIN`|
+|`± INF`|**Geçersiz**|`_DOMAIN`|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **tan** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **tan** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, **`tan`** alan veya değer alma ve döndürme yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, `<tgmath.h>` Bu işlevi çağırmak için makroyu kullanmadığınız takdirde, **`tan`** her zaman alır ve döndürür **`double`** .
 
-\<tgmath.h> `tan()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
+`<tgmath.h>` `tan()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -89,10 +90,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------|-|
-|**tan**, **tanf**, **tanl**|\<math.h>|\<cmath> veya \<math.h>|
-|**tan ()** makrosu | \<tgmath.h> ||
+|**`tan`**, **`tanf`**, **`tanl`**|`<math.h>`|`<cmath>` veya `<math.h>`|
+|**`tan()`** makroya | `<tgmath.h>` ||
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -120,10 +121,10 @@ tan( 0.785398 ) = 1.000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[acos, acosf, acosl](acos-acosf-acosl.md)<br/>
-[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
-[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
-[_CItan](../../c-runtime-library/citan.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)\
+[`acos, acosf, acosl`](acos-acosf-acosl.md)\
+[`asin, asinf, asinl`](asin-asinf-asinl.md)\
+[`atan, atanf, atanl, atan2, atan2f, atan2l`](atan-atanf-atanl-atan2-atan2f-atan2l.md)\
+[`cos, cosf, cosl`](cos-cosf-cosl.md)\
+[`sin, sinf, sinl`](sin-sinf-sinl.md)\
+[`_CItan`](../../c-runtime-library/citan.md)

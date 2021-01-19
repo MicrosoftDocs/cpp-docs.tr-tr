@@ -141,12 +141,12 @@ helpviewer_keywords:
 - std::unordered_map::size
 - std::unordered_map::swap
 ms.assetid: 7cf7cfa1-16e7-461c-a9b2-3b8d8ec24e0d
-ms.openlocfilehash: f8ffd7b3990f2d0ab40f8059e65f0aba4d4c8e0c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 81428295f79d71227bf0fdf72e18f2fde30ac763
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503583"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98564114"
 ---
 # <a name="unordered_map-class"></a>unordered_map Sınıfı
 
@@ -212,7 +212,7 @@ Ayırıcı sınıf.
 |[cend](#cend)|Denetlenen dizinin bitişini belirtir.|
 |[lediğiniz](#clear)|Tüm öğeleri kaldırır.|
 |[biriktirme](#count)|Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.|
-|[contains](#contains)<sup>c++ 20</sup> içerir|İçinde belirtilen anahtara sahip bir öğe olup olmadığını kontrol edin `unordered_map` .|
+|[](#contains)<sup>c++ 20</sup> içerir|İçinde belirtilen anahtara sahip bir öğe olup olmadığını kontrol edin `unordered_map` .|
 |[Emplace](#emplace)|Yerinde oluşturulmuş bir öğe ekler.|
 |[emplace_hint](#emplace_hint)|Göstergeyle birlikte, yerinde oluşturulmuş bir öğe ekler.|
 |[empty](#empty)|Bir öğe olup olmadığını sınar.|
@@ -323,7 +323,6 @@ Bağımsız değişken anahtar değeri bulunamazsa, işlev sınıfının bir nes
 #include <iostream>
 
 typedef std::unordered_map<char, int> Mymap;
-typedef std::unordered_map<char, int> Mymap;
 int main()
 {
     Mymap c1;
@@ -369,7 +368,7 @@ Demet numarası.
 #include <unordered_map>
 #include <iostream>
 
-#typedef std::unordered_map<char, int> Mymap;
+typedef std::unordered_map<char, int> Mymap;
 int main()
 {
     Mymap c1;
@@ -562,7 +561,7 @@ Demet numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, *nbucket*demet sayısı boyutunu döndürür.
+Üye işlevleri, *nbucket* demet sayısı boyutunu döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1236,7 +1235,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `X` `[X.first, X.second)` yalnızca *keyval*ile eşdeğer sıralamaya sahip olan denetimli dizinin öğelerini sınırlandıran bir çift yineleyiciyi döndürür. Böyle bir öğe yoksa, her iki yineleyiciler de vardır `end()` .
+Üye işlevi, `X` `[X.first, X.second)` yalnızca *keyval* ile eşdeğer sıralamaya sahip olan denetimli dizinin öğelerini sınırlandıran bir çift yineleyiciyi döndürür. Böyle bir öğe yoksa, her iki yineleyiciler de vardır `end()` .
 
 ### <a name="example"></a>Örnek
 
@@ -1553,7 +1552,7 @@ Kopyalanacak son öğenin hemen ötesinde konum.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tek öğeli üye işlevleri, (1) ve (2), [pair](../standard-library/pair-structure.md) **`bool`** bir ekleme yapılırsa bileşeni doğru olan bir çift döndürür ve unordered_map zaten anahtarı sıralamada denk bir değere sahip olan bir öğe içeriyorsa false. Return-Value çiftinin yineleyici bileşeni, bileşen true ise yeni ınsertedelement öğesine **`bool`** veya bileşen false ise var olan öğeye işaret eder **`bool`** .
+Tek öğeli üye işlevleri, (1) ve (2), [](../standard-library/pair-structure.md) **`bool`** bir ekleme yapılırsa bileşeni doğru olan bir çift döndürür ve unordered_map zaten anahtarı sıralamada denk bir değere sahip olan bir öğe içeriyorsa false. Return-Value çiftinin yineleyici bileşeni, bileşen true ise yeni ınsertedelement öğesine **`bool`** veya bileşen false ise var olan öğeye işaret eder **`bool`** .
 
 Tek öğeli-ipucu üye işlevleri, (3) ve (4), yeni öğenin unordered_map eklendiği konuma ya da eşdeğer anahtara sahip bir öğe zaten varsa var olan öğeye işaret eden bir yineleyici döndürür.
 
@@ -2045,7 +2044,7 @@ Yeni en yüksek yük faktörü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, depolanan en fazla yük faktörünü döndürür. İkinci üye işlevi, saklı maksimum yük faktörünü *faktörle*değiştirir.
+İlk üye işlevi, depolanan en fazla yük faktörünü döndürür. İkinci üye işlevi, saklı maksimum yük faktörünü *faktörle* değiştirir.
 
 ### <a name="example"></a>Örnek
 
@@ -2179,7 +2178,7 @@ Eklenen öğenin veri değerine başvuru.
 
 Bağımsız değişken anahtar değeri bulunamazsa, değer veri türünün varsayılan değeriyle birlikte eklenir.
 
-`operator[]` , *bir Map 'e* , *k*[*Key*] =; kullanarak öğe eklemek Için kullanılabilir `DataValue` ; burada anahtar `DataValue` `mapped_type` değeri *anahtar*olan öğenin değeridir.
+`operator[]` , *bir Map 'e* , *k*[*Key*] =; kullanarak öğe eklemek Için kullanılabilir `DataValue` ; burada anahtar `DataValue` `mapped_type` değeri *anahtar* olan öğenin değeridir.
 
 `operator[]`Öğeleri eklemek için kullanırken, döndürülen başvuru, bir eklentinin önceden varolan bir öğeyi değiştirip değiştirmediğini veya yeni bir tane oluşturmadığını göstermez. [Bul](../standard-library/map-class.md#find) ve [Ekle](../standard-library/map-class.md#insert) üye işlevleri, bir ekleme işleminden önce belirtilen anahtara sahip bir öğenin zaten mevcut olup olmadığını anlamak için kullanılabilir.
 
@@ -2590,7 +2589,7 @@ void swap(unordered_map& right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, ve sağ arasındaki denetlenen dizileri **`*this`** değiştirir *right*. [Unordered_map:: get_allocator](#get_allocator) `() == right.get_allocator()` , bu, sabit bir zamanda, yalnızca türünde depolanan nitelikler nesnesini kopyalamanın bir sonucu olarak bir özel durum oluşturur `Tr` ve iki denetimli sırada öğeleri belirten başvuruları, işaretçileri veya yineleyicileri geçersiz kılar. Aksi takdirde, bir dizi öğe ataması ve Oluşturucu çağrısı, iki denetimli dizi içindeki öğe sayısıyla orantılı olarak gerçekleştirilir.
+Üye işlevi, ve sağ arasındaki denetlenen dizileri **`*this`** değiştirir . [Unordered_map:: get_allocator](#get_allocator) `() == right.get_allocator()` , bu, sabit bir zamanda, yalnızca türünde depolanan nitelikler nesnesini kopyalamanın bir sonucu olarak bir özel durum oluşturur `Tr` ve iki denetimli sırada öğeleri belirten başvuruları, işaretçileri veya yineleyicileri geçersiz kılar. Aksi takdirde, bir dizi öğe ataması ve Oluşturucu çağrısı, iki denetimli dizi içindeki öğe sayısıyla orantılı olarak gerçekleştirilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2722,15 +2721,15 @@ Kopyalanacak öğeleri içeren initializer_list.
 
 İlk Oluşturucu tarafından denetlenen sıranın bir kopyasını belirtir `right` . İkinci oluşturucu boş bir denetlenmiş dizi belirtir. Üçüncü Oluşturucu öğe değerlerinin dizisini ekler `[first, last)` . Dördüncü Oluşturucu taşıyarak sıranın bir kopyasını belirtir `right` .
 
-Ayrıca, tüm oluşturucular çeşitli depolanmış değerleri başlatır. Kopya Oluşturucu için değerler *sağdan*alınır. Aksi durumda:.
+Ayrıca, tüm oluşturucular çeşitli depolanmış değerleri başlatır. Kopya Oluşturucu için değerler *sağdan* alınır. Aksi durumda:.
 
-varsa, en düşük demet sayısı *Bucket_count*bağımsız değişkendir; Aksi takdirde, burada uygulama tanımlı değer olarak açıklanan varsayılan bir değerdir `N0` .
+varsa, en düşük demet sayısı *Bucket_count* bağımsız değişkendir; Aksi takdirde, burada uygulama tanımlı değer olarak açıklanan varsayılan bir değerdir `N0` .
 
 karma işlev nesnesi varsa bağımsız değişken *karmasıdır*; Aksi takdirde, `Hash()` .
 
-Karşılaştırma işlevi nesnesi, varsa, *comp*bağımsız değişkenidir; Aksi takdirde, `Pred()` .
+Karşılaştırma işlevi nesnesi, varsa, *comp* bağımsız değişkenidir; Aksi takdirde, `Pred()` .
 
-Ayırıcı nesne varsa *Al*bağımsız değişkenidir; Aksi takdirde, `Alloc()` .
+Ayırıcı nesne varsa *Al* bağımsız değişkenidir; Aksi takdirde, `Alloc()` .
 
 ### <a name="example"></a>Örnek
 

@@ -1,13 +1,14 @@
 ---
 title: sinh, sinhf, sinhl
 description: Kayan nokta değerinin hiperbolik sinüsünü hesaplamak için API başvurusu.
-ms.date: 08/31/2020
+ms.date: 1/15/2021
 api_name:
 - sinh
 - sinhl
 - sinhf
 - sinhl
 - _o_sinh
+- _o_sinhf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -38,18 +39,18 @@ helpviewer_keywords:
 - sinhf function
 - sinhl function
 - hyperbolic functions
-ms.openlocfilehash: 6a8c9c4195eab66a46230e7a3baf6194e17c4519
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 73f7210105419c4b8cb9a6e47e5c5f0e43437738
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89556183"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98563802"
 ---
-# <a name="sinh-sinhf-sinhl"></a>sinh, sinhf, sinhl
+# <a name="sinh-sinhf-sinhl"></a>`sinh`, `sinhf`, `sinhl`
 
 Hiperbolik sinüsü hesaplar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 double sinh(double x);
@@ -63,25 +64,25 @@ long double sinh(long double x);  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*\
+*`x`*\
 Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Sinh** işlevleri *x*' in hiperbolik sinüsünü döndürür. Varsayılan olarak, sonuç çok büyükse, **errno** ' ı **ERANGE** **olarak ayarlar ve** ±**HUGE_VAL**döndürür.
+**`sinh`** İşlevleri, değerinin hiperbolik sinüsünü döndürür *`x`* . Varsayılan olarak, sonuç çok büyükse, **`sinh`** **`errno`** olarak ayarlanır **`ERANGE`** ve ± döndürür **`HUGE_VAL`** .
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Giriş|SEH özel durumu|`Matherr` duruma|
 |-----------|-------------------|-----------------------|
-|± QNAN, IND|Yok|_DOMAIN|
-|&#124;x&#124; ≥ 7.104760 e + 002|TAŞMA + tam değil|TAŞMA|
+|± `QNAN`,`IND`|Yok|`_DOMAIN`|
+|&#124;x&#124; ≥ 7.104760 e + 002|`OVERFLOW+INEXACT`|`OVERFLOW`|
 
-Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Dönüş kodları hakkında daha fazla bilgi için bkz.,, [ `errno` `_doserrno` `_sys_errlist` ve `_sys_nerr` ](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, veya değerlerini alan ve döndüren **sinh** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız takdirde **sinh** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, **`sinh`** alan veya değer alma ve döndürme yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, `<tgmath.h>` Bu işlevi çağırmak için makroyu kullanmadığınız takdirde, **`sinh`** her zaman alır ve döndürür **`double`** .
 
-\<tgmath.h> `sinh()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
+`<tgmath.h>` `sinh()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -89,10 +90,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-|-|-|
-|**sinh**, **sinhf**, **sinhl**|\<math.h>|\<cmath> veya \<math.h>|
-|**sinh ()** makrosu | \<tgmath.h> ||
+|**`sinh`**, **`sinhf`**, **`sinhl`**|`<math.h>`|`<cmath>` veya `<math.h>`|
+|**`sinh()`** makroya | `<tgmath.h>` ||
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -125,9 +126,9 @@ cosh( 1.570796 ) = 2.509178
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
-[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
-[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
-[cosh, coshf, coshl](cosh-coshf-coshl.md)<br/>
-[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)\
+[`acosh`, `acoshf`, `acoshl`](acosh-acoshf-acoshl.md)\
+[`asinh`, `asinhf`, `asinhl`](asinh-asinhf-asinhl.md)\
+[`atanh`, `atanhf`, `atanhl`](atanh-atanhf-atanhl.md)\
+[`cosh`, `coshf`, `coshl`](cosh-coshf-coshl.md)\
+[`tanh`, `tanhf`, `tanhl`](tanh-tanhf-tanhl.md)

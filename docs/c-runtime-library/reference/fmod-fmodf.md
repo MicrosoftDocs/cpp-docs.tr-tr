@@ -1,12 +1,13 @@
 ---
 title: FMOD, fmodf, fmodl
 description: FMOD, fmodf ve fmodl için API başvurusu; kayan nokta kalanını hesaplar.
-ms.date: 9/1/2020
+ms.date: 1/15/2021
 api_name:
 - fmod
 - fmodf
 - fmodl
 - _o_fmod
+- _o_fmodf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -34,19 +35,18 @@ helpviewer_keywords:
 - fmodl function
 - fmod function
 - floating-point numbers, calculating remainders
-ms.assetid: 6962d369-d11f-40b1-a6d7-6f67239f8a23
-ms.openlocfilehash: 2b610dec79c98b973af09f8efb147ad6797f7946
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 8d2c3bcb0f871eb707f264478c4ce492bbb9c80c
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89556092"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98563944"
 ---
-# <a name="fmod-fmodf-fmodl"></a>FMOD, fmodf, fmodl
+# <a name="fmod-fmodf-fmodl"></a>`fmod`, `fmodf`, `fmodl`
 
 Kayan nokta kalanını hesaplar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 double fmod(
@@ -75,20 +75,20 @@ long double fmodl(
 
 ### <a name="parameters"></a>Parametreler
 
-*x*, *y*\
+*`x`*, *`y`*\
 Kayan nokta değerleri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**fmod** , *x*y 'nin kayan nokta kalanını döndürür  /  *y*. *Y* değeri 0,0 ise, **fmod** sessiz bir NaN döndürür. **Printf** ailesi tarafından sessiz bir NaN 'ın temsili hakkında bilgi için bkz. [printf](printf-printf-l-wprintf-wprintf-l.md).
+**`fmod`** kayan nokta kalanını döndürür *`x`*  /  *`y`* . Değeri *`y`* 0,0 ise, **`fmod`** sessiz bir NaN döndürür. Aile tarafından sessiz bir NaN 'ın temsili hakkında daha fazla bilgi için **`printf`** bkz. [printf](printf-printf-l-wprintf-wprintf-l.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fmod** işlevi *, x*i y f 'nin kayan *nokta geri kalanını* hesaplar  /  *y* *x*  =  *i* \* *y*  +  *f*, burada bir tamsayı *,* *f* ise *x*ile aynı işarete sahiptir ve *f* 'nin mutlak değeri *y*'nin mutlak değerinden küçüktür.
+**`fmod`** İşlevi, kayan nokta kalanını hesaplar  *`x`*  /  *`y`* *`x`*  =   \* *`y`*  +  *`f`* , burada *`i`* bir tamsayı,, *`f`* aynı işarete sahip *`x`* ve mutlak değeri *`f`* mutlak değerinden küçüktür *`y`* .
 
-C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alıp döndüren **fmod** 'un aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **fmod** her zaman iki **`double`** bağımsız değişken alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, **`fmod`** Bu alan ve değer alma ve döndürme yüklerini **`float`** çağırabilirsiniz **`long double`** . C programında, `<tgmath.h>` Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **`fmod`** her zaman iki **`double`** bağımsız değişken alır ve döndürür **`double`** .
 
-\<tgmath.h> `fmod()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
+`<tgmath.h>` `fmod()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -96,10 +96,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fmod**, **fmodf**, **fmodl**|\<math.h>|
-|**fmod** makrosu | \<tgmath.h> |
+|**`fmod`**, **`fmodf`**, **`fmodl`**|`<math.h>`|
+|**`fmod`** makroya | `<tgmath.h>` |
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -125,8 +125,8 @@ The remainder of -10.00 / 3.00 is -1.000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[ceil, ceilf, ceill](ceil-ceilf-ceill.md)<br/>
-[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>
-[floor, floorf, floorl](floor-floorf-floorl.md)<br/>
-[_CIfmod](../../c-runtime-library/cifmod.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)\
+[`ceil, ceilf, ceill`](ceil-ceilf-ceill.md)\
+[`fabs, fabsf, fabsl`](fabs-fabsf-fabsl.md)\
+[vadeli`loor, floorf, floorl`](floor-floorf-floorl.md)\
+[`_CIfmod`](../../c-runtime-library/cifmod.md)

@@ -1,12 +1,13 @@
 ---
 title: cosh, coshf, coshl
 description: Cosh, coshf ve coshl; için API başvurusu bir kayan nokta değerinin hiperbolik kosinüsünü hesaplar.
-ms.date: 08/31/2020
+ms.date: 1/15/2021
 api_name:
 - cosh
 - coshf
 - coshl
 - _o_cosh
+- _o_coshf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -34,18 +35,18 @@ helpviewer_keywords:
 - coshl function
 - trigonometric functions
 - hyperbolic functions
-ms.openlocfilehash: 0ea4a5b77850e196c29519ac49b589a0c2b6c9a7
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: c010dcdc30b16f94f55fca99d67b58e5c19370c7
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89555533"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98564101"
 ---
-# <a name="cosh-coshf-coshl"></a>cosh, coshf, coshl
+# <a name="cosh-coshf-coshl"></a>`cosh`, `coshf`, `coshl`
 
 Hiperbolik kosinüsü hesaplar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 double cosh( double x );
@@ -59,25 +60,25 @@ long double cosh( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*\
+*`x`*\
 Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*X*'in hiperbolik kosinüsü.
+Öğesinin hiperbolik kosinüsü *`x`* .
 
-Varsayılan olarak, sonuç bir **cosh**, **coshf**veya **coshl** çağrısında çok büyükse, işlev **HUGE_VAL** döndürür ve **errno** ' ı **ERANGE**olarak ayarlar.
+Varsayılan olarak, bir, veya çağrısında sonuç çok büyükse, **`cosh`** **`coshf`** işlevi öğesini **`coshl`** döndürür ve öğesini **`HUGE_VAL`** **`errno`** olarak ayarlar **`ERANGE`** .
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Giriş|SEH özel durumu|`Matherr` duruma|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **IND**|yok|**_DOMAIN**|
-|*x* ≥ 7.104760 e + 002|**Tam** + değil **Taşma**|**TAŞMA**|
+|± **`QNAN`**, **`IND`**|yok|**`_DOMAIN`**|
+|*`x`* ≥ 7.104760 e + 002|**`INEXACT`**+**`OVERFLOW`**|**`OVERFLOW`**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **cosh** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **cosh** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, **`cosh`** alan veya değer alma ve döndürme yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, `<tgmath.h>` Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **`cosh`** her zaman bir alır ve döndürür **`double`** .
 
-\<tgmath.h> `cosh()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
+`<tgmath.h>` `cosh()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -85,21 +86,21 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------|-|
-|**coshf**, **COSL**, **coshl**|\<math.h>|\<cmath> veya \<math.h>|
-|**coshf ()** makrosu | \<tgmath.h> ||
+|**`coshf`**, **`cosl`**, **`coshl`**|`<math.h>`|`<cmath>` veya `<math.h>`|
+|**`coshf()`** makroya | `<tgmath.h>` ||
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-[Sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)içindeki örneğe bakın.
+, [ `sinh` `sinhf` ,, `sinhl` ](sinh-sinhf-sinhl.md)İçindeki örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
-[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
-[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
-[_matherr](matherr.md)<br/>
-[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
-[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)\
+[`acosh, acoshf, acoshl`](acosh-acoshf-acoshl.md)\
+[`asinh, asinhf, asinhl`](asinh-asinhf-asinhl.md)\
+[`atanh, atanhf, atanhl`](atanh-atanhf-atanhl.md)\
+[`_matherr`](matherr.md)\
+[`sinh, sinhf, sinhl`](sinh-sinhf-sinhl.md)\
+[`tanh, tanhf, tanhl`](tanh-tanhf-tanhl.md)

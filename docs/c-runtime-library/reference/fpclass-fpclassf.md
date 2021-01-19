@@ -1,11 +1,12 @@
 ---
 description: 'Hakkında daha fazla bilgi edinin: _fpclass _fpclassf'
 title: _fpclass, _fpclassf
-ms.date: 4/2/2020
+ms.date: 1/15/2021
 api_name:
 - _fpclass
 - _fpclassf
 - _o__fpclass
+- _o__fpclassf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -35,15 +36,14 @@ helpviewer_keywords:
 - floating-point numbers, IEEE representation
 - _fpclass function
 - _fpclassf function
-ms.assetid: 2774872d-3543-446f-bc72-db85f8b95a6b
-ms.openlocfilehash: bd7a2aa02a3431ff41c4d9695efca1f959ece24f
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 3fb97c5aa787c4c102e787fa3b08650f23ca546a
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97164919"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98563997"
 ---
-# <a name="_fpclass-_fpclassf"></a>_fpclass, _fpclassf
+# <a name="_fpclass-_fpclassf"></a>`_fpclass`, `_fpclassf`
 
 Bağımsız değişkenin kayan nokta sınıflandırmasını gösteren bir değer döndürür.
 
@@ -61,29 +61,29 @@ int _fpclassf(
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*`x`*\
 Sınanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Fpclass** ve **_fpclassf** işlevleri, *x* bağımsız değişkeninin kayan nokta sınıflandırmasını gösteren bir tamsayı değeri döndürür. Sınıflandırma, içinde tanımlanan aşağıdaki değerlerden birine sahip olabilir \<float.h> .
+**`_fpclass`** Ve **`_fpclassf`** işlevleri, bağımsız değişkenin kayan nokta sınıflandırmasını gösteren bir tamsayı değeri döndürür *`x`* . Sınıflandırma, içinde tanımlanan aşağıdaki değerlerden birine sahip olabilir `<float.h>` .
 
 |Değer|Açıklama|
 |-----------|-----------------|
-|**_FPCLASS_SNAN**|Sinyal NaN|
-|**_FPCLASS_QNAN**|Sessiz NaN|
-|**_FPCLASS_NINF**|Negatif sonsuzluk (-INF)|
-|**_FPCLASS_NN**|Negatif normalleştirilmiş sıfır olmayan|
-|**_FPCLASS_ND**|Negatif Normalleştirilmemiş|
-|**_FPCLASS_NZ**|Negatif sıfır (-0)|
-|**_FPCLASS_PZ**|Pozitif 0 (+ 0)|
-|**_FPCLASS_PD**|Olumlu olarak yoğun|
-|**_FPCLASS_PN**|Pozitif normalleştirilmiş sıfır olmayan|
-|**_FPCLASS_PINF**|Pozitif sonsuzluk (+ INF)|
+|**`_FPCLASS_SNAN`**|Sinyal NaN|
+|**`_FPCLASS_QNAN`**|Sessiz NaN|
+|**`_FPCLASS_NINF`**|Negatif sonsuzluk ( `-INF` )|
+|**`_FPCLASS_NN`**|Negatif normalleştirilmiş sıfır olmayan|
+|**`_FPCLASS_ND`**|Negatif Normalleştirilmemiş|
+|**`_FPCLASS_NZ`**|Negatif sıfır (-0)|
+|**`_FPCLASS_PZ`**|Pozitif 0 (+ 0)|
+|**`_FPCLASS_PD`**|Olumlu olarak yoğun|
+|**`_FPCLASS_PN`**|Pozitif normalleştirilmiş sıfır olmayan|
+|**`_FPCLASS_PINF`**|Pozitif sonsuzluk ( `+INF` )|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Fpclass** ve **_fpclassf** işlevleri Microsoft 'a özgüdür. [Fpsınıflandır](fpclassify.md)benzerdir, ancak bağımsız değişkenle ilgili daha ayrıntılı bilgiler döndürür. **_Fpclassf** işlevi yalnızca x64 platformu için derlendikleri zaman kullanılabilir.
+**`_fpclass`** Ve **`_fpclassf`** Işlevleri, Microsoft 'a özgüdür. Bunlara benzerdir [`fpclassify`](fpclassify.md) , ancak bağımsız değişkenle ilgili daha ayrıntılı bilgi geri döndürür. **`_fpclassf`** İşlevi yalnızca x64 platformu için derlendikleri zaman kullanılabilir.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -91,12 +91,12 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fpclass**, **_fpclassf**|\<float.h>|
+|**`_fpclass`**, **`_fpclassf`**|`<float.h>`|
 
 Daha fazla uyumluluk ve uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
-[fpclassify](fpclassify.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)\
+[`isnan`, `_isnan`, `_isnanf`](isnan-isnan-isnanf.md)\
+[`fpclassify`](fpclassify.md)

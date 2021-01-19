@@ -227,6 +227,7 @@ api_name:
 - __std_exception_copy
 - __std_exception_destroy
 - __std_type_info_destroy_list
+- __std_type_info_name
 - __stdio_common_vfprintf
 - __stdio_common_vfprintf_p
 - __stdio_common_vfprintf_s
@@ -271,6 +272,7 @@ api_name:
 - _W_Getdays
 - _W_Getmonths
 - _W_Getnames
+- _W_Gettnames
 - _wassert
 - _Wcsftime
 - __wcsncnt
@@ -931,17 +933,16 @@ helpviewer_keywords:
 - _wsopen_dispatch
 - _Xbad_alloc
 - _Xlength_error
-ms.assetid: 99a27f11-fa5a-449e-bfbb-aab578d1cc4f
-ms.openlocfilehash: 9087998c91a3da5022fd3fe559e5d535416eeff5
-ms.sourcegitcommit: 1cd8f8a75fd036ffa57bc70f3ca869042d8019d4
+ms.openlocfilehash: 05d9666ce77c593c6b6fa366f43f8a593cb7a4a9
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98243183"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98563958"
 ---
 # <a name="internal-crt-globals-and-functions"></a>İç CRT genel ve Işlevleri
 
-C çalışma zamanı (CRT) kitaplığı yalnızca ortak kitaplık arabirimini desteklemek için kullanılan işlevleri ve genel değişkenleri içerir. Bunlardan bazıları, uygulama ayrıntıları olarak genel üstbilgilere sunulur. Bu işlevlere ve genel değişkenlere genel dışarı aktarmalar aracılığıyla erişilebilse de, kodunuz tarafından kullanılmaya yönelik değildir. Bunun yerine ortak kitaplık eşdeğerlerini kullanmak için bu işlevleri ve değişkenleri kullanan tüm kodları değiştirmenizi öneririz. Bu işlevler sürümden sürümüne değişebilir. Bunları tanımlamanızı sağlamak için burada listelenirler. Ek belgeler varken bağlantılar sağlanır, ancak genel olarak bu uygulama ayrıntıları açıklanmamıştır.
+C çalışma zamanı (CRT) kitaplığı yalnızca ortak kitaplık arabirimini desteklemek için kullanılan işlevleri ve genel değişkenleri içerir. Bunlardan bazıları, uygulama ayrıntıları olarak genel üstbilgilere sunulur. Bu işlevlere ve genel değişkenlere genel dışarı aktarmalar aracılığıyla erişilebilse de, kodunuz tarafından kullanılmaya yönelik değildir. Bunun yerine ortak kitaplık eşdeğerlerini kullanmak için bu işlevleri ve değişkenleri kullanan tüm kodları değiştirmenizi öneririz. Bu işlevler sürümden sürümüne değişebilir. Bunları tanımlamanızı sağlamak için burada listelenirler. Bağlantılar diğer belgeler olduğunda sağlanır, ancak genel olarak bu uygulama ayrıntıları açıklanmamıştır.
 
 ## <a name="internal-crt-globals-and-value-macros"></a>İç CRT genel ve değer makroları
 
@@ -1219,6 +1220,7 @@ Bu işlevler ve işlev makroları, CRT ve C++ standart kitaplığı uygulamak i�
 |__std_exception_copy|
 |__std_exception_destroy|
 |__std_type_info_destroy_list|
+|__std_type_info_name|
 |__stdio_common_vfprintf|
 |__stdio_common_vfprintf_p|
 |__stdio_common_vfprintf_s|
@@ -1264,6 +1266,7 @@ Bu işlevler ve işlev makroları, CRT ve C++ standart kitaplığı uygulamak i�
 |_W_Getdays|
 |_W_Getmonths|
 |_W_Getnames|
+|_W_Gettnames|
 |_wassert|
 |_Wcsftime|
 |__wcsncnt|

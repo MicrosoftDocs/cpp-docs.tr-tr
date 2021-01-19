@@ -1,12 +1,13 @@
 ---
 title: acos, acosf, acosl
-description: '`acos`, `acosf` Ve için `acosl` bir kayan nokta değerinin arkkosinüsünü hesaplayan, ve için API başvurusu.'
-ms.date: 08/31/2020
+description: Acos, acosf ve acosl için API başvurusu; bir kayan nokta değerinin arkkosinüsünü hesaplar.
+ms.date: 1/15/2021
 api_name:
 - acosf
 - acos
 - acosl
 - _o_acos
+- _o_acosf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -36,19 +37,18 @@ helpviewer_keywords:
 - acosf function
 - trigonometric functions
 - arccosine function
-ms.assetid: 00b89c48-8faf-4824-aa95-fa4349a4975d
-ms.openlocfilehash: eeee51cea2a81882ee1ed8b014312ee9f9095dc6
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 63a9c9577e252c506191b7a49ec9da6502968095
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89555104"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98563841"
 ---
-# <a name="acos-acosf-acosl"></a>acos, acosf, acosl
+# <a name="acos-acosf-acosl"></a>`acos`, `acosf`, `acosl`
 
 Arkkosinüsünü hesaplar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 double acos( double x );
@@ -62,26 +62,26 @@ long double acos( long double x );   // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*\
+*`x`*\
 -1 ile 1 arasında olan ve Arkkosinüs (ters kosinüs) hesaplanacak değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Acos** işlevi, 0 ile π radyana aralığındaki *x* arkkosinüsünü döndürür.
+**`acos`** İşlevi, 0 ile π radyana aralığında *x* arkkosinüsünü döndürür.
 
-Varsayılan olarak, *x* 1 ' den küçük veya 1 ' den büyükse **Acos** sonsuz döndürür.
+Varsayılan olarak, *`x`* -1 ' den küçük veya 1 ' den büyükse, **`acos`** sonsuz döndürür.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Giriş|`SEH` duruma|`Matherr` duruma|
 |-----------|-------------------|-----------------------|
-|± ∞|Geçersiz|_DOMAIN|
-|± QNAN, IND|yok|_DOMAIN|
-|&#124;x&#124;>1|Geçersiz|_DOMAIN|
+|`± ∞`|`INVALID`|`_DOMAIN`|
+|`± QNAN, IND`|yok|`_DOMAIN`|
+|&#124;`x`&#124;>1|`INVALID`|`_DOMAIN`|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve türündeki **Acos** 'ın aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe **Acos** her zaman bir alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, **`acos`** alma ve döndürme için gereken aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, `<tgmath.h>` Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **`acos`** her zaman bir alır ve döndürür **`double`** .
 
-\<tgmath.h> `acos()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
+`<tgmath.h>` `acos()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -89,8 +89,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**Acos**, **acosf**, **acosl**|\<math.h>|\<errno.h>|
-|**acos ()** makrosu | \<tgmath.h> ||
+|**`acos`**, **`acosf`**, **`acosl`**|`<math.h>`|`<errno.h>`|
+|**`acos()`** makroya | `<tgmath.h>` ||
 
 ## <a name="example"></a>Örnek
 
@@ -144,10 +144,10 @@ Arccosine of 0.000000 = 1.570796
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
-[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[_matherr](matherr.md)<br/>
-[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
-[tan, tanf, tanl](tan-tanf-tanl.md)
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)\
+[`asin`, `asinf`, `asinl`](asin-asinf-asinl.md)\
+[`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](atan-atanf-atanl-atan2-atan2f-atan2l.md)\
+[`cos`, `cosf`, `cosl`](cos-cosf-cosl.md)\
+[`_matherr`](matherr.md)\
+[`sin`, `sinf`, `sinl`](sin-sinf-sinl.md)\
+[`tan`, `tanf`, `tanl`](tan-tanf-tanl.md)

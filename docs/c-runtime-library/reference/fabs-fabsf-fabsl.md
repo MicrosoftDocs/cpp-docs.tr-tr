@@ -1,12 +1,13 @@
 ---
 title: fabs, fabsf, fabsl
 description: Fabs, fabsf ve fabsl; için API başvurusu bir kayan nokta değerinin mutlak değerini hesaplar.
-ms.date: 08/31/2020
+ms.date: 1/15/2021
 api_name:
 - fabsf
 - fabs
 - fabsl
 - _o_fabs
+- _o_fabsf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -37,19 +38,18 @@ helpviewer_keywords:
 - calculating absolute values
 - fabs function
 - fabsl function
-ms.assetid: 23bca210-f408-4f5e-b46b-0ccaaec31e36
-ms.openlocfilehash: a819172fc94224ff4c51c8fc342b142ffbe05ae7
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 453965b846dff9affb3fa6dce99ea8b6189a5d6c
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89554844"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98563945"
 ---
-# <a name="fabs-fabsf-fabsl"></a>fabs, fabsf, fabsl
+# <a name="fabs-fabsf-fabsl"></a>`fabs`, `fabsf`, `fabsl`
 
 Kayan nokta bağımsız değişkeninin mutlak değerini hesaplar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 double fabs(
@@ -73,22 +73,22 @@ long double fabsl(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*\
+*`x`*\
 Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Fabs** işlevleri *x*bağımsız değişkeninin mutlak değerini döndürür. Hata döndürme yok.
+**`fabs`** İşlevler *x* bağımsız değişkeninin mutlak değerini döndürür. Hata döndürme yok.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Giriş|SEH özel durumu|`Matherr` duruma|
 |-----------|-------------------|-----------------------|
-|± QNAN, IND|yok|_DOMAIN|
+|± `QNAN`,`IND`|yok|`_DOMAIN`|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, üstbilgiyi dahil ediyorsanız **fabs** aşırı yüklerini çağırabilirsiniz \<cmath> . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız takdirde **fabs** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, üstbilgiyi dahil ediyorsanız aşırı yüklerini çağırabilirsiniz **`fabs`** `<cmath>` . C programında, `<tgmath.h>` Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **`fabs`** her zaman bir alır ve döndürür **`double`** .
 
-\<tgmath.h> `fabs()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
+`<tgmath.h>` `fabs()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -96,17 +96,17 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
 |--------------|-----------------------|---------------------------|
-|**fabs**, **fabsf**, **fabsl**|\<math.h>|\<cmath> veya \<math.h>|
-|**fabs** makrosu | \<tgmath.h> ||
+|**`fabs`**, **`fabsf`**, **`fabsl`**|`<math.h>`|`<cmath>` veya `<math.h>`|
+|**`fabs`** makroya | `<tgmath.h>` ||
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-[ABS](abs-labs-llabs-abs64.md)örneğine bakın.
+İçin örneğe bakın [`abs`](abs-labs-llabs-abs64.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[abs, labs, llabs, _abs64](abs-labs-llabs-abs64.md)<br/>
-[_cabs](cabs.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)\
+[`abs, labs, llabs, _abs64`](abs-labs-llabs-abs64.md)\
+[`_cabs`](cabs.md)

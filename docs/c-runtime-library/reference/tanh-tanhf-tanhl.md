@@ -1,12 +1,13 @@
 ---
 title: tanh, tanhf, tanhl
 description: Tanh, tanhf ve tanhl için API başvurusu bir kayan nokta değerinin hiperbolik tanjantını hesaplayan.
-ms.date: 08/31/2020
+ms.date: 1/15/2021
 api_name:
 - tanh
 - tanhf
 - tanhl
 - _o_tanh
+- _o_tanhf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -36,18 +37,18 @@ helpviewer_keywords:
 - tanhf function
 - trigonometric functions
 - hyperbolic functions
-ms.openlocfilehash: 5fa93f56ebec5e8aa06c7317534adb12ae9e68e2
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: c09655b4a86010ff6a476f7dacbce4f9f73ab3cc
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89556586"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98564127"
 ---
-# <a name="tanh-tanhf-tanhl"></a>tanh, tanhf, tanhl
+# <a name="tanh-tanhf-tanhl"></a>`tanh`, `tanhf`, `tanhl`
 
 Hiperbolik tanjantı hesaplar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 double tanh( double x );
@@ -63,22 +64,22 @@ long double tanh( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*\
+*`x`*\
 Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Döndürülen değer
 
-**Tanh** işlevleri *x*'in hiperbolik tanjantını döndürür. Hata döndürme yok.
+**`tanh`** İşlevleri, öğesinin hiperbolik tanjantını döndürür *`x`* . Hata döndürme yok.
 
-|Giriş|SEH özel durumu|**Matherr** Duruma|
+|Giriş|SEH özel durumu|**`Matherr`** duruma|
 |-----------|-------------------|-------------------------|
-|± QNAN, IND|yok|_DOMAIN|
+|± `QNAN`,`IND`|yok|`_DOMAIN`|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **tanjanh** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız takdirde, **tanh** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, **`tanh`** alan veya değer alma ve döndürme yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, `<tgmath.h>` Bu işlevi çağırmak için makroyu kullanmadığınız takdirde, **`tanh`** her zaman alır ve döndürür **`double`** .
 
-\<tgmath.h> `tanh()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
+`<tgmath.h>` `tanh()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -86,10 +87,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C)|
 |-------------|---------------------|-|
-|**tanh**, **tanhf**, **tanhl**|\<math.h>|\<cmath> veya \<math.h>|
-|**tanh ()** makrosu | \<tgmath.h> ||
+|**`tanh`**, **`tanhf`**, **`tanhl`**|`<math.h>`|`<cmath>` veya `<math.h>`|
+|**`tanh()`** makroya | `<tgmath.h>` ||
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -121,9 +122,9 @@ tanh( 1.000000 ) = 0.761594
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
-[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
-[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
-[cosh, coshf, coshl](cosh-coshf-coshl.md)<br/>
-[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)\
+[`acosh, acoshf, acoshl`](acosh-acoshf-acoshl.md)\
+[`asinh, asinhf, asinhl`](asinh-asinhf-asinhl.md)\
+[`atanh, atanhf, atanhl`](atanh-atanhf-atanhl.md)\
+[`cosh, coshf, coshl`](cosh-coshf-coshl.md)\
+[`sinh, sinhf, sinhl`](sinh-sinhf-sinhl.md)
