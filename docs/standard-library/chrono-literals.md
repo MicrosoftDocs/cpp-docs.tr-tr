@@ -1,20 +1,23 @@
 ---
-description: 'Daha fazla bilgi için: Tarih/sabit değer'
+description: 'Daha fazla bilgi edinin: `chrono` değişmez değerler'
 title: chrono değişmez değerleri
-ms.date: 11/04/2016
-ms.assetid: 1a9e23b1-256f-4570-8226-5fa7364fb032
-ms.openlocfilehash: 497094d920a25635496fb0aa30295d378571418c
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+f1_keywords:
+- chrono/std::literals::chrono_literals
+- std::literals::chrono_literals
+- chrono_literals
+ms.date: 01/15/2021
+ms.openlocfilehash: 84540d111b33738c8bb1bcb4b43966e1c50682c0
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97325161"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667553"
 ---
-# <a name="chrono-literals"></a>chrono değişmez değerleri
+# <a name="chrono-literals"></a>`chrono` leri
 
-(C++ 14) \<chrono> Üst bilgi, saat, dakika, saniye, milisaniye, mikrosaniye ve nanosaniye değerlerini temsil eden sabit değerleri kullanmayı kolaylaştırmak için 12 [Kullanıcı tanımlı sabit değerleri](../cpp/user-defined-literals-cpp.md) tanımlar. Kullanıcı tanımlı her değişmez değer bir integral ve kayan nokta aşırı yüklemesi içerir. Sabit değerler, std:: hatası, kapsam içinde olduğunda otomatik olarak kapsama getirilen sabit değerler:: chrono_literals satır içi ad alanında tanımlanmıştır.
+(C++ 14) `<chrono>` Üst bilgi, saat, dakika, saniye, milisaniye, mikrosaniye ve nanosaniye değerlerini temsil eden 12 [Kullanıcı tanımlı sabit](../cpp/user-defined-literals-cpp.md) değer tanımlar. Kullanıcı tanımlı her değişmez değer bir integral ve kayan nokta aşırı yüklemesi içerir. Değişmez değerler, `literals::chrono_literals` kapsamda olduğunda otomatik olarak kapsama getirilen satır içi ad alanında tanımlanır `std::chrono` .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 inline namespace literals {
@@ -59,13 +62,13 @@ inline namespace literals {
 } // inline namespace literals
 ```
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Döndürülen değer
 
-Bağımsız değişken alan sabit değerler, **`long long`** bir değeri veya ilgili türü döndürür. Kayan nokta bağımsız değişkeni alan sabit değerler bir [süre](../standard-library/duration-class.md)döndürür.
+Bağımsız değişken alan sabit değerler, **`long long`** bir değeri veya ilgili türü döndürür. Kayan nokta bağımsız değişkeni alan sabit değerler bir döndürür [`duration`](../standard-library/duration-class.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örneklerde, EO değişmez değerlerinin nasıl kullanılacağı gösterilmiştir.
+Aşağıdaki örneklerde, değişmez değerlerin nasıl kullanılacağı gösterilmektedir `chrono` .
 
 ```cpp
 constexpr auto day = 24h;

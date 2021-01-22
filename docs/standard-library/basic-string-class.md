@@ -1,7 +1,7 @@
 ---
 title: basic_string Sınıfı
 description: Standart C++ dize sınıfı için API başvurusu `basic_string` .
-ms.date: 10/26/2020
+ms.date: 01/15/2021
 f1_keywords:
 - xstring/std::basic_string
 - xstring/std::basic_string::allocator_type
@@ -61,6 +61,11 @@ f1_keywords:
 - xstring/std::basic_string::ends_with
 - xstring/std::basic_string::starts_with
 - xstring/std::basic_string::swap
+- xstring/std::literals::string_literals
+- std::literals::string_literals
+- string_literals
+- xstring/std::literals::string_literals::operator "s
+- std::literals::string_literals::operator s
 helpviewer_keywords:
 - std::basic_string [C++]
 - std::basic_string [C++], allocator_type
@@ -120,17 +125,16 @@ helpviewer_keywords:
 - std::basic_string [C++], ends_with
 - std::basic_string [C++], substr
 - std::basic_string [C++], swap
-ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
-ms.openlocfilehash: 87eda4064ff63a22add49b2872a26c76ac15bc6a
-ms.sourcegitcommit: 3f0c1dcdcce25865d1a1022bcc5b9eec79f69025
+ms.openlocfilehash: ebd8f4c35a1e51a96f09069ed78c67345d71ab32
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94381655"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667574"
 ---
 # <a name="basic_string-class"></a>`basic_string` Sınıfı
 
-Türünde bir nesne tarafından denetlenen sıralar `basic_string` Standart C++ dize sınıfıdır ve genellikle dizeler olarak adlandırılır, ancak C++ standart kitaplığı boyunca kullanılan null ile sonlandırılmış C stili dizeleriyle karıştırılmamalıdır. Standart C++ dizesi; karşılaştırma ve birleştirme işlemleri, yineleyiciler, C++ standart kitaplık algoritmaları ve sınıf ayırıcısı tarafından yönetilen bellek kopyalama ve atama gibi normal türler olarak dizelerin kullanımını sağlayan bir kapsayıcıdır. Standart bir C++ dizesini null ile sonlandırılmış bir C stili dizeye dönüştürmeniz gerekiyorsa [basic_string:: c_str](#c_str) üyesini kullanın.
+Türünde bir nesne tarafından denetlenen sıralar `basic_string` Standart C++ dize sınıfıdır ve genellikle dizeler olarak adlandırılır, ancak C++ standart kitaplığı boyunca kullanılan null ile sonlandırılmış C stili dizeleriyle karıştırılmamalıdır. Standart C++ dizesi; karşılaştırma ve birleştirme işlemleri, yineleyiciler, C++ standart kitaplık algoritmaları ve sınıf ayırıcı tarafından yönetilen bellekle kopyalama ve atama gibi normal türler olarak dizelerin kullanımını sağlayan bir kapsayıcıdır. Standart bir C++ dizesini null ile sonlandırılmış bir C stili dizeye dönüştürmeniz gerekiyorsa, [`basic_string::c_str`](#c_str) üyeyi kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -152,13 +156,13 @@ Dizenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları kap
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Açıklama|
+|Oluşturucu|Description|
 |-|-|
 |[`basic_string`](#basic_string)|Boş veya belirli karakterler tarafından başlatılan veya bir diğer dize nesnesinin veya C dizesinin tümünün veya bir kısmının kopyası olan bir dize oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Açıklama|
+|Tür adı|Description|
 |-|-|
 |[`allocator_type`](#allocator_type)|`allocator`Bir dize nesnesinin sınıfını temsil eden bir tür.|
 |[`const_iterator`](#const_iterator)|Dizedeki bir öğeye erişebilen ve okuyabilen bir rastgele erişim yineleyici sağlayan bir tür `const` .|
@@ -177,7 +181,7 @@ Dizenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları kap
 
 ### <a name="member-functions"></a>Üye işlevleri
 
-|Üye işlevi|Açıklama|
+|Üye işlevi|Description|
 |-|-|
 |[`append`](#append)|Dizenin sonuna karakter ekler.|
 |[`assign`](#assign)|Bir dizenin içeriğine yeni karakter değerleri atar.|
@@ -206,7 +210,7 @@ Dizenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları kap
 |[`find_last_of`](#find_last_of)|Belirtilen dizenin bir öğesi olan son karakter için bir dizeyi arar.|
 |[`front`](#front)|Dizedeki ilk öğeye bir başvuru döndürür.|
 |[`get_allocator`](#get_allocator)|`allocator`Dizeyi oluşturmak için kullanılan nesnenin bir kopyasını döndürür.|
-|[`insert`](#insert)|Belirli bir konumdaki dizeye bir öğe veya dizi öğe veya öğe aralığı ekler.|
+|[`insert`](#insert)|Belirtilen konumdaki dizeye bir öğe, birkaç öğe veya öğe aralığı ekler.|
 |[`length`](#length)|Dizedeki geçerli öğe sayısını döndürür.|
 |[`max_size`](#max_size)|Bir dizenin içerebileceği en fazla karakter sayısını döndürür.|
 |[`pop_back`](#pop_back)|Dizenin son öğesini siler.|
@@ -230,6 +234,18 @@ Dizenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları kap
 |[`operator+=`](#op_add_eq)|Bir dizeye karakter ekler.|
 |[`operator=`](#op_eq)|Bir dizenin içeriğine yeni karakter değerleri atar.|
 |[`operator`&#91;&#93;](#op_at)|Bir dizedeki belirtilen dizine sahip karaktere bir başvuru sağlar.|
+
+### <a name="literals"></a>Değişmez Değerler
+
+Tanımlayan üstbilgiler `basic_string` Ayrıca, Giriş parametrelerinden belirtilen türden bir dize oluşturan aşağıdaki [Kullanıcı tanımlı sabit değerleri](../cpp/user-defined-literals-cpp.md)tanımlar.
+
+| Bildirim | Description |
+|--|--|
+| `inline string operator"" s(const char* str, size_t len)` | Döndürdüğü `string(str, len)` |
+| `inline string operator"" s(const wchar_t* str, size_t len)` | Döndürdüğü `wstring(str, len)` |
+| `inline basic_string<char8_t> operator"" s(const char8_t* str, size_t len)` | Döndürdüğü `basic_string<char8_t>(str, len)` |
+| `inline u16string operator"" s(const char16_t* str, size_t len)` | Döndürdüğü `u16string(str, len)` |
+| `inline u32string operator"" s(const char32_t* str, size_t len)` | Döndürdüğü `u32string(str, len)` |
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -335,7 +351,7 @@ Eklenecek aralıktaki ilk öğeyi ele almak için bir giriş Yineleyici.
 *`last`*\
 Bir giriş yineleyicisi, `const_pointer` veya `const_iterator` eklenecek aralıktaki son öğenin ötesinde birinin konumunu ele alıyor.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Üye işlevi tarafından geçirilen karakterlerle eklenen String nesnesine bir başvuru.
 
@@ -496,7 +512,7 @@ Hedef aralığa atanacak kaynak dize aralığındaki son karakterin ötesinde bi
 *`off`*\
 Yeni karakterlerin atanmak üzere başlayacağı konum.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Üye işlevi tarafından yeni karakterler atanmakta olan String nesnesine bir başvuru.
 
@@ -611,7 +627,7 @@ reference at(size_type offset);
 *`offset`*\
 Başvurulacak öğenin konumunun dizini.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Parametre dizini tarafından belirtilen konumdaki dizenin karakteriyle bir başvuru.
 
@@ -621,7 +637,7 @@ Dizenin ilk öğesi sıfır dizinine sahiptir ve aşağıdaki öğeler pozitif t
 
 Üye [ `operator`&#91;&#93;](#op_at) , `at` bir dizenin öğelerine okuma ve yazma erişimi sağlamak için üye işlevinden daha hızlıdır.
 
-Üye, `operator[]` parametre olarak geçirilen dizinin geçerli olup olmadığını denetlemez, ancak üye işlevi çalışır durumda değilse bu değer `at` kullanılmalıdır. Bir dizin, dize boyutundan sıfır veya daha büyük ya da buna eşit olan, üye işlevine geçirilen bir `at` [out_of_range sınıfı](../standard-library/out-of-range-class.md) özel durumu oluşturan geçersiz bir dizin. Tanımsız bir davranıştaki sonuçlara geçersiz bir dizin geçirildi `operator[]` , ancak dizenin uzunluğuna eşit olan dizin const dizeler için geçerli bir dizindir ve işleç bu dizine geçirildiğinde null karakteri döndürüyor.
+Üye, `operator[]` parametre olarak geçirilen dizinin geçerli olup olmadığını denetlemez, ancak üye işlevi çalışır durumda değilse bu değer `at` kullanılmalıdır. Bir dizin, dize boyutundan sıfır veya daha büyük ya da buna eşit olan, üye işlevine geçirilen bir `at` [ `out_of_range` sınıf](../standard-library/out-of-range-class.md) özel durumu oluşturan geçersiz bir dizin. Tanımsız bir davranıştaki sonuçlara geçersiz bir dizin geçirildi `operator[]` , ancak dizenin uzunluğuna eşit olan dizin const dizeler için geçerli bir dizindir ve işleç bu dizine geçirildiğinde null karakteri döndürüyor.
 
 Döndürülen başvuru dize reallocations veya dizeler için değişiklikler tarafından geçersiz kılınabilir `const` .
 
@@ -674,7 +690,7 @@ const_reference back() const;
 reference back();
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Dizenin boş olmayan bir son öğesine başvuru.
 
@@ -778,13 +794,13 @@ Eklenecek kaynak aralıktaki ilk öğeyi ele almak için bir giriş yineleyicisi
 *`last`*\
 Kaynak aralıktaki son öğenin ötesinde bir giriş yineleyicisi, const_pointer veya const_iterator.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Oluşturucular tarafından oluşturulan dize nesnesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm oluşturucular bir depolar [`basic_string::allocator_type`](#allocator_type) ve denetlenen sırayı başlatır. Ayırıcı nesne varsa bağımsız değişkendir `al` . Kopya Oluşturucu için, bu `right.` [`basic_string::get_allocator`](#get_allocator) `()` . Aksi takdirde, ayırıcı olur `Alloc()` .
+Tüm oluşturucular bir depolar [`basic_string::allocator_type`](#allocator_type) ve denetlenen sırayı başlatır. Ayırıcı nesne varsa bağımsız değişkendir `al` . Kopya Oluşturucu için `right.get_allocator()` bir çağrısı olan [`basic_string::get_allocator`](#get_allocator) . Aksi takdirde, ayırıcı olur `Alloc()` .
 
 Denetlenen sıra, kalan işlenenler tarafından belirtilen işlenen dizisinin bir kopyasına başlatılır. İşlenen dizisi olmayan bir Oluşturucu, boş bir ilk denetimli sırayı belirtir. `InputIterator`Bir şablon oluşturucusunda bir tamsayı türü ise, işlenen sırası `first,  last` ile aynı şekilde davranır `(size_type) first, (value_type) last` .
 
@@ -847,7 +863,7 @@ const_iterator begin() const;
 iterator begin();
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Dizinin ilk öğesini veya boş bir dizinin sonunun ötesinde bir rastgele erişim Yineleyici.
 
@@ -895,15 +911,15 @@ Bir dizenin içeriğini C stili, null ile sonlandırılmış bir dize olarak dö
 const value_type *c_str() const;
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
-Çağırma dizesinin C stili sürümüne yönelik bir işaretçi.  `const`Nesnedeki basic_string sınıfında yıkıcı dahil, işlev olmayan bir işlev çağrıldıktan sonra işaretçi değeri geçerli değil.
+Çağırma dizesinin C stili sürümüne yönelik bir işaretçi.  `const`Nesne üzerindeki sınıfında yıkıcı dahil, işlev olmayan bir işlev çağrıldıktan sonra işaretçi değeri geçerli değil `basic_string` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonuna ait dize türündeki nesnelerin `basic_string<char>` null olarak sonlandırılması gerekli değildir. ' \ 0 ' null karakteri, dizenin sonunu işaretlemek için bir C dizesinde özel bir karakter olarak kullanılır, ancak String türünde bir nesne içinde özel bir anlamı yoktur ve dizenin bir parçası olan herhangi bir karakterle aynı olabilir. Dizeden bir otomatik dönüştürme vardır `const char *` ancak dize sınıfı, C stili dizelerinden tür nesnelerine otomatik dönüşümler sağlamaz `basic_string<char>` .
+Sınıf şablonuna ait dize türündeki nesnelerin `basic_string<char>` null olarak sonlandırılması gerekli değildir. Null karakter, `'\0'` dizenin sonunu işaretlemek için bir C dizesinde özel bir karakter olarak kullanılır, ancak String türünde bir nesne içinde özel bir anlamı yoktur ve dizenin bir parçası olan herhangi bir karakterle aynı olabilir. Dizeden bir otomatik dönüştürme vardır `const char *` ancak dize sınıfı, C stili dizelerinden tür nesnelerine otomatik dönüşümler sağlamaz `basic_string<char>` .
 
-Döndürülen C stili dize değiştirilmemesi gerekir, çünkü dize, sınırlı bir yaşam süresine sahip olduğundan ve sınıf dizesine ait olduğundan, bu dize işaretçisini geçersiz kılabilir veya silinir.
+Döndürülen C stili dize değiştirilmemesi gerekir, bu, dizenin süresi sınırlı olduğundan ve sınıf dizesine ait olduğundan, dize işaretçisini geçersiz kılabilir veya silinemez.
 
 ### <a name="example"></a>Örnek
 
@@ -959,7 +975,7 @@ Dizenin bellek ayırmayı arttırmadan bir dizede depolanabilecek en büyük ö�
 size_type capacity() const;
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Dizeyi tutmak için şu anda bellekte ayrılan depolama alanı boyutu.
 
@@ -1029,7 +1045,7 @@ int main( )
 const_iterator cbegin() const;
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 `const`Aralığın ilk öğesine veya boş bir aralığın sonundaki konuma (boş bir Aralık için) işaret eden bir rastgele erişim Yineleyici `cbegin() == cend()` .
 
@@ -1037,7 +1053,7 @@ const_iterator cbegin() const;
 
 Dönüş değeri ile `cbegin` , aralıktaki öğeler değiştirilemez.
 
-`begin()`Dönüş değerinin olduğunu garantilemek için üye işlevin yerine bu üye işlevi kullanabilirsiniz `const_iterator` . Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, ve ' ı `Container` destekleyen herhangi bir türde değiştirilebilir (olmayan) bir kapsayıcı olarak göz önünde bulundurun `const` `begin()` `cbegin()` .
+`begin()`Dönüş değerinin olduğunu garantilemek için üye işlevin yerine bu üye işlevi kullanabilirsiniz `const_iterator` . Genellikle, [`auto`](../cpp/auto-cpp.md) Aşağıdaki örnekte gösterildiği gibi tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, ve ' ı `Container` destekleyen herhangi bir türde değiştirilebilir (olmayan) bir kapsayıcı olarak göz önünde bulundurun `const` `begin()` `cbegin()` .
 
 ```cpp
 auto i1 = Container.begin();
@@ -1055,7 +1071,7 @@ auto i2 = Container.cbegin();
 const_iterator cend() const;
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 `const`Yalnızca aralığın sonunu işaret eden bir rastgele erişim Yineleyici.
 
@@ -1063,7 +1079,7 @@ const_iterator cend() const;
 
 `cend` , bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
 
-`end()`Dönüş değerinin olduğunu garantilemek için üye işlevin yerine bu üye işlevi kullanabilirsiniz `const_iterator` . Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, ve ' ı `Container` destekleyen herhangi bir türde değiştirilebilir (olmayan) bir kapsayıcı olarak göz önünde bulundurun `const` `end()` `cend()` .
+`end()`Dönüş değerinin olduğunu garantilemek için üye işlevin yerine bu üye işlevi kullanabilirsiniz `const_iterator` . Genellikle, [`auto`](../cpp/auto-cpp.md) Aşağıdaki örnekte gösterildiği gibi tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, ve ' ı `Container` destekleyen herhangi bir türde değiştirilebilir (olmayan) bir kapsayıcı olarak göz önünde bulundurun `const` `end()` `cend()` .
 
 ```cpp
 auto i1 = Container.end();
@@ -1184,7 +1200,7 @@ Karşılaştırılacak parametre dizesinden en fazla karakter sayısı.
 *`ptr`*\
 İşlenen dizesiyle Karşılaştırılacak C dizesi.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 İşlenen dizesi parametre dizesinden küçükse negatif bir değer; iki dize eşitse sıfır; veya işlenen dizesi parametre dizesinden büyükse pozitif bir değer.
 
@@ -1500,7 +1516,7 @@ size_type copy(
 *`offset`*\
 Kopya yapılacak Kaynak dizedeki başlangıç konumu.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Kopyalanmış karakterlerin sayısı.
 
@@ -1565,7 +1581,7 @@ Ters çevrilen dizedeki ilk öğeyi ele alan bir sabit yineleyici döndürür.
 const_reverse_iterator crbegin() const;
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Dizenin sonunun hemen ötesinde işaret eden bir ters Yineleyici. Konum, ters dizenin başlangıcını belirler.
 
@@ -1577,7 +1593,7 @@ Dizenin sonunun hemen ötesinde işaret eden bir ters Yineleyici. Konum, ters di
 const_reverse_iterator crend() const;
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Ters `const` çevrilen bir dizedeki son öğeden sonra gelen konumu ele alan bir ters Yineleyici (geri çevrilmeyen dizedeki ilk öğeden önce gelen konum).
 
@@ -1608,7 +1624,7 @@ size_type _Copy_s(
 *`offset`*\
 Kopya yapılacak Kaynak dizedeki başlangıç konumu.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Gerçekte kopyalanmış karakterlerin sayısı.
 
@@ -1672,7 +1688,7 @@ const value_type *data() const noexcept;
 value_type *data() noexcept;
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Dizenin içeriğini içeren, null ile sonlandırılmış dizinin ilk öğesine yönelik bir işaretçi. Boş bir dize için, işaretçi değerine eşit olan tek bir null karakteri işaret eder `value_type()` .
 
@@ -1788,13 +1804,13 @@ Dizenin karakter içerip içermediğini test eder.
 bool empty() const;
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 `true` dize nesnesi hiçbir karakter içermiyorsa; `false` en az bir karakter varsa.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, [sıze](#size) = = 0 ile eşdeğerdir.
+Üye işlevi [`size`](#size) = = 0 ile eşdeğerdir.
 
 ### <a name="example"></a>Örnek
 
@@ -1838,7 +1854,7 @@ const_iterator end() const;
 iterator end();
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Bir dizedeki son öğeden sonra gelen konumu ele alan bir rastgele erişim yineleyicisi döndürür.
 
@@ -1923,7 +1939,7 @@ Bir `std::basic_string` dize görünümüne dönüştüren bir geçişi yapabili
 *`x`*\
 Aranacak son eki içeren null ile sonlandırılmış karakter dizesi.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 `true` dize belirtilen soneke biterse; `false` Aksi takdirde.
 
@@ -1995,7 +2011,7 @@ Kaldırılacak dizedeki ilk karakterin dizini.
 *`count`*\
 İle başlayan dize aralığında çok sayıda varsa, kaldırılacak öğe sayısı *`offset`* .
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 İlk iki üye işlev için, üye işlevi tarafından kaldırılan son karakterden sonra ilk karakteri ele alarak bir yineleyici. Üçüncü üye işlevi için, öğelerin silinme String nesnesine bir başvuru.
 
@@ -2104,7 +2120,7 @@ Aramanın başlayacağı konumun dizini.
 *`str`*\
 Üye işlevin aranacağı dize.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Başarılı olduğunda Aranan alt dizenin ilk karakterinin dizini; Aksi takdirde `npos` .
 
@@ -2279,7 +2295,7 @@ Aramanın başlayacağı konumun dizini.
 *`str`*\
 Üye işlevin aranacağı dize.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Başarılı olduğunda Aranan alt dizenin ilk karakterinin dizini; Aksi takdirde `npos` .
 
@@ -2467,7 +2483,7 @@ Aramanın başlayacağı konumun dizini.
 *`str`*\
 Üye işlevin aranacağı dize.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Başarılı olduğunda Aranan alt dizenin ilk karakterinin dizini; Aksi takdirde `npos` .
 
@@ -2654,7 +2670,7 @@ Aramanın tamamlanalınacağı konumun dizini.
 *`str`*\
 Üye işlevin aranacağı dize.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Başarılı olduğunda Aranan alt dizenin ilk karakterinin dizini; Aksi takdirde `npos` .
 
@@ -2843,7 +2859,7 @@ Aramanın tamamlanalınacağı konumun dizini.
 *`str`*\
 Üye işlevin aranacağı dize.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Başarılı olduğunda Aranan alt dizenin son karakterinin dizini; Aksi takdirde `npos` .
 
@@ -2987,7 +3003,7 @@ const_reference front() const;
 reference front();
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Dizenin, boş olmamalı olması gereken ilk öğesine bir başvuru.
 
@@ -3001,7 +3017,7 @@ Dizeyi oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını dönd
 allocator_type get_allocator() const;
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Dize tarafından kullanılan ayırıcı.
 
@@ -3009,7 +3025,7 @@ Dize tarafından kullanılan ayırıcı.
 
 Üye işlevi, depolanan ayırıcı nesnesini döndürür.
 
-String sınıfı için ayrıcılar, sınıfın depolamayı nasıl yönettiğini belirtir. Kapsayıcı sınıflarıyla sağlanan varsayılan ayrıcılar çoğu programlama ihtiyacı için yeterlidir. Kendi ayırıcı sınıfınızı yazmak ve kullanmak, gelişmiş bir C++ konudur.
+String sınıfı için ayrıcılar, sınıfın depolamayı nasıl yönettiğini belirtir. Kapsayıcı sınıflarıyla sağlanan varsayılan ayrıcılar çoğu programlama ihtiyacı için yeterlidir. Kendi ayırıcı sınıfınızı yazmak ve kullanmak gelişmiş bir C++ özelliğidir.
 
 ### <a name="example"></a>Örnek
 
@@ -3038,7 +3054,7 @@ int main( )
 
 ## <a name="basic_stringinsert"></a><a name="insert"></a> `basic_string::insert`
 
-Belirli bir konumdaki dizeye bir öğe veya dizi öğe veya öğe aralığı ekler.
+Belirtilen konumdaki dizeye bir öğe, birkaç öğe veya öğe aralığı ekler.
 
 ```cpp
 basic_string<CharType, Traits, Allocator>& insert(
@@ -3122,9 +3138,9 @@ Bir giriş yineleyicisi, `const_pointer` veya `const_iterator` Eklenecek kaynak 
 *`last`*\
 Bir giriş yineleyicisi, `const_pointer` veya `const_iterator` Eklenecek kaynak aralıktaki son öğeden sonraki konumunu adresleyen.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
-Üye işlevi tarafından yeni karakterler atanmakta olan dize nesnesine veya bağımsız karakter eklemeleri durumunda, belirli üye işlevine bağlı olarak, eklenen karakterin konumunu veya hiçbirini ele alan bir yineleyici.
+Üye işlevi tarafından yeni karakterler atanmış veya bağımsız karakter eklemeleri durumunda, eklenen karakterin konumunu adresleyen veya None, belirli üye işlevine bağlı olarak bir yineleyici olan dize nesnesine başvuru.
 
 ### <a name="example"></a>Örnek
 
@@ -3305,13 +3321,13 @@ Bir dizenin içerebileceği en fazla karakter sayısını döndürür.
 size_type max_size() const;
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Bir dizenin içerebileceği en fazla karakter sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir işlem en büyük boyuttan büyük bir dize ürettiğinden [Length_error Class](../standard-library/length-error-class.md) türünde bir özel durum oluşturulur.
+Bir işlem en büyük boyuttan daha büyük bir dize üretirse tür [ `length_error` sınıfının](../standard-library/length-error-class.md) bir özel durumu oluşturulur.
 
 ### <a name="example"></a>Örnek
 
@@ -3409,7 +3425,7 @@ Eklenecek C dizesinin karakterleri.
 *`right`*\
 Eklenecek dizenin karakterleri.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Üye işlevi tarafından geçirilen karakterlerle eklenen String nesnesine bir başvuru.
 
@@ -3501,7 +3517,7 @@ Hedef dizeye atanacak C dizesinin karakterlerine yönelik bir işaretçi.
 *`right`*\
 Hedef dizeye karakterler atanacak kaynak dize.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Üye işlevi tarafından yeni karakterler atanmakta olan String nesnesine bir başvuru.
 
@@ -3580,21 +3596,21 @@ reference operator[](size_type offset);
 *`offset`*\
 Başvurulacak öğenin konumunun dizini.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Parametre dizini tarafından belirtilen konumdaki dizenin karakteriyle bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizenin ilk öğesi sıfır dizinine sahiptir ve aşağıdaki öğeler pozitif tamsayılar tarafından ardışık olarak dizinlenir, böylece *n* uzunluklu bir dize, *n-1* sayısı tarafından dizine alınmış bir *n*. öğesi vardır.
+Dizenin ilk öğesi sıfır dizinine sahiptir ve aşağıdaki öğeler pozitif tamsayılar tarafından ardışık olarak dizinlenir. *N uzunluğunda bir* dizenin, *n-1* sayısı tarafından dizine alınmış bir *n*. öğesi olduğu anlamına gelir.
 
 `operator[]` , [`at`](#at) bir dizenin öğelerine okuma ve yazma erişimi sağlamak için üye işlevinden daha hızlıdır.
 
-`operator[]` parametre olarak geçirilen dizinin geçerli olup olmadığını denetlemez, ancak üye işlevi çalışır `at` ve bu nedenle de geçerlilik kesin olarak kullanılmalıdır. Üye işlevine geçirilen geçersiz bir dizin (dizenin boyutundan sıfır veya daha büyük ya da buna eşit bir dizin) `at` [out_of_range sınıfı](../standard-library/out-of-range-class.md) özel durumu oluşturur. Tanımsız davranışa neden olan geçersiz bir dizin geçirildi `operator[]` , ancak dizenin uzunluğuna eşit dizin const dizeler için geçerli bir dizindir ve işleç bu dizin geçirildiğinde null karakteri döndürüyor.
+`operator[]` parametre olarak geçirilen dizinin geçerli olup olmadığını denetlemez, ancak üye işlevi çalışır `at` ve bu nedenle de geçerlilik kesin olarak kullanılmalıdır. Üye işlevine geçirilen geçersiz bir dizin (dizenin boyutundan sıfır veya daha büyük veya ona eşit bir dizin) `at` bir [ `out_of_range` sınıf](../standard-library/out-of-range-class.md) özel durumu oluşturur. Tanımsız davranışa neden olan geçersiz bir dizin geçirildi `operator[]` , ancak dizenin uzunluğuna eşit dizin const dizeler için geçerli bir dizindir ve işleç bu dizin geçirildiğinde null karakteri döndürüyor.
 
 Döndürülen başvuru dize reallocations veya dizeler için değişiklikler tarafından geçersiz kılınabilir `const` .
 
-[ \_ Yineleyici \_ hata ayıklama \_ düzeyi](../standard-library/iterator-debug-level.md) 1 veya 2 olarak ayarlandığında derleme yaparken, dizenin sınırları dışında bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur. Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+[`_ITERATOR_DEBUG_LEVEL`](../standard-library/iterator-debug-level.md)' İ 1 veya 2 ' ye ayarlanmış olarak derlerken, dizenin sınırları dışında bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur. Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
 
 ### <a name="example"></a>Örnek
 
@@ -3699,7 +3715,7 @@ Dizenin sonuna eklenecek karakter.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi etkin bir şekilde çağırır [`insert`](#insert) ( [`end`](#end) , *char_value* ).
+Üye işlevi etkin bir şekilde çağırır `insert( end, char_value )` . Daha fazla bilgi için bkz [`insert`](#insert) [`end`](#end) . ve.
 
 ### <a name="example"></a>Örnek
 
@@ -3749,7 +3765,7 @@ const_reverse_iterator rbegin() const;
 reverse_iterator rbegin();
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Ters çevrilen dizedeki ilk öğeye bir rastgele erişim yineleyicisi döndürür, buna karşılık gelen geri alınamaz dizedeki son öğe ne olacağını adresler.
 
@@ -3845,7 +3861,7 @@ const_reverse_iterator rend() const;
 reverse_iterator rend();
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Ters çevrilen bir dizedeki son öğeden sonraki konumu ele alan ters bir rastgele erişim Yineleyici.
 
@@ -3915,7 +3931,7 @@ The string str2 is empty.
 
 ## <a name="basic_stringreplace"></a><a name="replace"></a> `basic_string::replace`
 
-Belirli bir konumdaki bir dizedeki öğeleri, belirtilen karakterlerle veya diğer aralıklardan ya da dizelerle veya C dizelerinden kopyalanmış karakterlerle değiştirir.
+Belirli bir konumdaki bir dizedeki öğeleri belirtilen karakterlerle veya diğer aralıklardan, dizelerden veya C dizelerinden kopyalanmış karakterlerle değiştirir.
 
 ```cpp
 basic_string<CharType, Traits, Allocator>& replace(
@@ -4027,7 +4043,7 @@ Parametre dizesinde kopyalanacak bir yineleyici, const_pointer veya const_iterat
 *`count`*\
 *Char_value* işlenen dizesine kopyalandığı zaman sayısı.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Yerine geçen işlenen dize.
 
@@ -4225,9 +4241,9 @@ Belleğin ayrıldığı karakter sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeterli kapasiteye sahip olma, reallocations zaman alan bir işlemdir ve bir dizedeki karakterlere başvuran tüm başvuruları, işaretçileri ve yineleyiciler geçersiz kılar.
+Yeniden tahsisatın zaman alan bir işlem olduğu için yeterli kapasiteye sahip olmak önemlidir. Ayrıca, bir dizedeki karakterlere başvuran tüm başvuruları, işaretçileri ve yineleyiciler geçersiz kılar.
 
-Dize türü nesneler için kapasite kavramı, türündeki nesneler için aynıdır `vector` . Öğesinden farklı olarak `vector` , `reserve` bir nesnenin kapasitesini daraltmak için üye işlevi çağrılabilir. İstek bağlamadışı ve gerçekleşmeyebilir. Parametresinin varsayılan değeri sıfır olduğunda, bir çağrısı, `reserve` dizenin kapasitesini dizedeki şu an karakter sayısına uyacak şekilde daraltmak için bağlama olmayan bir istek olur. Kapasite geçerli karakter sayısının altında hiçbir şekilde azaltılmıştır.
+Dize nesne türleri için kapasite kavramı, türündeki nesneler için aynıdır `vector` . Öğesinden farklı olarak `vector` , `reserve` bir nesnenin kapasitesini daraltmak için üye işlevi çağrılabilir. İstek bağlamadışı ve gerçekleşmeyebilir. Parametresinin varsayılan değeri sıfır olduğunda, bir çağrısı, `reserve` dizenin kapasitesini dizedeki şu an karakter sayısına uyacak şekilde daraltmak için bağlama olmayan bir istek olur. Kapasite geçerli karakter sayısının altında hiçbir şekilde azaltılmıştır.
 
 Çağırma, `reserve` bir dizenin kapasitesini daraltmak için mümkün olan tek yoldur. Ancak, yukarıda belirtildiği gibi bu istek bağlamadır ve gerçekleşmeyebilir.
 
@@ -4319,7 +4335,7 @@ void resize(
 Dizenin yeni boyutu.
 
 *`char_value`*\
-Ek öğeler gerekliyse, eklenen karakterlerin değeri ile başlatılır.
+Daha fazla öğe gerekliyse, eklenen karakterlerin değeri ile başlatılır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -4466,7 +4482,7 @@ Aramanın başlayacağı konumun dizini.
 *`str`*\
 Üye işlevin aranacağı dize.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Başarılı olduğunda alt dizenin ilk karakterinin geri arandığı son oluşumun dizini; Aksi takdirde `npos` .
 
@@ -4621,7 +4637,7 @@ Dizedeki geçerli öğe sayısını döndürür.
 size_type size() const;
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Dizenin uzunluğu.
 
@@ -4744,7 +4760,7 @@ Bir `std::basic_string` dize görünümüne dönüştüren bir geçişi yapabili
 *`x`*\
 Aranacak ön eki içeren null ile sonlandırılmış karakter dizesi.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
 `true` dize belirtilen önekle başlıyorsa; `false` Aksi takdirde.
 
@@ -4800,9 +4816,9 @@ Varsayılan değeri 0 olan, dizenin kopyasının oluşturulduğu konumdaki öğe
 *`count`*\
 Varsa, kopyalanacak karakter sayısı.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Döndürülen değer
 
-İlk bağımsız değişken tarafından belirtilen konumda başlayan dize işleneni öğelerinin bir kopyası olan bir alt dize nesnesi.
+İlk bağımsız değişken tarafından belirtilen konumdan başlayarak dize işleneninin öğelerinin bir kopyası olan bir alt dize nesnesi.
 
 ### <a name="example"></a>Örnek
 
@@ -4853,7 +4869,7 @@ void swap(
 ### <a name="parameters"></a>Parametreler
 
 *`str`*\
-Öğeleri hedef dizede olanlarla değiştirilecek kaynak dize.
+Öğeleri hedef dizedeki olanlarla birlikte değiştirilecek kaynak dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -4863,7 +4879,7 @@ Takas edilmekte olan dizelerin aynı ayırıcı nesnesi varsa, `swap` üye işle
 - Özel durum oluşturmaz.
 - İki dizelerdeki öğeleri belirten başvuruları, işaretçileri veya yineleyiciler geçersiz kılar.
 
-Aksi takdirde, bir dizi öğe ataması ve Oluşturucu çağrısı iki denetimli sıranın içindeki öğe sayısıyla orantılı olur.
+Aksi takdirde, öğe atamaları ve Oluşturucu çağrıları iki denetimli dizi içindeki öğe sayısıyla orantılı hale getirir.
 
 ### <a name="example"></a>Örnek
 

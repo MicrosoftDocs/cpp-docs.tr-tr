@@ -1,30 +1,29 @@
 ---
-description: 'Hakkında daha fazla bilgi edinin: Delay-Loaded DLL için tüm Içeri aktarmaları yükleme'
-title: Gecikmeli Yüklenen DLL için Tüm İçe Aktarmaları Yükleme
-ms.date: 11/04/2016
+description: Gecikmeli yüklenen DLL için tüm içeri aktarmaları yükleme hakkında daha fazla bilgi edinin
+title: Gecikmeli yüklenen DLL için tüm içeri aktarmaları yükle
+ms.date: 01/19/2021
 helpviewer_keywords:
 - __HrLoadAllImportsForDll linker option
-ms.assetid: 975fcd97-1a56-4a16-9698-e1a249d2d592
-ms.openlocfilehash: 0f1334f30568e4722bd97579145ddcae9851b901
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: b197c50d3b6b68d77dbfccda99e3c2986c515204
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97190932"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667211"
 ---
-# <a name="loading-all-imports-for-a-delay-loaded-dll"></a>Gecikmeli Yüklenen DLL için Tüm İçe Aktarmaları Yükleme
+# <a name="load-all-imports-for-a-delay-loaded-dll"></a>Gecikmeli yüklenen DLL için tüm içeri aktarmaları yükle
 
-Delayhlp. cpp içinde tanımlanan **__HrLoadAllImportsForDll** işlevi, bağlayıcının tüm içeri aktarmaları [/delayload](delayload-delay-load-import.md) BAĞLAYıCı seçeneğiyle belirtilen bir dll 'den yüklemesini söyler.
+`__HrLoadAllImportsForDll`İçinde tanımlanan işlevi, *`delayhlp.cpp`* bağlayıcının bağlayıcı seçeneğiyle BELIRTILEN bir dll 'den tüm içeri aktarmaları yüklemesini söyler [`/delayload`](delayload-delay-load-import.md) .
 
-Tüm içeri aktarmaları yüklemek kodunuzda bir yerde hata işleme yerleştirmenizi sağlar ve içeri aktarmalar için yapılan gerçek çağrılar etrafında özel durum işlemeyi kullanmak zorunda değildir. Ayrıca, bir içeri aktarma işleminin yüklenemediği yardımcı kodun bir sonucu olarak, uygulamanızın bir işlemde kısmen başarısız olmasına neden olan bir durumu önler.
+Tüm içeri aktarmaları yüklemek kodunuzda bir yerde hata işleme yerleştirmenizi sağlar ve içeri aktarmalar için yapılan gerçek çağrılar etrafında özel durum işlemeyi kullanmak zorunda değildir. Ayrıca, bir içeri aktarma işleminin yüklenemediği yardımcı kodun bir sonucu olarak uygulamanızın bir işlem aracılığıyla başarısız olduğu bir durumu önler.
 
-**__HrLoadAllImportsForDll** çağırmak kancalar ve hata işleme davranışını değiştirmez; daha fazla bilgi için bkz. [hata işleme ve bildirim](error-handling-and-notification.md) .
+Çağırma `__HrLoadAllImportsForDll` , kancalar ve hata işleme davranışlarını değiştirmez. Daha fazla bilgi için bkz. [hata işleme ve bildirim](error-handling-and-notification.md).
 
-**__HrLoadAllImportsForDll** geçirilen dll adı, dll 'nin içinde depolanan adla karşılaştırılır ve büyük/küçük harfe duyarlıdır.
+Geçirilen DLL adı, `__HrLoadAllImportsForDll` DLL 'nin içinde depolanan adla karşılaştırılır ve büyük/küçük harfe duyarlıdır.
 
-Aşağıdaki örnek, **__HrLoadAllImportsForDll** nasıl çağrılacağını göstermektedir:
+Aşağıdaki örnek nasıl çağrılacağını göstermektedir `__HrLoadAllImportsForDll` :
 
-```
+```C
 if (FAILED(__HrLoadAllImportsForDll("delay1.dll"))) {
    printf ( "failed on snap load, exiting\n" );
    exit(2);
@@ -33,4 +32,4 @@ if (FAILED(__HrLoadAllImportsForDll("delay1.dll"))) {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Delay-Loaded dll 'Ler için bağlayıcı desteği](linker-support-for-delay-loaded-dlls.md)
+[Gecikmeli yüklenen DLL'ler için bağlayıcı desteği](linker-support-for-delay-loaded-dlls.md)

@@ -1,59 +1,58 @@
 ---
-description: 'Hakkında daha fazla bilgi edinin: Visual C++ 6,0 sonrasında DLL Gecikmeli Yükleme Yardımcısı Işlevinde yapılan değişiklikler'
-title: Visual C++ 6.0 Sonrasındaki Gecikmeli Yükleme Yardımcısı İşlevi DLL Değişiklikleri
-ms.date: 11/04/2016
+description: 'Hakkında daha fazla bilgi edinin: Visual C++ 6,0 sonrasında DLL Gecikmeli Yükleme Yardımcısı işlevinde yapılan değişiklikler'
+title: Visual C++ 6.0 sonrasındaki gecikmeli yükleme yardımcısı işlevi DLL değişiklikleri
+ms.date: 01/19/2021
 helpviewer_keywords:
 - delayed loading of DLLs, what's changed
 - PFromRva method
 - __delayLoadHelper2 function
 - helper functions, what's changed
-ms.assetid: 99f0be69-105d-49ba-8dd5-3be7939c0c72
-ms.openlocfilehash: 0141467aab0b804cf82d21c15510d8f9941853a6
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: a83d5e2895863efde396c48d68316e32aa42a2a1
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97182495"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98666972"
 ---
-# <a name="changes-in-the-dll-delayed-loading-helper-function-since-visual-c-60"></a>Visual C++ 6.0 Sonrasındaki Gecikmeli Yükleme Yardımcısı İşlevi DLL Değişiklikleri
+# <a name="changes-in-the-dll-delayed-loading-helper-function-since-visual-c-60"></a>Visual C++ 6.0 sonrasındaki gecikmeli yükleme yardımcısı işlevi DLL değişiklikleri
 
-Bilgisayarınızda Visual C++ birden çok sürümü varsa veya kendi yardımcı işlevinizi tanımladıysanız, DLL Gecikmeli Yükleme Yardımcısı işlevinde yapılan değişikliklerden etkileniyor olabilirsiniz. Örneğin:
+Bilgisayarınızda Visual C++ birden çok sürümü varsa veya kendi yardımcı işlevinizi tanımladıysanız, DLL Gecikmeli Yükleme Yardımcısı işlevinde yapılan değişiklikler sizi etkileyebilir. Örnek:
 
-- **__delayLoadHelper** artık **__delayLoadHelper2**
+- **`__delayLoadHelper`** Artık `__delayLoadHelper2`
 
-- **__pfnDliNotifyHook** artık **__pfnDliNotifyHook2**
+- `__pfnDliNotifyHook` Artık `__pfnDliNotifyHook2`
 
-- **__pfnDliFailureHook** artık **__pfnDliFailureHook2**
+- `__pfnDliFailureHook` Artık `__pfnDliFailureHook2`
 
-- **__FUnloadDelayLoadedDLL** artık **__FUnloadDelayLoadedDLL2**
+- `__FUnloadDelayLoadedDLL` Artık `__FUnloadDelayLoadedDLL2`
 
 > [!NOTE]
 > Varsayılan yardımcı işlevi kullanıyorsanız, bu değişiklikler sizi etkilemez. Bağlayıcıyı çağırma ile ilgili herhangi bir değişiklik yoktur.
 
 ## <a name="multiple-versions-of-visual-c"></a>Visual C++ birden çok sürümü
 
-Bilgisayarınızda Visual C++ birden fazla sürümüne sahipseniz, bağlayıcının delayimp. lib ile eşleştiğinden emin olun. Bir uyuşmazlık varsa, ya da `___delayLoadHelper2@8` `___delayLoadHelper@8` çözümlenmemiş dış sembol olarak bir bağlayıcı hata bildirimi alırsınız. İlki eski bir delayimp. lib ile yeni bir bağlayıcı ifade, ikincisi ise yeni bir delayimp. lib ile eski bir bağlayıcı gerektirir.
+Bilgisayarınızda Visual C++ birden fazla sürümüne sahipseniz, bağlayıcının eşleştiğinden emin olun *`delayimp.lib`* . Uyuşmazlık varsa, ya da `___delayLoadHelper2@8` `___delayLoadHelper@8` çözümlenmemiş dış sembol olarak bir bağlayıcı hata bildirimi alırsınız. İlki eski olan yeni bir bağlayıcı gerektirir *`delayimp.lib`* ve ikinci, yeni bir bağlayıcı olan eski bir bağlayıcı anlamına gelir *`delayimp.lib`* .
 
-Çözümlenmemiş bir bağlayıcı hatası alırsanız, bunun yerine hangi yardımcı işlevin tanımlandığını görmek için yardımcı işlev içermesini beklediğinizi delayimp. lib dosyasında [dumpbin/linkermember](linkermember.md): 1 ' i çalıştırın. Yardımcı işlevi bir nesne dosyasında da tanımlanabilir; [dumpbin/Symbols](symbols.md) komutunu çalıştırın ve öğesini arayın `delayLoadHelper(2)` .
+Çözümlenmemiş bir bağlayıcı hatası alırsanız, [`dumpbin /linkermember:1`](linkermember.md) *`delayimp.lib`* bunun yerine hangi yardımcı işlevin tanımlandığını görmek için yardımcı işlevi bulundurduğunuz üzerinde öğesini çalıştırın. Yardımcı işlevi bir nesne dosyasında da tanımlanabilir; öğesini çalıştırın [`dumpbin /symbols`](symbols.md) ve bulun `delayLoadHelper` `delayLoadHelper2` .
 
 Visual C++ 6,0 bağlayıcıya sahip olduğunuzu biliyorsanız:
 
-- **__DelayLoadHelper2** tanımlamadığını öğrenmek için Gecikmeli yük Yardımcısı 'nın. lib veya. obj dosyasında dumpbin dosyasını çalıştırın. Aksi takdirde bağlantı başarısız olur.
+- **`dumpbin`** *`.lib`* *`.obj`* Tarafından tanımlanmadığını öğrenmek için Gecikmeli yük Yardımcısı ' nı veya dosyasını çalıştırın `__delayLoadHelper2` . Aksi takdirde bağlantı başarısız olur.
 
-- Gecikme Yükleme Yardımcısı 'nın. lib veya. obj dosyasında **__delayLoadHelper** tanımlayın.
+- `__delayLoadHelper`Gecikmeli yük Yardımcısı *`.lib`* veya *`.obj`* dosyasında tanımlayın.
 
-## <a name="user-defined-helper-function"></a>User-Defined yardımcı Işlevi
+## <a name="user-defined-helper-function"></a>Kullanıcı tanımlı yardımcı işlevi
 
-Kendi yardımcı işlevinizi tanımladınız ve geçerli Visual C++ sürümünü kullanıyorsanız şunları yapın:
+Kendi yardımcı işlevinizi tanımladınız ve geçerli Visual C++ sürümünü kullanıyorsanız, aşağıdaki adımları uygulayın:
 
-- Yardımcı işlevini **__delayLoadHelper2** olarak yeniden adlandırın.
+- Yardımcı işlevini olarak yeniden adlandırın `__delayLoadHelper2` .
 
-- Gecikmeli Tanımlayıcıdaki işaretçiler (delayimp. h içinde ImgDelayDescr), hem 32 hem de 64 bit programlarda beklenen şekilde çalışmak üzere mutlak adreslerden (VAs) göreli adreslere (RVA) değiştiği için, bunları işaretçilere geri dönüştürmeniz gerekir. Yeni bir işlev sunulmuştur: delayhlp. cpp içinde bulunan PFromRva. Bu işlevi, Tanımlayıcıdaki her bir alanın 32 veya 64 bit işaretçilerine geri dönüştürmek için kullanabilirsiniz. Varsayılan Gecikmeli Yükleme Yardımcısı işlevi, örnek olarak kullanılacak iyi bir şablon olmaya devam eder.
+- Gecikme Tanımlayıcıdaki işaretçiler ( `ImgDelayDescr` içindeki *`delayimp.h`* ), 32-bit ve 64 bit programlarında beklenen şekilde çalışmak üzere mutlak adreslerden (VAS) göreli adreslere (RVA) değiştiği için, bu RVA öğesini işaretçilere geri dönüştürmeniz gerekir. Yeni bir işlev tanıtılmıştır: `PFromRva` , içinde bulunan *`delayhlp.cpp`* . Bu işlevi, Tanımlayıcıdaki her bir alandan 32 bit ya da 64-bit işaretçilerine geri dönüştürmek için kullanabilirsiniz. Varsayılan Gecikmeli Yükleme Yardımcısı işlevi, örnek olarak kullanılacak iyi bir şablon olmaya devam eder.
 
-## <a name="load-all-imports-for-a-delay-loaded-dll"></a>Delay-Loaded DLL için tüm Içeri aktarmaları yükle
+## <a name="load-all-imports-for-a-delay-loaded-dll"></a>Gecikmeli yüklenen DLL için tüm içeri aktarmaları yükle
 
-Bağlayıcı, belirttiğiniz DLL 'den gelen tüm içeri aktarımları Gecikmeli yükleme olarak yükleyebilir. Daha fazla bilgi için [bir Delay-Loaded dll Için tüm Içeri aktarmaları yükleme](loading-all-imports-for-a-delay-loaded-dll.md) bölümüne bakın.
+Bağlayıcı, belirttiğiniz DLL 'den gelen tüm içeri aktarımları Gecikmeli yükleme olarak yükleyebilir. Daha fazla bilgi için bkz. [Gecikmeli yüklenen dll için tüm içeri aktarmaları yükleme](loading-all-imports-for-a-delay-loaded-dll.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yardımcı Işlevini anlama](understanding-the-helper-function.md)
+[Yardımcı işlevini anlama](understanding-the-helper-function.md)

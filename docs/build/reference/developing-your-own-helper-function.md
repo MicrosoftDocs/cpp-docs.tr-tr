@@ -1,29 +1,28 @@
 ---
-description: 'Hakkında daha fazla bilgi edinin: kendi yardımcı Işlevinizi geliştirme'
-title: Kendi Yardımcı İşlevinizi Geliştirme
-ms.date: 11/04/2016
+description: Kendi gecikme yük Yardımcısı işlevinizi geliştirme hakkında daha fazla bilgi edinin
+title: Kendi gecikme yük Yardımcısı işlevinizi geliştirme
+ms.date: 01/19/2021
 helpviewer_keywords:
 - helper functions
-ms.assetid: a845429d-68b1-4e14-aa88-f3f5343bd490
-ms.openlocfilehash: da536d13da9a596c5667c3fa84311b73e66d71ac
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 2845a426023ed8b5e2bcfb0056c9be6b829dd23a
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97201462"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667439"
 ---
-# <a name="developing-your-own-helper-function"></a>Kendi Yardımcı İşlevinizi Geliştirme
+# <a name="develop-your-own-delay-load-helper-function"></a>Kendi gecikme yük Yardımcısı işlevinizi geliştirme
 
-DLL veya içeri aktarmalar adına göre belirli işlemleri yapmak için kendi yordamını sağlamak isteyebilirsiniz. Bunu yapmanın iki yöntemi vardır: kendi kodunuzu kodlayın, büyük olasılıkla sağlanan koda göre veya yalnızca daha önce ayrıntılı bildirim kancalarını kullanarak sağlanan sürümü kullanıma alınıyor.
+Gecikme yükü Yardımcısı yordamının kendi sürümünüzü sağlamak isteyebilirsiniz. Kendi yordamınıza, DLL veya içeri aktarmalar adına göre belirli işlemleri yapabilirsiniz. Kendi kodunuzu eklemenin iki yolu vardır: kendi yardımcı işlevinizi, büyük olasılıkla sağlanan koda göre kodlayın. Ya da, [bildirim kancalarını](notification-hooks.md)kullanarak kendi işlevinizi çağırmak için sağlanan yardımcıyı kanca.
 
-## <a name="code-your-own"></a>Kendi kodunuzu kodlayın
+## <a name="code-your-own-helper"></a>Kendi yardımcınızın kodunu yapın
 
-Bu oldukça basittir çünkü temel olarak sağlanan kodu yeni bir kılavuz olarak kullanabilirsiniz. Kuşkusuz, çağrı kurallarına uyması gerekir ve bağlayıcı tarafından oluşturulan dönüştürücüler öğesine dönerse, uygun bir işlev işaretçisi döndürmelidir. Kodunuzda bir kez, çağrıyı karşılamak veya çağrıdan ulaşmak için istediğiniz kadar çok şey yapabilirsiniz.
+Kendi yardımcı yordamınızın oluşturulması basittir. Mevcut kodu, yeni işleviniz için bir kılavuz olarak kullanabilirsiniz. İşlevinizin mevcut yardımcı ile aynı çağırma kurallarını kullanması gerekir. Ve bağlayıcı tarafından oluşturulan dönüştürücüler döndürürse, uygun bir işlev işaretçisi döndürmelidir. Kodunuzu oluşturduktan sonra, aramayı karşıya da çağrmış olabilirsiniz.
 
-## <a name="use-the-start-processing-notification-hook"></a>Işlemi Başlat bildirim kancasını kullan
+## <a name="use-the-start-processing-notification-hook"></a>İşlemi Başlat bildirim kancasını kullan
 
-Bir kullanıcı tarafından sağlanan bildirim kanca işlevine, bildirim dliStartProcessing varsayılan Yardımcısı ile aynı değerleri alan yeni bir işaretçi sağlamak büyük olasılıkla en kolay hale gelir. Bu noktada, varsayılan yardımcıya başarılı bir geri dönme varsayılan yardımdaki tüm işlemleri atlayacaktır.
+Bildirimin varsayılan Yardımcısı ile aynı değerleri alan Kullanıcı tarafından sağlanan bir bildirim kanca işlevine yeni bir işaretçi sağlamak büyük olasılıkla en kolay yoldur `dliStartProcessing` . Bu noktada, varsayılan yardımcıya başarılı bir geri dönme varsayılan yardımdaki tüm diğer işlemleri atladığı için kanca işlevi aslında yeni yardımcı işlev haline gelebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Delay-Loaded dll 'Ler için bağlayıcı desteği](linker-support-for-delay-loaded-dlls.md)
+[Gecikmeli yüklenen DLL'ler için bağlayıcı desteği](linker-support-for-delay-loaded-dlls.md)

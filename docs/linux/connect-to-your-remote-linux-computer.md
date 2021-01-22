@@ -1,13 +1,13 @@
 ---
 title: Visual Studio 'da hedef Linux sisteminize bağlanma
 description: Visual Studio C++ projesinin içinden bir uzak Linux makinesine veya Linux için Windows alt sistemine bağlanma.
-ms.date: 01/17/2020
-ms.openlocfilehash: b1907cc4c1c80a9d8ffba06849c9a80f1a8fbfbe
-ms.sourcegitcommit: 387ce22a3b0137f99cbb856a772b5a910c9eba99
+ms.date: 01/8/2021
+ms.openlocfilehash: 653a1832b4aac6b87c49102440181bb0e55a45a9
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97645221"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667590"
 ---
 # <a name="connect-to-your-target-linux-system-in-visual-studio"></a>Visual Studio 'da hedef Linux sisteminize bağlanma
 
@@ -103,6 +103,73 @@ SSH zaten Linux sisteminizde ayarlanmamışsa ve çalışmıyorsa, yüklemek iç
    ::: moniker-end
 
    ::: moniker range="msvc-160"
+
+## <a name="supported-ssh-algorithms"></a>Desteklenen SSH algoritmaları
+
+Visual Studio sürüm 16,9 ' den başlayarak, verileri ve Exchange anahtarlarını şifrelemek için kullanılan, daha eski ve güvenli olmayan SSH algoritmaları desteği kaldırılmıştır. Yalnızca aşağıdaki algoritmalar desteklenir. Bunlar hem istemciden sunucuya hem de sunucudan istemciye SSH iletişimi için desteklenir:
+
+|Algoritma türü|Desteklenen algoritmalar|
+|---|---|
+| Şifreleme| AES128-CBC</br>AES128-CBC</br>aes192-cbc</br>AES192-Mrk</br>AES256-CBC</br>AES256-Mrk|
+| HMAC | HMAC-SHA2-256</br>HMAC-SHA2-256 |
+| Anahtar değişimi| Diffie-Hellman-group14-SHA256</br>Diffie-Hellman-group16-SHA512 olur</br>Diffie-Hellman-Group-Exchange-SHA256</br>ECDH-SHA2-nistp256</br>ECDH-SHA2-nistp384</br>ECDH-SHA2-nistp521|
+|Ana bilgisayar anahtarı|ECDsa-SHA2-nistp256</br>ECDsa-SHA2-nistp384</br>ECDsa-SHA2-nistp521</br>SSH-DSS</br>ssh-rsa|
+
+### <a name="configure-the-ssh-server"></a>SSH sunucusunu yapılandırma
+
+İlk olarak, küçük bir arka plan. Visual Studio 'dan kullanmak için SSH algoritmasını seçemezsiniz. Bunun yerine, algoritma, SSH sunucusuyla ilk anlaşma sırasında belirlenir. Her bir taraf (istemci ve sunucu), desteklediği algoritmaların bir listesini sağlar ve her ikisinde de ortak olan ilk algoritma seçilir. Visual Studio ile sunucu arasında şifreleme, HMAC, anahtar değişimi ve benzeri en az bir algoritma olduğu sürece bağlantı başarılı olur.
+
+Açık SSH yapılandırma dosyası (**sshd_config**) varsayılan olarak kullanılacak algoritmayı yapılandırmaz. Hiçbir algoritma belirtilmediğinde SSH sunucusunun güvenli Varsayılanları kullanması gerekir. Bu varsayılanlar, SSH sunucusunun sürümüne ve satıcısına bağlıdır.  Visual Studio bu Varsayılanları desteklemiyorsa veya SSH sunucusu, Visual Studio 'Nun desteklemediği algoritmaları kullanacak şekilde yapılandırıldıysa, şu şekilde bir hata görürsünüz: **uzak sisteme bağlanılamadı. Sunucu HMAC algoritması için ortak istemci bulunamadı.**
+
+En modern Linux dağıtımlarına yönelik varsayılan bir SSH sunucusu, Visual Studio ile kullanıma hazır olmalıdır. Ancak, eski ve güvenli olmayan algoritmalar kullanmak üzere yapılandırılmış eski bir SSH sunucusu çalıştırıyorsanız, daha güvenli sürümlere nasıl güncelleştireceğinizi aşağıda açıklanmıştır.
+
+Aşağıdaki örnekte, SSH sunucusu, `hmac-sha1` Visual Studio 16,9 tarafından desteklenmeyen güvenli olmayan algoritmayı kullanır. SSH sunucusu OpenSSH kullanıyorsa, `/etc/ssh/sshd_config` daha güvenli algoritmalar sağlamak için dosyayı aşağıda gösterildiği gibi düzenleyebilirsiniz. Diğer SSH sunucuları için, bunların nasıl yapılandırılacağı hakkında daha fazla bilgi için sunucu belgelerine bakın.
+
+İlk olarak, sunucunuzun kullandığı algoritma kümesinin, Visual Studio tarafından desteklenen algoritmaları içerdiğini doğrulayın. Uzak makinede aşağıdaki komutu çalıştırın ve sunucu tarafından desteklenen algoritmaların listesini alır.
+
+```bash
+$ ssh -Q cipher; ssh -Q mac; ssh -Q kex; ssh -Q key
+```
+
+Şunun gibi bir çıktı oluşturacaktır:
+
+```bash
+3des-cbc
+aes128-cbc
+aes192-cbc
+aes256-cbc
+...
+ecdsa-sha2-nistp521-cert-v01@openssh.com
+sk-ecdsa-sha2-nistp256-cert-v01@openssh.com
+```
+
+Bu çıktı, SSH sunucunuz tarafından desteklenen tüm şifreleme, HMAC, anahtar değişim ve ana bilgisayar anahtarı algoritmalarının listesini listelecektir. Bu liste, Visual Studio tarafından desteklenen algoritmaları içermiyorsa, devam etmeden önce SSH sunucunuzu yükseltmeniz gerekir.
+
+Uzak makinede düzenleyerek Visual Studio tarafından desteklenen algoritmaları etkinleştirebilirsiniz `/etc/ssh/sshd_config` . Aşağıdaki örneklerde, bu yapılandırma dosyasına çeşitli algoritma türlerinin nasıl ekleneceği gösterilmektedir.
+
+Bu örnekler, içinde herhangi bir yere eklenebilir `/etc/ssh/sshd_config` . Bunların kendi satırları üzerinde olduklarından emin olun.
+
+Dosyayı düzenledikten sonra, SSH sunucusunu ( `sudo service ssh restart` Ubuntu 'da) yeniden başlatın ve Visual Studio 'dan yeniden bağlanmayı deneyin.
+
+#### <a name="cipher--example"></a>Şifre örneği
+
+Ekleyemiyorum `Ciphers <algorithms to enable>`  
+Örnek: `Ciphers aes128-cbc,aes256-cbc`
+
+#### <a name="hmac-example"></a>HMAC örneği
+
+Ekleyemiyorum `MACs <algorithms to enable>`  
+Örnek: `MACs hmac-sha2-256,hmac-sha2-512`
+
+#### <a name="key-exchange-example"></a>Anahtar değişimi örneği
+
+Ekleyemiyorum `KexAlgorithms <algorithms to enable>`  
+Örnek: `KexAlgorithms ecdh-sha2-nistp256,ecdh-sha2-nistp384`
+
+#### <a name="host-key-example"></a>Ana bilgisayar anahtarı örneği
+
+Ekleyemiyorum `HostKeyAlgorithms <algorithms to enable>`  
+Örnek: `HostKeyAlgorithms ssh-dss,ssh-rsa`
 
 ## <a name="logging-for-remote-connections"></a>Uzak bağlantılar için günlüğe kaydetme
 

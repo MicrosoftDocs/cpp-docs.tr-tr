@@ -1,7 +1,7 @@
 ---
 description: ': Strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l hakkında daha fazla bilgi edinin'
 title: strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
-ms.date: 4/2/2020
+ms.date: 1/20/2021
 api_name:
 - strncat
 - _strncat_l
@@ -64,20 +64,19 @@ helpviewer_keywords:
 - _tcsncat_l function
 - _mbsncat_l function
 - tcsncat function
-ms.assetid: de67363b-68c6-4ca5-91e3-478610ad8159
-ms.openlocfilehash: 509afe42e4fbf4cec9f0a7a077f0bf4ce0a1423e
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 4b5ae812560cb42498ebed71bb9b8791581ef332
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97344776"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667019"
 ---
 # <a name="strncat-_strncat_l-wcsncat-_wcsncat_l-_mbsncat-_mbsncat_l"></a>strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
 
-Bir dizenin karakterlerini ekler. Bu işlevlerin daha güvenli sürümleri mevcuttur, bkz. [strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md) .
+Bir dizenin karakterlerini ekler. Bu işlevlerin daha güvenli sürümleri mevcuttur, bkz `[strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l` .] (strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.MD).
 
 > [!IMPORTANT]
-> **_mbsncat** ve **_mbsncat_l** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbsncat`** ve **`_mbsncat_l`** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -132,16 +131,16 @@ unsigned char *_mbsncat_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*strDest*<br/>
+*`strDest`*\
 Null ile sonlandırılmış hedef dizesi.
 
-*strSource*<br/>
+*`strSource`*\
 Null ile sonlandırılmış kaynak dizesi.
 
-*biriktirme*<br/>
+*`count`*\
 Eklenecek karakter sayısı.
 
-*locale*<br/>
+*`locale`*\
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -150,14 +149,14 @@ Hedef dizeye bir işaretçi döndürür. Bir hatayı göstermek için hiçbir d�
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strncat** işlevi, en çok, *strSource* 'un Ilk *sayı* karakterlerini *strDest* öğesine ekler. *StrSource* başlangıç karakteri, *strDest*'in Sonlandırıcı null karakterinin üzerine yazar. *StrSource* içinde null bir karakter görünürse, *sayı* karakterleri eklendikten sonra **strncat** , *strSource*'tan null karaktere kadar tüm karakterleri ekler. *Count* , *strSource* uzunluğundan fazlaysa, *strSource* uzunluğu *sayı* yerine kullanılır. Her durumda, sonuçta elde edilen dize bir null karakterle sonlandırılır. Çakışan dizeler arasında kopyalama gerçekleşmesi durumunda davranış tanımsızdır.
+**`strncat`** İşlevi, en çok, ' *`count`* nin ilk karakterini ekler *`strSource`* *`strDest`* . Öğesinin ilk karakteri, *`strSource`* Sonlandırıcı null karakterinin üzerine yazar *`strDest`* . Karakterler eklenmeden önce içinde null bir karakter görünürse *`strSource`* *`count`* , **`strncat`** tüm karakterleri *`strSource`* , null karaktere kadar ekler. , *`count`* Uzunluğundan büyükse, yerine öğesinin *`strSource`* uzunluğu *`strSource`* kullanılır *`count`* . Her durumda, sonuçta elde edilen dize bir null karakterle sonlandırılır. Çakışan dizeler arasında kopyalama gerçekleşmesi durumunda davranış tanımsızdır.
 
 > [!IMPORTANT]
-> **strncat** , *strDest* içinde yeterli alanı denetlemez; Bu nedenle arabellek taşmalarının olası bir nedeni vardır. *Count* değerinin eklenen karakter sayısını sınırlayıp sınırlamadığını aklınızda bulundurun; Bu, *strDest* boyutu için bir sınır değildir. Aşağıdaki örneğe bakın. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
+> **`strncat`** , içinde yeterli alanı denetlemez *`strDest`* ; Bu nedenle arabellek taşmalarının olası bir nedeni vardır. *`count`* Eklenen karakter sayısını sınırlayan göz önünde bulundurun; bu boyut bir sınır değildir *`strDest`* . Aşağıdaki örneğe bakın. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-**wcsncat** ve **_mbsncat** , **strncat**'in geniş karakterli ve çok baytlı karakter sürümleridir. **Wcsncat** 'in dize bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbsncat** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
+**`wcsncat`** ve, **`_mbsncat`** öğesinin geniş karakterli ve çok baytlı karakter sürümleridir **`strncat`** . Dize bağımsız değişkenleri ve dönüş değeri **`wcsncat`** geniş karakterli dizelerdir; bunlar **`_mbsncat`** çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
 
-Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Çıkış değeri **`LC_CTYPE`** yerel ayarın kategori ayarı ayarından etkilenir. Daha fazla bilgi için bkz [`setlocale`](setlocale-wsetlocale.md) . daha fazla bilgi için. Bu işlevlerin sonekine sahip olmayan sürümleri, **`_l`** yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. Sonekine sahip sürümler, **`_l`** bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 C++ ' da, bu işlevlerde şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
@@ -165,24 +164,24 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|`TCHAR.H `rutin|`_UNICODE & _MBCS` tanımsız|`_MBCS` tanımlı|`_UNICODE` tanımlı|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcsncat**|**strncat**|**_mbsnbcat**|**wcsncat**|
-|**_tcsncat_l**|**_strncat_l**|**_mbsnbcat_l**|**_wcsncat_l**|
+|**`_tcsncat`**|**`strncat`**|**`_mbsnbcat`**|**`wcsncat`**|
+|**`_tcsncat_l`**|**`_strncat_l`**|**`_mbsnbcat_l`**|**`_wcsncat_l`**|
 
 > [!NOTE]
-> **_strncat_l** ve **_wcsncat_l** yerel ayar bağımlılığını yoktur ve doğrudan çağrılması için tasarlanmamıştır. **_Tcsncat_l** tarafından iç kullanım için sağlanır.
+> **`_strncat_l`** ve **`_wcsncat_l`** yerel ayar bağımlılığını yoktur ve doğrudan çağrılması anlamına gelir. Tarafından iç kullanım için sağlanır **`_tcsncat_l`** .
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strncat**|\<string.h>|
-|**wcsncat**|\<string.h> veya \<wchar.h>|
-|**_mbsncat**|\<mbstring.h>|
-|**_mbsncat_l**|\<mbstring.h>|
+|**`strncat`**|\<string.h>|
+|**`wcsncat`**|\<string.h> veya \<wchar.h>|
+|**`_mbsncat`**|\<mbstring.h>|
+|**`_mbsncat_l`**|\<mbstring.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -235,16 +234,16 @@ After GoodAppend:  This is the initial string!Extra text t (39 chars)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>
-[strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
-[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
-[strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
-[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
-[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
-[strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
-[_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
-[strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)\
+[`_mbsnbcat, _mbsnbcat_l`](mbsnbcat-mbsnbcat-l.md)\
+[`strcat, wcscat, _mbscat`](strcat-wcscat-mbscat.md)\
+[`strcmp, wcscmp, _mbscmp`](strcmp-wcscmp-mbscmp.md)\
+[`strcpy, wcscpy, _mbscpy`](strcpy-wcscpy-mbscpy.md)\
+[`strncmp, wcsncmp, _mbsncmp, _mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)\
+[`strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)\
+[`_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
+[`strrchr, wcsrchr, _mbsrchr, _mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)\
+[`_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)\
+[`strspn, wcsspn, _mbsspn, _mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)\
+[Ayarlar](../../c-runtime-library/locale.md)\
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)\

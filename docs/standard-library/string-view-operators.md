@@ -1,7 +1,7 @@
 ---
 title: '&lt;string_view &gt; işleçleri'
 description: '`string_view`İki `string_view` nesneyi veya bir `string_view` diğer dize nesnesini karşılaştırmak için kullanılan operatörler için API başvurusu'
-ms.date: 9/4/2020
+ms.date: 01/15/2021
 f1_keywords:
 - xstring/basic_string_view::operator!=
 - xstring/basic_string_view::operator&gt;
@@ -11,6 +11,10 @@ f1_keywords:
 - xstring/basic_string_view::operator&lt;=
 - xstring/basic_string_view::operator+
 - xstring/basic_string_view::operator==
+- xstring/std::literals::string_view_literals::operator "sv
+- std::literals::string_view_literals::operator sv
+- std::literals::string_view_literals
+- string_view_literals
 helpviewer_keywords:
 - std::basic_string_view::operator!=
 - std::basic_string_view::operator&gt;
@@ -18,27 +22,27 @@ helpviewer_keywords:
 - std::basic_string_view::operator&lt;
 - std::basic_string_view::operator&lt;&lt;
 - std::basic_string_view::operator&lt;=, std::basic_string_view::operator==
-ms.openlocfilehash: 832e49aaf01a4ea124b7a6881b93bd93b7337215
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: a14d82dc0b29f88cb25f5b24f0836f033d2b828e
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90039891"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98666907"
 ---
-# <a name="ltstring_viewgt-operators"></a>&lt;string_view &gt; işleçleri
+# <a name="string_view-operators"></a>`<string_view>` işleçleri
 
-İki string_view nesnesini veya bir string_view ve başka bir dize nesnesini (örneğin, [std:: String](basic-string-class.md)veya **char \* **), örtük bir dönüştürmenin sağlandığı bir şekilde karşılaştırmak için bu işleçleri kullanın.
+Bu işleçleri `string_view` , iki nesneyi veya bir `string_view` ve bir [`std::string`](basic-string-class.md) `char*` örtük dönüştürmenin sağlandığı bir diğer dize nesnesini (veya veya) karşılaştırmak için kullanın.
 
-[işleç! =](#op_neq)\
-[işlecinde&gt;](#op_gt)\
-[işlecinde&gt;=](#op_gt_eq)\
-[işlecinde&lt;](#op_lt)\
-[işlecinde&lt;&lt;](#op_lt_lt)\
-[işlecinde&lt;=](#op_lt_eq)\
-[işleç = =](#op_eq_eq)\
-["" SV işleci](#op_sv)
+[`operator!=`](#op_neq)\
+[`operator>`](#op_gt)\
+[`operator>=`](#op_gt_eq)\
+[`operator<`](#op_lt)\
+[`operator<<`](#op_lt_lt)\
+[`operator<=`](#op_lt_eq)\
+[`operator==`](#op_eq_eq)\
+[`operator""sv`](#op_sv)
 
-## <a name="operator"></a><a name="op_neq"></a> işleç! =
+## <a name="operator"></a><a name="op_neq"></a> `operator!=`
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.
 
@@ -73,11 +77,11 @@ Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak tür�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kapalı bir dönüştürme *convertible_string_type* diğer taraftaki string_view arasında bulunmalıdır.
+Kapalı bir dönüştürme, diğer taraftaki *convertible_string_type* arasında olmalıdır `string_view` .
 
 Karşılaştırma, karakter sıralarının ikili bir lexıgraf karşılaştırmasını temel alır. Aynı sayıda öğe varsa ve öğelerin tümü eşitse, iki nesne eşittir. Aksi takdirde, bunlar eşit değildir.
 
-## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a> `operator==`
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.
 
@@ -112,13 +116,13 @@ Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak tür�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kapalı bir dönüştürme *convertible_string_type* diğer taraftaki string_view arasında bulunmalıdır.
+Kapalı bir dönüştürme, diğer taraftaki *convertible_string_type* arasında olmalıdır `string_view` .
 
 Karşılaştırma, karakter sıralarının ikili bir lexıgraf karşılaştırmasını temel alır. Aynı sayıda öğe varsa ve öğelerin tümü eşitse, iki nesne eşittir.
 
-## <a name="operatorlt"></a><a name="op_lt"></a> işlecinde&lt;
+## <a name="operator"></a><a name="op_lt"></a> `operator<`
 
-İşlecin sol tarafındaki nesnenin sağdaki nesneden daha az olup olmadığını sınar sidestring_view
+İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden daha az olup olmadığını sınar.
 
 ```cpp
 template <class CharType, class Traits>
@@ -177,7 +181,7 @@ int main()
 }
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a> işlecinde&lt;=
+## <a name="operator"></a><a name="op_lt_eq"></a> `operator<=`
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden küçük veya ona eşit olup olmadığını sınar.
 
@@ -212,11 +216,11 @@ Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak tür�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz [. &lt; işleci](#op_lt).
+Bkz [`operator<`](#op_lt) ..
 
-## <a name="operatorltlt"></a><a name="op_lt_lt"></a> işlecinde&lt;&lt;
+## <a name="operator"></a><a name="op_lt_lt"></a> `operator<<`
 
-Çıkış akışına bir string_view yazar.
+Bir `string_view` çıkış akışına yazar.
 
 ```cpp
 template <class CharType, class Traits>
@@ -226,10 +230,10 @@ inline basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="parameters"></a>Parametreler
 
-*OSTR*\
+*`Ostr`*\
 yazılan çıkış akışı.
 
-*Üstbilgisine*\
+*`Str`*\
 Bir çıkış akışına girilecek string_view.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -238,9 +242,9 @@ yazılan çıkış akışı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir string_view içeriğini bir çıkış akışına eklemek için, örneğin [std:: cout](iostream.md#cout)kullanarak bu işleci kullanın.
+Örneğin kullanarak bir çıkış akışına içeriğini eklemek için bu işleci kullanın `string_view` [`std::cout`](iostream.md#cout) .
 
-## <a name="operatorgt"></a><a name="op_gt"></a> işlecinde&gt;
+## <a name="operator"></a><a name="op_gt"></a> `operator>`
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden daha büyük olup olmadığını sınar.
 
@@ -271,13 +275,13 @@ Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak tür�
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**`true`** işlecin sol tarafındaki nesne sağ taraftaki string_view nesnesinden sözcüıgrafik büyükse; Aksi takdirde **`false`** .
+**`true`** işlecin sol tarafındaki nesne sağ taraftaki nesneden daha fazla lexıgrafik büyükse `string_view` ; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz [. &lt; işleci](#op_lt).
+Bkz [`operator<`](#op_lt) ..
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a> işlecinde&gt;=
+## <a name="operator"></a><a name="op_gt_eq"></a> `operator>=`
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden büyük veya ona eşit olup olmadığını sınar.
 
@@ -300,10 +304,10 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
+*`left`*\
 Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak türü bir nesne `basic_string_view` .
 
-*Right*\
+*`right`*\
 Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak türü bir nesne `basic_string_view` .
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -312,11 +316,11 @@ Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak tür�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz [. &lt; işleci](#op_lt).
+Bkz [`operator<`](#op_lt) ..
 
-## <a name="operator-sv-string_view-literal"></a><a name="op_sv"></a> "" SV işleci (string_view Sabit)
+## <a name="operator-sv-string_view-literal"></a><a name="op_sv"></a>`operator"" sv`( `string_view` sabit değer)
 
-Bir dize sabit değerinden string_view oluşturur. Ad alanı gerektirir `std::literals::string_view_literals` .
+Bir dize sabit değerinden bir oluşturur `string_view` . Ad alanı gerektirir `std::literals::string_view_literals` .
 
 ### <a name="example"></a>Örnek
 
@@ -333,8 +337,8 @@ using namespace literals::string_view_literals;
 
 ## <a name="requirements"></a>Gereksinimler
 
-[/std: c++ 17](../build/reference/std-specify-language-standard-version.md)
+[`/std:c++17`](../build/reference/std-specify-language-standard-version.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<string_view>](../standard-library/string-view.md)
+[`<string_view>`](../standard-library/string-view.md)

@@ -1,26 +1,25 @@
 ---
-description: 'Hakkında daha fazla bilgi edinin: gerekli değerleri hesaplama'
-title: Gereken Değerleri Hesaplama
-ms.date: 11/04/2016
+description: 'Daha fazla bilgi edinin: gecikme yüklemesi için gerekli değerleri hesaplama'
+title: Gecikme yüklemesi için gerekli değerleri hesapla
+ms.date: 01/19/2021
 helpviewer_keywords:
 - helper functions, calculating necessary values
-ms.assetid: 4f037d0f-881a-4a48-a9d2-9f8872dfccb7
-ms.openlocfilehash: 92d8462be2db55dbc10375629b133d9286560878
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: ae5e0c15b5b13f12fd90c1378a1e449516b55f43
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97179349"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667443"
 ---
-# <a name="calculating-necessary-values"></a>Gereken Değerleri Hesaplama
+# <a name="calculate-necessary-values-for-delay-loading"></a>Gecikme yüklemesi için gerekli değerleri hesapla
 
-İki kritik bilgi parçası, gecikme Yardımcısı yordamıyla hesaplanmalıdır. Bu uçta, bu bilgileri hesaplamak için delayhlp. cpp içinde iki satır içi işlev vardır.
+Gecikme Yükleme Yardımcısı yordamının iki kritik bilgi parçasını hesaplaması gerekir. Yardım için, *`delayhlp.cpp`* Bu bilgileri hesaplamak üzere ' de iki satır içi işlev vardır.
 
-- Birincisi, geçerli içeri aktarmanın dizinini üç farklı tabloya (içeri aktarma adres tablosu (ıAT), bağlı içeri aktarma adresi tablosu (BIAT) ve ilişkisiz içeri aktarma adres tablosu (UıAT)) hesaplar.
+- Birincisi, `IndexFromPImgThunkData` geçerli içeri aktarmanın dizinini üç farklı tabloya (içeri aktarma adres tablosu (ıAT), bağlı içeri aktarma adresi tablosu (BIAT) ve ilişkisiz içeri aktarma adres tablosu (UıAT)) hesaplar.
 
-- İkincisi geçerli bir ıAT içindeki içeri aktarma sayısını sayar.
+- İkincisi, `CountOfImports` geçerli BIR ıAT içindeki içeri aktarma sayısını sayar.
 
-```cpp
+```C
 // utility function for calculating the index of the current import
 // for all the tables (INT, BIAT, UIAT, and IAT).
 __inline unsigned
@@ -44,4 +43,4 @@ CountOfImports(PCImgThunkData pitdBase) {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yardımcı Işlevini anlama](understanding-the-helper-function.md)
+[Yardımcı işlevini anlama](understanding-the-helper-function.md)

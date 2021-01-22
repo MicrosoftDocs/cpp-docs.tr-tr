@@ -1,62 +1,61 @@
 ---
-description: 'Daha fazla bilgi edinin: bildirim kancaları'
-title: Bildirim Kancaları
-ms.date: 11/04/2016
+description: 'Daha fazla bilgi edinin: Yük bildirimi kancalarını geciktir'
+title: Bildirim kancaları
+ms.date: 01/19/2021
 helpviewer_keywords:
 - delayed loading of DLLs, notification hooks
-ms.assetid: e9c291ed-2f2d-4319-a171-09800625256f
-ms.openlocfilehash: 716d2b31faa71c77ec436662ce00368d15afc4b1
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 401ae9099afcf00dc280bb4f9e5f7016a4cbc640
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97209756"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667532"
 ---
-# <a name="notification-hooks"></a>Bildirim Kancaları
+# <a name="notification-hooks"></a>Bildirim kancaları
 
-Bildirim kancaları, yardım yordamında aşağıdaki eylemler yapılmadan hemen önce çağırılır:
+Gecikme yükü bildirim kancaları, aşağıdaki eylemler yardımcı yordamında alınmadan hemen önce çağrılır:
 
 - Kitaplığın saklı tanıtıcısı, zaten yüklenmiş olup olmadığını görmek üzere denetlenir.
 
-- DLL 'nin yükünü denemek için **LoadLibrary** çağırılır.
+- `LoadLibrary` , DLL 'nin yükünü denemek için çağırılır.
 
-- **GetProcAddress** , yordamın adresini almayı denemek için çağrılır.
+- `GetProcAddress` yordamın adresini almayı denemek için çağırılır.
 
 - Gecikmeli içeri aktarma yükleme Dönüştürücüsü ' ne dönün.
 
 Bildirim kancası etkin:
 
-- İşaretçiyi, bildirimleri alan kendi işlevinizi işaret etmek üzere başlatılan **__pfnDliNotifyHook2** işaretçinin yeni bir tanımını sunarak.
+- Bir işaretçinin, `__pfnDliNotifyHook2` bildirimleri alan kendi işlevinizi işaret etmek üzere başlatılmış yeni bir tanımını sağlayarak.
 
    \-veya
 
-- İşaretçiyi, DLL 'ye yapılan herhangi bir çağrının yükleme gecikmesi olan herhangi bir çağrısından önce kanca işlevinizi **__pfnDliNotifyHook2** ayarlayarak.
+- İşaretçiyi, `__pfnDliNotifyHook2` DLL 'ye yapılan herhangi bir çağrının yükleme gecikmesi olduğu herhangi bir çağrısından önce kanca işleviniz olarak ayarlayarak.
 
-Bildirim **dliStartProcessing** ise, kanca işlevi şu şekilde dönebilir:
+Bildirim ise `dliStartProcessing` , kanca işlevi şu şekilde dönebilir:
 
-- NULL
+- `NULL`
 
-   Varsayılan yardımcı, DLL yüklemesini işler. Bu, yalnızca bilgilendirme amacıyla çağrılabilmesi için kullanışlıdır.
+   Varsayılan yardımcı, DLL yüklemesini işler. Yalnızca bilgilendirme amacıyla çağırmak yararlı olur.
 
-- işlev işaretçisi
+- bir işlev işaretçisi
 
-   Varsayılan Gecikmeli yükleme işlemesini atlayın. Bu, kendi yük işleyicinizi sağlamanıza olanak tanır.
+   Varsayılan Gecikmeli yükleme işlemesini atlayın. Kendi yük işleyicinizi sağlamanıza olanak tanır.
 
-Bildirim **dliNotePreLoadLibrary** ise, kanca işlevi şu şekilde dönebilir:
+Bildirim ise `dliNotePreLoadLibrary` , kanca işlevi şu şekilde dönebilir:
 
 - yalnızca bilgilendirme bildirimleri istiyorsa 0.
 
-- DLL kendisini yükleirse yüklenen DLL için HMODULE.
+- `HMODULE`Yüklenen dll için, DLL kendisini yükleirse.
 
-Bildirim **dliNotePreGetProcAddress** ise, kanca işlevi şu şekilde dönebilir:
+Bildirim ise `dliNotePreGetProcAddress` , kanca işlevi şu şekilde dönebilir:
 
 - yalnızca bilgilendirme bildirimleri istiyorsa 0.
 
 - Kanca işlevi adresin kendisini alırsa, içeri aktarılan işlevin adresi.
 
-Bildirim **dliNoteEndProcessing** ise, kanca işlevinin dönüş değeri yok sayılır.
+Bildirim ise `dliNoteEndProcessing` , kanca işlevinin dönüş değeri yok sayılır.
 
-Bu işaretçi başlatılmışsa (sıfır dışında), gecikme Yükleme Yardımcısı, işlevini yürütme boyunca belirli bildirim noktalarında çağırır. İşlev işaretçisi aşağıdaki tanıma sahiptir:
+Bu işaretçi başlatılmışsa (sıfır dışında), Gecikmeli Yükleme Yardımcısı işlevi, yürütme boyunca belirli bildirim noktalarında çağırır. İşlev işaretçisi aşağıdaki tanıma sahiptir:
 
 ```C
 // The "notify hook" gets called for every call to the
@@ -78,8 +77,8 @@ ExternC
 PfnDliHook   __pfnDliFailureHook2;
 ```
 
-Bildirimler bir **DelayLoadInfo** yapısını, bildirim değeriyle birlikte kanca işlevine iletir. Bu veriler, gecikme Yükleme Yardımcısı yordamının kullandığı ile aynıdır. Bildirim değeri, [Yapı ve sabit tanımlarda](structure-and-constant-definitions.md)tanımlanan değerlerden biri olacaktır.
+Bildirimler, `DelayLoadInfo` bildirim değeriyle birlikte kanca işlevine bir yapıda geçer. Bu veriler, gecikme Yükleme Yardımcısı yordamının kullandığı verilerle aynıdır. Bildirim değeri, [Yapı ve sabit tanımlarda](structure-and-constant-definitions.md)tanımlanan değerlerden biri olacaktır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata Işleme ve bildirim](error-handling-and-notification.md)
+[Hata işleme ve bildirme](error-handling-and-notification.md)

@@ -1,7 +1,7 @@
 ---
-description: 'Daha fazla bilgi edinin: özel durumlar (C/C++)'
-title: DLL yükleme özel durum kodları (C/C++)
-ms.date: 11/19/2019
+description: 'Daha fazla bilgi edinin: gecikme yükleme özel durumları (C/C++)'
+title: DLL gecikmesi yükleme özel durum kodları
+ms.date: 01/19/2021
 f1_keywords:
 - ERROR_MOD_NOT_FOUND
 - vcppException
@@ -12,25 +12,24 @@ helpviewer_keywords:
 - delayed loading of DLLs, exceptions
 - ERROR_SEVERITY_ERROR exception
 - ERROR_MOD_NOT_FOUND exception
-ms.assetid: c03be05d-1c39-4f35-84cf-00c9af3bae9a
-ms.openlocfilehash: 53ae6ab9a21309159b29a96e58d077f45fe30e12
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 214d8514baba7b180b8d838af8a6b6c0543cc1ce
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97200851"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667186"
 ---
-# <a name="exceptions-cc"></a>Özel Durumlar (C/C++)
+# <a name="dll-delay-load-exception-codes"></a>DLL gecikmesi yükleme özel durum kodları
 
-Hatalarla karşılaşıldığında iki özel durum kodu ortaya çıkar:
+Hata oluştuğunda iki yapılandırılmış özel durum kodu oluşturulabilir:
 
-- Bir **LoadLibrary** hatası için
+- Bir `LoadLibrary` hata için
 
-- **GetProcAddress** hatası için
+- Bir `GetProcAddress` hata için
 
-Özel durum bilgileri aşağıda verilmiştir:
+Özel durum bilgileri makrosu aşağıda verilmiştir:
 
-```
+```C
 //
 // Exception information
 //
@@ -38,12 +37,12 @@ Hatalarla karşılaşıldığında iki özel durum kodu ortaya çıkar:
 #define VcppException(sev,err)  ((sev) | (FACILITY_VISUALCPP<<16) | err)
 ```
 
-Oluşturulan özel durum kodları standart VcppException (ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND) ve VcppException (ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND) değerlerdir. Özel durum, [EXCEPTION_RECORD](/windows/win32/api/winnt/ns-winnt-exception_record) yapısı, ExceptionInformation [0] alanındaki **GetExceptionInformation** tarafından alınabilecek lpdword değerindeki bir **DelayLoadInfo** yapısına bir işaretçi geçirir.
+Oluşturulan özel durum kodları standart `VcppException(ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND)` ve `VcppException(ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND)` değerlerdir. Özel durum, `DelayLoadInfo` `LPDWORD` alanındaki yapıda tarafından alınabilecek değer içindeki bir yapıya bir işaretçi geçirir `GetExceptionInformation` [`EXCEPTION_RECORD`](/windows/win32/api/winnt/ns-winnt-exception_record) `ExceptionInformation[0]` .
 
-Ayrıca, grAttrs alanında yanlış bitler ayarlandıysa, özel durum ERROR_INVALID_PARAMETER oluşturulur. Bu özel durum, tüm amaçlar ve amaçlar için önemli.
+Ayrıca, alanında yanlış bitler ayarlandıysa `grAttrs` , özel durum `ERROR_INVALID_PARAMETER` oluşturulur. Bu özel durum, tüm amaçlar ve amaçlar için önemli.
 
-Daha fazla bilgi için bkz. [Yapı ve sabit tanımlar](structure-and-constant-definitions.md) .
+Daha fazla bilgi için bkz. [Yapı ve sabit tanımlar](structure-and-constant-definitions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata Işleme ve bildirim](error-handling-and-notification.md)
+[Hata işleme ve bildirme](error-handling-and-notification.md)

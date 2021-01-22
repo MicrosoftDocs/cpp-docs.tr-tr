@@ -1,47 +1,46 @@
 ---
-description: 'Hakkında daha fazla bilgi edinin: çağırma kuralları, parametreler ve dönüş türü'
-title: Çağırma Kuralları, Parametreler ve Dönüş Türü
-ms.date: 02/13/2019
+description: 'Daha fazla bilgi edinin: yük çağırma kurallarını, parametreleri ve dönüş türünü geciktir'
+title: Çağırma kuralları, parametreler ve dönüş türü
+ms.date: 01/19/2021
 helpviewer_keywords:
 - calling conventions, helper functions
 - helper functions, calling conventions
 - helper functions, return types
-ms.assetid: 0ffa4558-6005-4803-be95-7a8ec8837660
-ms.openlocfilehash: f840ecbe3364f293e9445239984ad375eed48aac
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 68817f2746abccf9ad6ae72c4f189fa29aa4c26f
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97182534"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98666933"
 ---
-# <a name="calling-conventions-parameters-and-return-type"></a>Çağırma Kuralları, Parametreler ve Dönüş Türü
+# <a name="delay-load-helper-calling-conventions-parameters-and-return-type"></a>Kuralları, parametreleri ve dönüş türünü çağıran yük yardımcısını geciktir
 
-Yardımcı yordamın prototipi şunlardır:
+Gecikme Yükleme Yardımcısı yordamının prototipi şunlardır:
 
-```
+```C
 FARPROC WINAPI __delayLoadHelper2(
     PCImgDelayDescr pidd,
     FARPROC * ppfnIATEntry
 );
 ```
 
-### <a name="parameters"></a>Parametreler
+## <a name="parameters"></a>Parametreler
 
-*pidd*<br/>
-**`const`** `ImgDelayDescr` İçeri aktarma ile ilgili çeşitli verileri, bağlama bilgileri için zaman damgasını ve tanımlayıcı içeriği hakkında daha fazla bilgi sağlayan bir öznitelik kümesini içeren bir işaretçisi. Şu anda, `dlattrRva` Tanımlayıcıdaki adreslerin göreli sanal adresler olduğunu gösteren yalnızca bir öznitelik vardır. Daha fazla bilgi için, *delayimp. h* içindeki bildirimlere bakın.
+*`pidd`*<br/>
+**`const`** `ImgDelayDescr` İçeri aktarma ile ilgili çeşitli verileri, bağlama bilgileri için zaman damgasını ve tanımlayıcı içeriği hakkında daha fazla bilgi sağlayan bir öznitelik kümesini içeren bir işaretçisi. Şu anda, `dlattrRva` Tanımlayıcıdaki adreslerin göreli sanal adresler olduğunu gösteren yalnızca bir öznitelik vardır. Daha fazla bilgi için içindeki bildirimlere bakın *`delayimp.h`* .
 
 Yapının tanımı için `PCImgDelayDescr` bkz. [Yapı ve sabit tanımlar](structure-and-constant-definitions.md).
 
-*ppfnIATEntry*<br/>
-Alınan işlevin adresiyle güncelleştirilmiş gecikmeli yük içeri aktarma adres tablosunda (ıAT) yuva işaretçisi. Yardımcı yordamının bu konuma döndürdüğü değeri aynı şekilde depolaması gerekir.
+*`ppfnIATEntry`*<br/>
+Gecikme yükleme içeri aktarma adres tablosundaki (ıAT) bir yuva işaretçisi. Bu, içeri aktarılan işlevin adresiyle güncelleştirilmiş olan yuvadadır. Yardımcı yordamının bu konuma döndürdüğü değeri aynı şekilde depolaması gerekir.
 
 ## <a name="expected-return-values"></a>Beklenen dönüş değerleri
 
 İşlev başarılı olursa, içeri aktarılan işlevin adresini döndürür.
 
-İşlev başarısız olursa, bir özel durum oluşturur ve 0 döndürür. Üç tür özel durum oluşturulabilir:
+İşlev başarısız olursa, yapılandırılmış bir özel durum oluşturur ve 0 döndürür. Üç tür özel durum oluşturulabilir:
 
-- ' Deki öznitelikler doğru belirtilmediyse, geçersiz parametre `pidd` .
+- ' Deki öznitelikler doğru belirtilmediyse, geçersiz parametre *`pidd`* .
 
 - `LoadLibrary` Belirtilen DLL 'de başarısız oldu.
 
@@ -51,13 +50,13 @@ Bu özel durumları işlemek sizin sorumluluğunuzdadır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yardımcı işlevi için çağırma kuralı **`__stdcall`** . Dönüş değerinin türü ilgili değildir, bu nedenle FARPROC kullanılır. Bu işlevin C bağlantısı vardır.
+Yardımcı işlevi için çağırma kuralı **`__stdcall`** . Dönüş değerinin türü ilgili değildir, bu nedenle `FARPROC` kullanılır. Bu işlev, C bağlantısına sahiptir ve bu, `extern "C"` C++ kodunda bildirildiği sırada sarmalanması gereken anlamına gelir. `ExternC`Makro sizin için bu sarmalayıcı ile ilgilenmelidir.
 
-Yardım yordamınızın bildirim kancası olarak kullanılmasını istemediğiniz sürece, gecikme yükü Yardımcısı 'nın dönüş değeri, geçirilen işlev işaretçisi konumunda depolanmalıdır. Bu durumda, döndürülecek uygun işlev işaretçisini bulmaktan kodunuz sorumludur. Bağlayıcının oluşturduğu dönüştürücü kodu, bu dönüş değerini içeri aktarmanın gerçek hedefi olarak alır ve doğrudan ona atlar.
+Yardımcı işlevinizi bildirim kancası olarak kullanmak istemediğiniz sürece, yardımcı işlevin dönüş değerini geçirilen işlev işaretçisi konumunda depolayın. Bu durumda, döndürülecek uygun işlev işaretçisini bulmaktan kodunuz sorumludur. Bağlayıcının oluşturduğu dönüştürücü kodu, bu dönüş değerini içeri aktarmanın gerçek hedefi olarak alır ve doğrudan ona atlar.
 
 ## <a name="sample"></a>Örnek
 
-Aşağıdaki kod, bir basit kanca işlevinin nasıl uygulanacağını gösterir.
+Aşağıdaki kod, temel bir kanca işlevinin nasıl uygulanacağını gösterir.
 
 ```C
 FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
@@ -131,11 +130,13 @@ FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
 }
 
 /*
-and then at global scope somewhere
-const PfnDliHook __pfnDliNotifyHook2 = delayHook;
+and then at global scope somewhere:
+
+ExternC const PfnDliHook __pfnDliNotifyHook2 = delayHook;
+ExternC const PfnDliHook __pfnDliFailureHook2 = delayHook;
 */
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yardımcı Işlevini anlama](understanding-the-helper-function.md)
+[Yardımcı işlevini anlama](understanding-the-helper-function.md)

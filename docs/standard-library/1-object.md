@@ -1,22 +1,62 @@
 ---
 description: 'Daha fazla bilgi edinin: _1 nesnesi'
 title: _1 Nesnesi
-ms.date: 11/04/2016
+ms.date: 01/15/2021
 f1_keywords:
 - _1
 - std::_1
 - functional/std::_1
+- std::_2
+- functional/std::_2
+- std::_3
+- functional/std::_3
+- std::_4
+- functional/std::_4
+- std::_5
+- functional/std::_5
+- std::_6
+- functional/std::_6
+- std::_7
+- functional/std::_7
+- std::_8
+- functional/std::_8
+- std::_9
+- functional/std::_9
+- std::_10
+- functional/std::_10
+- std::_11
+- functional/std::_11
+- std::_12
+- functional/std::_12
+- std::_13
+- functional/std::_13
+- std::_14
+- functional/std::_14
+- std::_15
+- functional/std::_15
+- std::_16
+- functional/std::_16
+- std::_17
+- functional/std::_17
+- std::_18
+- functional/std::_18
+- std::_19
+- functional/std::_19
+- std::_20
+- functional/std::_20
+- functional/std::placeholders
+- std::placeholders
 helpviewer_keywords:
 - _1 object
 ms.assetid: 30c3c480-ff31-4708-94be-7d0d65f243c9
-ms.openlocfilehash: dc081cff3fcb64826508dd9d2373b3eab219c82b
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: d6c7550580b1b73485d0d3ee1bcde7497e828650
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97319963"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667529"
 ---
-# <a name="_1-object"></a>_1 Nesnesi
+# <a name="_1-object"></a>`_1` Nesne
 
 Değiştirilebilen bağımsız değişkenler için yer tutucular.
 
@@ -24,15 +64,15 @@ Değiştirilebilen bağımsız değişkenler için yer tutucular.
 
 ```cpp
 namespace placeholders {
-    extern unspecified _1, _2, ... _M
+    extern unspecified _1, _2, ... _N
 } // namespace placeholders (within std)
 ```
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesneler, `_1, _2, ... _M` [bağlama](functional-functions.md#bind)tarafından döndürülen bir nesne için bir işlev çağrısında sırasıyla birinci, ikinci,..., MTH bağımsız değişkenini tasartutuculardır. `_N`Bağlama ifadesi değerlendirildiğinde nth bağımsız değişkeninin nereye ekleneceğini belirtmek için kullanırsınız.
+Nesneler, `_1, _2, ... _N` tarafından döndürülen bir nesneye yapılan işlev çağrısında sırasıyla birinci, ikinci,...,-n bağımsız değişkenini temsil eden yer tutuculardır [`bind`](functional-functions.md#bind) . Örneğin, `_6` ifadesi değerlendirildiğinde altıncı bağımsız değişkenin nereye ekleneceğini belirtmek için kullanırsınız `bind` .
 
-Bu uygulamada, değeri 20 ' `M` dir.
+Microsoft uygulamasında, değeri `_N` 20 ' dir.
 
 ## <a name="example"></a>Örnek
 
