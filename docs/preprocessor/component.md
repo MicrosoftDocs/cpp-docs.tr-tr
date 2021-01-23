@@ -1,30 +1,31 @@
 ---
-description: 'Daha fazla bilgi edinin: bileşen pragması'
-title: bileşen pragması
-ms.date: 08/29/2019
+description: pragmaMicrosoft C/C++ içindeki bileşen yönergesi hakkında daha fazla bilgi edinin
+title: bileşeninde pragma
+ms.date: 01/22/2021
 f1_keywords:
 - vc-pragma.component
 - component_CPP
 helpviewer_keywords:
 - component pragma
-- pragmas, component
-ms.assetid: 7b66355e-3201-4c14-8190-f4a2a81a604a
-ms.openlocfilehash: 2eeb70701c490e0f797dfbd6da7ac11030283073
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+- pragma, component
+no-loc:
+- pragma
+ms.openlocfilehash: 68a4117439390c6ec978ae9d766efb395a4ceaa4
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97300807"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98712953"
 ---
-# <a name="component-pragma"></a>bileşen pragması
+# <a name="component-no-locpragma"></a>`component` pragma
 
 Kaynak dosyalardan gelen tarayıcı bilgileri veya bağımlılık bilgileri koleksiyonunu denetler.
 
 ## <a name="syntax"></a>Syntax
 
-> **#pragma bileşeni (tarayıcı,** { **on** \| **off** } \[ **,** **Başvurular** \[ **,** *ad* ]] **)** \
-> **#pragma bileşeni (mini yeniden oluşturma,** { **on** \| **off** } **)** \
-> **#pragma bileşeni (mintypeınfo,** { **on** \| **off** } **)**
+> **`#pragma component( browser,`** { **`on`** \| **`off`** } \[ **`,`** **`references`** \[ **`,`** *ad* ]] **`)`** \
+> **`#pragma component( minrebuild,`** { **`on`** \| **`off`** } **`)`** \
+> **`#pragma component( mintypeinfo,`** { **`on`** \| **`off`** } **`)`**
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -32,7 +33,7 @@ Kaynak dosyalardan gelen tarayıcı bilgileri veya bağımlılık bilgileri kole
 
 Toplama işlemini açıp kapatabilir ve bilgiler toplanırken dikkate alınmayacak adları belirtebilirsiniz.
 
-Açık veya kapalı'yı kullanmak pragmadan ileri doğru gözatma bilgilerinin toplanmasını denetler. Örneğin:
+Açık veya kapalı ' nın kullanımı, ileriye doğru olan gezinme bilgileri koleksiyonunu denetler pragma . Örneğin:
 
 ```cpp
 #pragma component(browser, off)
@@ -41,9 +42,9 @@ Açık veya kapalı'yı kullanmak pragmadan ileri doğru gözatma bilgilerinin t
 Derleyicinin gözatma bilgilerini toplamasını durdurur.
 
 > [!NOTE]
-> Bu pragma ile ilgili tarama bilgilerinin toplanmasını etkinleştirmek için, [önce tarama bilgilerinin etkinleştirilmesi gerekir](../build/reference/building-browse-information-files-overview.md).
+> Bu ile ilgili tarama bilgilerinin toplanmasını etkinleştirmek için pragma , [önce tarama bilgilerinin etkinleştirilmesi gerekir](../build/reference/building-browse-information-files-overview.md).
 
-**References** seçeneği *ad* bağımsız değişkeniyle birlikte veya olmadan kullanılabilir. *Ad* olmadan **başvuruların** kullanılması başvuruların toplanmasına açık veya kapalı olur (diğer tarama bilgileri toplanmaya devam eder, ancak). Örneğin:
+**`references`** Seçeneği, *ad* bağımsız değişkeniyle birlikte veya olmadan kullanılabilir. **`references`** *Ad* olmadan kullanmak, başvuruların toplanması için açık veya kapalı olur (diğer tarama bilgileri toplanmaya devam eder, ancak). Örneğin:
 
 ```cpp
 #pragma component(browser, off, references)
@@ -51,13 +52,13 @@ Derleyicinin gözatma bilgilerini toplamasını durdurur.
 
 Derleyicinin başvuru bilgilerini toplama işlemini durdurur.
 
-*Name* ve **off** ile **başvuruların** kullanılması, tarama bilgileri penceresinde görünen *ad* başvurularını önler. İlgilenmediğiniz adları ve türleri gözardı etmek ve gözatma bilgisi dosyalarının boyutunu küçültmek için bu sözdizimini kullanın. Örneğin:
+**`references`** *Adı* ile kullanarak ve **`off`** ' ın, tarama bilgileri penceresinde görünen *ad* başvurularını önler. İlgilenmediğiniz adları ve türleri gözardı etmek ve gözatma bilgisi dosyalarının boyutunu küçültmek için bu sözdizimini kullanın. Örneğin:
 
 ```cpp
 #pragma component(browser, off, references, DWORD)
 ```
 
-Bu noktadan sonra gelen DWORD başvurularını yoksayar. **Üzerinde** kullanarak DWORD başvurularını toplamayı yeniden açabilirsiniz:
+Bu noktadan sonra gelen DWORD başvurularını yoksayar. Kullanarak DWORD için başvuruların toplanmasını yeniden açabilirsiniz **`on`** :
 
 ```cpp
 #pragma component(browser, on, references, DWORD)
@@ -73,18 +74,18 @@ Bu, *ad* ile başvuruları toplamayı sürdürmenin tek yoludur; kapattığını
 
 ### <a name="minimal-rebuild"></a>En az yeniden derleme
 
-Kullanım dışı bırakılan [/GI (en az yeniden derlemeyi etkinleştir)](../build/reference/gm-enable-minimal-rebuild.md) özelliği, derleyicinin, disk alanı alan C++ sınıf bağımlılığı bilgilerini oluşturmasını ve depolamasını gerektirir. Disk alanından tasarruf etmek için, örneğin `#pragma component( minrebuild, off )` değişiklik olmayan başlık dosyalarında bağımlılık bilgilerini toplamanız gerektiğinde ' yi kullanabilirsiniz. `#pragma component( minrebuild, on )`Bağımlılık toplamayı yeniden açmak için sınıfların değiştirilmesini kaldırdıktan sonra Ekle.
+Kullanım dışı [ `/Gm` (en az yeniden derlemeyi etkinleştir)](../build/reference/gm-enable-minimal-rebuild.md) özelliği, derleyicinin, disk alanı alan ve C++ sınıf bağımlılığı bilgilerini oluşturmasını ve depolamasını gerektirir. Disk alanından tasarruf etmek için, örneğin `#pragma component( minrebuild, off )` değişiklik olmayan başlık dosyalarında bağımlılık bilgilerini toplamanız gerektiğinde ' yi kullanabilirsiniz. `#pragma component( minrebuild, on )`Bağımlılık toplamayı yeniden açmak için sınıfların değiştirilmesini kaldırdıktan sonra Ekle.
 
 ### <a name="reduce-type-information"></a>Tür bilgilerini azaltma
 
-`mintypeinfo`Seçeneği belirtilen bölge için hata ayıklama bilgilerini azaltır. Bu bilgilerin hacmi epey büyüktür; .pdb ve .obj dosyalarını etkiler. mintypeinfo bölgesindeki sınıflarda ve yapılarda hata ayıklaması yapamazsınız. mintypeinfo seçeneğini kullanmak aşağıdaki uyarıyı önlemeye yardımcı olabilir:
+**`mintypeinfo`** Seçeneği belirtilen bölge için hata ayıklama bilgilerini azaltır. Bu bilgilerin hacmi epey büyüktür; .pdb ve .obj dosyalarını etkiler. Bölgedeki sınıfların ve yapıların hatalarını ayıklayamazsınız **`mintypeinfo`** . Seçeneğinin kullanılması, **`mintypeinfo`** aşağıdaki uyarıyı önlemek için yararlı olabilir:
 
 ```cmd
 LINK : warning LNK4018: too many type indexes in PDB "filename", discarding subsequent type information
 ```
 
-Daha fazla bilgi için bkz. [/GD (en az yeniden derlemeyi etkinleştir)](../build/reference/gm-enable-minimal-rebuild.md)  derleyici seçeneği.
+Daha fazla bilgi için bkz. [ `/Gm` (en düşük yeniden derlemeyi etkinleştir)](../build/reference/gm-enable-minimal-rebuild.md) derleyici seçeneği.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md)

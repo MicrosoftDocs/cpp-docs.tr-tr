@@ -1,34 +1,35 @@
 ---
-title: iç pragma
-description: MSVC Intrinsic pragma, iç yapı olarak kullanılacak desteklenen iç işlevleri belirtmek için kullanılır.
-ms.date: 07/08/2020
+title: alanlarla pragma
+description: MSVC iç, iç pragma Yapı olarak kullanılacak desteklenen iç işlevleri belirtmek için kullanılır.
+ms.date: 01/22/2021
 f1_keywords:
 - intrinsic_CPP
 - vc-pragma.intrinsic
 helpviewer_keywords:
 - intrinsic pragma
-- pragmas, intrinsic
-ms.assetid: 25c86ac7-ef40-47b7-a2c0-fada9c5dc3c5
-ms.openlocfilehash: 45a5a13f3bda3657b93e1a89e7a842a4465b01d5
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+- pragma, intrinsic
+no-loc:
+- pragma
+ms.openlocfilehash: 618705c42c20baf2b99f89e138b30d5633b9e592
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041113"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713551"
 ---
-# <a name="intrinsic-pragma"></a>`intrinsic` Prag
+# <a name="intrinsic-no-locpragma"></a>`intrinsic` pragma
 
-Pragmanın bağımsız değişken listesinde belirtilen işlevlere yapılan çağrıların iç olduğunu belirtir.
+Bağımsız değişken listesinde belirtilen işlevlere yapılan çağrıların iç olduğunu belirtir pragma .
 
 ## <a name="syntax"></a>Syntax
 
-> **`#pragma intrinsic(`** *`function1`* [**`,`** _`function2`_ ... ] **`)`**
+> **`#pragma intrinsic(`***function_1* [ **`,`** *function_2* ...]**`)`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-**`intrinsic`** Pragma derleyiciye bir işlevin bilinen davranışı olduğunu söyler. Derleyici, işlevi çağırabilir ve daha iyi performans gösterecekse işlev çağrısını satır içi yönergelerle değiştirmeyebilir.
+, **`intrinsic`** pragma Derleyiciye bir işlevin bilinen davranışı olduğunu söyler. Derleyici, işlevi çağırabilir ve daha iyi performans gösterecekse işlev çağrısını satır içi yönergelerle değiştirmeyebilir.
 
-İç biçimlere sahip kitaplık işlevleri aşağıda listelenmiştir. Bir **`intrinsic`** pragma görüldüğünde, belirtilen bir iç işlevi içeren ilk işlev tanımında geçerli olur. Etki, kaynak dosyanın sonuna veya `function` aynı iç işlevi belirten bir pragma görünümüne devam eder. **`intrinsic`** Pragma, genel düzeyde yalnızca bir işlev tanımının dışında kullanılabilir.
+İç biçimlere sahip kitaplık işlevleri aşağıda listelenmiştir. Bir kez **`intrinsic`** pragma görüldüğünde, belirtilen bir iç işlevi içeren ilk işlev tanımında geçerli olur. Efekt, kaynak dosyanın sonuna veya `function` pragma aynı iç işlevi belirten görünümün görünümüne devam eder. **`intrinsic`** pragma Yalnızca bir işlev tanımının dışında, genel düzeyde kullanılabilir.
 
 Aşağıdaki işlevlerin iç formları vardır ve belirttiğiniz sırada iç formlar kullanılır [`/Oi`](../build/reference/oi-generate-intrinsic-functions.md) :
 
@@ -137,5 +138,5 @@ Bu kayan nokta işlevleri, [`/Oi`](../build/reference/oi-generate-intrinsic-func
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma yönergeleri ve `__pragma` anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
+[Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md)\
 [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

@@ -1,32 +1,33 @@
 ---
-description: 'Daha fazla bilgi edinin: pop_macro pragma'
-title: pop_macro pragması
-ms.date: 08/29/2019
+description: pragmaMicrosoft C/C++ ' da pop_macro yönergesi hakkında daha fazla bilgi edinin
+title: pop_macro pragma
+ms.date: 01/22/2021
 f1_keywords:
 - vc-pragma.pop_macro
 - pop_macro_CPP
 helpviewer_keywords:
 - pop_macro pragma
-- pragmas, pop_macro
-ms.assetid: 3b5489d0-69ba-4c66-b572-2748af0f12bb
-ms.openlocfilehash: 395e107586b9534b2e9db616f30ddd88b15b93ec
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+- pragma, pop_macro
+no-loc:
+- pragma
+ms.openlocfilehash: 99b0567838bac2a683f2a31fe13dd423e2efe651
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97325712"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713369"
 ---
-# <a name="pop_macro-pragma"></a>pop_macro pragması
+# <a name="pop_macro-no-locpragma"></a>`pop_macro` pragma
 
 *Makro adı* makrosunun değerini, bu makro için yığının en üstünde bulunan değere ayarlar.
 
 ## <a name="syntax"></a>Syntax
 
-> **#pragma pop_macro (** "*makro-adı*" **)**
+> **`#pragma pop_macro(`** "*makro adı*" **`)`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir **pop_macro** yapabilmeniz için önce *makro adı* [push_macro](../preprocessor/push-macro.md) verilmelidir.
+[`push_macro`](../preprocessor/push-macro.md)Bir *makro adı* için a için bir, ' a başlamadan önce verilmelidir **`pop_macro`** .
 
 ## <a name="example"></a>Örnek
 
@@ -64,4 +65,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md)

@@ -1,6 +1,6 @@
 ---
-title: Pragma yönergeleri ve __pragma ve _Pragma anahtar sözcükleri
-description: Microsoft Visual C ve C++ ' da kullanılabilen pragma yönergelerini açıklar (MSVC)
+title: Pragma yönergeleri ve __ pragma ve _Pragma anahtar sözcükleri
+description: pragmaMicrosoft Visual C ve C++ ' da kullanılabilen yönergeleri açıklar (MSVC)
 ms.date: 01/19/2021
 f1_keywords:
 - '#pragma'
@@ -16,16 +16,18 @@ helpviewer_keywords:
 - pragmas
 - preprocessor, pragmas
 - pragma directives (#pragma)
-ms.openlocfilehash: ee518dc096143d1caca95fa1812b9ce0e45527d3
-ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
+no-loc:
+- pragma
+ms.openlocfilehash: fb6daf4c2912ea2168c38bfe2d1ae2650aaecc20
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98667204"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713356"
 ---
-# <a name="pragma-directives-and-the-__pragma-and-_pragma-keywords"></a>Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri
+# <a name="pragma-directives-and-the-__no-locpragma-and-_pragma-keywords"></a>Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri
 
-Pragma yönergeleri makine veya işletim sistemine özgü derleyici özelliklerini belirtir. **`__pragma`** Microsoft derleyicisine özgü anahtar sözcüğü, makro tanımları içinde pragma yönergelerini kodlamanıza olanak sağlar.
+Pragma yönergeleri makineye özel veya işletim sistemine özgü derleyici özelliklerini belirtir. **`__pragma`** Microsoft derleyicisine özgü anahtar sözcük, pragma makro tanımları içindeki yönergeleri kodlamanıza olanak sağlar. Standart **`_Pragma`** Önişlemci Işleci C99 içinde tanıtılmıştı ve c++ 11 tarafından benimsenmiştir.
 
 ## <a name="syntax"></a>Syntax
 
@@ -37,15 +39,15 @@ Pragma yönergeleri makine veya işletim sistemine özgü derleyici özellikleri
 
 Her C ve C++ uygulamasının, ana makinesi veya işletim sistemine özgü bazı özellikleri destekler. Örneğin, bazı programlar, bellekteki verilerin konumu üzerinde tam denetim sağlamalıdır veya belirli işlevlerin parametreleri alma şeklini denetmelidir. **`#pragma`** Yönergeler, her derleyicinin makine ve işletim sistemine özgü özellikler sunmasına, C ve C++ dilleriyle genel uyumluluğu sürdürmesinin bir yolunu sunar.
 
-Pragmalar, tanıma göre makine veya işletim sistemine özgüdür ve genellikle her derleyicide farklıdır. Pragmalar, yeni Önişlemci işlevselliği sağlamak ya da derleyiciye uygulama tanımlı bilgiler sağlamak için koşullu yönergeler içinde kullanılabilir.
+Pragma yönergeleri, belirli bir tanıma göre makineye özgü veya işletim sistemine özgüdür ve genellikle her derleyicide farklıdır. Bir pragma koşullu yönergede yeni Önişlemci işlevselliği sağlamak için kullanılabilir. Veya, derleyicisine uygulama tanımlı bilgiler sağlamak için bir tane kullanın.
 
-*Belirteç dizesi* , varsa belirli bir derleyici yönergesini ve bağımsız değişkenleri temsil eden bir karakter dizisidir. Numara işareti ( **`#`** ), pragmayı içeren satırdaki ilk beyaz boşluk olmayan karakter olmalıdır. Boşluk karakterleri, sayı işaretini ve "pragma" sözcüğünü ayırabilirler. Aşağıda **`#pragma`** , çeviricisinin ön işleme belirteçleri olarak ayrıştırılacak tüm metinleri yazın. Bağımsız değişkeni **`#pragma`** makro genişletmeye tabidir.
+*Belirteç dizesi* , varsa belirli bir derleyici yönergesini ve bağımsız değişkenleri temsil eden bir karakter dizisidir. Numara işareti ( **`#`** ), içeren satırdaki ilk beyaz boşluk olmayan karakter olmalıdır pragma . Boşluk karakterleri, sayı işaretini ve "" sözcüğünü ayırabilirler pragma . Aşağıda **`#pragma`** , çeviricisinin ön işleme belirteçleri olarak ayrıştırılacak tüm metinleri yazın. Bağımsız değişkeni **`#pragma`** makro genişletmeye tabidir.
 
 *Dize sabit değeri* , giriştir `_Pragma` . Dış tırnaklar ve baştaki/sondaki boşluklar kaldırılır. `\"` ile değiştirilmiştir `"` ve `\\` ile değiştirilmiştir `\` .
 
-Derleyici, tanımadığı bir pragma bulduğunda bir uyarı verir ve derlemeyi sürdürür.
+Derleyici, pragma tanımadığı ve derlemeyi devam eden bir hata bulduğunda bir uyarı verir.
 
-Microsoft C ve C++ derleyicileri aşağıdaki pragmaları tanır:
+Microsoft C ve C++ derleyicileri aşağıdaki yönergeleri tanır pragma :
 
 :::row:::
    :::column span="":::
@@ -63,6 +65,7 @@ Microsoft C ve C++ derleyicileri aşağıdaki pragmaları tanır:
    :::column-end:::
    :::column span="":::
       [`detect_mismatch`](../preprocessor/detect-mismatch.md)\
+      [`endregion`](../preprocessor/region-endregion.md)\
       [`fenv_access`](../preprocessor/fenv-access.md)\
       [`float_control`](../preprocessor/float-control.md)\
       [`fp_contract`](../preprocessor/fp-contract.md)\
@@ -88,7 +91,7 @@ Microsoft C ve C++ derleyicileri aşağıdaki pragmaları tanır:
    :::column span="":::
       [`pop_macro`](../preprocessor/pop-macro.md)\
       [`push_macro`](../preprocessor/push-macro.md)\
-      [`region`, endregion](../preprocessor/region-endregion.md)\
+      [`region`](../preprocessor/region-endregion.md)\
       [`runtime_checks`](../preprocessor/runtime-checks.md)\
       [`section`](../preprocessor/section.md)\
       [`setlocale`](../preprocessor/setlocale.md)\
@@ -101,9 +104,9 @@ Microsoft C ve C++ derleyicileri aşağıdaki pragmaları tanır:
 
 <sup>1</sup> yalnızca C++ derleyicisi tarafından desteklenir.
 
-## <a name="pragmas-and-compiler-options"></a>Pragmalar ve derleyici seçenekleri
+## <a name="pragma-directives-and-compiler-options"></a>Pragma yönergeleri ve derleyici seçenekleri
 
-Bazı pragmalar derleyici seçenekleriyle aynı işlevleri sağlar. Kaynak kodunda bir pragma ile karşılaşıldığında, derleyici seçeneği tarafından belirtilen davranışı geçersiz kılar. Örneğin, belirttiyseniz [`/Zp8`](../build/reference/zp-struct-member-alignment.md) , kodun belirli bölümleri için bu derleyici ayarını geçersiz kılabilirsiniz [`pack`](../preprocessor/pack.md) :
+Bazı pragma yönergeler derleyici seçenekleriyle aynı işlevleri sağlar. pragmaKaynak kodunda bir ulaşıldığında, derleyici seçeneği tarafından belirtilen davranışı geçersiz kılar. Örneğin, belirttiyseniz [`/Zp8`](../build/reference/zp-struct-member-alignment.md) , kodun belirli bölümleri için bu derleyici ayarını geçersiz kılabilirsiniz [`pack`](../preprocessor/pack.md) :
 
 ```cmd
 cl /Zp8 some_file.cpp
@@ -118,7 +121,7 @@ cl /Zp8 some_file.cpp
 // ...
 ```
 
-## <a name="the-__pragma-keyword"></a>`__pragma()` anahtar sözcüğü
+## <a name="the-__no-locpragma-keyword"></a>`__pragma()` anahtar sözcüğü
 
 Derleyici Ayrıca, **`__pragma`** yönergeyle aynı işlevselliğe sahip olan Microsoft 'a özgü anahtar sözcüğünü de destekler **`#pragma`** . Fark, **`__pragma`** anahtar sözcüğünün satır içi olarak bir makro tanımında kullanılabilir olması. **`#pragma`** Bir makro tanımında yönerge kullanılamaz, çünkü derleyici yönergedeki işaret karakteri (' # ') sayısını dize haline getirme [işleci (#)](../preprocessor/stringizing-operator-hash.md)olarak yorumlar.
 
@@ -146,20 +149,20 @@ return _hr; \
 
 `_Pragma`[`__pragma`](#the-__pragma-keyword), standart bir parçası dışında, Microsoft 'a özgü anahtar sözcüğe benzerdir. C99 içinde C için sunulmuştur. C++ için C++ 11 ' de kullanıma sunulmuştur.
 
- Pragmaları bir makro tanımına eklemenize olanak tanır. `_`Microsoft 'a özgü anahtar sözcüğünün sahip olduğu iki önde gelen alt çizgi yerine bir önde gelen alt çizgi `__` ve ilk harf büyük harfli olur.
+ pragmaBir makro tanımına yönergeler eklemenizi sağlar. `_`Microsoft 'a özgü anahtar sözcüğünün sahip olduğu iki önde gelen alt çizgi yerine bir önde gelen alt çizgi `__` ve ilk harf büyük harfli olur.
 
-Dize değişmez değeri, daha önce bir deyimin ardından yerleştirilecek şekilde olmalıdır *`#pragma`* . Örnek:
+Dize değişmez değeri, daha önce bir deyimin ardından yerleştirilecek şekilde olmalıdır *`#pragma`* . Örneğin:
 
 ```c
 #pragma message("the #pragma way")
 _Pragma ("message( \"the _Pragma way\")") 
 ```
 
-Yukarıda gösterildiği gibi, tırnak işaretleri ve ters eğik çizgiler kaçmalıdır. Tanınmayan bir pragma dizesi yoksayıldı.
+Yukarıda gösterildiği gibi, tırnak işaretleri ve ters eğik çizgiler kaçmalıdır. pragmaTanınmayan bir dize yok sayılır.
 
 Aşağıdaki kod örneği, **`_Pragma`** koşul ifadesi sabit olduğunda bir uyarı almak istemediğinizde anahtar sözcüğünün onay benzeri bir makroda nasıl kullanılabileceğini gösterir. 
 
-Makro tanımı, çok deyimli makrolar için do/while (0) Ise 'yi kullanır, böylece bir deyim olarak kullanılabilir. Daha fazla bilgi için bkz. Stack Overflow [çok satırlı makro](https://stackoverflow.com/questions/1067226/c-multi-line-macro-do-while0-vs-scope-block) . _Pragma deyimleri yalnızca onu izleyen kod satırı için geçerlidir.
+Makro tanımı, `do` - `while(0)` çok deyimli makrolar için IOM kullanır, böylece bir deyim olarak kullanılabilir. Daha fazla bilgi için bkz. Stack Overflow [çok satırlı makro](https://stackoverflow.com/questions/1067226/c-multi-line-macro-do-while0-vs-scope-block) . **`_Pragma`** İfade yalnızca, izleyen kod satırı için geçerlidir.
 
 ```C
 // Compile with /W4
@@ -187,5 +190,5 @@ int main()
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C/C++ Önişlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)\
-[C pragmaları](../c-language/c-pragmas.md)\
+[C pragma yönergeleri](../c-language/c-pragmas.md)\
 [Anahtar sözcükler](../cpp/keywords-cpp.md)

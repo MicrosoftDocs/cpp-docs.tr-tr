@@ -17,12 +17,12 @@ helpviewer_keywords:
 - '#pragma directives, code analysis'
 - C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
-ms.openlocfilehash: 4d018185e74926c880f8a174eb81cea344167782
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: a7726046e6d14607009bd077d7f021dbefb0c515
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97323307"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98712680"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ için kod analizi genel bakış
 
@@ -46,7 +46,7 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>#pragma desteği
 
-`#pragma`Uyarıları hata olarak değerlendirmek, uyarıları etkinleştirmek veya devre dışı bırakmak ve tek kod satırları için uyarıları gizlemek için yönergesini kullanabilirsiniz. Daha fazla bilgi için bkz. [pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md).
+`#pragma`Uyarıları hata olarak değerlendirmek, uyarıları etkinleştirmek veya devre dışı bırakmak ve tek kod satırları için uyarıları gizlemek için yönergesini kullanabilirsiniz. Daha fazla bilgi için bkz. [pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](../preprocessor/pragma-directives-and-the-pragma-keyword.md).
 
 ## <a name="annotation-support"></a>Ek açıklama desteği
 

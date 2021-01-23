@@ -1,33 +1,34 @@
 ---
-description: 'Şu konuda daha fazla bilgi edinin: bölge, endregion pragmaları'
-title: region, endregion pragması
-ms.date: 08/29/2019
+description: Microsoft C/C++ içindeki Region ve endregion yönergeleri hakkında daha fazla bilgi edinin pragma
+title: Bölge ve endregion pragma
+ms.date: 01/22/2021
 f1_keywords:
 - vc-pragma.endregion
 - endregion_CPP
 - region_CPP
 - vc-pragma.region
 helpviewer_keywords:
-- pragmas, region
-- pragmas, endregion
+- pragma, region
+- pragma, endregion
 - endregion pragma
 - region pragma
-ms.assetid: c697f807-622f-4796-851b-68a42bbecd84
-ms.openlocfilehash: a12305240f0c05913d16c5f26fb64661fc08e736
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+no-loc:
+- pragma
+ms.openlocfilehash: 68964cd2cab4ff344a8319f970f7ee94be4d378d
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97167428"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713291"
 ---
-# <a name="region-endregion-pragmas"></a>region, endregion pragması
+# <a name="region-and-endregion-no-locpragma"></a>`region`ve `endregion`pragma
 
-`#pragma region` Visual Studio Code düzenleyicisinin ana [hat özelliğini](/visualstudio/ide/outlining) kullanırken genişletebileceğiniz veya daraltabileceğiniz bir kod bloğu belirtmenize olanak tanır.
+`#pragma region` Visual Studio düzenleyicisinin ana [hat özelliğini](/visualstudio/ide/outlining) kullanırken genişletebileceğiniz veya daraltabileceğiniz bir kod bloğu belirtmenize olanak tanır.
 
 ## <a name="syntax"></a>Syntax
 
-> **#pragma bölge** *adı*\
-> **#pragma endregion** *açıklaması*
+> **`#pragma region`***ad*\
+> **`#pragma endregion`***Açıklama*
 
 ### <a name="parameters"></a>Parametreler
 
@@ -41,7 +42,7 @@ Seçim Bölgenin adı. Bu ad, kod düzenleyicisinde görüntülenir.
 
 `#pragma endregion` bir bloğun sonunu işaretler `#pragma region` .
 
-Bir `#region` bloğun bir yönerge tarafından sonlandırılması gerekir `#pragma endregion` .
+Bir `#pragma region` bloğun bir yönerge tarafından sonlandırılması gerekir `#pragma endregion` .
 
 ## <a name="example"></a>Örnek
 
@@ -58,4 +59,4 @@ int main() {}
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md)

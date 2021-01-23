@@ -1,40 +1,41 @@
 ---
-description: 'Daha fazla bilgi edinin: alloc_text pragma'
-title: alloc_text pragması
-ms.date: 08/29/2019
+description: pragmaMicrosoft C/C++ ' da alloc_text yönergesi hakkında daha fazla bilgi edinin
+title: alloc_text pragma
+ms.date: 01/22/2021
 f1_keywords:
 - vc-pragma.alloc_text
 - alloc_text_CPP
 helpviewer_keywords:
 - alloc_text pragma
-- pragmas, alloc_text
-ms.assetid: 1fd7be18-e4f7-4f70-b079-6326f72b871a
-ms.openlocfilehash: 496a083c251684ebba004eef00bf466e72211ada
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+- pragma, alloc_text
+no-loc:
+- pragma
+ms.openlocfilehash: f20cbf90952c6ac5793c5bdf4d2ef1c533be2126
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97301067"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713135"
 ---
-# <a name="alloc_text-pragma"></a>alloc_text pragması
+# <a name="alloc_text-no-locpragma"></a>`alloc_text` pragma
 
-Belirtilen işlev tanımlarının bulunduğu kod bölümünü adlandırır. Pragma, işlev bildirimcisi ve adlandırılan işlevlerin işlev tanımı arasında gerçekleşmelidir.
+Belirtilen işlev tanımlarının yerleştirildiği kod bölümünü adlandırır. , pragma Bir işlev bildirimci ve adlandırılmış işlevler için işlev tanımı arasında gerçekleşmelidir.
 
 ## <a name="syntax"></a>Syntax
 
-> **#pragma alloc_text (** "*textsection*" **,** *işlev1* [**,** *function2* ...] **)**
+> **`#pragma alloc_text(`** "*metin-bölümü*" **`,`** *function_1* [ **`,`** *function_2* ...] **`)`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Alloc_text** pragma, C++ üye işlevlerini veya aşırı yüklenmiş işlevleri işlemez. Yalnızca C bağlantısıyla belirtilen işlevler için geçerlidir — diğer bir deyişle, **extern "C"** bağlantı belirtimiyle belirtilen işlevler. Bu pragmayı C++ bağlantısı olan bir işlevde kullanırsanız, bir derleyici hatası oluşturulur.
+**`alloc_text`** pragma C++ üye işlevlerini veya aşırı yüklenmiş işlevleri işlemez. Yalnızca C bağlantısıyla belirtilen işlevler, diğer bir deyişle, bağlantı belirtimi ile belirtilen işlevler için geçerlidir **`extern "C"`** . Bunu pragma C++ bağlantısıyla bir işlevde kullanmaya çalışırsanız bir derleyici hatası oluşturulur.
 
-Kullanılarak işlev adresleme **`__based`** desteklenmediğinden, Bölüm konumlarının belirtilmesi **alloc_text** pragma 'un kullanılmasını gerektirir. *Textsection* tarafından belirtilen ad çift tırnak işareti içine alınmalıdır.
+Kullanılarak işlev adresleme **`__based`** desteklenmediğinden, Bölüm konumlarının belirtilmesi öğesinin kullanımını gerektirir **`alloc_text`** pragma . *Metin bölümü* tarafından belirtilen ad, çift tırnak işareti içine alınmalıdır.
 
-**Alloc_text** pragma, belirtilen işlevlerin ve bu işlevlerin tanımlarından önce bildirimlerinden sonra gelmelidir.
+**`alloc_text`** pragma Belirtilen işlevlerin ve bu işlevlerin tanımlarından önce bildirimlerinden sonra gelmelidir.
 
-Bir **alloc_text** pragma içinde başvurulan işlevler pragma ile aynı modülde tanımlanmalıdır. Aksi takdirde, tanımsız bir işlev daha sonra farklı bir metin bölümüne derlenirse, hata yakalanmayabilir veya yakalanmayabilir. Program genellikle düzgün bir şekilde çalışacak olsa da, işlev hedeflenen bölümlerde ayrılmayacaktır.
+İçinde başvurulan işlevler **`alloc_text`** pragma , ile aynı modülde tanımlanmalıdır pragma . Aksi takdirde, tanımsız bir işlev daha sonra farklı bir metin bölümüne derlenirse, hata yakalanmayabilir veya yakalanmayabilir. Program genellikle doğru şekilde çalışacak olsa da, işlev amaçlanan bölümlerde ayrılmayacaktır.
 
-**Alloc_text** diğer sınırlamalar aşağıdaki gibidir:
+Diğer sınırlamalar **`alloc_text`** aşağıdaki gibidir:
 
 - Bir işlev içinde kullanılamaz.
 
@@ -42,4 +43,4 @@ Bir **alloc_text** pragma içinde başvurulan işlevler pragma ile aynı modüld
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md)

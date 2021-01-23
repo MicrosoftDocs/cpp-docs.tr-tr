@@ -1,36 +1,37 @@
 ---
-description: 'Daha fazla bilgi edinin: hdrstop pragması'
-title: hdrstop pragması
-ms.date: 08/29/2019
+description: Microsoft C/C++ ' da hdrstop yönergesi hakkında daha fazla bilgi edinin pragma
+title: hdrstop pragma
+ms.date: 01/22/2021
 f1_keywords:
 - hdrstop_CPP
 - vc-pragma.hdrstop
 helpviewer_keywords:
 - hdrstop pragma
-- pragmas, hdrstop
-ms.assetid: 5ea8370a-10d1-4538-ade6-4c841185da0e
-ms.openlocfilehash: 1fec99503adfb1d81f7da324db83e4c2b56a3912
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+- pragma, hdrstop
+no-loc:
+- pragma
+ms.openlocfilehash: caeaeb4a44182b6ba2edfa385a1504fde998cc43
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97167519"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713616"
 ---
-# <a name="hdrstop-pragma"></a>hdrstop pragması
+# <a name="hdrstop-no-locpragma"></a>`hdrstop` pragma
 
-Ön derleme dosya adları ve derleme durumunun kaydedildiği konum üzerinde ek denetim sağlar.
+Ön derleme dosya adları üzerinde ve derleme durumunun kaydedildiği konum üzerinde daha fazla denetim sağlar.
 
 ## <a name="syntax"></a>Syntax
 
-> **#pragma hdrstop** [("*filename*")]
+> **`#pragma hdrstop`** [("*filename*")]
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Dosya adı* , kullanılacak veya oluşturulacak ön derlenmiş üstbilgi dosyasının adıdır ( [/yu](../build/reference/yu-use-precompiled-header-file.md) veya [/rivc](../build/reference/yc-create-precompiled-header-file.md) 'nin belirtilmediğine bağlı olarak). *Dosya adı* bir yol belirtimi içermiyorsa, ön derlenmiş üstbilgi dosyasının kaynak dosyayla aynı dizinde olduğu varsayılır.
+*Dosya adı* , kullanılacak veya oluşturulacak ön derlenmiş üstbilgi dosyasının adıdır (veya belirtilen olmasına bağlı olarak [`/Yu`](../build/reference/yu-use-precompiled-header-file.md) [`/Yc`](../build/reference/yc-create-precompiled-header-file.md) ). *Dosya adı* bir yol belirtimi içermiyorsa, ön derlenmiş üstbilgi dosyasının kaynak dosyayla aynı dizinde olduğu varsayılır.
 
-Bir C veya C++ dosyası ile derlendikten sonra bir **hdrstop** `/Yc` pragması içeriyorsa, derleyici derlemenin durumunu pragma 'ın konumuna kaydeder. Pragmayı izleyen kodun derlenmiş durumu kaydedilmez.
+Bir C veya C++ dosyası **`hdrstop`** pragma ile **`/Yc`** derlendikleri zaman içeriyorsa, derleyici derlemenin durumunu öğesinin konumuna kaydeder pragma . Takip eden herhangi bir kodun derlenmiş durumu pragma kaydedilmez.
 
-Derlenmiş durumun kaydedildiği ön derlenmiş üstbilgi dosyasını adlandırmak için *dosya adı* ' nı kullanın. **Hdrstop** ve *filename* arasındaki boşluk isteğe bağlıdır. **Hdrstop** pragması 'nda belirtilen dosya adı bir dizedir ve bu nedenle herhangi bir C veya C++ dizesinin kısıtlamalarına tabidir. Özellikle, tırnak işaretleri içine almalı ve dizin adlarını belirtmek için çıkış karakterini (ters eğik çizgi) kullanmalısınız. Örneğin:
+Derlenmiş durumun kaydedildiği ön derlenmiş üstbilgi dosyasını adlandırmak için *dosya adı* ' nı kullanın. **`hdrstop`** Ve *dosya adı* arasında boşluk isteğe bağlıdır. İçinde belirtilen dosya adı **`hdrstop`** pragma bir dizedir ve herhangi bir C veya C++ dizesinin kısıtlamalarına tabidir. Özellikle, tırnak işaretleri içine almalısınız ve **`\`** dizin adlarını belirtmek için kaçış karakterini (ters eğik çizgi) kullanmanız gerekir. Örneğin:
 
 ```C
 #pragma hdrstop( "c:\\projects\\include\\myinc.pch" )
@@ -38,13 +39,13 @@ Derlenmiş durumun kaydedildiği ön derlenmiş üstbilgi dosyasını adlandırm
 
 Önceden derlenmiş üstbilgi dosyasının adı, öncelik sırasına göre, aşağıdaki kurallara uygun şekilde belirlenir:
 
-1. Derleyici seçeneğinin bağımsız değişkeni `/Fp`
+1. Derleyici seçeneğinin bağımsız değişkeni **`/Fp`**
 
 2. *Dosya adı* bağımsız değişkeni`#pragma hdrstop`
 
-3. .PCH uzantılı kaynak dosyanın temel adı
+3. PCH uzantılı kaynak dosyanın temel adı
 
-`/Yc`Ve seçenekleri için `/Yu` , iki derleme seçeneğinin veya **hdrstop pragmanın** bir dosya adı belirtmediği durumlarda kaynak dosyanın temel adı, önceden derlenmiş üstbilgi dosyasının temel adı olarak kullanılır.
+**`/Yc`** Ve **`/Yu`** seçeneklerinden hiçbiri veya **`hdrstop`** pragma bir dosya adı belirtilmezse, kaynak dosyanın temel adı önceden derlenmiş üstbilgi dosyasının temel adı olarak kullanılır.
 
 Makro değiştirme işlemini gerçekleştirmek için ön işlem komutları da kullanabilirsiniz:
 
@@ -57,7 +58,7 @@ Makro değiştirme işlemini gerçekleştirmek için ön işlem komutları da ku
 #pragma hdrstop( INCLUDE_PATH PCH_FNAME )
 ```
 
-Aşağıdaki kurallar **hdrstop** pragma 'un yerleştirilebileceği yeri yönetir:
+Aşağıdaki kurallar, nerede **`hdrstop`** pragma yerleştirilebileceğini yönetir:
 
 - Bir veri veya işlev bildiriminin ya da tanımının dışında görünmelidir.
 
@@ -76,8 +77,8 @@ __inline Disp( char *szToDisplay )   // Define an inline function
 #pragma hdrstop
 ```
 
-Bu örnekte, **hdrstop** pragması iki dosya eklendikten sonra görünür ve bir satır içi işlev tanımlanmıştır. Bu konum, ilk başta, pragma için tek bir yerleştirme gibi görünebilir. Bununla birlikte, el ile ön derleme seçeneklerini kullanmanın `/Yc` ve `/Yu` **hdrstop** pragması ile tüm kaynak dosyaları (hatta satır içi kod) önceden derlemenize olanak tanıyan göz önünde bulundurun. Microsoft derleyicisi, size yalnızca veri bildirimlerini ön derlemek gibi bir sınırlama getirmez.
+Bu örnekte, **`hdrstop`** pragma iki dosya eklendikten sonra görünür ve bir satır içi işlev tanımlanmıştır. Bu konum, ilk başta, için tek bir yerleştirme gibi görünebilir pragma . Bununla birlikte, el ile ön derleme seçeneklerini kullanmanın yanı sıra **`/Yc`** **`/Yu`** **`hdrstop`** pragma tüm kaynak dosyaları veya hatta satır içi kodu önceden derlemenize olanak tanır. Microsoft derleyicisi, yalnızca veri bildirimlerinin ön derlenmesini sınırlandırmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md)

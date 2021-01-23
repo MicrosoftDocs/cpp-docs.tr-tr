@@ -1,44 +1,45 @@
 ---
-title: fenv_access pragması
-description: Fenv_access pragma yönergesinin kullanımını ve etkilerini açıklar. Fenv_access yönergesi, çalışma zamanında kayan nokta ortamına erişimi denetler.
-ms.date: 11/19/2019
+title: fenv_access pragma
+description: Fenv_access yönergesinin kullanımını ve etkilerini açıklar pragma . Fenv_access yönergesi, çalışma zamanında kayan nokta ortamına erişimi denetler.
+ms.date: 01/22/2021
 f1_keywords:
 - vc-pragma.fenv_access
 - fenv_access_CPP
 helpviewer_keywords:
-- pragmas, fenv_access
+- pragma, fenv_access
 - fenv_access pragma
-ms.assetid: 2ccea292-0ae4-42ce-9c67-cc189299857b
-ms.openlocfilehash: e03eb404f2805a4f7c96509600c063c1b1acf629
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+no-loc:
+- pragma
+ms.openlocfilehash: be33bbf9de381850ec78ece204d117ebc537152b
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74305849"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713668"
 ---
-# <a name="fenv_access-pragma"></a>fenv_access pragması
+# <a name="fenv_access-no-locpragma"></a>`fenv_access` pragma
 
-Kayan nokta ortam bayrağı testlerini ve mod değişikliklerini**değiştirecek (** **Açık**) veya mümkün olan iyileştirmeleri devre dışı bırakır.
+**`on`** **`off`** Kayan nokta ortam bayrağı testlerini ve mod değişikliklerini değiştirecek () veya () iyileştirmelerini devre dışı bırakır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#pragma fenv_access (** { **on** | **off** } **)**
+> **`#pragma fenv_access (`** { **`on`** | **`off`** } **`)`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak **fenv_access** **kapalıdır**. Derleyici, kodunuzun kayan nokta ortamına erişmediğini veya onu işlemediğini varsayar. Ortam erişimi gerekmiyorsa, derleyici, kayan nokta kodunuzu iyileştirmek için daha fazlasını yapabilir.
+Varsayılan olarak, **`fenv_access`** **`off`** . Derleyici, kodunuzun kayan nokta ortamına erişmediğini veya onu işlemediğini varsayar. Ortam erişimi gerekmiyorsa, derleyici, kayan nokta kodunuzu iyileştirmek için daha fazlasını yapabilir.
 
-Kodunuz kayan nokta durum bayraklarını, özel durumları veya Denetim modu bayraklarını test ettikten sonra **fenv_access** etkinleştirin. Derleyici kayan nokta iyileştirmelerini devre dışı bırakır, böylece kodunuzun kayan nokta ortamına tutarlı bir şekilde erişebilmesini sağlayabilirsiniz.
+**`fenv_access`** Kodunuz kayan nokta durum bayraklarını, özel durumları veya Denetim modu bayraklarını test ettikten sonra etkinleştirin. Derleyici kayan nokta iyileştirmelerini devre dışı bırakır, böylece kodunuzun kayan nokta ortamına tutarlı bir şekilde erişebilmesini sağlayabilirsiniz.
 
-[/FP: Strict] komut satırı seçeneği **fenv_access**otomatik olarak etkinleştirilir. Bu ve diğer kayan nokta davranışı hakkında daha fazla bilgi için bkz. [/FP (kayan nokta davranışını belirt)](../build/reference/fp-specify-floating-point-behavior.md).
+[/FP: Strict] komut satırı seçeneği otomatik olarak etkinleştirilir **`fenv_access`** . Bu ve diğer kayan nokta davranışı hakkında daha fazla bilgi için bkz. [/FP (Floating-Point davranışını belirt)](../build/reference/fp-specify-floating-point-behavior.md).
 
-**Fenv_access** pragma 'ı diğer kayan nokta ayarları ile birlikte kullanmanın yolları hakkında kısıtlamalar vardır:
+**`fenv_access`** pragma Diğer kayan nokta ayarları ile birlikte kullanmanın yolları konusunda kısıtlamalar vardır:
 
-- Kesin anlambilim etkinleştirilmediği takdirde **fenv_access** etkinleştiremezsiniz. Kesin anlambilim [float_control](float-control.md) pragma tarafından ya da [/FP: kesin](../build/reference/fp-specify-floating-point-behavior.md) veya [/FP: Strict](../build/reference/fp-specify-floating-point-behavior.md) derleyici seçenekleri kullanılarak etkinleştirilebilir. Diğer bir kayan nokta komut satırı seçeneği belirtilmemişse, derleyici varsayılan olarak **/FP: kesin** olarak ayarlanır.
+- **`fenv_access`** Kesin anlambilim etkinleştirilmediği takdirde etkinleştiremezsiniz. Kesin anlambilim, ya da [`float_control`](float-control.md) pragma [`/fp:precise`](../build/reference/fp-specify-floating-point-behavior.md) veya [`/fp:strict`](../build/reference/fp-specify-floating-point-behavior.md) derleyici seçenekleri kullanılarak etkinleştirilebilir. **`/fp:precise`** Diğer bir kayan nokta komut satırı seçeneği belirtilmemişse, derleyici varsayılan olarak ayarlanır.
 
-- **Fenv_access (açık)** ayarlandığında kesin semantiğini devre dışı bırakmak için **float_control** kullanamazsınız.
+- **`float_control`** Ayarlandığında kesin semantiğini devre dışı bırakmak için kullanamazsınız **`fenv_access(on)`** .
 
-**Fenv_access** tabi olan iyileştirmelerin türleri şunlardır:
+Uygulamasına tabi olan iyileştirmelerin türleri **`fenv_access`** şunlardır:
 
 - Küresel genel alt ifade eleme
 
@@ -46,7 +47,7 @@ Kodunuz kayan nokta durum bayraklarını, özel durumları veya Denetim modu bay
 
 - Sabit katlama
 
-Diğer kayan nokta pragmaları şunlardır:
+Diğer kayan nokta pragma yönergeleri şunlardır:
 
 - [float_control](../preprocessor/float-control.md)
 
@@ -54,7 +55,7 @@ Diğer kayan nokta pragmaları şunlardır:
 
 ## <a name="examples"></a>Örnekler
 
-Bu örnek, 24 bit duyarlık için kayan nokta denetim kaydını ayarlamak üzere **fenv_access** **Açık** olarak ayarlar:
+Bu örnek **`fenv_access`** **`on`** , 24 bit duyarlık için kayan nokta denetim kaydını ayarlamak üzere olarak ayarlanır:
 
 ```cpp
 // pragma_directive_fenv_access_x86.cpp
@@ -84,7 +85,7 @@ int main() {
 out=9.999999776482582e-03
 ```
 
-Önceki örnekten `#pragma fenv_access (on)` yorum yaptığınızda çıktı farklıdır. Bunun nedeni, derleyicinin, Denetim modunu kullanmayan derleme zamanı değerlendirmesi gerçekleştirmesinden kaynaklanır.
+Önceki örnekten yorum yaparsanız `#pragma fenv_access (on)` , çıktı farklıdır. Bunun nedeni, derleyicinin, Denetim modunu kullanmayan derleme zamanı değerlendirmesi gerçekleştirmesinden kaynaklanır.
 
 ```cpp
 // pragma_directive_fenv_access_2.cpp
@@ -113,4 +114,4 @@ out=1.000000000000000e-02
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md)

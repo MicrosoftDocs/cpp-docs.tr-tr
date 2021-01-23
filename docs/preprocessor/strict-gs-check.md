@@ -1,42 +1,44 @@
 ---
-description: 'Daha fazla bilgi edinin: strict_gs_check pragma'
-title: strict_gs_check pragması
-ms.date: 08/29/2019
+description: pragmaMicrosoft C/C++ ' da strict_gs_check yönergesi hakkında daha fazla bilgi edinin
+title: strict_gs_check pragma
+ms.date: 01/22/2021
 f1_keywords:
 - strict_gs_check
 - strict_gs_check_CPP
 helpviewer_keywords:
 - strict_gs_check pragma
-ms.assetid: decfec81-c916-42e0-a07f-8cc26df6a7ce
-ms.openlocfilehash: 3fa1600bba59077ff66bfb0184bdd3ca4fe0e326
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+- pragma, strict_gs_check
+no-loc:
+- pragma
+ms.openlocfilehash: 4a224c42dc30227e5bd9a7142c807f7cebc34614
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97197315"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713161"
 ---
-# <a name="strict_gs_check-pragma"></a>strict_gs_check pragması
+# <a name="strict_gs_check-no-locpragma"></a>`strict_gs_check` pragma
 
-Bu pragma artırılmış güvenlik denetimi sağlar.
+Bu pragma , gelişmiş güvenlik denetimi sağlar.
 
 ## <a name="syntax"></a>Syntax
 
-> **#pragma strict_gs_check (** [ **push,** ] { **on**  |  **off** } **)**\
-> **#pragma strict_gs_check (pop)**
+> **`#pragma strict_gs_check(`** [ **`push,`** ] { **`on`** | **`off`** } **`)`**\
+> **`#pragma strict_gs_check( pop )`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yığın tabanlı arabellek taşmasının bazı kategorilerini algılamaya yardımcı olması için, derleyiciye işlev yığınına rasgele bir tanımlama bilgisi eklemesini bildirir. Varsayılan olarak, `/GS` (arabellek güvenlik denetimi) derleyici seçeneği tüm işlevler için bir tanımlama bilgisi eklemez. Daha fazla bilgi için bkz. [/GS (arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md).
+Yığın tabanlı arabellek taşmasının bazı kategorilerini algılamaya yardımcı olması için, derleyiciye işlev yığınına rasgele bir tanımlama bilgisi eklemesini bildirir. Varsayılan olarak, **`/GS`** derleyici seçeneği tüm işlevler için bir tanımlama bilgisi eklemez. Daha fazla bilgi için bkz. [ `/GS` (arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md).
 
-' İ `/GS` etkinleştirmek için kullanarak derleyin **strict_gs_check**.
+Öğesini **`/GS`** etkinleştirmek için kullanarak derleyin **`strict_gs_check`** .
 
-Bu pragmayı, zarar verme olasılığı bulunan verilerin gördüğü kod modüllerinde kullanın. **strict_gs_check** agresif bir pragma ve bu savunmaya ihtiyaç duymayan işlevlere uygulanır, ancak sonuçta elde edilen uygulamanın performansına etkisini en aza indirmek için en iyi duruma getirilmiştir.
+Bunu pragma , zararlı olabilecek verilere sunulan kod modüllerinde kullanın. **`strict_gs_check`** agresif bir pragma uygulamadır ve bu savunması gerekmeyen işlevlere uygulanır, ancak sonuçta elde edilen uygulamanın performansı üzerindeki etkisini en aza indirmek için en iyi duruma getirilmiştir.
 
-Bu pragmayı kullansanız bile, güvenli kod yazmak için çaba göstermelisiniz. Diğer bir deyişle, kodunuzun arabellek taşmalarına sahip olmadığından emin olun. **strict_gs_check** , uygulamanızı kodunuzda kalan arabellek taşlarından koruyabilir.
+Bunu kullansanız bile pragma , güvenli kod yazmak için çaba göstermelisiniz. Diğer bir deyişle, kodunuzun arabellek taşmalarına sahip olmadığından emin olun. **`strict_gs_check`** , kodunuzda kalan arabellek taşlarından uygulamanızı koruyabilir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte, bir diziyi yerel bir diziye kopyalayadığımızda bir arabellek taşması oluşur. Bu kodu ile derlerken `/GS` , dizi veri türü bir işaretçi olduğundan yığında hiçbir tanımlama bilgisi eklenmez. **Strict_gs_check** pragma eklemek, yığın tanımlama bilgisini işlev yığınına zorlar.
+Bu örnekte, bir diziyi yerel bir diziye kopyalayadığımızda bir arabellek taşması oluşur. Bu kodu ile derlerken **`/GS`** , dizi veri türü bir işaretçi olduğundan yığında hiçbir tanımlama bilgisi eklenmez. Öğesini eklemek, **`strict_gs_check`** pragma yığın tanımlama bilgisini işlev yığınına zorlar.
 
 ```cpp
 // pragma_strict_gs_check.cpp
@@ -65,5 +67,5 @@ void ** ReverseArray(void **pData,
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
-[/GS (Arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md)
+[Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md)\
+[`/GS` (Arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md)

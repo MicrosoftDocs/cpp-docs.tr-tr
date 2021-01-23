@@ -1,21 +1,23 @@
 ---
-description: 'Daha fazla bilgi için: pragma'
-title: once pragması
-ms.date: 01/19/2021
+description: 'Daha fazla bilgi edinin: pragma'
+title: tek pragma
+ms.date: 01/22/2021
 f1_keywords:
 - vc-pragma.once
 - once_CPP
 helpviewer_keywords:
 - once pragma
-- pragmas, once
-ms.openlocfilehash: 87e3a87d8922868ce8ac3c48815c09de8727eba7
-ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
+- pragma, once
+no-loc:
+- pragma
+ms.openlocfilehash: 3edb5f88202ee783e587b1f886eddddf427f6133
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98667229"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713486"
 ---
-# <a name="once-pragma"></a>`once` Prag
+# <a name="once-no-locpragma"></a>`once` pragma
 
 Bir kaynak kod dosyası derlenirken derleyicinin başlık dosyasını yalnızca bir kez içerdiğini belirtir.
 
@@ -27,7 +29,7 @@ Bir kaynak kod dosyası derlenirken derleyicinin başlık dosyasını yalnızca 
 
 ' Nin kullanımı, `#pragma once` derleyici açılmaya, ve dosyayı `#include` çeviri birimindeki dosyanın birincisinden sonra yeniden okuyameyeceği için derleme sürelerini azaltabilir. *Çoklu ekleme iyileştirmesi* olarak adlandırılır. Dosya içeriğini birden çok eklemeyi önlemek için Önişlemci Makro tanımlarını kullanan *Include Guard* iDom öğesine benzer bir etkiye sahiptir. Ayrıca, *bir tanım kuralının* ihlallerini önlemeye de yardımcı olur: Tüm şablonların, türlerin, işlevlerin ve nesnelerin kodunuzda birden fazla tanımı yok.
 
-Örnek:
+Örneğin:
 
 ```cpp
 // header.h
@@ -55,4 +57,4 @@ Kod, `#pragma once` yönergeyi uygulamayan, mevcut kodla tutarlılığı sürdü
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[`pragma` yönergeler ve `__pragma` anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md)

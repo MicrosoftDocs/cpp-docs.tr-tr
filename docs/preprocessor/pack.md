@@ -1,22 +1,23 @@
 ---
-description: 'Daha fazla bilgi edinin: Pack pragma'
-title: pack pragması
-ms.date: 07/22/2020
+description: pragmaMicrosoft C/C++ ' da paket yönergesi hakkında daha fazla bilgi edinin
+title: paketi pragma
+ms.date: 01/22/2021
 f1_keywords:
 - pack_CPP
 - vc-pragma.pack
 helpviewer_keywords:
-- pragmas, pack
+- pragma, pack
 - pack pragma
-ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
-ms.openlocfilehash: d4e4cbba13efabd148fdd61f59eebb15c56b1c41
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+no-loc:
+- pragma
+ms.openlocfilehash: 82086f737fb8918c62d40c60f1e1006985fbd827
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97333191"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713421"
 ---
-# <a name="pack-pragma"></a>pack pragması
+# <a name="pack-no-locpragma"></a>`pack` pragma
 
 Yapı, birleşim ve sınıf üyeleri için paketleme hizalamasını belirtir.
 
@@ -48,7 +49,7 @@ Seçim Paketleme için kullanılacak değeri bayt cinsinden belirtir. Derleyici 
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir sınıfı *paketledikten* sonra, kendi üyelerini belleğin birbirlerine doğrudan yerleştirebilirsiniz. Bu, bazı veya tüm üyelerin hedef mimarinin varsayılan hizalamadan daha küçük bir sınıra hizalanabilir anlamına gelebilir. **`pack`** veri bildirimi düzeyinde denetim sağlar. [`/Zp`](../build/reference/zp-struct-member-alignment.md)Yalnızca modül düzeyi denetim sağlayan derleyici seçeneğinden farklıdır. **paket** , **`struct`** **`union`** **`class`** pragma görüntülendikten sonra ilk, veya bildiriminde devreye girer. **`pack`** tanımlar üzerinde hiçbir etkisi yoktur. **`pack`** *`n`* Derleyici seçeneğinde ayarlanan değere bağımsız değişken kümeleri olmadan çağırma **`/Zp`** . Derleyici seçeneği ayarlanmamışsa, varsayılan değer x86, ARM ve ARM64 için 8 ' dir. X64 yerel için varsayılan değer 16 ' dır.
+Bir sınıfı *paketledikten* sonra, kendi üyelerini belleğin birbirlerine doğrudan yerleştirebilirsiniz. Bu, bazı veya tüm üyelerin hedef mimarinin varsayılan hizalamadan daha küçük bir sınıra hizalanabilir anlamına gelebilir. **`pack`** veri bildirimi düzeyinde denetim sağlar. [`/Zp`](../build/reference/zp-struct-member-alignment.md)Yalnızca modül düzeyi denetim sağlayan derleyici seçeneğinden farklıdır. **paket** , **`struct`** **`union`** görünmeden sonra ilk, veya bildiriminde etkili olur **`class`** pragma . **`pack`** tanımlar üzerinde hiçbir etkisi yoktur. **`pack`** *`n`* Derleyici seçeneğinde ayarlanan değere bağımsız değişken kümeleri olmadan çağırma **`/Zp`** . Derleyici seçeneği ayarlanmamışsa, varsayılan değer x86, ARM ve ARM64 için 8 ' dir. X64 yerel için varsayılan değer 16 ' dır.
 
 Bir yapının hizalamasını değiştirirseniz, bu, bellekte çok fazla alan kullanmayabilir. Ancak, hizalanmamış erişim için bir performans kaybı veya hatta donanım tarafından oluşturulan bir özel durum alabilirsiniz. Bu özel durum davranışını kullanarak değiştirebilirsiniz [`SetErrorMode`](/windows/win32/api/errhandlingapi/nf-errhandlingapi-seterrormode) .
 
@@ -67,7 +68,7 @@ Hizalamayı değiştirme hakkında daha fazla bilgi için şu makalelere bakın:
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnek, **`pack`** bir yapının hizalamasını değiştirmek için pragma 'ın nasıl kullanılacağını gösterir.
+Aşağıdaki örnek, **`pack`** pragma bir yapının hizalamasını değiştirmek için öğesinin nasıl kullanılacağını gösterir.
 
 ```cpp
 // pragma_directives_pack.cpp
@@ -123,4 +124,4 @@ Aşağıdaki örnek, *Push*, *pop* ve *Show* sözdiziminin nasıl kullanılacağ
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma yönergeleri ve `__pragma` anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md)

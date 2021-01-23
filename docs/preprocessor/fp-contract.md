@@ -1,40 +1,41 @@
 ---
-description: 'Daha fazla bilgi edinin: fp_contract pragma'
-title: fp_contract pragması
-ms.date: 08/29/2019
+description: pragmaMicrosoft C/C++ ' da fp_contract yönergesi hakkında daha fazla bilgi edinin
+title: fp_contract pragma
+ms.date: 01/22/2021
 f1_keywords:
 - vc-pragma.fp_contract
 - fp_contract_CPP
 helpviewer_keywords:
-- pragmas, fp_contract
+- pragma, fp_contract
 - fp_contract pragma
-ms.assetid: 15b97338-6680-4287-ba2a-2dccc5b2ccf5
-ms.openlocfilehash: cefcf0519f08b3fd68a0f8b464938ea7cdbda6d0
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+no-loc:
+- pragma
+ms.openlocfilehash: 3263d1ec9675e0f8a9402ac7da78751b988e7bdf
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97261183"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713655"
 ---
-# <a name="fp_contract-pragma"></a>fp_contract pragması
+# <a name="fp_contract-no-locpragma"></a>`fp_contract` pragma
 
 Kayan nokta dalgalanıp gerçekleşmeyeceğini belirler. Kayan nokta karşıtı, iki ayrı kayan nokta işlemini tek bir yönergede birleştiren FMA (Fkullandınız-çarp-Add) gibi bir yönergedir. Bu yönergelerin kullanılması kayan nokta duyarlığını etkileyebilir, çünkü her işlemden sonra yuvarlama yerine, işlemci her iki işlemden sonra yalnızca bir kez yer alabilir.
 
 ## <a name="syntax"></a>Syntax
 
-> **#pragma fp_contract (** { **on**  |  **off** } **)**
+> **`#pragma fp_contract (`** { **`on`** | **`off`** } **`)`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, **fp_contract** **Açık** olur. Bu, derleyiciye mümkün olan yerlerde kayan nokta karşıtı yönergeler kullanmasını söyler. Tek tek kayan nokta yönergelerini korumak için **fp_contract** **kapalı** olarak ayarlayın.
+Varsayılan olarak, **`fp_contract`** **`on`** . Bu, derleyiciye mümkün olan yerlerde kayan nokta karşıtı yönergeler kullanmasını söyler. **`fp_contract`** **`off`** Bağımsız kayan nokta talimatlarını korumak için olarak ayarlayın.
 
-Kayan nokta davranışı hakkında daha fazla bilgi için bkz. [/FP (Floating-Point davranışını belirt)](../build/reference/fp-specify-floating-point-behavior.md).
+Kayan nokta davranışı hakkında daha fazla bilgi için bkz. [ `/fp` (kayan nokta davranışını belirt)](../build/reference/fp-specify-floating-point-behavior.md).
 
-Diğer kayan nokta pragmaları şunlardır:
+Diğer kayan nokta pragma yönergeleri şunlardır:
 
-- [fenv_access](../preprocessor/fenv-access.md)
+- [`fenv_access`](../preprocessor/fenv-access.md)
 
-- [float_control](../preprocessor/float-control.md)
+- [`float_control`](../preprocessor/float-control.md)
 
 ## <a name="example"></a>Örnek
 
@@ -78,4 +79,4 @@ out = 4.587525000000000e+03
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md)

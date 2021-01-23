@@ -15,39 +15,41 @@ helpviewer_keywords:
 - set include directories
 - include directories, compiler option [C++]
 ms.assetid: 3e9add2a-5ed8-4d15-ad79-5b411e313a49
-ms.openlocfilehash: ad44abec28bbb87f91f449765a9ea2f30f2bffa8
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 36da00f9a6d5a55e60efd60a941ac3a9b3bfa4ec
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97191348"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98712797"
 ---
-# <a name="i-additional-include-directories"></a>/I (Ek içeren dizinler)
+# <a name="i-additional-include-directories"></a>`/I` (Ek ekleme dizinleri)
 
 İçerme dosyaları için aranan dizinler listesine bir dizin ekler.
 
 ## <a name="syntax"></a>Syntax
 
-> **/İ**[]*dizini*
+> **`/I`***Dizin*
 
-### <a name="arguments"></a>Arguments
+### <a name="arguments"></a>Bağımsız değişkenler
 
-*dizinden*<br/>
-İçerme dosyaları için aranan dizinler listesine eklenecek dizin.
+*dizinden*\
+İçerme dosyaları için aranan dizinlerin listesine eklenecek dizin. `/I`Ve *dizini* arasındaki alan isteğe bağlıdır. Boşluk içeren dizinlerin çift tırnak içine alınması gerekir. Dizin mutlak bir yol veya göreli bir yol olabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
 Birden fazla dizin eklemek için bu seçeneği birden çok kez kullanın. Dizinler yalnızca belirtilen içerme dosyası bulunana kadar aranır.
 
-Bu seçeneği ([/x (Standart Içerme yolları yoksay)](x-ignore-standard-include-paths.md)) seçeneğiyle kullanabilirsiniz.
+Bu seçeneği ([ `/X` (Standart içerme yolları yoksay)](x-ignore-standard-include-paths.md)seçeneği ile aynı komut satırında kullanabilirsiniz.
+
+Bir [ `#include` yönerge](../../preprocessor/hash-include-directive-c-cpp.md) çift tırnak (veya yerel ilk) biçiminde belirtilebilir, örneğin, `#include "local.h"` . Ya da, örneğin, açılı ayraç (veya Include-Path-First) biçiminde belirtilebilir `#include <iostream>` .
 
 Derleyici dizinleri aşağıdaki sırayla arar:
 
-1. Çift tırnak biçiminde bir [#include yönergesi](../../preprocessor/hash-include-directive-c-cpp.md) kullanılarak belirtilmişse, önce yerel dizinleri arar. Arama, **#include** ifadesini içeren dosyayla aynı dizinde başlar. Bu dosyayı bulamazsa, açık olan içerme dosyalarının dizinlerinde açıldıkları ters sırada arama yapar. Arama, üst öğe ekleme dosyası dizininde başlar ve herhangi bir doğru üst öğe içerme dosyasının dizinleriyle devam eder.
+1. **`#include`** Yönerge çift tırnak formu kullanılarak belirtilmişse, önce yerel dizinleri arar. Arama, yönergeyi içeren dosyayla aynı dizinde başlar **`#include`** . Dosyayı bulamazsa, açık olan ekleme dosyalarının dizinlerindeki bir dahaki sefer açıldıkları ters sırada arama yapar. Arama, üst öğe ekleme dosyası dizininde başlar ve herhangi bir doğru üst öğe içerme dosyasının dizinleriyle devam eder.
 
-1. Açılı ayraç biçiminde bir **#include** yönergesi kullanılarak belirtilmişse veya yerel dizin araması başarısız olduysa, **/ı** seçeneği KULLANıLARAK belirtilen dizinleri, CL 'nin komut satırında karşılaştığı sırayla arar.
+1. Yönerge, **`#include`** açılı ayraç biçiminde belirtilmişse veya yerel dizin araması başarısız olduysa, seçeneği kullanılarak belirtilen dizinleri, **`/I`** komut satırında belirtildikleri sırayla arar.
 
-1. **Include** ortam değişkeninde belirtilen dizinler.
+1. Ortam değişkeninde belirtilen dizinler **`INCLUDE`** .
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
@@ -55,7 +57,7 @@ Derleyici dizinleri aşağıdaki sırayla arar:
 
 1. **Yapılandırma özellikleri**  >  **C/C++**  >  **genel** özellik sayfasını seçin.
 
-1. **Ek Içerme dizinleri** özelliğini değiştirin.
+1. **Ek Içerme dizinleri** özelliğini değiştirin. Bu özellikte bir anda birden fazla dizin belirtebilirsiniz. Dizinler noktalı virgül () ile ayrılmalıdır **`;`** .
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -63,10 +65,10 @@ Derleyici dizinleri aşağıdaki sırayla arar:
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki komut, ana. c tarafından istenen içerme dosyalarını şu sırayla arar: Ilk olarak, Çift tırnaklar kullanılarak belirtilmişse yerel dosyalar aranır. Sonra, arama \ içerme dizininde, sonra \MY\INCLUDE dizininde ve son olarak DAHIL etme ortamı değişkenine atanan dizinlerde devam eder.
+Aşağıdaki komut, aşağıdaki sıraya göre istenen içerme dosyalarını arar *`main.c`* : ilk olarak, Çift tırnaklar kullanılarak belirtilmişse, yerel dosyalar aranır. Sonra, arama *`\include`* dizinde, sonra *`\my\include`* dizinde ve son olarak, ortam değişkenine atanan dizinlerde, **`INCLUDE`** soldan sağa doğru sırada devam eder.
 
-```
-CL /I \INCLUDE /I\MY\INCLUDE MAIN.C
+```cmd
+CL /I \include /I\my\include main.c
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

@@ -1,28 +1,29 @@
 ---
-description: 'Daha fazla bilgi edinin: make_public pragma'
-title: make_public pragması
-ms.date: 08/29/2019
+description: pragmaMicrosoft C/C++ ' da make_public yönergesi hakkında daha fazla bilgi edinin
+title: make_public pragma
+ms.date: 01/22/2021
 f1_keywords:
 - vc-pragma.make_public
 - make_public_CPP
 helpviewer_keywords:
-- pragmas, make_public
+- pragma, make_public
 - make_public pragma
-ms.assetid: c3665f4d-268a-4932-9661-c37c8ae6a341
-ms.openlocfilehash: 327a9882e13f9c51182e0673443566b56177d320
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+no-loc:
+- pragma
+ms.openlocfilehash: 4bc3370ac0901ff9a0656de5657f9c9f557e1dff
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97333403"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713525"
 ---
-# <a name="make_public-pragma"></a>make_public pragması
+# <a name="make_public-no-locpragma"></a>`make_public` pragma
 
 Yerel bir türün ortak derleme erişilebilirliği olması gerektiğini belirtir.
 
 ## <a name="syntax"></a>Syntax
 
-> **#pragma make_public (** *tür* **)**
+> **`#pragma make_public(`***tür***`)`**
 
 ### <a name="parameters"></a>Parametreler
 
@@ -31,9 +32,9 @@ Ortak bütünleştirilmiş kod erişilebilirliği olmasını istediğiniz türü
 
 ## <a name="remarks"></a>Açıklamalar
 
-**make_public** , başvuruda bulunmak istediğiniz yerel türün değiştireistemediğiniz bir üstbilgi dosyasından ne zaman olacağı için yararlıdır. Yerel türü genel derleme görünürlüğliğiyle bir türdeki ortak işlevin imzasında kullanmak istiyorsanız, yerel türün ortak derleme erişilebilirliği olması gerekir, aksi takdirde derleyici bir uyarı verebilir.
+**`make_public`** , başvuruda bulunmak istediğiniz yerel türün değiştireistemediğiniz bir üstbilgi dosyasından olması durumunda yararlıdır. Yerel türü genel derleme görünürlüğliğiyle bir türdeki ortak işlevin imzasında kullanmak istiyorsanız, yerel türün ortak derleme erişilebilirliği olması gerekir, aksi takdirde derleyici bir uyarı verebilir.
 
-**make_public** , genel kapsamda belirtilmelidir. Bu, yalnızca kaynak kodu dosyasının sonuna kadar bildirildiği noktadan etkilidir.
+**`make_public`** genel kapsamda belirtilmesi gerekir. Bu, yalnızca kaynak kodu dosyasının sonuna kadar bildirildiği noktadan etkilidir.
 
 Yerel tür örtük veya açık bir şekilde özel olabilir. Daha fazla bilgi için bkz. [tür görünürlüğü](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility).
 
@@ -47,7 +48,7 @@ struct Native_Struct_1 { int i; };
 struct Native_Struct_2 { int i; };
 ```
 
-Aşağıdaki kod örneği üst bilgi dosyasını kullanır. Yerel yapıları **make_public** kullanarak genel olarak işaretlemediğiniz sürece, derleyicinin ortak yönetilen bir türdeki ortak işlevin imzasında yerel yapılar kullanmayı denediğinizde bir uyarı üretecektir.
+Aşağıdaki kod örneği üst bilgi dosyasını kullanır. Yerel yapıları, kullanarak genel olarak işaretlemediğiniz sürece, genel **`make_public`** yönetilen bir türdeki ortak işlevin imzasında yerel yapıları kullanmaya çalıştığınızda derleyicinin bir uyarı üretecektir.
 
 ```cpp
 // make_public_pragma.cpp
@@ -64,4 +65,4 @@ public ref struct A {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md)

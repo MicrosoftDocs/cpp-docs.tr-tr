@@ -1,71 +1,72 @@
 ---
-title: float_control pragması
-description: Float_control pragma yönergesinin kullanımını ve etkilerini açıklar. Float_control yönergesi, çalışma zamanında kayan nokta kesin semantiğinin ve özel durum semantiğinin durumunu denetler.
-ms.date: 11/18/2019
+title: float_control pragma
+description: Float_control yönergesinin kullanımını ve etkilerini açıklar pragma . Float_control yönergesi, çalışma zamanında kayan nokta kesin semantiğinin ve özel durum semantiğinin durumunu denetler.
+ms.date: 01/22/2021
 f1_keywords:
 - vc-pragma.float_control
 - float_control_CPP
 helpviewer_keywords:
 - float_control pragma
-- pragmas, float_control
-ms.assetid: 4f4ba5cf-3707-413e-927d-5ecdbc0a9a43
-ms.openlocfilehash: 02a8e8d80616623693fff04aca02355c505b4c3b
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+- pragma, float_control
+no-loc:
+- pragma
+ms.openlocfilehash: 98695c15424395a9b4e008a5cb1133824e1e7054
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041932"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98712771"
 ---
-# <a name="float_control-pragma"></a>float_control pragması
+# <a name="float_control-no-locpragma"></a>`float_control` pragma
 
 Bir işlev için kayan nokta davranışını belirtir.
 
 ## <a name="syntax"></a>Syntax
 
-> **#pragma float_control**\
-> **#pragma float_control (kesin,** { **on**  |  **off** } [ **, push** ] **)**\
-> **#pragma float_control (hariç,** { **on**  |  **off** } [ **, push** ] **)**\
-> **#pragma float_control (** { **Push**  |  **pop** } **)**
+> **`#pragma float_control`**\
+> **`#pragma float_control( precise,`** { **`on`** | **`off`** } [ **`, push`** ] **`)`**\
+> **`#pragma float_control( except,`** { **`on`** | **`off`** } [ **`, push`** ] **`)`**\
+> **`#pragma float_control(`** { **`push`** | **`pop`** } **`)`**
 
 ## <a name="options"></a>Seçenekler
 
-**kesin**, **on**  |  **kapalı**, **gönderim**\
-Kesin kayan nokta semantiğinin etkinleştirilip etkinleştirilmeyeceğini (**Açık**) veya devre dışı bırakmayı (**kapalı**) belirtir. **/FP: kesin** derleyici seçeneğiyle ilgili farklılıklar hakkında daha fazla bilgi Için, açıklamalar bölümüne bakın. İsteğe bağlı **gönderme** belirteci, iç derleyici yığınında **float_control** için geçerli ayarı gönderir.
+**`precise`**, **`on`** | **`off`**, **`push`**\
+**`on`** Kesin kayan nokta semantiğinin etkinleştirilip etkinleştirilmeyeceğini () veya devre dışı bırakmayı ( **`off`** ) belirtir. Derleyici seçeneğiyle ilgili farklılıklar hakkında daha fazla bilgi için **`/fp:precise`** , açıklamalar bölümüne bakın. İsteğe bağlı **`push`** belirteç, iç derleyici yığınında için geçerli ayarı gönderir **`float_control`** .
 
-**except**açık, **on**  |  **kapalı**, **Gönder**\
-Kayan nokta özel durum semantiğini etkinleştirip etkinleştirmeyeceğinizi (**Açık**) veya devre dışı bırakmayı (**kapalı**) belirtir. İsteğe bağlı **gönderme** belirteci, iç derleyici yığınında **float_control** için geçerli ayarı gönderir.
+**`except`**, **`on`** | **`off`**, **`push`**\
+**`on`** **`off`** Kayan nokta özel durum semantiğinin etkinleştirilip etkinleştirilmeyeceğini () veya devre dışı bırakılacağını belirtir. İsteğe bağlı **`push`** belirteç, iç derleyici yığınında için geçerli ayarı gönderir **`float_control`** .
 
-**except** yalnızca, **kesin** olarak **Açık**olarak ayarlandığı zaman **Açık** olarak ayarlanabilir.
+**`except`** yalnızca, olarak ayarlandığında olarak **`on`** ayarlanabilir **`precise`** **`on`** .
 
-**hareketle**\
-Geçerli **float_control** ayarını iç derleyici yığınına iter.
+**`push`**\
+Geçerli **`float_control`** ayarı iç derleyici yığınına iter.
 
-**cağımız**\
-**Float_control** ayarını iç derleyici yığınının üst öğesinden kaldırır ve yeni **float_control** ayarını yapar.
+**`pop`**\
+Ayarı, **`float_control`** iç derleyici yığınının en üstünden kaldırır ve yeni **`float_control`** ayarı yapar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Float_control** pragma, [/FP](../build/reference/fp-specify-floating-point-behavior.md) derleyici seçeneği ile aynı davranışa sahip değil. **Float_control** pragma yalnızca kayan nokta davranışının bir parçasını yönetir. **/FP** derleyici seçeneklerini yeniden oluşturmak için [fp_contract](../preprocessor/fp-contract.md) ve pragmalar [fenv_access](../preprocessor/fenv-access.md) ile birleştirilmelidir. Aşağıdaki tabloda her derleyici seçeneği için eşdeğer pragma ayarları gösterilmektedir:
+, **`float_control`** pragma Derleyici seçeneğiyle aynı davranışa sahip değildir [`/fp`](../build/reference/fp-specify-floating-point-behavior.md) . **`float_control`** pragma Yalnızca kayan nokta davranışının bir parçasını yönetir. [`fp_contract`](../preprocessor/fp-contract.md) [`fenv_access`](../preprocessor/fenv-access.md) pragma Derleyici seçeneklerini yeniden oluşturmak için ve yönergeleri ile birleştirilmelidir **`/fp`** . Aşağıdaki tabloda pragma her bir derleyici seçeneğinin eşdeğer ayarları gösterilmektedir:
 
-| Seçenek | float_control (kesin, \* ) | float_control (, hariç \* ) | fp_contract ( \* ) | fenv_access ( \* ) |
+| Seçenek | `float_control(precise, *)` | `float_control(except, *)` | `fp_contract(*)` | `fenv_access(*)` |
 |-|-|-|-|-|
-| /FP: Strict             | on  | on  | Kapalı | on  |
-| /FP: kesin            | on  | Kapalı | on  | Kapalı |
-| /FP: Fast               | Kapalı | Kapalı | on  | Kapalı |
+| `/fp:strict`             | `on`  | `on`  | `off` | `on`  |
+| `/fp:precise`            | `on`  | `off` | `on`  | `off` |
+| `/fp:fast`               | `off` | `off` | `on`  | `off` |
 
-Diğer bir deyişle, **/FP: Fast**, **/FP: kesinlikli**ve **/FP: Strict** komut satırı seçeneklerine benzemek için çeşitli pragmalar kullanmanız gerekebilir.
+Diğer bir deyişle,, pragma **`/fp:fast`** **`/fp:precise`** ve **`/fp:strict`** komut satırı seçeneklerine benzemek için birkaç yönergesi birlikte kullanmanız gerekebilir.
 
-**Float_control** ve kayan nokta pragmalarını **fenv_access** birlikte kullanma gibi kısıtlamalar vardır:
+**`float_control`** Ve **`fenv_access`** kayan nokta yönergelerini birlikte kullanabileceğiniz yollarla ilgili kısıtlamalar vardır pragma :
 
-- Kesin semantikler etkinse, yalnızca **Açık** **olarak ayarlamak için** **float_control** kullanabilirsiniz. Kesin anlambilim **float_control** pragma tarafından ya da **/FP: kesin** veya **/FP: Strict** derleyici seçenekleri kullanılarak etkinleştirilebilir.
+- ' İ yalnızca **`float_control`** **`except`** **`on`** kesin semantikler etkinse öğesini kullanabilirsiniz. Kesin anlambilim, ya da **`float_control`** pragma **`/fp:precise`** veya **`/fp:strict`** derleyici seçenekleri kullanılarak etkinleştirilebilir.
 
-- Özel durum semantiği etkin olduğunda float_control, bir **float_control** pragma veya **/FP: except** derleyici seçeneği tarafından açık **olarak devre dışı bırakmak için** **float_control** kullanamazsınız.
+- **`float_control`** **`precise`** Bir **`float_control`** pragma veya derleyici seçeneği tarafından özel durum semantiği etkinleştirildiğinde devre dışı bırakmak için kullanamazsınız **`/fp:except`** .
 
-- Kesin semantik bir **float_control** pragma veya bir derleyici seçeneği tarafından etkinleştirilmediği takdirde **fenv_access** etkinleştiremezsiniz.
+- Ya da bir **`fenv_access`** derleyici seçeneği tarafından kesin anlambilim etkinleştirilmediği takdirde etkinleştiremezsiniz **`float_control`** pragma .
 
-- **Fenv_access** etkinleştirildiğinde **kesin** devre dışı bırakmak için **float_control** kullanamazsınız.
+- **`float_control`** **`precise`** Etkinleştirildiğinde devre dışı bırakmak için kullanamazsınız **`fenv_access`** .
 
-Bu kısıtlamalar, bazı kayan nokta pragmaların sırasının önemli olduğu anlamına gelir. Pragmaları kullanarak hızlı bir modelden katı bir modele gitmek için aşağıdaki kodu kullanın:
+Bu kısıtlamalar, bazı kayan nokta pragma yönergelerinin sırası önemli olduğu anlamına gelir. Yönergeleri kullanarak hızlı bir modelden katı bir modele gitmek için pragma aşağıdaki kodu kullanın:
 
 ```cpp
 #pragma float_control(precise, on)  // enable precise semantics
@@ -74,7 +75,7 @@ Bu kısıtlamalar, bazı kayan nokta pragmaların sırasının önemli olduğu a
 #pragma fp_contract(off)            // disable contractions
 ```
 
-**Float_control** pragma kullanarak katı bir modelden hızlı bir modele gitmek için aşağıdaki kodu kullanın:
+Kullanarak katı bir modelden hızlı bir modele gitmek için **`float_control`** pragma aşağıdaki kodu kullanın:
 
 ```cpp
 #pragma float_control(except, off)  // disable exception semantics
@@ -83,11 +84,11 @@ Bu kısıtlamalar, bazı kayan nokta pragmaların sırasının önemli olduğu a
 #pragma fp_contract(on)             // enable contractions
 ```
 
-Hiçbir seçenek belirtilmediyse **float_control** hiçbir etkisi olmaz.
+Hiçbir seçenek belirtilmemişse, hiçbir **`float_control`** etkisi olmaz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, pragma **float_control**kullanarak taşan kayan nokta özel durumunun nasıl yakalanarak gösterir.
+Aşağıdaki örnek kullanılarak taşma noktası özel durumunun nasıl yakalanarak gösterilmektedir pragma **`float_control`** .
 
 ```cpp
 // pragma_directive_float_control.cpp
@@ -129,6 +130,6 @@ Pass
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
-[fenv_access](../preprocessor/fenv-access.md)\
-[fp_contract](../preprocessor/fp-contract.md)
+[Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md)\
+[`fenv_access` pragma](../preprocessor/fenv-access.md)\
+[`fp_contract` pragma](../preprocessor/fp-contract.md)

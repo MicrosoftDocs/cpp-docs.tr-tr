@@ -1,34 +1,35 @@
 ---
-description: 'Daha fazla bilgi edinin: işlev pragması'
-title: işlev pragması
-ms.date: 08/29/2019
+description: pragmaMicrosoft C/C++ ' da işlev yönergesi hakkında daha fazla bilgi edinin
+title: çalışmayacaktır pragma
+ms.date: 01/22/2021
 f1_keywords:
 - function_CPP
 - vc-pragma.function
 helpviewer_keywords:
 - function pragma
-- pragmas, function
-ms.assetid: cbd1bd60-fabf-4b5a-9c3d-2d9f4b871365
-ms.openlocfilehash: 77b215458f9ffdb6be605d0ae4b239451a1fe1bf
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+- pragma, function
+no-loc:
+- pragma
+ms.openlocfilehash: 3d4b1e2f50cd118e613235271428588ac585affc
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97269308"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98712836"
 ---
-# <a name="function-pragma"></a>işlev pragması
+# <a name="function-no-locpragma"></a>`function` pragma
 
-Derleyiciye, pragmanın bağımsız değişken listesinde belirtilen işlevlere çağrı oluşturmasını söyler.
+Derleyiciye, bağımsız değişken listesinde belirtilen işlevlere çağrı oluşturmasını söyler pragma .
 
 ## <a name="syntax"></a>Syntax
 
-> **#pragma işlevi (** *işlev1* [ **,** *function2* ...] **)**
+> **`#pragma function(`***işlev1* [ **`,`** *function2* ...]**`)`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-İç işlevler normalde satır içi kod olarak oluşturulur, işlev çağrıları olarak değildir. Derleyiciye iç işlevler oluşturmasını söylemek için [iç pragma](intrinsic.md) veya [/Oi](../build/reference/oi-generate-intrinsic-functions.md) derleyici seçeneğini kullanırsanız, işlev çağrısını açıkça zorlamak için pragma **işlevini** kullanabilirsiniz. Bir **işlev** pragması görüldüğünde, belirtilen bir iç işlevi içeren ilk işlev tanımında geçerli olur. Efekt kaynak dosyanın sonuna veya `intrinsic` aynı iç işlevi belirten bir pragma görünümüne devam eder. Yalnızca pragma **işlevini** bir işlevin dışında, genel düzeyde kullanabilirsiniz.
+İç işlevler normalde satır içi kod olarak oluşturulur, işlev çağrıları olarak değildir. Derleyiciye iç işlevler oluşturmasını söylemek için [veya derleyici seçeneğini kullanırsanız, işlevini açıkça bir işlev çağrısına zorlamak için kullanabilirsiniz. `intrinsic` pragma](intrinsic.md) [`/Oi`](../build/reference/oi-generate-intrinsic-functions.md) **`function`** pragma Bir kez **`function`** pragma görüldüğünde, belirtilen bir iç işlevi içeren ilk işlev tanımında geçerli olur. Efekt, kaynak dosyanın sonuna veya `intrinsic` pragma aynı iç işlevi belirten görünümün görünümüne devam eder. **`function`** pragma Genel düzeyde yalnızca bir işlev dışında kullanabilirsiniz.
 
-İç formlara sahip işlevlerin listesi için bkz. [iç pragma](intrinsic.md).
+İç formlara sahip işlevlerin listesi için bkz [ `intrinsic` pragma ](intrinsic.md)..
 
 ## <a name="example"></a>Örnek
 
@@ -84,4 +85,4 @@ str is '!!!!!!!!!!!!!!!'
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md)

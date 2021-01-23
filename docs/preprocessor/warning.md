@@ -1,49 +1,50 @@
 ---
-description: 'Daha fazla bilgi edinin: Warning pragma'
-title: warning pragması
-ms.date: 08/29/2019
+title: Warning pragma
+description: Microsoft C/C++ uyarısı hakkında daha fazla bilgi edinin pragma
+ms.date: 01/22/2021
 f1_keywords:
 - warning_CPP
 - vc-pragma.warning
 helpviewer_keywords:
-- pragmas, warning
+- pragma, warning
 - push pragma warning
 - pop warning pragma
 - warning pragma
-ms.assetid: 8e9a0dec-e223-4657-b21d-5417ebe29cc8
-ms.openlocfilehash: ac810076d1db0c975d28bc64d0a6d761c9cec608
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+no-loc:
+- pragma
+ms.openlocfilehash: 97d48acc3c0e4651d3b05c0a6405d5c9c2031cf6
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97193116"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98712849"
 ---
-# <a name="warning-pragma"></a>warning pragması
+# <a name="warning-no-locpragma"></a>`warning` pragma
 
 Derleyici uyarı iletilerinin davranışının seçmeli olarak değiştirilmesine izin vermez.
 
 ## <a name="syntax"></a>Syntax
 
-> **#pragma Uyarısı (**\
-> &nbsp;&nbsp;&nbsp;&nbsp;*Uyarı belirleyicisi* **:** *Uyarı-sayı-liste*\
-> &nbsp;&nbsp;&nbsp;&nbsp;[**;** *uyarı-tanımlayıcı* **:** *Uyarı-sayı-liste* ...] **)**\
-> **#pragma Uyarısı (gönderim** [ **,** *n* ] **)**\
-> **#pragma Uyarısı (pop)**
+> **`#pragma warning(`**\
+> &nbsp;&nbsp;&nbsp;&nbsp;*`warning-specifier`* **`:`** *`warning-number-list`*\
+> &nbsp;&nbsp;&nbsp;&nbsp;[**`;`** *`warning-specifier`* **`:`** *`warning-number-list`* ... ] **`)`**\
+> **`#pragma warning( push`** [ **`,`** *n* ] **`)`**\
+> **`#pragma warning( pop )`**
 
 ## <a name="remarks"></a>Açıklamalar
 
 Aşağıdaki uyarı belirleyicisi parametreleri kullanılabilir.
 
-|Uyarı Belirleyicisi|Anlamı|
-|------------------------|-------------|
-|*1, 2, 3, 4*|Verilen düzeyi belirtilen uyarıya Uygula. Ayrıca, varsayılan olarak kapalı olan belirli bir uyarıyı açar.|
-|*varsayılanını*|Uyarı davranışını varsayılan değerine sıfırlayın. Ayrıca, varsayılan olarak kapalı olan belirli bir uyarıyı açar. Uyarı varsayılan, belgelenmiş, ve düzeyinde oluşturulacaktır.<br /><br /> Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../preprocessor/compiler-warnings-that-are-off-by-default.md).|
-|*dıı*|Belirtilen uyarı iletilerini verme.|
-|*hatayla*|Belirtilen uyarıları hata olarak raporla.|
-|*tek*|Belirtilen iletileri yalnızca bir kez görüntüle.|
-|*Gizle*|Yığında pragma 'ın geçerli durumunu gönderir, sonraki satır için belirtilen uyarıyı devre dışı bırakır ve sonra, pragma durumunun sıfırlanması için uyarı yığınını açılır.|
+| Uyarı Belirleyicisi | Anlamı |
+|--|--|
+| `1`, `2`, `3`, `4` | Verilen düzeyi belirtilen uyarılara uygulayın. Ayrıca, varsayılan olarak kapalı olan belirli bir uyarıyı açar. |
+| `default` | Uyarı davranışını varsayılan değerine sıfırlayın. Ayrıca, varsayılan olarak kapalı olan belirli bir uyarıyı açar. Uyarı varsayılan, belgelenmiş, ve düzeyinde oluşturulacaktır.<br /><br /> Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../preprocessor/compiler-warnings-that-are-off-by-default.md). |
+| `disable` | Belirtilen uyarı iletilerini verme. |
+| `error` | Belirtilen uyarıları hata olarak raporla. |
+| `once` | Belirtilen iletileri yalnızca bir kez görüntüle. |
+| `suppress` | Yığın üzerindeki geçerli durumunu gönderir pragma , sonraki satır için belirtilen uyarıyı devre dışı bırakır ve sonra durumun sıfırlanması için uyarı yığınını açılır pragma . |
 
-Aşağıdaki kod bildiriminde, bir `warning-number-list` parametrenin birden çok uyarı numarası içerebileceğini ve `warning-specifier` aynı pragma yönergesinde birden çok parametrenin belirtilebildiği gösterilmektedir.
+Aşağıdaki kod bildiriminde bir *`warning-number-list`* parametrenin birden çok uyarı numarası içerebileceğini ve *`warning-specifier`* aynı yönergede birden çok parametrenin belirtilebildiği gösterilmektedir pragma .
 
 ```cpp
 #pragma warning( disable : 4507 34; once : 4385; error : 164 )
@@ -64,7 +65,7 @@ Bu yönerge, aşağıdaki kod ile işlevsel olarak eşdeğerdir:
 
 Derleyici, 0 ile 999 arasında herhangi bir uyarı numarasına 4000 ekler.
 
-Kod oluşturma ile ilişkili olanlar olan 4700-4999 aralığındaki uyarı numaraları için, derleyici işlev tanımıyla karşılaştığında geçerli olan uyarının durumu işlevin geri kalanı için geçerli olacaktır. 4699 'den büyük bir uyarı numarasının durumunu değiştirmek için işlevindeki **Uyarı** pragma kullanımı, yalnızca işlevin sonundan sonra devreye girer. Aşağıdaki örnek, kod oluşturma uyarı iletisini devre dışı bırakmak ve sonra geri yüklemek için **Uyarı** pragmaların doğru yerleşimini gösterir.
+4700-4999 aralığındaki uyarı numaraları kod oluşturma ile ilişkilidir. Bu uyarılar için, derleyici işlev tanımına ulaştığında işlevin geri kalanı için geçerli olan uyarının durumu geçerli olur. **`warning`** pragma İşlevindeki bir uyarı 4699 numarasının durumunu değiştirmek için işlevinin kullanımı, yalnızca işlevin sonundan sonra devreye girer. Aşağıdaki örnek, bir **`warning`** pragma kod oluşturma uyarı iletisini devre dışı bırakmak ve sonra geri yüklemek için öğesinin doğru yerleşimini gösterir.
 
 ```cpp
 // pragma_warning.cpp
@@ -82,19 +83,19 @@ int main() {
 }
 ```
 
-Bir işlev gövdesinde, **Uyarı** pragması 'nın son ayarının tüm işlev için geçerli olacağını unutmayın.
+Bir işlev gövdesinde, öğesinin son ayarının **`warning`** pragma tüm işlev için geçerli olacağını unutmayın.
 
 ## <a name="push-and-pop"></a>Basma ve pop
 
-**Uyarı** pragması aşağıdaki sözdizimini da destekler, burada *n* bir uyarı düzeyini (1 ile 4 arasında) temsil eder.
+**`warning`** pragma Ayrıca, isteğe bağlı *n* parametresi bir uyarı düzeyini (1 ile 4 arasında) temsil eden aşağıdaki sözdizimini destekler.
 
 `#pragma warning( push [ , n ] )`
 
 `#pragma warning( pop )`
 
-Pragma, `warning( push )` her uyarı için geçerli uyarı durumunu depolar. Pragma `warning( push, n )` her uyarı için geçerli durumu depolar ve genel uyarı düzeyini *n* olarak ayarlar.
+pragma `warning( push )` Her uyarı için geçerli uyarı durumunu depolar. pragma `warning( push, n )` Her uyarı için geçerli durumu depolar ve genel uyarı düzeyini *n* olarak ayarlar.
 
-Pragma, `warning( pop )` yığın üzerine gönderilen son uyarı durumunu yükler. Uyarı durumunda *Push* ve *pop* arasında yaptığınız tüm değişiklikler geri alınır. Bu örneği ele alalım:
+pragma `warning( pop )` Son uyarı durumu, yığın üzerine gönderilir. Ve arasında uyarı durumunda yaptığınız tüm değişiklikler `push` `pop` geri alınır. Bu örneği ele alalım:
 
 ```cpp
 #pragma warning( push )
@@ -105,9 +106,9 @@ Pragma, `warning( pop )` yığın üzerine gönderilen son uyarı durumunu yükl
 #pragma warning( pop )
 ```
 
-Bu kodun sonunda, *pop* her uyarının durumunu (4705, 4706 ve 4707 içerir) kodun başlangıcında olduğu gibi geri yükler.
+Bu kodun sonunda, kodun başlangıcında olduğu gibi, `pop` her uyarının durumunu (4705, 4706 ve 4707 içerir) geri yükler.
 
-Üst bilgi dosyalarını yazdığınızda, bir kullanıcı tarafından yapılan uyarı durumu değişikliklerinin doğru bir şekilde derlenmeden emin olmak için *Push* ve *pop* kullanabilirsiniz. Üstbilginin başlangıcında *Gönder* ' i ve sonuna *açılan pencereyi* kullanın. Örneğin, uyarı düzeyi 4 ' te düzgün şekilde derlenmeyen bir üst bilgi varsa, aşağıdaki kod uyarı düzeyini 3 olarak değiştirir ve sonra üstbilginin sonundaki orijinal uyarı düzeyini geri yükler.
+Üst bilgi dosyalarını yazdığınızda, `push` `pop` bir kullanıcı tarafından yapılan uyarı durumu değişikliklerinin doğru bir şekilde derlenmeyeceği garantisi vermek için ve kullanabilirsiniz. `push`Üstbilginin başlangıcında ve `pop` sonunda kullanın. Örneğin, uyarı düzeyi 4 ' te düzgün bir şekilde derlenmeyen bir üstbilgiye sahip olabilirsiniz. Aşağıdaki kod, uyarı düzeyini 3 olarak değiştirir ve sonra üstbilginin sonundaki orijinal uyarı düzeyini geri yükler.
 
 ```cpp
 #pragma warning( push, 3 )
@@ -115,8 +116,8 @@ Bu kodun sonunda, *pop* her uyarının durumunu (4705, 4706 ve 4707 içerir) kod
 #pragma warning( pop )
 ```
 
-Uyarıları bastıralmanıza yardımcı olan derleyici seçenekleri hakkında daha fazla bilgi için bkz. [/Fi](../build/reference/fi-name-forced-include-file.md) ve [/w](../build/reference/compiler-option-warning-level.md).
+Uyarıları bastıralmanıza yardımcı olan derleyici seçenekleri hakkında daha fazla bilgi için bkz [`/FI`](../build/reference/fi-name-forced-include-file.md) [`/w`](../build/reference/compiler-option-warning-level.md) . ve.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md)

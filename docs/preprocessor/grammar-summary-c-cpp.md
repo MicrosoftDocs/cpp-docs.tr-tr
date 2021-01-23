@@ -1,130 +1,129 @@
 ---
 title: Ön işlemci dil bilgisi özeti (C/C++)
-description: Microsoft C/C++ DERLEYICISI (MSVC) Önişlemci dilbilgisi sözdizimini tanımlar ve tanımlar.
-ms.date: 08/29/2019
+description: Microsoft C/C++ derleyicisi (MSVC) Önişlemci dilbilgisi sözdizimini tanımlar ve tanımlar.
+ms.date: 01/22/2021
 helpviewer_keywords:
 - grammar
 - preprocessor, grammar
-ms.assetid: 0acb6e9b-364c-4ef8-ace4-7be980521121
-ms.openlocfilehash: 68e5f09acfc6444afb46bcbc0f7e9db10b04afed
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: dbe46a67337bf55cb98100878dedb8c92120472b
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076868"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713642"
 ---
 # <a name="preprocessor-grammar-summary-cc"></a>Ön işlemci dil bilgisi özeti (C/C++)
 
-Bu makalede C ve C++ Önişlemci 'nin biçimsel dilbilgisi açıklanır. Ön işleme yönergelerinin ve işleçlerinin sözdizimini içerir. Daha fazla bilgi için bkz. [Önişlemci](../preprocessor/preprocessor.md) ve [Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md).
+Bu makalede, C ve C++ Önişlemci 'nin biçimsel dilbilgisi açıklanır. Ön işleme yönergelerinin ve işleçlerinin sözdizimini içerir. Daha fazla bilgi için bkz. [Önişlemci](../preprocessor/preprocessor.md) ve [pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md).
 
-## <a name="definitions-for-the-grammar-summary"></a><a name="definitions"></a>Dilbilgisi özeti tanımları
+## <a name="definitions-for-the-grammar-summary"></a><a name="definitions"></a> Dilbilgisi özeti tanımları
 
 Terminal, bir sözdizimi tanımındaki uç noktalardır. Başka bir çözüm mümkün değildir. Terminal, ayrılmış sözcükler ve Kullanıcı tanımlı tanımlayıcılar kümesini içerir.
 
-Terminal dışı, söz dizimi içindeki yer tutuculardır. Çoğu, bu söz dizimi özetinde başka bir yerde tanımlanır. Tanımlar özyinelemeli olabilir. Aşağıdaki Terminaller,  *C++ dil başvurusunun* [sözlü kuralları](../cpp/lexical-conventions.md) bölümünde tanımlanmıştır:
+Terminal dışı, söz dizimi içindeki yer tutuculardır. Çoğu, bu söz dizimi özetinde başka bir yerde tanımlanır. Tanımlar özyinelemeli olabilir. Aşağıdaki terminallerde, *C++ dil başvurusunun* [sözlü kuralları](../cpp/lexical-conventions.md) bölümünde tanımlanmıştır:
 
-*sabit*, *sabit ifade*, *tanımlayıcı*, *anahtar sözcük*, *işleç*, *noktalama*
+*`constant`*, *`constant-expression`*, *`identifier`*, *`keyword`*, *`operator`*, *`punctuator`*
 
 İsteğe bağlı bir bileşen, alt indisli <sub>opt</sub>tarafından gösterilir. Örneğin, aşağıdaki sözdizimi, küme ayraçları içine alınmış bir isteğe bağlı ifadeyi gösterir:
 
-**{** *Expression*<sub>opt</sub> **}**
+**`{`***`expression`* <sub>opt</sub>**`}`**
 
-## <a name="document-conventions"></a><a name="conventions"></a>Belge kuralları
+## <a name="document-conventions"></a><a name="conventions"></a> Belge kuralları
 
 Kurallar, sözdiziminin farklı bileşenleri için farklı yazı tipi öznitelikleri kullanır. Simgeler ve yazı tipleri aşağıdaki gibidir:
 
 | Öznitelik | Açıklama |
 |---------------|-----------------|
-| *& gt* | İtalik tür terminal olmayanları gösterir. |
-| **#include** | Kalın türdeki terminaller, gösterildiği gibi girilmesi gereken sabit ayrılmış sözcükler ve simgelerdir. Bu bağlamdaki karakterler, her zaman büyük/küçük harfe duyarlıdır. |
-| <sub>et</sub> | Terminal olmayan ve <sub>opt</sub> tarafından izlenen, her zaman isteğe bağlıdır.|
+| *`nonterminal`* | İtalik tür terminal olmayanları gösterir. |
+| **`#include`** | Kalın türdeki terminaller, gösterildiği gibi girilmesi gereken sabit ayrılmış sözcükler ve simgelerdir. Bu bağlamdaki karakterler, her zaman büyük/küçük harfe duyarlıdır. |
+| <sub>opt</sub> | Terminal olmayan ve <sub>opt</sub> tarafından izlenen, her zaman isteğe bağlıdır.|
 | varsayılan yazı tipi | Bu yazı tipinde açıklanan veya listelenen kümedeki karakterler, deyimlerde terminaller olarak kullanılabilir. |
 
-Terminalden sonraki bir iki nokta üst üste ( **:** ) tanımı tanıtılmıştır. Alternatif tanımlar, ayrı satırlarda listelenmiştir.
+**`:`** Terminalden sonraki bir iki nokta () tanımı tanıtılmıştır. Alternatif tanımlar, ayrı satırlarda listelenmiştir.
 
 Kod sözdizimi blokları ' nda, varsayılan yazı tipindeki bu simgelerin özel bir anlamı vardır:
 
 | Sembol | Açıklama |
 |---|---|
-| \[] | Köşeli ayraçlar isteğe bağlı bir öğe. |
-| {\|} | Küme ayraçları dikey çubuklarla ayrılmış alternatif öğeleri. |
+| \[ ] | Köşeli ayraçlar isteğe bağlı bir öğe. |
+| { \| } | Küme ayraçları dikey çubuklarla ayrılmış alternatif öğeleri. |
 | ... | Önceki öğe deseninin tekrarlanabilir olduğunu gösterir. |
 
-Kod sözdizimi blokları, virgüller (`,`), nokta (`.`), noktalı virgül (`;`), iki nokta üst üste (`:`), parantez (`( )`), çift tırnak (`"`) ve tek tırnak (`'`) değişmez değerler.
+Kod sözdizimi blokları, virgüller ( `,` ), noktalar ( `.` ), noktalı virgül (), `;` iki nokta üst üste (), `:` parantez ( `( )` ), çift tırnak ( `"` ) ve tek tırnak ( `'` ) değişmez değerleri.
 
-## <a name="preprocessor-grammar"></a><a name="grammar"></a>Önişlemci dilbilgisi
+## <a name="preprocessor-grammar"></a><a name="grammar"></a> Önişlemci dilbilgisi
 
-*denetim satırı*: \
-&nbsp;&nbsp;&nbsp;&nbsp; **#define** *tanımlayıcı* *belirteci-dize*<sub>opt</sub>\
-&nbsp;&nbsp;&nbsp;&nbsp; **#define** *tanımlayıcı* **(** *tanımlayıcı*<sub>opt</sub> **,** ... **,** *tanımlayıcı*<sub>opt</sub> **)** *belirteç-dize*<sub>opt</sub>\
-&nbsp;&nbsp;&nbsp;&nbsp; **#include** **"** _Path-spec_ **"** \
-&nbsp;&nbsp;&nbsp;&nbsp; **#include** **\<** _Path-spec_ **>** \
-&nbsp;&nbsp;&nbsp;&nbsp; **#line** *basamak sırası* **"** _filename_ **"** <sub>opt</sub>\
-&nbsp;&nbsp;&nbsp;&nbsp; **#undef** *tanımlayıcı*\
-&nbsp;&nbsp;&nbsp;&nbsp; **#error** *belirteci-dize*\
-&nbsp;&nbsp;&nbsp;&nbsp; **#pragma** *belirteci-dize*
+*`control-line`*:\
+&emsp;**`#define`***`identifier`* *`token-string`* <sub>opt</sub>\
+&emsp;**`#define`***`identifier`* **`(`** *`identifier`* <sub>opt</sub> **`,`** ... **`,`** *`identifier`* <sub></sub> **`)`** opt *`token-string`* <sub>opt</sub>\
+&emsp;**`#include`** **`"`**_`path-spec`_**`"`**\
+&emsp;**`#include`** **`<`**_`path-spec`_**`>`**\
+&emsp;**`#line`***`digit-sequence`* **`"`**_`filename`_**`"`** <sub>opt</sub>\
+&emsp;**`#undef`** *`identifier`*\
+&emsp;**`#error`** *`token-string`*\
+&emsp;**`#pragma`** *`token-string`*
 
-*sabit ifadesi*: \
-&nbsp;&nbsp;&nbsp;&nbsp;**tanımlı (** *tanımlayıcı* **)** \
-&nbsp;&nbsp;&nbsp;&nbsp;**tanımlı** *tanımlayıcı*\
-diğer herhangi bir sabit ifade &nbsp;&nbsp;&nbsp;&nbsp;
+*`constant-expression`*:\
+&emsp;**`defined(`** *`identifier`* **`)`**\
+&emsp;**`defined`** *`identifier`*\
+&emsp;diğer herhangi bir sabit ifade
 
-*koşullu*: \
-&nbsp;&nbsp;&nbsp;&nbsp;*IF-Part* *Elif-Parts*<sub>opt</sub> *Else-parçalı*<sub>opt</sub> *endif-Line*
+*`conditional`*:\
+&emsp;*`if-part`**`elif-parts`* <sub>opt</sub> *`else-part`* <sub>kabul</sub>*`endif-line`*
 
-*IF-Part*: \
-&nbsp;&nbsp;&nbsp;&nbsp;*IF-Line* *metni*
+*`if-part`*:\
+&emsp;*`if-line`* *`text`*
 
-*IF-Line*: \
-&nbsp;&nbsp;&nbsp;&nbsp; **#if** *sabit ifadesi*\
-&nbsp;&nbsp;&nbsp;&nbsp; **#ifdef** *tanımlayıcı*\
-&nbsp;&nbsp;&nbsp;&nbsp; **#ifndef** *tanımlayıcı*
+*`if-line`*:\
+&emsp;**`#if`** *`constant-expression`*\
+&emsp;**`#ifdef`** *`identifier`*\
+&emsp;**`#ifndef`** *`identifier`*
 
-*Elif-parçalar*: \
-&nbsp;&nbsp;&nbsp;&nbsp;*Elif-Line* *metin*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Elif-parçalar* *Elif-Line* *metin*
+*`elif-parts`*:\
+&emsp;*`elif-line`* *`text`*\
+&emsp;*`elif-parts`* *`elif-line`* *`text`*
 
-*Elif-satır*: \
-&nbsp;&nbsp;&nbsp;&nbsp; **#elif** *sabit ifadesi*
+*`elif-line`*:\
+&emsp;**`#elif`** *`constant-expression`*
 
-*Else-bölüm*: \
-&nbsp;&nbsp;&nbsp;&nbsp;*başka satır* *metin*
+*`else-part`*:\
+&emsp;*`else-line`* *`text`*
 
-*Else-Line*: \
-&nbsp;&nbsp;&nbsp;&nbsp; **#else**
+*`else-line`*:\
+&emsp;**`#else`**
 
-*endif-satır*: \
-&nbsp;&nbsp;&nbsp;&nbsp; **#endif**
+*`endif-line`*:\
+&emsp;**`#endif`**
 
-*basamak sırası*: \
-&nbsp;&nbsp;&nbsp;&nbsp;*basamak*\
-&nbsp;&nbsp;&nbsp;&nbsp;*basamak sırası* *basamağı*
+*`digit-sequence`*:\
+&emsp;*`digit`*\
+&emsp;*`digit-sequence`* *`digit`*
 
-*basamak*: bunlardan biri \
-&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**
+*`digit`*: bunlardan biri \
+&emsp;**`0` `1` `2` `3` `4` `5` `6` `7` `8` `9`**
 
-*belirteç-dize*: \
-&nbsp;&nbsp;&nbsp;&nbsp;belirteçleri dizesi
+*`token-string`*:\
+&emsp;Dize *`token`*
 
-*belirteç*: \
-&nbsp;&nbsp;&nbsp;&nbsp;*anahtar sözcüğü*\
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*\
-&nbsp;&nbsp;&nbsp;&nbsp;*sabiti*\
-&nbsp;&nbsp;&nbsp;&nbsp;*işleci*\
-&nbsp;&nbsp;&nbsp;&nbsp;*noktalama*
+*`token`*:\
+&emsp;*`keyword`*\
+&emsp;*`identifier`*\
+&emsp;*`constant`*\
+&emsp;*`operator`*\
+&emsp;*`punctuator`*
 
-*dosya adı*: \
-&nbsp;&nbsp;&nbsp;&nbsp;yasal işletim sistemi dosya adı
+*`filename`*:\
+&emsp;Geçerli işletim sistemi dosya adı
 
-*yol-spec*: \
-&nbsp;&nbsp;&nbsp;yasal dosya yolu &nbsp;
+*`path-spec`*:\
+&emsp;Yasal dosya yolu
 
-*metin*: \
-Herhangi bir metin dizisini &nbsp;&nbsp;&nbsp;&nbsp;
+*`text`*:\
+&emsp;Herhangi bir metin dizisi
 
 > [!NOTE]
-> Aşağıdaki Terminaller,  *C++ dil başvurusunun* [sözlü kuralları](../cpp/lexical-conventions.md) bölümünde genişletilir: *sabit*, *sabit-ifade*, *tanımlayıcı*, *anahtar sözcük*, *işleç*ve *noktalama*.
+> Aşağıdaki Terminaller, *C++ dil başvurusunun* [sözlü kuralları](../cpp/lexical-conventions.md) bölümünde genişletilir: *`constant`* , *`constant-expression`* ,, *`identifier`* *`keyword`* , *`operator`* ve *`punctuator`* .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Önişlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)
+[C/C++ ön işlemci başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)

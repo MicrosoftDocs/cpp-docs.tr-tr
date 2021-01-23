@@ -1,36 +1,37 @@
 ---
-description: 'Daha fazla bilgi edinin: setlocale pragma'
-title: setlocale pragması
-ms.date: 08/29/2019
+description: pragmaMicrosoft C/C++ ' da setlocale yönergesi hakkında daha fazla bilgi edinin
+title: setlocale pragma
+ms.date: 01/22/2021
 f1_keywords:
 - setlocale_CPP
 - vc-pragma.setlocale
 helpviewer_keywords:
-- pragmas, setlocale
+- pragma, setlocale
 - setlocale pragma
-ms.assetid: e60b43d9-fbdf-4c4e-ac85-805523a13b86
-ms.openlocfilehash: 375a2075381b39037a6a723f7d28ef73749ec08f
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+no-loc:
+- pragma
+ms.openlocfilehash: 936aa1c2eb26798438b48e61ec28007a12080f28
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97167311"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713213"
 ---
-# <a name="setlocale-pragma"></a>setlocale pragması
+# <a name="setlocale-no-locpragma"></a>`setlocale` pragma
 
 Geniş karakter sabitleri ve dize değişmez değerleri çevrilirken kullanılacak *yerel ayarı*, ülkeyi, bölgeyi ve dili tanımlar.
 
 ## <a name="syntax"></a>Syntax
 
-> **#pragma setlocale ("** [ *locale-String* ] **")**
+> **`#pragma setlocale( "`** [ *yerel ayar-dize* ] **`" )`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çok baytlı karakterleri geniş karakterlere dönüştürme algoritması yerel ayara göre değişiklik gösterebileceğinden veya derleme yürütülebilir dosyanın çalıştırılacağı farklı bir yerel ayarda gerçekleşebileceğinden, bu pragma derleme zamanında hedef yerel ayarı belirtmek için bir yol sağlar. Geniş karakterli dizelerin doğru biçimde depolanmasını güvence altına alır.
+Çok baytlı karakterleri geniş karakterlere dönüştürme algoritması yerel ayara göre değişiklik gösterebileceğinden veya derleme yürütülebilir dosyanın çalıştırılacağı farklı bir yerel ayarda gerçekleşebileceğinden, bu, pragma derleme zamanında hedef yerel ayarı belirtmenin bir yolunu sağlar. Geniş karakterli dizelerin doğru biçimde depolanmasını güvence altına alır.
 
-Varsayılan *yerel ayar dizesi* "" dir.
+Varsayılan *yerel ayar dize* , tarafından belirtilen boş dizedir `#pragma setlocale( "" )` .
 
-"C" yerel ayarı dizedeki her karakteri değerine olarak eşler **`wchar_t`** . İçin diğer geçerli değerler, `setlocale` [dil dizeleri](../c-runtime-library/language-strings.md) listesinde bulunan girişlerdir. Örneğin, şunları belirtebilirsiniz:
+**`"C"`** Yerel ayar, dizedeki her karakteri değeri olarak değerine eşler **`wchar_t`** . İçin diğer geçerli değerler, `setlocale` [dil dizeleri](../c-runtime-library/language-strings.md) listesinde bulunan girişlerdir. Örneğin, şunları belirtebilirsiniz:
 
 ```cpp
 #pragma setlocale("dutch")
@@ -40,4 +41,4 @@ Bir dil dizesi belirtme özelliği, bilgisayarınızdaki kod sayfasına ve dil K
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve `__pragma` ve `_Pragma` anahtar sözcükleri](./pragma-directives-and-the-pragma-keyword.md)
