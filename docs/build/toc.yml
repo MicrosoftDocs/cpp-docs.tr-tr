@@ -761,6 +761,8 @@
                       href: ../build/reference/zc-externconstexpr.md
                     - name: '/Zc:forScope (Döngü kapsamında uyumluluğu zorla)'
                       href: ../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md
+                    - name: '/Zc: hiddenFriend (Standart C++ gizli arkadaş kurallarını zorla)'
+                      href: ../build/reference/zc-hiddenfriend.md
                     - name: '/ZC:implicitNoexcept (Örtük özel durum tanımlayıcıları)'
                       href: ../build/reference/zc-implicitnoexcept-implicit-exception-specifiers.md
                     - name: '/Zc:inline (Başvurulmayan COMDAT''ı kaldırma)'
