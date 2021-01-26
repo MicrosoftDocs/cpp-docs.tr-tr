@@ -3,12 +3,12 @@ title: C++ uygunluk iyileştirmeleri
 description: Visual Studio 'da Microsoft C++, C++ 20 dil standardı ile tam uygunluğu doğru ilerliyor.
 ms.date: 11/10/2020
 ms.technology: cpp-language
-ms.openlocfilehash: ff4d75626b75c55e001601ef7005bc23be60869d
-ms.sourcegitcommit: 25f6d52eb9e5d84bd0218c46372db85572af81da
+ms.openlocfilehash: 251f4cd4add40356b14dfdb878a09418171387d2
+ms.sourcegitcommit: 74e58bee5cffb30b66e17be6dbfde2544369638e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94448496"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98763872"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio 2017’deki C++ uyumluluk geliştirmeleri
 
@@ -341,7 +341,7 @@ std::equal(std::begin(a), std::end(a), std::begin(b), std::end(b));
 
 ### <a name="effect-of-defining-spaceship-operator-on--and-"></a>Ve üzerinde Spaceship işlecinin tanımlanmasıyla ilgili efekt `==``!=`
 
-Spaceship işlecinin ( **`<=>`** ) tek başına tanımı, **`==`** **`!=`** Spaceship işleci **`= default`** ( [P1185R2](https://wg21.link/p1185r2)) olarak işaretlenmedikçe veya içeren ifadeleri artık yeniden yazmayacaktır. Aşağıdaki örnek Visual Studio 2019 RTW ve sürüm 16,1 ' de derlenir, ancak Visual Studio 2019 sürüm 16,2 ' te C2678 üretir:
+Spaceship işlecinin ( **`<=>`** ) tek başına tanımı, **`==`** **`!=`** Spaceship işleci **`= default`** ([P1185R2](https://wg21.link/p1185r2)) olarak işaretlenmedikçe veya içeren ifadeleri artık yeniden yazmayacaktır. Aşağıdaki örnek Visual Studio 2019 RTW ve sürüm 16,1 ' de derlenir, ancak Visual Studio 2019 sürüm 16,2 ' te C2678 üretir:
 
 ```cpp
 #include <compare>
@@ -1087,7 +1087,7 @@ Uyarı C5220: `'S::m': a non-static data member with a volatile qualified type n
 
 ### <a name="pointer-to-member-and-string-literal-conversions-to-bool-are-narrowing"></a>İşaretçiden üyeye ve dize değişmez değer dönüştürmeleri `bool` daraltımı
 
-C++ standart Komitesi, son zamanlarda [P1957R2](https://wg21.link/p1957r2) `T*`  ->  **`bool`** bir daraltma dönüştürmesi olarak niteyen hata raporu P1957R2. MSVC, daha önce daraltma olarak tanılayan, `T*`  ->  **`bool`** ancak bir dize değişmez değeri veya üye işaretçisi dönüştürmesinin tanılamamasına neden olan uygulamada bir hatayı düzeltti **`bool`** **`bool`** .
+C++ standart Komitesi, son zamanlarda [](https://wg21.link/p1957r2) `T*`  ->  **`bool`** bir daraltma dönüştürmesi olarak niteyen hata raporu P1957R2. MSVC, daha önce daraltma olarak tanılayan, `T*`  ->  **`bool`** ancak bir dize değişmez değeri veya üye işaretçisi dönüştürmesinin tanılamamasına neden olan uygulamada bir hatayı düzeltti **`bool`** **`bool`** .
 
 Aşağıdaki program, Visual Studio 2019 sürüm 16,7 ' de hatalı biçimlendirilmiş:
 
@@ -1432,7 +1432,7 @@ struct promise_type {
 
 #### <a name="return-object-conversion-behavior"></a>Nesne dönüştürme davranışını döndür
 
-Bir eş yordamın belirtilen dönüş türü Promise işlevinin dönüş türüyle eşleşmiyorsa `get_return_object` , öğesinden döndürülen nesne `get_return_object` eş yordamın dönüş türüne dönüştürülür. Bu dönüştürme, altında, **`/await`** eş yordam olamaz gövdesinin yürütme şansı olmadan önce erken yapılır. **`/std:c++latest`** ' De, bu dönüştürme yalnızca değer çağrıyı yapana döndürüldüğünde gerçekleştirilir. Eş metin gövdesinin içinden döndürülen nesneyi kullanmasını sağlamak için ilk askıya alma noktasında askıya olmayan eş değerleri sağlar `get_return_object` .
+Bir eş yordamın belirtilen dönüş türü Promise işlevinin dönüş türüyle eşleşmiyorsa `get_return_object` , öğesinden döndürülen nesne `get_return_object` eş yordamın dönüş türüne dönüştürülür. Bu dönüştürme, altında, **`/await`** eş yordam olamaz gövdesinin yürütme şansı olmadan önce erken yapılır. **`/std:c++latest`**' De, bu dönüştürme yalnızca değer çağrıyı yapana döndürüldüğünde gerçekleştirilir. Eş metin gövdesinin içinden döndürülen nesneyi kullanmasını sağlamak için ilk askıya alma noktasında askıya olmayan eş değerleri sağlar `get_return_object` .
 
 #### <a name="coroutine-promise-parameters"></a>Coroutine Promise parametreleri
 
@@ -1473,14 +1473,14 @@ Modül desteği için bir önkoşul olarak, **`permissive-`** belirtildiğinde a
 
 Daha önce altında derlenen **`/std:c++latest`** ve uyumsuz derleyici davranışları gerektiren kodda, **`permissive`** derleyicide katı uyumluluk modunu kapatmak için belirtilebilir. Derleyici seçeneği, **`/std:c++latest`** komut satırı bağımsız değişken listesinden sonra gelmelidir. Ancak, **`permissive`** modüller kullanımı ile karşılaşıldığında hata oluşur:
 
-> hata C1214: modüller ' *Option* ' aracılığıyla istenen standart olmayan davranışla çakışıyor
+> hata C1214: modüller '*Option*' aracılığıyla istenen standart olmayan davranışla çakışıyor
 
 *Seçeneğinin* en yaygın değerleri şunlardır:
 
 | Seçenek | Açıklama |
 |--|--|
 | **`/Zc:twoPhase-`** | C++ 20 modülleri için iki aşamalı ad arama gerekir ve tarafından kapsanıyor **`permissive-`** . |
-| **`/Zc:hiddenFriend-`** | Standart gizli arkadaş adı arama kurallarını izin vermez. C++ 20 modülleri için gereklidir ve tarafından kapsanıyor **`permissive-`** . |
+| **`/Zc:hiddenFriend-`** | Standart gizli arkadaş adı arama kuralları C++ 20 modülleri için gereklidir ve tarafından kapsanıyor **`permissive-`** . |
 | **`/Zc:preprocessor-`** | Yalnızca C++ 20 başlık birimi kullanımı ve oluşturma için uyumlu ön işlemci gereklidir. Adlandırılmış modüller bu seçeneği gerektirmez. |
 
 [`/experimental:module`](../build/reference/experimental-module.md) *`std.*`* Henüz standartlaştırılmış olmadığından, Visual Studio ile birlikte gelen modülleri kullanmak için bu seçenek hala gereklidir.
@@ -2794,7 +2794,7 @@ constexpr auto off = offsetof(A, arr[2]);
 
 ### <a name="using-offsetof-with-static-data-member-or-member-function"></a>`offsetof`Statik veri üyesi veya üye işlevi ile kullanma
 
-Visual Studio 2017 sürüm 15,3 ' de `offsetof(T, m)` bir statik *m* veri üyesine veya üye işleve başvuran bir hata ile sonuçlanır. Aşağıdaki kod C4597 hatasını üretir: `undefined behavior: offsetof applied to member function 'example'` hata C4597: `undefined behavior: offsetof applied to static data member 'sample'` :
+Visual Studio 2017 sürüm 15,3 ' de `offsetof(T, m)` bir statik  veri üyesine veya üye işleve başvuran bir hata ile sonuçlanır. Aşağıdaki kod C4597 hatasını üretir: `undefined behavior: offsetof applied to member function 'example'` hata C4597: `undefined behavior: offsetof applied to static data member 'sample'` :
 
 ```cpp
 #include <cstddef>
@@ -3689,7 +3689,7 @@ public:
 
 ### <a name="offsetof-with-constant-expressions"></a>`offsetof` Sabit ifadelerle
 
-[OffsetOf](../c-runtime-library/reference/offsetof-macro.md) , geleneksel olarak [reinterpret_cast](../cpp/reinterpret-cast-operator.md)gerektiren bir makro kullanılarak uygulanmıştır. Bu kullanım, sabit bir ifade gerektiren bağlamlarda geçersizdir, ancak Microsoft C++ derleyicisinde geleneksel olarak izin verilir. `offsetof`Standart kitaplığın bir parçası olarak gönderilen makro bir derleyici iç ( **__builtin_offsetof** ) kullanır, ancak pek çok kişi makro eli kullanarak kendi kendilerini tanımlar `offsetof` .
+[OffsetOf](../c-runtime-library/reference/offsetof-macro.md) , geleneksel olarak [reinterpret_cast](../cpp/reinterpret-cast-operator.md)gerektiren bir makro kullanılarak uygulanmıştır. Bu kullanım, sabit bir ifade gerektiren bağlamlarda geçersizdir, ancak Microsoft C++ derleyicisinde geleneksel olarak izin verilir. `offsetof`Standart kitaplığın bir parçası olarak gönderilen makro bir derleyici iç (**__builtin_offsetof**) kullanır, ancak pek çok kişi makro eli kullanarak kendi kendilerini tanımlar `offsetof` .
 
 Visual Studio 2017 sürüm 15,8 ' de, derleyici, **`reinterpret_cast`** Standart C++ davranışına uyum sağlamak için bu işleçlerin varsayılan modda görünebilen alanı kısıtlar. Altında [`/permissive-`](../build/reference/permissive-standards-conformance.md) kısıtlamalar bile daha sıkı bir şekilde yapılır. `offsetof`Sabit ifadeler gerektiren bir konum sonucunun kullanılması, uyarı C4644 veya C2975 veren koda neden olabilir `usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead` `invalid template argument, expected compile-time constant expression` .
 

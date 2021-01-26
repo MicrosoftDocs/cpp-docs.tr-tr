@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Standards conformance compiler options
 - permissive compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: ae4ab62f6027d984217d750294f16138a6969f16
-ms.sourcegitcommit: 25f6d52eb9e5d84bd0218c46372db85572af81da
+ms.openlocfilehash: c8d654540deb492a5bebff304ef01ca4c71f044a
+ms.sourcegitcommit: 74e58bee5cffb30b66e17be6dbfde2544369638e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94448483"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98763829"
 ---
 # <a name="permissive--standards-conformance"></a>/permissive- (Standartlara uyumluluk)
 
@@ -140,6 +140,8 @@ void g() {
     f(p); // Hidden friend now found via argument-dependent lookup.
 }
 ```
+
+Gizli arkadaş adı arama kurallarını kullanarak öğesinden bağımsız olarak etkinleştirebilirsiniz **`/permissive`** [`/Zc:hiddenFriend`](./zc-hiddenfriend.md) . Gizli arkadaş adı araması için eski davranışı isterseniz, aksi takdirde **`/permissive-`** davranışı istiyorsanız **`/Zc:hiddenFriend-`** seçeneğini kullanın.
 
 #### <a name="use-scoped-enums-in-array-bounds"></a>Dizi sınırlarda kapsamlı numaralandırmalar kullanma
 
