@@ -10,12 +10,12 @@ helpviewer_keywords:
 - cpuid instruction
 - cpuid intrinsic
 ms.assetid: f8c344d3-91bf-405f-8622-cb0e337a6bdc
-ms.openlocfilehash: cd91207097993ec037e9b79eb27257272f06ee97
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 1f3030cc3792911cec8e7a7ef1b17dab0a9a3d6b
+ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97337128"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99478153"
 ---
 # <a name="__cpuid-__cpuidex"></a>__cpuid, __cpuidex
 
@@ -64,7 +64,7 @@ Bu iç öğe, Cpuınfo 'daki yönerge tarafından döndürülen desteklenen öze
 
 İç öğe, `__cpuid` yönergeyi çağırmadan önce ECX kaydını temizler `cpuid` . `__cpuidex`İç, ECX yazmacın değerini, yönergeyi oluşturmadan önce *subfunction_id* olarak ayarlar `cpuid` . İşlemci hakkında ek bilgi toplamanıza olanak sağlar.
 
-Kullanılan belirli parametreler ve Intel işlemciler üzerinde bu iç bilgiler tarafından döndürülen değerler hakkında daha fazla bilgi için, `cpuid` [Intel 64 ve ıa-32 mimarileri yazılım geliştiricilerinin el ile birim 2: yönerge kümesi başvurusu](https://go.microsoft.com/fwlink/p/?LinkID=510021) ve [Intel mimari yönerge kümesi uzantıları programlama başvurusu](https://go.microsoft.com/fwlink/p/?LinkID=506627)belgelerine bakın. Intel belgeleri, *function_id* ve EAX ve ecx içinde geçirilen *subfunction_id* parametreleri için "yaprak" ve "alt yaprak" terimlerini kullanır.
+Kullanılan belirli parametreler ve Intel işlemciler üzerinde bu iç bilgiler tarafından döndürülen değerler hakkında daha fazla bilgi için, `cpuid` [Intel 64 ve ıa-32 mimarileri yazılım geliştiricilerinin el ile birim 2: yönerge kümesi başvurusu](https://go.microsoft.com/fwlink/p/?LinkID=510021) ve [Intel mimari yönerge kümesi uzantıları programlama başvurusu](https://software.intel.com/content/www/us/en/develop/download/intel-architecture-instruction-set-extensions-programming-reference.html)belgelerine bakın. Intel belgeleri, *function_id* ve EAX ve ecx içinde geçirilen *subfunction_id* parametreleri için "yaprak" ve "alt yaprak" terimlerini kullanır.
 
 Kullanılacak belirli parametreler ve AMD işlemcilerde bu yapı birimleri tarafından döndürülen değerler hakkında daha fazla bilgi için, `cpuid` AMD64 mimari programcı 'Nin El Ile birim 3: General-Purpose ve sistem yönergeleri ve belirli işlemci aileleri Için düzeltme kılavuzlarındaki yönergeler için belgelere bakın. Bu belgelerin ve diğer bilgilerin bağlantıları için bkz. AMD [geliştirici kılavuzları, el kitabı & ISA belgeleri](https://go.microsoft.com/fwlink/p/?LinkId=510023) sayfası. AMD belgeleri, EAX ve ECX içinde geçirilen *function_id* ve *subfunction_id* parametreleri için "işlev numarası" ve "alt işlev numarası" terimlerini kullanır.
 

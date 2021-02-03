@@ -89,12 +89,12 @@ helpviewer_keywords:
 - std::multimap [C++], upper_bound
 - std::multimap [C++], value_comp
 ms.assetid: 8796ae05-37c4-475a-9e61-75fde9d4a463
-ms.openlocfilehash: 7399132553205080cc784de78630e30feb0700ba
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 1265e971a2d5e235f2fafd9137e7bd019d6ac4f0
+ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509931"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99478116"
 ---
 # <a name="multimap-class"></a>multimap Sınıfı
 
@@ -188,7 +188,7 @@ C++ 14 ' te, `std::less<>` hiçbir tür parametresi olmayan veya koşulunu belir
 |[cbegin](#cbegin)|İçindeki ilk öğeyi adresleyen bir const yineleyici döndürür `multimap` .|
 |[cend](#cend)|İçindeki son öğeden sonraki konumu ele alan bir const yineleyici döndürür `multimap` .|
 |[lediğiniz](#clear)|Tüm öğelerini siler `multimap` .|
-|[contains](#contains)<sup>c++ 20</sup> içerir|İçinde belirtilen anahtara sahip bir öğe olup olmadığını denetler `multimap` .|
+|[](#contains)<sup>c++ 20</sup> içerir|İçinde belirtilen anahtara sahip bir öğe olup olmadığını denetler `multimap` .|
 |[biriktirme](#count)|Bir `multimap` anahtarı parametre belirtilen anahtarla eşleşen bir öğe sayısını döndürür.|
 |[crbegin](#crbegin)|Ters çevrilen ilk öğeyi adresleyen bir const yineleyici döndürür `multimap` .|
 |[crend](#crend)|Ters çevrilen son öğeden sonraki konumu ele alan bir const yineleyici döndürür `multimap` .|
@@ -577,7 +577,7 @@ Sıralama anahtarları parametre anahtarıyla eşleşen öğe sayısı; multimap
 
 \[ lower_bound (*anahtar*), upper_bound (*anahtar*))
 
-Bu, anahtar değer *anahtarına*sahiptir.
+Bu, anahtar değer *anahtarına* sahiptir.
 
 ### <a name="example"></a>Örnek
 
@@ -1550,7 +1550,7 @@ Aranan multimap öğesinden bir öğenin sıralama anahtarıyla Karşılaştır�
 
 Bir yineleyici veya `const_iterator` bağımsız değişken anahtarına eşit veya ondan daha büyük bir anahtara sahip olan çok haritadaki bir öğenin konumunu adresleyen ya da anahtar için eşleşme bulunmazsa, multimap içindeki son öğeden sonra gelen konumu ele alan bir yineleyici.
 
-Dönüş değeri `lower_bound` bir öğesine atanırsa `const_iterator` , multimap nesnesi değiştirilemez. Dönüş değeri `lower_bound` bir **Yineleyici**öğesine atanırsa, multimap nesnesi değiştirilebilir.
+Dönüş değeri `lower_bound` bir öğesine atanırsa `const_iterator` , multimap nesnesi değiştirilemez. Dönüş değeri `lower_bound` bir **Yineleyici** öğesine atanırsa, multimap nesnesi değiştirilebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1750,9 +1750,9 @@ Tüm oluşturucular `Traits` , multimap 'in anahtarları arasında bir sıra olu
 
 İlk üç Oluşturucu boş bir ilk multimap, öğelerin sırasını oluşturmak için kullanılan karşılaştırma işlevi (*comp*) türünü ve üçüncü açıkça kullanılmak üzere ayırıcı türü (*Al*) belirten bir ad belirtir. Anahtar sözcük, **`explicit`** bazı otomatik tür dönüştürme türlerini bastırır.
 
-Dördüncü Oluşturucu, multimap *sağ*bir kopyasını belirtir.
+Dördüncü Oluşturucu, multimap *sağ* bir kopyasını belirtir.
 
-Beşinci Oluşturucu, *sağa*taşıyarak multimap 'in bir kopyasını belirtir.
+Beşinci Oluşturucu, *sağa* taşıyarak multimap 'in bir kopyasını belirtir.
 
 6 TH, 7. ve 8. oluşturucular bir initializer_list üyelerini kopyalar.
 
@@ -2397,7 +2397,7 @@ Multimap 'in öğelerini sıralamak için kullandığı karşılaştırma işlev
 
 ### <a name="remarks"></a>Açıklamalar
 
-Multimap için, *m*iki öğe *E1*(*K1*, *D1*) ve *E2*(*K2*, *D2*) türündeki nesnelerdir `value_type` ; burada *K1* ve *K2* , türü `key_type` ve *D1* ve *D2* değerlerinin `mapped_type` `m.value_comp(e1, e2)` türü `m.key_comp(k1, k2)` ,
+Multimap için, iki öğe *E1*(*K1*, *D1*) ve *E2*(*K2*, *D2*) türündeki nesnelerdir `value_type` ; burada *K1* ve *K2* , türü `key_type` ve *D1* ve *D2* değerlerinin `mapped_type` `m.value_comp(e1, e2)` türü `m.key_comp(k1, k2)` ,
 
 ### <a name="example"></a>Örnek
 

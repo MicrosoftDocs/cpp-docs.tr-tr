@@ -3,12 +3,12 @@ title: Windows XP için programları yapılandırma
 description: Visual Studio 'da C++ Windows XP araç kümelerini yüklemek ve kullanmak.
 ms.date: 03/16/2020
 ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
-ms.openlocfilehash: 09fe1a511c92f999e02646b9e606a3631a175215
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 8e81e44cbc2194f16851cf73891cae9884ed0525
+ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92919377"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99478090"
 ---
 # <a name="configuring-programs-for-windows-xp"></a>Windows XP için programları yapılandırma
 
@@ -24,13 +24,13 @@ Visual Studio 2019 ' de sağlanan v142 araç takımı, Windows XP için kod olu�
 
 ::: moniker range="<=msvc-150"
 
-Windows XP ve Windows Server 2003 ' i hedeflemek için Visual Studio 2017 platform araç takımını ve bileşenlerini almak üzere Visual Studio Yükleyicisi çalıştırın. Visual Studio 'Yu ilk yüklediğinizde veya var olan bir yüklemeyi değiştirirken, C++ iş yüküyle **masaüstü geliştirme** 'nın seçildiğinden emin olun. Bu iş yükü için isteğe bağlı bileşenler listesinde, **C++ Için WINDOWS XP desteği** ' ni seçin ve ardından **Install** veya **Modify** ' ı seçin.
+Windows XP ve Windows Server 2003 ' i hedeflemek için Visual Studio 2017 platform araç takımını ve bileşenlerini almak üzere Visual Studio Yükleyicisi çalıştırın. Visual Studio 'Yu ilk yüklediğinizde veya var olan bir yüklemeyi değiştirirken, C++ iş yüküyle **masaüstü geliştirme** 'nın seçildiğinden emin olun. Bu iş yükü için isteğe bağlı bileşenler listesinde, **C++ Için WINDOWS XP desteği**' ni seçin ve ardından **Install** veya **Modify**' ı seçin.
 
 ::: moniker-end
 
 ::: moniker range="msvc-160"
 
-Windows XP ve Windows Server 2003 ' i hedeflemek için v141_xp platform araç takımını ve bileşenlerini almak üzere Visual Studio Yükleyicisi çalıştırın. Visual Studio 'Yu ilk yüklediğinizde veya var olan bir yüklemeyi değiştirirken, C++ iş yüküyle **masaüstü geliştirme** 'nın seçildiğinden emin olun. **Ayrı bileşenler** sekmesinde, **derleyiciler, derleme araçları ve çalışma zamanları** altında, **vs 2017 (V141) araçları için C++ Windows XP desteği \[ kullanım dışı** ' yı seçin ve ardından **Install** veya **Modify** ' ı seçin.
+Windows XP ve Windows Server 2003 ' i hedeflemek için v141_xp platform araç takımını ve bileşenlerini almak üzere Visual Studio Yükleyicisi çalıştırın. Visual Studio 'Yu ilk yüklediğinizde veya var olan bir yüklemeyi değiştirirken, C++ iş yüküyle **masaüstü geliştirme** 'nın seçildiğinden emin olun. **Ayrı bileşenler** sekmesinde, **derleyiciler, derleme araçları ve çalışma zamanları** altında, **vs 2017 (V141) araçları için C++ Windows XP desteği \[ kullanım dışı**' yı seçin ve ardından **Install** veya **Modify**' ı seçin.
 
 ::: moniker-end
 
@@ -40,9 +40,9 @@ Visual Studio 'ya dahil olan Windows XP platformu araç takımı, Windows 7 SDK 
 
 ### <a name="to-target-windows-xp"></a>Windows XP 'yi hedeflemek için
 
-1. **Çözüm Gezgini** ' de, projeniz için kısayol menüsünü açın ve ardından **Özellikler** ' i seçin.
+1. **Çözüm Gezgini**' de, projeniz için kısayol menüsünü açın ve ardından **Özellikler**' i seçin.
 
-1. Projenin **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri**  >  **genel** ' i seçin. **Platform araç takımı** özelliğini tercih ETTIĞINIZ Windows XP araç takımı olarak ayarlayın. Örneğin, Visual Studio 2017 ' de Microsoft C++ derleyicisini kullanarak Windows XP ve Windows Server 2003 için kod oluşturmak üzere **Visual studio 2017-WINDOWS XP (v141_xp)** öğesini seçin.
+1. Projenin **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri**  >  **genel**' i seçin. **Platform araç takımı** özelliğini tercih ETTIĞINIZ Windows XP araç takımı olarak ayarlayın. Örneğin, Visual Studio 2017 ' de Microsoft C++ derleyicisini kullanarak Windows XP ve Windows Server 2003 için kod oluşturmak üzere **Visual studio 2017-WINDOWS XP (v141_xp)** öğesini seçin.
 
 ### <a name="c-runtime-support"></a>C++ çalışma zamanı desteği
 
@@ -84,4 +84,4 @@ Platform ve kitaplık desteğinin farklılığı nedeniyle, bir Windows XP platf
 
 - **HLSL oluşturma**
 
-   Windows XP araç takımı varsayılan olarak HLSL kaynak kodu dosyalarını derlemez. HLSL dosyalarını derlemek için Haziran 2010 DirectX SDK 'sını indirip yükleyin ve ardından projenin VC dizinlerini dahil etmek için ayarlayın. Daha fazla bilgi için, [haziran 2010 DIRECTX SDK indirme sayfasının](https://www.microsoft.com/download/details.aspx?displaylang=en&id=6812)"DirectX SDK 'Sı Visual Studio 2010 Ile birlikte dahil etme/kitaplık yollarını kaydetme" bölümüne bakın.
+   Windows XP araç takımı varsayılan olarak HLSL kaynak kodu dosyalarını derlemez. HLSL dosyalarını derlemek için Haziran 2010 DirectX SDK 'sını indirip yükleyin ve ardından projenin VC dizinlerini dahil etmek için ayarlayın. Daha fazla bilgi için, [haziran 2010 DIRECTX SDK indirme sayfasının](https://download.cnet.com/DirectX-Software-Development-Kit-June-2010/3000-2069_4-75453831.html)"DirectX SDK 'Sı Visual Studio 2010 Ile birlikte dahil etme/kitaplık yollarını kaydetme" bölümüne bakın.

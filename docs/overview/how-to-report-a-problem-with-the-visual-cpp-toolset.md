@@ -5,12 +5,12 @@ ms.date: 09/24/2019
 ms.technology: cpp-ide
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 7a89966b46efbef9800f3f3ddf836723bbb3b06f
-ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
+ms.openlocfilehash: 49ddc43757e1448e6bbd378a216eee9bcc0e84b2
+ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "94334253"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99478077"
 ---
 # <a name="how-to-report-a-problem-with-the-microsoft-c-toolset-or-documentation"></a>Microsoft C++ araç takımı veya belgeleriyle ilgili bir sorunu bildirme
 
@@ -113,7 +113,7 @@ Yeniden *oluşturma işlemi* , tam, kendi kendine içerilen bir kaynak kodu örn
 
 - İlgiliyse, **diğer derleyicilere karşı denetlenir** . Taşınabilir C++ kodu içeren reprofesyonelleri, mümkünse diğer derleyicilere karşı davranışı doğrulamalıdır. C++ standardı, en sonunda program doğruluğu belirler ve hiçbir derleyici kusursuz değildir. Ancak, Clang ve GCC, kodunuzu bir tanılama olmadan kabul eder ve MSVC değilse, büyük olasılıkla derleyicimizde bir hata bulmışsınızdır. (Diğer olanaklar UNIX ve Windows davranışındaki farklılıklar ya da farklı C++ standartları uygulamasının düzeyleri içerir.) Tüm derleyiciler kodunuzu reddettiğinizde, kodunuzun hatalı olması olasıdır. Farklı hata iletilerini görmek sorunu kendi başınıza tanılamanıza yardımcı olabilir.
 
-   Kodunuzu test etmek için çevrimiçi derleyicilerin listesini, ISO C++ Web sitesindeki [çevrimiçi c++ derleyicileri](https://isocpp.org/blog/2013/01/online-c-compilers) veya GitHub üzerinde [çevrimiçi C++ derleyicileri listesi](https://arnemertz.github.io/online-compilers/) ' nde bulabilirsiniz. Bazı belirli örnekler [Wandbox](https://wandbox.org/), [derleyici Gezgini](https://godbolt.org/)ve [Coliru](https://coliru.stacked-crooked.com/)içerir.
+   Kodunuzu test etmek için çevrimiçi derleyicilerin listesini, ISO C++ Web sitesindeki [çevrimiçi c++ derleyicileri](https://isocpp.org/blog/2013/01/online-c-compilers) veya GitHub üzerinde [çevrimiçi C++ derleyicileri listesi](https://arnemertz.github.io/online-compilers/) ' nde bulabilirsiniz. Bazı belirli örnekler [Wandbox](https://wandbox.org/), [derleyici Gezgini](https://godbolt.org/)ve [Coliru](http://coliru.stacked-crooked.com/)içerir.
 
    > [!NOTE]
    > Çevrimiçi derleyici Web siteleri Microsoft ile bağlantılı değildir. Birçok çevrimiçi derleyici Web sitesi kişisel projeler olarak çalıştırılır. Bu sitelerden bazıları bunu okurken kullanılamayabilir, ancak bir aramanın kullanabileceğiniz diğerlerini bulması gerekir.
@@ -252,7 +252,7 @@ Bir C++/CX kaynak kodu dosyasını ön işleme alıyorsa veya C++ modülleri öz
 
 #### <a name="to-confirm-the-preprocessed-file-still-repros-the-error"></a>Önceden işlenmiş dosyayı doğrulamak için yine de hatanın yeniden olumlu olması
 
-1. Geliştirici komut istemi konsol penceresinde, önceden işlenmiş dosyayı bir C++ kaynak dosyası olarak derlemek için cl.exe söylemek üzere *arguments* **/TP** *filename. i* **komutunu girin** . *Bağımsız* değişkenler yukarıda yakalanan bağımsız değişkenlerle aynıdır, ancak tüm **/d** ve **/ı** bağımsız değişkenleri kaldırılır. Bunun nedeni, önceden işlenmiş dosyaya zaten dahil edilmiştir. *dosya adı. i* , önceden işlenmiş dosyanızın adıdır.
+1. Geliştirici komut istemi konsol penceresinde, önceden işlenmiş dosyayı bir C++ kaynak dosyası olarak derlemek için cl.exe söylemek üzere  **/TP** *filename. i* **komutunu girin** . *Bağımsız* değişkenler yukarıda yakalanan bağımsız değişkenlerle aynıdır, ancak tüm **/d** ve **/ı** bağımsız değişkenleri kaldırılır. Bunun nedeni, önceden işlenmiş dosyaya zaten dahil edilmiştir. *dosya adı. i* , önceden işlenmiş dosyanızın adıdır.
 
 1. Sorunun yeniden üretildiğini doğrulayın.
 
@@ -310,11 +310,11 @@ C++ derleyicisinin modüller özelliğini kullanıyorsanız, önceden işlenmiş
 
 1. Geliştirici konsolu penceresinde yeniden üretme projenizi içeren dizine dönün.
 
-1. Önceden işlenmiş dosyayı bir C++ kaynak dosyası gibi derlemek için, *arguments* **Yukarıdaki dosya** *adı*. **i komutunu yukarıdaki** şekilde yazın.
+1. Önceden işlenmiş dosyayı bir C++ kaynak dosyası gibi derlemek için,  **Yukarıdaki dosya** *adı*. **i komutunu yukarıdaki** şekilde yazın.
 
 1. Sorunun önceden işlenmiş dosya tarafından hala yeniden üretildiğini doğrulayın.
 
-Son olarak, önceden işlenmiş yeniden oluşturma dosyalarını ( *filename*. i ve *ModuleName*. i) rapora. ifc çıkışı ile birlikte iliştirin.
+Son olarak, önceden işlenmiş yeniden oluşturma dosyalarını (*filename*. i ve *ModuleName*. i) rapora. ifc çıkışı ile birlikte iliştirin.
 
 ### <a name="link-repros"></a>Yeniden uzmanları bağla
 
@@ -371,7 +371,7 @@ Raporunuzu bize almak için kullanabileceğiniz birkaç iyi yol vardır. Visual 
 
 Visual Studio 'da **sorun bildir** Aracı, Visual Studio kullanıcılarının yalnızca birkaç tıklamayla sorunları raporladığı bir yoldur. Bulduğunuz sorun hakkında ayrıntılı bilgi göndermek için basit bir form açılır. Daha sonra, IDE 'yi kapatmadan raporunuzu gönderebilirsiniz.
 
-**Sorun bildir** aracı aracılığıyla sorununuzu BILDIRME, IDE 'den kolay ve kullanışlı bir işlemdir. **Hızlı başlatma** arama kutusunun yanındaki **geri bildirim gönder** simgesini seçerek, bu kişiye başlık çubuğundan erişebilirsiniz. Ya da bunu, **Yardım almak** için  >  **Send Feedback**  >  **bir sorun bildir** sayfasında menü çubuğunda bulabilirsiniz.
+**Sorun bildir** aracı aracılığıyla sorununuzu BILDIRME, IDE 'den kolay ve kullanışlı bir işlemdir. **Hızlı başlatma** arama kutusunun yanındaki **geri bildirim gönder** simgesini seçerek, bu kişiye başlık çubuğundan erişebilirsiniz. Ya da bunu, **Yardım almak** için  >    >  **bir sorun bildir** sayfasında menü çubuğunda bulabilirsiniz.
 
 Bir sorunu bildirmelisiniz, önce geliştirici topluluğunda benzer sorunlar için arama yapın. Sorununuzun daha önce raporlanmış olması durumunda, raporu oylayın ve ek bilgilerle yorum ekleyin. Benzer bir sorun görmüyorsanız, Visual Studio geri bildirim iletişim kutusunun altındaki **yeni sorun bildir** düğmesini seçin ve sorununuzu raporlamak için adımları izleyin.
 
