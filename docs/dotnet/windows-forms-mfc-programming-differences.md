@@ -6,12 +6,12 @@ helpviewer_keywords:
 - MFC [C++], Windows Forms support
 - Windows Forms [C++], compared to MFC
 ms.assetid: f3bfcf45-cfd4-45a4-8cde-5f4dbb18ee51
-ms.openlocfilehash: abb41a64a894eed682c26b2460259fc6bbc43b56
-ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
+ms.openlocfilehash: 75e88d18b34894f016d499b9fde309f6a26df716
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99478025"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522787"
 ---
 # <a name="windows-formsmfc-programming-differences"></a>Windows Forms/MFC Programlama Farkları
 
@@ -22,8 +22,6 @@ Windows Forms, .NET Framework Microsoft Windows uygulamaları oluşturmak içind
 Ancak, MFC 'yi alışkın değilseniz, Windows Forms henüz açıkça desteklenmeyen belirli türde uygulamalar oluşturmak için kullanılabilir. Windows Forms uygulamalar MFC iletişim uygulamalarına eşdeğerdir. Ancak, OLE belge sunucusu/kapsayıcı, ActiveX belgeleri, tek belge arabirimi (SDI), birden çok belge arabirimi (MDI) ve birden çok üst düzey arabirim (MTı) gibi diğer MFC Uygulama türlerini doğrudan desteklemek için altyapı sağlamazler. Bu uygulamaları oluşturmak için kendi mantığınızı yazabilirsiniz.
 
 Windows Forms uygulamalar hakkında daha fazla bilgi için bkz. [Windows Forms giriş](/dotnet/framework/winforms/windows-forms-overview).
-
-MFC ile kullanılan Windows Forms gösteren örnek bir uygulama için bkz. [MFC ve Windows Forms tümleştirmesi](https://download.cnet.com/MFC-and-WinForms-Integration/3000-2383_4-75453644.html).
 
 Aşağıdaki MFC görünümü veya belge ve komut yönlendirme özelliklerinin Windows Forms eşdeğerleri yoktur:
 

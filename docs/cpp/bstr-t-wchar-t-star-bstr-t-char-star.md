@@ -1,30 +1,29 @@
 ---
 description: ': _Bstr_t:: wchar_t *, _bstr_t:: char* hakkında daha fazla bilgi edinin'
 title: _bstr_t::wchar_t *, _bstr_t::char*
-ms.date: 11/04/2016
+ms.date: 02/02/2021
 f1_keywords:
 - _bstr_t::wchar_t*
 - _bstr_t::char*
 helpviewer_keywords:
 - operator wchar_t* [C++]
 - operator char* [C++]
-ms.assetid: acd9f4a7-b427-42c2-aaae-acae21cab317
-ms.openlocfilehash: 278b122bbc208addab8e9a40e61300ce91a530cf
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: b2e98ea4b62d4a2e346b552d31d66d23f301817c
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97278824"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522553"
 ---
-# <a name="_bstr_twchar_t-_bstr_tchar"></a>_bstr_t::wchar_t\*, _bstr_t::char\*
+# <a name="_bstr_twchar_t-_bstr_tchar"></a>`_bstr_t::wchar_t*`, `_bstr_t::char*`
 
 **Microsoft'a Özgü**
 
-BSTR karakterlerini dar veya geniş bir karakter dizisi olarak döndürür.
+`BSTR`Karakterleri dar veya geniş bir karakter dizisi olarak döndürür.
 
 ## <a name="syntax"></a>Syntax
 
-```
+```cpp
 operator const wchar_t*( ) const throw( );
 operator wchar_t*( ) const throw( );
 operator const char*( ) const;
@@ -33,10 +32,10 @@ operator char*( ) const;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işleçler, nesne tarafından kapsüllenmiş karakter verilerini ayıklamak için kullanılabilir `BSTR` . Döndürülen işaretçiye yeni bir değer atanması orijinal BSTR verilerini değiştirmez.
+Bu işleçler, nesne tarafından kapsüllenmiş karakter verilerini ayıklamak için kullanılabilir `BSTR` . Döndürülen işaretçiye yeni bir değer atamak özgün `BSTR` verileri değiştirmez.
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_bstr_t sınıfı](../cpp/bstr-t-class.md)
+[`_bstr_t` sınıfı](../cpp/bstr-t-class.md)

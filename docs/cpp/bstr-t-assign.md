@@ -1,20 +1,19 @@
 ---
 description: ': _Bstr_t:: Assign hakkında daha fazla bilgi edinin'
 title: _bstr_t::Assign
-ms.date: 11/04/2016
+ms.date: 02/02/2021
 f1_keywords:
 - _bstr_t::Assign
 helpviewer_keywords:
 - Assign method [C++]
-ms.assetid: 2e209bbe-77ca-4598-86d5-6c2ea213f43c
-ms.openlocfilehash: b2081aaf71640a778a479a32f3f1816ca79db147
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 166b972d4c3de932fee187f33a9f96a578496e35
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97229450"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522904"
 ---
-# <a name="_bstr_tassign"></a>_bstr_t::Assign
+# <a name="_bstr_tassign"></a>_`bstr_t::Assign`
 
 **Microsoft'a Özgü**
 
@@ -28,14 +27,14 @@ void Assign(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*s*<br/>
+*`s`*\
 Bir `BSTR` `BSTR` tarafından Sarmalanan içine kopyalanacak `_bstr_t` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Atama** ikili bir kopya yapar, bu, içerikten bağımsız olarak tüm uzunluğunun `BSTR` kopyalandığı anlamına gelir.
+**`Assign`** , içerik ne olursa olsun, tüm uzunluğunun ikili bir kopyasını yapar `BSTR` .
 
 ## <a name="example"></a>Örnek
 
@@ -114,4 +113,4 @@ bstrWrapper2 = some text
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_bstr_t sınıfı](../cpp/bstr-t-class.md)
+[`_bstr_t` sınıfı](../cpp/bstr-t-class.md)

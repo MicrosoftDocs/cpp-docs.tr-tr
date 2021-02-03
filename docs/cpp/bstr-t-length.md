@@ -1,21 +1,20 @@
 ---
 description: 'Hakkında daha fazla bilgi edinin: _bstr_t:: length'
 title: _bstr_t::length
-ms.date: 11/04/2016
+ms.date: 02/02/2021
 f1_keywords:
 - _bstr_t::length
 helpviewer_keywords:
 - length method [C++]
 - BSTR object [C++], length
-ms.assetid: 4f2e2c76-8894-4ef9-833f-4c6e796d0654
-ms.openlocfilehash: b6f60ecbb97a630aab88aae5b934d905ce6115fd
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 0fb3fb7b29ef08f387986312644fb37c9dbc2705
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97229294"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522735"
 ---
-# <a name="_bstr_tlength"></a>_bstr_t::length
+# `_bstr_t::length`
 
 **Microsoft'a Özgü**
 
@@ -23,7 +22,7 @@ Kapsüllenmiş `_bstr_t`'nin, sonlandırıcı null'u içermeyen `BSTR`'deki kara
 
 ## <a name="syntax"></a>Syntax
 
-```
+```cpp
 unsigned int length ( ) const throw( );
 ```
 
@@ -33,4 +32,4 @@ unsigned int length ( ) const throw( );
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_bstr_t sınıfı](../cpp/bstr-t-class.md)
+[`_bstr_t` sınıfı](../cpp/bstr-t-class.md)

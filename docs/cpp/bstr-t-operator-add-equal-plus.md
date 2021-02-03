@@ -1,22 +1,21 @@
 ---
-description: 'Hakkında daha fazla bilgi edinin: _bstr_t:: operator + =, +'
-title: _bstr_t::operator +=, +
-ms.date: 11/04/2016
+description: 'Hakkında daha fazla bilgi edinin: _bstr_t:: operator + =, _bstr_t:: operator +'
+title: '_bstr_t:: operator + =, _bstr_t:: operator +'
+ms.date: 02/02/2021
 f1_keywords:
 - _bstr_t::operator+
 - _bstr_t::operator+=
 helpviewer_keywords:
 - += operator [C++], appending strings
 - + operator [C++], _bstr_t objects
-ms.assetid: d28316ce-c2c8-4a38-bdb3-44fa4e582c44
-ms.openlocfilehash: e3ae71a3a43e189251ac0ddaf77572656a031aaf
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 44a525891ee072ea797026bd022ecae7b62fd6d1
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97308815"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522527"
 ---
-# <a name="_bstr_toperator--"></a>_bstr_t::operator +=, +
+# <a name="_bstr_toperator--_bstr_toperator-"></a>`_bstr_t::operator +=`, `_bstr_t::operator +`
 
 **Microsoft'a Özgü**
 
@@ -24,38 +23,38 @@ Nesnenin sonuna karakter ekler `_bstr_t` veya iki dizeyi birleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 _bstr_t& operator+=( const _bstr_t& s1 );
 _bstr_t operator+( const _bstr_t& s1 );
 friend _bstr_t operator+( const char* s2, const _bstr_t& s1);
 friend _bstr_t operator+( const wchar_t* s3, const _bstr_t& s1);
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*S1*<br/>
+*`s1`*\
 Bir `_bstr_t` nesnesi.
 
-*S2*<br/>
+*`s2`*\
 Çok baytlı bir dize.
 
-*bekletmeden*<br/>
+*`s3`*\
 Unicode dizesi.
 
 ## <a name="remarks"></a>Açıklamalar
 
 Bu işleçler dize birleştirmesi gerçekleştirir:
 
-- **işleç + = (***S1***)** S1 'in kapsüllenmiş içindeki karakterleri `BSTR` Bu nesnenin  kapsüllendiği uca ekler `BSTR` .    
+- `operator+=( s1 )` Kapsüllendiği karakterleri `BSTR` *`s1`* Bu nesnenin Kapsüllenen sonuna ekler `BSTR` .
 
-- **operator + (***S1***)** `_bstr_t`Bu nesnenin S1 ile birleştirerek oluşturulan yeni bir döndürür `BSTR` .     
+- `operator+( s1 )``_bstr_t`Bu nesnenin ve içindeki öğesinin bitiştirerek biçimlendirilmiş yeni olanı döndürür `BSTR` *`s1`* .
 
-- **operator + (***S2* **&#124;** *S1***)** `_bstr_t`S1 içinde kapsülle birlikte, bir çok baytlı dize olan *S2*'yi birleştirerek oluşturulan yeni bir döndürür `BSTR` .         
+- `operator+( s2, s1 )``_bstr_t`Çok baytlı bir dizeyi birleştirerek *`s2`* , Unicode 'a dönüştürülüp, `BSTR` içinde kapsüllenmiş olan yeni bir döndürür *`s1`* .
 
-- **operator + (***S3* **,***S1***)** `_bstr_t`S1 içinde kapsüllenmiş ile bir Unicode dize *S3* ile birleştirerek oluşturulan yeni bir döndürür `BSTR` .       
+- `operator+( s3, s1 )``_bstr_t`Unicode dizesini *`s3`* ve kapsüllenmiş ' i birleştirerek biçimlendirilmiş yeni bir döndürür `BSTR` *`s1`* .
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_bstr_t sınıfı](../cpp/bstr-t-class.md)
+[`_bstr_t` sınıfı](../cpp/bstr-t-class.md)

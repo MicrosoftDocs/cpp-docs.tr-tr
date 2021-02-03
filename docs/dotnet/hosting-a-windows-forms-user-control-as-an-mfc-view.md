@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Windows Forms controls [C++], hosting as an MFC view
 - hosting Windows Forms control [C++]
 ms.assetid: 43c02ab4-1366-434c-a980-0b19326d6ea0
-ms.openlocfilehash: 2db44bd4d85150b0a2b8fc1f2206af765770e9ed
-ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
+ms.openlocfilehash: b9f0eba7f052bee6c2cba89b7a5c22bcb1604cc3
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99478154"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522800"
 ---
 # <a name="hosting-a-windows-forms-user-control-as-an-mfc-view"></a>MFC Görünümü Olarak Windows Forms Kullanıcı Denetimi Barındırma
 
@@ -21,8 +21,6 @@ MFC, bir Windows Forms Kullanıcı denetimini MFC görünümünde barındırmak 
 Nihai sonuç, [CFormView sınıfı](../mfc/reference/cformview-class.md)tarafından kullanılan modele benzer. Bu, zengin form tabanlı görünümler oluşturmak için Windows Forms Tasarımcısı ve çalışma zamanından yararlanmanızı sağlar.
 
 MFC Windows Forms görünümleri ActiveX denetimleri olduğundan, `hwnd` MFC görünümleriyle aynı değildir. Ayrıca, [CView](../mfc/reference/cview-class.md) görünümüne işaretçi olarak geçirilemez. Genel olarak, Windows Forms görünümleriyle çalışmak ve Win32 üzerinde daha az kullanmak için .NET Framework yöntemler kullanın.
-
-MFC ile kullanılan Windows Forms gösteren örnek bir uygulama için bkz. [MFC ve Windows Forms tümleştirmesi](https://download.cnet.com/MFC-and-WinForms-Integration/3000-2383_4-75453644.html).
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

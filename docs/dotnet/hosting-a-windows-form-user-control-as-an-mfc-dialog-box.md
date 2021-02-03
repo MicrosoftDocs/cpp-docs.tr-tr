@@ -7,20 +7,18 @@ helpviewer_keywords:
 - Windows Forms [C++], hosting as MFC Dialog
 - hosting Windows Forms control [C++]
 ms.assetid: 0434a9d7-8b14-48e6-ad69-9ba9a684677a
-ms.openlocfilehash: 885b63e17140cca7983aeeed26e56eac47091a0d
-ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
+ms.openlocfilehash: 64c68ede565b4248a812d46963f072fbab8bdc3c
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99478064"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522826"
 ---
 # <a name="hosting-a-windows-form-user-control-as-an-mfc-dialog-box"></a>MFC İletişim Kutusu Olarak Windows Formu Kullanıcı Denetimi Barındırma
 
 MFC, bir Windows Forms user [](../mfc/reference/cwinformsdialog-class.md) Control ( <xref:System.Windows.Forms.UserControl> ) öğesini kalıcı veya kalıcı MFC iletişim kutusunda barındırabilmeniz için CWinFormsDialog şablon sınıfını sağlar. `CWinFormsDialog` MFC sınıfı [CDialog](../mfc/reference/cdialog-class.md)sınıfından türetilir, bu nedenle iletişim kutusu kalıcı veya kalıcı olarak başlatılabilir.
 
 `CWinFormsDialog`Kullanıcı denetimini barındırmak için kullanan işlem, [MFC Iletişim kutusunda Windows form kullanıcı denetimi barındırma](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md)bölümünde açıklananla benzerdir. Ancak, `CWinFormsDialog` Kullanıcı denetiminin başlatılmasını ve barındırmayı yönetir, böylece el ile programlanabilir olması gerekmez.
-
-MFC ile kullanılan Windows Forms gösteren örnek bir uygulama için bkz. [MFC ve Windows Forms tümleştirmesi](https://download.cnet.com/MFC-and-WinForms-Integration/3000-2383_4-75453644.html).
 
 ### <a name="to-create-the-mfc-host-application"></a>MFC ana bilgisayar uygulaması oluşturmak için
 

@@ -1,21 +1,20 @@
 ---
 description: ': _Bstr_t:: Copy hakkında daha fazla bilgi'
 title: _bstr_t::copy
-ms.date: 11/04/2016
+ms.date: 02/02/2021
 f1_keywords:
 - _bstr_t::copy
 helpviewer_keywords:
 - Copy method [C++]
 - BSTR object [C++], copy
-ms.assetid: 00ba7311-e82e-4a79-8106-5329fa2f869a
-ms.openlocfilehash: 29ca965730dbcc22b4b725661ece68442d39aeba
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 98726e0c3100851d1496e532310ece2209d71ae0
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97229346"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522865"
 ---
-# <a name="_bstr_tcopy"></a>_bstr_t::copy
+# `_bstr_t::copy`
 
 **Microsoft'a Özgü**
 
@@ -23,18 +22,18 @@ Encapsulated öğesinin bir kopyasını oluşturur `BSTR` .
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 BSTR copy( bool fCopy = true ) const;
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*fCopy*<br/>
-**`true`** **Copy** , içerilen öğesinin bir kopyasını döndürür `BSTR` , aksı halde **Copy** gerçek bstr döndürür.
+*`fCopy`*\
+Varsa **`true`** , **`copy`** içerilen öğesinin bir kopyasını döndürür `BSTR` , aksi takdirde **`copy`** gerçek değeri döndürür `BSTR` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kapsüllenmiş `BSTR` nesnesinin yeni ayrılmış bir kopyasını döndürür.
+`BSTR`Parametreye bağlı olarak, kapsüllenmiş nesnenin veya kapsüllenmiş nesnenin kendisinin yeni ayrılmış bir kopyasını döndürür.
 
 ## <a name="example"></a>Örnek
 
@@ -48,4 +47,4 @@ STDMETHODIMP CAlertMsg::get_ConnectionStr(BSTR *pVal){ //  m_bsConStr is _bstr_t
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_bstr_t sınıfı](../cpp/bstr-t-class.md)
+[`_bstr_t` sınıfı](../cpp/bstr-t-class.md)

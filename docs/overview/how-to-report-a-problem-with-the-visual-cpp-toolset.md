@@ -5,12 +5,12 @@ ms.date: 09/24/2019
 ms.technology: cpp-ide
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 49ddc43757e1448e6bbd378a216eee9bcc0e84b2
-ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
+ms.openlocfilehash: 43c965c3eccc352e740e5f5378257b344d947edb
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99478077"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522371"
 ---
 # <a name="how-to-report-a-problem-with-the-microsoft-c-toolset-or-documentation"></a>Microsoft C++ araç takımı veya belgeleriyle ilgili bir sorunu bildirme
 
@@ -113,7 +113,7 @@ Yeniden *oluşturma işlemi* , tam, kendi kendine içerilen bir kaynak kodu örn
 
 - İlgiliyse, **diğer derleyicilere karşı denetlenir** . Taşınabilir C++ kodu içeren reprofesyonelleri, mümkünse diğer derleyicilere karşı davranışı doğrulamalıdır. C++ standardı, en sonunda program doğruluğu belirler ve hiçbir derleyici kusursuz değildir. Ancak, Clang ve GCC, kodunuzu bir tanılama olmadan kabul eder ve MSVC değilse, büyük olasılıkla derleyicimizde bir hata bulmışsınızdır. (Diğer olanaklar UNIX ve Windows davranışındaki farklılıklar ya da farklı C++ standartları uygulamasının düzeyleri içerir.) Tüm derleyiciler kodunuzu reddettiğinizde, kodunuzun hatalı olması olasıdır. Farklı hata iletilerini görmek sorunu kendi başınıza tanılamanıza yardımcı olabilir.
 
-   Kodunuzu test etmek için çevrimiçi derleyicilerin listesini, ISO C++ Web sitesindeki [çevrimiçi c++ derleyicileri](https://isocpp.org/blog/2013/01/online-c-compilers) veya GitHub üzerinde [çevrimiçi C++ derleyicileri listesi](https://arnemertz.github.io/online-compilers/) ' nde bulabilirsiniz. Bazı belirli örnekler [Wandbox](https://wandbox.org/), [derleyici Gezgini](https://godbolt.org/)ve [Coliru](http://coliru.stacked-crooked.com/)içerir.
+   Kodunuzu test etmek için çevrimiçi derleyicilerin listesini, ISO C++ Web sitesindeki [çevrimiçi c++ derleyicileri](https://isocpp.org/blog/2013/01/online-c-compilers) veya GitHub üzerinde [çevrimiçi C++ derleyicileri listesi](https://arnemertz.github.io/online-compilers/) ' nde bulabilirsiniz. Bazı belirli örnekler [Wandbox](https://wandbox.org/) ve [derleyici Gezgini](https://godbolt.org/)içerir.
 
    > [!NOTE]
    > Çevrimiçi derleyici Web siteleri Microsoft ile bağlantılı değildir. Birçok çevrimiçi derleyici Web sitesi kişisel projeler olarak çalıştırılır. Bu sitelerden bazıları bunu okurken kullanılamayabilir, ancak bir aramanın kullanabileceğiniz diğerlerini bulması gerekir.

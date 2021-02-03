@@ -1,7 +1,7 @@
 ---
-description: Daha fazla bilgi edinin:/DELAY (yük Içeri aktarma ayarlarını geciktir)
-title: /DELAY (Gecikme Yükü İçe Aktarma Ayarları)
-ms.date: 11/04/2016
+description: Daha fazla bilgi edinin:/DELAY (yük içeri aktarma ayarlarını geciktir)
+title: /DELAY (Gecikme yükü içe aktarma ayarları)
+ms.date: 01/28/2021
 f1_keywords:
 - /delay
 - VC.Project.VCLinkerTool.DelayNoBind
@@ -12,44 +12,45 @@ helpviewer_keywords:
 - DELAY linker option
 - /DELAY linker option
 - -DELAY linker option
-ms.assetid: 9334b332-cc58-4dae-b10f-a4c75972d50c
-ms.openlocfilehash: f06a47280d563c138e184fdbdcdf033da705ce60
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 0dd6aaaffd378afe4ca7d75180da869b2748d639
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97201527"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522202"
 ---
-# <a name="delay-delay-load-import-settings"></a>/DELAY (Gecikme Yükü İçe Aktarma Ayarları)
+# <a name="delay-delay-load-import-settings"></a>`/DELAY` (Yük içeri aktarma ayarlarını geciktir)
 
-```
-/DELAY:UNLOAD
-/DELAY:NOBIND
-```
+Çalışma zamanında DLL 'lerin gecikmeli yüklemesini denetlemeye yönelik bağlayıcı seçenekleri.
+
+## <a name="syntax"></a>Syntax
+
+> **`/DELAY:UNLOAD`**\
+> **`/DELAY:NOBIND`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-/DELAY seçeneği, dll 'lerin [gecikmeli yüklenmesini](linker-support-for-delay-loaded-dlls.md) denetler:
+**`/DELAY`** Seçeneği, dll 'lerin [gecikmeli yüklemesini](linker-support-for-delay-loaded-dlls.md) denetler:
 
-- KALDıRMA niteleyicisi, gecikme Yükleme Yardımcısı işlevine DLL 'nin açıkça kaldırılmasını desteklememesini söyler. Içeri aktarma adres tablosu (ıAT) orijinal biçimine sıfırlanır, ıAT işaretçilerine geçersiz kılınır ve üzerine yazılmasına neden olur.
+- **`/DELAY:UNLOAD`** Niteleyicisi, gecikme Yükleme Yardımcısı IŞLEVINE dll 'nin açıkça kaldırılmasını desteklememesini söyler. Içeri aktarma adres tablosu (ıAT) orijinal biçimine sıfırlanır, ıAT işaretçilerine geçersiz kılınır ve üzerine yazılmasına neden olur.
 
-   Kaldır ' ı seçmezseniz, [FUnloadDelayLoadedDLL](explicitly-unloading-a-delay-loaded-dll.md) çağrısı başarısız olur.
+   **`/DELAY:UNLOAD`**' Yi seçmezseniz, hiçbir çağrısı [`__FUnloadDelayLoadedDLL`](linker-support-for-delay-loaded-dlls.md#explicitly-unload-a-delay-loaded-dll) başarısız olur.
 
-- NOBIND niteleyicisi, bağlayıcının son görüntüde bağlanabilir bir ıAT içermeyeceğini söyler. Varsayılan olarak, Gecikmeli yüklenen dll 'Ler için bağlanabilir ıAT oluşturulur. Elde edilen görüntü, statik olarak bağlanamaz. (Bağlanabilir IATS içeren görüntüler, yürütmeden önce statik olarak bağlanabilir.) Bkz. [/bind](bind.md).
+- **`/DELAY:NOBIND`** Niteleyicisi, bağlayıcının son görüntüde bağlanabilir BIR ıAT içermeyeceğini söyler. Varsayılan olarak, Gecikmeli yüklenen dll 'Ler için bağlanabilir ıAT oluşturulur. Elde edilen görüntü, statik olarak bağlı olamaz. (Bağlanabilir IATS içeren görüntüler yürütmeden önce statik olarak bağlanabilir.) Daha fazla bilgi için bkz [`/BIND`](bind.md) ..
 
-   DLL bağlı ise yardımcı işlevi, başvurulan içeri aktarmaların her birinde [GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) çağırmak yerine bağlı bilgileri kullanmayı dener. Zaman damgası ya da tercih edilen adres, yüklenen DLL 'nin olanlarla eşleşmezse, yardımcı işlev, ıAT 'nın, o 'nun güncel olmadığını varsayar ve BAĞLANıAT yok gibi devam eder.
+   DLL bağlı ise, yardımcı işlevi, [`GetProcAddress`](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) başvurulan her içeri aktarmaların her birine çağırmak yerine bağlı bilgileri kullanmayı dener. Zaman damgası ya da tercih edilen adres, yüklenen DLL 'deki olanlarla eşleşmezse, yardımcı işlev, ıAT 'nin güncel olmadığını varsayar. Bağlanıat yok gibi devam eder.
 
-   NOBIND, program görüntünüzün daha büyük olmasına neden olur, ancak DLL yükleme süresini hızlandırabilir. DLL 'yi bağlamayı hiç düşünmüyorsanız, NOBIND bağlı ıAT 'in oluşturulmasını engeller.
+   **`/DELAY:NOBIND`** Program görüntünüzün daha büyük olmasına neden olur, ancak DLL 'nin yüklenme süresini hızlandırabilir. DLL 'yi bağlamayı hiç düşünmüyorsanız, **`/DELAY:NOBIND`** bağlı olan IAT 'nin oluşturulmasını engeller.
 
-Yük gecikmesi olacak dll 'Leri belirtmek için [/delayload](delayload-delay-load-import.md) seçeneğini kullanın.
+Yük Gecikmeli dll 'Leri belirtmek için [`/DELAYLOAD`](delayload-delay-load-import.md) seçeneğini kullanın.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
 1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri**' ni ve **bağlayıcı**' yı genişletin ve **Gelişmiş**' i seçin.
+1. **Yapılandırma özellikleri**  >  **Bağlayıcısı**  >  **Gelişmiş** özellik sayfasını seçin.
 
-1. **Yüklenen dll 'Yi geciktir** özelliğini değiştirin.
+1. **Yüklenen dll 'Yi geciktir** özelliğini değiştirin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -57,5 +58,5 @@ Yük gecikmesi olacak dll 'Leri belirtmek için [/delayload](delayload-delay-loa
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı başvurusu](linking.md)\
 [MSVC bağlayıcı seçenekleri](linker-options.md)

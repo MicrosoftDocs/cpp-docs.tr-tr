@@ -1,20 +1,19 @@
 ---
 description: 'Daha fazla bilgi edinin: _bstr_t:: GetAddress'
 title: _bstr_t::GetAddress
-ms.date: 11/04/2016
+ms.date: 02/02/2021
 f1_keywords:
 - _bstr_t::GetAddress
 helpviewer_keywords:
 - GetAddress method [C++]
-ms.assetid: 09bc9180-867e-4ee5-b22a-8339dc663142
-ms.openlocfilehash: afb877a6f1b4cfcfb6fe08b36168af745d733b85
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 23013a6666b8e268a6437532b69050933ffe6b42
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97229320"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522839"
 ---
-# <a name="_bstr_tgetaddress"></a>_bstr_t::GetAddress
+# `_bstr_t::GetAddress`
 
 **Microsoft'a Özgü**
 
@@ -22,7 +21,7 @@ Varolan bir dizeyi boşaltır ve yeni ayrılan bir dizenin adresini döndürür.
 
 ## <a name="syntax"></a>Syntax
 
-```
+```cpp
 BSTR* GetAddress( );
 ```
 
@@ -32,14 +31,14 @@ BSTR* GetAddress( );
 
 ## <a name="remarks"></a>Açıklamalar
 
-**GetAddress** `_bstr_t` , bir paylaşan tüm nesneleri etkiler `BSTR` . `_bstr_t` `BSTR` Kopya Oluşturucu ve **işleç =** kullanımı aracılığıyla bir tane daha fazlası paylaşabilir.
+**`GetAddress`**`_bstr_t`, paylaşan tüm nesneleri etkiler `BSTR` . `_bstr_t` `BSTR` Kopyalama oluşturucusunun kullanımı ile birden çok arasında bir paylaşabilir **`operator=`** .
 
 ## <a name="example"></a>Örnek
 
-Bkz. [_bstr_t:: atama](../cpp/bstr-t-assign.md) , **GetAddress** kullanarak bir örnek için.
+Tarafından [`_bstr_t::Assign`](../cpp/bstr-t-assign.md) kullanılan bir örnek için bkz **`GetAddress`** ..
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_bstr_t sınıfı](../cpp/bstr-t-class.md)
+[`_bstr_t` sınıfı](../cpp/bstr-t-class.md)
