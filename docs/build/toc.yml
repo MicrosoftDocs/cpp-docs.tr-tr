@@ -1086,46 +1086,10 @@
           items:
             - name: Gecikmeli yüklenen DLL'ler için bağlayıcı desteği
               href: ../build/reference/linker-support-for-delay-loaded-dlls.md
-            - name: Yük gecikmesi için dll 'Leri belirtin
-              href: ../build/reference/specifying-dlls-to-delay-load.md
-            - name: Gecikmeli yüklenen DLL 'i açıkça kaldırma
-              href: ../build/reference/explicitly-unloading-a-delay-loaded-dll.md
-            - name: Bağlama gecikmesi yüklenmiş içeri aktarmalar
-              href: ../build/reference/binding-imports.md
-            - name: Gecikmeli yüklenen DLL için tüm içeri aktarmaları yükle
-              href: ../build/reference/loading-all-imports-for-a-delay-loaded-dll.md
             - name: Hata işleme ve bildirme
-              expanded: false
-              items:
-                - name: Hata işleme ve bildirme
-                  href: ../build/reference/error-handling-and-notification.md
-                - name: Bildirim kancaları
-                  href: ../build/reference/notification-hooks.md
-                - name: Hata kancaları
-                  href: ../build/reference/failure-hooks.md
-                - name: DLL yükleme özel durum kodları (C/C++)
-                  href: ../build/reference/exceptions-c-cpp.md
-            - name: Gecikmeli yüklenen içeri aktarmalar dökümünü al
-              href: ../build/reference/dumping-delay-loaded-imports.md
-            - name: DLL'leri yüklemede gecikme kısıtlamaları
-              href: ../build/reference/constraints-of-delay-loading-dlls.md
+              href: ../build/reference/error-handling-and-notification.md
             - name: Gecikme yükleme yardımcısı işlevini anlayın
-              expanded: false
-              items:
-                - name: Yardımcı işlevini anlama
-                  href: ../build/reference/understanding-the-helper-function.md
-                - name: Visual C++ 6.0 sonrasındaki gecikmeli yükleme yardımcısı işlevi DLL değişiklikleri
-                  href: ../build/reference/changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md
-                - name: 'Çağırma kuralları, parametreler ve dönüş türü'
-                  href: ../build/reference/calling-conventions-parameters-and-return-type.md
-                - name: Yapı ve sabit tanımları
-                  href: ../build/reference/structure-and-constant-definitions.md
-                - name: Gerekli değerleri hesapla
-                  href: ../build/reference/calculating-necessary-values.md
-                - name: Gecikmeli yüklenen DLL 'yi kaldırma
-                  href: ../build/reference/unloading-a-delay-loaded-dll.md
-            - name: Kendi yardımcı işlevinizi geliştirme
-              href: ../build/reference/developing-your-own-helper-function.md
+              href: ../build/reference/understanding-the-helper-function.md
     - name: Ek MSVC derleme araçları
       expanded: false
       items:
