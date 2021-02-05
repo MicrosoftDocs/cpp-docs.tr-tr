@@ -5,12 +5,12 @@ ms.date: 12/02/2019
 helpviewer_keywords:
 - Open Folder Projects in Visual Studio
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: 056ad4d1d611f2fc8b1c2d5594057a82b3e54a10
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 35434f70543b2f3241c50a005700bdf4a2564f95
+ms.sourcegitcommit: bdaa0bf20cc0fc79bc70cbab45defd55328e27d7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97187578"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99588791"
 ---
 # <a name="open-folder-support-for-c-build-systems-in-visual-studio"></a>Visual Studio 'da C++ derleme sistemleri için açık klasör desteği
 
@@ -32,7 +32,7 @@ CMake, C++ masaüstü iş yükünün bir bileşeni olarak Visual Studio IDE 'de 
 
 Visual Studio IDE 'yi, ana menüden doğrudan desteklenmeyen bir yapı sistemi veya derleyici araç takımı ile kullanmak için **Dosya Seç | Açık | Veya** **CTRL + SHIFT + alt + O** tuşlarına basın. Kaynak kodu dosyalarınızı içeren klasöre gidin. Projeyi derlemek, IntelliSense 'i yapılandırmak ve hata ayıklama parametrelerini ayarlamak için üç JSON dosyası eklersiniz:
 
-| Dosya | Açıklama |
+| Dosya | Description |
 |-|-|
 |Üzerinde CppProperties.js|Göz atmak için özel yapılandırma bilgilerini belirtin. Gerekirse, kök proje klasörünüzde bu dosyayı oluşturun. (CMake projelerinde kullanılmaz.)|
 |Üzerinde tasks.vs.js|Özel derleme komutlarını belirtin. **Çözüm Gezgini** bağlam menüsü öğesi aracılığıyla erişilen **görevleri yapılandırın**.|
@@ -85,7 +85,8 @@ MinGW-W64 yapılandırmasını eklerseniz JSON şuna bakar:
 
 ```json
 {
-  {
+  "configurations": [
+    {
       "inheritEnvironments": [
         "mingw_64"
       ],
@@ -107,6 +108,7 @@ MinGW-W64 yapılandırmasını eklerseniz JSON şuna bakar:
         }
       ]
     }
+  ]
 }
 ```
 
