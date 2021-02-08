@@ -88,15 +88,14 @@ helpviewer_keywords:
 - std::multimap [C++], swap
 - std::multimap [C++], upper_bound
 - std::multimap [C++], value_comp
-ms.assetid: 8796ae05-37c4-475a-9e61-75fde9d4a463
-ms.openlocfilehash: 1265e971a2d5e235f2fafd9137e7bd019d6ac4f0
-ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
+ms.openlocfilehash: 7c5557eeb30e4fa0d1365cf83de460aae28771fc
+ms.sourcegitcommit: 651f817a6c8e92211168d34f0542350559f436d5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99478116"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99823338"
 ---
-# <a name="multimap-class"></a>multimap Sınıfı
+# <a name="multimap-class"></a>`multimap` Sınıfı
 
 C++ standart kitaplığı multimap sınıfı, her bir öğenin hem veri değerine hem de sıralama anahtarına sahip olduğu bir çift olan bir koleksiyondaki verilerin depolanması ve alınması için kullanılır. Anahtarın değerinin benzersiz olması gerekmez ve verileri otomatik olarak sıralamak için kullanılır. Çoklu eşlemdeki bir öğenin değeri doğrudan değiştirilebilir, ancak ilişkili anahtar değeri doğrudan değiştirilemez. Bunun yerine, eski öğelerle ilişkili anahtar değerleri silinmeli ve eklenen yeni öğelerle ilişkili yeni anahtar değerleri eklenmelidir.
 
@@ -156,13 +155,13 @@ C++ 14 ' te, `std::less<>` hiçbir tür parametresi olmayan veya koşulunu belir
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Açıklama|
+|Oluşturucu|Description|
 |-|-|
 |[multimap](#multimap)|`multimap`Boş olan veya bir kısmının tümünün veya bir kısmının kopyası olan oluşturur `multimap` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Açıklama|
+|Tür adı|Description|
 |-|-|
 |[allocator_type](#allocator_type)|Nesnenin sınıfını temsil eden bir tür `allocator` `multimap` .|
 |[const_iterator](#const_iterator)|İçindeki bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** `multimap` .|
@@ -182,14 +181,14 @@ C++ 14 ' te, `std::less<>` hiçbir tür parametresi olmayan veya koşulunu belir
 
 ### <a name="member-functions"></a>Üye işlevleri
 
-|Üye işlevi|Açıklama|
+|Üye işlevi|Description|
 |-|-|
 |[başladı](#begin)|İçindeki ilk öğeyi adresleyen bir yineleyici döndürür `multimap` .|
 |[cbegin](#cbegin)|İçindeki ilk öğeyi adresleyen bir const yineleyici döndürür `multimap` .|
 |[cend](#cend)|İçindeki son öğeden sonraki konumu ele alan bir const yineleyici döndürür `multimap` .|
 |[lediğiniz](#clear)|Tüm öğelerini siler `multimap` .|
 |[](#contains)<sup>c++ 20</sup> içerir|İçinde belirtilen anahtara sahip bir öğe olup olmadığını denetler `multimap` .|
-|[biriktirme](#count)|Bir `multimap` anahtarı parametre belirtilen anahtarla eşleşen bir öğe sayısını döndürür.|
+|[count](#count)|Bir `multimap` anahtarı parametre belirtilen anahtarla eşleşen bir öğe sayısını döndürür.|
 |[crbegin](#crbegin)|Ters çevrilen ilk öğeyi adresleyen bir const yineleyici döndürür `multimap` .|
 |[crend](#crend)|Ters çevrilen son öğeden sonraki konumu ele alan bir const yineleyici döndürür `multimap` .|
 |[Emplace](#emplace)|İçinde oluşturulan bir öğesi ekler `multimap` .|
