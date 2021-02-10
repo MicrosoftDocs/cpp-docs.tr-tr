@@ -1,16 +1,17 @@
 ---
 description: 'Daha fazla bilgi edinin: Gelişmiş özellik sayfası'
 title: Gelişmiş özellik sayfası (proje)
-ms.date: 08/10/2020
+ms.date: 02/05/2021
 f1_keywords:
 - VC.Project.VCConfiguration.VCToolsVersion
+- VC.Project.VCConfiguration.LLVMToolsVersion
 ms.description: Use the Advanced property page in Visual Studio 2019 to set various properties for C++ projects.
-ms.openlocfilehash: 916c1f341d148a0f6b426ddf3c31e0d20c59a29c
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 420dd34088f47e8fa7bfe56fd529769b90401355
+ms.sourcegitcommit: 77235bff6a7b2621c501938e30d93cb15f5733cb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97187318"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006027"
 ---
 # <a name="advanced-property-page"></a>Gelişmiş özellik sayfası
 
@@ -89,6 +90,10 @@ Gelişmiş özellik sayfası, Visual Studio 2019 ve üzeri sürümlerde kullanı
 - **MSVC araç takımı sürümü**
 
    Projeyi derlemek için kullanılan MSVC araç takımının tam sürümünü belirtir. Yüklü bir araç takımının çeşitli güncelleştirme ve önizleme sürümlerine sahip olabilirsiniz. Burada kullanmak istediğiniz birini belirtebilirsiniz.
+
+- **LLVM araç takımı sürümü**
+
+   Projeyi derlemek için kullanılan LLVM araç takımının tam sürümünü belirtir. Bu özellik, platform araç takımı olarak **LLVM (Clang-CL)** seçildiğinde, Visual Studio 2019 sürüm 16,9 ' den başlayarak kullanılabilir. Daha fazla bilgi için bkz. [özel LLVM araç takımı sürümü ayarlama](..\clang-support-msbuild.md#custom_llvm_toolset).
 
 ## <a name="ccli-properties"></a>C++/CLı özellikleri
 

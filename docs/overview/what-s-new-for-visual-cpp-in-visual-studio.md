@@ -1,21 +1,22 @@
 ---
 title: Visual Studio 2017’deki C++ yenilikleri
 description: Visual Studio 'daki Microsoft C/C++ derleyicisinde ve araçlarındaki yeni özellikler ve düzeltmeler.
-ms.date: 05/19/2020
+ms.date: 02/08/2021
 ms.technology: cpp-ide
-ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-ms.openlocfilehash: db328a5806ecb3e48a934d65854c14d424e018f1
-ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
+ms.openlocfilehash: c17dd2981a455192715fb44e14e8b84d2d10e69c
+ms.sourcegitcommit: 77235bff6a7b2621c501938e30d93cb15f5733cb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "94334175"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006079"
 ---
 # <a name="whats-new-for-c-in-visual-studio"></a>Visual Studio 2017’deki C++ yenilikleri
 
 ::: moniker range=">=msvc-160"
 
 Visual Studio 2019, Microsoft C++ ortamına birçok güncelleştirme ve düzeltme getirir. Derleyicide ve araçlarda birçok hata ve sorunu düzelttik. Bu sorunların birçoğu, müşteriler tarafından [bir sorun bildir](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019&preserve-view=true) ve **geri bildirim gönder** altında [bir öneri](https://aka.ms/feedback/suggest?space=62) seçenekleri sunarak gönderilmiştir. Hataları bildirdiğiniz için teşekkür ederiz! Visual Studio 'nun tüm yenilikleri hakkında daha fazla bilgi için [Visual studio 2019 'deki](/visualstudio/ide/whats-new-visual-studio-2019)yenilikler sayfasını ziyaret edin. Visual Studio 2017 ' de C++ yenilikleri hakkında daha fazla bilgi için bkz. [Visual studio 2017 ' de c++](?preserve-view=true&view=msvc-150)yenilikleri. Visual Studio 2015 ve önceki sürümlerde C++ yenilikleri hakkında daha fazla bilgi için, bkz. yenilikler [2003 ile 2015 Visual C++](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+
+C++ docs 'taki yenilikler hakkında daha fazla bilgi için bkz. [Microsoft C++ docs: yenilikler](whats-new-cpp-docs.md).
 
 ## <a name="c-compiler"></a>C++ derleyicisi
 
@@ -187,7 +188,7 @@ IncrediBuild, C++ iş yüküne **sahip masaüstü geliştirmeye** isteğe bağl�
 
 - Windows üzerinde çalışan C++ uygulamaları için PDB dosyaları artık ayrı bir 64 bit işlemde yüklenir. Bu değişiklik, hata ayıklayıcının bellek tükenmesinin neden olduğu bir kilitlenme aralığına yöneliktir. Örneğin, çok sayıda modül ve PDB dosyası içeren uygulamalarda hata ayıklarken.
 
-- Arama, **izleme** , **oto** ve **Yereller** pencerelerinde etkinleştirilmiştir.
+- Arama, **izleme**, **oto** ve **Yereller** pencerelerinde etkinleştirilmiştir.
 
 ## <a name="windows-desktop-development-with-c"></a>C++ ile Windows masaüstü geliştirme
 
@@ -343,7 +344,7 @@ Visual Studio 2017 RTM 'de daha standart kitaplık geliştirmeleri vardır. Tüm
 - `basic_string::shrink_to_fit()` Artık ayırıcı tarafından etkilenmemektedir `propagate_on_container_swap` .
 - `std::decay` Artık aboınable işlev türlerini, diğer bir deyişle, MF nitelenmiş, ref nitelenmiş veya her ikisi de olan işlev türlerini işler.
 - Değiştirilen büyük/küçük harfe duyarlılık ve eğik çizgi kullanma, taşınabilirliği artırma yönergeleri dahil.
-- ' *Enumeration* ' numaralandırmasının anahtarındaki "Numaralandırıcı ' *Numaralandırıcı* ' sabit uyarı C4061, bir Case etiketi tarafından açıkça işlenmiyor. Bu uyarı varsayılan olarak kapalıdır ve uyarılar için standart kitaplığın genel ilkesinde özel bir durum olarak düzeltildi. (Standart Kitaplık **`/W4`** temiz, ancak temiz bir şekilde denenmez **`/Wall`** . Birçok varsayılan uyarı çok gürültülü ve düzenli olarak kullanılmak üzere tasarlanmamıştır.)
+- '*Enumeration*' numaralandırmasının anahtarındaki "Numaralandırıcı '*Numaralandırıcı*' sabit uyarı C4061, bir Case etiketi tarafından açıkça işlenmiyor. Bu uyarı varsayılan olarak kapalıdır ve uyarılar için standart kitaplığın genel ilkesinde özel bir durum olarak düzeltildi. (Standart Kitaplık **`/W4`** temiz, ancak temiz bir şekilde denenmez **`/Wall`** . Birçok varsayılan uyarı çok gürültülü ve düzenli olarak kullanılmak üzere tasarlanmamıştır.)
 - Geliştirilmiş `std::list` hata ayıklama denetimleri. Yineleyiciler şimdi listeleyin `operator->()` ve `list::unique()` yineleyiciler geçersiz kılındı olarak işaretler.
 - İçinde sabit kullanımlar-ayırıcı meta programlama `tuple` .
 
@@ -378,7 +379,7 @@ Daha fazla bilgi için bkz. [Microsoft C++ dil uygunluğu tablosu](./visual-cpp-
 - `static_assert(false, "message")`Olarak değiştirildi `#error message` . Bu değişiklik, `#error` derlemeyi hemen durdurduğu için derleyici tanılamayı geliştirir.
 - Standart kitaplık artık işlevleri olarak işaretler `__declspec(dllimport)` . Modern bağlayıcı teknolojisine artık gerek yoktur.
 - SFıNAE 'yi, dönüş türleri ve işlev bağımsız değişken türleri ile karşılaştırıldığında dağınıklığı azaltılan varsayılan şablon bağımsız değişkenlerine ayıklandı.
-- ' Deki hata ayıklama denetimleri, \<random\> artık `_Rng_abort()` `fputs()` **stderr** 'e çağrılan iç işlev yerine standart kitaplığın olağan makineler ' i kullanır. Bu işlevin uygulanması, ikili uyumluluk için tutulmuştur. Standart kitaplığın sonraki ikili uyumsuz sürümünde bu sürümü kaldıracağız.
+- ' Deki hata ayıklama denetimleri, \<random\> artık `_Rng_abort()` `fputs()` **stderr**'e çağrılan iç işlev yerine standart kitaplığın olağan makineler ' i kullanır. Bu işlevin uygulanması, ikili uyumluluk için tutulmuştur. Standart kitaplığın sonraki ikili uyumsuz sürümünde bu sürümü kaldıracağız.
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
@@ -506,7 +507,7 @@ C++ için platformlar arası Web API 'SI olan CPPRestSDK, 2.9.0 sürümüne gün
 ##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15.3
 
 - Çeşitli proje ve kod sihirbazları, imza iletişim kutusu stilinde yeniden yazıldı.
-- **Sınıf Ekle** artık doğrudan sınıf ekleme Sihirbazı 'nı başlatır. Daha önce burada olan diğer tüm öğeler artık > Ekle ' nin altında **Yeni öğe Ekle** ' nin altında bulunabilir.
+- **Sınıf Ekle** artık doğrudan sınıf ekleme Sihirbazı 'nı başlatır. Daha önce burada olan diğer tüm öğeler artık > Ekle ' nin altında **Yeni öğe Ekle**' nin altında bulunabilir.
 - Win32 projeleri artık **Yeni proje** Iletişim kutusunda **Windows Masaüstü** kategorisi altındadır.
 - **Windows konsolu** ve **Masaüstü uygulama** şablonları artık bir sihirbaz görüntülemeden projeler oluşturur. Aynı kategoride, eski **Win32 konsol uygulaması** sihirbazıyla aynı seçenekleri görüntüleyen yeni bir **Windows Masaüstü Sihirbazı** var.
 
@@ -520,11 +521,11 @@ Yeniden düzenleme ve kod gezintisi için IntelliSense altyapısını kullanan b
 | Imzayı Değiştir | 4.5 x |
 | Tüm Başvuruları Bul | 4.7 x |
 
-C++ artık CTRL + tıklama **tanımına git** ' i destekliyor ve tanımlara kolayca gidilme yapıyor. Üretkenlik güç araçları paketinden yapı görselleştiricisi, artık varsayılan olarak ürüne de dahildir.
+C++ artık CTRL + tıklama **tanımına git**' i destekliyor ve tanımlara kolayca gidilme yapıyor. Üretkenlik güç araçları paketinden yapı görselleştiricisi, artık varsayılan olarak ürüne de dahildir.
 
 ## <a name="intellisense"></a>IntelliSense
 
-- Yeni SQLite tabanlı veritabanı altyapısı artık varsayılan olarak kullanılıyor. Yeni motor, **Tanıma Git** ve **tüm başvuruları bul** gibi veritabanı işlemlerini hızlandırır. İlk çözüm ayrıştırma süresini önemli ölçüde geliştirir. Ayar, **araçlar > seçenekler > metin düzenleyicisi > C/C++ > gelişmiş** ' e taşınmıştır. (Daha önce... C/C++ > deneysel.)
+- Yeni SQLite tabanlı veritabanı altyapısı artık varsayılan olarak kullanılıyor. Yeni motor, **Tanıma Git** ve **tüm başvuruları bul** gibi veritabanı işlemlerini hızlandırır. İlk çözüm ayrıştırma süresini önemli ölçüde geliştirir. Ayar, **araçlar > seçenekler > metin düzenleyicisi > C/C++ > gelişmiş**' e taşınmıştır. (Daha önce... C/C++ > deneysel.)
 
 - Önceden derlenmiş üst bilgiler kullanmayan projelerde ve dosyalarda IntelliSense performansını geliştirdik. Geçerli dosyadaki üst bilgiler için otomatik önceden derlenmiş üst bilgi oluşturulur.
 
@@ -713,7 +714,7 @@ Visual Studio Grafik Tanılama araçları: bunları, Direct3D uygulamalarında i
 
   ![API istatistikleri](media/api-stats.png)
 
-- **Bellek İstatistikleri:** Çerçevede oluşturduğunuz kaynaklar için sürücünün ne kadar bellek ayırdığını görüntüleyin. Bu pencere, **Visual Studio grafik Çözümleyicisi** ' de **görüntüleme > bellek istatistikleri** aracılığıyla kullanılabilir. Bir elektronik tabloda görüntülenmek üzere bir CSV dosyasına veri kopyalamak için sağ tıklayın ve **Tümünü Kopyala** ' yı seçin.
+- **Bellek İstatistikleri:** Çerçevede oluşturduğunuz kaynaklar için sürücünün ne kadar bellek ayırdığını görüntüleyin. Bu pencere, **Visual Studio grafik Çözümleyicisi**' de **görüntüleme > bellek istatistikleri** aracılığıyla kullanılabilir. Bir elektronik tabloda görüntülenmek üzere bir CSV dosyasına veri kopyalamak için sağ tıklayın ve **Tümünü Kopyala**' yı seçin.
 
   ![Bellek istatistikleri](media/memory-stats.png)
 

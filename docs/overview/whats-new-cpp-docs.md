@@ -1,17 +1,21 @@
 ---
 title: C++ belgeleri için yenilikler
 description: Microsoft C/C++ derleyicisi, ATL/MFC, C çalışma zamanı ve standart kitaplık belgeleri için yeni belgeler ve belge güncelleştirmeleri.
-ms.date: 02/05/2021
-ms.openlocfilehash: 68220fcea1efaf3f0f22885550fe405626626f03
-ms.sourcegitcommit: 651f817a6c8e92211168d34f0542350559f436d5
+ms.date: 02/08/2021
+ms.openlocfilehash: 3b6d248b99415c91b4086b00ecc54fc39d2c348a
+ms.sourcegitcommit: 77235bff6a7b2621c501938e30d93cb15f5733cb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99834410"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006038"
 ---
 # <a name="microsoft-c-docs-whats-new-for-visual-studio-168"></a>Microsoft C++ belgeleri: Visual Studio 16,8 yenilikleri
 
-Bu makalede, Visual Studio 16,8 için docs 'a yönelik önemli değişikliklerden bazıları listelenir.
+Bu makalede, Visual Studio 16,8 için docs 'a yönelik önemli değişikliklerden bazıları listelenir. 
+
+Visual Studio 'daki yenilikler hakkında daha fazla bilgi için bkz. [Visual Studio 'Da C++](what-s-new-for-visual-cpp-in-visual-studio.md)yenilikleri.
+
+En son C++ uygunluk durumu için bkz. [Visual Studio 'da C++ uygunluk iyileştirmeleri](cpp-conformance-improvements.md)
 
 ## <a name="c-language"></a>C dili
 
@@ -113,7 +117,7 @@ Bu makalede, Visual Studio 16,8 için docs 'a yönelik önemli değişikliklerde
 - [Visual Studio 'Da Linux CMake projesi yapılandırma](../linux/cmake-linux-configure.md) -en son kullanıcı arabirimini yansıtacak şekilde güncelleştirildi
 - [Linux MSBuild projenizi dağıtma, çalıştırma ve hata ayıklama](../linux/deploy-run-and-debug-your-linux-project.md) -eklendi `GDB Path`
 
-## <a name="microsoft-cc-compiler-and-tools-errors-and-warnings"></a>Microsoft C/C++ derleyicisi ve araçları hataları ve uyarıları
+## <a name="cc-compiler-and-tools-errors-and-warnings"></a>C/C++ derleyicisi ve araçları hataları ve uyarıları
 
 ### <a name="new-articles"></a>Yeni makaleler
 
@@ -127,7 +131,7 @@ Bu makalede, Visual Studio 16,8 için docs 'a yönelik önemli değişikliklerde
 - [Derleyici uyarıları C4800 Ile C5999](../error-messages/compiler-warnings/compiler-warnings-c4800-through-c4999.md) -güncelleştirilmiş 16,7 uyarıları
 - [Derleyici hatası C3381](../error-messages/compiler-errors-2/compiler-error-c3381.md) -adres cpp-docs 2493; güncelleştirme açıklamaları ve örnek
 
-## <a name="microsoft-cc-compiler-intrinsics-and-assembly-language"></a>Microsoft C/C++ Derleyici iç bilgileri ve derleme dili
+## <a name="cc-compiler-intrinsics-and-assembly-language"></a>C/C++ Derleyici iç bilgileri ve derleme dili
 
 ### <a name="updated-articles"></a>Güncelleştirilmiş makaleler
 
@@ -136,7 +140,7 @@ Bu makalede, Visual Studio 16,8 için docs 'a yönelik önemli değişikliklerde
 - [Visual Studio 'da C++](../overview/visual-cpp-in-visual-studio.md) -güncelleştirilmiş devcom ve Microsoft Docs Q&bağlantı
 - [Microsoft c++ dil uygunluğu tablosu](../overview/visual-cpp-language-conformance.md) -güncelleştirilmiş C++ 20 kitaplığı uyumluluk tablosu, güncelleştirme dil özelliği tablosu 16,7
 
-## <a name="microsoft-c-in-visual-studio"></a>Visual Studio 'da Microsoft C++
+## <a name="c-in-visual-studio"></a>Visual Studio’da C++
 
 ### <a name="updated-articles"></a>Güncelleştirilmiş makaleler
 
@@ -144,7 +148,7 @@ Bu makalede, Visual Studio 16,8 için docs 'a yönelik önemli değişikliklerde
 - [if-else deyimidir (C++)](../cpp/if-else-statement-cpp.md) -dilbilgisi için açıklama eklendi `if/else`
 - [`union`](../cpp/unions.md) -Sabit kod parçacığı
 
-## <a name="microsoft-c-in-visual-studio-projects-and-build-systems"></a>Visual Studio projelerinde ve derleme sistemlerinde Microsoft C++
+## <a name="cc-projects-and-build-systems"></a>C/C++ projeleri ve derleme sistemleri
 
 ### <a name="new-articles"></a>Yeni makaleler
 
@@ -161,13 +165,14 @@ Bu makalede, Visual Studio 16,8 için docs 'a yönelik önemli değişikliklerde
 - [ `/clr` (Ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) -için açıklama eklendi`/clr`
 - [pgosüpürme](../build/pgosweep.md) -daha fazla pgotarama seçeneği eklendi
 - [Kullanarak `__declspec(dllimport)` verileri içeri aktarma](../build/importing-data-using-declspec-dllimport.md) -Güncelleştirilmiş örnek
-## <a name="microsoft-c-porting-and-upgrade-guide"></a>Microsoft C++ taşıma ve Yükseltme Kılavuzu
+
+## <a name="c-porting-and-upgrade-guide"></a>C++ taşıma ve Yükseltme Kılavuzu
 
 ### <a name="updated-articles"></a>Güncelleştirilmiş makaleler
 
 - [Nasıl yapılır: mevcut C++ kodunu bir Evrensel Windows platformu uygulamasında kullanma](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md) -netlik ve güncelleştirilmiş örnekler için yeniden çalıştı
 
-## <a name="microsoft-c-standard-library-stl-reference"></a>Microsoft C++ standart kitaplığı (STL) başvurusu
+## <a name="c-standard-library-stl-reference"></a>C++ standart kitaplığı (STL) başvurusu
 
 ### <a name="new-articles"></a>Yeni makaleler
 
