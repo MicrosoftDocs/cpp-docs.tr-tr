@@ -1,13 +1,13 @@
 ---
 title: C++ belgeleri için yenilikler
 description: Microsoft C/C++ derleyicisi, ATL/MFC, C çalışma zamanı ve standart kitaplık belgeleri için yeni belgeler ve belge güncelleştirmeleri.
-ms.date: 02/08/2021
-ms.openlocfilehash: 3b6d248b99415c91b4086b00ecc54fc39d2c348a
-ms.sourcegitcommit: 77235bff6a7b2621c501938e30d93cb15f5733cb
+ms.date: 02/17/2021
+ms.openlocfilehash: b15d286eb7bd2951ab2b8101a752de2beb57f4a4
+ms.sourcegitcommit: e99db7c3b5f25ece0e152165066c926751a7c2ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100006038"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100643579"
 ---
 # <a name="microsoft-c-docs-whats-new-for-visual-studio-168"></a>Microsoft C++ belgeleri: Visual Studio 16,8 yenilikleri
 
@@ -183,7 +183,7 @@ En son C++ uygunluk durumu için bkz. [Visual Studio 'da C++ uygunluk iyileştir
 ### <a name="updated-articles"></a>Güncelleştirilmiş makaleler
 
 - [ `<ios>` tür tanımları](../standard-library/ios-typedefs.md) -GitHub başına güncelleştirilmiş örnek #2514
-- [ `basic_string` Sınıf](../standard-library/basic-string-class.md) eklendi `startswith()` ,`endswith()`
+- [ `basic_string` Sınıf](../standard-library/basic-string-class.md) eklendi `_starts_with()` ,`ends_with()`
 - [`ios_base Class`](../standard-library/ios-base-class.md)
 - [`map` sınıfı](../standard-library/map-class.md)
 - [ `multimap` Sınıf](../standard-library/multimap-class.md) eklendi`contains()`
@@ -193,7 +193,7 @@ En son C++ uygunluk durumu için bkz. [Visual Studio 'da C++ uygunluk iyileştir
 - [ `unordered_multimap` Sınıf](../standard-library/unordered-multimap-class.md) eklendi`contains()`
 - [ `unordered_multiset` Sınıf](../standard-library/unordered-multiset-class.md) eklendi`contains()`
 - [ `unordered_set` Sınıf](../standard-library/unordered-set-class.md) eklendi`contains()`
-- [ `basic_string_view` Sınıf](../standard-library/basic-string-view-class.md) eklendi `startswith()` ,`endswith()`
+- [ `basic_string_view` Sınıf](../standard-library/basic-string-view-class.md) eklendi `starts_with()` ,`ends_with()`
 - [ `<bit>` işlevler](../standard-library/bit-functions.md) -güncelleştirilmiş `nodiscard` sözdizimi
 
 ## <a name="community-contributors"></a>Topluluk katkı sağlayanlar
