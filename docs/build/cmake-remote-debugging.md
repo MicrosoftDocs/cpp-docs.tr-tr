@@ -3,12 +3,12 @@ title: 'Öğretici: uzak bir Windows makinesindeki CMake projesinde hata ayıkla
 ms.date: 12/4/2020
 ms.topic: tutorial
 description: CMake projesi oluşturmak ve derlemek için Windows üzerinde Visual Studio C++ kullanma. Bu durumda, uzak bir Windows makinesinde dağıtıp hata ayıklaması yapılır.
-ms.openlocfilehash: 742ee831fc30ffe291d68ff97ad4238e57c7e21d
-ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
+ms.openlocfilehash: 575b815559cbe70384b4669c94cf003daa3ee7d7
+ms.sourcegitcommit: 5efc34c2b98d4d0d3e41aec38b213f062c19d078
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98668920"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844513"
 ---
 # <a name="tutorial-debug-a-cmake-project-on-a-remote-windows-machine"></a>Öğretici: uzak bir Windows makinesindeki CMake projesinde hata ayıklama
 
@@ -31,7 +31,7 @@ Bu öğreticide aşağıdakilerin nasıl yapılacağını öğreneceksiniz:
 
 Platformlar arası C++ geliştirmesi için Visual Studio 'yu ayarlamak için, hedef mimari için derleme araçlarını kurun. Bu öğreticide, aşağıdakileri yaparak ARM64 derleme araçlarını yüklemelisiniz:
 
-1. Visual Studio Yükleyicisi çalıştırın. Visual Studio 'Yu henüz yüklemediyseniz bkz. [Visual Studio 'Yu yükleme](https://docs.microsoft.com/visualstudio/install/install-visual-studio#:~:text=Install%20Visual%20Studio%201%20Make%20sure%20your%20computer,...%204%20Choose%20workloads.%20...%20More%20items...%20)
+1. Visual Studio Yükleyicisi çalıştırın. Visual Studio 'Yu henüz yüklemediyseniz bkz. [Visual Studio 'Yu yükleme](/visualstudio/install/install-visual-studio)
 1. Visual Studio Yükleyicisi giriş ekranında **Değiştir**' i seçin.
 1. Üstteki seçeneklerden **bağımsız bileşenler**' i seçin.
 1. **Derleyiciler, derleme araçları ve çalışma zamanları** bölümüne gidin.
@@ -42,8 +42,8 @@ Platformlar arası C++ geliştirmesi için Visual Studio 'yu ayarlamak için, he
 
 ### <a name="on-the-remote-machine"></a>Uzak makinede
 
-1. Uzak araçları uzak makineye yükler. Bu öğretici için, [Uzak araçları indirme ve yükleme](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-cpp?%23download-and-install-the-remote-tools#download-and-install-the-remote-tools)bölümündeki YÖNERGELERI izleyerek ARM64 araçlarını yükleyin.
-1. Uzak makinede uzaktan hata ayıklayıcıyı başlatın ve yapılandırın. Bu öğreticide, uzak Windows makinesinde [Uzaktan hata ayıklayıcıyı ayarlama](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-cpp?%23download-and-install-the-remote-tools#BKMK_setup) yönergelerini izleyerek bunu yapın.
+1. Uzak araçları uzak makineye yükler. Bu öğretici için, [Uzak araçları indirme ve yükleme](/visualstudio/debugger/remote-debugging-cpp#download-and-install-the-remote-tools)bölümündeki YÖNERGELERI izleyerek ARM64 araçlarını yükleyin.
+1. Uzak makinede uzaktan hata ayıklayıcıyı başlatın ve yapılandırın. Bu öğreticide, uzak Windows makinesinde [Uzaktan hata ayıklayıcıyı ayarlama](/visualstudio/debugger/remote-debugging-cpp#BKMK_setup) yönergelerini izleyerek bunu yapın.
 
 ## <a name="create-a-cmake-project"></a>CMake projesi oluşturma
 

@@ -8,12 +8,12 @@ f1_keywords:
 - C5021
 - C5001
 - C5012
-ms.openlocfilehash: 3e2d458d177b8a7032276d29940a7ff2dac83b36
-ms.sourcegitcommit: e99db7c3b5f25ece0e152165066c926751a7c2ed
+ms.openlocfilehash: 9cfafe9af4859a2bb4dbd7897a14003d85052f63
+ms.sourcegitcommit: 5efc34c2b98d4d0d3e41aec38b213f062c19d078
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100643566"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844552"
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>Vektör haline getirici ve paralel hale getirici iletileri
 
@@ -25,7 +25,7 @@ Belirttiğiniz raporlama düzeyine bağlı olarak, aşağıdaki bilgi iletilerin
 
 Neden kodları hakkında daha fazla bilgi için bu makalenin sonraki bölümüne bakın.
 
-| Bilgi iletisi | Description |
+| Bilgi iletisi | Açıklama |
 |--|--|
 | 5001 | Döngü vektörleştirildi. |
 | 5002 | '*Description*' nedeni nedeniyle döngü vektörleştirilmedi. |
@@ -41,11 +41,12 @@ Aşağıdaki bölümlerde paralelleştirme ve Vektörleştirici için olası ned
 
 | Neden kodu | Açıklama |
 |--|--|
-| 500 | Birkaç durumu kapsayan genel bir ileti — Örneğin, döngü birden çok çıkış içerir veya döngü üst bilgisi, endüksiyon değişkeninin arttırılarak bitmez. |
+| 500 | Çeşitli durumları kapsayan genel bir ileti: Örneğin, döngü birden çok çıkış içerir veya döngü üst bilgisi, endüksiyon değişkeninin arttırılarak bitmez. |
 | 501 | Endüksiyon değişkeni yerel değil; veya üst sınır döngü sabiti değildir. |
 | 502 | Endüksiyon değişkenine basit + 1 dışındaki bir şekilde girilmiştir. |
 | 503 | Döngü, özel durum işleme veya anahtar ifadeleri içerir. |
 | 504 | Döngünün gövdesi C++ nesnesinin yok edilmesini gerektiren bir özel durum oluşturabilir. |
+| 505 | Dış döngünün önceden arttırılan bir değişkeni vardır. Çözümden çıkılıyor. |
 
 ```cpp
 void code_500(int *A)
@@ -83,7 +84,7 @@ void code_501_example1(int *A)
 {
     // Code 501 is emitted if the compiler cannot discern the
     // induction variable of this loop. In this case, when it checks
-    // the upperbound of 'i', the compiler cannot prove that the
+    // the upper bound of 'i', the compiler cannot prove that the
     // function call "bound()" returns the same value each time.
     // Also, the compiler cannot prove that the call to "bound()"
     // does not modify the values of array A.
@@ -94,7 +95,7 @@ void code_501_example1(int *A)
     }
 
     // To resolve code 501, ensure that the induction variable is
-    // a local variable, and ensure that the upperbound is a
+    // a local variable, and ensure that the upper bound is a
     // provably loop invariant value.
 
     for (int i=0, imax = bound(); i<imax; ++i)
@@ -116,7 +117,7 @@ void code_501_example2(int *A)
     }
 
     // To resolve code 501, ensure that the induction variable is
-    // a local variable, and ensure that the upperbound is a
+    // a local variable, and ensure that the upper bound is a
     // provably loop invariant value.
 
     for (int i=0; i<1000; ++i)
@@ -184,7 +185,8 @@ public:
     ~C504();
 };
 
-void code_504(int *A) {
+void code_504(int *A)
+{
     // Code 504 is emitted if a C++ object was created and
     // that object requires EH unwind tracking information under
     // /EHs or /EHsc.
@@ -195,6 +197,23 @@ void code_504(int *A) {
         A[i] = code_504_helper();
     }
 
+}
+
+void code_505(int *A)
+{
+    // Code 505 is emitted on outer loops with pre-incremented
+    // induction variables. The vectorizer/parallelizer analysis
+    // package doesn't support these loops, and they are
+    // intentionally not converted to post-increment loops to
+    // prevent a performance degradation.
+
+    // To parallelize an outer loop that causes code 505, change
+    // it to a post-incremented loop.
+
+    for (int i=100; i--; )
+        for (int j=0; j<100; j++) { // this loop is still vectorized
+            A[j] = A[j] + 1;
+        }                    
 }
 ```
 
@@ -212,7 +231,7 @@ void code_504(int *A) {
 | 1005 | `no_parallel`Pragma belirtildi. |
 | 1006 | Bu işlev OpenMP içeriyor. Bu işlevdeki herhangi bir OpenMP 'yi kaldırarak çözümleyin. |
 | 1007 | Döngüdeki değişken veya döngü sınırları, 32 bitlik sayılar ( `int` veya) işaretli değil `long` . Bu değişkeni, endüksiyon değişkeninin türünü değiştirerek çözün. |
-| 1008 | Derleyici, bu döngünün otomatik paralelleştirme işlemini yapmak için yeterli iş gerçekleştiremediğini algıladı. |
+| 1008 | Derleyici, bu döngünün otomatik paralelleştirme yapmak için yeterli iş olmadığını algıladı. |
 | 1009 | Derleyici bir "" döngüsünü paralel hale getirmek girişimi algıladı `do` - `while` . Otomatik paralelleştirme yalnızca " `for` " döngülerini hedefler. |
 | 1010 | Derleyici, döngüsünün durumunun "Not-Equals" () kullandığını algıladı `!=` . |
 
@@ -414,7 +433,7 @@ void code_1010()
 | Neden kodu | Açıklama |
 |--|--|
 | 1100 | Döngü denetim akışı içeriyor — Örneğin, " `if` " veya " `?:` ". |
-| 1101 | Döngü, vektörleştirilmemiş bir veri türü dönüştürmesi içeriyor (belki örtülü). |
+| 1101 | Loop vektörleştirilmemiş bir (muhtemelen örtük) veri türü dönüştürmesi içeriyor. |
 | 1102 | Döngü aritmetik olmayan veya diğer vektörleştirilemeyen işlemler içeriyor. |
 | 1103 | Döngü gövdesi, boyutu döngü içinde değişebilen kaydırma işleçleri içeriyor. |
 | 1104 | Döngünün gövdesi skalar değişkenler içerir. |
@@ -434,7 +453,7 @@ void code_1100(int *A, int x)
 
     for (int i=0; i<1000; ++i)
     {
-        // straightline code is more amenable to vectorization
+        // straight line code is more amenable to vectorization
         if (x)
         {
             A[i] = A[i] + 1;
@@ -561,7 +580,7 @@ void code_1106(int *A)
 
 | Neden kodu | Açıklama |
 |--|--|
-| 1200 | Döngü, vektörleştirmeyi önleyen döngüyle taşınan veri bağımlılıklarını içerir. Döngünün farklı yinelemeleri, döngüyü vektörleştirerek yanlış yanıtlar üretebileceği ve otomatik Vektörleştirici bu tür bir veri bağımlılığı olmadığını kanıtlayamadığı gibi, birbirleriyle ilgili farklı yinelemeler ile karışmaz. |
+| 1200 | Döngü, vektörleştirmeyi önleyen döngüyle taşınan veri bağımlılıklarını içerir. Döngünün farklı yinelemeleri, döngünün bir şekilde vektörleştirilmesi yanlış yanıt üretir ve otomatik Vektörleştirici bu tür veri bağımlılıkları olmadığını kanıtlamaz. |
 | 1201 | Dizi temeli döngü sırasında değişiyor. |
 | 1202 | Bir yapıdaki alan 32 veya 64 bit genişliğinde değildir. |
 | 1203 | Döngü gövdesi, bir diziye bitişik olmayan erişimler içeriyor. |
@@ -653,7 +672,7 @@ void code_1204(int *A)
 
 | Neden kodu | Açıklama |
 |--|--|
-| 1300 | Döngü gövdesinde hesaplama yok ya da çok az. |
+| 1300 | Döngü gövdesi çok az hesaplama içeriyor. |
 | 1301 | Döngü ilerlemesiyle + 1 değildir. |
 | 1302 | Döngü bir " `do` - `while` ". |
 | 1303 | Vektörleştirmenin değer sağlaması için yeterli sayıda döngü yinelemesi yok. |
@@ -703,7 +722,7 @@ int code_1303(int *A, int *B)
     // make vectorization profitable.
 
     // If the loop computation fits perfectly in
-    // vector registers - for example, the upperbound is 4, or 8 in
+    // vector registers - for example, the upper bound is 4, or 8 in
     // this case - then the loop _may_ be vectorized.
 
     // This loop is not vectorized because there are 5 iterations

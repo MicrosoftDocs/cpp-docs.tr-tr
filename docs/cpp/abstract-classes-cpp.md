@@ -1,27 +1,26 @@
 ---
 description: 'Daha fazla bilgi edinin: soyut sınıflar (C++)'
-title: Soyut Sınıflar (C++)
-ms.date: 11/04/2016
+title: Soyut sınıflar (C++)
+ms.date: 02/18/2021
 helpviewer_keywords:
 - classes [C++], abstract
 - base classes [C++], abstract classes [C++]
 - abstract classes [C++]
 - derived classes [C++], abstract classes [C++]
-ms.assetid: f0c5975b-39de-4d68-9640-6ce57f4632e6
-ms.openlocfilehash: bb1c42ce7930128e72c88afaca90da7aaac0bde5
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 8a20e988cb0c0a134fd2ebb83382d81c838bcf23
+ms.sourcegitcommit: 5efc34c2b98d4d0d3e41aec38b213f062c19d078
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97288418"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844500"
 ---
-# <a name="abstract-classes-c"></a>Soyut Sınıflar (C++)
+# <a name="abstract-classes-c"></a>Soyut sınıflar (C++)
 
-Soyut sınıflar, daha belirli sınıfların türetilebilecek genel kavramların ifadeleri olarak davranır. Soyut sınıf türünde bir nesne oluşturamazsınız; Ancak, soyut sınıf türleri için işaretçiler ve başvurular kullanabilirsiniz.
+Soyut sınıflar, daha belirli sınıfların türetilebilecek genel kavramların ifadeleri olarak davranır. Soyut sınıf türünde bir nesne oluşturamazsınız. Ancak, soyut sınıf türleri için işaretçiler ve başvurular kullanabilirsiniz.
 
-En az bir saf sanal işlev içeren bir sınıf, soyut bir sınıf olarak kabul edilir. Soyut sınıftan türetilmiş sınıflar, saf sanal işlevi uygulamalıdır ya da soyut sınıflardır.
+En az bir saf sanal üye işlevi bildirerek soyut bir sınıf oluşturursunuz. Bu, saf tanımlayıcı () sözdizimi kullanılarak belirtilen bir sanal işlevdir `= 0` . Soyut sınıftan türetilmiş sınıflar, saf sanal işlevi uygulamalıdır ya da soyut sınıflardır.
 
-[Sanal işlevlerde](../cpp/virtual-functions.md)sunulan örneği göz önünde bulundurun. Sınıfının amacı `Account` genel işlevselliği sağlamaktır, ancak türündeki nesnelerin `Account` yararlı olması çok genel olabilir. Bu nedenle, `Account` soyut bir sınıf için iyi bir adaydır:
+[Sanal işlevlerde](../cpp/virtual-functions.md)sunulan örneği göz önünde bulundurun. Sınıfının amacı `Account` genel işlevselliği sağlamaktır, ancak türündeki nesnelerin `Account` yararlı olması çok genel olabilir. Bu `Account` , soyut bir sınıf için iyi bir aday olan anlamına gelir:
 
 ```cpp
 // deriv_AbstractClasses.cpp
@@ -40,7 +39,7 @@ Bu bildirim ile Previous arasındaki tek fark, `PrintBalance` saf belirtici () i
 
 ## <a name="restrictions-on-abstract-classes"></a>Soyut sınıflarda kısıtlamalar
 
-Soyut sınıflar şunlar için kullanılamaz:
+Soyut sınıflar için kullanılamaz:
 
 - Değişkenler veya üye verileri
 
@@ -50,42 +49,46 @@ Soyut sınıflar şunlar için kullanılamaz:
 
 - Açık dönüştürme türleri
 
-Başka bir kısıtlama da soyut bir sınıfa yönelik bir oluşturucu doğrudan veya dolaylı olarak saf bir sanal işlevi çağırıyorsa, sonucun tanımsız olmasıdır. Bununla birlikte, soyut sınıflara yönelik oluşturucular ve yıkıcılar diğer üye işlevlerini çağırabilir.
+Bir soyut sınıf için Oluşturucu doğrudan veya dolaylı olarak saf bir sanal işlevi çağırırsa, sonuç tanımsızdır. Bununla birlikte, soyut sınıflara yönelik oluşturucular ve yıkıcılar diğer üye işlevlerini çağırabilir.
 
-Saf sanal işlevler soyut sınıflar için tanımlanabilir, ancak doğrudan yalnızca şu sözdizimi kullanılarak çağrılabilir:
+## <a name="defined-pure-virtual-functions"></a>Tanımlı saf sanal işlevler
+
+Soyut sınıflarda saf sanal işlevler *tanımlanabilir* veya bir uygulamaya sahip olabilir. Yalnızca tam sözdizimini kullanarak bu işlevleri çağırabilirsiniz:
 
 *soyut-sınıf-adı*::*işlev-adı*()
 
-Bu, temel sınıf yıkıcıları her zaman bir nesne yıkılırken çağrıldığı için temel sınıfları saf sanal yıkıcılar içeren sınıf hiyerarşilerinin tasarlanmasına yardımcı olur. Aşağıdaki örneği inceleyin:
+Tanımlı saf sanal işlevler, temel sınıfları saf sanal yıkıcıları içeren sınıf hiyerarşileri tasarladığınızda yararlıdır. Bunun nedeni, temel sınıf yıkıcıları her zaman nesne yok etme sırasında çağrılır. Aşağıdaki örneği inceleyin:
 
 ```cpp
+// deriv_RestrictionsOnUsingAbstractClasses.cpp
 // Declare an abstract base class with a pure virtual destructor.
-// deriv_RestrictionsonUsingAbstractClasses.cpp
-class base {
+// It's the simplest possible abstract class.
+class base
+{
 public:
     base() {}
-    virtual ~base()=0;
+    virtual ~base() = 0 {}; // pure virtual, and defined!
 };
 
-// Provide a definition for destructor.
-base::~base() {}
-
-class derived:public base {
+class derived : public base
+{
 public:
     derived() {}
-    ~derived(){}
+    ~derived() {}
 };
 
-int main() {
-    derived *pDerived = new derived;
-    delete pDerived;
+int main()
+{
+    derived aDerived; // destructor called when it goes out of scope
 }
 ```
 
-`pDerived` tarafından işaret edilen nesne silindiğinde, `derived` sınıfına yönelik yıkıcı ve ardından `base` sınıfına yönelik yıkıcı çağrılır. Saf sanal işleve yönelik boş uygulama, işlev için en azından bazı uygulamaların var olmasını sağlar.
+Örnek, satır içi tanımını gösterir `~base()` , ancak kullanarak sınıfı dışında da tanımlayabilirsiniz `base::~base() {}` .
+
+Nesne `aDerived` kapsam dışına geçtiğinde, sınıfının yıkıcısı `derived` çağırılır. Derleyici, yıkıcı sonrasında sınıf için yıkıcıyı örtük olarak çağırmak için kod üretir `base` `derived` . Saf sanal işlev için boş uygulama, `~base` işlev için en az bir uygulamanın mevcut olmasını sağlar. Bu olmadan, bağlayıcı örtük çağrı için çözülmemiş bir dış sembol hatası oluşturur.
 
 > [!NOTE]
-> Yukarıdaki örnekte, `base::~base` saf sanal işlevi `derived::~derived` öğesinden örtük olarak çağrılır. Saf sanal işlevler, tam üye işlevi adı kullanılarak örtük bir şekilde çağrılabilir.
+> Yukarıdaki örnekte, `base::~base` saf sanal işlevi `derived::~derived` öğesinden örtük olarak çağrılır. Saf sanal işlevleri açıkça tam bir üye işlevi adı kullanarak çağırmak da mümkündür. Bu tür işlevlerin bir uygulamaya sahip olması veya çağrının bağlantı sırasında bir hatayla sonuçlamasıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

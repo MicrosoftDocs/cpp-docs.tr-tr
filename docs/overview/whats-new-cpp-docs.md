@@ -2,12 +2,12 @@
 title: C++ belgeleri için yenilikler
 description: Microsoft C/C++ derleyicisi, ATL/MFC, C çalışma zamanı ve standart kitaplık belgeleri için yeni belgeler ve belge güncelleştirmeleri.
 ms.date: 02/17/2021
-ms.openlocfilehash: b15d286eb7bd2951ab2b8101a752de2beb57f4a4
-ms.sourcegitcommit: e99db7c3b5f25ece0e152165066c926751a7c2ed
+ms.openlocfilehash: ad626dc598cd17de091801b2c313b7339db4cbc7
+ms.sourcegitcommit: 5efc34c2b98d4d0d3e41aec38b213f062c19d078
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100643579"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844539"
 ---
 # <a name="microsoft-c-docs-whats-new-for-visual-studio-168"></a>Microsoft C++ belgeleri: Visual Studio 16,8 yenilikleri
 
@@ -198,7 +198,7 @@ En son C++ uygunluk durumu için bkz. [Visual Studio 'da C++ uygunluk iyileştir
 
 ## <a name="community-contributors"></a>Topluluk katkı sağlayanlar
 
-Aşağıdaki kişiler bu süre boyunca C++, C ve assembler belgelerine katkıda bulunanlar. Teşekkür ederiz! Nasıl katkıda bulunabileceğinizi öğrenmek isterseniz bkz. katkıda [bulunan kılavuzuna genel bakış Microsoft docs](https://docs.microsoft.com/contribute/) .
+Aşağıdaki kişiler bu süre boyunca C++, C ve assembler belgelerine katkıda bulunanlar. Teşekkür ederiz! Nasıl katkıda bulunabileceğinizi öğrenmek isterseniz bkz. katkıda [bulunan kılavuzuna genel bakış Microsoft docs](/contribute/) .
 
 - [yecril71pl](https://github.com/yecril71pl) -Christopher Yeliighton (4)
 - [definedris-](https://github.com/definedrisk) ben (3)
