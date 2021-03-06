@@ -1,7 +1,7 @@
 ---
 description: 'Hakkında daha fazla bilgi edinin: freopen_s _wfreopen_s'
 title: freopen_s, _wfreopen_s
-ms.date: 4/2/2020
+ms.date: 2/23/2021
 api_name:
 - _wfreopen_s
 - freopen_s
@@ -35,94 +35,100 @@ helpviewer_keywords:
 - tfreopen_s function
 - wfreopen_s function
 - freopen_s function
-ms.assetid: ad25a4da-6ad4-476b-a86d-660b221ca84d
-ms.openlocfilehash: cbb10582128073501433a1a12c59e195bec011d5
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: a2b9bf86d50972fcc820da3e53fd066717879ff3
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97314015"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236744"
 ---
-# <a name="freopen_s-_wfreopen_s"></a>freopen_s, _wfreopen_s
+# <a name="freopen_s-_wfreopen_s"></a>`freopen_s`, `_wfreopen_s`
 
-Bir dosya işaretçisini yeniden atar. [Serbest açık](freopen-wfreopen.md) 'in bu sürümlerinde, _wfreopen [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
+İle ilişkili olan dosyayı kapatır `oldStream` ve `stream` tarafından belirtilen dosyayı yeniden atar `fileName` .
+
+Bu sürümlerinde [`freopen, _wfreopen`](freopen-wfreopen.md) , [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```C
-errno_t freopen(
-   FILE** pFile,
-   const char *path,
-   const char *mode,
-   FILE *stream
+errno_t freopen_s(
+   FILE ** stream,
+   const char * fileName,
+   const char * mode,
+   FILE* oldStream
 );
-errno_t _wfreopen(
-   FILE** pFile,
-   const wchar_t *path,
-   const wchar_t *mode,
-   FILE *stream
+
+errno_t _wfreopen_s(
+   FILE ** stream,
+   const wchar_t * fileName,
+   const wchar_t * mode,
+   FILE * oldStream
 );
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*pFile*<br/>
-Çağrı tarafından sağlanacak dosya işaretçisine yönelik bir işaretçi.
+*`stream`*\
+İşlev döndüğünde yeniden açılmış akışa işaret edecek bir out parametresi.
 
-*Yolun*<br/>
-Yeni dosyanın yolu.
+*`fileName`*\
+Yeniden açılacak dosyanın yolu.
 
-*modundaysa*<br/>
-İzin verilen erişim türü.
+*` mode`*\
+Yeniden açılmış akışın modu.
 
-*ka*<br/>
-**Dosya** yapısına yönelik işaretçi.
+*`oldStream`*\
+Yeniden açılacak akış. Temizlendi ve onunla ilişkili tüm dosyalar kapatılmıştır.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Döndürülen değer
 
-Bu işlevlerin her biri bir hata kodu döndürür. Bir hata oluşursa, özgün dosya kapatılır.
+Başarılı üzerinde sıfır; Aksi takdirde hata kodu. Bir hata oluşursa, özgün dosya kapatılır ve **`NULL`** *`stream`* *`stream`* Ayrıca **`NULL`**
+
+Hata kodları hakkında daha fazla bilgi için bkz [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) ..
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Freopen_s** işlevi, *Stream* ile ilişkili olan dosyayı kapatır ve Stream ile belirtilen dosyanın *akışını* yeniden *atar.* **_wfreopen_s** , **_freopen_s** geniş karakterli bir sürümüdür; _wfreopen_s *yol* ve *mod* bağımsız değişkenleri  geniş karakterli dizelerdir. **_wfreopen_s** ve **_freopen_s** aynı şekilde davranır.
+**`freopen_s`** İşlev genellikle ile ilişkili önceden açılan akışları `stdin` `stdout` ve `stderr` başka bir dosyaya eklemek için kullanılır.
 
-*Pfıle*, *Path*, *Mode* veya *Stream* herhangi biri **null** Ise veya *yol* boş bir dize ise, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL** döndürür.
+**`freopen_s`** İşlev, ile ilişkili olan dosyayı kapatır *`stream`* ve *`stream`* *yol* tarafından belirtilen dosyaya yeniden atar. **`_wfreopen_s`** , öğesinin geniş karakterli bir sürümüdür **`freopen_s`** ; *yolu* ve *` mode`* bağımsız değişkenler **`_wfreopen_s`** geniş karakterli dizelerdir. **`_wfreopen_s`** ve **`freopen_s`** aynı şekilde davranır.
+
+*Pfile*, *Path*, *` mode`* veya varsa ya da *`stream`* **`NULL`** *yol* boş bir dize ise, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler öğesini **`errno`** olarak ayarlar **`EINVAL`** ve döndürür **`EINVAL`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|`TCHAR.H` rutin|_ `UNICODE & _MBCS` tanımlı değil|`_MBCS` tanımlı|`_UNICODE` tanımlı|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tfreopen_s**|**freopen_s**|**freopen_s**|**_wfreopen_s**|
+|**`_tfreopen_s`**|**`freopen_s`**|**`freopen_s`**|**`_wfreopen_s`**|
 
-**freopen_s** , genellikle, önceden açılan dosyaları **stdin**, **stdout** ve **stderr** 'i Kullanıcı tarafından belirtilen dosyalara yönlendirmek için kullanılır. *Stream* ile ilişkili yeni dosya, dosya için istenen erişimin türünü belirten, aşağıdaki gibi bir karakter dizesi olan *moduyla* açılır:
+**`freopen_s`** genellikle önceden açılan dosyaları **`stdin`** , **`stdout`** ve **`stderr`** Kullanıcı tarafından belirtilen dosyaları yeniden yönlendirmek için kullanılır. İle ilişkili yeni dosya, *`stream`* *` mode`* dosyası için istenen erişimin türünü belirten bir karakter dizesi olan ile açılır.
 
-|*modundaysa*|Access|
+|*` mode`*|Access|
 |-|-|
-| **sağ** | Okuma için açılır. Dosya yoksa veya bulunamıyorsa, **freopen_s** çağrısı başarısız olur. |
-| **anlatımı** | Yazma için boş bir dosya açar. Verilen dosya varsa, içeriği yok edilir. |
-| **a** | Dosyanın sonuna (ekleme), yeni veriler dosyaya yazılmadan önce dosya sonu (EOF) işaretini kaldırmadan açılır. Yoksa dosyayı oluşturur. |
-| **"r +"** | Hem okuma hem de yazma için açılır. Dosya var olmalıdır. |
-| **"w +"** | Hem okuma hem de yazma için boş bir dosya açar. Dosya varsa, içeriği yok edilir. |
-| **"a +"** | Okuma ve ekleme için açılır. Ekleme işlemi, yeni veriler dosyaya yazılmadan önce EOF işaretinin kaldırılmasını içerir. Yazma işlemi tamamlandıktan sonra EOF işaretleyicisi geri yüklenmez. Yoksa dosyayı oluşturur. |
+| **`"r"`** | Okuma için açılır. Dosya yoksa veya bulunamıyorsa, **`freopen_s`** çağrı başarısız olur. |
+| **`"w"`** | Yazma için boş bir dosya açar. Verilen dosya varsa, içeriği yok edilir. |
+| **`"a"`** | Dosyanın sonuna (ekleme), yeni veriler dosyaya yazılmadan önce dosya sonu (EOF) işaretini kaldırmadan açılır. Mevcut değilse dosyayı oluşturur. |
+| **`"r+"`** | Hem okuma hem de yazma için açılır. Dosya var olmalıdır. |
+| **`"w+"`** | Hem okuma hem de yazma için boş bir dosya açar. Dosya varsa, içeriği yok edilir. |
+| **`"a+"`** | Okuma ve ekleme için açılır. Ekleme işlemi, yeni veriler dosyaya yazılmadan önce EOF işaretinin kaldırılmasını içerir. Yazma işlemi tamamlandıktan sonra EOF işaretleyicisi geri yüklenmez. Mevcut değilse dosyayı oluşturur. |
 
-Mevcut dosyaları yok etmek için **"w"** ve **"w +"** türlerini dikkatli kullanın.
+**`"w"`** Ve **`"w+"`** türlerini, var olan dosyaları yok etmek için dikkatli kullanın. C11 ' den başlayarak, **`"x"`** **`"w"`** **`"w+"`** dosyanın üzerine yazmak yerine işlevin başarısız olmasına neden olur.
 
-Bir dosya, **"a"** veya **"a +"** erişim türüyle açıldığında, dosyanın sonunda tüm yazma işlemleri gerçekleşir. Dosya işaretçisi [fseek](fseek-fseeki64.md) veya [geri sarma](rewind.md)kullanılarak yeniden konumlandırılabilse de, herhangi bir yazma işlemi yapılmadan önce dosya işaretçisi her zaman dosyanın sonuna taşınır. Bu nedenle, mevcut verilerin üzerine yazılamaz.
+Bir dosya **`"a"`** veya **`"a+"`** erişim türüyle açıldığında, dosyanın sonunda tüm yazma işlemleri gerçekleşir. Dosya işaretçisi veya kullanılarak yeniden konumlandırılabilse [`fseek`](fseek-fseeki64.md) de [`rewind`](rewind.md) , herhangi bir yazma işlemi yapılmadan önce dosya işaretçisi her zaman dosyanın sonuna taşınır. Bu nedenle, mevcut verilerin üzerine yazılamaz.
 
-**"A"** modu, dosyaya ekleme yapmadan önce EOF işaretçisini kaldırmaz. Ekleme gerçekleştirildikten sonra, MS-DOS türü komutu yalnızca özgün EOF işaretine kadar olan verileri gösterir ve dosyaya eklenen verileri etkilemez. **"A +"** modu, dosyaya ekleme yapmadan önce EOF işaretçisini kaldırır. Eklendikten sonra, MS-DOS türü komutu dosyadaki tüm verileri gösterir. **"A +"** modu, CTRL + Z EOF işaretleyicisi ile sonlandırılan bir akış dosyasına ekleme için gereklidir.
+**`"a"`** Mod, dosyaya eklemeden önce EOF işaretçisini kaldırmaz. Ekleme gerçekleştirildikten sonra, MS-DOS türü komutu yalnızca özgün EOF işaretine kadar olan verileri gösterir ve dosyaya eklenen verileri etkilemez. **`"a+"`** Mod, dosyaya eklemeden önce EOF işaretçisini kaldırır. Eklendikten sonra, MS-DOS türü komutu dosyadaki tüm verileri gösterir. **`"a+"`** Mod, CTRL + Z EOF işaretleyicisi ile sonlandırılan bir akış dosyasına ekleme için gereklidir.
 
-**"R +"**, **"w +"** ya da **"a +"** erişim türü belirtildiğinde, hem okuma hem de yazma için izin verilir (dosya "güncelleştirme" için açık olarak kabul edilir). Ancak, okuma ve yazma arasında geçiş yaptığınızda, aradaki bir [fsetpos](fsetpos.md), [fseek](fseek-fseeki64.md)veya [geri sarma](rewind.md) işlemi olmalıdır. İsterseniz, [fsetpos](fsetpos.md) veya [fseek](fseek-fseeki64.md) işlemi için geçerli konum belirtilebilir. Yukarıdaki değerlere ek olarak, yeni satırlar için çeviri modunu belirtmek üzere *mod* dizesine aşağıdaki karakterlerden biri dahil edilebilir.
+**`"r+"`**, **`"w+"`** Veya **`"a+"`** erişim türü belirtildiğinde, hem okuma hem de yazma için izin verilir (dosya "güncelleştirme" için açık olarak kabul edilir). Ancak, okuma ve yazma arasında geçiş yaptığınızda, aradaki bir [`fsetpos`](fsetpos.md) , [`fseek`](fseek-fseeki64.md) veya [`rewind`](rewind.md) işlem olmalıdır. İsterseniz geçerli konum [`fsetpos`](fsetpos.md) veya işlem için belirtilebilir [`fseek`](fseek-fseeki64.md) . Yukarıdaki değerlere ek olarak, *` mode`* yeni satırlar için çeviri modunu belirtmek üzere dizeye aşağıdaki karakterlerden biri dahil edilebilir.
 
-|*mod* değiştiricisi|Çeviri modu|
+|*` mode`* icisi|Çeviri modu|
 |-|-|
-| **şı** | Metin (çevrilmiş) modunda aç. |
-| **kenarı** | İkili (çevrilmemiş) modda aç; satır başı ve satır besleme karakterlerini içeren Çeviriler bastırılır. |
+| **`t`** | Metin (çevrilmiş) modunda aç. |
+| **`b`** | İkili (çevrilmemiş) modda aç; satır başı ve satır besleme karakterlerini içeren Çeviriler bastırılır. |
 
-Metin (çevrilmiş) modunda, satır başı satır besleme (CR-LF) birleşimleri, girişte tek satırlık akış (LF) karakterlerine çevrilir; LF karakterleri çıkışındaki CR-LF birleşimlerine çevrilir. Ayrıca CTRL + Z, girişte bir dosya sonu karakteri olarak yorumlanır. **"A +"** ile yazma ve okuma için açılan dosyalarda, çalışma zamanı kitaplığı dosyanın sonunda bir CTRL + Z 'yi denetler ve mümkünse onu kaldırır. Bu, bir dosya içinde geçiş yapmak için [fseek](fseek-fseeki64.md) ve [fsöyleyin](ftell-ftelli64.md) kullanmanın, [fseek](fseek-fseeki64.md) dosyasının sonuna doğru şekilde davranmasına neden olabileceği için yapılır. **T** SEÇENEĞI, ANSI taşınabilirliği istendiği yerde kullanılması gereken bir Microsoft uzantısıdır.
+Metin (çevrilmiş) modunda, satır başı satır besleme (CR-LF) birleşimleri, girişte tek satırlık akış (LF) karakterlerine çevrilir; LF karakterleri çıkışındaki CR-LF birleşimlerine çevrilir. Ayrıca CTRL + Z, girişte bir dosya sonu karakteri olarak yorumlanır. Okuma veya yazma için açılan dosyalarda **`"a+"`** , çalışma zamanı kitaplığı dosyanın sonunda BIR CTRL + Z olup olmadığını denetler ve mümkünse onu kaldırır. Bu, [`fseek`](fseek-fseeki64.md) [`ftell`](ftell-ftelli64.md) bir dosya içinde hareket etmek için ve kullanılması, dosyanın sonuna doğru şekilde davranmasına neden olabileceğinden yapılır [`fseek`](fseek-fseeki64.md) . **`t`** Bir Microsoft uzantısı olduğundan, ANSI taşınabilirliği istediğinizde seçeneğini kullanmayın.
 
-**T** veya **b** *modda* verilmezse, varsayılan çeviri modu [_fmode](../../c-runtime-library/fmode.md)genel değişken tarafından tanımlanır. **T** veya **b** bağımsız değişkene öneki varsa, Işlev başarısız olur ve **null** değerini döndürür.
+**`t`** Veya **`b`** içinde verilmezse *` mode`* , varsayılan çeviri modu genel değişken tarafından tanımlanır [`_fmode`](../../c-runtime-library/fmode.md) . **`t`** Veya **`b`** bağımsız değişkenin öneki varsa, işlev başarısız olur ve döndürür **`NULL`** .
 
 Metin ve ikili modların bir tartışması için bkz. [metin ve Ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
@@ -130,10 +136,12 @@ Metin ve ikili modların bir tartışması için bkz. [metin ve Ikili mod dosyas
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**freopen_s**|\<stdio.h>|
-|**_wfreopen_s**|\<stdio.h> veya \<wchar.h>|
+|**`freopen_s`**|`<stdio.h>`|
+|**`_wfreopen_s`**|`<stdio.h>` veya `<wchar.h>`|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout** ve **stderr** Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. ,, Ve konsolu ile ilişkili standart akış tutamaçları, **`stdin`** **`stdout`** **`stderr`** C çalışma zamanı işlevlerinin bunları UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. 
+
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -157,7 +165,8 @@ int main( void )
       fprintf( stdout, "error on freopen\n" );
    else
    {
-      fprintf( stdout, "successfully reassigned\n" ); fflush( stdout );
+      fprintf( stdout, "successfully reassigned\n" ); 
+      fflush( stdout );
       fprintf( stream, "This will go to the file 'freopen.out'\n" );
       fclose( stream );
    }
@@ -172,11 +181,11 @@ This will go to the file 'freopen.out'
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
-[freopen, _wfreopen](freopen-wfreopen.md)<br/>
-[fclose, _fcloseall](fclose-fcloseall.md)<br/>
-[_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
-[_fileno](fileno.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_setmode](setmode.md)<br/>
+[`Stream I/O`](../../c-runtime-library/stream-i-o.md)\
+[`freopen, _wfreopen`](freopen-wfreopen.md)\
+[`fclose, _fcloseall`](fclose-fcloseall.md)\
+[`_fdopen, _wfdopen`](fdopen-wfdopen.md)\
+[`_fileno`](fileno.md)\
+[`fopen, _wfope`No](fopen-wfopen.md)\
+[`_open, _wopen`](open-wopen.md)\
+[`_setmode`](setmode.md)

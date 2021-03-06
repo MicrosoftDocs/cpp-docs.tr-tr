@@ -1,37 +1,34 @@
 ---
-description: Daha fazla bilgi edinin:/GL (tüm program Iyileştirmesi)
-title: /GL (Bütün Program İyileştirmesi)
-ms.date: 11/04/2016
+description: Daha fazla bilgi edinin:/GL (tüm program iyileştirmesi)
+title: /GL (Bütün program iyileştirmesi)
+ms.date: 03/05/2021
 f1_keywords:
-- /gl
+- /GL
 helpviewer_keywords:
 - /GL compiler option [C++]
 - whole program optimizations and C++ compiler
 - -GL compiler option [C++]
 - GL compiler option [C++]
-ms.assetid: 09d51e2d-9728-4bd0-b5dc-3b8284aca1d1
-ms.openlocfilehash: ad42eaeeacf897686831c9b415aa62026b5644f1
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 509deaae8881c4875a9ec2ddf4d5f1ee7744a2cf
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97200201"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236556"
 ---
-# <a name="gl-whole-program-optimization"></a>/GL (Bütün Program İyileştirmesi)
+# <a name="gl-whole-program-optimization"></a>`/GL` (Tüm program iyileştirmesi)
 
 Tüm program iyileştirmesini mümkün hale getirme.
 
 ## <a name="syntax"></a>Syntax
 
-```
-/GL[-]
-```
+> **`/GL`**[**`-`**]
 
 ## <a name="remarks"></a>Açıklamalar
 
 Tüm program iyileştirmesi derleyicinin programdaki tüm modüller hakkındaki bilgilerle iyileştirmeler gerçekleştirmesine olanak sağlar. Tüm program iyileştirmesi olmadan, iyileştirmeler modül başına (compiland) temelinde gerçekleştirilir.
 
-Tüm program iyileştirmesi varsayılan olarak kapalıdır ve açıkça etkinleştirilmesi gerekir. Ancak, bunu **/GL-** ile açıkça devre dışı bırakmak da mümkündür.
+Tüm program iyileştirmesi varsayılan olarak kapalıdır ve açıkça etkinleştirilmesi gerekir. Ancak, ile açıkça devre dışı bırakmak da mümkündür **`/GL-`** .
 
 Tüm modüller hakkında bilgi içeren derleyici şunları yapabilir:
 
@@ -39,31 +36,31 @@ Tüm modüller hakkında bilgi içeren derleyici şunları yapabilir:
 
 - Genel verilerde yapılan değişiklikleri izlemeye daha iyi bir iş yapın ve yükleme sayısı ve depolar için bir azalma sağlar.
 
-- Bir işaretçi başvurusu tarafından değiştirilen olası öğe kümesini izlemenin daha iyi bir işi yapın, yükleme ve mağaza sayısını azaltır.
+- İşaretçi başvurusu tarafından değiştirilen olası öğe kümesini izleyin ve gerekli yüklemeleri ve depoları azaltır.
 
 - İşlev başka bir modülde tanımlansa bile, modülde satır içi bir işlev.
 
-**/GL** ile oluşturulan. obj dosyaları [editbin](editbin-reference.md) ve [dumpbin](dumpbin-reference.md)gibi bağlayıcı yardımcı programları tarafından kullanılamaz.
+*`.obj`* ile oluşturulan dosyalar **`/GL`** ve gibi bağlayıcı yardımcı programları tarafından kullanılamaz [`EDITBIN`](editbin-reference.md) [`DUMPBIN`](dumpbin-reference.md) .
 
-Programınızı **/GL** ve [/c](c-compile-without-linking.md)ile derlerseniz, çıktı dosyasını oluşturmak için/LTCG bağlayıcı seçeneğini kullanmanız gerekir.
+Programınızı ve ile derlerseniz **`/GL`** [`/c`](c-compile-without-linking.md) , çıktı dosyasını oluşturmak için/LTCG bağlayıcı seçeneğini kullanmanız gerekir.
 
-[/Zi](z7-zi-zi-debug-information-format.md) **/GL** ile kullanılamaz
+[`/ZI`](z7-zi-zi-debug-information-format.md) ile kullanılamaz **`/GL`**
 
-Geçerli sürümde **/GL** ile oluşturulan dosyaların biçimi, sonraki Visual C++ sürümleri tarafından okunamayabilir. Kullanıcılarınızın, şimdi ve gelecekte kullanmasını istediğiniz tüm Visual C++ sürümleri için. lib dosyasının kopyalarını teslim etmek istemediğiniz müddetçe, **/GL** ile oluşturulan. lib dosyasını sunmamalıdır.
+Geçerli sürümde ile oluşturulan dosyaların biçimi, **`/GL`** Visual Studio 'nun sonraki sürümlerinde ve MSVC araç takımının okunmamamasından kaynaklanır. *`.lib`* Tüm Visual Studio sürümleri için dosyanın kopyalarını teslim etmek zorunda olmadığınız takdirde, artık kullanıcılarınızın kullanmasını beklediğinizi ve gelecekte *`.lib`* tarafından oluşturulan dosyalardan bir dosya göndermeyin *`.obj`* **`/GL`** . Daha fazla bilgi için bkz. [ikili uyumlulukta kısıtlamalar](../../porting/binary-compat-2015-2017.md#restrictions).
 
-**/GL** ve önceden derlenmiş üst bilgi dosyalarıyla oluşturulan. obj dosyaları,. lib dosyası **/GL** . obj dosyasını üreten aynı makineye bağlanmadığı müddetçe bir. lib dosyası oluşturmak için kullanılmamalıdır. . Obj dosyasının ön derlenmiş üstbilgi dosyasındaki bilgiler bağlantı zamanında gerekecektir.
+*`.obj`* Dosya, dosyayı **`/GL`** *`.lib`* *`.lib`* üreten aynı makineye bağlanmadığı müddetçe, ve önceden derlenmiş üst bilgi dosyaları tarafından oluşturulan dosyalar bir dosya oluşturmak için kullanılmamalıdır **`/GL`** *`.obj`* . *`.obj`* Dosyanın ön derlenmiş üstbilgi dosyasındaki bilgiler bağlantı sırasında gereklidir.
 
-İle kullanılabilen iyileştirmeler ve tüm program iyileştirmesinin sınırlamaları hakkında daha fazla bilgi için bkz. [/LTCG](ltcg-link-time-code-generation.md).  **/GL** Ayrıca profil temelli iyileştirme kullanılabilir hale gelir; bkz./LTCG.  Profil temelli iyileştirmeler için derleme yaparken ve profil temelli iyileştirmelerinden işlev sıralamasını istiyorsanız, [/GY](gy-enable-function-level-linking.md) veya/gy' ı belirten bir derleyici seçeneğini derlemeniz gerekir.
+İle kullanılabilen iyileştirmeler ve tüm program iyileştirmesinin sınırlamaları hakkında daha fazla bilgi için bkz [`/LTCG`](ltcg-link-time-code-generation.md) ..  **`/GL`** Ayrıca profil temelli iyileştirme kullanılabilir hale gelir. Profil temelli iyileştirmeler için derleme yaparken ve profil temelli iyileştirmelerinden işlev sıralamasını istiyorsanız, [`/Gy`](gy-enable-function-level-linking.md) /g, ' ı belirten bir derleyici seçeneği veya derleme yapmanız gerekir.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Geliştirme ortamında **/GL** belirtme hakkında bilgi için bkz. [/LTCG (bağlantı zamanı kodu oluşturma)](ltcg-link-time-code-generation.md) .
+Geliştirme ortamında belirtme hakkında daha fazla bilgi için **`/GL`** bkz. [ `/LTCG` (bağlama zamanı kodu oluşturma)](ltcg-link-time-code-generation.md) .
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-1. Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.WholeProgramOptimization%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.WholeProgramOptimization%2A>.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)\
+[MSVC derleyicisi komut satırı söz dizimi](compiler-command-line-syntax.md)

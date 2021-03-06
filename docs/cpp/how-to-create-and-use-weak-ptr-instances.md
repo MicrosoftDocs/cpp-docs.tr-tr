@@ -5,12 +5,12 @@ ms.custom: how-to
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 8dd6909b-b070-4afa-9696-f2fc94579c65
-ms.openlocfilehash: c1a68d8027e29cced7fb1a767d5a986ab0677ec8
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 1c28ca6d759be513347885ead82498877e935a60
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97221247"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236757"
 ---
 # <a name="how-to-create-and-use-weak_ptr-instances"></a>Nasıl yapılır: weak_ptr örnekleri oluşturma ve kullanma
 
@@ -83,7 +83,7 @@ Destroying Controller4
 Press any key
 ```
 
-Bir deneme olarak, vektörü `others` bir olacak şekilde değiştirin `vector<shared_ptr<Controller>>` ve ardından çıktıda, döndüğünde hiçbir yok edicisi çağrıldığına dikkat edin `TestRun` .
+Bir deneme olarak, vektörü `others` bir olacak şekilde değiştirin `vector<shared_ptr<Controller>>` ve ardından çıktıda, döndüğünde hiçbir yok edicisi çağrıldığına dikkat edin `RunTest` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

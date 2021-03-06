@@ -1,7 +1,7 @@
 ---
 title: fopen_s, _wfopen_s
 description: Ve için API 'YI açıklar `fopen_s``_wfopen_s`
-ms.date: 11/20/2020
+ms.date: 2/24/2021
 api_name:
 - _wfopen_s
 - fopen_s
@@ -39,19 +39,18 @@ helpviewer_keywords:
 - Unicode [C++], writing files
 - files [C++], opening
 - Unicode [C++], files
-ms.assetid: c534857e-39ee-4a3f-bd26-dfe551ac96c3
-ms.openlocfilehash: 1d6d0b739db1177b903c0e8aa8e6f55e49c1df16
-ms.sourcegitcommit: b02c61667ff7f38e7add266d0aabd8463f2dbfa1
+ms.openlocfilehash: a034eda7ad45be30decccee50a104c0565907c41
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95483171"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236543"
 ---
 # <a name="fopen_s-_wfopen_s"></a>`fopen_s`, `_wfopen_s`
 
 Bir dosya açar. Bu sürümlerinde [`fopen, _wfopen`](fopen-wfopen.md) , [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 errno_t fopen_s(
@@ -128,7 +127,7 @@ Aşağıdaki tabloda, *`ccs`* ' a verilen çeşitli bayrakların **`fopen_s`** v
 
 Unicode modunda yazmak için açılan dosyalarda otomatik olarak yazılmış bir BOM vardır.
 
-*`mode`* **`"a, ccs=` _encoding_ Kodlama `"`** ise, **`fopen_s`** önce dosyayı hem okuma erişimi hem de yazma erişimiyle açmaya çalışır. Başarılı olursa, işlev, dosyanın kodlamasını belirlemede ürün reçetesini okur; başarısız olursa, işlev dosya için varsayılan kodlamayı kullanır. Her iki durumda da, **`fopen_s`** dosyayı salt yazılır erişimle yeniden açar. (Bu **`a`** yalnızca mod için geçerlidir, değil **`a+`** .)
+*`mode`* **`"a, ccs=` Kodlama `"`** ise, **`fopen_s`** önce dosyayı hem okuma erişimi hem de yazma erişimiyle açmaya çalışır. Başarılı olursa, işlev, dosyanın kodlamasını belirlemede ürün reçetesini okur; başarısız olursa, işlev dosya için varsayılan kodlamayı kullanır. Her iki durumda da, **`fopen_s`** dosyayı salt yazılır erişimle yeniden açar. (Bu **`a`** yalnızca mod için geçerlidir, değil **`a+`** .)
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -152,6 +151,8 @@ Bir dosya **`"a"`** veya **`"a+"`** erişim türü kullanılarak açıldığınd
 **`"a"`** Mod, dosyaya eklemeden önce EOF işaretçisini kaldırmaz. Ekleme gerçekleştirildikten sonra, MS-DOS `TYPE` komutu yalnızca özgün EOF işaretine kadar olan verileri gösterir ve dosyaya eklenen verileri etkilemez. **`"a+"`** Mod, dosyaya eklemeden önce EOF işaretçisini kaldırır. Ekleme yapıldıktan sonra, MS-DOS `TYPE` komutu dosyadaki tüm verileri gösterir. **`"a+"`** Mod, EOF işaretleyicisi ile sonlandırılan bir akış dosyasına ekleme için gereklidir `CTRL+Z` .
 
 **`"r+"`**, **`"w+"`** Veya **`"a+"`** erişim türü belirtildiğinde, hem okuma hem de yazma için izin verilir. (Dosyanın "Güncelleştir" için açık olduğu söylenir.) Ancak, okumayı yazmaya geçtiğinizde, giriş işlemi bir EOF işaretleyicisi içinde gelmelidir. EOF işaretleyicisi yoksa, bir dosya konumlandırma işlevine aradaki bir çağrı kullanmanız gerekir. Dosya konumlandırma işlevleri **`fsetpos`** , ve ' dir [`fseek`](fseek-fseeki64.md) [`rewind`](rewind.md) . Yazmaya geçiş yaparken, **`fflush`** bir dosya konumlandırma işlevine ya da bir araya giren çağrı kullanmanız gerekir.
+
+C11 ' den başlayarak, **`"x"`** **`"w"`** **`"w+"`** dosyanın üzerine yazmak yerine işlevin başarısız olmasına neden olur.
 
 Yukarıdaki değerlere ek olarak, *`mode`* yeni satır karakterlerinin çeviri modunu belirtmek için aşağıdaki karakterler içine eklenebilir:
 
@@ -177,7 +178,7 @@ Unicode ve çok baytlı akışta metin ve ikili modlar kullanma hakkında daha f
 | **`R`** | Önbellek için en iyi duruma getirilmiş, ancak sınırlı olmamak üzere, diskten rastgele erişim |
 | **`t`** | Geçici olarak bir dosya belirtir. Mümkünse, diske boşaltılmıyor. |
 | **`D`** | Geçici olarak bir dosya belirtir. Son dosya işaretçisi kapatıldığında silinir. |
-| **`ccs=**`_şifreleme_ | Bu dosya için kullanılacak kodlanan karakter kümesini (bir **`UTF-8`** , **`UTF-16LE`** veya veya **`UNICODE`** ) belirtir. ANSI kodlaması istiyorsanız belirtilmemiş olarak bırakın. |
+| **`ccs=`**_şifreleme_ | Bu dosya için kullanılacak kodlanan karakter kümesini (bir **`UTF-8`** , **`UTF-16LE`** veya veya **`UNICODE`** ) belirtir. ANSI kodlaması istiyorsanız belirtilmemiş olarak bırakın. |
 
 ' *`mode`* De kullanılan dize için geçerli karakterler **`fopen_s`** ve [`_fdopen`](fdopen-wfdopen.md) *`oflag`* [`_open`](open-wopen.md) aşağıdaki gibi, ve ' de kullanılan bağımsız değişkenlere karşılık gelir [`_sopen`](sopen-wsopen.md) .
 
@@ -210,13 +211,13 @@ Unicode ve çok baytlı akışta metin ve ikili modlar kullanma hakkında daha f
 |**`fopen_s`**|`<stdio.h>`|
 |**`_wfopen_s`**|`<stdio.h>` veya `<wchar.h>`|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
 [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
-**`c`**, Ve **`n`** seçenekleri, **`t`** *`mode`* ve için MICROSOFT uzantılarıdır **`fopen_s`** [`_fdopen`](fdopen-wfdopen.md) ve ANSI taşınabilirliği istendiği yerde kullanılmamalıdır.
+**`c`**, Ve **`n`** seçenekleri, **`t`** *`mode`* ve için MICROSOFT uzantılarıdır **`fopen_s`** [`_fdopen`](fdopen-wfdopen.md) ve ANSI taşınabilirliği istediğiniz yerde kullanılmamalıdır.
 
 ## <a name="example"></a>Örnek
 

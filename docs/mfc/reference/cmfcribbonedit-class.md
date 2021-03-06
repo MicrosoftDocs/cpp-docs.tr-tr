@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CMFCRibbonEdit [MFC], SetTextAlign
 - CMFCRibbonEdit [MFC], SetWidth
 ms.assetid: 9b85f1f2-446b-454e-9af9-104fdad8a897
-ms.openlocfilehash: 83920c9779af10861e32ce964e91af767a3d9e96
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: be88698de9f98c590efebd4e2e8780d810aa8b96
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97193115"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236569"
 ---
 # <a name="cmfcribbonedit-class"></a>CMFCRibbonEdit sınıfı
 
@@ -528,7 +528,7 @@ virtual void OnDrawOnList(
 'ndaki Denetim için bir cihaz bağlamı işaretçisi `CMFCRibbonEdit` .
 
 *strText*<br/>
-'ndaki Görüntü metni [](../../mfc/reference/cmfcribbonedit-class.md "CMFCRibbonEdit sınıfı") .
+'ndaki Görüntü metni.
 
 *nTextOffset*<br/>
 'ndaki Liste kutusunun sol tarafındaki görüntü metnine göre piksel cinsinden uzaklık.

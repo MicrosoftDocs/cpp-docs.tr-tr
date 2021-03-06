@@ -7,18 +7,18 @@ helpviewer_keywords:
 - constants, literals
 - literals [C++]
 ms.assetid: 17c09fc3-3ad7-47e2-8b48-ba8ae994edc8
-ms.openlocfilehash: 84fdac7010805fc4d0a429231a080ab11d5c595a
-ms.sourcegitcommit: f7fbdc39d73e1fb3793c396fccf7a1602af7248b
+ms.openlocfilehash: f817fcca35a741dac29047e214897758cdc93edb
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91662274"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236718"
 ---
 # <a name="numeric-boolean-and-pointer-literals"></a>Sayısal, boole ve işaretçi değişmez değerleri
 
-Değişmez değer, doğrudan bir değeri temsil eden bir program öğesidir. Bu makale Integer, kayan nokta, Boolean ve işaretçi türündeki sabit değerleri içerir. Dize ve karakter değişmez değerleri hakkında daha fazla bilgi için bkz. [dize ve karakter değişmez değerleri (C++)](../cpp/string-and-character-literals-cpp.md). Ayrıca, bu kategorilerden herhangi birine göre kendi sabit değerlerini de tanımlayabilirsiniz. Daha fazla bilgi için bkz. [Kullanıcı tanımlı değişmez değerler (C++)](../cpp/user-defined-literals-cpp.md)
+Değişmez değer, doğrudan bir değeri temsil eden bir program öğesidir. Bu makale Integer, kayan nokta, Boolean ve işaretçi türündeki sabit değerleri içerir. Dize ve karakter değişmez değerleri hakkında daha fazla bilgi için bkz. [dize ve karakter değişmez değerleri (C++)](../cpp/string-and-character-literals-cpp.md). Ayrıca, bu kategorilerden herhangi birine göre kendi sabit değerlerini de tanımlayabilirsiniz. Daha fazla bilgi için bkz. [Kullanıcı tanımlı değişmez değerler (C++)](../cpp/user-defined-literals-cpp.md).
 
-. Birden çok bağlamdaki sabit değerleri kullanabilirsiniz, ancak çoğunlukla adlandırılmış değişkenleri başlatabilir ve bağımsız değişkenleri işlevlere geçirebilirsiniz:
+Birden çok bağlamdaki sabit değerleri kullanabilirsiniz, ancak çoğunlukla adlandırılmış değişkenleri başlatabilir ve bağımsız değişkenleri işlevlere geçirebilirsiniz:
 
 ```cpp
 const int answer = 42;      // integer literal
@@ -79,7 +79,7 @@ long long i = 24'847'458'121
 
 Kayan nokta değişmez değerleri, kesirli bir bölümü olması gereken değerleri belirtir. Bu değerler, ondalık noktaları ( **`.`** ) içerir ve üsleri içerebilir.
 
-Kayan nokta değişmez değerleri, sayının değerini belirten bir *mantisinin* (bazen *Mantis*olarak adlandırılır) olur. Bu, sayının büyüklüğünü belirten bir *üssün*oluşur. Ayrıca, değişmez değer türünü belirten isteğe bağlı bir sonekine sahiptirler. Mantisinin bir rakam ve ardından bir nokta ve sonra sayının kesirli kısmını temsil eden isteğe bağlı bir basamak sırası olarak belirtilir. Örnek:
+Kayan nokta değişmez değerleri, sayının değerini belirten bir *mantisinin* (bazen *Mantis* olarak adlandırılır) olur. Bu, sayının büyüklüğünü belirten bir *üssün* oluşur. Ayrıca, değişmez değer türünü belirten isteğe bağlı bir sonekine sahiptirler. Mantisinin bir rakam ve ardından bir nokta ve sonra sayının kesirli kısmını temsil eden isteğe bağlı bir basamak sırası olarak belirtilir. Örnek:
 
 ```cpp
 18.46

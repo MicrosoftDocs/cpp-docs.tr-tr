@@ -5,12 +5,12 @@ ms.date: 02/05/2021
 ms.description: Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain.
 helpviewer_keywords:
 - Clang support for C++ MSBuild projects
-ms.openlocfilehash: 7492d2c75e458fb4a8a94e009f40b49edf1a8204
-ms.sourcegitcommit: 77235bff6a7b2621c501938e30d93cb15f5733cb
+ms.openlocfilehash: 31f79280e51bcf277bd3a992c4d7d2e39e679f30
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100006054"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236627"
 ---
 # <a name="clangllvm-support-in-visual-studio-projects"></a>Visual Studio projelerinde Clang/LLVM desteği
 
@@ -22,15 +22,17 @@ CMake ve MSBuild projelerinin her ikisi için de Clang desteği Visual Studio 20
 
 ::: moniker range="msvc-160"
 
-Windows veya Linux 'u hedefleyen C++ Visual Studio projelerini (MSBuild) düzenlemek, derlemek ve hatalarını ayıklamak için Visual Studio 2019 sürüm 16,2 ile Clang kullanabilirsiniz.
+Windows veya Linux 'u hedefleyen C++ Visual Studio projelerini (MSBuild) düzenlemek, derlemek ve hatalarını ayıklamak için Visual Studio 2019 sürüm 16,2 ve sonraki sürümlerini Clang ile birlikte kullanabilirsiniz.
 
 ## <a name="install"></a>Yükleme
 
 Visual Studio 'da en iyi IDE desteği için, Windows için en son Clang derleyicisi araçlarını kullanmanızı öneririz. Zaten araçlar yoksa, Visual Studio Yükleyicisi açarak ve C++ isteğe bağlı bileşenleriyle **masaüstü geliştirme** altında **Windows Için c++ Clang araçları** ' nı seçerek yükleyebilirsiniz. Makinenizde var olan bir Clang yüklemesini kullanmayı tercih edebilirsiniz; Bu durumda, **v142 derleme araçları için C++ Clang-CL** ' yi seçin. isteğe bağlı bileşen.
 
-Microsoft C++ standart kitaplığı şu anda en az Clang 8.0.0 gerektirir. Clang 'nin paketlenmiş sürümü, standart kitaplığın Microsoft uygulamasındaki güncelleştirmelerle güncel kalmak için otomatik olarak güncelleştirilir.
+Microsoft C++ standart kitaplığı, en az Clang 8.0.0 gerektirir.
 
 ![Visual Studio yükleyicisi 'nin ayrı bileşenler sekmesi seçili ve C Plus Plus Clang bileşenleri görünür ekran görüntüsü.](media/clang-install-vs2019.png)
+
+Visual Studio 'nun sonraki sürümleri, Clang araç takımının daha yeni sürümlerini sağlar. Clang 'nin paketlenmiş sürümü, standart kitaplığın Microsoft uygulamasındaki güncelleştirmelerle güncel kalmak için otomatik olarak güncelleştirilir. Örneğin, Visual Studio 2019 sürüm 16,9 Clang v11 içerir.
 
 ## <a name="configure-a-windows-project-to-use-clang-tools"></a>Clang araçlarını kullanmak için bir Windows projesi yapılandırma
 

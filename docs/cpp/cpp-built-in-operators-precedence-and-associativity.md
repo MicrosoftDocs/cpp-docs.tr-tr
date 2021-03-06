@@ -13,12 +13,12 @@ helpviewer_keywords:
 - evaluation order
 - hierarchy, operator
 ms.assetid: 95c1f0ba-dad8-4034-b039-f79a904f112f
-ms.openlocfilehash: ff8ae84a62ef47449364d0815922326d7b8566d4
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 8f45b7e45597fde1deaa349db6fd098b0d7ac319
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97253968"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236770"
 ---
 # <a name="c-built-in-operators-precedence-and-associativity"></a>C++ yerleşik işleçleri, önceliği ve ilişkilendirilebilirlik
 
@@ -79,7 +79,7 @@ Aşağıdaki tablo C++ işleçlerinin önceliğini ve ilişkilendirilebilirliği
 | **Grup 8 önceliği, soldan sağa ilişkilendirilebilirlik** |
 | [Küçüktür](../cpp/relational-operators-equal-and-equal.md) | [`<`](../cpp/relational-operators-equal-and-equal.md) |
 | [Büyüktür](../cpp/relational-operators-equal-and-equal.md) | [`>`](../cpp/relational-operators-equal-and-equal.md) |
-| [Küçüktür veya eşittir](../cpp/relational-operators-equal-and-equal.md) | [`<=`](../cpp/relational-operators-equal-and-equal.md) |
+| [Küçük veya eşittir](../cpp/relational-operators-equal-and-equal.md) | [`<=`](../cpp/relational-operators-equal-and-equal.md) |
 | [Büyük veya eşittir](../cpp/relational-operators-equal-and-equal.md) | [`>=`](../cpp/relational-operators-equal-and-equal.md) |
 | **Grup 9 önceliği, soldan sağa ilişkilendirilebilirliği** |
 | [Eşitlik](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) | [`==`](../cpp/equality-operators-equal-equal-and-exclpt-equal.md) |
@@ -91,12 +91,11 @@ Aşağıdaki tablo C++ işleçlerinin önceliğini ve ilişkilendirilebilirliği
 | **Grup 12 önceliği, soldan sağa ilişkilendirilebilirliği** |
 | [Bit düzeyinde kapsamalı OR](../cpp/bitwise-inclusive-or-operator-pipe.md) | [`|`](../cpp/bitwise-inclusive-or-operator-pipe.md) | **`bitor`** |
 | **Grup 13 önceliği, soldan sağa ilişkilendirilebilirliği** |
-| [Mantıksal AND](../cpp/logical-and-operator-amp-amp.md) | [`&&`](../cpp/logical-and-operator-amp-amp.md) | **`and`** |
+| [Mantıksal VE](../cpp/logical-and-operator-amp-amp.md) | [`&&`](../cpp/logical-and-operator-amp-amp.md) | **`and`** |
 | **Grup 14 önceliği, soldan sağa ilişkilendirilebilirliği** |
-| [Mantıksal OR](../cpp/logical-or-operator-pipe-pipe.md) | [`||`](../cpp/logical-or-operator-pipe-pipe.md) | **`or`** |
+| [Mantıksal EĞER](../cpp/logical-or-operator-pipe-pipe.md) | [`||`](../cpp/logical-or-operator-pipe-pipe.md) | **`or`** |
 | **Grup 15 önceliği, sağdan sola ilişkilendirilebilirliği** |
 | [Koşullu](../cpp/conditional-operator-q.md) | [`? :`](../cpp/conditional-operator-q.md) |
-| **Grup 16 öncelik, sağdan sola ilişkilendirilebilirlik** |
 | [Atama](../cpp/assignment-operators.md) | [`=`](../cpp/assignment-operators.md) |
 | [Çarpma ataması](../cpp/assignment-operators.md) | [`*=`](../cpp/assignment-operators.md) |
 | [Bölme ataması](../cpp/assignment-operators.md) | [`/=`](../cpp/assignment-operators.md) |
@@ -108,9 +107,8 @@ Aşağıdaki tablo C++ işleçlerinin önceliğini ve ilişkilendirilebilirliği
 | [Bit düzeyinde AND ataması](../cpp/assignment-operators.md) | [`&=`](../cpp/assignment-operators.md) | **`and_eq`** |
 | [Bit düzeyinde kapsamalı OR ataması](../cpp/assignment-operators.md) | [`|=`](../cpp/assignment-operators.md) | **`or_eq`** |
 | [Bit düzeyinde dışlamalı veya atama](../cpp/assignment-operators.md) | [`^=`](../cpp/assignment-operators.md) | **`xor_eq`** |
-| **Grup 17 önceliği, sağdan sola ilişkilendirilebilirliği** |
 | [throw ifadesi](../cpp/try-throw-and-catch-statements-cpp.md) | [`throw`](../cpp/try-throw-and-catch-statements-cpp.md) |
-| **Grup 18 öncelik, soldan sağa ilişkilendirilebilirlik** |
+| **Grup 16 öncelik, soldan sağa ilişkilendirilebilirlik** |
 | [Virgül](../cpp/comma-operator.md) | [,](../cpp/comma-operator.md) |
 
 ## <a name="see-also"></a>Ayrıca bkz.
