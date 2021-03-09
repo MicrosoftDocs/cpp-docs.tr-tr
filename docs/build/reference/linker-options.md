@@ -10,12 +10,12 @@ helpviewer_keywords:
 - libraries [C++], linking to COFF
 - LINK tool [C++], linker options
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
-ms.openlocfilehash: 0d85361b8d4b5896d9ed7beae0d310fe28dc98e9
-ms.sourcegitcommit: e58918c45316d799c1952ca7797a85adbcd0c472
+ms.openlocfilehash: e426c085acdd0d7bcfeb00b17dcf733a9b856993
+ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89281802"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465320"
 ---
 # <a name="linker-options"></a>Bağlayıcı seçenekleri
 
@@ -76,13 +76,14 @@ Bazı bağlayıcı seçeneklerini belirtmek için, pragma [açıklamasını](../
 |[/GENPROFILE,/FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)|Bu seçeneklerin her ikisi de *`.pgd`* Profil temelli iyileştirme 'yi (PGO) desteklemek için bağlayıcı tarafından bir dosyanın oluşturulmasını belirtir. /GENPROFILE ve/FASTGENPROFILE farklı varsayılan parametreler kullanır.|
 |[/GUARD](guard-enable-guard-checks.md)|Denetim akışı koruyucusu korumasını etkinleştir.|
 |[/HEAP](heap-set-heap-size.md)|Yığının boyutunu bayt cinsinden ayarlar.|
-|[/HıGHENTROPYVA](highentropyva-support-64-bit-aslr.md)|Yüksek entropi 64 bit adres alanı düzeni rastgele seçme (ASLR) için desteği belirtir.|
+|[/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md)|Yüksek entropi 64 bit adres alanı düzeni rastgele seçme (ASLR) için desteği belirtir.|
 |[/IDLOUT](idlout-name-midl-output-files.md)|*`.idl`* Dosya ve diğer MIDL çıktı dosyalarının adını belirtir.|
 |[/IGNORE](ignore-ignore-specific-warnings.md)|Belirtilen bağlayıcı uyarılarının çıkışını bastırır.|
 |[/IGNOREıDL](ignoreidl-don-t-process-attributes-into-midl.md)|Öznitelik bilgilerinin bir dosyaya işlenmesini önler *`.idl`* .|
 |[/IMPLıB](implib-name-import-library.md)|Varsayılan içeri aktarma kitaplığı adını geçersiz kılar.|
 |[/INCLUDE](include-force-symbol-references.md)|Sembol başvurularını zorlar.|
 |[/INCREMENTAL](incremental-link-incrementally.md)|Artımlı bağlamayı denetler.|
+|[/INFERASANLIBS](inferasanlibs.md)|, Çıkartılan Temizleme kitaplıklarını kullanır.|
 |[/INTEGRITYCHECK](integritycheck-require-signature-check.md)|Modülün yükleme zamanında imza denetimi gerektirdiğini belirtir.|
 |[/KEYCONTAINER](keycontainer-specify-a-key-container-to-sign-an-assembly.md)|Bir derlemeyi imzalamak için bir anahtar kapsayıcısı belirtir.|
 |[/KEYFILE](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)|Bir derlemeyi imzalamak için bir anahtar veya anahtar çiftini belirtir.|

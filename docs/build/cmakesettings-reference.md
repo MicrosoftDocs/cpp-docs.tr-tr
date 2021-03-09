@@ -5,12 +5,12 @@ ms.date: 11/22/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 2be5edb616764d56e7c08a51be19aab11a62f227
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: e68154d84123d416aa9d9d18f538c4b62fddce18
+ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97156911"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465359"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>Şema başvurusunda CMakeSettings.js
 
@@ -32,8 +32,8 @@ IDE 'ye yapılandırma ekleyebilir veya kaldırabilir ve ardından bunları doğ
 
 `configuration`, Şu özelliklere sahiptir:
 
-- `addressSanitizerEnabled`: **`true`** Program, adres Temizleme (Windows üzerinde deneysel) ile derleniyorsa. Linux 'ta, en iyi sonuçlar için-FNO-yoksay-Frame-pointer ve derleyici iyileştirme düzeyi-OS veya-Oo ile derleyin.
-- `addressSanitizerRuntimeFlags`: ASAN_OPTIONS ortam değişkeni aracılığıyla Addresstemizleme işlevine geçirilen çalışma zamanı bayrakları. Biçim: FLAG1 = değer: flag2 = değer2.
+- `addressSanitizerEnabled`: **`true`** Program [addresstemizleme](../sanitizers/asan.md)ile derleniyorsa. Linux 'ta, en iyi sonuçlar için-FNO-yoksay-Frame-pointer ve derleyici iyileştirme düzeyi-OS veya-Oo ile derleyin.
+- `addressSanitizerRuntimeFlags`: ASAN_OPTIONS ortam değişkeni aracılığıyla [Addresstemizleme](../sanitizers/asan.md) işlevine geçirilen çalışma zamanı bayrakları. Biçim: FLAG1 = değer: flag2 = değer2.
 - `buildCommandArgs`: CMake sonrasında--Build--. geçirilen yerel derleme anahtarlarını belirtir Örneğin, Dokja Oluşturucu kullanıldığında-v ' d e geçiş, komut satırlarını çıktı olarak zorlar. Dokja komutları hakkında daha fazla bilgi için bkz. [dokja komut satırı bağımsız değişkenleri](#ninja) .
 - `buildRoot`: CMake 'in seçili Oluşturucu için derleme betikleri oluşturduğu dizini belirtir.  **-DCMAKE_BINARY_DIR** anahtarına eşlenir ve *CMakeCache.txt* nerede oluşturulacağını belirtir. Klasör yoksa, oluşturulur. Desteklenen makrolar şunlardır,,,,, `${workspaceRoot}` `${workspaceHash}` `${projectFile}` `${projectDir}` `${thisFile}` `${thisFileDir}` , `${name}` , `${generator}` , `${env.VARIABLE}` .
 - `cacheGenerationCommand`: bir komut satırı aracı ve bağımsız değişkenler belirtir, örneğin *gencache.bat hata ayıklama* önbelleği oluşturur. Kullanıcı açık olarak yeniden oluşturma isteğinde bulunduğunda veya bir CMakeLists.txt ya da CMakeSettings.jsbir dosya değiştirildiğinde, komut belirtilen ortamdaki kabuktan çalıştırılır.

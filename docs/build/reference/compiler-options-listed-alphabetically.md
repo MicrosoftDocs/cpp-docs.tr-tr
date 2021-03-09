@@ -4,12 +4,12 @@ description: Microsoft C/C++ derleyicisi komut satırı seçeneklerinin alfabeti
 ms.date: 07/29/2020
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: 532ee4aceef281f7aa52fee6cd405a3520409218
-ms.sourcegitcommit: 48b897797b3132ae934b1d191e3870c3c2466335
+ms.openlocfilehash: de83cd5e2d649b88de4e21f3d828f68504705dc2
+ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97514555"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465372"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>Alfabetik listelenmiş derleyici seçenekleri
 
@@ -56,6 +56,7 @@ Bu tablo, derleyici seçeneklerinin alfabetik bir listesini içerir. Kategoriye 
 | [`/Fp`](fp-name-dot-pch-file.md) | Önceden derlenmiş üst bilgi dosyası adını belirtir. |
 | [`/FR`](fr-fr-create-dot-sbr-file.md)<br /><br /> [`/Fr`](fr-fr-create-dot-sbr-file.md) | Tarayıcı dosyaları oluşturur. **`/Fr`** kullanım dışıdır. |
 | [`/FS`](fs-force-synchronous-pdb-writes.md) | Tüm yazma işlemlerini program veritabanı (PDB) dosyasına MSPDBSRV.EXE aracılığıyla Serileştirmeye zorlar. |
+| [`/fsanitize`](fsanitize.md) | Addresstemizleme gibi temizleme araçlarının derlemesini mümkün hale getirme. |
 | [`/FU`](fu-name-forced-hash-using-file.md) | Bir dosya adının, yönergesine geçirilmiş gibi kullanılmasını zorlar [`#using`](../../preprocessor/hash-using-directive-cpp.md) . |
 | [`/Fx`](fx-merge-injected-code.md) | Eklenen kodu kaynak dosyayla birleştirir. |
 | [`/GA`](ga-optimize-for-windows-application.md) | Windows uygulaması için kodu iyileştirir. |

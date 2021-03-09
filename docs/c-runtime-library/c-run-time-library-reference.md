@@ -1,31 +1,27 @@
 ---
 title: C çalışma zamanı kitaplığı başvurusu
 description: Microsoft C çalışma zamanı kitaplığı işlevlerine yönelik bilgi ve başvuru bağlantıları.
-ms.date: 10/05/2020
+ms.date: 3/5/2021
 f1_keywords:
 - c.runtime
 helpviewer_keywords:
 - CRT
 - runtime libraries
 - CRT, reference
-ms.assetid: a503e11c-8dca-4846-84fb-025a826c32b8
-ms.openlocfilehash: 2e5fcadca5dcca30370b0f03917650136ab46ee8
-ms.sourcegitcommit: 8caaf5e00aeb727741a273aecafa15de293426cf
+ms.openlocfilehash: c574230d5d2861dd8734d8927f0e91402bc224bf
+ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91806532"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465573"
 ---
-# <a name="c-runtime-library-reference"></a>C çalışma zamanı kitaplığı başvurusu
+# <a name="microsoft-c-runtime-library-crt-reference"></a>Microsoft C çalışma zamanı kitaplığı (CRT) başvurusu
 
-Microsoft çalışma zamanı kitaplığı, Microsoft Windows işletim sistemi için programlama yordamları sağlar. Bu yordamlar, C ve C++ dilleri tarafından sağlanmayan yaygın programlama görevlerinin çoğunu otomatik hale getirir.
+Microsoft çalışma zamanı kitaplığı, Microsoft Windows işletim sistemini programlamaya yönelik yordamlar sağlar. Bu yordamlar, C ve C++ dilleri tarafından sağlanmayan yaygın programlama görevlerinin çoğunu otomatik hale getirir.
 
 Örnek programlar, kitaplıktaki birçok yordam için bireysel başvuru konularına dahil edilmiştir.
 
 ## <a name="in-this-section"></a>Bu Bölümde
-
-[C çalışma zamanı kitaplıkları](crt-library-features.md)\
-C çalışma zamanı kitaplıklarını oluşturan. lib dosyalarını açıklar.
 
 [Kategoriye göre evrensel C çalışma zamanı yordamları](run-time-routines-by-category.md)\
 Çalışma zamanı kitaplığına kategoriye göre bağlantılar sağlar.
@@ -50,6 +46,9 @@ Alfabetik olarak düzenlenmiş C çalışma zamanı kitaplığı işlevlerine ba
 
 [Dil ve ülke/bölge dizeleri](locale-names-languages-and-country-region-strings.md)\
 `setlocale`Dilinin ve ülke/bölge dizelerini ayarlamak için işlevinin nasıl kullanılacağını açıklar.
+
+[C çalışma zamanı (CRT) ve C++ standart kitaplık `.lib` dosyaları](crt-library-features.md)\
+`.lib`C çalışma zamanı kitaplıklarını ve bunlarla ilişkili derleyici seçeneklerini ve önişlemci yönergelerini oluşturan dosyaları açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 

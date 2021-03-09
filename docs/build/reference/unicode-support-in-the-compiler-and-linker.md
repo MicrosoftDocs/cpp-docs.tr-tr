@@ -1,7 +1,7 @@
 ---
 description: 'Daha fazla bilgi edinin: derleyicide ve bağlayıcıda Unicode desteği'
 title: Derleyicide ve Bağlayıcıda Unicode Desteği
-ms.date: 12/15/2017
+ms.date: 03/07/2021
 f1_keywords:
 - VC.Project.VCLinkerTool.UseUnicodeResponseFiles
 - VC.Project.VCLibrarianTool.UseUnicodeResponseFiles
@@ -9,16 +9,16 @@ f1_keywords:
 - VC.Project.VCXDCMakeTool.UseUnicodeResponseFiles
 helpviewer_keywords:
 - Unicode, Visual C++
-ms.openlocfilehash: c853907dd0d70a4ab7311c41f51d8d73bb25cf20
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: e1795a5a9b9d4a3a1672b2661aa598d0ef6e059f
+ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97178959"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465346"
 ---
-# <a name="unicode-support-in-the-compiler-and-linker"></a>Derleyicide ve Bağlayıcıda Unicode Desteği
+# <a name="unicode-support-in-the-compiler-and-linker"></a>Derleyicide ve bağlayıcıda Unicode desteği
 
-Çoğu Visual C++ yapı aracı Unicode girişlerini ve çıkışları destekler.
+Çoğu Microsoft C/C++ (MSVC) derleme araçları Unicode girişlerini ve çıkışları destekler.
 
 ## <a name="filenames"></a>Dosya Adları
 
@@ -36,17 +36,21 @@ Unicode, aşağıdaki kodlamalarda bir kaynak kod dosyasına giriş yapabilir:
 
 - BOM ile UTF-8
 
+Visual Studio IDE 'de, dosyaları Unicode olanlar da dahil olmak üzere birkaç kodlama biçiminde kaydedebilirsiniz. **Kaydet** düğmesine açılan menüyü kullanarak **dosyayı farklı kaydet** iletişim kutusuna kaydedin. Açılan listede **kodlamalı kaydet** ' i seçin. Ardından, **Gelişmiş kaydetme seçenekleri** iletişim kutusunda, açılan listeden bir kodlama seçin. Dosyayı kaydetmek için **Tamam ' ı** seçin.
+
 ## <a name="output"></a>Çıktı
 
 Derleme sırasında derleyici, tanılamayı, UTF-16 ' da konsola verir.  Konsolunuzun içinde görüntülenebilen karakterler konsol penceresi özelliklerine bağlıdır.  Bir dosyaya yönlendirilen derleyici çıkışı, geçerli ANSI konsol kod sayfasında bulunur.
 
-## <a name="linker-response-files-and-def-files"></a>Bağlayıcı yanıt dosyaları ve. DEF dosyaları
+## <a name="linker-response-files-and-def-files"></a>Bağlayıcı yanıt dosyaları ve `.DEF` dosyaları
 
-Yanıt dosyaları ve DEF dosyaları, bir BOM ya da ANSI ile UTF-16 olabilir.
+Yanıt dosyaları ve *`.DEF`* dosyalar, BIR bom veya ANSI Ile UTF-16 ya da UTF-8 olabilir.
 
-## <a name="asm-and-cod-dumps"></a>. asm ve. cod dökümleri
+## <a name="asm-and-cod-dumps"></a>`.asm` ve `.cod` dökümleri
 
-. asm ve. cod dökümleri, MASM ile uyumluluk için varsayılan olarak ANSI 'de bulunur. UTF-8 çıktısını almak için [/FAU](fa-fa-listing-file.md) kullanın. **/Fas** belirtirseniz, ıntermingled kaynağının doğrudan yazdırılacağını ve bozuk görünebileceğini unutmayın. Örneğin, kaynak kodu UTF-8 ise ve **/FAsu** belirtmediyseniz.
+*`.asm`* ve *`.cod`* dökümleri, Masd ile uyumluluk için varsayılan olarak ANSI olarak ayarlanır. [`/FAu`](fa-fa-listing-file.md)UTF-8 çıktısını almak için kullanın.
+
+Belirtirseniz **`/FAs`** , ıntermingled kaynağı doğrudan yazdırılır. Örneğin, kaynak kodu UTF-8 olduğunda ve belirtmediğiniz durumlarda bozuk görünebilir **`/FAsu`** .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

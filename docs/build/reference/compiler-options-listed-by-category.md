@@ -5,12 +5,12 @@ ms.date: 07/29/2020
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: bf12948658b5f7e3211c423b5302bc52d1b87729
-ms.sourcegitcommit: 48b897797b3132ae934b1d191e3870c3c2466335
+ms.openlocfilehash: b892575719d97ed4a0acb061aae0182ff2d576eb
+ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97514569"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465385"
 ---
 # <a name="compiler-options-listed-by-category"></a>Kategorilere göre listelenen derleyici seçenekleri
 
@@ -162,6 +162,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 | [`/errorReport`](errorreport-report-internal-compiler-errors.md) | Kullanım dışı. Hata raporlama [Windows hata bildirimi (WER)](/windows/win32/wer/windows-error-reporting) ayarları tarafından denetlenir. |
 | [`/FC`](fc-full-path-of-source-code-file-in-diagnostics.md) | Tanılama metninde *cl.exe* geçirilen kaynak kodu dosyalarının tam yolunu görüntüler. |
 | [`/FS`](fs-force-synchronous-pdb-writes.md) | *MSPDBSRV.EXE* aracılığıyla SERILEŞTIRILMESI için pdb dosyasına yazmaları zorlar. |
+| [`/fsanitize`](fsanitize.md) | Addresstemizleme gibi temizleme araçlarının derlemesini mümkün hale getirme. |
 | [`/H`](h-restrict-length-of-external-names.md) | Kullanım dışı. Dış (ortak) adların uzunluğunu kısıtlar. |
 | [`/HELP`](help-compiler-command-line-help.md) | Derleyici seçeneklerini listeler. |
 | [`/J`](j-default-char-type-is-unsigned.md) | Varsayılan türü değiştirir **`char`** . |

@@ -6,12 +6,12 @@ ms.date: 07/25/2020
 helpviewer_keywords:
 - keywords [C++]
 ms.assetid: d7ca94a8-f785-41ce-9f73-d3c4fd508489
-ms.openlocfilehash: b875b4df797985dc21f54f48ceeaa86574f31ac6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 1144558a6a4847e158579bf453e3bf3b45c0a199
+ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498765"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465521"
 ---
 # <a name="keywords-c"></a>Anahtar Sözcükler (C++)
 
@@ -122,7 +122,7 @@ Anahtar sözcükler özel anlamlara sahip önceden tanımlanmış ayrılmış ta
     :::column-end:::
 :::row-end:::
 
-<sup>a</sup> Microsoft 'a özgü **`__asm`** anahtar sözcüğü C++ **`asm`** söz dizimini değiştirir. **`asm`** diğer C++ uygulamalarıyla uyumluluk için ayrılmıştır, ancak uygulanmaz. **`__asm`** X86 hedeflerinde satır içi derleme için kullanın. Microsoft C++, diğer hedefler için satır Içi derlemeyi desteklemez.
+<sup></sup> Microsoft 'a özgü **`__asm`** anahtar sözcüğü C++ **`asm`** söz dizimini değiştirir. **`asm`** diğer C++ uygulamalarıyla uyumluluk için ayrılmıştır, ancak uygulanmaz. **`__asm`** X86 hedeflerinde satır içi derleme için kullanın. Microsoft C++, diğer hedefler için satır Içi derlemeyi desteklemez.
 
 <sup>b</sup> Genişletilmiş operatör eş anlamlıları [`/permissive-`](../build/reference/permissive-standards-conformance.md) [ `/Za` \( dil uzantıları olduğunda veya devre dışı](../build/reference/za-ze-disable-language-extensions.md) bırakıldığında anahtar kelimelerdir. Microsoft uzantıları etkinleştirildiğinde anahtar kelimelerdir.
 
@@ -221,13 +221,14 @@ Bu tanımlayıcılar, değiştiricinin genişletilmiş öznitelikleridir **`__de
     :::column-end:::
     :::column:::
         [`noreturn`](noreturn.md)\
+        [`no_sanitize_address`](no-sanitize-address.md)\
         [`nothrow`](nothrow-cpp.md)\
         [`novtable`](novtable.md)\
         [`process`](process.md)\
-        [`property`](property-cpp.md)\
-        [`restrict`](restrict.md)
+        [`property`](property-cpp.md)
     :::column-end:::
     :::column:::
+        [`restrict`](restrict.md)\
         [`safebuffers`](safebuffers.md)\
         [`selectany`](selectany.md)\
         [`spectre`](spectre.md)\
