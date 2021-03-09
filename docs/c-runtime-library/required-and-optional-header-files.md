@@ -9,12 +9,12 @@ helpviewer_keywords:
 - include files, required in run time
 - header files, required in run time
 ms.assetid: f64d0bf5-e2c3-4b42-97d0-443b3d901d9f
-ms.openlocfilehash: 79a45aaba5e2872b23e70f3fd276d6f3cae11167
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: e7947c1f601a8051de5c28fba682e90c0bdce7b6
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91589815"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514635"
 ---
 # <a name="required-and-optional-header-files"></a>Gerekli ve İsteğe Bağlı Başlık Dosyaları
 
@@ -30,4 +30,4 @@ Her bir çalışma zamanı yordamının açıklaması, gerekli ve isteğe bağl�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)
+[C çalışma zamanı (CRT) ve C++ standart kitaplığı (STL) `.lib` dosyaları](../c-runtime-library/crt-library-features.md)

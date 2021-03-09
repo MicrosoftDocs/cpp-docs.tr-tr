@@ -31,12 +31,12 @@ helpviewer_keywords:
 - qsort_s function
 - sorting arrays
 ms.assetid: 6ee817b0-4408-4355-a5d4-6605e419ab91
-ms.openlocfilehash: 01890db21bc1eb470b57aa796313da4c6f0c50a8
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 0f0132cbb1210d6289f676f3474683803b58a5a6
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97137169"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514479"
 ---
 # <a name="qsort_s"></a>qsort_s
 
@@ -112,7 +112,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
-**Kitaplıklar:** [CRT kitaplığı özelliklerinin](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+**Kitaplıklar:** [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 

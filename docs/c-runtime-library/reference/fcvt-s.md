@@ -31,12 +31,12 @@ helpviewer_keywords:
 - floating-point functions, converting number to string
 - _fcvt_s function
 ms.assetid: 48671197-1d29-4c2b-a5d8-d2368f5f68a1
-ms.openlocfilehash: dd4d58b39d4c18f2fff7da54c5fbd0f2346dfdd4
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 62b72a9f71f967077169086371ebf36542b154ed
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97235885"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514453"
 ---
 # <a name="_fcvt_s"></a>_fcvt_s
 
@@ -126,7 +126,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
-**Kitaplıklar:** [CRT kitaplığı özelliklerinin](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+**Kitaplıklar:** [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 

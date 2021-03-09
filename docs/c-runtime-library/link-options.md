@@ -31,12 +31,12 @@ helpviewer_keywords:
 - threadlocale.obj
 - pnoarg.obj
 ms.assetid: 05b5a77b-9dd1-494b-ae46-314598c770bb
-ms.openlocfilehash: affb5d95af176ba49aa2aeafff5ac84653df2ad8
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 3fce62718518138303900be379458dce950acfbe
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97246532"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514401"
 ---
 # <a name="link-options"></a>Bağlantı Seçenekleri
 
@@ -44,7 +44,7 @@ CRT lib dizini, herhangi bir kod değişikliği yapmadan belirli CRT özellikler
 
 Bu nesnelerin CLR saf mod sürümleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez. Yerel ve/clr kodu için normal sürümleri kullanın.
 
-|Yerel ve/clr|Saf mod|Açıklama|
+|Yerel ve/clr|Saf mod|Description|
 |----------------------|---------------|-----------------|
 |binmode.obj|pbinmode.obj|Varsayılan dosya çevirisi modunu binary olarak ayarlar. Bkz. [_fmode](../c-runtime-library/fmode.md).|
 |chkstk.obj|yok|CRT kullanılırken yığın denetimi ve alloca desteği sağlar.|
@@ -65,4 +65,4 @@ Bu nesnelerin CLR saf mod sürümleri Visual Studio 2015 ' de kullanımdan kald�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)
+- [C çalışma zamanı (CRT) ve C++ standart kitaplığı (STL) `.lib` dosyaları](../c-runtime-library/crt-library-features.md)

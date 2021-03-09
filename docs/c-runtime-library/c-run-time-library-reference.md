@@ -8,12 +8,12 @@ helpviewer_keywords:
 - CRT
 - runtime libraries
 - CRT, reference
-ms.openlocfilehash: c574230d5d2861dd8734d8927f0e91402bc224bf
-ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
+ms.openlocfilehash: f613f70ed39947605a4ce2b8524c8a0f6d069c68
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102465573"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514414"
 ---
 # <a name="microsoft-c-runtime-library-crt-reference"></a>Microsoft C çalışma zamanı kitaplığı (CRT) başvurusu
 
@@ -47,8 +47,8 @@ Alfabetik olarak düzenlenmiş C çalışma zamanı kitaplığı işlevlerine ba
 [Dil ve ülke/bölge dizeleri](locale-names-languages-and-country-region-strings.md)\
 `setlocale`Dilinin ve ülke/bölge dizelerini ayarlamak için işlevinin nasıl kullanılacağını açıklar.
 
-[C çalışma zamanı (CRT) ve C++ standart kitaplık `.lib` dosyaları](crt-library-features.md)\
-`.lib`C çalışma zamanı kitaplıklarını ve bunlarla ilişkili derleyici seçeneklerini ve önişlemci yönergelerini oluşturan dosyaları açıklar.
+[C çalışma zamanı (CRT) ve C++ standart kitaplığı (STL) `.lib` dosyaları](crt-library-features.md)\
+`.lib`C çalışma zamanı kitaplıklarını ve bunlarla ilişkili derleyici seçeneklerini ve önişlemci yönergelerini oluşturan dosyaların listesi.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - _CrtMemDumpStatistics function
 - CrtMemDumpStatistics function
 ms.assetid: 27b9d731-3184-4a2d-b9a7-6566ab28a9fe
-ms.openlocfilehash: 2f02c35ff61dc2bc5ac7e8dfbe921fa48731c2b3
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 684b5ac50af453dbe2800ded595c5747370717a6
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97319630"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514596"
 ---
 # <a name="_crtmemdumpstatistics"></a>_CrtMemDumpStatistics
 
@@ -66,7 +66,7 @@ Yığın durumu işlevleri ve **_CrtMemState** yapısı hakkında daha fazla bil
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
-**Kitaplıklar:** Yalnızca [CRT kitaplığı özelliklerinin](../../c-runtime-library/crt-library-features.md) hatalarını ayıklayın.
+**Kitaplıklar:** Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) hata ayıklama sürümleri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

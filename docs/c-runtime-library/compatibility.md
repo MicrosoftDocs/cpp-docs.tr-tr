@@ -8,12 +8,12 @@ helpviewer_keywords:
 - compatibility, C runtime libraries
 - compatibility
 ms.assetid: 346709cb-edda-4909-9a19-3d253eddb6b7
-ms.openlocfilehash: 10c21f3f471c105ac4e40bda449aaf8987edba25
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: aea87c3a7b82292a5c9c45a960a5a890a1fff3fd
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91590049"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514622"
 ---
 # <a name="compatibility"></a>Uyumluluk
 
@@ -44,4 +44,4 @@ Belirli işlevler için belgeler içinde belirtilmedikçe, UıCRT Windows API 's
 |[UNIX](../c-runtime-library/unix.md)|Programların UNIX 'e taşıma yönergelerini sağlar.|
 |[Windows platformları (CRT)](../c-runtime-library/windows-platforms-crt.md)|CRT 'nin desteklediği işletim sistemlerini listeler.|
 |[Geriye dönük uyumluluk](../c-runtime-library/backward-compatibility.md)|Eski CRT adlarını yeni olanlarla nasıl eşleneceğini açıklar.|
-|[CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)|CRT kitaplığı (. lib) dosyalarına ve ilişkili derleyici seçeneklerine genel bir bakış sağlar.|
+|[C çalışma zamanı (CRT) ve C++ standart kitaplığı (STL) `.lib` dosyaları](../c-runtime-library/crt-library-features.md)|CRT kitaplığı (. lib) dosyalarına ve ilişkili derleyici seçeneklerine genel bir bakış sağlar.|

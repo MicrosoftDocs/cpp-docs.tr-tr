@@ -6,16 +6,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - parameters, validation
 ms.assetid: 019dd5f0-dc61-4d2e-b4e9-b66409ddf1f2
-ms.openlocfilehash: 8378e4bf9bdfc950002c3ed8c3ef50c27a3c162d
-ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
+ms.openlocfilehash: 6926da8ccc1974352b926227daba0eea1d8a560d
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91765265"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514661"
 ---
 # <a name="parameter-validation"></a>Parametre Doğrulama
 
-Güvenlik açısından gelişmiş CRT işlevlerinin birçoğu ve çoğu bu değildir, **null**işaretçileri denetlemek, tamsayıların geçerli bir aralıkta olması veya numaralandırma değerlerinin geçerli olması gibi işlemler için parametrelerini doğrulayın. Geçersiz parametre bulunursa, geçersiz parametre işleyicisi çağırılır.
+Güvenlik açısından gelişmiş CRT işlevlerinin birçoğu ve çoğu bu değildir, **null** işaretçileri denetlemek, tamsayıların geçerli bir aralıkta olması veya numaralandırma değerlerinin geçerli olması gibi işlemler için parametrelerini doğrulayın. Geçersiz parametre bulunursa, geçersiz parametre işleyicisi çağırılır.
 
 ## <a name="invalid-parameter-handler-routine"></a>Geçersiz parametre Işleyicisi yordamı
 
@@ -32,4 +32,4 @@ Hakkında daha fazla bilgi için `errno` bkz. [errno, _doserrno, _sys_errlist ve
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CRT 'daki güvenlik özellikleri](../c-runtime-library/security-features-in-the-crt.md)\
-[CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)
+[C çalışma zamanı (CRT) ve C++ standart kitaplığı (STL) `.lib` dosyaları](../c-runtime-library/crt-library-features.md)

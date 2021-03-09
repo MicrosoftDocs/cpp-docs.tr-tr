@@ -9,12 +9,12 @@ helpviewer_keywords:
 - functions [CRT], vs. macros
 - macros, vs. functions
 ms.assetid: 18a633d6-cf1c-470c-a649-fa7677473e2b
-ms.openlocfilehash: 8791baf8e8645e0044ff180485ac7935b8ffa3f5
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: 9a2190d417ef004ab9a0d07f19214cb29f623244
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91589711"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514544"
 ---
 # <a name="recommendations-for-choosing-between-functions-and-macros"></a>İşlevlerle Makrolar Arasında Seçim Önerileri
 
@@ -47,4 +47,4 @@ Bir kitaplık yordamının bir işlevi ve makro uygulamasıyla arasında seçim 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür-genel matematik](tgmath.md)\
-[CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)
+[C çalışma zamanı (CRT) ve C++ standart kitaplığı (STL) `.lib` dosyaları](../c-runtime-library/crt-library-features.md)

@@ -28,12 +28,12 @@ helpviewer_keywords:
 - Streaming SIMD Extensions 2 instructions
 - set_SSE2_enable function
 ms.assetid: 55db895d-fc1e-475a-9110-b781a9bb51c5
-ms.openlocfilehash: a9c82b2f17d90bc158ac77b8d7ad9625491856aa
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: f5b7bc8c0d18423ac981275e08dceef85197af4e
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97211212"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514518"
 ---
 # <a name="_set_sse2_enable"></a>_set_SSE2_enable
 
@@ -116,4 +116,4 @@ SSE2 enabled.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md)<br/>
+[C çalışma zamanı (CRT) ve C++ standart kitaplığı (STL) `.lib` dosyaları](../../c-runtime-library/crt-library-features.md)

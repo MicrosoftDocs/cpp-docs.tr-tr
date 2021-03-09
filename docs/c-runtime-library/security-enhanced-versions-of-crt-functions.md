@@ -7,12 +7,12 @@ helpviewer_keywords:
 - security-enhanced CRT
 - CRT, security enhancements
 ms.assetid: f87e5a01-4cb2-4379-9e8f-d4693828c55a
-ms.openlocfilehash: 95e94eb7790ef589fee3287b6cee8997faac7ab6
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: eda9a98593bb0951c9be357c35492eaf129e3582
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97277212"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514726"
 ---
 # <a name="security-enhanced-versions-of-crt-functions"></a>CRT İşlevlerinin Gelişmiş Güvenlik Sürümleri
 
@@ -102,4 +102,4 @@ ms.locfileid: "97277212"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)
+[C çalışma zamanı (CRT) ve C++ standart kitaplığı (STL) `.lib` dosyaları](../c-runtime-library/crt-library-features.md)

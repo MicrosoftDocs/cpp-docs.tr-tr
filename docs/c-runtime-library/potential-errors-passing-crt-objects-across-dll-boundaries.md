@@ -6,12 +6,12 @@ ms.topic: conceptual
 helpviewer_keywords:
 - DLL conflicts [C++]
 ms.assetid: c217ffd2-5d9a-4678-a1df-62a637a96460
-ms.openlocfilehash: 2d42803b5eca7a43f122d209b7d9e2d4e45c38de
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 7af0fe8b5819bf428753c9ec71099113df0fa79e
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008943"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514557"
 ---
 # <a name="potential-errors-passing-crt-objects-across-dll-boundaries"></a>CRT Nesnelerini DLL Sınırlarından Geçirirken Olası Hatalar
 
@@ -35,7 +35,7 @@ DLL ve istemcileri normalde, her ikisi de aynı CRT DLL sürümüne bağlandığ
 
 ## <a name="example-pass-file-handle-across-dll-boundary"></a>Örnek: dosya işleyicisini DLL sınırı arasında geçir
 
-### <a name="description"></a>Açıklama
+### <a name="description"></a>Description
 
 Bu örnek, bir DLL sınırının tamamında bir dosya işleyicisini geçirir.
 
@@ -77,7 +77,7 @@ this is a string
 
 ## <a name="example-pass-environment-variables-across-dll-boundary"></a>Örnek: ortam değişkenlerini DLL sınırının tamamında geçir
 
-### <a name="description"></a>Açıklama
+### <a name="description"></a>Description
 
 Bu örnek, bir DLL sınırının tamamında ortam değişkenlerini geçirir.
 
@@ -130,4 +130,4 @@ New MYLIB variable is: c:\mylib;c:\yourlib
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)
+[C çalışma zamanı (CRT) ve C++ standart kitaplığı (STL) `.lib` dosyaları](../c-runtime-library/crt-library-features.md)

@@ -6,12 +6,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - CRT initialization [C++]
 ms.assetid: e7979813-1856-4848-9639-f29c86b74ad7
-ms.openlocfilehash: 25f1e2a7e5b7d91c729bb45bd79ba9a8720cead1
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: e33429d63cebb34514918d059649679ed28b924c
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91589776"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514648"
 ---
 # <a name="crt-initialization"></a>CRT Başlatma
 
@@ -43,7 +43,7 @@ Arayanın belirlenmesi için bir yol, içinde bir kesme noktası ayarlamak `func
 
 Yığındaki işlevlere gözattığınızda, CRT 'nin işlev işaretçilerinin bir listesini çağırıyor olduğunu görürsünüz. Bu işlevler `func()` , veya sınıf örnekleri için oluşturuculara benzerdir.
 
-CRT, Microsoft C++ derleyicisinden işlev işaretçilerinin listesini alır. Derleyici küresel bir başlatıcı gördüğünde, bölüm `.CRT$XCU` `CRT` adı olan ve grup adı olan bölümünde dinamik bir başlatıcı oluşturur `XCU` . Dinamik başlatıcıların listesini almak için, **dumpbin/All Main. obj**komutunu çalıştırın ve ardından bölümünde arama yapın `.CRT$XCU` . Bu, Main. cpp C dosyası değil bir C++ dosyası olarak derlendiğinde geçerlidir. Aşağıdaki örneğe benzer olacaktır:
+CRT, Microsoft C++ derleyicisinden işlev işaretçilerinin listesini alır. Derleyici küresel bir başlatıcı gördüğünde, bölüm `.CRT$XCU` `CRT` adı olan ve grup adı olan bölümünde dinamik bir başlatıcı oluşturur `XCU` . Dinamik başlatıcıların listesini almak için, **dumpbin/All Main. obj** komutunu çalıştırın ve ardından bölümünde arama yapın `.CRT$XCU` . Bu, Main. cpp C dosyası değil bir C++ dosyası olarak derlendiğinde geçerlidir. Aşağıdaki örneğe benzer olacaktır:
 
 ```
 SECTION HEADER #6
@@ -97,4 +97,4 @@ Bu nedenle, CRT kitaplığı, `__xc_a` görüntü yüklendikten `__xc_z` sonra b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)
+[C çalışma zamanı (CRT) ve C++ standart kitaplığı (STL) `.lib` dosyaları](../c-runtime-library/crt-library-features.md)

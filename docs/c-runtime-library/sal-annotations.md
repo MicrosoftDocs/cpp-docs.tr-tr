@@ -49,12 +49,12 @@ helpviewer_keywords:
 - ecount annotation
 - bcount annotation
 ms.assetid: 81893638-010c-41a0-9cb3-666fe360f3e0
-ms.openlocfilehash: 727c81ae1b141346bb47ff92b6af76d5c45aa106
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: c4c75213daa69c433b379fb78a0649fa1473de1b
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91590270"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514466"
 ---
 # <a name="sal-annotations"></a>SAL Ek Açıklamaları
 
@@ -64,4 +64,4 @@ Visual Studio 'da SAL ek açıklamalarını kullanma hakkında daha fazla bilgi 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)
+[C çalışma zamanı (CRT) ve C++ standart kitaplığı (STL) `.lib` dosyaları](../c-runtime-library/crt-library-features.md)
