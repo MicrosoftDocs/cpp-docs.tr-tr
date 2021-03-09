@@ -1,0 +1,58 @@
+- name: Kod temizleme
+  href: ../sanitizers/index.yml
+- name: Addresstemizleme
+  expanded: true
+  items:
+    - name: Addresstemizme genel bakış
+      href: ../sanitizers/asan.md
+    - name: Derleme ve dil başvurusu
+      href: ../sanitizers/asan-building.md
+    - name: Çalışma zamanı başvurusu
+      href: ../sanitizers/asan-runtime.md
+    - name: Hata ayıklayıcı tümleştirmesi
+      href: ../sanitizers/asan-debugger-integration.md
+    - name: Gölge baytları
+      href: ../sanitizers/asan-shadow-bytes.md
+    - name: Bulut veya dağıtılmış test
+      href: ../sanitizers/asan-offline-crash-dumps.md
+    - name: Addresstemizleme hatası örnekleri
+      expanded: true
+      items:
+        - name: Addresstemizleme hatası örnekleri
+          href: ../sanitizers/asan-error-examples.md
+        - name: ayırma-ayırma uyuşmazlığı hatası
+          href: ../sanitizers/error-alloc-dealloc-mismatch.md
+        - name: ayırma-boyut-çok büyük hata
+          href: ../sanitizers/error-allocation-size-too-big.md
+        - name: calloc-overflow hatası
+          href: ../sanitizers/error-calloc-overflow.md
+        - name: Çift boş hata
+          href: ../sanitizers/error-double-free.md
+        - name: Dinamik yığın arabelleği-taşma hatası
+          href: ../sanitizers/error-dynamic-stack-buffer-overflow.md
+        - name: Genel-arabellek-taşma hatası
+          href: ../sanitizers/error-global-buffer-overflow.md
+        - name: yığın arabelleği-taşma hatası
+          href: ../sanitizers/error-heap-buffer-overflow.md
+        - name: yığın--sonrası-ücretsiz hatası
+          href: ../sanitizers/error-heap-use-after-free.md
+        - name: Geçersiz ayırma hizalaması hatası
+          href: ../sanitizers/error-invalid-allocation-alignment.md
+        - name: memckopyala-param-çakışma hatası
+          href: ../sanitizers/error-memcpy-param-overlap.md
+        - name: Yeni-delete-type-uyuşmazlık hatası
+          href: ../sanitizers/error-new-delete-type-mismatch.md
+        - name: yığın arabelleği-taşma hatası
+          href: ../sanitizers/error-stack-buffer-overflow.md
+        - name: yığın-arabellek yetersiz hatası
+          href: ../sanitizers/error-stack-buffer-underflow.md
+        - name: Stack-RETURN-RETURN-RETURN hatası
+          href: ../sanitizers/error-stack-use-after-return.md
+        - name: yığın-kullanım-sonraki kapsam hatası
+          href: ../sanitizers/error-stack-use-after-scope.md
+        - name: strcat-param-çakışma hatası
+          href: ../sanitizers/error-strncat-param-overlap.md
+        - name: '-After-Poison hatası'
+          href: ../sanitizers/error-use-after-poison.md
+    - name: Bilinen sorunlar
+      href: ../sanitizers/asan-known-issues.md

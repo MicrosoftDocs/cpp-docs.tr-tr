@@ -339,6 +339,8 @@
   href: ../build/configuring-programs-for-windows-xp.md
 - name: C/C++ için kod analizi
   href: ../code-quality/
+- name: C/C++ için kod Temizleme
+  href: ../sanitizers/
 - name: Derleyici ve derleme araçları başvurusu
   expanded: false
   items:
@@ -560,6 +562,8 @@
                   href: ../build/reference/fp-specify-floating-point-behavior.md
                 - name: /FS (Zaman uyumlu PDB yazmalarını zorla)
                   href: ../build/reference/fs-force-synchronous-pdb-writes.md
+                - name: /ftemizleme (temizleyicilerin etkin hale getirme)
+                  href: ../build/reference/fsanitize.md
                 - name: /GA (Windows uygulaması için iyileştir)
                   href: ../build/reference/ga-optimize-for-windows-application.md
                 - name: '/Gd, /Gr, /Gv, /Gz (Çağırma kuralı)'
@@ -939,6 +943,8 @@
               href: ../build/reference/ignore-ignore-specific-warnings.md
             - name: /IGNOREIDL (Öznitelikleri MIDL'ye işleme)
               href: ../build/reference/ignoreidl-don-t-process-attributes-into-midl.md
+            - name: /INFERASANLIBS (çıkartılan Temizleme libs kullanın)
+              href: ../build/reference/inferasanlibs.md
             - name: /IMPLIB (İçeri aktarma kitaplığını adlandır)
               href: ../build/reference/implib-name-import-library.md
             - name: /INCLUDE (Simge başvurularını zorla)

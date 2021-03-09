@@ -58,6 +58,9 @@
         - name: Kod analizi
           tocHref: /cpp/code-quality/
           topicHref: /cpp/code-quality/index
+        - name: Kod temizleme
+          tocHref: /cpp/sanitizers/
+          topicHref: /cpp/sanitizers/index
         - name: C++ dili
           tocHref: /cpp/cpp/
           topicHref: /cpp/cpp/index

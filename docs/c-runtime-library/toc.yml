@@ -3,8 +3,6 @@
 - name: CRT kitaplık özellikleri
   expanded: false
   items:
-    - name: CRT kitaplık özellikleri
-      href: ../c-runtime-library/crt-library-features.md
     - name: Uyumluluk
       expanded: false
       items:
@@ -66,6 +64,8 @@
       href: ../c-runtime-library/global-state.md
     - name: Türe özel matematik
       href: ../c-runtime-library/tgmath.md
+    - name: C çalışma zamanı (CRT) ve C++ Standart Kitaplığı. lib dosyaları
+      href: ../c-runtime-library/crt-library-features.md
 - name: Kategoriye göre Evrensel C çalışma zamanı yordamları
   expanded: false
   items:
