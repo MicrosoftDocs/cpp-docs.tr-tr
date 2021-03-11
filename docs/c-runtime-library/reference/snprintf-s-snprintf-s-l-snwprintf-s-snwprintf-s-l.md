@@ -1,7 +1,7 @@
 ---
 description: 'Hakkında daha fazla bilgi edinin: _snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l'
 title: _snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l
-ms.date: 11/04/2016
+ms.date: 3/9/2021
 api_name:
 - _snprintf_s
 - _snprintf_s_l
@@ -50,13 +50,12 @@ helpviewer_keywords:
 - snwprintf_s function
 - _snwprintf_s function
 - formatted text [C++]
-ms.assetid: 9336ab86-13e5-4a29-a3cd-074adfee6891
-ms.openlocfilehash: 366614f69305080ee29ed8b903d17b5cc24765d8
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 7bee7b376deda021dd1d03909ebd0d9b088689b9
+ms.sourcegitcommit: b04b39940b0c1e265f80fc1951278fdb05a1b30a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97322490"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102621444"
 ---
 # <a name="_snprintf_s-_snprintf_s_l-_snwprintf_s-_snwprintf_s_l"></a>_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l
 
@@ -149,6 +148,9 @@ Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_er
 
 > [!IMPORTANT]
 > *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun.
+>
+>
+> Windows 10 sürüm 2004 (derleme 19041) ' den başlayarak, `printf` işlev ailesi, yuvarlama IÇIN ıeee 754 kurallarına göre tam olarak gösterilemeyen kayan nokta numaralarını yazdırır. Önceki Windows sürümlerinde, ' 5 ' ile biten tam olarak gösterilemeyen kayan noktalı sayılar her zaman yukarı yuvarlar. IEEE 754, en yakın çift basamağa ("Banker ' de yuvarlama" olarak da bilinir) yuvarlayabilmeleri gerektiğini belirtir. Örneğin, her ikisi `printf("%1.0f", 1.5)` de `printf("%1.0f", 2.5)` 2 ' ye yuvarlanmalıdır. 1,5, daha önce 2,5 2 ' ye yuvarlayacağından, 3 ' e yuvarlanacak. Bu değişiklik yalnızca tam olarak gösterilebilir tablo numaralarını etkiler. Örneğin, 2,35 (bellekte temsil edildiğinde, 2.35000000000000008 'e yaklaşmışsa), 2,4 ' e yuvarlamaya devam eder. Bu işlevler tarafından yapılan yuvarlama artık tarafından ayarlanan kayan nokta yuvarlama moduna da uyar [`fesetround`](fegetround-fesetround2.md) . Daha önce, yuvarlama her zaman açık `FE_TONEAREST` davranış. Bu değişiklik yalnızca Visual Studio 2019 sürüm 16,2 ve üzeri kullanılarak oluşturulan programları etkiler. Eski kayan nokta yuvarlama davranışını kullanmak için [' legacy_stdio_float_rounding. obj '](../link-options.md)ile bağlantı yapın.
 
 **_snwprintf_s** , **_snprintf_s** geniş karakterli bir sürümüdür; **_snwprintf_s** işaretçi bağımsız değişkenleri geniş karakterli dizelerdir. **_Snwprintf_s** kodlama hatalarının algılanması **_snprintf_s**' de farklılık gösterebilir. **swprintf_s** gibi **_Snwprintf_s**, çıktıyı **Dosya** türünde bir hedef yerine bir dizeye yazar.
 

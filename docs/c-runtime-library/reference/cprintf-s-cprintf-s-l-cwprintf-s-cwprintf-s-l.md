@@ -1,7 +1,7 @@
 ---
 description: 'Hakkında daha fazla bilgi edinin: _cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l'
 title: _cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l
-ms.date: 11/04/2016
+ms.date: 3/9/2021
 api_name:
 - _cwprintf_s_l
 - _cprintf_s_l
@@ -46,13 +46,12 @@ helpviewer_keywords:
 - _tcprintf_s function
 - cprintf_s_l function
 - cwprintf_s_l function
-ms.assetid: c28504fe-0d20-4f06-8f97-ee33225922ad
-ms.openlocfilehash: 0a6529a6a2861829028f11dd25e2b044faa498a5
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 0f8e01af59422fe586b9a3c74399ca7cfbc3ac97
+ms.sourcegitcommit: b04b39940b0c1e265f80fc1951278fdb05a1b30a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97155962"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102621951"
 ---
 # <a name="_cprintf_s-_cprintf_s_l-_cwprintf_s-_cwprintf_s_l"></a>_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l
 
@@ -109,6 +108,9 @@ Bu işlevler, bir dizi karakter ve değeri, **_putch** işlevi ( **_cwprintf_s**
 
 > [!IMPORTANT]
 > *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun.
+>
+>
+> Windows 10 sürüm 2004 (derleme 19041) ' den başlayarak, `printf` işlev ailesi, yuvarlama IÇIN ıeee 754 kurallarına göre tam olarak gösterilemeyen kayan nokta numaralarını yazdırır. Önceki Windows sürümlerinde, ' 5 ' ile biten tam olarak gösterilemeyen kayan noktalı sayılar her zaman yukarı yuvarlar. IEEE 754, en yakın çift basamağa ("Banker ' de yuvarlama" olarak da bilinir) yuvarlayabilmeleri gerektiğini belirtir. Örneğin, her ikisi `printf("%1.0f", 1.5)` de `printf("%1.0f", 2.5)` 2 ' ye yuvarlanmalıdır. 1,5, daha önce 2,5 2 ' ye yuvarlayacağından, 3 ' e yuvarlanacak. Bu değişiklik yalnızca tam olarak gösterilebilir tablo numaralarını etkiler. Örneğin, 2,35 (bellekte temsil edildiğinde, 2.35000000000000008 'e yaklaşmışsa), 2,4 ' e yuvarlamaya devam eder. Bu işlevler tarafından yapılan yuvarlama artık tarafından ayarlanan kayan nokta yuvarlama moduna da uyar [`fesetround`](fegetround-fesetround2.md) . Daha önce, yuvarlama her zaman açık `FE_TONEAREST` davranış. Bu değişiklik yalnızca Visual Studio 2019 sürüm 16,2 ve üzeri kullanılarak oluşturulan programları etkiler. Eski kayan nokta yuvarlama davranışını kullanmak için [' legacy_stdio_float_rounding. obj '](../link-options.md)ile bağlantı yapın.
 
 Güvenli olmayan sürümler gibi (bkz. [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)), bu işlevler parametrelerini doğrular ve *Biçim* null işaretçisiyse [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Bu işlevler, biçim dizesinin kendisinin de doğrulandığı güvenli olmayan sürümlerden farklıdır. Bilinmeyen veya hatalı biçimlendirilmiş biçimlendirme belirticileri varsa, bu işlevler geçersiz parametre işleyicisini çağırır. Her durumda, yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 

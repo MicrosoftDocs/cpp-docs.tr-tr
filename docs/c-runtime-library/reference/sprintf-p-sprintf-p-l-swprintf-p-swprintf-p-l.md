@@ -1,7 +1,7 @@
 ---
 description: 'Hakkında daha fazla bilgi edinin: _sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l'
 title: _sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l
-ms.date: 11/04/2016
+ms.date: 3/9/2021
 api_name:
 - _sprintf_p
 - _swprintf_p_l
@@ -45,13 +45,12 @@ helpviewer_keywords:
 - stprintf_p_l function
 - formatted text [C++]
 - _stprintf_p_l function
-ms.assetid: a2ae78e8-6b0c-48d5-87a9-ea2365b0693d
-ms.openlocfilehash: 84702c0ab04027f350978c511ee8f871af753bb9
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 356aa4c5266323e989ffbc5b651af4c77431eecd
+ms.sourcegitcommit: b04b39940b0c1e265f80fc1951278fdb05a1b30a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97292305"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102621652"
 ---
 # <a name="_sprintf_p-_sprintf_p_l-_swprintf_p-_swprintf_p_l"></a>_sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l
 
@@ -118,6 +117,9 @@ Bir hata oluştuysa yazılan karakter sayısı veya-1.
 **_swprintf_p** , **_sprintf_p** geniş karakterli bir sürümüdür; **_swprintf_p** işaretçi bağımsız değişkenleri geniş karakterli dizelerdir. **_Swprintf_p** kodlama hatalarının algılanması **_sprintf_p** farklı olabilir. **_swprintf_p** ve **fwprintf_p** aynı şekilde davranır çünkü **_swprintf_p** çıktıyı **Dosya** türünde bir hedef yerine bir dizeye yazar ve **_swprintf_p** , yazılacak maksimum karakter sayısını belirtmek için *Count* parametresinin olmasını gerektirir. **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
 **_sprintf_p** , sondaki null karakteri saymayan *arabellekte* depolanan bayt sayısını döndürür. **_swprintf_p** , sondaki null geniş karakteri saymayan *arabellekte* depolanan geniş karakter sayısını döndürür. *Arabellek* veya *Biçim* null işaretçisiyse veya biçim dizesi geçersiz biçimlendirme karakterleri içeriyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
+
+> [!IMPORTANT]
+> Windows 10 sürüm 2004 (derleme 19041) ' den başlayarak, `printf` işlev ailesi, yuvarlama IÇIN ıeee 754 kurallarına göre tam olarak gösterilemeyen kayan nokta numaralarını yazdırır. Önceki Windows sürümlerinde, ' 5 ' ile biten tam olarak gösterilemeyen kayan noktalı sayılar her zaman yukarı yuvarlar. IEEE 754, en yakın çift basamağa ("Banker ' de yuvarlama" olarak da bilinir) yuvarlayabilmeleri gerektiğini belirtir. Örneğin, her ikisi `printf("%1.0f", 1.5)` de `printf("%1.0f", 2.5)` 2 ' ye yuvarlanmalıdır. 1,5, daha önce 2,5 2 ' ye yuvarlayacağından, 3 ' e yuvarlanacak. Bu değişiklik yalnızca tam olarak gösterilebilir tablo numaralarını etkiler. Örneğin, 2,35 (bellekte temsil edildiğinde, 2.35000000000000008 'e yaklaşmışsa), 2,4 ' e yuvarlamaya devam eder. Bu işlevler tarafından yapılan yuvarlama artık tarafından ayarlanan kayan nokta yuvarlama moduna da uyar [`fesetround`](fegetround-fesetround2.md) . Daha önce, yuvarlama her zaman açık `FE_TONEAREST` davranış. Bu değişiklik yalnızca Visual Studio 2019 sürüm 16,2 ve üzeri kullanılarak oluşturulan programları etkiler. Eski kayan nokta yuvarlama davranışını kullanmak için [' legacy_stdio_float_rounding. obj '](../link-options.md)ile bağlantı yapın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 

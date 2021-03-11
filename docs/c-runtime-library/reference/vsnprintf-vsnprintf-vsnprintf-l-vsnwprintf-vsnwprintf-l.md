@@ -1,7 +1,7 @@
 ---
 title: vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
 description: Vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf ve _vsnwprintf_l için API başvurusu; bağımsız değişken listesi için bir işaretçi kullanarak biçimlendirilen çıktıyı yazma.
-ms.date: 06/24/2020
+ms.date: 3/9/2021
 api_name:
 - _vsnprintf
 - _vsnprintf_l
@@ -55,13 +55,12 @@ helpviewer_keywords:
 - _vsnprintf function
 - formatted text [C++]
 - vsnwprintf function
-ms.assetid: a97f92df-c2f8-4ea0-9269-76920d2d566a
-ms.openlocfilehash: e6ed3d146458f514691fe0b20a4c88ffebb5f877
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 870afc9cae241e61daebcac06089d01ac2fc3675
+ms.sourcegitcommit: b04b39940b0c1e265f80fc1951278fdb05a1b30a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008690"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622003"
 ---
 # <a name="vsnprintf-_vsnprintf-_vsnprintf_l-_vsnwprintf-_vsnwprintf_l"></a>vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
 
@@ -146,7 +145,7 @@ int _vsnwprintf_l(
 *arabelleğin*<br/>
 Çıktı için depolama konumu.
 
-*count*<br/>
+*biriktirme*<br/>
 Yazılacak maksimum karakter sayısı.
 
 *formatını*<br/>
@@ -162,29 +161,30 @@ Daha fazla bilgi için bkz. [Biçim belirtimleri](../../c-runtime-library/format
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Vsnprintf** işlevi, sonlandıran null karakteri saymayan yazılan karakter sayısını döndürür. *Count* tarafından belirtilen arabellek boyutu, *Format* ve *argptr*tarafından belirtilen çıktıyı içermesi için yeterince büyük değilse **vsnprintf** dönüş değeri yazılacak karakter sayısıdır, *sayı* yeterince büyükse null karakteri saymaz. Dönüş değeri *sayı* -1 ' den büyükse, çıkış fazlalıkları kesilir. -1 ' in dönüş değeri bir kodlama hatası oluştuğunu gösterir.
+**Vsnprintf** işlevi, sonlandıran null karakteri saymayan yazılan karakter sayısını döndürür. *Count* tarafından belirtilen arabellek boyutu, *Format* ve *argptr* tarafından belirtilen çıktıyı içermesi için yeterince büyük değilse **vsnprintf** dönüş değeri yazılacak karakter sayısıdır, *sayı* yeterince büyükse null karakteri saymaz. Dönüş değeri *sayı* -1 ' den büyükse, çıkış fazlalıkları kesilir. -1 ' in dönüş değeri bir kodlama hatası oluştuğunu gösterir.
 
-**_Vsnprintf** ve **_vsnwprintf** işlevleri, yazılacak karakter sayısı sayıdan küçük veya buna eşit olduğunda yazılan karakter sayısını *döndürür.* Yazılacak karakter *sayısı sayı değerinden büyükse, bu*işlevler çıktının kesilmediğini belirten-1 döndürür.
+**_Vsnprintf** ve **_vsnwprintf** işlevleri, yazılacak karakter sayısı sayıdan küçük veya buna eşit olduğunda yazılan karakter sayısını *döndürür.* Yazılacak karakter *sayısı sayı değerinden büyükse, bu* işlevler çıktının kesilmediğini belirten-1 döndürür.
 
 Bu işlevlerin döndürdüğü değer Sonlandırıcı null, bir tane yazılıp yazılmadığını içermez.
 
-- *Count* değeri sıfırsa ve *buffer* **null**ise, döndürülen değer işlevlerin yazacağı karakter sayısıdır. Değer, bir Sonlandırıcı **null**değeri hesaba almıyor. Bu sonucu, dize için yeterli arabellek alanı ve onun Sonlandırıcı null ayırmak için kullanabilir ve sonra, arabelleği dolduracak şekilde işlevi yeniden çağırabilir.
-- *Count* değeri sıfırsa ancak *buffer* **null**değilse, hiçbir şey yazılmaz ve işlev döndürülür `-1` .
-- *Biçim* **null**ise veya *arabellek* **null** ise ve *sayı* sıfıra eşit değilse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+- *Count* değeri sıfırsa ve *buffer* **null** ise, döndürülen değer işlevlerin yazacağı karakter sayısıdır. Değer, bir Sonlandırıcı **null** değeri hesaba almıyor. Bu sonucu, dize için yeterli arabellek alanı ve onun Sonlandırıcı null ayırmak için kullanabilir ve sonra, arabelleği dolduracak şekilde işlevi yeniden çağırabilir.
+- *Count* değeri sıfırsa ancak *buffer* **null** değilse, hiçbir şey yazılmaz ve işlev döndürülür `-1` .
+- *Biçim* **null** ise veya *arabellek* **null** ise ve *sayı* sıfıra eşit değilse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır, ardından verileri biçimlendirir ve *arabelleğe*göre işaret eden belleğe *sayı* karakteri yazar. **Vsnprintf** işlevi, çıktıyı kesen bile her zaman bir null Sonlandırıcı yazar. **_Vsnprintf** ve **_vsnwprintf**kullanılırken, arabellek yalnızca sonda yer alıyorsa (yani, yazılacak *karakter sayısı sayıdan küçükse) null*olarak sonlandırılır.
+Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır, ardından verileri biçimlendirir ve *arabelleğe* göre işaret eden belleğe *sayı* karakteri yazar. **Vsnprintf** işlevi, çıktıyı kesen bile her zaman bir null Sonlandırıcı yazar. **_Vsnprintf** ve **_vsnwprintf** kullanılırken, arabellek yalnızca sonda yer alıyorsa (yani, yazılacak *karakter sayısı sayıdan küçükse) null* olarak sonlandırılır.
 
 > [!IMPORTANT]
 > Belirli güvenlik riskleri türlerini engellemek için, *biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
+> Windows 10 sürüm 2004 (derleme 19041) ' den başlayarak, `printf` işlev ailesi, yuvarlama IÇIN ıeee 754 kurallarına göre tam olarak gösterilemeyen kayan nokta numaralarını yazdırır. Önceki Windows sürümlerinde, ' 5 ' ile biten tam olarak gösterilemeyen kayan noktalı sayılar her zaman yukarı yuvarlar. IEEE 754, en yakın çift basamağa ("Banker ' de yuvarlama" olarak da bilinir) yuvarlayabilmeleri gerektiğini belirtir. Örneğin, her ikisi `printf("%1.0f", 1.5)` de `printf("%1.0f", 2.5)` 2 ' ye yuvarlanmalıdır. 1,5, daha önce 2,5 2 ' ye yuvarlayacağından, 3 ' e yuvarlanacak. Bu değişiklik yalnızca tam olarak gösterilebilir tablo numaralarını etkiler. Örneğin, 2,35 (bellekte temsil edildiğinde, 2.35000000000000008 'e yaklaşmışsa), 2,4 ' e yuvarlamaya devam eder. Bu işlevler tarafından yapılan yuvarlama artık tarafından ayarlanan kayan nokta yuvarlama moduna da uyar [`fesetround`](fegetround-fesetround2.md) . Daha önce, yuvarlama her zaman açık `FE_TONEAREST` davranış. Bu değişiklik yalnızca Visual Studio 2019 sürüm 16,2 ve üzeri kullanılarak oluşturulan programları etkiler. Eski kayan nokta yuvarlama davranışını kullanmak için [' legacy_stdio_float_rounding. obj '](../link-options.md)ile bağlantı yapın.
 
 > [!NOTE]
-> **_Vsnprintf**, **_vsnprintf_l**, **_vsnwprintf** ve **_vsnwprintf_l**çağrılırken, Sonlandırıcı null için yer olduğundan emin olmak için, *Count* 'un arabellek uzunluğundan kesinlikle daha az olduğundan emin olun ve işlevi çağırmadan önce arabelleği null olarak başlatın.
+> **_Vsnprintf**, **_vsnprintf_l**, **_vsnwprintf** ve **_vsnwprintf_l** çağrılırken, Sonlandırıcı null için yer olduğundan emin olmak için, *Count* 'un arabellek uzunluğundan kesinlikle daha az olduğundan emin olun ve işlevi çağırmadan önce arabelleği null olarak başlatın.
 >
 > **Vsnprintf** her zaman Sonlandırıcı null değerini yazdığından, *Count* parametresi arabelleğin boyutuna eşit olabilir.
 
-Visual Studio 2015 ve Windows 10 ' da UıCRT ile başlayarak, **vsnprintf** artık **_vsnprintf**ile aynı değildir. **Vsnprintf** işlevi C99 standardına uyar; **_vnsprintf** , eski Visual Studio kodu ile geriye dönük uyumluluk için tutulur.
+Visual Studio 2015 ve Windows 10 ' da UıCRT ile başlayarak, **vsnprintf** artık **_vsnprintf** ile aynı değildir. **Vsnprintf** işlevi C99 standardına uyar; **_vnsprintf** , eski Visual Studio kodu ile geriye dönük uyumluluk için tutulur.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 

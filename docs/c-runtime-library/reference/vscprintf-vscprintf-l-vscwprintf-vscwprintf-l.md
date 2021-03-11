@@ -1,7 +1,7 @@
 ---
 description: 'Hakkında daha fazla bilgi edinin: _vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l'
 title: _vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l
-ms.date: 11/04/2016
+ms.date: 3/9/2021
 api_name:
 - _vscprintf
 - _vscprintf_l
@@ -45,13 +45,12 @@ helpviewer_keywords:
 - formatted text [C++]
 - vscprintf function
 - vscprintf_l function
-ms.assetid: 1bc67d3d-21d5-49c9-ac8d-69e26b16a3c3
-ms.openlocfilehash: 434a444b7b2c8a552c148c7c369a63b0c4a9acf2
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: c516de0a37b7b56f071abed1dc780bf79ac85d89
+ms.sourcegitcommit: b04b39940b0c1e265f80fc1951278fdb05a1b30a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97342172"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102621990"
 ---
 # <a name="_vscprintf-_vscprintf_l-_vscwprintf-_vscwprintf_l"></a>_vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l
 
@@ -107,6 +106,8 @@ Her *bağımsız değişken* (varsa), *biçimde* karşılık gelen biçim belirt
 
 > [!IMPORTANT]
 > *Biçim* Kullanıcı tanımlı bir dize ise, null olarak sonlandırıldığından ve doğru sayıda ve parametre türünde olduğundan emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
+>
+> Windows 10 sürüm 2004 (derleme 19041) ' den başlayarak, `printf` işlev ailesi, yuvarlama IÇIN ıeee 754 kurallarına göre tam olarak gösterilemeyen kayan nokta numaralarını yazdırır. Önceki Windows sürümlerinde, ' 5 ' ile biten tam olarak gösterilemeyen kayan noktalı sayılar her zaman yukarı yuvarlar. IEEE 754, en yakın çift basamağa ("Banker ' de yuvarlama" olarak da bilinir) yuvarlayabilmeleri gerektiğini belirtir. Örneğin, her ikisi `printf("%1.0f", 1.5)` de `printf("%1.0f", 2.5)` 2 ' ye yuvarlanmalıdır. 1,5, daha önce 2,5 2 ' ye yuvarlayacağından, 3 ' e yuvarlanacak. Bu değişiklik yalnızca tam olarak gösterilebilir tablo numaralarını etkiler. Örneğin, 2,35 (bellekte temsil edildiğinde, 2.35000000000000008 'e yaklaşmışsa), 2,4 ' e yuvarlamaya devam eder. Bu işlevler tarafından yapılan yuvarlama artık tarafından ayarlanan kayan nokta yuvarlama moduna da uyar [`fesetround`](fegetround-fesetround2.md) . Daha önce, yuvarlama her zaman açık `FE_TONEAREST` davranış. Bu değişiklik yalnızca Visual Studio 2019 sürüm 16,2 ve üzeri kullanılarak oluşturulan programları etkiler. Eski kayan nokta yuvarlama davranışını kullanmak için bağlantısını kullanın [`legacy_stdio_float_rounding.obj`](../link-options.md) .
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 

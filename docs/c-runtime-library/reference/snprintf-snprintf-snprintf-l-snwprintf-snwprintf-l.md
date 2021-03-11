@@ -1,7 +1,7 @@
 ---
 title: snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l
 description: Snprintf, _snprintf, _snprintf_l, _snwprintf ve _snwprintf_; için API başvurusu biçimlendirilen verileri bir dizeye yazar.
-ms.date: 08/27/2020
+ms.date: 3/9/2021
 api_name:
 - _snwprintf
 - _snprintf
@@ -51,19 +51,18 @@ helpviewer_keywords:
 - snprintf function
 - sntprintf function
 - formatted text [C++]
-ms.assetid: 5976c9c8-876e-4ac9-a515-39f3f7fd0925
-ms.openlocfilehash: 9a851f08e50d11d3716ea59e00e5e9028b6cd6d5
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: c36b7e480b2025c605d46128418c73e7b6887fc3
+ms.sourcegitcommit: b04b39940b0c1e265f80fc1951278fdb05a1b30a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89556118"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102621665"
 ---
 # <a name="snprintf-_snprintf-_snprintf_l-_snwprintf-_snwprintf_l"></a>snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l
 
 Biçimlendirilmiş verileri bir dizeye yazar. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l](snprintf-s-snprintf-s-l-snwprintf-s-snwprintf-s-l.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int snprintf(
@@ -144,37 +143,39 @@ Biçim denetimi dizesi.
 *değişkendir*<br/>
 İsteğe bağlı bağımsız değişkenler.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 Daha fazla bilgi için bkz. [Biçim belirtimi sözdizimi: printf ve wprintf işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dizenin, Sonlandırıcı null değeri dahil değil, biçimlendirilen veri dizesinin uzunluğu **olmasına izin verin** . Hem **len** hem de **Count** , **snprintf** ve **_snprintf**için karakter sayısı ve **_snwprintf**geniş karakter sayısıdır.
+Dizenin, Sonlandırıcı null değeri dahil değil, biçimlendirilen veri dizesinin uzunluğu **olmasına izin verin** . Hem **len** hem de **Count** , **snprintf** ve **_snprintf** için karakter sayısı ve **_snwprintf** geniş karakter sayısıdır.
 
-Tüm işlevler için, **uzunluk**  <  *sayısı*, Len **len** karakterler *arabellekte*depolanıyorsa, null Sonlandırıcı eklenir ve **len** döndürülür.
+Tüm işlevler için, **uzunluk**  <  *sayısı*, Len  karakterler *arabellekte* depolanıyorsa, null Sonlandırıcı eklenir ve **len** döndürülür.
 
-**Snprintf** işlevi, **uzunluk** *' a*eşit veya daha büyük olduğunda çıktıyı keser `buffer[count-1]` . Döndürülen değer **uzunluk**, *sayı* yeterince büyükse çıktı olan karakter sayısı. **Snprintf** işlevi, bir kodlama hatası oluşursa negatif bir değer döndürür.
+**Snprintf** işlevi, **uzunluk** *' a* eşit veya daha büyük olduğunda çıktıyı keser `buffer[count-1]` . Döndürülen değer **uzunluk**, *sayı* yeterince büyükse çıktı olan karakter sayısı. **Snprintf** işlevi, bir kodlama hatası oluşursa negatif bir değer döndürür.
 
-**Snprintf**dışındaki tüm işlevler için, **uzunluk**  =  *sayısı*, Len karakterler **len** *arabellekte*depolanıyorsa, hiçbir null-Sonlandırıcı eklenmez ve **len** değeri döndürülür. **Len**  >  *sayı*ise, *sayı* karakterleri *arabellekte*depolanıyorsa, null-Sonlandırıcı eklenmez ve negatif bir değer döndürülür.
+**Snprintf** dışındaki tüm işlevler için, **uzunluk**  =  *sayısı*, Len karakterler  *arabellekte* depolanıyorsa, hiçbir null-Sonlandırıcı eklenmez ve **len** değeri döndürülür. **Len**  >  *sayı* ise, *sayı* karakterleri *arabellekte* depolanıyorsa, null-Sonlandırıcı eklenmez ve negatif bir değer döndürülür.
 
 *Arabellek* null işaretçisiyse ve *sayı* sıfırsa, Len null değeri dahil değil, çıktıyı biçimlendirmek için gereken karakter sayısı olarak **len** döndürülür. Aynı *bağımsız değişkenle* ve *yerel ayar* parametreleriyle başarılı bir çağrı yapmak için en az **len** + 1 karakter tutan bir arabellek ayırın.
 
-*Arabellek* null işaretçisiyse ve *sayı* sıfır değilse veya *Biçim* null işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+*Arabellek* null işaretçisiyse ve *sayı* sıfır değilse veya *Biçim* null işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Bu ve diğer hata kodları hakkında bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Snprintf** işlevi ve **_snprintf** ailesi işlevleri, *arabelleğe*göre *sayı* veya daha az karakter olarak biçimlendirilir. **Snprintf** işlevi her zaman bir Sonlandırıcı null karakteri depolar, gerekirse çıktıyı kesiliyor. **_Snprintf** ailesi işlevleri yalnızca, biçimlendirilen dize uzunluğu *sayı* karakterlerinden kesinlikle daha küçükse, bir Sonlandırıcı null karakteri ekler. Her *bağımsız değişken* (varsa) dönüştürülür ve karşılık *gelen biçim belirtimine*göre çıkış olur. Biçim sıradan karakterlerden oluşur ve [printf](printf-printf-l-wprintf-wprintf-l.md)için *Biçim* bağımsız değişkeniyle aynı form ve işleve sahiptir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
+**Snprintf** işlevi ve **_snprintf** ailesi işlevleri, *arabelleğe* göre *sayı* veya daha az karakter olarak biçimlendirilir. **Snprintf** işlevi her zaman bir Sonlandırıcı null karakteri depolar, gerekirse çıktıyı kesiliyor. **_Snprintf** ailesi işlevleri yalnızca, biçimlendirilen dize uzunluğu *sayı* karakterlerinden kesinlikle daha küçükse, bir Sonlandırıcı null karakteri ekler. Her *bağımsız değişken* (varsa) dönüştürülür ve karşılık *gelen biçim belirtimine* göre çıkış olur. Biçim sıradan karakterlerden oluşur ve [printf](printf-printf-l-wprintf-wprintf-l.md)için *Biçim* bağımsız değişkeniyle aynı form ve işleve sahiptir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
 
 > [!IMPORTANT]
-> *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun. **_Snprintf** işlevleri, null sonlandırmayı garanti etmez — özellikle, dönüş değeri *sayımla*olduğunda, bunun ardından null Sonlandırıcı ekleyen kod geldiğinden emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
+> *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun. **_Snprintf** işlevleri, null sonlandırmayı garanti etmez — özellikle, dönüş değeri *sayımla* olduğunda, bunun ardından null Sonlandırıcı ekleyen kod geldiğinden emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
+>
+> Windows 10 sürüm 2004 (derleme 19041) ' den başlayarak, `printf` işlev ailesi, yuvarlama IÇIN ıeee 754 kurallarına göre tam olarak gösterilemeyen kayan nokta numaralarını yazdırır. Önceki Windows sürümlerinde, ' 5 ' ile biten tam olarak gösterilemeyen kayan noktalı sayılar her zaman yukarı yuvarlar. IEEE 754, en yakın çift basamağa ("Banker ' de yuvarlama" olarak da bilinir) yuvarlayabilmeleri gerektiğini belirtir. Örneğin, her ikisi `printf("%1.0f", 1.5)` de `printf("%1.0f", 2.5)` 2 ' ye yuvarlanmalıdır. 1,5, daha önce 2,5 2 ' ye yuvarlayacağından, 3 ' e yuvarlanacak. Bu değişiklik yalnızca tam olarak gösterilebilir tablo numaralarını etkiler. Örneğin, 2,35 (bellekte temsil edildiğinde, 2.35000000000000008 'e yaklaşmışsa), 2,4 ' e yuvarlamaya devam eder. Bu işlevler tarafından yapılan yuvarlama artık tarafından ayarlanan kayan nokta yuvarlama moduna da uyar [`fesetround`](fegetround-fesetround2.md) . Daha önce, yuvarlama her zaman açık `FE_TONEAREST` davranış. Bu değişiklik yalnızca Visual Studio 2019 sürüm 16,2 ve üzeri kullanılarak oluşturulan programları etkiler. Eski kayan nokta yuvarlama davranışını kullanmak için bağlantısını kullanın [`legacy_stdio_float_rounding.obj`](../link-options.md) .
 
-Visual Studio 2015 ve Windows 10 ' da UıCRT ile başlayarak, **snprintf** artık **_snprintf**ile aynı değildir. **Snprintf** işlev davranışı artık C99 standart uyumludur.
+Visual Studio 2015 ve Windows 10 ' da UıCRT ile başlayarak, **snprintf** artık **_snprintf** ile aynı değildir. **Snprintf** işlev davranışı artık C99 standart uyumludur.
 
-**_snwprintf** , **_snprintf**geniş karakterli bir sürümüdür; **_snwprintf** işaretçi bağımsız değişkenleri geniş karakterli dizelerdir. **_Snwprintf** kodlama hatalarının algılanması **_snprintf**' de farklılık gösterebilir. **_snwprintf**, **swprintf**gibi, çıktıyı **Dosya**türünde bir hedef yerine bir dizeye yazar.
+**_snwprintf** , **_snprintf** geniş karakterli bir sürümüdür; **_snwprintf** işaretçi bağımsız değişkenleri geniş karakterli dizelerdir. **_Snwprintf** kodlama hatalarının algılanması **_snprintf**' de farklılık gösterebilir. **_snwprintf**, **swprintf** gibi, çıktıyı **Dosya** türünde bir hedef yerine bir dizeye yazar.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 

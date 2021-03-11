@@ -1,7 +1,7 @@
 ---
 description: 'Hakkında daha fazla bilgi edinin: _get_printf_count_output'
 title: _get_printf_count_output
-ms.date: 11/04/2016
+ms.date: 3/9/2021
 api_name:
 - _get_printf_count_output
 api_location:
@@ -27,13 +27,12 @@ helpviewer_keywords:
 - '%n format'
 - get_printf_count_output function
 - _get_printf_count_output function
-ms.assetid: 850f9f33-8319-433e-98d8-6a694200d994
-ms.openlocfilehash: fe5ee728b7bc8400cd93ec4e93131496d59334c5
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: f31c0321d2d7873db20e7d663918aebc002c768d
+ms.sourcegitcommit: b04b39940b0c1e265f80fc1951278fdb05a1b30a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97339009"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622133"
 ---
 # <a name="_get_printf_count_output"></a>_get_printf_count_output
 
@@ -52,6 +51,9 @@ int _get_printf_count_output();
 ## <a name="remarks"></a>Açıklamalar
 
 **% N** desteklenmiyorsa (varsayılan), **printf** işlevlerinin herhangi birinin biçim dizesinde **% n** ile [karşılaşmak parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. **% N** desteği etkinse (bkz. [_set_printf_count_output](set-printf-count-output.md)), **% n** , [Biçim belirtimi sözdizimi: printf ve wprintf işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)bölümünde açıklandığı gibi davranır.
+
+> [!IMPORTANT]
+> Windows 10 sürüm 2004 (derleme 19041) ' den başlayarak, `printf` işlev ailesi, yuvarlama IÇIN ıeee 754 kurallarına göre tam olarak gösterilemeyen kayan nokta numaralarını yazdırır. Önceki Windows sürümlerinde, ' 5 ' ile biten tam olarak gösterilemeyen kayan noktalı sayılar her zaman yukarı yuvarlar. IEEE 754, en yakın çift basamağa ("Banker ' de yuvarlama" olarak da bilinir) yuvarlayabilmeleri gerektiğini belirtir. Örneğin, her ikisi `printf("%1.0f", 1.5)` de `printf("%1.0f", 2.5)` 2 ' ye yuvarlanmalıdır. 1,5, daha önce 2,5 2 ' ye yuvarlayacağından, 3 ' e yuvarlanacak. Bu değişiklik yalnızca tam olarak gösterilebilir tablo numaralarını etkiler. Örneğin, 2,35 (bellekte temsil edildiğinde, 2.35000000000000008 'e yaklaşmışsa), 2,4 ' e yuvarlamaya devam eder. Bu işlevler tarafından yapılan yuvarlama artık tarafından ayarlanan kayan nokta yuvarlama moduna da uyar [`fesetround`](fegetround-fesetround2.md) . Daha önce, yuvarlama her zaman açık `FE_TONEAREST` davranış. Bu değişiklik yalnızca Visual Studio 2019 sürüm 16,2 ve üzeri kullanılarak oluşturulan programları etkiler. Eski kayan nokta yuvarlama davranışını kullanmak için [' legacy_stdio_float_rounding. obj '](../link-options.md)ile bağlantı yapın.
 
 ## <a name="requirements"></a>Gereksinimler
 

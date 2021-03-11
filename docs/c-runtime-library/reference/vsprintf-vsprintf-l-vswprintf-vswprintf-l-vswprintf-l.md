@@ -1,7 +1,7 @@
 ---
 description: 'Daha fazla bilgi edinin: vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l'
 title: vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
-ms.date: 09/03/2019
+ms.date: 3/9/2021
 api_name:
 - _vswprintf_l
 - _vsprintf_l
@@ -49,13 +49,12 @@ helpviewer_keywords:
 - vswprintf function
 - vsprintf function
 - _vstprintf function
-ms.assetid: b8ef1c0d-58f9-4a18-841a-f1a989e1c29b
-ms.openlocfilehash: dd7e06817049f26e80c4be9f1d3f3df40444feaf
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 299df4fc02e0761d97e8b64d650af0953a866316
+ms.sourcegitcommit: b04b39940b0c1e265f80fc1951278fdb05a1b30a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97342120"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102621756"
 ---
 # <a name="vsprintf-_vsprintf_l-vswprintf-_vswprintf_l-__vswprintf_l"></a>vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
 
@@ -153,6 +152,7 @@ Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alı
 
 > [!IMPORTANT]
 > **Vsprıntf**' i kullanarak, yazılan karakter sayısını sınırlamanın bir yolu yoktur, bu da bu işlevi kullanan kodun arabellek taşmalarına açıktır. Bunun yerine [_vsnprintf](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) kullanın veya bir arabelleğin ne kadar büyük olacağını öğrenmek için [_vscprintf](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md) çağırın. Ayrıca, *biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
+> Windows 10 sürüm 2004 (derleme 19041) ' den başlayarak, `printf` işlev ailesi, yuvarlama IÇIN ıeee 754 kurallarına göre tam olarak gösterilemeyen kayan nokta numaralarını yazdırır. Önceki Windows sürümlerinde, ' 5 ' ile biten tam olarak gösterilemeyen kayan noktalı sayılar her zaman yukarı yuvarlar. IEEE 754, en yakın çift basamağa ("Banker ' de yuvarlama" olarak da bilinir) yuvarlayabilmeleri gerektiğini belirtir. Örneğin, her ikisi `printf("%1.0f", 1.5)` de `printf("%1.0f", 2.5)` 2 ' ye yuvarlanmalıdır. 1,5, daha önce 2,5 2 ' ye yuvarlayacağından, 3 ' e yuvarlanacak. Bu değişiklik yalnızca tam olarak gösterilebilir tablo numaralarını etkiler. Örneğin, 2,35 (bellekte temsil edildiğinde, 2.35000000000000008 'e yaklaşmışsa), 2,4 ' e yuvarlamaya devam eder. Bu işlevler tarafından yapılan yuvarlama artık tarafından ayarlanan kayan nokta yuvarlama moduna da uyar [`fesetround`](fegetround-fesetround2.md) . Daha önce, yuvarlama her zaman açık `FE_TONEAREST` davranış. Bu değişiklik yalnızca Visual Studio 2019 sürüm 16,2 ve üzeri kullanılarak oluşturulan programları etkiler. Eski kayan nokta yuvarlama davranışını kullanmak için [' legacy_stdio_float_rounding. obj '](../link-options.md)ile bağlantı yapın.
 
 **vswprintf** , **size_t** türünde ikinci parametreyi ( *Count*) gerektiren ISO C standardına uyar. Olmayan eski davranışı zorlamak için **_CRT_NON_CONFORMING_SWPRINTFS** tanımlayın. Eski davranış gelecek bir sürümde olmayabilir, bu nedenle kodun yeni uyumlu davranışı kullanacak şekilde değiştirilmesi gerekir.
 
