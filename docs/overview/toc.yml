@@ -5,12 +5,16 @@
       href: ../overview/visual-cpp-in-visual-studio.md
     - name: Visual Studio’da C++ geliştirmeye genel bakış
       href: ../overview/overview-of-cpp-development.md
-    - name: Visual Studio 2017’deki C++ yenilikleri
+    - name: Visual Studio 2019 ' de C++ yenilikleri
       href: ../overview/what-s-new-for-visual-cpp-in-visual-studio.md
+    - name: Visual Studio 2017'deki C++ yenilikleri
+      href: ../overview/what-s-new-for-cpp-2017.md
     - name: Microsoft C++ belgeleri yenilikleri
       href: ../overview/whats-new-cpp-docs.md
-    - name: Visual Studio 2017’deki C++ uyumluluk geliştirmeleri
+    - name: Visual Studio 2019 ' de C++ uyumluluk geliştirmeleri
       href: ../overview/cpp-conformance-improvements.md
+    - name: Visual Studio 2017’deki C++ uyumluluk geliştirmeleri
+      href: ../overview/cpp-conformance-improvements-2017.md
     - name: Microsoft C++ dil uyumluluğu
       href: ../overview/visual-cpp-language-conformance.md
     - name: Desteklenen hedef platformlar
